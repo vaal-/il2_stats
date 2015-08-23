@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {{ player.nickname }}
+                    <div class="content_title_sm">{% trans 'Player profile was hidden' %}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Online' %} / {{ block.super }}{% endblock title %}
+
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Pilots on the server' %}: {{ total_players }}
+                </div>
+            </div>
+
+            <div class="online_players">
+
+                <div class="online_allies">
+                    <div class="header">
+                        {% trans 'Allied Pilots' %}: {{ total_allies }}
+                    </div>
+
+                    <div class="content_table">
+                        {% for op in players_allies %}
+                            <a class="row" {% if op.profile_id %}href="{% url 'stats:pilot' op.profile_id op.nickname %}"{% endif %}>
+                                <div class="cell">{{ op.nickname }}</div>
+                            </a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+                <div class="online_axis">
+                    <div class="header">
+                        {% trans 'Axis Pilots' %}: {{ total_axis }}
+                    </div>
+
+                    <div class="content_table">
+                        {% for op in players_axis %}
+                            <a class="row" {% if op.profile_id %}href="{% url 'stats:pilot' op.profile_id op.nickname %}"{% endif %}>
+                                <div class="cell">{{ op.nickname }}</div>
+                            </a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+    </section>
+{% endblock content %}

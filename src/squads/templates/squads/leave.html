@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Leave Squad' %} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/profile_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="my_squad">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Leave Squad' %}
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                {% if squad_member.is_admin and not squad_admins %}
+                    {% trans 'Now you are the sole admin of the squad. Therefore, if you leave the squad - the squad will be removed.' %}
+                {% endif %}
+                {% trans 'Confirm that you want to leave the squad.' %}
+            </div>
+            <div style="margin-top: 20px;">
+                <form class="form" action="" method="post" onsubmit="this.submit.disabled=true;">
+                    {% csrf_token %}
+                    <div class="buttons">
+                        <button type="submit" class="green">{% trans 'Confirm' context 'action' %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

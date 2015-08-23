@@ -1,0 +1,252 @@
+
+
+.profile_name {
+    padding-top: 30px;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 300;
+    width: 100%;
+}
+
+
+.profile_head {
+    min-height: 100px;
+    .head_left {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        width: 670px;
+        .coalition {
+            padding-top: 15px;
+            margin-left: 150px;
+        }
+        .aircraft {
+            padding-top: 5px;
+            margin-left: 150px;
+        }
+        .squad_about {
+            width: 500px;
+            //padding-top: 15px;
+            margin: 40px 0 30px 0;
+            font-size: 14px;
+            //text-align: justify;
+            .squad_site {
+                //display: block;
+                //margin-top: 40px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                //text-align: right;
+                a {
+                    color: #7C7C7C;
+                    text-decoration: none;
+                    border-bottom: 1px solid;
+                    &:hover {
+                        transition: 500ms;
+                        color: #8c8c8c;
+                    }
+                }
+            }
+        }
+    }
+    .head_right {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 30px;
+        width: 465px;
+        .streak {
+            font-size: 20px;
+        }
+        .streak_desc {
+            font-size: 12px;
+        }
+        .streak_images {
+            width: 400px;
+            font-size: 0;
+            padding-top: 5px;
+        }
+        .squad_logo {
+            display: block;
+            float: right;
+            max-width: 400px;
+            max-height: 200px;
+            //height: 200px;
+            img {
+                max-width: 400px;
+                max-height: 200px;
+            }
+        }
+    }
+}
+
+.profile_main_stats {
+    width: 100%;
+    //height: 110px;
+    background: rgba(150, 150, 150, .05);
+    text-align: center;
+    margin-bottom: 30px;
+    .item {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+        min-width: 150px;
+        .text {
+            opacity: 0.5;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .num {
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.dominant_bars {
+    position: relative;
+    background-color: #353535;
+    padding: 15px 25px 10px 25px;
+    .bar_win_missions {
+        position: relative;
+        height: 40px;
+        //background-color: #FFFFFF;
+        font-size: 0;
+        .bar_title {
+            font-size: 18px;
+            text-align: center;
+        }
+        .bar {
+            position: relative;
+            background-color: #3166CE;
+            height: 10px;
+            margin: 15px 0 4px 0;
+            .bar_grid {
+                position: absolute;
+                top: -5px;
+                width: 50%;
+                height: 20px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: -1px;
+                    bottom: 0;
+                    width: 2px;
+                    height: 5px;
+                    background-color: #5C5C5C;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: -1px;
+                    width: 2px;
+                    height: 5px;
+                    background-color: #5C5C5C;
+                }
+            }
+            .bar_red {
+                display: inline-block;
+                position: relative;
+                background-color: #C72B11;
+                //margin-top: 5px;
+                width: 50%;
+                height: 10px;
+                z-index: 10;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    right: -1px;
+                    width: 2px;
+                    height: 20px;
+                    background-color: #C3C3C3;
+                }
+            }
+        }
+        .bar_red_num {
+            font-size: 18px;
+            float: left;
+        }
+        .bar_blue_num {
+            font-size: 18px;
+            float: right;
+        }
+    }
+
+    .bar_small {
+        position: relative;
+        display: inline-block;
+        //background-color: #575757;
+        //margin: 20px 0;
+        width: 310px;
+        height: 60px;
+        margin: 20px 0;
+        font-size: 0;
+        .bar_icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .bar_title {
+            font-size: 13px;
+            text-align: center;
+        }
+        .bar {
+            position: relative;
+            margin: 10px 0 4px 0;
+            background-color: #3166CE;
+            height: 2px;
+            .bar_grid {
+                position: absolute;
+                top: -4px;
+                width: 50%;
+                height: 10px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: -1px;
+                    bottom: 0;
+                    width: 2px;
+                    height: 3px;
+                    background-color: #4C4C4C;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: -1px;
+                    width: 2px;
+                    height: 3px;
+                    background-color: #4C4C4C;
+                }
+            }
+            .bar_red {
+                display: inline-block;
+                position: relative;
+                background-color: #C72B11;
+                //margin-top: 4px;
+                width: 50%;
+                height: 2px;
+                z-index: 10;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -4px;
+                    right: -1px;
+                    width: 2px;
+                    height: 10px;
+                    background-color: #C3C3C3;
+                }
+            }
+        }
+        .bar_red_num {
+            font-size: 16px;
+            color: #5C5C5C;
+            float: left;
+        }
+        .bar_blue_num {
+            font-size: 16px;
+            color: #5C5C5C;
+            float: right;
+        }
+    }
+}

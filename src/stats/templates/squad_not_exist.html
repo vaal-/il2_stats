@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{{ profile.name }} / {{ block.super }}{% endblock title %}
+
+{# TODO удалить т.к. возможно не нужен #}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {{ profile.name }}
+                    <div class="content_title_sm">
+                        {% trans 'The squad did not participate in this tour' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

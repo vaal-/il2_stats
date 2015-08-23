@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}FAQ / {{ block.super }}{% endblock title %}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper" style="font-size: 14px;">
+            <div class="content_head">
+                <div class="content_title">
+                    FAQ
+                    <div class="content_title_sm">
+                        {% trans 'Frequently Asked Questions' %}
+                    </div>
+                </div>
+            </div>
+            {{ chunk.content|safe }}
+        </div>
+    </section>
+{% endblock content %}

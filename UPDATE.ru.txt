@@ -1,0 +1,53 @@
+Инструкция по обновлению
+
+1) Завершить процессы stats и waitress. Если в stats в данный момент обрабатывается миссия - подождать до завершения обработки.
+
+2) Обновить файлы статистики на новые из архива
+
+3) Запустить run\update.cmd.
+Этот процесс выполняет следующие действия:
+- обновляет библиотеки (если требуется)
+- обновляет структуру и содержание базы данных (если требуется)
+- пересобирает статически файлы
+- обновляет информацию об игровых объектах
+- очищает истекшие веб сессии
+
+Примерно вот такой лог вы должны увидеть когда обновление проходит нормально
+
+========================================================================================================================
+
+E:\games\il2_stats\run>cd ../
+
+E:\games\il2_stats>".venv/Scripts/pip.exe" install -U --quiet --no-index --find-links=wheelhouse -r requirements.txt
+
+E:\games\il2_stats>pause
+Press any key to continue . . .
+
+E:\games\il2_stats>cd src
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py migrate --noinput --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py collectstatic --noinput --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py import_csv_data --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py clearsessions --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+========================================================================================================================
+
+Если на каком-то этапе в логе отобразилась какая-то иная информация, то вероятно это ошибка и повод связаться с разработчиками.
+
+
+4) После завершения обновления можно снова запустить сайт и сбор статистики

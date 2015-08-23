@@ -1,0 +1,66 @@
+Installation Instructions
+
+Instructions for installing the statistics on a game Windows server.
+
+Important! If on the server is installed ROF Server Stats, the installation of this software may impair its performance.
+
+
+1) Download and install PostgreSQL 9.5
+http://www.enterprisedb.com/products-services-training/pgdownload#windows
+
+2) Download and install Python 3.5 (In the options to choose - Add Python to PATH)
+https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
+
+
+3) pgAdmin III installed with PostgreSQL - client to work with the database.
+With the client you need to create a new database user (for example il2_stats).
+Create a new database (eg il2_stats) and appoint its own user created earlier.
+Run sql query into a new base for the enable of extension
+CREATE EXTENSION IF NOT EXISTS hstore;
+CREATE EXTENSION IF NOT EXISTS citext;
+
+
+4) Need to enable logging missions. In section KEY = system file startup.cfg need add
+mission_text_log = 1
+text_log_folder = "logs\txt\"
+
+5) Configure the statistics through a file src/conf.ini
+
+Statistics has a built-in web server. Its setting is a section of http.
+With the default settings of web interface statistics will be available at http://127.0.0.1
+Instead 127.0.0.1 can be an external IP address.
+If the server is using firewall - it must be configured accordingly.
+
+If the server is already use any other web server -  there are several options:
+a) Run website statistics on a different port, for example 8000
+b) Proxied requests from the primary Web server to web server statistics
+c) Run website statistics with web server as a WSGI or FastCGI application. Used framework Django.
+https://docs.djangoproject.com/en/1.8/howto/deployment/fastcgi/
+https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
+
+Database section need configure to access the PostgreSQL
+Usually, it is enough to change the field name, user, password
+
+You must specify the path to the directory where you installed the game server in game_server section - path
+
+In the stats section are optional settings:
+mission_report_delete - remove already processed logs (true / false)
+mission_report_backup_days - the number of days to keep backup copies of the logs (they are stored in a packed zip file)
+inactive_player_days - How many days a player must be out to statistics exclude it from the rankings
+new_tour_by_month - activating automatic system tours by months (true / false)
+win_by_score - Activation of calculating victory on scores in the mission if not victory by the completed task
+win_score_min - the minimum number of scores for the coalition wins on scores
+win_score_ratio - minimum ratio of two coalition scores to determine the winning coalition
+
+6) Start run/install.cmd
+- installs framework and libraries needed to run statistics
+- creates tables in the database
+- collect static files for the web
+- imported into the database information about game objects
+- offer to create an administrative user (path to admin panel - http://site_address/admin/)
+
+7) If all done without error, installation is complete.
+stats.cmd starts log parser
+waitress.cmd starts the built-in web server
+
+8) in the admin panel, section Chunks, you can change the server name

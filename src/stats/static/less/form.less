@@ -1,0 +1,149 @@
+
+form.form {
+    //width: 480px;
+    margin-top: 25px;
+    font-size: 14px;
+
+    .non_field_errors {
+        margin-bottom: 20px;
+        .error {
+            color: #C72B11;
+        }
+    }
+
+    .form_field {
+        position: relative;
+        margin-bottom: 10px;
+        label {
+            font-size: 20px;
+        }
+        .field_wrapper {
+            position: relative;
+        }
+        .help_text {
+
+        }
+        .error {
+            color: #C72B11;
+        }
+
+        select {
+            margin-top: 8px;
+            display: block;
+            background-color: #2C2C2C;
+            border: #484848 1px solid;
+            color: #969696;
+            font-size: 14px;
+            padding: 10px 20px;
+            width: 422px;
+        }
+
+        input {
+            margin-top: 8px;
+            display: block;
+            background-color: #2C2C2C;
+            border: #484848 1px solid;
+            color: #969696;
+            font-size: 14px;
+            padding: 10px 20px;
+            width: 380px;
+        }
+
+        textarea {
+            margin-top: 8px;
+            display: block;
+            background-color: #2C2C2C;
+            border: #484848 1px solid;
+            color: #969696;
+            font-size: 14px;
+            padding: 10px 20px;
+            width: 380px;
+        }
+
+        &.checkbox {
+            margin-top: 15px;
+            //margin-bottom: 0;
+            label {
+                font-size: 14px;
+                margin-left: 25px;
+            }
+            input[type="checkbox"] {
+                float: left;
+                width: 16px;
+                height: 16px;
+                display: block;
+                position: absolute;
+                top: -24px;
+                left: 0;
+            }
+        }
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        color: #E1E1E1;
+        border: none;
+        padding: 5px 30px;
+        min-width: 236px;
+        background-color: #4F4F4F;
+        text-align: center;
+        &:hover {
+            color: #FFFFFF;
+        }
+        &.green {
+            background-color: #527819;
+            &:hover {
+                background-color: #65A401;
+            }
+        }
+    }
+}
+
+.password_wink {
+    position: absolute;
+    bottom: -2px;
+    left: 425px;
+    background: url(../img/password_wink.svg) 0 center no-repeat;
+    cursor: pointer;
+    height: 44px;
+    margin: 0;
+    max-height: 100%;
+    padding: 0;
+    overflow: hidden;
+    width: 46px;
+}
+
+.password_wink_hide {
+    .password_wink;
+    background-position: -44px center;
+}
+
+
+.form_links {
+    margin-top: 30px;
+    a {
+        font-size: 14px;
+        color: #7C7C7C;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        margin-right: 10px;
+        &:hover {
+            transition: 500ms;
+            color: #8c8c8c;
+        }
+    }
+}
+
+.form_squad_logo {
+    position: absolute;
+    right: 0;
+    img {
+        display: block;
+        max-height: 200px;
+        max-width: 400px;
+    }
+}

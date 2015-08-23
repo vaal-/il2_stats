@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'My Squad' %} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/profile_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="my_squad">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'My Squad' %}
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                {% blocktrans trimmed %}
+                    You are not a member of a any squad. In order to join the squad, you need "join url",
+                    which can be obtained from the admin of the squad.
+                {% endblocktrans %}
+            </div>
+
+            <div style="margin-top: 20px;">
+                <a class="button" href="{% url 'squads:registration' %}">{% trans 'Registration Squad' context 'action' %}</a>
+            </div>
+
+        </div>
+    </section>
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="{% static 'js/form.js' %}"></script>
+{% endblock bottom %}

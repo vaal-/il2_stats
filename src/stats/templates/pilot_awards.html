@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Awards' context 'pilot_awards' %} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/pilot_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Awards' context 'pilot_awards' %}
+                    <div class="content_title_sm">{% trans 'pilot' context 'pilot_awards' %}: {{ player.nickname }}</div>
+                </div>
+            </div>
+            {% if rewards %}
+                <div class="pilot_awards">
+                {% for reward in rewards %}
+                    <div class="award">
+                        <div class="title">
+                            {{ reward.award.title }}
+                        </div>
+                        <img src="{{ reward.award.img.url }}" alt="" title="{{ reward.award.desc }}" width="180" height="180">
+                    </div>
+                {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </section>
+{% endblock content %}

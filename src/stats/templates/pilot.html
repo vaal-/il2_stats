@@ -1,0 +1,610 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/pilot_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="player">
+        <div class="wrapper">
+            <div class="profile_name">
+                {{ player.nickname }}
+                    {% if player.squad %}
+                        (<a href="{{ player.squad.get_profile_url }}">{{ player.squad.name }}</a>)
+                    {% endif %}
+            </div>
+            <div class="profile_head">
+                <div class="head_left">
+                    {% if player.coal_pref == 1 %}
+                        <img src="{% static 'img/flag/allies.png' %}" width="140" height="70" class="coal_flag"
+                             title="{% trans 'Allies' context 'coalition' %}" alt="{% trans 'Allies' context 'coalition' %}" align="left">
+                        <div class="coalition">{% trans 'favorite coalition' %}: <span>{% trans 'Allies' context 'coalition' %}</span></div>
+                        {% static 'img/icons/big/streak_allies.png' as streak_img %}
+                    {% elif player.coal_pref == 2 %}
+                        <img src="{% static 'img/flag/axis.png' %}" width="140" height="70" class="coal_flag"
+                             title="{% trans 'Axis' context 'coalition' %}" alt="{% trans 'Axis' context 'coalition' %}" align="left">
+                        <div class="coalition">{% trans 'favorite coalition' %}: <span>{% trans 'Axis' context 'coalition' %}</div>
+                        {% static 'img/icons/big/streak_axis.png' as streak_img %}
+                    {% else %}
+                        <img src="{% static 'img/flag/neutral.png' %}" width="140" height="70" class="coal_flag"
+                             title="{% trans 'No' context 'favorite_coalition' %}" alt="{% trans 'No' context 'favorite_coalition' %}" align="left">
+                        <div class="coalition">{% trans 'favorite coalition' %}: <span>{% trans 'No' context 'favorite_coalition' %}</span></div>
+                        {% static 'img/icons/big/streak_neutral.png' as streak_img %}
+                    {% endif %}
+                    {% if fav_aircraft %}
+                        <div class="aircraft">
+                            {% trans 'favorite aircraft' %}: <span>{{ fav_aircraft.aircraft.name }}</span>
+                        </div>
+                        {% with 'img/aircraft/'|add:fav_aircraft.aircraft.log_name|add:'.png' as fav_aircraft_img %}
+                            <img src="{% static fav_aircraft_img %}" width="670" height="240" class="fav_aircraft"
+                                 title="{% trans fav_aircraft.aircraft.name %}" alt="{% trans fav_aircraft.aircraft.name %}">
+                        {% endwith %}
+                    {% endif %}
+                </div>
+                <div class="head_right">
+                    <div class="streak">{% trans 'Streak' %}: {{ player.streak_current }}</div>
+                    <div class="streak_desc">{% trans 'number of downed aircraft for the current virtual life' %}</div>
+                    <div class="streak_images">
+                        {% if player.streak_current %}
+                            {# TODO хак - переделать #}
+                            {% for i in 'x'|ljust:player.streak_current %}
+                                <img src="{{ streak_img }}" width="" height="" title="" alt="">
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="streak" style="margin-top: 25px;">{% trans 'Ground Streak' %}: {{ player.streak_ground_current }}</div>
+                    <div class="streak_desc">{% trans 'number of destroyed ground targets for the current virtual life' %}</div>
+                    <div class="streak_images">
+                        {% if player.streak_ground_current %}
+                            {# TODO хак - переделать #}
+                            {% for i in 'x'|ljust:player.streak_ground_current %}
+                                <img src="{% static 'img/icons/big/streak_ground.png' %}" width="" height="" title="" alt="">
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile_main_stats">
+                <div class="item">
+                    <img src="{% static 'img/icons/big/ak.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Aerial victories' %}</div>
+                    <div class="num">{{ player.ak_total }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/streak_max.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Best Streak' %}</div>
+                    <div class="num">{{ player.streak_max }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/gk.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Destroyed on Ground' %}</div>
+                    <div class="num">{{ player.gk_total }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/streak_ground_max.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Best Ground Streak' %}</div>
+                    <div class="num">{{ player.streak_ground_max }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/ft.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Flight Time' %}</div>
+                    <div class="num">{{ player.flight_time|seconds_to_time }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/acc.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Gunnery Accuracy' %}</div>
+                    <div class="num">{{ player.accuracy }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/rating.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Position in Rating' %}</div>
+                    <div class="num" title="{{ player.rating }}">
+                        {% if rating_position %}
+                            <a href="{% url 'stats:pilots' %}?page={{ page_position }}&tour={{ player.tour_id }}">{{ rating_position }}</a>
+                        {% else %}
+                            <span title="">?</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="player_detailed" style="float: left;">
+                <div class="title">
+                    {% trans 'Detailed combat results' %}
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Total Aircraft' context 'total' %}</div>
+                    <div class="num">{{ player.ak_total }}</div>
+                </div>
+
+                {% if player.killboard_pvp.aircraft_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Fighters' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pvp.aircraft_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pvp.aircraft_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Attacker' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pvp.aircraft_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pvp.aircraft_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Bombers' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pvp.aircraft_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pvp.aircraft_transport %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Transport' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pvp.aircraft_transport }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aircraft_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Fighters' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ player.killboard_pve.aircraft_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aircraft_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Attacker' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ player.killboard_pve.aircraft_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aircraft_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Bombers' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ player.killboard_pve.aircraft_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aircraft_transport %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Transport' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ player.killboard_pve.aircraft_transport }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.ak_assist %}
+                <div class="item">
+                    <div class="name">{% trans 'Assisted' context 'total' %}</div>
+                    <div class="num">{{ player.ak_assist }}</div>
+                </div>
+                {% endif %}
+
+                <div class="item">
+                    <div class="name">{% trans 'Destroyed ground targets' context 'total' %}</div>
+                    <div class="num">{{ player.gk_total }}</div>
+                </div>
+
+                {% if player.killboard_pve.tank_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Heavy Tanks' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.tank_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.tank_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Medium Tanks' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.tank_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.tank_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Light Tanks' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.tank_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.armoured_vehicle %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Armored vehicles' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.armoured_vehicle }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.car %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Cars' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.car }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.truck %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Trucks' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.truck }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aaa_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Large-caliber AA guns' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.aaa_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aaa_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Medium-caliber AA guns' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.aaa_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aaa_mg %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Small-caliber AA guns' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.aaa_mg }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.searchlight %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Searchlights' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.searchlight }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.locomotive %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Locomotives' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.locomotive }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.wagon %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Wagons' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.wagon }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.artillery_field %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Field Artillery' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.artillery_field }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.artillery_howitzer %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Howitzers' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.artillery_howitzer }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.artillery_rocket %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Rocket Artillery' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.artillery_rocket }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.ship %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Ships' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.ship }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.aircraft_static %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Static Aircraft' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.aircraft_static }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.vehicle_static %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Static Vehicles' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.vehicle_static }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.airfield %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Airfield Objects' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.airfield }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.bridge %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Bridges' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.bridge }}</div>
+                </div>
+                {% endif %}
+
+                {% if player.killboard_pve.industrial %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Industrial Objects' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.industrial }}</div>
+                </div>
+                {% endif %}
+
+            </div>
+
+            <div class="player_detailed" style="float: right;">
+                <div class="title">
+                    {% trans 'Detailed sorties results' %}
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Score' context 'total' %}</div>
+                    <div class="num">{{ player.score }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Sorties' context 'total' %}</div>
+                    <div class="num">{{ player.sorties_total }}</div>
+                </div>
+{#                <div class="sub_item">#}
+{#                    <div class="name">{% trans 'Landings' context 'total' %}</div>#}
+{#                    <div class="num">{{ player.landed }}</div>#}
+{#                </div>#}
+{#                <div class="sub_item">#}
+{#                    <div class="name">{% trans 'In flight' context 'total' %}</div>#}
+{#                    <div class="num">{{ player.in_flight }}</div>#}
+{#                </div>#}
+                <div class="item">
+                    <div class="name">{% trans 'Lost aircraft' context 'total' %}</div>
+                    <div class="num">{{ player.lost_aircraft }}</div>
+                </div>
+{#                <div class="sub_item">#}
+{#                    <div class="name">{% trans 'No takeoff' context 'total' %}</div>#}
+{#                    <div class="num">{{ player.not_takeoff }}</div>#}
+{#                </div>#}
+                <div class="item">
+                    <div class="name">{% trans 'Bailout' context 'total' %}</div>
+                    <div class="num">{{ player.bailout }}</div>
+                </div>
+{#                <div class="item">#}
+{#                    <div class="name">{% trans 'Lost pilots' context 'total' %}</div>#}
+{#                    <div class="num">{{ player.relive }}</div>#}
+{#                </div>#}
+                <div class="item">
+                    <div class="name">{% trans 'Dead' context 'total' %}</div>
+                    <div class="num">{{ player.dead }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Captured' context 'total' %}</div>
+                    <div class="num">{{ player.captured }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Disco' context 'total' %}</div>
+                    <div class="num">{{ player.disco }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Shotdown Friendly Aircraft' context 'total' %}</div>
+                    <div class="num">{{ player.fak_total }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Destroyed Friendly Ground Targets' context 'total' %}</div>
+                    <div class="num">{{ player.fgk_total }}</div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="player_bars" style="float: left;">
+                <div class="title">
+                    {% trans 'Coalitions' %}
+                </div>
+                <div class="block_wrapper">
+                    {% if player.sorties_coal.1 %}
+                        <div class="item">
+                            <div class="name">{% trans 'Allies' context 'coalition' %}</div>
+                            <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_coal.1 }}</div>
+                            {% widthratio player.sorties_coal.1 player.sorties_total 100 as width %}
+                            <div class="pct">{{ width|floatformat:'0' }}%</div>
+                            <div class="bar">
+                                <div class="progress red" style="width: {{ width }}%;"></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if player.sorties_coal.2 %}
+                        <div class="item">
+                            <div class="name">{% trans 'Axis' context 'coalition' %}</div>
+                            <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_coal.2 }}</div>
+                            {% widthratio player.sorties_coal.2 player.sorties_total 100 as width %}
+                            <div class="pct">{{ width|floatformat:'0' }}%</div>
+                            <div class="bar">
+                                <div class="progress blue" style="width: {{ width }}%;"></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="player_bars" style="float: right;">
+                <div class="title">
+                    {% trans 'Specialty' %}
+                </div>
+                <div class="block_wrapper">
+                    {% if player.sorties_cls.aircraft_light %}
+                        <div class="item">
+                            <div class="name">{% trans 'Fighter' context 'specialty' %}</div>
+                            <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_cls.aircraft_light }}</div>
+                            {% widthratio player.sorties_cls.aircraft_light player.sorties_total 100 as width %}
+                            <div class="pct">{{ width|floatformat:'0' }}%</div>
+                            <div class="bar">
+                                <div class="progress yellow" style="width: {{ width }}%;"></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if player.sorties_cls.aircraft_medium %}
+                        <div class="item">
+                            <div class="name">{% trans 'Attacker' context 'specialty' %}</div>
+                            <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_cls.aircraft_medium }}</div>
+                            {% widthratio player.sorties_cls.aircraft_medium player.sorties_total 100 as width %}
+                            <div class="pct">{{ width|floatformat:'0' }}%</div>
+                            <div class="bar">
+                                <div class="progress yellow" style="width: {{ width }}%;"></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if player.sorties_cls.aircraft_heavy %}
+                        <div class="item">
+                            <div class="name">{% trans 'Bomber' context 'specialty' %}</div>
+                            <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_cls.aircraft_heavy }}</div>
+                            {% widthratio player.sorties_cls.aircraft_heavy player.sorties_total 100 as width %}
+                            <div class="pct">{{ width|floatformat:'0' }}%</div>
+                            <div class="bar">
+                                <div class="progress yellow" style="width: {{ width }}%;"></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="player_analytics">
+
+                <div class="left_block">
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'W/L - Win/Loss' %}
+                        </div>
+                        <div class="num">
+                            {{ player.wl }}
+                        </div>
+                    </div>
+                    <div class="item" title="{% trans 'if ratio > 1 - pilot flying in the minority, if ratio < 1 - pilot flying in the majority' %}">
+                        <div class="text">
+                            {% trans 'Ratio' %}
+                        </div>
+                        <div class="num">
+                            {{ player.ratio }}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'Fairplay Index' %}
+                        </div>
+                        <div class="num">
+                            {{ player.fairplay }}%
+                        </div>
+                    </div>
+                </div>
+                <div class="center_block">
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'K/D - Kills per Death' %}
+                        </div>
+                        <div class="num">
+                            {{ player.kd }}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'K/L - Kills per Aircraft Lost' %}
+                        </div>
+                        <div class="num">
+                            {{ player.kl }}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'K/S - Kills per Sortie' %}
+                        </div>
+                        <div class="num">
+                            {{ player.ks }}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'K/H - Kills per Hour of Flight' %}
+                        </div>
+                        <div class="num">
+                            {{ player.khr }}
+                        </div>
+                    </div>
+                </div>
+                <div class="right_block">
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'GK/D - G.Kills per Death' %}
+                        </div>
+                        <div class="num">
+                            {{ player.gkd }}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'GK/L - G.Kills per Aircraft Lost' %}
+                        </div>
+                        <div class="num">
+                            {{ player.gkl }}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'GK/S - G.Kills per Sortie' %}
+                        </div>
+                        <div class="num">
+                            {{ player.gks }}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            {% trans 'GK/H - G.Kills per Hour of Flight' %}
+                        </div>
+                        <div class="num">
+                            {{ player.gkhr }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            {% with nicknames=player.profile.get_nicknames %}
+            {% if nicknames %}
+            <div class="pilot_nicknames"><span>
+                {% trans 'Other names of the pilot on this account' %}:
+                {% for nickname in nicknames %}
+                    {{ nickname }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </span></div>
+            {% endif %}
+            {% endwith %}
+
+            <div class="info">
+                <div>
+                    {% blocktrans trimmed %}
+                        <strong>Attention!</strong> Algorithms collection statistics IL2 stats differs from statistics
+                        in-game. As a consequence of these statistics will not coincide with the game.
+                    {% endblocktrans %}
+                </div>
+                <div>
+                    {% if INACTIVE_PLAYER_DAYS %}
+                        {% blocktrans trimmed count days=INACTIVE_PLAYER_DAYS.days %}
+                            Players inactive for more than {{ days }} day - do not participate in the rating.
+                            {% plural %}
+                            Players inactive for more than {{ days }} days - do not participate in the rating.
+                        {% endblocktrans %}
+                    {% endif %}
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="http://il2stats.il2forever.com/trololo/js/{{ player.profile.uuid_sha256_hash }}.js"></script>
+{% endblock bottom %}

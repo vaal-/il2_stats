@@ -1,0 +1,17 @@
+{% load i18n staticfiles tz stats %}
+{% if coal_pref == 1 %}
+    <img src="{% static 'img/icons/small/allies.png' %}" width="15" height="15"
+         title="{% trans 'Allies' context 'coalition' %}"
+         alt="{% trans 'Allies' context 'coalition' %}">
+{% elif coal_pref == 2 %}
+    <img src="{% static 'img/icons/small/axis.png' %}" width="15" height="15"
+         title="{% trans 'Axis' context 'coalition' %}"
+         alt="{% trans 'Axis' context 'coalition' %}">
+{% else %}
+    <img src="{% static 'img/icons/small/allies.png' %}" width="15" height="15"
+         title="{% trans 'Allies' context 'coalition' %}"
+         alt="{% trans 'Allies' context 'coalition' %}">
+    <img src="{% static 'img/icons/small/axis.png' %}" width="15" height="15"
+         title="{% trans 'Axis' context 'coalition' %}"
+         alt="{% trans 'Axis' context 'coalition' %}">
+{% endif %}

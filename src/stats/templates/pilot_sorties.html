@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Sorties' context 'pilot_sorties' %} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/pilot_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Sorties' context 'pilot_sorties' %}
+                    <div class="content_title_sm">{% trans 'pilot' context 'pilot_sorties' %}: {{ player.nickname }}</div>
+                </div>
+            </div>
+            {% if sorties %}
+                <div class="content_table">
+                    <div class="head_row">
+                        <div class="cell" style="width: 40px;"></div>
+                        <div class="cell" style="width: 100px;"></div>
+                        <div class="cell" style="width: 80px;"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/ft.png' %}" width="18" height="18"
+                                 alt="{% trans 'Duration (hours:minutes)' %}"
+                                 title="{% trans 'Duration (hours:minutes)' %}">
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/ak.png' %}" width="18" height="18"
+                                 alt="{% trans 'Air Kills' %}" title="{% trans 'Air Kills' %}">
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/gk.png' %}" width="18" height="18"
+                                 alt="{% trans 'Ground Kills' %}" title="{% trans 'Ground Kills' %}">
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/score.png' %}" width="18" height="18"
+                                 alt="{% trans 'Score' %}" title="{% trans 'Score' %}">
+                        </div>
+                    </div>
+                    {% for sortie in sorties %}
+                        {# TODO get_sortie_url #}
+                        <a class="row" href="{% url 'stats:pilot_sortie' sortie.id %}?tour={{ player.tour_id }}">
+                            <div class="cell img">
+                                {% if sortie.is_disco %}
+                                    <img src="{% static 'img/sortie/status/disco.png' %}" width="20" height="20"
+                                         title="{% trans 'Disconnect' context 'sortie_status' %}"
+                                         alt="{% trans 'Disconnect' context 'sortie_status' %}">
+                                {% elif sortie.is_dead %}
+                                    <img src="{% static 'img/sortie/status/dead.png' %}" width="20" height="20"
+                                         title="{% trans 'Dead' context 'sortie_status' %}"
+                                         alt="{% trans 'Dead' context 'sortie_status' %}">
+                                {% elif sortie.is_captured %}
+                                    <img src="{% static 'img/sortie/status/captured.png' %}" width="20" height="20"
+                                         title="{% trans 'Captured' context 'sortie_status' %}"
+                                         alt="{% trans 'Captured' context 'sortie_status' %}">
+                                {% elif sortie.is_bailout %}
+                                    <img src="{% static 'img/sortie/status/bailout.png' %}" width="20" height="20"
+                                         title="{% trans 'Bailout' context 'sortie_status' %}"
+                                         alt="{% trans 'Bailout' context 'sortie_status' %}">
+                                {% elif sortie.is_lost_aircraft %}
+                                    <img src="{% static 'img/sortie/status/crashed.png' %}" width="20" height="20"
+                                         title="{% trans 'Aircraft lost' context 'sortie_status' %}"
+                                         alt="{% trans 'Aircraft lost' context 'sortie_status' %}">
+                                {% elif sortie.is_in_flight %}
+                                    <img src="{% static 'img/sortie/status/in_flight.png' %}" width="20" height="20"
+                                         title="{% trans 'In Flight' context 'sortie_status' %}"
+                                         alt="{% trans 'In Flight' context 'sortie_status' %}">
+                                {% elif sortie.is_landed %}
+                                    <img src="{% static 'img/sortie/status/landed.png' %}" width="20" height="20"
+                                         title="{% trans 'Landed' context 'sortie_status' %}"
+                                         alt="{% trans 'Landed' context 'sortie_status' %}">
+                                {% endif %}
+                            </div>
+                            <div class="cell">{{ sortie.date_start|date:'d.m.Y' }}</div>
+                            <div class="cell">{{ sortie.date_start|time:'H:i' }}</div>
+                            <div class="cell">{{ sortie.aircraft.name }}</div>
+                            <div class="cell">{{ sortie.mission.name }}</div>
+                            <div class="cell">{{ sortie.flight_time|seconds_to_time }}</div>
+                            <div class="cell">{{ sortie.ak_total }}</div>
+                            <div class="cell">{{ sortie.gk_total }}</div>
+                            <div class="cell">{{ sortie.score }}</div>
+                        </a>
+                    {% endfor %}
+                </div>
+
+                {% if sorties.paginator.num_pages > 1 %}
+                    <div class="paginator3000" id="paginator"></div>
+                {% endif %}
+            {% endif %}
+
+{#            <div class="info">#}
+{##}
+{#            </div>#}
+        </div>
+    </section>
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="{% static 'js/table.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            var paginator = new Paginator('paginator', {{ sorties.paginator.num_pages }}, 15, {{ sorties.number }}, uri_paginator);
+        });
+    </script>
+{% endblock bottom %}

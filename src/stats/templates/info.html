@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{{ chunk.title }} / {{ block.super }}{% endblock title %}
+
+{% block content %}
+    <section id="server_info">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {{ chunk.title }}
+                </div>
+            </div>
+            {{ chunk.content|safe }}
+        </div>
+    </section>
+{% endblock content %}

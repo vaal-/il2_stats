@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Join Squad' %} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/profile_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="my_squad">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Join Squad' %}
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+            {% if squad_member %}
+                {% trans 'Are you already a member of the squad' %} {{ squad_member.squad.name }}.
+            {% elif bad_join_url %}
+                {% trans 'You use the wrong url for joining the squad. Request the correct url from the admin of your squad.' %}
+            {% else %}
+                {% trans 'Confirm that you want to join the squad' %} {{ squad.name }}.
+            {% endif %}
+            </div>
+
+            {% if not squad_member and not bad_join_url %}
+            <div style="margin-top: 20px;">
+                <form class="form" action="" method="post" onsubmit="this.submit.disabled=true;">
+                    {% csrf_token %}
+                    <div class="buttons">
+                        <button type="submit" class="green">{% trans 'Confirm' context 'action' %}</button>
+                    </div>
+                </form>
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+{% endblock content %}

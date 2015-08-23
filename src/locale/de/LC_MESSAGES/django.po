@@ -1,0 +1,3653 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-25 23:19+0300\n"
+"PO-Revision-Date: 2016-07-18 19:11+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: .\chunks\models.py:6
+msgid "key"
+msgstr "Schlüssel"
+
+#: .\chunks\models.py:7
+msgid "A unique name for this chunk of content"
+msgstr "Eindeutiger Name für diesen Inhalt"
+
+#: .\chunks\models.py:8 .\stats\models.py:223 .\stats\models.py:1167
+msgid "title"
+msgstr "Titel"
+
+#: .\chunks\models.py:9
+msgid "content"
+msgstr "Inhalt"
+
+#: .\core\settings.py:152
+msgid "English"
+msgstr "English"
+
+#: .\core\settings.py:153
+msgid "Russian"
+msgstr "Russisch"
+
+#: .\core\settings.py:154
+msgid "German"
+msgstr "Deutsch"
+
+#: .\core\settings.py:155
+msgid "French"
+msgstr "Französisch"
+
+#: .\squads\apps.py:7
+msgid "Squads"
+msgstr "Squads"
+
+#: .\squads\forms.py:27 .\squads\forms.py:47
+msgid "A squad with that tag already exists."
+msgstr "Ein Squad mit diesem Namen existiert bereits."
+
+#: .\squads\forms.py:32
+msgid "Remove logo"
+msgstr "Logo löschen"
+
+#: .\squads\forms.py:54
+#, python-format
+msgid "Maximum file size: %(size)s"
+msgstr "Maximale Dateigröße: %(size)s"
+
+#: .\squads\forms.py:56
+#, python-format
+msgid "Allowed file formats are: %(formats)s"
+msgstr "Erlaubte Dateiformate sind: %(formats)s"
+
+#: .\squads\models.py:21
+msgid "squad name"
+msgstr "Squad Name"
+
+#: .\squads\models.py:22
+msgid "squad tag"
+msgstr "Squad Abkürzung (tag)"
+
+#: .\squads\models.py:23
+msgid "website"
+msgstr "Webseite"
+
+#: .\squads\models.py:24
+msgid "about squad"
+msgstr "über Squads"
+
+#: .\squads\models.py:25
+msgid "squad logo"
+msgstr "Squad Logo"
+
+#: .\squads\models.py:32
+msgid "squad"
+msgstr "Squad"
+
+#: .\squads\models.py:33
+msgid "squads"
+msgstr "Squads"
+
+#: .\squads\models.py:57 .\users\models.py:53
+msgid "date joined"
+msgstr "Beitrittsdatum"
+
+#: .\squads\models.py:61
+msgid "squad member"
+msgstr "Squad Mitglied"
+
+#: .\squads\models.py:62
+#, fuzzy
+#| msgid "squad member"
+msgid "squads members"
+msgstr "Squad Mitglied"
+
+#: .\squads\templates\squads\join.html:3
+#: .\squads\templates\squads\join.html:14
+msgid "Join Squad"
+msgstr "Squad beitreten"
+
+#: .\squads\templates\squads\join.html:19
+msgid "Are you already a member of the squad"
+msgstr "Du bist bereits in einem Squad"
+
+#: .\squads\templates\squads\join.html:21
+msgid ""
+"You use the wrong url for joining the squad. Request the correct url from "
+"the admin of your squad."
+msgstr ""
+"Du verwendest die falsche URL um den Squad beizutreten. Fordere die korrekte "
+"URL vom Admin deines Squads."
+
+#: .\squads\templates\squads\join.html:23
+msgid "Confirm that you want to join the squad"
+msgstr "Bestätige, dass Du dem Squad beitreten möchtest"
+
+#: .\squads\templates\squads\join.html:32
+#: .\squads\templates\squads\leave.html:27
+#: .\squads\templates\squads\remove.html:24
+#: .\users\templates\users\registration_confirm_repeat.html:38
+msgctxt "action"
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: .\squads\templates\squads\leave.html:3
+#: .\squads\templates\squads\leave.html:14
+#: .\squads\templates\squads\main_with_squad.html:78
+msgid "Leave Squad"
+msgstr "Verlasse das Squad"
+
+#: .\squads\templates\squads\leave.html:19
+msgid ""
+"Now you are the sole admin of the squad. Therefore, if you leave the squad - "
+"the squad will be removed."
+msgstr ""
+"Du bist jetzt der einzige Administrator des Squads. Wenn Du das Squad "
+"verlässt, wird dieses gelöscht."
+
+#: .\squads\templates\squads\leave.html:21
+msgid "Confirm that you want to leave the squad."
+msgstr "Bestätige, dass Du das Squad verlassen möchtest."
+
+#: .\squads\templates\squads\main_with_squad.html:3
+#: .\squads\templates\squads\main_with_squad.html:12
+#: .\squads\templates\squads\main_wo_squad.html:3
+#: .\squads\templates\squads\main_wo_squad.html:14
+#: .\stats\templates\inline\profile_tabs.html:5
+msgid "My Squad"
+msgstr "Mein Squad"
+
+#: .\squads\templates\squads\main_with_squad.html:18
+#, fuzzy
+#| msgid "profile"
+msgid "Edit profile"
+msgstr "Editiere Profil"
+
+#: .\squads\templates\squads\main_with_squad.html:21
+msgid "Squad members"
+msgstr "Squad Mitglieder"
+
+#: .\squads\templates\squads\main_with_squad.html:34
+msgid "Give admin role"
+msgstr "Vergebe Administrator Rechte"
+
+#: .\squads\templates\squads\main_with_squad.html:37
+msgid "Remove admin role"
+msgstr "Entferne Administrator Rechte"
+
+#: .\squads\templates\squads\main_with_squad.html:40
+msgid "Kick from squad"
+msgstr "Aus Squad entfernen"
+
+#: .\squads\templates\squads\main_with_squad.html:60
+msgid "Join squad url"
+msgstr "Squad beitritts URL"
+
+#: .\squads\templates\squads\main_with_squad.html:62
+msgid "With this url any registered user can join your squad."
+msgstr "Mit dieser URL, kann jeder registrierte dem Squad beitreten."
+
+#: .\squads\templates\squads\main_with_squad.html:70
+msgid "Generate new url"
+msgstr "Generiere neue URL"
+
+#: .\squads\templates\squads\main_with_squad.html:80
+#: .\squads\templates\squads\remove.html:3
+#: .\squads\templates\squads\remove.html:14
+msgid "Remove Squad"
+msgstr "Entferne Squad"
+
+#: .\squads\templates\squads\main_wo_squad.html:18
+msgid ""
+"You are not a member of a any squad. In order to join the squad, you need "
+"\"join url\", which can be obtained from the admin of the squad."
+msgstr ""
+"Du bist kein Mitglied  eines Squds. Um ein Squad beizutreten, brauchst Du "
+"eine \"join url\", die Du von einem Squad Administrator bekommst."
+
+#: .\squads\templates\squads\main_wo_squad.html:25
+#: .\squads\templates\squads\registration.html:37
+msgctxt "action"
+msgid "Registration Squad"
+msgstr "Squad registrieren"
+
+#: .\squads\templates\squads\profile.html:3
+#: .\squads\templates\squads\profile.html:14
+#, fuzzy
+#| msgid "profile"
+msgid "Squad Profile"
+msgstr "Squad Profil"
+
+#: .\squads\templates\squads\profile.html:45
+#, fuzzy
+#| msgid "active"
+msgctxt "action"
+msgid "Save"
+msgstr "Speichern"
+
+#: .\squads\templates\squads\registration.html:3
+#: .\squads\templates\squads\registration.html:10
+msgid "Squad registration"
+msgstr "Squad Registrierung"
+
+#: .\squads\templates\squads\remove.html:18
+msgid ""
+"Your squad will be removed, this action is irreversible. The old statistics "
+"will be available for viewing. Confirm the remove of the squad."
+msgstr ""
+"Dein Squad wird entfernt, diese Aktion ist unumkehrbar. Die alten "
+"Statistiken werden weiterhin angezeigt. Bestätige um das Squad zu entfernen. "
+
+#: .\squads\views.py:61
+msgid "Your squad has been successfully registered."
+msgstr "Ihr Squad wurde erfolgreich registriert."
+
+#: .\squads\views.py:76
+msgid "Squad profile successfully changed."
+msgstr "Squad Profil erfolgreich geändert"
+
+#: .\stats\aircraft_mods.py:20 .\stats\aircraft_mods.py:25
+#: .\stats\aircraft_mods.py:29 .\stats\aircraft_mods.py:37
+#: .\stats\aircraft_mods.py:59
+#, fuzzy
+#| msgctxt "total"
+#| msgid "Armored vehicles"
+msgctxt "aircraft_mod"
+msgid "Armoured Wind Screen"
+msgstr "Gepanzertes Fahrzeug"
+
+#: .\stats\aircraft_mods.py:21 .\stats\aircraft_mods.py:26
+#: .\stats\aircraft_mods.py:30 .\stats\aircraft_mods.py:34
+#, fuzzy
+#| msgid "Remove admin role"
+msgctxt "aircraft_mod"
+msgid "Removed Headrest"
+msgstr "Entferne Administrator Rechte"
+
+#: .\stats\aircraft_mods.py:22 .\stats\aircraft_mods.py:38
+#: .\stats\aircraft_mods.py:52
+msgctxt "aircraft_mod"
+msgid "Additional armour plates"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:33
+msgctxt "aircraft_mod"
+msgid "Armoured Glass Head Rest"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:41
+msgctxt "aircraft_mod"
+msgid "Belly 20mm gun turret"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:42
+msgctxt "aircraft_mod"
+msgid "Nose 20mm gun turret"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:45
+msgctxt "aircraft_mod"
+msgid "One-piece Windscreen"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:48
+msgctxt "aircraft_mod"
+msgid "Rear turret"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:51
+#, fuzzy
+#| msgid "Score"
+msgctxt "aircraft_mod"
+msgid "Siren"
+msgstr "Punktestand"
+
+#: .\stats\aircraft_mods.py:55 .\stats\aircraft_mods.py:68
+msgctxt "aircraft_mod"
+msgid "RPK-10"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:56
+msgctxt "aircraft_mod"
+msgid "Flat Windscreen"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:62
+msgctxt "aircraft_mod"
+msgid "RPK-2"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:65
+msgctxt "aircraft_mod"
+msgid "Blister turret"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:16
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], MG FF/M AP/HE [120]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:17
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], MG FF/M AP/HE [120], SC 50 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:18
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], MG FF/M AP/HE [120], SC 250 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:19 .\stats\aircraft_payloads.py:40
+#: .\stats\aircraft_payloads.py:60 .\stats\aircraft_payloads.py:79
+#: .\stats\aircraft_payloads.py:103 .\stats\aircraft_payloads.py:124
+#: .\stats\aircraft_payloads.py:152 .\stats\aircraft_payloads.py:189
+#: .\stats\aircraft_payloads.py:276 .\stats\aircraft_payloads.py:378
+#: .\stats\aircraft_payloads.py:393 .\stats\aircraft_payloads.py:407
+#: .\stats\aircraft_payloads.py:434 .\stats\aircraft_payloads.py:458
+#: .\stats\aircraft_payloads.py:522 .\stats\aircraft_payloads.py:542
+#: .\stats\aircraft_payloads.py:581 .\stats\aircraft_payloads.py:632
+#: .\stats\aircraft_payloads.py:658 .\stats\aircraft_payloads.py:684
+#: .\stats\aircraft_payloads.py:710
+msgctxt "aircraft_payload"
+msgid "Empty"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:20 .\stats\aircraft_payloads.py:21
+#: .\stats\aircraft_payloads.py:22 .\stats\aircraft_payloads.py:23
+#: .\stats\aircraft_payloads.py:24 .\stats\aircraft_payloads.py:25
+#: .\stats\aircraft_payloads.py:26 .\stats\aircraft_payloads.py:27
+#: .\stats\aircraft_payloads.py:28 .\stats\aircraft_payloads.py:29
+#: .\stats\aircraft_payloads.py:30 .\stats\aircraft_payloads.py:31
+#: .\stats\aircraft_payloads.py:41 .\stats\aircraft_payloads.py:42
+#: .\stats\aircraft_payloads.py:43 .\stats\aircraft_payloads.py:44
+#: .\stats\aircraft_payloads.py:45 .\stats\aircraft_payloads.py:46
+#: .\stats\aircraft_payloads.py:47 .\stats\aircraft_payloads.py:48
+#: .\stats\aircraft_payloads.py:49 .\stats\aircraft_payloads.py:50
+#: .\stats\aircraft_payloads.py:51 .\stats\aircraft_payloads.py:52
+#: .\stats\aircraft_payloads.py:61 .\stats\aircraft_payloads.py:62
+#: .\stats\aircraft_payloads.py:63 .\stats\aircraft_payloads.py:64
+#: .\stats\aircraft_payloads.py:65 .\stats\aircraft_payloads.py:66
+#: .\stats\aircraft_payloads.py:67 .\stats\aircraft_payloads.py:68
+#: .\stats\aircraft_payloads.py:69 .\stats\aircraft_payloads.py:70
+#: .\stats\aircraft_payloads.py:71 .\stats\aircraft_payloads.py:72
+#: .\stats\aircraft_payloads.py:80 .\stats\aircraft_payloads.py:81
+#: .\stats\aircraft_payloads.py:82 .\stats\aircraft_payloads.py:83
+#: .\stats\aircraft_payloads.py:84 .\stats\aircraft_payloads.py:85
+#: .\stats\aircraft_payloads.py:86 .\stats\aircraft_payloads.py:87
+#: .\stats\aircraft_payloads.py:88 .\stats\aircraft_payloads.py:89
+#: .\stats\aircraft_payloads.py:90 .\stats\aircraft_payloads.py:91
+#: .\stats\aircraft_payloads.py:104 .\stats\aircraft_payloads.py:105
+#: .\stats\aircraft_payloads.py:106 .\stats\aircraft_payloads.py:107
+#: .\stats\aircraft_payloads.py:108 .\stats\aircraft_payloads.py:109
+#: .\stats\aircraft_payloads.py:110 .\stats\aircraft_payloads.py:111
+#: .\stats\aircraft_payloads.py:112 .\stats\aircraft_payloads.py:113
+#: .\stats\aircraft_payloads.py:114 .\stats\aircraft_payloads.py:115
+#: .\stats\aircraft_payloads.py:125 .\stats\aircraft_payloads.py:126
+#: .\stats\aircraft_payloads.py:127 .\stats\aircraft_payloads.py:128
+#: .\stats\aircraft_payloads.py:129 .\stats\aircraft_payloads.py:130
+#: .\stats\aircraft_payloads.py:131 .\stats\aircraft_payloads.py:132
+#: .\stats\aircraft_payloads.py:133 .\stats\aircraft_payloads.py:134
+#: .\stats\aircraft_payloads.py:135 .\stats\aircraft_payloads.py:136
+#: .\stats\aircraft_payloads.py:153 .\stats\aircraft_payloads.py:154
+#: .\stats\aircraft_payloads.py:155 .\stats\aircraft_payloads.py:156
+#: .\stats\aircraft_payloads.py:157 .\stats\aircraft_payloads.py:158
+#: .\stats\aircraft_payloads.py:159 .\stats\aircraft_payloads.py:160
+#: .\stats\aircraft_payloads.py:161 .\stats\aircraft_payloads.py:162
+#: .\stats\aircraft_payloads.py:163 .\stats\aircraft_payloads.py:164
+#: .\stats\aircraft_payloads.py:190 .\stats\aircraft_payloads.py:191
+#: .\stats\aircraft_payloads.py:192 .\stats\aircraft_payloads.py:193
+#: .\stats\aircraft_payloads.py:194 .\stats\aircraft_payloads.py:195
+#: .\stats\aircraft_payloads.py:196 .\stats\aircraft_payloads.py:197
+#: .\stats\aircraft_payloads.py:198 .\stats\aircraft_payloads.py:199
+#: .\stats\aircraft_payloads.py:200 .\stats\aircraft_payloads.py:201
+#: .\stats\aircraft_payloads.py:277 .\stats\aircraft_payloads.py:278
+#: .\stats\aircraft_payloads.py:279 .\stats\aircraft_payloads.py:280
+#: .\stats\aircraft_payloads.py:281 .\stats\aircraft_payloads.py:282
+#: .\stats\aircraft_payloads.py:283 .\stats\aircraft_payloads.py:284
+#: .\stats\aircraft_payloads.py:285 .\stats\aircraft_payloads.py:286
+#: .\stats\aircraft_payloads.py:287 .\stats\aircraft_payloads.py:288
+#: .\stats\aircraft_payloads.py:379 .\stats\aircraft_payloads.py:380
+#: .\stats\aircraft_payloads.py:381 .\stats\aircraft_payloads.py:382
+#: .\stats\aircraft_payloads.py:383 .\stats\aircraft_payloads.py:384
+#: .\stats\aircraft_payloads.py:385 .\stats\aircraft_payloads.py:386
+#: .\stats\aircraft_payloads.py:387 .\stats\aircraft_payloads.py:388
+#: .\stats\aircraft_payloads.py:389 .\stats\aircraft_payloads.py:390
+#: .\stats\aircraft_payloads.py:408 .\stats\aircraft_payloads.py:409
+#: .\stats\aircraft_payloads.py:410 .\stats\aircraft_payloads.py:411
+#: .\stats\aircraft_payloads.py:412 .\stats\aircraft_payloads.py:413
+#: .\stats\aircraft_payloads.py:414 .\stats\aircraft_payloads.py:415
+#: .\stats\aircraft_payloads.py:416 .\stats\aircraft_payloads.py:417
+#: .\stats\aircraft_payloads.py:418 .\stats\aircraft_payloads.py:419
+#: .\stats\aircraft_payloads.py:435 .\stats\aircraft_payloads.py:436
+#: .\stats\aircraft_payloads.py:437 .\stats\aircraft_payloads.py:438
+#: .\stats\aircraft_payloads.py:439 .\stats\aircraft_payloads.py:440
+#: .\stats\aircraft_payloads.py:441 .\stats\aircraft_payloads.py:442
+#: .\stats\aircraft_payloads.py:443 .\stats\aircraft_payloads.py:444
+#: .\stats\aircraft_payloads.py:445 .\stats\aircraft_payloads.py:446
+#: .\stats\aircraft_payloads.py:459 .\stats\aircraft_payloads.py:460
+#: .\stats\aircraft_payloads.py:461 .\stats\aircraft_payloads.py:462
+#: .\stats\aircraft_payloads.py:463 .\stats\aircraft_payloads.py:464
+#: .\stats\aircraft_payloads.py:465 .\stats\aircraft_payloads.py:466
+#: .\stats\aircraft_payloads.py:467 .\stats\aircraft_payloads.py:468
+#: .\stats\aircraft_payloads.py:469 .\stats\aircraft_payloads.py:470
+#: .\stats\aircraft_payloads.py:523 .\stats\aircraft_payloads.py:524
+#: .\stats\aircraft_payloads.py:525 .\stats\aircraft_payloads.py:526
+#: .\stats\aircraft_payloads.py:527 .\stats\aircraft_payloads.py:528
+#: .\stats\aircraft_payloads.py:529 .\stats\aircraft_payloads.py:530
+#: .\stats\aircraft_payloads.py:531 .\stats\aircraft_payloads.py:532
+#: .\stats\aircraft_payloads.py:533 .\stats\aircraft_payloads.py:534
+#: .\stats\aircraft_payloads.py:543 .\stats\aircraft_payloads.py:544
+#: .\stats\aircraft_payloads.py:545 .\stats\aircraft_payloads.py:546
+#: .\stats\aircraft_payloads.py:547 .\stats\aircraft_payloads.py:548
+#: .\stats\aircraft_payloads.py:549 .\stats\aircraft_payloads.py:550
+#: .\stats\aircraft_payloads.py:551 .\stats\aircraft_payloads.py:552
+#: .\stats\aircraft_payloads.py:553 .\stats\aircraft_payloads.py:554
+#: .\stats\aircraft_payloads.py:582 .\stats\aircraft_payloads.py:583
+#: .\stats\aircraft_payloads.py:584 .\stats\aircraft_payloads.py:585
+#: .\stats\aircraft_payloads.py:586 .\stats\aircraft_payloads.py:587
+#: .\stats\aircraft_payloads.py:588 .\stats\aircraft_payloads.py:589
+#: .\stats\aircraft_payloads.py:590 .\stats\aircraft_payloads.py:591
+#: .\stats\aircraft_payloads.py:592 .\stats\aircraft_payloads.py:593
+#: .\stats\aircraft_payloads.py:633 .\stats\aircraft_payloads.py:634
+#: .\stats\aircraft_payloads.py:635 .\stats\aircraft_payloads.py:636
+#: .\stats\aircraft_payloads.py:637 .\stats\aircraft_payloads.py:638
+#: .\stats\aircraft_payloads.py:639 .\stats\aircraft_payloads.py:640
+#: .\stats\aircraft_payloads.py:641 .\stats\aircraft_payloads.py:642
+#: .\stats\aircraft_payloads.py:643 .\stats\aircraft_payloads.py:644
+#: .\stats\aircraft_payloads.py:659 .\stats\aircraft_payloads.py:660
+#: .\stats\aircraft_payloads.py:661 .\stats\aircraft_payloads.py:662
+#: .\stats\aircraft_payloads.py:663 .\stats\aircraft_payloads.py:664
+#: .\stats\aircraft_payloads.py:665 .\stats\aircraft_payloads.py:666
+#: .\stats\aircraft_payloads.py:667 .\stats\aircraft_payloads.py:668
+#: .\stats\aircraft_payloads.py:669 .\stats\aircraft_payloads.py:670
+#: .\stats\aircraft_payloads.py:685 .\stats\aircraft_payloads.py:686
+#: .\stats\aircraft_payloads.py:687 .\stats\aircraft_payloads.py:688
+#: .\stats\aircraft_payloads.py:689 .\stats\aircraft_payloads.py:690
+#: .\stats\aircraft_payloads.py:691 .\stats\aircraft_payloads.py:692
+#: .\stats\aircraft_payloads.py:693 .\stats\aircraft_payloads.py:694
+#: .\stats\aircraft_payloads.py:695 .\stats\aircraft_payloads.py:696
+#: .\stats\aircraft_payloads.py:711 .\stats\aircraft_payloads.py:712
+#: .\stats\aircraft_payloads.py:713 .\stats\aircraft_payloads.py:714
+#: .\stats\aircraft_payloads.py:715 .\stats\aircraft_payloads.py:716
+#: .\stats\aircraft_payloads.py:717 .\stats\aircraft_payloads.py:718
+#: .\stats\aircraft_payloads.py:719 .\stats\aircraft_payloads.py:720
+#: .\stats\aircraft_payloads.py:721 .\stats\aircraft_payloads.py:722
+msgctxt "aircraft_payload"
+msgid "Smoke generator"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:34
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/15 AP/HE [200]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:35
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/15 AP/HE [200], SC 50 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:36
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/15 AP/HE [200], SC 250 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:37 .\stats\aircraft_payloads.py:55
+#: .\stats\aircraft_payloads.py:75
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/20 AP/HE [200]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:38 .\stats\aircraft_payloads.py:56
+#: .\stats\aircraft_payloads.py:76
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/20 AP/HE [200], SC 50 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:39 .\stats\aircraft_payloads.py:57
+#: .\stats\aircraft_payloads.py:77
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/20 AP/HE [200], SC 250 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:58
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/20 AP/HE [200], MG 151/15 AP/HE [270]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:59 .\stats\aircraft_payloads.py:78
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1000], MG 151/20 AP/HE [200], MG 151/20 AP/HE [270]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:94
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:95
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 250 [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:96
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 250 [2], SC 50 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:97
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 50 [12]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:98
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 500 [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:99
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 500 [2], SC 50 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:100
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 1000 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:101
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 1000 [1], SC 250 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:102
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [4000], MG FF/M AP/HE [360], SC 1000 [1], SC 50 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:118
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1800], MG 151/20 AP/HE [500]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:119
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1800], MG 151/20 AP/HE [500], SC 50 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:120
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1800], MG 151/20 AP/HE [500], SC 250 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:121
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1800], MG 151/20 AP/HE [500], SC 500 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:122
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1800], MG 151/20 AP/HE [500], MG FF/M AP/HE [120]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:123
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [1800], MG 151/20 AP/HE [500], MG FF/M AP/HE [180]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:139
+msgctxt "aircraft_payload"
+msgid "SC 50 [16]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:140 .\stats\aircraft_payloads.py:422
+msgctxt "aircraft_payload"
+msgid "SC 250 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:141
+msgctxt "aircraft_payload"
+msgid "SC 500 [1], SC 50 [16]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:142
+msgctxt "aircraft_payload"
+msgid "SC 500 [1], SC 250 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:143 .\stats\aircraft_payloads.py:431
+msgctxt "aircraft_payload"
+msgid "SC 1000 [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:144
+msgctxt "aircraft_payload"
+msgid "SC 1000 [1], SC 50 [16]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:145
+msgctxt "aircraft_payload"
+msgid "SC 1000 [1], SC 250 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:146
+msgctxt "aircraft_payload"
+msgid "SC 1800 [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:147
+msgctxt "aircraft_payload"
+msgid "SC 1800 [1], SC 50 [16]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:148
+msgctxt "aircraft_payload"
+msgid "SC 1800 [1], SC 250 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:149 .\stats\aircraft_payloads.py:433
+msgctxt "aircraft_payload"
+msgid "SC 1800 [1], SC 1000 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:150
+msgctxt "aircraft_payload"
+msgid "SC 2500 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:151
+msgctxt "aircraft_payload"
+msgid "SC 2500 [1], SC 1000 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:167
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShKAS AP [1800]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:168
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShKAS AP [1800], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:169
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShKAS AP [1800], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:170 .\stats\aircraft_payloads.py:171
+#: .\stats\aircraft_payloads.py:172 .\stats\aircraft_payloads.py:173
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShKAS AP [1800], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:174 .\stats\aircraft_payloads.py:175
+#: .\stats\aircraft_payloads.py:176 .\stats\aircraft_payloads.py:177
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShKAS AP [1800], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:178
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShVAK AP/HE [180]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:179
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShVAK AP/HE [180], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:180
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShVAK AP/HE [180], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:181 .\stats\aircraft_payloads.py:182
+#: .\stats\aircraft_payloads.py:183 .\stats\aircraft_payloads.py:184
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShVAK AP/HE [180], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:185 .\stats\aircraft_payloads.py:186
+#: .\stats\aircraft_payloads.py:187 .\stats\aircraft_payloads.py:188
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1000], ShVAK AP/HE [180], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:204
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:205 .\stats\aircraft_payloads.py:292
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:206 .\stats\aircraft_payloads.py:293
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:207 .\stats\aircraft_payloads.py:294
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:208
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:209 .\stats\aircraft_payloads.py:299
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:210 .\stats\aircraft_payloads.py:300
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:211 .\stats\aircraft_payloads.py:301
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:212
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:213 .\stats\aircraft_payloads.py:306
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:214 .\stats\aircraft_payloads.py:307
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:215 .\stats\aircraft_payloads.py:308
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:216
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-100M [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:217 .\stats\aircraft_payloads.py:310
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-100M [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:218 .\stats\aircraft_payloads.py:311
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-100M [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:219 .\stats\aircraft_payloads.py:312
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-100M [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:220
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-100M [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:221 .\stats\aircraft_payloads.py:317
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-100M [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:222 .\stats\aircraft_payloads.py:318
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-100M [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:223 .\stats\aircraft_payloads.py:319
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-100M [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:224
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:225 .\stats\aircraft_payloads.py:321
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:226 .\stats\aircraft_payloads.py:322
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:227 .\stats\aircraft_payloads.py:323
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:228
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:229 .\stats\aircraft_payloads.py:328
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:230 .\stats\aircraft_payloads.py:329
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:231 .\stats\aircraft_payloads.py:330
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:232
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [6], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:233 .\stats\aircraft_payloads.py:332
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [6], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:234 .\stats\aircraft_payloads.py:333
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [6], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:235 .\stats\aircraft_payloads.py:334
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [6], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:236
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-100M [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:237 .\stats\aircraft_payloads.py:336
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-100M [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:238 .\stats\aircraft_payloads.py:337
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-100M [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:239 .\stats\aircraft_payloads.py:338
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-100M [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:240
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-250sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:241 .\stats\aircraft_payloads.py:340
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-250sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:242 .\stats\aircraft_payloads.py:341
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-250sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:243 .\stats\aircraft_payloads.py:342
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-250sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:244
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:245 .\stats\aircraft_payloads.py:344
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:246 .\stats\aircraft_payloads.py:345
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:247 .\stats\aircraft_payloads.py:346
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:248
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:249 .\stats\aircraft_payloads.py:351
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:250 .\stats\aircraft_payloads.py:352
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:251 .\stats\aircraft_payloads.py:353
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:252
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [6], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:253 .\stats\aircraft_payloads.py:355
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [6], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:254 .\stats\aircraft_payloads.py:356
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [6], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:255 .\stats\aircraft_payloads.py:357
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [6], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:256
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-100M [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:257 .\stats\aircraft_payloads.py:359
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-100M [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:258 .\stats\aircraft_payloads.py:360
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-100M [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:259 .\stats\aircraft_payloads.py:361
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-100M [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:260
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:261 .\stats\aircraft_payloads.py:363
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:262 .\stats\aircraft_payloads.py:364
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:263 .\stats\aircraft_payloads.py:365
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:264
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [4], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:265 .\stats\aircraft_payloads.py:367
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [4], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:266 .\stats\aircraft_payloads.py:368
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [4], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:267 .\stats\aircraft_payloads.py:369
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [4], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:268
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-50sv [6], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:269 .\stats\aircraft_payloads.py:371
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-50sv [6], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:270 .\stats\aircraft_payloads.py:372
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-50sv [6], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:271 .\stats\aircraft_payloads.py:373
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-50sv [6], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:272
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [420], FAB-100M [2], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:273 .\stats\aircraft_payloads.py:375
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP/HE [300], FAB-100M [2], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:274 .\stats\aircraft_payloads.py:376
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 AP [300], FAB-100M [2], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:275 .\stats\aircraft_payloads.py:377
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], VYa-23 HE [300], FAB-100M [2], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:291
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:295
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP/HE [80]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:296
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP [80]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:297
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 HE [80]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:298
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:302
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP/HE [80], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:303
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP [80], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:304
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 HE [80], FAB-50sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:305
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:309
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-100M [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:313
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP/HE [80], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:314
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP [80], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:315
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 HE [80], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:316
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-100M [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:320
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:324
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP/HE [80], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:325
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP [80], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:326
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 HE [80], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:327
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:331
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [6], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:335
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-100M [4], ROS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:339
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-250sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:343
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:347
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP/HE [80], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:348
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 AP [80], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:349
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], Sh-37 HE [80], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:350
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:354
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [6], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:358
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-100M [4], RBS-82 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:362
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:366
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [4], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:370
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-50sv [6], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:374
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [500], FAB-100M [2], ROFS-132 [8]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:396
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:397
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], SC 250 [1], SD 70 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:398
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], SC 500 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:399
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], SC 500 [1], SD 70 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:400
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], SC 500 [1], SC 250 [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:401
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], SC 250 [3]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:402
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], SC 1000 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:403
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], SC 1800 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:404
+msgctxt "aircraft_payload"
+msgid "MG 17 AP [2000], WB 81 B AP [3000]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:405
+msgctxt "aircraft_payload"
+msgid "BK 37 AP [24]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:406
+msgctxt "aircraft_payload"
+msgid "BK 37 HE [24]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:423
+msgctxt "aircraft_payload"
+msgid "SC 250 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:424
+msgctxt "aircraft_payload"
+msgid "SC 50 [28]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:425
+msgctxt "aircraft_payload"
+msgid "SC 50 [44]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:426
+msgctxt "aircraft_payload"
+msgid "SC 250 [4], SC 50 [28]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:427
+msgctxt "aircraft_payload"
+msgid "SC 250 [6], SC 50 [28]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:428
+msgctxt "aircraft_payload"
+msgid "SC 500 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:429
+msgctxt "aircraft_payload"
+msgid "SC 500 [4], SC 250 [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:430
+msgctxt "aircraft_payload"
+msgid "SC 500 [4], SC 50 [18]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:432
+msgctxt "aircraft_payload"
+msgid "SC 1800 [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:449
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [340]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:450
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [340], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:451
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [340], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:452
+msgctxt "aircraft_payload"
+msgid "ShVAK AP [340]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:453
+msgctxt "aircraft_payload"
+msgid "ShVAK AP [340], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:454
+msgctxt "aircraft_payload"
+msgid "ShVAK AP [340], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:455
+msgctxt "aircraft_payload"
+msgid "ShVAK HE [340]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:456
+msgctxt "aircraft_payload"
+msgid "ShVAK HE [340], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:457
+msgctxt "aircraft_payload"
+msgid "ShVAK HE [340], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:473
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], ShVAK AP/HE [160]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:474
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP/HE [90]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:475
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP [90]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:476
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 HE [90]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:477
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP/HE [20]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:478
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP [20]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:479
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 HE [20]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:480
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], ShVAK AP/HE [160], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:481
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP/HE [90], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:482
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP [90], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:483
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 HE [90], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:484
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP/HE [20], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:485
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP [20], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:486
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 HE [20], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:487
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], ShVAK AP/HE [160], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:488
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP/HE [90], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:489
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP [90], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:490
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 HE [90], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:491
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP/HE [20], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:492
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP [20], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:493
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 HE [20], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:494 .\stats\aircraft_payloads.py:501
+#: .\stats\aircraft_payloads.py:508 .\stats\aircraft_payloads.py:515
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], ShVAK AP/HE [160], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:495 .\stats\aircraft_payloads.py:502
+#: .\stats\aircraft_payloads.py:509 .\stats\aircraft_payloads.py:516
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP/HE [90], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:496 .\stats\aircraft_payloads.py:503
+#: .\stats\aircraft_payloads.py:510 .\stats\aircraft_payloads.py:517
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 AP [90], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:497 .\stats\aircraft_payloads.py:504
+#: .\stats\aircraft_payloads.py:511 .\stats\aircraft_payloads.py:518
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], VYa-23 HE [90], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:498 .\stats\aircraft_payloads.py:505
+#: .\stats\aircraft_payloads.py:512 .\stats\aircraft_payloads.py:519
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP/HE [20], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:499 .\stats\aircraft_payloads.py:506
+#: .\stats\aircraft_payloads.py:513 .\stats\aircraft_payloads.py:520
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 AP [20], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:500 .\stats\aircraft_payloads.py:507
+#: .\stats\aircraft_payloads.py:514 .\stats\aircraft_payloads.py:521
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [140], Sh-37 HE [20], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:537
+msgctxt "aircraft_payload"
+msgid "Breda 12.7 AP/HE [800]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:538
+msgctxt "aircraft_payload"
+msgid "Breda 12.7 AP/HE [800], 50-T [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:539
+msgctxt "aircraft_payload"
+msgid "Breda 12.7 AP/HE [800], 100-T [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:540
+msgctxt "aircraft_payload"
+msgid "Breda 12.7 AP/HE [800], Breda 7.7 AP [1000]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:541
+msgctxt "aircraft_payload"
+msgid "Breda 12.7 AP/HE [800], MG 151/20 AP/HE [270]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:557
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], BS AP/HE [300]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:558 .\stats\aircraft_payloads.py:559
+#: .\stats\aircraft_payloads.py:560 .\stats\aircraft_payloads.py:561
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], BS AP/HE [300], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:562
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], BS AP/HE [300], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:563
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], BS AP/HE [300], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:564
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], BS AP/HE [300], BK AP/HE [290]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:565
+msgctxt "aircraft_payload"
+msgid "BS AP/HE [700]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:566 .\stats\aircraft_payloads.py:567
+#: .\stats\aircraft_payloads.py:568 .\stats\aircraft_payloads.py:569
+msgctxt "aircraft_payload"
+msgid "BS AP/HE [700], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:570
+msgctxt "aircraft_payload"
+msgid "BS AP/HE [700], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:571
+msgctxt "aircraft_payload"
+msgid "BS AP/HE [700], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:572
+msgctxt "aircraft_payload"
+msgid "BS AP/HE [700], BK AP/HE [290]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:573
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [300]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:574 .\stats\aircraft_payloads.py:575
+#: .\stats\aircraft_payloads.py:576 .\stats\aircraft_payloads.py:577
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [300], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:578
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [300], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:579
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [300], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:580
+msgctxt "aircraft_payload"
+msgid "ShVAK AP/HE [300], BK AP/HE [290]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:596
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1410]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:597
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1686]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:598
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [940]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:599
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [2460]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:600
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1410], FAB-250sv [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:601
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1686], FAB-250sv [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:602
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [940], FAB-250sv [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:603
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [2460], FAB-250sv [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:604
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1410], FAB-500M [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:605
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1686], FAB-500M [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:606
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [940], FAB-500M [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:607
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [2460], FAB-500M [1]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:608 .\stats\aircraft_payloads.py:612
+#: .\stats\aircraft_payloads.py:616 .\stats\aircraft_payloads.py:620
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1410], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:609 .\stats\aircraft_payloads.py:613
+#: .\stats\aircraft_payloads.py:617 .\stats\aircraft_payloads.py:621
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1686], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:610 .\stats\aircraft_payloads.py:614
+#: .\stats\aircraft_payloads.py:618 .\stats\aircraft_payloads.py:622
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [940], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:611 .\stats\aircraft_payloads.py:615
+#: .\stats\aircraft_payloads.py:619 .\stats\aircraft_payloads.py:623
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [2460], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:624
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1410], FAB-250sv [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:625
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1686], FAB-250sv [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:626
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [940], FAB-250sv [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:627
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [2460], FAB-250sv [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:628
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1410], FAB-500M [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:629
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [1686], FAB-500M [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:630
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [940], FAB-500M [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:631
+msgctxt "aircraft_payload"
+msgid "M2.50 AP [2460], FAB-500M [1], ROS-82 [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:647 .\stats\aircraft_payloads.py:673
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:648 .\stats\aircraft_payloads.py:674
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-100M [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:649 .\stats\aircraft_payloads.py:675
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-100M [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:650 .\stats\aircraft_payloads.py:676
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-250sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:651 .\stats\aircraft_payloads.py:677
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-100M [10]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:652 .\stats\aircraft_payloads.py:678
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-250sv [4]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:653 .\stats\aircraft_payloads.py:679
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-500M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:654 .\stats\aircraft_payloads.py:680
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], ROS-132 [10]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:655 .\stats\aircraft_payloads.py:681
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-100M [4], ROS-132 [10]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:656 .\stats\aircraft_payloads.py:682
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-100M [6], ROS-132 [10]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:657 .\stats\aircraft_payloads.py:683
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [450], UB AP/HE [150], FAB-250sv [2], ROS-132 [10]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:699
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [120]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:700 .\stats\aircraft_payloads.py:701
+#: .\stats\aircraft_payloads.py:702 .\stats\aircraft_payloads.py:703
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [120], ROS-82 [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:704 .\stats\aircraft_payloads.py:705
+#: .\stats\aircraft_payloads.py:706 .\stats\aircraft_payloads.py:707
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [120], ROS-82 [6]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:708
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [120], FAB-50sv [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:709
+msgctxt "aircraft_payload"
+msgid "ShKAS AP [1500], ShVAK AP/HE [120], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\apps.py:7
+msgid "Stats"
+msgstr "Statistik"
+
+#: .\stats\models.py:54
+msgid "score"
+msgstr "Punktestand"
+
+#: .\stats\models.py:55
+msgid "scoring"
+msgstr "Punkte"
+
+#: .\stats\models.py:128
+msgid "object"
+msgstr "Objekt"
+
+#: .\stats\models.py:129
+msgid "objects"
+msgstr "Objekte"
+
+#: .\stats\models.py:142 .\stats\models.py:257 .\stats\models.py:1201
+#: .\stats\templates\inline\table_coal_pref_icon.html:4
+#: .\stats\templates\inline\table_coal_pref_icon.html:5
+#: .\stats\templates\inline\table_coal_pref_icon.html:12
+#: .\stats\templates\inline\table_coal_pref_icon.html:13
+#: .\stats\templates\main.html:189 .\stats\templates\missions.html:58
+#: .\stats\templates\missions.html:59 .\stats\templates\pilot.html:22
+#: .\stats\templates\pilot.html:23 .\stats\templates\pilot.html:407
+#: .\stats\templates\squad.html:19 .\stats\templates\squad.html:20
+#: .\stats\templates\squad.html:364 .\stats\templates\squad_pilots.html:19
+#: .\stats\templates\squad_pilots.html:20 .\stats\templates\tour.html:189
+msgctxt "coalition"
+msgid "Allies"
+msgstr "Alliierte"
+
+#: .\stats\models.py:143 .\stats\models.py:258 .\stats\models.py:1202
+#: .\stats\templates\inline\table_coal_pref_icon.html:8
+#: .\stats\templates\inline\table_coal_pref_icon.html:9
+#: .\stats\templates\inline\table_coal_pref_icon.html:15
+#: .\stats\templates\inline\table_coal_pref_icon.html:16
+#: .\stats\templates\main.html:193 .\stats\templates\missions.html:62
+#: .\stats\templates\missions.html:63 .\stats\templates\pilot.html:27
+#: .\stats\templates\pilot.html:28 .\stats\templates\pilot.html:418
+#: .\stats\templates\squad.html:23 .\stats\templates\squad.html:24
+#: .\stats\templates\squad.html:375 .\stats\templates\squad_pilots.html:23
+#: .\stats\templates\squad_pilots.html:24 .\stats\templates\tour.html:193
+msgctxt "coalition"
+msgid "Axis"
+msgstr "Achsenmächte"
+
+#: .\stats\models.py:150
+msgid "tour"
+msgstr "Luftschlacht"
+
+#: .\stats\models.py:151
+msgid "tours"
+msgstr "Luftschlachten"
+
+#: .\stats\models.py:268
+msgctxt "preset"
+msgid "custom"
+msgstr "Benutzerdefiniert"
+
+#: .\stats\models.py:269
+msgctxt "preset"
+msgid "normal"
+msgstr "Normal"
+
+#: .\stats\models.py:270
+msgctxt "preset"
+msgid "expert"
+msgstr "Experte"
+
+#: .\stats\models.py:323
+msgid "profile"
+msgstr "Profil"
+
+#: .\stats\models.py:324
+msgid "profiles"
+msgstr "Profile"
+
+#: .\stats\models.py:370 .\stats\models.py:555 .\stats\models.py:792
+#: .\stats\models.py:798 .\stats\models.py:1015
+msgid "neutral"
+msgstr "Neutral"
+
+#: .\stats\models.py:371 .\stats\models.py:556 .\stats\models.py:793
+#: .\stats\models.py:1016
+msgid "Allies"
+msgstr "Alliierte"
+
+#: .\stats\models.py:372 .\stats\models.py:557 .\stats\models.py:794
+#: .\stats\models.py:1017
+msgid "Axis"
+msgstr "Achsenmächte"
+
+#: .\stats\models.py:799
+msgid "USSR"
+msgstr "Russland"
+
+#: .\stats\models.py:800
+msgid "Germany"
+msgstr "Deutschland"
+
+#: .\stats\models.py:816
+msgctxt "sortie_status"
+msgid "landed"
+msgstr "Gelandet"
+
+#: .\stats\models.py:817
+msgctxt "sortie_status"
+msgid "ditched"
+msgstr "Bauchlandung"
+
+#: .\stats\models.py:818
+msgctxt "sortie_status"
+msgid "crashed"
+msgstr "Bruchlandung"
+
+#: .\stats\models.py:819
+msgctxt "sortie_status"
+msgid "shotdown"
+msgstr "Abgeschossen"
+
+#: .\stats\models.py:820
+msgctxt "sortie_status"
+msgid "not takeoff"
+msgstr "Nicht gestartet"
+
+#: .\stats\models.py:821
+msgctxt "sortie_status"
+msgid "in flight"
+msgstr "Im Flug"
+
+#: .\stats\models.py:827
+msgctxt "aircraft_status"
+msgid "unharmed"
+msgstr "Unbeschädigt"
+
+#: .\stats\models.py:828
+msgctxt "aircraft_status"
+msgid "damaged"
+msgstr "Beschädigt"
+
+#: .\stats\models.py:829
+msgctxt "aircraft_status"
+msgid "destroyed"
+msgstr "Abgeschossen"
+
+#: .\stats\models.py:835
+msgctxt "sortie_status"
+msgid "healthy"
+msgstr "Unverletzt"
+
+#: .\stats\models.py:836
+msgctxt "sortie_status"
+msgid "wounded"
+msgstr "Verwundet"
+
+#: .\stats\models.py:837
+msgctxt "sortie_status"
+msgid "dead"
+msgstr "Tod"
+
+#: .\stats\models.py:1162
+#, fuzzy
+#| msgid "tour"
+msgctxt "award_type"
+msgid "tour"
+msgstr "Luftschlacht"
+
+#: .\stats\models.py:1163
+#, fuzzy
+#| msgid "Mission"
+msgctxt "award_type"
+msgid "mission"
+msgstr "Missionen"
+
+#: .\stats\models.py:1164
+#, fuzzy
+#| msgctxt "sortie_page_title"
+#| msgid "Sortie"
+msgctxt "award_type"
+msgid "sortie"
+msgstr "Einsätze"
+
+#: .\stats\models.py:1166
+msgid "function name"
+msgstr ""
+
+#: .\stats\models.py:1168
+msgid "type"
+msgstr ""
+
+#: .\stats\models.py:1169
+msgid "description"
+msgstr ""
+
+#: .\stats\models.py:1170
+#, fuzzy
+#| msgctxt "sortie_log"
+#| msgid "damage"
+msgid "image"
+msgstr "beschädigt"
+
+#: .\stats\models.py:1171
+msgid "Image size should be 180x180"
+msgstr ""
+
+#: .\stats\models.py:1175
+msgid "award"
+msgstr ""
+
+#: .\stats\models.py:1176
+msgid "awards"
+msgstr ""
+
+#: .\stats\models.py:1190
+msgid "reward"
+msgstr ""
+
+#: .\stats\models.py:1191
+msgid "rewards"
+msgstr ""
+
+#: .\stats\models.py:1210
+msgid "player online"
+msgstr ""
+
+#: .\stats\models.py:1211
+msgid "players online"
+msgstr ""
+
+#: .\stats\sortie_log.py:8
+msgctxt "sortie_log"
+msgid "damaged"
+msgstr "Beschädigt"
+
+#: .\stats\sortie_log.py:9
+msgctxt "sortie_log"
+msgid "wounded"
+msgstr "Verwundet"
+
+#: .\stats\sortie_log.py:10
+msgctxt "sortie_log"
+msgid "KILLED"
+msgstr "Gestorben"
+
+#: .\stats\sortie_log.py:11
+msgctxt "sortie_log"
+msgid "DESTROYED"
+msgstr "Zerstört"
+
+#: .\stats\sortie_log.py:12
+msgctxt "sortie_log"
+msgid "SHOTDOWN"
+msgstr "Luftsieg"
+
+#: .\stats\sortie_log.py:16
+msgctxt "sortie_log"
+msgid "was damaged"
+msgstr "Wurde beschädigt"
+
+#: .\stats\sortie_log.py:17
+msgctxt "sortie_log"
+msgid "was wounded"
+msgstr "Wurde verwundet"
+
+#: .\stats\sortie_log.py:18
+msgctxt "sortie_log"
+msgid "WAS KILLED"
+msgstr "Wurde getötet"
+
+#: .\stats\sortie_log.py:19
+msgctxt "sortie_log"
+msgid "WAS DESTROYED"
+msgstr "Wurde zerstört"
+
+#: .\stats\sortie_log.py:20
+msgctxt "sortie_log"
+msgid "WAS SHOTDOWN"
+msgstr "Wurde abgeschossen"
+
+#: .\stats\sortie_log.py:26
+msgctxt "sortie_log"
+msgid "respawn"
+msgstr "Respawn"
+
+#: .\stats\sortie_log.py:27
+msgctxt "sortie_log"
+msgid "end"
+msgstr "Einsatzende"
+
+#: .\stats\sortie_log.py:28
+msgctxt "sortie_log"
+msgid "takeoff"
+msgstr "Gestartet"
+
+#: .\stats\sortie_log.py:29
+msgctxt "sortie_log"
+msgid "landed"
+msgstr "Gelandet"
+
+#: .\stats\sortie_log.py:30
+msgctxt "sortie_log"
+msgid "crashed"
+msgstr "Bruchlandung"
+
+#: .\stats\sortie_log.py:31
+msgctxt "sortie_log"
+msgid "ditched"
+msgstr "Bauchlandung"
+
+#: .\stats\sortie_log.py:32
+msgctxt "sortie_log"
+msgid "BAILOUT"
+msgstr "Ausgestiegen"
+
+#: .\stats\sortie_log.py:35
+msgctxt "sortie_log"
+msgid "damage"
+msgstr "beschädigt"
+
+#: .\stats\sortie_log.py:36
+msgctxt "sortie_log"
+msgid "wound"
+msgstr "verwundet"
+
+#: .\stats\sortie_log.py:37
+msgctxt "sortie_log"
+msgid "DIED"
+msgstr "GESTORBEN"
+
+#: .\stats\sortie_log.py:38 .\stats\sortie_log.py:39
+msgctxt "sortie_log"
+msgid "DISABLED"
+msgstr "ARBEITSUNFÄHIG"
+
+#: .\stats\templates\base.html:47
+msgid ""
+"For full functionality of this site it is necessary to enable JavaScript. "
+"Here are the <a href=\"//www.enable-javascript.com\" target=\"_blank\"> "
+"instructions how to enable JavaScript in your web browser</a>."
+msgstr "Für diese Seite muss JavaScript aktiviert werden"
+
+#: .\stats\templates\base.html:62
+msgid "Admin panel"
+msgstr ""
+
+#: .\stats\templates\base.html:64 .\stats\templates\inline\profile_tabs.html:4
+#: .\users\templates\users\profile.html:3
+#: .\users\templates\users\profile.html:14
+#, fuzzy
+#| msgid "profile"
+msgid "Profile"
+msgstr "Profil"
+
+#: .\stats\templates\base.html:69
+msgid "Logout"
+msgstr ""
+
+#: .\stats\templates\base.html:71 .\users\templates\users\registration.html:38
+msgctxt "action"
+msgid "Registration"
+msgstr ""
+
+#: .\stats\templates\base.html:72 .\users\templates\users\login.html:38
+msgctxt "action"
+msgid "Login"
+msgstr ""
+
+#: .\stats\templates\base.html:81
+msgctxt "nav_menu"
+msgid "Main"
+msgstr "Startseite"
+
+#: .\stats\templates\base.html:83
+#, fuzzy
+#| msgid "Pilot Rankings"
+msgid "Rankings"
+msgstr "Rangliste"
+
+#: .\stats\templates\base.html:85 .\stats\templates\mission.html:36
+#: .\stats\templates\pilots.html:3 .\stats\templates\pilots.html:13
+msgid "Pilot Rankings"
+msgstr "Rangliste"
+
+#: .\stats\templates\base.html:86 .\stats\templates\squads.html:3
+#: .\stats\templates\squads.html:13
+#, fuzzy
+#| msgid "Pilot Rankings"
+msgid "Squad Rankings"
+msgstr "Rangliste"
+
+#: .\stats\templates\base.html:89 .\stats\templates\missions.html:3
+#: .\stats\templates\missions.html:14
+msgid "Missions"
+msgstr "Missionen"
+
+#: .\stats\templates\base.html:91
+msgid "Forum"
+msgstr "Forum"
+
+#: .\stats\templates\base.html:94
+msgid "Info"
+msgstr ""
+
+#: .\stats\templates\base.html:97 .\stats\templates\main.html:201
+#: .\stats\templates\tour.html:3
+msgid "Tour"
+msgstr "Luftschlacht"
+
+#: .\stats\templates\faq.html:12
+msgid "Frequently Asked Questions"
+msgstr "FAQ"
+
+#: .\stats\templates\inline\pilot_tabs.html:4
+msgctxt "pilot_nav_tab"
+msgid "Pilot Statistics"
+msgstr "Pilotenstatistik"
+
+#: .\stats\templates\inline\pilot_tabs.html:5
+msgctxt "pilot_nav_tab"
+msgid "Sorties"
+msgstr "Einsätze"
+
+#: .\stats\templates\inline\pilot_tabs.html:6
+msgctxt "pilot_nav_tab"
+msgid "Awards"
+msgstr ""
+
+#: .\stats\templates\inline\sortie_tabs.html:5
+msgctxt "sortie_nav_tab"
+msgid "Sortie Statistics"
+msgstr "Einsatzstatistik"
+
+#: .\stats\templates\inline\sortie_tabs.html:7
+msgctxt "sortie_nav_tab"
+msgid "Sortie Log"
+msgstr "Einsatz Logbuch"
+
+#: .\stats\templates\inline\squad_tabs.html:4
+#, fuzzy
+#| msgctxt "sortie_nav_tab"
+#| msgid "Sortie Statistics"
+msgctxt "squad_nav_tab"
+msgid "Squad Statistics"
+msgstr "Einsatzstatistik"
+
+#: .\stats\templates\inline\squad_tabs.html:5
+#, fuzzy
+#| msgid "Top Pilots"
+msgctxt "squad_nav_tab"
+msgid "Pilots"
+msgstr "Beste Piloten"
+
+#: .\stats\templates\main.html:9
+msgid "Current Tour"
+msgstr "Aktuelle Luftschlacht"
+
+#: .\stats\templates\main.html:16 .\stats\templates\tour.html:19
+msgctxt "tour"
+msgid "Dominance"
+msgstr "Dominanz"
+
+#: .\stats\templates\main.html:19 .\stats\templates\tour.html:22
+msgctxt "tour"
+msgid "Won missions"
+msgstr "Gewonnene Missionen"
+
+#: .\stats\templates\main.html:38 .\stats\templates\tour.html:40
+msgctxt "tour"
+msgid "Shotdown aircraft"
+msgstr "Luftsieg"
+
+#: .\stats\templates\main.html:56 .\stats\templates\tour.html:58
+msgctxt "tour"
+msgid "Ground targets destroyed"
+msgstr "Zerstörte Bodenziele"
+
+#: .\stats\templates\main.html:74 .\stats\templates\tour.html:76
+msgctxt "tour"
+msgid "Score"
+msgstr "Punktestand"
+
+#: .\stats\templates\main.html:93 .\stats\templates\tour.html:94
+msgctxt "tour"
+msgid "Flight time (hours)"
+msgstr "Flugzeit (in Stunden)"
+
+#: .\stats\templates\main.html:118
+msgctxt "tour_top"
+msgid "Best pilots in the last 24 hours"
+msgstr "Beste Piloten der letzten 24 Stunden"
+
+#: .\stats\templates\main.html:123 .\stats\templates\main.html:149
+#: .\stats\templates\tour.html:123 .\stats\templates\tour.html:149
+msgctxt "tour_top"
+msgid "pilot nickname"
+msgstr "Pilotenname"
+
+#: .\stats\templates\main.html:125 .\stats\templates\main.html:151
+#: .\stats\templates\tour.html:151
+msgctxt "tour_top"
+msgid "score"
+msgstr "Punktestand"
+
+#: .\stats\templates\main.html:144
+msgctxt "tour_top"
+msgid "Best live pilots"
+msgstr "Beste überlebende Piloten"
+
+#: .\stats\templates\main.html:172 .\stats\templates\tour.html:172
+msgid "Overall Pilot Rankings"
+msgstr "Gesamtübersicht der Rangliste"
+
+#: .\stats\templates\main.html:184 .\stats\templates\pilot.html:402
+#: .\stats\templates\squad.html:359 .\stats\templates\tour.html:184
+msgid "Coalitions"
+msgstr "Koalition"
+
+#: .\stats\templates\main.html:208
+#, python-format
+msgid "%(days)s day left"
+msgid_plural "%(days)s days left"
+msgstr[0] "%(days)s Tag verbleibt"
+msgstr[1] "%(days)s Tage verbleiben"
+
+#: .\stats\templates\main.html:223 .\stats\templates\tour.html:201
+msgid "Active players"
+msgstr "Aktive Piloten"
+
+#: .\stats\templates\main.html:226 .\stats\templates\tour.html:204
+msgctxt "tour_active"
+msgid "total"
+msgstr "Gesamt"
+
+#: .\stats\templates\main.html:259 .\stats\templates\online.html:3
+msgid "Online"
+msgstr ""
+
+#: .\stats\templates\main.html:262
+#, fuzzy
+#| msgctxt "pilot_sorties"
+#| msgid "pilot"
+msgctxt "online"
+msgid "pilots"
+msgstr "Pilot"
+
+#: .\stats\templates\main.html:284
+msgid "List of pilots online"
+msgstr ""
+
+#: .\stats\templates\main.html:299
+msgid "Summary previous tour"
+msgstr "Zusammenfassung früheren Luftschlachen"
+
+#: .\stats\templates\main.html:309
+msgctxt "tour_winner"
+msgid "winner"
+msgstr "Sieger"
+
+#: .\stats\templates\main.html:316
+msgid "Top Pilots"
+msgstr "Beste Piloten"
+
+#: .\stats\templates\mission.html:3 .\stats\templates\mission.html:13
+msgid "Mission"
+msgstr "Missionen"
+
+#: .\stats\templates\mission.html:18
+#, fuzzy
+#| msgctxt "sortie"
+#| msgid "Start Time"
+msgctxt "mission"
+msgid "Start Date"
+msgstr "Startzeit"
+
+#: .\stats\templates\mission.html:19
+#, fuzzy
+#| msgctxt "sortie"
+#| msgid "End Time"
+msgctxt "mission"
+msgid "End Date"
+msgstr "Endzeit"
+
+#: .\stats\templates\mission.html:20
+#, fuzzy
+#| msgctxt "tour_top"
+#| msgid "rating"
+msgctxt "mission"
+msgid "Duration"
+msgstr "Bewertung"
+
+#: .\stats\templates\mission.html:21 .\stats\templates\missions.html:32
+msgid "Pilots total"
+msgstr "Piloten insgesamt"
+
+#: .\stats\templates\mission.html:24 .\stats\templates\missions.html:38
+msgid "Winning coalition"
+msgstr "Siegreiche Koalition"
+
+#: .\stats\templates\mission.html:26 .\stats\templates\missions.html:69
+#: .\stats\templates\missions.html:70
+msgid "Performed the task of the mission"
+msgstr "Einsatzziel in der Mission erfüllt"
+
+#: .\stats\templates\mission.html:28 .\stats\templates\missions.html:74
+#: .\stats\templates\missions.html:75
+msgid "Won by score"
+msgstr "Gewonnen nach Punkten"
+
+#: .\stats\templates\mission.html:49 .\stats\templates\pilot_sorties.html:33
+#: .\stats\templates\pilots.html:33 .\stats\templates\squad_pilots.html:56
+#: .\stats\templates\squads.html:38
+msgid "Air Kills"
+msgstr "Luftsiege"
+
+#: .\stats\templates\mission.html:55 .\stats\templates\pilot_sorties.html:37
+#: .\stats\templates\pilots.html:45 .\stats\templates\squad_pilots.html:68
+#: .\stats\templates\squads.html:44
+msgid "Ground Kills"
+msgstr "Bodenziele"
+
+#: .\stats\templates\mission.html:61 .\stats\templates\mission.html:62
+#: .\stats\templates\pilots.html:51 .\stats\templates\squad_pilots.html:74
+#: .\stats\templates\squads.html:50
+msgid "Flight Time (hours:minutes)"
+msgstr "Flugzeit (Stunden:Minuten)"
+
+#: .\stats\templates\mission.html:80 .\stats\templates\pilot.html:98
+#: .\stats\templates\pilot_sortie.html:631 .\stats\templates\pilots.html:69
+#: .\stats\templates\squad_pilots.html:92
+msgid "Gunnery Accuracy"
+msgstr "Trefferquote"
+
+#: .\stats\templates\mission.html:86 .\stats\templates\pilot_sorties.html:41
+msgid "Score"
+msgstr "Punktestand"
+
+#: .\stats\templates\mission.html:109 .\stats\templates\pilot.html:587
+#: .\stats\templates\pilots.html:104
+msgid ""
+"<strong>Attention!</strong> Algorithms collection statistics IL2 stats "
+"differs from statistics in-game. As a consequence of these statistics will "
+"not coincide with the game."
+msgstr ""
+"<strong>Achtung!</strong> Diese Statistik berücksichtigt nur Flüge auf "
+"diesem Server. Die Bewertungen erfolgen unabhänig der Anzeigen im Spiel"
+
+#: .\stats\templates\mission.html:124 .\stats\templates\pilots.html:127
+#: .\stats\templates\squads.html:107
+msgid "on the number of air kills"
+msgstr "Anzahl der Luftsiege"
+
+#: .\stats\templates\mission.html:125 .\stats\templates\pilots.html:128
+msgid "on the current streak of kills"
+msgstr "Anzahl der Luftsiege in Folge"
+
+#: .\stats\templates\mission.html:126 .\stats\templates\pilots.html:129
+#: .\stats\templates\squads.html:108
+msgid "on the number of ground kills"
+msgstr "Anzahl der Bodenziele"
+
+#: .\stats\templates\mission.html:127 .\stats\templates\pilots.html:130
+#: .\stats\templates\squads.html:109
+msgid "on the flight time (hours:minutes)"
+msgstr "Flugzeit (Stunden:Minuten)"
+
+#: .\stats\templates\mission.html:128 .\stats\templates\pilots.html:131
+#: .\stats\templates\squads.html:110
+msgid "on the average number of kill per one death (K/D)"
+msgstr "Luftsiege pro Tod"
+
+#: .\stats\templates\mission.html:129 .\stats\templates\pilots.html:132
+#: .\stats\templates\squads.html:111
+msgid "on the average number of kill per one hour (K/Hr)"
+msgstr "Luftseige pro Stunde"
+
+#: .\stats\templates\mission.html:130 .\stats\templates\pilots.html:133
+msgid "on the accuracy"
+msgstr "Trefferquote"
+
+#: .\stats\templates\mission.html:132
+msgid "on the score"
+msgstr "Auswertung"
+
+#: .\stats\templates\missions.html:19
+#, fuzzy
+#| msgid "Permissions"
+msgid "Search mission"
+msgstr "Berechtigung"
+
+#: .\stats\templates\missions.html:44 .\stats\templates\missions.html:45
+#: .\stats\templates\pilot_sorties.html:28
+#: .\stats\templates\pilot_sorties.html:29
+msgid "Duration (hours:minutes)"
+msgstr "Dauer (Stunden:Minuten)"
+
+#: .\stats\templates\online.html:13
+#, fuzzy
+#| msgid "on the score"
+msgid "Pilots on the server"
+msgstr "Auswertung"
+
+#: .\stats\templates\online.html:21
+#, fuzzy
+#| msgid "Allies"
+msgid "Allied Pilots"
+msgstr "Alliierte"
+
+#: .\stats\templates\online.html:36
+#, fuzzy
+#| msgid "Top Pilots"
+msgid "Axis Pilots"
+msgstr "Beste Piloten"
+
+#: .\stats\templates\pilot.html:23 .\stats\templates\pilot.html:28
+#: .\stats\templates\pilot.html:33 .\stats\templates\squad.html:20
+#: .\stats\templates\squad.html:24 .\stats\templates\squad.html:28
+#: .\stats\templates\squad_pilots.html:20
+#: .\stats\templates\squad_pilots.html:24
+#: .\stats\templates\squad_pilots.html:28
+msgid "favorite coalition"
+msgstr "Favorisierte Koalition"
+
+#: .\stats\templates\pilot.html:32 .\stats\templates\pilot.html:33
+#: .\stats\templates\squad.html:27 .\stats\templates\squad.html:28
+#: .\stats\templates\squad_pilots.html:27
+#: .\stats\templates\squad_pilots.html:28
+msgctxt "favorite_coalition"
+msgid "No"
+msgstr "Keine"
+
+#: .\stats\templates\pilot.html:38
+msgid "favorite aircraft"
+msgstr "Favorisiertes Flugzeug"
+
+#: .\stats\templates\pilot.html:47
+msgid "Streak"
+msgstr "Luftsiege"
+
+#: .\stats\templates\pilot.html:48
+msgid "number of downed aircraft for the current virtual life"
+msgstr "Anzahl der abgeschossenen Flugzeuge für das aktuelle virtuelle Leben"
+
+#: .\stats\templates\pilot.html:57
+msgid "Ground Streak"
+msgstr "Bodenziele"
+
+#: .\stats\templates\pilot.html:58
+msgid "number of destroyed ground targets for the current virtual life"
+msgstr "Anzahl der zerstörten Bodenziele für das aktuelle virtuelle Leben"
+
+#: .\stats\templates\pilot.html:73 .\stats\templates\squad.html:61
+msgid "Aerial victories"
+msgstr "Luftsiege"
+
+#: .\stats\templates\pilot.html:78
+msgid "Best Streak"
+msgstr "Beste Luftsiege in Folge"
+
+#: .\stats\templates\pilot.html:83 .\stats\templates\squad.html:66
+msgid "Destroyed on Ground"
+msgstr "Bodenziele"
+
+#: .\stats\templates\pilot.html:88
+msgid "Best Ground Streak"
+msgstr "Beste zer. Bodenziele in Folge"
+
+#: .\stats\templates\pilot.html:93 .\stats\templates\squad.html:71
+msgid "Flight Time"
+msgstr "Flugzeit"
+
+#: .\stats\templates\pilot.html:103 .\stats\templates\squad.html:76
+msgid "Position in Rating"
+msgstr "Position in der Rangliste"
+
+#: .\stats\templates\pilot.html:116 .\stats\templates\squad.html:89
+msgid "Detailed combat results"
+msgstr "Detaillierte Kampfergebnisse"
+
+#: .\stats\templates\pilot.html:119 .\stats\templates\pilot_sortie.html:145
+#: .\stats\templates\squad.html:92
+msgctxt "total"
+msgid "Total Aircraft"
+msgstr "Luftsiege insgesamt"
+
+#: .\stats\templates\pilot.html:125 .\stats\templates\pilot.html:153
+#: .\stats\templates\pilot_sortie.html:154
+#: .\stats\templates\pilot_sortie.html:210 .\stats\templates\squad.html:98
+#: .\stats\templates\squad.html:126
+msgctxt "total"
+msgid "Fighters"
+msgstr "Jäger"
+
+#: .\stats\templates\pilot.html:132 .\stats\templates\pilot.html:160
+#: .\stats\templates\pilot_sortie.html:168
+#: .\stats\templates\pilot_sortie.html:224 .\stats\templates\squad.html:105
+#: .\stats\templates\squad.html:133
+msgctxt "total"
+msgid "Attacker"
+msgstr "Schlachtflugzeug"
+
+#: .\stats\templates\pilot.html:139 .\stats\templates\pilot.html:167
+#: .\stats\templates\pilot_sortie.html:182
+#: .\stats\templates\pilot_sortie.html:238 .\stats\templates\squad.html:112
+#: .\stats\templates\squad.html:140
+msgctxt "total"
+msgid "Bombers"
+msgstr "Bomber"
+
+#: .\stats\templates\pilot.html:146 .\stats\templates\pilot.html:174
+#: .\stats\templates\pilot_sortie.html:196
+#: .\stats\templates\pilot_sortie.html:252 .\stats\templates\squad.html:119
+#: .\stats\templates\squad.html:147
+msgctxt "total"
+msgid "Transport"
+msgstr "Transporter"
+
+#: .\stats\templates\pilot.html:153 .\stats\templates\pilot.html:160
+#: .\stats\templates\pilot.html:167 .\stats\templates\pilot.html:174
+#: .\stats\templates\pilot_sortie.html:210
+#: .\stats\templates\pilot_sortie.html:224
+#: .\stats\templates\pilot_sortie.html:238
+#: .\stats\templates\pilot_sortie.html:252 .\stats\templates\squad.html:126
+#: .\stats\templates\squad.html:133 .\stats\templates\squad.html:140
+#: .\stats\templates\squad.html:147
+msgctxt "total"
+msgid "AI"
+msgstr "KI"
+
+#: .\stats\templates\pilot.html:181 .\stats\templates\pilot_sortie.html:266
+#: .\stats\templates\squad.html:154
+msgctxt "total"
+msgid "Assisted"
+msgstr "Unterstüzter Abschuss"
+
+#: .\stats\templates\pilot.html:187 .\stats\templates\pilot_sortie.html:279
+#: .\stats\templates\squad.html:160
+msgctxt "total"
+msgid "Destroyed ground targets"
+msgstr "Bodenziele insgesamt"
+
+#: .\stats\templates\pilot.html:193 .\stats\templates\pilot_sortie.html:288
+#: .\stats\templates\squad.html:166
+msgctxt "total"
+msgid "Heavy Tanks"
+msgstr "Schwerer Panzerkampfwagen"
+
+#: .\stats\templates\pilot.html:200 .\stats\templates\pilot_sortie.html:302
+#: .\stats\templates\squad.html:173
+msgctxt "total"
+msgid "Medium Tanks"
+msgstr "Mittlerer Panzerkampfwagen"
+
+#: .\stats\templates\pilot.html:207 .\stats\templates\pilot_sortie.html:316
+#: .\stats\templates\squad.html:180
+msgctxt "total"
+msgid "Light Tanks"
+msgstr "Leichter Panzerkampfwagen"
+
+#: .\stats\templates\pilot.html:214 .\stats\templates\pilot_sortie.html:330
+#: .\stats\templates\squad.html:187
+msgctxt "total"
+msgid "Armored vehicles"
+msgstr "Gepanzertes Fahrzeug"
+
+#: .\stats\templates\pilot.html:221 .\stats\templates\pilot_sortie.html:344
+#: .\stats\templates\squad.html:194
+msgctxt "total"
+msgid "Cars"
+msgstr "Personenkraftwagen"
+
+#: .\stats\templates\pilot.html:228 .\stats\templates\pilot_sortie.html:358
+#: .\stats\templates\squad.html:201
+msgctxt "total"
+msgid "Trucks"
+msgstr "Lastkraftwagen"
+
+#: .\stats\templates\pilot.html:235 .\stats\templates\pilot_sortie.html:372
+#: .\stats\templates\squad.html:208
+msgctxt "total"
+msgid "Large-caliber AA guns"
+msgstr "Flak (Großes Kaliber)"
+
+#: .\stats\templates\pilot.html:242 .\stats\templates\pilot_sortie.html:386
+#: .\stats\templates\squad.html:215
+msgctxt "total"
+msgid "Medium-caliber AA guns"
+msgstr "Flak (Mittleres Kaliber)"
+
+#: .\stats\templates\pilot.html:249 .\stats\templates\pilot_sortie.html:400
+#: .\stats\templates\squad.html:222
+msgctxt "total"
+msgid "Small-caliber AA guns"
+msgstr "Flak (Kleines Kaliber)"
+
+#: .\stats\templates\pilot.html:256 .\stats\templates\pilot_sortie.html:414
+#: .\stats\templates\squad.html:229
+msgctxt "total"
+msgid "Searchlights"
+msgstr "Flakscheinwerfer"
+
+#: .\stats\templates\pilot.html:263 .\stats\templates\pilot_sortie.html:428
+#: .\stats\templates\squad.html:236
+msgctxt "total"
+msgid "Locomotives"
+msgstr "Lokomotiven"
+
+#: .\stats\templates\pilot.html:270 .\stats\templates\pilot_sortie.html:442
+#: .\stats\templates\squad.html:243
+msgctxt "total"
+msgid "Wagons"
+msgstr "Waggons"
+
+#: .\stats\templates\pilot.html:277 .\stats\templates\pilot_sortie.html:456
+#: .\stats\templates\squad.html:250
+msgctxt "total"
+msgid "Field Artillery"
+msgstr "Feldartillerie"
+
+#: .\stats\templates\pilot.html:284 .\stats\templates\pilot_sortie.html:470
+#: .\stats\templates\squad.html:257
+msgctxt "total"
+msgid "Howitzers"
+msgstr "Haubitzen"
+
+#: .\stats\templates\pilot.html:291 .\stats\templates\pilot_sortie.html:484
+#: .\stats\templates\squad.html:264
+msgctxt "total"
+msgid "Rocket Artillery"
+msgstr "Raketenartillerie"
+
+#: .\stats\templates\pilot.html:298 .\stats\templates\pilot_sortie.html:498
+#: .\stats\templates\squad.html:271
+msgctxt "total"
+msgid "Ships"
+msgstr "Schiffe"
+
+#: .\stats\templates\pilot.html:305 .\stats\templates\pilot_sortie.html:512
+#: .\stats\templates\squad.html:278
+msgctxt "total"
+msgid "Static Aircraft"
+msgstr "Statisches Flugzeug"
+
+#: .\stats\templates\pilot.html:312 .\stats\templates\pilot_sortie.html:526
+#: .\stats\templates\squad.html:285
+msgctxt "total"
+msgid "Static Vehicles"
+msgstr "Statisches Fahrzeug"
+
+#: .\stats\templates\pilot.html:319 .\stats\templates\pilot_sortie.html:540
+#: .\stats\templates\squad.html:292
+msgctxt "total"
+msgid "Airfield Objects"
+msgstr "Flugplatzobjekte"
+
+#: .\stats\templates\pilot.html:326 .\stats\templates\pilot_sortie.html:554
+#: .\stats\templates\squad.html:299
+msgctxt "total"
+msgid "Bridges"
+msgstr "Brücken"
+
+#: .\stats\templates\pilot.html:333 .\stats\templates\pilot_sortie.html:568
+#: .\stats\templates\squad.html:306
+msgctxt "total"
+msgid "Industrial Objects"
+msgstr "Industrieanlagen"
+
+#: .\stats\templates\pilot.html:342 .\stats\templates\squad.html:315
+msgid "Detailed sorties results"
+msgstr "Detaillierte Einsatzergebnisse"
+
+#: .\stats\templates\pilot.html:345 .\stats\templates\squad.html:318
+msgctxt "total"
+msgid "Score"
+msgstr "Punktestand"
+
+#: .\stats\templates\pilot.html:349 .\stats\templates\squad.html:322
+msgctxt "total"
+msgid "Sorties"
+msgstr "Einsätze"
+
+#: .\stats\templates\pilot.html:361 .\stats\templates\squad.html:326
+msgctxt "total"
+msgid "Lost aircraft"
+msgstr "Verlorene Flugzeuge"
+
+#: .\stats\templates\pilot.html:369 .\stats\templates\squad.html:330
+msgctxt "total"
+msgid "Bailout"
+msgstr "Abgesprungen"
+
+#: .\stats\templates\pilot.html:377 .\stats\templates\squad.html:334
+msgctxt "total"
+msgid "Dead"
+msgstr "Gestorben"
+
+#: .\stats\templates\pilot.html:381 .\stats\templates\squad.html:338
+msgctxt "total"
+msgid "Captured"
+msgstr "Gefangenschaft"
+
+#: .\stats\templates\pilot.html:385 .\stats\templates\squad.html:342
+msgctxt "total"
+msgid "Disco"
+msgstr "Verbindungstrennung"
+
+#: .\stats\templates\pilot.html:389 .\stats\templates\squad.html:346
+msgctxt "total"
+msgid "Shotdown Friendly Aircraft"
+msgstr "Angriff auf verbündete Flugzeuge"
+
+#: .\stats\templates\pilot.html:393 .\stats\templates\squad.html:350
+msgctxt "total"
+msgid "Destroyed Friendly Ground Targets"
+msgstr "Angriff auf verbündete Bodenziele"
+
+#: .\stats\templates\pilot.html:408 .\stats\templates\pilot.html:419
+#: .\stats\templates\pilot.html:438 .\stats\templates\pilot.html:449
+#: .\stats\templates\pilot.html:460 .\stats\templates\squad.html:365
+#: .\stats\templates\squad.html:376 .\stats\templates\squad.html:395
+#: .\stats\templates\squad.html:406 .\stats\templates\squad.html:417
+msgid "number of sorties"
+msgstr "Anzahl der Einsätze"
+
+#: .\stats\templates\pilot.html:432 .\stats\templates\squad.html:389
+msgid "Specialty"
+msgstr "Sonstiges"
+
+#: .\stats\templates\pilot.html:437
+msgctxt "specialty"
+msgid "Fighter"
+msgstr "Jäger"
+
+#: .\stats\templates\pilot.html:448
+msgctxt "specialty"
+msgid "Attacker"
+msgstr "Schlachtflugzeug"
+
+#: .\stats\templates\pilot.html:459
+msgctxt "specialty"
+msgid "Bomber"
+msgstr "Bomber"
+
+#: .\stats\templates\pilot.html:478 .\stats\templates\squad.html:435
+msgid "W/L - Win/Loss"
+msgstr "Sieg/Niederlage"
+
+#: .\stats\templates\pilot.html:484
+msgid ""
+"if ratio > 1 - pilot flying in the minority, if ratio < 1 - pilot flying in "
+"the majority"
+msgstr ""
+"Wenn das Verhältnis der Piloten >1 ist. Dann sind diese in der Minderheit. "
+"Wenn das Verhältnis der Piloten <1 ist, dann sind diese in der Mehrheit"
+
+#: .\stats\templates\pilot.html:486
+msgid "Ratio"
+msgstr "Verhältnis"
+
+#: .\stats\templates\pilot.html:494 .\stats\templates\pilot_sortie.html:617
+msgid "Fairplay Index"
+msgstr "Fairplay Index"
+
+#: .\stats\templates\pilot.html:504 .\stats\templates\squad.html:445
+msgid "K/D - Kills per Death"
+msgstr "Luftsiege pro Tod"
+
+#: .\stats\templates\pilot.html:512 .\stats\templates\squad.html:453
+msgid "K/L - Kills per Aircraft Lost"
+msgstr "Luftsiege pro Flugzeugverlust"
+
+#: .\stats\templates\pilot.html:520 .\stats\templates\squad.html:461
+msgid "K/S - Kills per Sortie"
+msgstr "Luftsiege pro Einsatz"
+
+#: .\stats\templates\pilot.html:528 .\stats\templates\squad.html:469
+msgid "K/H - Kills per Hour of Flight"
+msgstr "Luftsiege pro Stunde"
+
+#: .\stats\templates\pilot.html:538 .\stats\templates\squad.html:479
+msgid "GK/D - G.Kills per Death"
+msgstr "zer. Bodenziele pro Tod"
+
+#: .\stats\templates\pilot.html:546 .\stats\templates\squad.html:487
+msgid "GK/L - G.Kills per Aircraft Lost"
+msgstr "zer. Bodenziele pro Flugzeugverlust"
+
+#: .\stats\templates\pilot.html:554 .\stats\templates\squad.html:495
+msgid "GK/S - G.Kills per Sortie"
+msgstr "zer. Bodenziele pro Einsatz"
+
+#: .\stats\templates\pilot.html:562 .\stats\templates\squad.html:503
+msgid "GK/H - G.Kills per Hour of Flight"
+msgstr "zer. Bodenziele pro Flug"
+
+#: .\stats\templates\pilot.html:577
+msgid "Other names of the pilot on this account"
+msgstr "Andere Namen des Piloten auf diesem Account"
+
+#: .\stats\templates\pilot.html:594 .\stats\templates\pilots.html:110
+#, python-format
+msgid ""
+"Players inactive for more than %(days)s day - do not participate in the "
+"rating."
+msgid_plural ""
+"Players inactive for more than %(days)s days - do not participate in the "
+"rating."
+msgstr[0] ""
+"Piloten die mehr als %(days)s Tag nicht geflogen sind, werden nicht in der "
+"Rangliste berücksichtigt"
+msgstr[1] ""
+"Piloten die mehr als %(days)s Tage nicht geflogen sind, werden nicht in der "
+"Rangliste berücksichtigt"
+
+#: .\stats\templates\pilot_awards.html:3
+#: .\stats\templates\pilot_awards.html:14
+msgctxt "pilot_awards"
+msgid "Awards"
+msgstr ""
+
+#: .\stats\templates\pilot_awards.html:15
+#, fuzzy
+#| msgctxt "pilot_sorties"
+#| msgid "pilot"
+msgctxt "pilot_awards"
+msgid "pilot"
+msgstr "Pilot"
+
+#: .\stats\templates\pilot_hide.html:12
+msgid "Player profile was hidden"
+msgstr "Spielerprofil war versteckt"
+
+#: .\stats\templates\pilot_not_exist.html:13
+msgid "The player did not participate in this tour"
+msgstr "Der Spieler beteiligte sich nicht in der Luftschlacht"
+
+#: .\stats\templates\pilot_sortie.html:3
+#: .\stats\templates\pilot_sortie.html:16
+#: .\stats\templates\pilot_sortie_log.html:17
+msgctxt "sortie_page_title"
+msgid "Sortie"
+msgstr "Einsätze"
+
+#: .\stats\templates\pilot_sortie.html:19
+#: .\stats\templates\pilot_sortie.html:20
+#: .\stats\templates\pilot_sortie_log.html:20
+#: .\stats\templates\pilot_sortie_log.html:21
+#: .\stats\templates\pilot_sorties.html:50
+#: .\stats\templates\pilot_sorties.html:51
+msgctxt "sortie_status"
+msgid "Disconnect"
+msgstr "Verbindungstrennung"
+
+#: .\stats\templates\pilot_sortie.html:23
+#: .\stats\templates\pilot_sortie.html:24
+#: .\stats\templates\pilot_sortie_log.html:24
+#: .\stats\templates\pilot_sortie_log.html:25
+#: .\stats\templates\pilot_sorties.html:54
+#: .\stats\templates\pilot_sorties.html:55
+msgctxt "sortie_status"
+msgid "Dead"
+msgstr "Tod"
+
+#: .\stats\templates\pilot_sortie.html:27
+#: .\stats\templates\pilot_sortie.html:28
+#: .\stats\templates\pilot_sortie.html:75
+#: .\stats\templates\pilot_sortie_log.html:28
+#: .\stats\templates\pilot_sortie_log.html:29
+#: .\stats\templates\pilot_sorties.html:58
+#: .\stats\templates\pilot_sorties.html:59
+msgctxt "sortie_status"
+msgid "Captured"
+msgstr "Gefangenschaft"
+
+#: .\stats\templates\pilot_sortie.html:31
+#: .\stats\templates\pilot_sortie.html:32
+#: .\stats\templates\pilot_sortie_log.html:32
+#: .\stats\templates\pilot_sortie_log.html:33
+#: .\stats\templates\pilot_sorties.html:62
+#: .\stats\templates\pilot_sorties.html:63
+msgctxt "sortie_status"
+msgid "Bailout"
+msgstr "Abgesprungen"
+
+#: .\stats\templates\pilot_sortie.html:35
+#: .\stats\templates\pilot_sortie.html:36
+#: .\stats\templates\pilot_sortie_log.html:36
+#: .\stats\templates\pilot_sortie_log.html:37
+#: .\stats\templates\pilot_sorties.html:66
+#: .\stats\templates\pilot_sorties.html:67
+msgctxt "sortie_status"
+msgid "Aircraft lost"
+msgstr "Flugzeugverlust"
+
+#: .\stats\templates\pilot_sortie.html:39
+#: .\stats\templates\pilot_sortie.html:40
+#: .\stats\templates\pilot_sortie_log.html:40
+#: .\stats\templates\pilot_sortie_log.html:41
+#: .\stats\templates\pilot_sorties.html:70
+#: .\stats\templates\pilot_sorties.html:71
+msgctxt "sortie_status"
+msgid "In Flight"
+msgstr "Im Flug"
+
+#: .\stats\templates\pilot_sortie.html:43
+#: .\stats\templates\pilot_sortie.html:44
+#: .\stats\templates\pilot_sortie_log.html:44
+#: .\stats\templates\pilot_sortie_log.html:45
+#: .\stats\templates\pilot_sorties.html:74
+#: .\stats\templates\pilot_sorties.html:75
+msgctxt "sortie_status"
+msgid "Landed"
+msgstr "Gelandet"
+
+#: .\stats\templates\pilot_sortie.html:48
+#: .\stats\templates\pilot_sortie_log.html:49
+#: .\stats\templates\pilot_sorties.html:15
+msgctxt "pilot_sorties"
+msgid "pilot"
+msgstr "Pilot"
+
+#: .\stats\templates\pilot_sortie.html:53
+#: .\stats\templates\pilot_sortie_log.html:54
+msgid "Back to sorties list"
+msgstr "Zurück zur Einsatzliste"
+
+#: .\stats\templates\pilot_sortie.html:59
+#: .\stats\templates\pilot_sortie_log.html:60
+msgid ""
+"The results of this sortie are not included in the statistics of the pilot "
+"because of the disconnect"
+msgstr "Keine Ergebnisse in der PilotstatistikGrund: Verbindungstrennung"
+
+#: .\stats\templates\pilot_sortie.html:65
+#, fuzzy
+#| msgid "Mission"
+msgctxt "sortie"
+msgid "Mission"
+msgstr "Missionen"
+
+#: .\stats\templates\pilot_sortie.html:66
+msgctxt "sortie"
+msgid "Start Time"
+msgstr "Startzeit"
+
+#: .\stats\templates\pilot_sortie.html:67
+msgctxt "sortie"
+msgid "End Time"
+msgstr "Endzeit"
+
+#: .\stats\templates\pilot_sortie.html:68
+msgctxt "sortie"
+msgid "Duration of flight"
+msgstr "Flugdauer"
+
+#: .\stats\templates\pilot_sortie.html:69
+msgctxt "sortie"
+msgid "Country"
+msgstr "Land"
+
+#: .\stats\templates\pilot_sortie.html:71
+msgctxt "sortie"
+msgid "pilot status"
+msgstr "Pilotenstatus"
+
+#: .\stats\templates\pilot_sortie.html:81
+msgctxt "sortie"
+msgid "Bailout"
+msgstr "Abgesprungen"
+
+#: .\stats\templates\pilot_sortie.html:84
+msgctxt "sortie"
+msgid "Score"
+msgstr "Punktestand"
+
+#: .\stats\templates\pilot_sortie.html:85
+msgctxt "sortie"
+msgid "Aerial victories"
+msgstr "Luftsiege"
+
+#: .\stats\templates\pilot_sortie.html:86
+msgctxt "sortie"
+msgid "Destroyed on Ground"
+msgstr "Bodenziele"
+
+#: .\stats\templates\pilot_sortie.html:91
+msgctxt "sortie"
+msgid "Aircraft"
+msgstr "Flugzeug"
+
+#: .\stats\templates\pilot_sortie.html:93
+msgctxt "sortie"
+msgid "fuel"
+msgstr "Kraftstoff"
+
+#: .\stats\templates\pilot_sortie.html:94
+msgid "payload"
+msgstr ""
+
+#: .\stats\templates\pilot_sortie.html:98
+msgctxt "aircraft_payload"
+msgid "Default"
+msgstr ""
+
+#: .\stats\templates\pilot_sortie.html:102
+#, fuzzy
+#| msgid "Coalitions"
+msgid "modifications"
+msgstr "Koalition"
+
+#: .\stats\templates\pilot_sortie.html:116
+msgctxt "sortie"
+msgid "aircraft status"
+msgstr "Flugzeugstatus"
+
+#: .\stats\templates\pilot_sortie.html:118
+msgctxt "sortie"
+msgid "Not Takeoff"
+msgstr "Nicht gestartet"
+
+#: .\stats\templates\pilot_sortie.html:120
+#: .\stats\templates\pilot_sortie.html:596
+msgctxt "sortie"
+msgid "Landed on Airfield"
+msgstr "Gelandet"
+
+#: .\stats\templates\pilot_sortie.html:122
+msgctxt "sortie"
+msgid "In Flight"
+msgstr "Im Flug"
+
+#: .\stats\templates\pilot_sortie.html:124
+msgctxt "sortie"
+msgid "Shotdown"
+msgstr "Abgeschossen"
+
+#: .\stats\templates\pilot_sortie.html:126
+msgctxt "sortie"
+msgid "Landed not on Airfield"
+msgstr "Außenlandung"
+
+#: .\stats\templates\pilot_sortie.html:128
+msgctxt "sortie"
+msgid "Crashed"
+msgstr "Bruchlandung"
+
+#: .\stats\templates\pilot_sortie.html:132
+msgctxt "sortie"
+msgid "damage aircraft"
+msgstr "Beschädigt"
+
+#: .\stats\templates\pilot_sortie.html:140
+msgctxt "sortie"
+msgid "Detailed results"
+msgstr "Detaillierte Ergebnisse"
+
+#: .\stats\templates\pilot_sortie.html:141
+msgctxt "sortie"
+msgid "Scoring"
+msgstr "Auswertung"
+
+#: .\stats\templates\pilot_sortie.html:582
+msgctxt "total"
+msgid "Bonuses"
+msgstr "Bonus"
+
+#: .\stats\templates\pilot_sortie.html:607
+msgctxt "sortie"
+msgid "Coalition won a mission"
+msgstr "Koalition hat die Mission gewonnen"
+
+#: .\stats\templates\pilot_sortie.html:628
+msgid "Stats of weapons"
+msgstr "Statistik der Waffen"
+
+#: .\stats\templates\pilot_sortie.html:635
+msgid "Number of shots"
+msgstr "Anzahl der Schüsse"
+
+#: .\stats\templates\pilot_sortie.html:639
+msgid "Number of bullets hit the target"
+msgstr "Anzahl der Kugeln die getroffen haben"
+
+#: .\stats\templates\pilot_sortie.html:643
+msgid "Number of rockets launches"
+msgstr "Anzahl der abgefeuerten Raketen"
+
+#: .\stats\templates\pilot_sortie.html:647
+msgid "Number of bombs dropped"
+msgstr "Anzahl der abgeworfenen Bomben"
+
+#: .\stats\templates\pilot_sortie.html:651
+msgid ""
+"This block may contain incorrect information, this is due to the errors in "
+"the game log."
+msgstr "Es kam zu einem Fehler. Bitte Log prüfen"
+
+#: .\stats\templates\pilot_sortie_log.html:3
+msgctxt "sortie_page_title"
+msgid "Sortie Log"
+msgstr "Einsatz Logbuch"
+
+#: .\stats\templates\pilot_sortie_log.html:81
+msgctxt "sortie_log"
+msgid "AI"
+msgstr "KI"
+
+#: .\stats\templates\pilot_sorties.html:3
+#: .\stats\templates\pilot_sorties.html:14
+msgctxt "pilot_sorties"
+msgid "Sorties"
+msgstr "Einsätze"
+
+#: .\stats\templates\pilots.html:19
+msgid "Search pilot"
+msgstr "Suche"
+
+#: .\stats\templates\pilots.html:39 .\stats\templates\squad_pilots.html:62
+msgid "Current Streak"
+msgstr "aktuelle Abschussserie"
+
+#: .\stats\templates\pilots.html:75 .\stats\templates\squad_pilots.html:98
+#: .\stats\templates\squads.html:68
+msgid "Rating"
+msgstr "Bewertung"
+
+#: .\stats\templates\squad.html:33 .\stats\templates\squad_pilots.html:33
+msgid "Go to the website of the squad"
+msgstr ""
+
+#: .\stats\templates\squad.html:50
+#, fuzzy
+#| msgid "Number of shots"
+msgid "Number of pilots"
+msgstr "Anzahl der Schüsse"
+
+#: .\stats\templates\squad.html:52
+msgid "Not enough pilots to participate in the rating"
+msgstr ""
+
+#: .\stats\templates\squad.html:394
+#, fuzzy
+#| msgctxt "total"
+#| msgid "Fighters"
+msgctxt "specialty"
+msgid "Fighters"
+msgstr "Jäger"
+
+#: .\stats\templates\squad.html:405
+#, fuzzy
+#| msgctxt "specialty"
+#| msgid "Attacker"
+msgctxt "specialty"
+msgid "Attackers"
+msgstr "Schlachtflugzeug"
+
+#: .\stats\templates\squad.html:416
+#, fuzzy
+#| msgctxt "total"
+#| msgid "Bombers"
+msgctxt "specialty"
+msgid "Bombers"
+msgstr "Bomber"
+
+#: .\stats\templates\squad.html:517
+msgid ""
+"<strong>Attention!</strong> Statistics squad - accumulative. When a player "
+"joins to squad, his past statistics does not affect the current squad "
+"statistics. Only new sorties will be added in the squad statistics."
+msgstr ""
+
+#: .\stats\templates\squad_not_exist.html:14
+#, fuzzy
+#| msgid "The player did not participate in this tour"
+msgid "The squad did not participate in this tour"
+msgstr "Der Spieler beteiligte sich nicht in der Luftschlacht"
+
+#: .\stats\templates\squads.html:19
+msgid "Search squad"
+msgstr ""
+
+#: .\stats\templates\squads.html:113
+#, fuzzy
+#| msgid "on the number of air kills"
+msgid "on the number of squad members"
+msgstr "Anzahl der Luftsiege"
+
+#: .\stats\templates\tour.html:9
+#, python-format
+msgid "Tour \"%(tour)s\" ended"
+msgstr "Luftschlacht \"%(tour)s\" ist beendet"
+
+#: .\stats\templates\tour.html:11
+#, python-format
+msgid "%(coal)s victory"
+msgstr "Die %(coal)s haben gewonnen"
+
+#: .\stats\templates\tour.html:118
+msgctxt "tour_top"
+msgid "Best pilots"
+msgstr "Beste Piloten"
+
+#: .\stats\templates\tour.html:125
+msgctxt "tour_top"
+msgid "rating"
+msgstr "Bewertung"
+
+#: .\stats\templates\tour.html:144
+msgctxt "tour_top"
+msgid "Best pilots streak"
+msgstr "Besten Piloten in einer Serie"
+
+#: .\stats\utils.py:11 .\stats\utils.py:14 .\stats\utils.py:26
+#: .\stats\utils.py:29 .\stats\utils.py:35 .\stats\utils.py:41
+#: .\stats\utils.py:45
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "Stunde"
+msgstr[1] "Stunden"
+
+#: .\stats\utils.py:12 .\stats\utils.py:16 .\stats\utils.py:19
+#: .\stats\utils.py:27 .\stats\utils.py:31
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "Minute"
+msgstr[1] "Minuten"
+
+#: .\stats\utils.py:17 .\stats\utils.py:21
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "Sekunde"
+msgstr[1] "Sekunden"
+
+#: .\stats\utils.py:40 .\stats\utils.py:43
+msgid "day"
+msgid_plural "days"
+msgstr[0] "Tag"
+msgstr[1] "Tage"
+
+#: .\users\admin.py:15
+msgid "Personal info"
+msgstr "Persönliche Daten"
+
+#: .\users\admin.py:16
+msgid "Permissions"
+msgstr "Berechtigung"
+
+#: .\users\admin.py:18
+msgid "Important dates"
+msgstr "Wichtige Daten"
+
+#: .\users\apps.py:7
+msgid "Users"
+msgstr ""
+
+#: .\users\forms.py:18
+msgid "Remember me"
+msgstr ""
+
+#: .\users\forms.py:23
+msgid "Password"
+msgstr ""
+
+#: .\users\forms.py:24
+msgid "Protection from bots"
+msgstr ""
+
+#: .\users\forms.py:25
+msgid "Enter number associated with correct part of the aircraft."
+msgstr ""
+
+#: .\users\forms.py:34
+msgid "Incorrect answer."
+msgstr ""
+
+#: .\users\forms.py:54 .\users\forms.py:69
+msgid "Email"
+msgstr ""
+
+#: .\users\forms.py:61 .\users\forms.py:76
+#, fuzzy
+#| msgid "A user with that username already exists."
+msgid "A user with this email is not found."
+msgstr "Benutzernamen existiert bereits."
+
+#: .\users\forms.py:63
+msgid "Registration has already been confirmed. This user is activated."
+msgstr ""
+
+#: .\users\forms.py:82 .\users\forms.py:95
+msgid "New password"
+msgstr ""
+
+#: .\users\forms.py:96
+#, fuzzy
+#| msgid "Current Tour"
+msgid "Current password"
+msgstr "Aktuelle Luftschlacht"
+
+#: .\users\forms.py:97 .\users\forms.py:124
+msgid "To change the email or password you must enter current password."
+msgstr ""
+
+#: .\users\forms.py:126
+msgid "Incorrect current password."
+msgstr ""
+
+#: .\users\mail.py:26
+msgid "IL2 stats: registration confirm"
+msgstr ""
+
+#: .\users\mail.py:28
+#, python-format
+msgid "Confirmation of registration: %(url)s"
+msgstr ""
+
+#: .\users\mail.py:39
+msgid "IL2 stats: password reset"
+msgstr ""
+
+#: .\users\mail.py:41
+#, python-format
+msgid "Password reset: %(url)s"
+msgstr ""
+
+#: .\users\models.py:40
+msgid "username"
+msgstr "Benutzername"
+
+#: .\users\models.py:41
+msgid "Username must match the name in the game IL-2 (including squad tag)."
+msgstr ""
+
+#: .\users\models.py:43
+msgid "A user with that username already exists."
+msgstr "Benutzernamen existiert bereits."
+
+#: .\users\models.py:45
+msgid "staff status"
+msgstr "Adminstatus"
+
+#: .\users\models.py:46
+msgid "Designates whether the user can log into this admin site."
+msgstr "Kennzeichen, ob der Benutzer auf Admin-Website angemeldet ist"
+
+#: .\users\models.py:47
+msgid "active"
+msgstr "aktiv"
+
+#: .\users\models.py:48
+#, fuzzy
+#| msgid ""
+#| "Designates whether this user should be treated as active. Unselect "
+#| "thisinstead of deleting accounts."
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+"Dieser Benutzer ist aktiv. Sie haben die Möglichkeit diesen zu deaktivieren "
+"anstatt Ihn zu löschen."
+
+#: .\users\models.py:51
+msgid "timezone"
+msgstr ""
+
+#: .\users\models.py:62
+msgid "user"
+msgstr "Benutzer"
+
+#: .\users\models.py:63
+msgid "users"
+msgstr "Benutzer"
+
+#: .\users\templates\users\login.html:3 .\users\templates\users\login.html:10
+msgid "Login"
+msgstr ""
+
+#: .\users\templates\users\login.html:43
+msgid "Forgot password"
+msgstr ""
+
+#: .\users\templates\users\login.html:44
+#: .\users\templates\users\registration_confirm_repeat.html:3
+#: .\users\templates\users\registration_confirm_repeat.html:10
+#, fuzzy
+#| msgctxt "action"
+#| msgid "Registration Squad"
+msgid "Registration confirmation"
+msgstr "Squad registrieren"
+
+#: .\users\templates\users\password_reset.html:3
+#: .\users\templates\users\password_reset.html:10 .\users\views.py:121
+msgid "Password reset"
+msgstr ""
+
+#: .\users\templates\users\password_reset.html:38
+msgctxt "action"
+msgid "Reset"
+msgstr ""
+
+#: .\users\templates\users\password_reset_confirm.html:3
+#: .\users\templates\users\password_reset_confirm.html:10
+msgid "Set new password"
+msgstr ""
+
+#: .\users\templates\users\password_reset_confirm.html:38
+msgid "Save new password"
+msgstr ""
+
+#: .\users\templates\users\profile.html:42
+#, fuzzy
+#| msgid "active"
+msgid "Save"
+msgstr "aktiv"
+
+#: .\users\templates\users\registration.html:3
+#: .\users\templates\users\registration.html:10 .\users\views.py:62
+#: .\users\views.py:88 .\users\views.py:104
+msgid "Registration"
+msgstr ""
+
+#: .\users\validators.py:6
+msgid ""
+"Enter a valid username. This value may contain only letters, numbers and @/./"
+"+/-/_ characters."
+msgstr ""
+"Bitte geben Sie einen gültigen Benutzernamen ein. Dieser darf nur Buchstaben,"
+"Zahlen und  @ /. /+ / - / _ .enthalten"
+
+#: .\users\views.py:63 .\users\views.py:105
+msgid ""
+"We send to your email address message with a link to confirm your "
+"registration."
+msgstr ""
+
+#: .\users\views.py:67 .\users\views.py:84
+msgid "Your registration has been confirmed. Now you can login."
+msgstr ""
+
+#: .\users\views.py:89
+msgid "Incorrect link to confirm your registration."
+msgstr ""
+
+#: .\users\views.py:122
+msgid "We send to your email address message with a link to reset password."
+msgstr ""
+
+#: .\users\views.py:145
+msgid "Password successfully changed. Now you can login."
+msgstr ""
+
+#: .\users\views.py:151
+msgid "Password reset unsuccessful"
+msgstr ""
+
+#: .\users\views.py:152
+msgid ""
+"Retry a using link from the email or start the password reset procedure "
+"again."
+msgstr ""
+
+#: .\users\views.py:166
+msgid "Profile successfully changed."
+msgstr ""
+
+#, fuzzy
+#~| msgctxt "sortie"
+#~| msgid "Aircraft"
+#~ msgid "aircraft_mod"
+#~ msgstr "Flugzeug"
+
+#~ msgid "squads Mitglieder"
+#~ msgstr "Squad Mitglieder"
+
+#, fuzzy
+#~| msgctxt "preset"
+#~| msgid "normal"
+#~ msgid "overall"
+#~ msgstr "Normal"
+
+#, fuzzy
+#~| msgctxt "sortie_page_title"
+#~| msgid "Sortie"
+#~ msgid "for sortie"
+#~ msgstr "Einsätze"
+
+#~ msgid "email address"
+#~ msgstr "Emailadresse"
+
+#~ msgid ""
+#~ "Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only."
+#~ msgstr ""
+#~ "Erforderlich. 30 Zeichen oder weniger. Buchstaben, Zahlen und @ / / + / "
+#~ "-. / _ "
+
+#~ msgid "Information about the server"
+#~ msgstr "Informationen über den server"

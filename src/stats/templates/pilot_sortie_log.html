@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Sortie Log' context 'sortie_page_title' %}:
+    {{ sortie.date_start|date:'d.m.Y - H:i' }} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/sortie_tabs.html' %}
+{% endblock nav_tabs %}
+
+
+{% block content %}
+
+<!-- {{ sortie.debug|safe }} -->
+    <section id="sortie">
+        <div class="wrapper">
+            <div class="sortie_title">
+                {% trans 'Sortie' context 'sortie_page_title' %}: {{ sortie.date_start|date:'d.m.Y - H:i' }}
+                {% if sortie.is_disco %}
+                    <img src="{% static 'img/sortie/status/disco_big.png' %}" width="28" height="28"
+                         title="{% trans 'Disconnect' context 'sortie_status' %}"
+                         alt="{% trans 'Disconnect' context 'sortie_status' %}">
+                {% elif sortie.is_dead %}
+                    <img src="{% static 'img/sortie/status/dead_big.png' %}" width="28" height="28"
+                         title="{% trans 'Dead' context 'sortie_status' %}"
+                         alt="{% trans 'Dead' context 'sortie_status' %}">
+                {% elif sortie.is_captured %}
+                    <img src="{% static 'img/sortie/status/captured_big.png' %}" width="28" height="28"
+                         title="{% trans 'Captured' context 'sortie_status' %}"
+                         alt="{% trans 'Captured' context 'sortie_status' %}">
+                {% elif sortie.is_bailout %}
+                    <img src="{% static 'img/sortie/status/bailout_big.png' %}" width="28" height="28"
+                         title="{% trans 'Bailout' context 'sortie_status' %}"
+                         alt="{% trans 'Bailout' context 'sortie_status' %}">
+                {% elif sortie.is_lost_aircraft %}
+                    <img src="{% static 'img/sortie/status/crashed_big.png' %}" width="28" height="28"
+                         title="{% trans 'Aircraft lost' context 'sortie_status' %}"
+                         alt="{% trans 'Aircraft lost' context 'sortie_status' %}">
+                {% elif sortie.is_in_flight %}
+                    <img src="{% static 'img/sortie/status/in_flight_big.png' %}" width="28" height="28"
+                         title="{% trans 'In Flight' context 'sortie_status' %}"
+                         alt="{% trans 'In Flight' context 'sortie_status' %}">
+                {% elif sortie.is_landed %}
+                    <img src="{% static 'img/sortie/status/landed_big.png' %}" width="28" height="28"
+                         title="{% trans 'Landed' context 'sortie_status' %}"
+                         alt="{% trans 'Landed' context 'sortie_status' %}">
+                {% endif %}
+            </div>
+            <div class="pilot_nickname">
+                {% trans 'pilot' context 'pilot_sorties' %}: {{ player.nickname }}
+            </div>
+
+            <a href="{{ player.get_sorties_url }}">
+                <div class="sortie_back_to_sorties">
+                    {% trans 'Back to sorties list' %}
+                </div>
+            </a>
+
+            {% if sortie.is_disco %}
+                <div class="sortie_disco_warn">
+                    {% trans 'The results of this sortie are not included in the statistics of the pilot because of the disconnect' %}
+                </div>
+            {% endif %}
+
+            <div class="content_table" id="sortie_log">
+                {% for event in events %}
+                    <!-- {{ event.tik }} / {{ event.extra_data.pos|safe }}  -->
+                    <div class="row">
+                        <div class="cell {{ event.color }}"></div>
+                        <div class="cell">{{ event.date|time:'H:i:s' }}</div>
+                        <div class="cell">
+                            {{ event.message }}
+                            {% if event.extra_data.damage %}
+                                - {{ event.extra_data.damage }}%
+                            {% endif %}
+                        </div>
+                        <div class="cell">
+                            {% if event.opponent_sortie %}
+                                <a href="{% url 'stats:pilot_sortie' event.opponent_sortie.id %}?tour={{ request.tour.id }}">
+                                    {{ event.opponent_sortie.nickname }}</a>
+                            {% elif event.opponent_object and event.opponent_object.cls_base != 'block' %}
+                                {% trans 'AI' context 'sortie_log' %}
+                            {% endif %}
+                        </div>
+                        <div class="cell">{{ event.opponent_object.name }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+{% endblock bottom %}

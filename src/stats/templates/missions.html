@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Missions' %} / {{ block.super }}{% endblock title %}
+
+{% block head %}
+{% endblock head %}
+
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Missions' %}
+                </div>
+                <div class="form_search">
+                    <form action="" method="GET">
+                        <input type="hidden" name="tour" value="{{ request.tour.id }}"/>
+                        <input type="text" name="search" value="" placeholder="{% trans 'Search mission' %}">
+                    </form>
+                </div>
+            </div>
+            {% if missions %}
+
+                <div class="content_table">
+                    <div class="head_row">
+                        <div class="cell" style="width: 60px;"></div>
+                        <div class="cell"></div>
+                        <div class="cell" style="width: 90px;">
+                            <a class="sort_by" href="?sort_by=-pilots_total">
+                            <img src="{% static 'img/icons/small/players.png' %}" width="18" height="18"
+                                     alt="{% trans 'Pilots total' %}" title="{% trans 'Pilots total' %}">
+                            </a>
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <a class="sort_by" href="?sort_by=winning_coalition">
+                            <img src="{% static 'img/icons/small/rating.png' %}" width="18" height="18"
+                                     alt="{% trans 'Winning coalition' %}" title="{% trans 'Winning coalition' %}">
+                            </a>
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <a class="sort_by" href="?sort_by=-duration">
+                            <img src="{% static 'img/icons/small/ft.png' %}" width="18" height="18"
+                                 alt="{% trans 'Duration (hours:minutes)' %}"
+                                 title="{% trans 'Duration (hours:minutes)' %}">
+                            </a>
+                        </div>
+                        <div class="cell" style="width: 400px;"></div>
+                    </div>
+                    {% for mission in missions %}
+                        <a class="row" href="{% url 'stats:mission' mission.id %}">
+                            <div class="cell">{{ mission.id }}</div>
+                            <div class="cell" style="text-align: left;">{{ mission.name }}</div>
+                            <div class="cell">{{ mission.pilots_total }}</div>
+                            <div class="cell img">
+                                {% if mission.winning_coalition == 1 %}
+                                    <img src="{% static 'img/icons/small/allies.png' %}" width="15" height="15"
+                                         title="{% trans 'Allies' context 'coalition' %}"
+                                         alt="{% trans 'Allies' context 'coalition' %}">
+                                {% elif mission.winning_coalition == 2 %}
+                                    <img src="{% static 'img/icons/small/axis.png' %}" width="15" height="15"
+                                         title="{% trans 'Axis' context 'coalition' %}"
+                                         alt="{% trans 'Axis' context 'coalition' %}">
+                                {% endif %}
+                                {% if mission.winning_coalition %}
+                                    {% if mission.win_reason == 'task' %}
+                                        <img src="{% static 'img/icons/small/win_reason_task.png' %}" width="15" height="15"
+                                             style="margin-left: 10px;"
+                                             title="{% trans 'Performed the task of the mission' %}"
+                                             alt="{% trans 'Performed the task of the mission' %}">
+                                    {% elif mission.win_reason == 'score' %}
+                                        <img src="{% static 'img/icons/small/win_reason_score.png' %}" width="15" height="15"
+                                             style="margin-left: 10px;"
+                                             title="{% trans 'Won by score' %}"
+                                             alt="{% trans 'Won by score' %}">
+                                    {% endif %}
+                                {% endif %}
+                            </div>
+                            <div class="cell">{{ mission.duration|seconds_to_time }}</div>
+                            <div class="cell" style="text-align: right; padding-right: 40px">{{ mission.date_start }}</div>
+                        </a>
+                    {% endfor %}
+                </div>
+
+                {% if missions.paginator.num_pages > 1 %}
+                <div class="paginator3000" id="paginator"></div>
+                {% endif %}
+            {% endif %}
+
+            <div class="info">
+
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{{% block bottom %}
+    {{ block.super }}
+    <script src="{% static 'js/table.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            uri_sort_by('-id');
+            var paginator = new Paginator('paginator', {{ missions.paginator.num_pages }}, 15, {{ missions.number }}, uri_paginator);
+        });
+    </script>
+{% endblock bottom %}

@@ -1,0 +1,670 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Sortie' context 'sortie_page_title' %}:
+    {{ sortie.date_start|date:'d.m.Y - H:i' }} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/sortie_tabs.html' %}
+{% endblock nav_tabs %}
+
+
+{% block content %}
+    <!-- {{ sortie.debug|safe }} -->
+    <section id="sortie">
+        <div class="wrapper">
+            <div class="sortie_title">
+                {% trans 'Sortie' context 'sortie_page_title' %}: {{ sortie.date_start|date:'d.m.Y - H:i' }}
+                {% if sortie.is_disco %}
+                    <img src="{% static 'img/sortie/status/disco_big.png' %}" width="28" height="28"
+                         title="{% trans 'Disconnect' context 'sortie_status' %}"
+                         alt="{% trans 'Disconnect' context 'sortie_status' %}">
+                {% elif sortie.is_dead %}
+                    <img src="{% static 'img/sortie/status/dead_big.png' %}" width="28" height="28"
+                         title="{% trans 'Dead' context 'sortie_status' %}"
+                         alt="{% trans 'Dead' context 'sortie_status' %}">
+                {% elif sortie.is_captured %}
+                    <img src="{% static 'img/sortie/status/captured_big.png' %}" width="28" height="28"
+                         title="{% trans 'Captured' context 'sortie_status' %}"
+                         alt="{% trans 'Captured' context 'sortie_status' %}">
+                {% elif sortie.is_bailout %}
+                    <img src="{% static 'img/sortie/status/bailout_big.png' %}" width="28" height="28"
+                         title="{% trans 'Bailout' context 'sortie_status' %}"
+                         alt="{% trans 'Bailout' context 'sortie_status' %}">
+                {% elif sortie.is_lost_aircraft %}
+                    <img src="{% static 'img/sortie/status/crashed_big.png' %}" width="28" height="28"
+                         title="{% trans 'Aircraft lost' context 'sortie_status' %}"
+                         alt="{% trans 'Aircraft lost' context 'sortie_status' %}">
+                {% elif sortie.is_in_flight %}
+                    <img src="{% static 'img/sortie/status/in_flight_big.png' %}" width="28" height="28"
+                         title="{% trans 'In Flight' context 'sortie_status' %}"
+                         alt="{% trans 'In Flight' context 'sortie_status' %}">
+                {% elif sortie.is_landed %}
+                    <img src="{% static 'img/sortie/status/landed_big.png' %}" width="28" height="28"
+                         title="{% trans 'Landed' context 'sortie_status' %}"
+                         alt="{% trans 'Landed' context 'sortie_status' %}">
+                {% endif %}
+            </div>
+            <div class="pilot_nickname">
+                {% trans 'pilot' context 'pilot_sorties' %}: {{ player.nickname }}
+            </div>
+
+            <a href="{{ player.get_sorties_url }}">
+                <div class="sortie_back_to_sorties">
+                    {% trans 'Back to sorties list' %}
+                </div>
+            </a>
+
+            {% if sortie.is_disco %}
+                <div class="sortie_disco_warn">
+                    {% trans 'The results of this sortie are not included in the statistics of the pilot because of the disconnect' %}
+                </div>
+            {% endif %}
+
+            <div class="sortie_general">
+                <div class="general_left">
+                    {% trans 'Mission' context 'sortie' %}: <a href="{% url 'stats:mission' sortie.mission_id %}">{{ sortie.mission.name }}</a><br>
+                    {% trans 'Start Time' context 'sortie' %}: {{ sortie.date_start|date:'H:i' }}<br>
+                    {% trans 'End Time' context 'sortie'%}: {{ sortie.date_end|date:'H:i' }}<br>
+                    {% trans 'Duration of flight' context 'sortie' %}: {{ sortie.flight_time|seconds_to_time }}<br>
+                    {% trans 'Country' context 'sortie' %}: {{ sortie.get_country_display }}<br>
+                    <br>
+                    {% trans 'pilot status' context 'sortie' %}:
+                    {% if sortie.is_dead %}
+                        <span class="status_red">{{ sortie.get_bot_status_display|capfirst }}</span>
+                    {% elif sortie.is_captured %}
+                        <span class="status_red">{% trans 'Captured' context 'sortie_status' %}</span>
+                    {% elif sortie.is_wounded %}
+                        <span class="status_orange">{{ sortie.get_bot_status_display|capfirst }}</span>
+                    {% else %}
+                        <span class="status_green">{{ sortie.get_bot_status_display|capfirst }}</span>
+                    {% endif %}
+                    {% if sortie.is_bailout %}({% trans 'Bailout' context 'sortie' %}){% endif %}
+                    <br>
+                    <div class="sortie_total">
+                        {% trans 'Score' context 'sortie' %}: <span>{{ sortie.score }}</span><br>
+                        {% trans 'Aerial victories' context 'sortie' %}: <span>{{ sortie.ak_total }}</span><br>
+                        {% trans 'Destroyed on Ground' context 'sortie' %}: <span>{{ sortie.gk_total }}</span>
+                    </div>
+                </div>
+                <div class="general_right">
+                    <div class="sortie_aircraft">
+                        {% trans 'Aircraft' context 'sortie' %}: {{ sortie.aircraft.name }}
+                    </div>
+                    {% trans 'fuel' context 'sortie' %}: {{ sortie.fuel }}%<br>
+                    {% trans 'payload' %}:
+                    {% if sortie.payload %}
+                        {{ sortie.payload }}
+                    {% else %}
+                        {% trans 'Default' context 'aircraft_payload' %}
+                    {% endif %}
+                    <br>
+                    {% if sortie.modifications %}
+                        {% trans 'modifications' %}: {{ sortie.modifications|join:', ' }}<br>
+{#                        {% trans 'modifications' %}:<br>#}
+{#                        {% for m in sortie.modifications %}#}
+{#                            - {{ m }}<br>#}
+{#                        {% endfor %}#}
+                    {% endif %}
+
+                    {% with 'img/aircraft/'|add:sortie.aircraft.log_name|add:'.png' as sortie_aircraft_img %}
+                        <img src="{% static sortie_aircraft_img %}" width="335" height="120"
+                             style="margin-top: 10px;"
+                             title="{% trans sortie.aircraft.name %}"
+                             alt="{% trans sortie.aircraft.name %}">
+                    {% endwith %}
+                    <br>
+                    {% trans 'aircraft status' context 'sortie' %}:
+                    {% if sortie.is_not_takeoff %}
+                        <span class="status_gray">{% trans 'Not Takeoff' context 'sortie' %}</span>
+                    {% elif sortie.is_landed %}
+                        <span class="status_green">{% trans 'Landed on Airfield' context 'sortie' %}</span>
+                    {% elif sortie.is_in_flight %}
+                        <span class="status_green">{% trans 'In Flight' context 'sortie' %}</span>
+                    {% elif sortie.is_shotdown %}
+                        <span class="status_red">{% trans 'Shotdown' context 'sortie' %}</span>
+                    {% elif sortie.is_ditched %}
+                        <span class="status_orange">{% trans 'Landed not on Airfield' context 'sortie' %}</span>
+                    {% elif sortie.is_crashed %}
+                        <span class="status_orange">{% trans 'Crashed' context 'sortie' %}</span>
+                    {% endif %}
+                    <br>
+                    {% if sortie.damage %}
+                    {% trans 'damage aircraft' context 'sortie' %}: {{ sortie.damage|floatformat:'0' }}%
+                    {% endif %}
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="sortie_results" style="float: left;">
+                <div class="header">
+                    <div class="left">{% trans 'Detailed results' context 'sortie' %}</div>
+                    <div class="right">{% trans 'Scoring' context 'sortie' %}</div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        {% trans 'Total Aircraft' context 'total' %}
+                        <span>{{ sortie.ak_total }}</span>
+                    </div>
+                    <div class="right">&nbsp;</div>
+                </div>
+
+                {% if sortie.killboard_pvp.aircraft_light %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Fighters' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.aircraft_light }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.aircraft_light }}
+                            &times;
+                            {{ score_dict.aircraft_light }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pvp.aircraft_medium %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Attacker' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.aircraft_medium }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.aircraft_medium }}
+                            &times;
+                            {{ score_dict.aircraft_medium }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pvp.aircraft_heavy %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Bombers' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.aircraft_heavy }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.aircraft_heavy }}
+                            &times;
+                            {{ score_dict.aircraft_heavy }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pvp.aircraft_transport %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Transport' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.aircraft_transport }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.aircraft_transport }}
+                            &times;
+                            {{ score_dict.aircraft_transport }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aircraft_light %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Fighters' context 'total' %} ({% trans 'AI' context 'total' %})
+                            <span>{{ sortie.killboard_pve.aircraft_light }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aircraft_light }}
+                            &times;
+                            {{ score_dict.aircraft_light }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aircraft_medium %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Attacker' context 'total' %} ({% trans 'AI' context 'total' %})
+                            <span>{{ sortie.killboard_pve.aircraft_medium }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aircraft_medium }}
+                            &times;
+                            {{ score_dict.aircraft_medium }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aircraft_heavy %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Bombers' context 'total' %} ({% trans 'AI' context 'total' %})
+                            <span>{{ sortie.killboard_pve.aircraft_heavy }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aircraft_heavy }}
+                            &times;
+                            {{ score_dict.aircraft_heavy }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aircraft_transport %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Transport' context 'total' %} ({% trans 'AI' context 'total' %})
+                            <span>{{ sortie.killboard_pve.aircraft_transport }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aircraft_transport }}
+                            &times;
+                            {{ score_dict.aircraft_transport }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.ak_assist %}
+                <div class="row">
+                    <div class="left">
+                        {% trans 'Assisted' context 'total' %}
+                        <span>{{ sortie.ak_assist }}</span>
+                    </div>
+                    <div class="right score">
+                        {{ sortie.ak_assist }}
+                        &times;
+                        {{ score_dict.ak_assist }}
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="row">
+                    <div class="left">
+                        {% trans 'Destroyed ground targets' context 'total' %}
+                        <span>{{ sortie.gk_total }}</span>
+                    </div>
+                    <div class="right">&nbsp;</div>
+                </div>
+
+                {% if sortie.killboard_pve.tank_heavy %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Heavy Tanks' context 'total' %}
+                            <span>{{ sortie.killboard_pve.tank_heavy }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.tank_heavy }}
+                            &times;
+                            {{ score_dict.tank_heavy }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.tank_medium %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Medium Tanks' context 'total' %}
+                            <span>{{ sortie.killboard_pve.tank_medium }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.tank_medium }}
+                            &times;
+                            {{ score_dict.tank_medium }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.tank_light %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Light Tanks' context 'total' %}
+                            <span>{{ sortie.killboard_pve.tank_light }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.tank_light }}
+                            &times;
+                            {{ score_dict.tank_light }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.armoured_vehicle %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Armored vehicles' context 'total' %}
+                            <span>{{ sortie.killboard_pve.armoured_vehicle }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.armoured_vehicle }}
+                            &times;
+                            {{ score_dict.armoured_vehicle }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.car %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Cars' context 'total' %}
+                            <span>{{ sortie.killboard_pve.car }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.car }}
+                            &times;
+                            {{ score_dict.car }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.truck %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Trucks' context 'total' %}
+                            <span>{{ sortie.killboard_pve.truck }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.truck }}
+                            &times;
+                            {{ score_dict.truck }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aaa_heavy %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Large-caliber AA guns' context 'total' %}
+                            <span>{{ sortie.killboard_pve.aaa_heavy }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aaa_heavy }}
+                            &times;
+                            {{ score_dict.aaa_heavy }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aaa_light %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Medium-caliber AA guns' context 'total' %}
+                            <span>{{ sortie.killboard_pve.aaa_light }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aaa_light }}
+                            &times;
+                            {{ score_dict.aaa_light }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aaa_mg %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Small-caliber AA guns' context 'total' %}
+                            <span>{{ sortie.killboard_pve.aaa_mg }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aaa_mg }}
+                            &times;
+                            {{ score_dict.aaa_mg }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.searchlight %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Searchlights' context 'total' %}
+                            <span>{{ sortie.killboard_pve.searchlight }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.searchlight }}
+                            &times;
+                            {{ score_dict.searchlight }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.locomotive %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Locomotives' context 'total' %}
+                            <span>{{ sortie.killboard_pve.locomotive }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.locomotive }}
+                            &times;
+                            {{ score_dict.locomotive }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.wagon %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Wagons' context 'total' %}
+                            <span>{{ sortie.killboard_pve.wagon }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.wagon }}
+                            &times;
+                            {{ score_dict.wagon }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.artillery_field %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Field Artillery' context 'total' %}
+                            <span>{{ sortie.killboard_pve.artillery_field }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.artillery_field }}
+                            &times;
+                            {{ score_dict.artillery_field }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.artillery_howitzer %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Howitzers' context 'total' %}
+                            <span>{{ sortie.killboard_pve.artillery_howitzer }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.artillery_howitzer }}
+                            &times;
+                            {{ score_dict.artillery_howitzer }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.artillery_rocket %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Rocket Artillery' context 'total' %}
+                            <span>{{ sortie.killboard_pve.artillery_rocket }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.artillery_rocket }}
+                            &times;
+                            {{ score_dict.artillery_rocket }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.ship %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Ships' context 'total' %}
+                            <span>{{ sortie.killboard_pve.ship }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.ship }}
+                            &times;
+                            {{ score_dict.ship }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.aircraft_static %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Static Aircraft' context 'total' %}
+                            <span>{{ sortie.killboard_pve.aircraft_static }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aircraft_static }}
+                            &times;
+                            {{ score_dict.aircraft_static }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.vehicle_static %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Static Vehicles' context 'total' %}
+                            <span>{{ sortie.killboard_pve.vehicle_static }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.vehicle_static }}
+                            &times;
+                            {{ score_dict.vehicle_static }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.airfield %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Airfield Objects' context 'total' %}
+                            <span>{{ sortie.killboard_pve.airfield }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.airfield }}
+                            &times;
+                            {{ score_dict.airfield }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.bridge %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Bridges' context 'total' %}
+                            <span>{{ sortie.killboard_pve.bridge }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.bridge }}
+                            &times;
+                            {{ score_dict.bridge }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.industrial %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Industrial Objects' context 'total' %}
+                            <span>{{ sortie.killboard_pve.industrial }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.industrial }}
+                            &times;
+                            {{ score_dict.industrial }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.bonus.total %}
+                    <div class="row">
+                        <div class="left">
+                            {% trans 'Bonuses' context 'total' %}
+                        </div>
+                        <div class="right">
+                            {{ sortie.score_dict.basic }}
+                            +
+                            <span class="bonus">{{ sortie.bonus.total }}%</span>
+                            =
+                            <span class="sum">{{ sortie.score }}</span>
+                        </div>
+                    </div>
+
+                    {% if sortie.bonus.landed %}
+                        <div class="sub_row">
+                            <div class="left">
+                                {% trans 'Landed on Airfield' context 'sortie' %}
+                            </div>
+                            <div class="right">
+                                <span class="bonus">+ {{ sortie.bonus.landed }}%</span>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    {% if sortie.bonus.winning_coalition %}
+                        <div class="sub_row">
+                            <div class="left">
+                                {% trans 'Coalition won a mission' context 'sortie' %}
+                            </div>
+                            <div class="right">
+                                <span class="bonus">+ {{ sortie.bonus.winning_coalition }}%</span>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endif %}
+                    <div class="row">
+                        <div class="left">
+                            {% trans 'Fairplay Index' %}
+                            <span>{{ sortie.fairplay }}%</span>
+                        </div>
+                        <div class="right">
+                            <span class="sum">{{ sortie.score }}</span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="sortie_detailed" style="float: right;">
+                <div class="title">
+                    {% trans 'Stats of weapons' %}
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Gunnery Accuracy' %}</div>
+                    <div class="num">{{ sortie.accuracy }}%</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Number of shots' %}</div>
+                    <div class="num">{{ sortie.ammo.used_cartridges }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Number of bullets hit the target' %}</div>
+                    <div class="num">{{ sortie.ammo.hit_bullets }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Number of rockets launches' %}</div>
+                    <div class="num">{{ sortie.ammo.used_rockets }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Number of bombs dropped' %}</div>
+                    <div class="num">{{ sortie.ammo.used_bombs }}</div>
+                </div>
+                <span style="color: #CF2D1C; font-size: 13px;">
+                    * {% trans 'This block may contain incorrect information, this is due to the errors in the game log.' %}
+                </span>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+    </section>
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="{% static 'js/sortie.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            scoring();
+        });
+    </script>
+{% endblock bottom %}
+

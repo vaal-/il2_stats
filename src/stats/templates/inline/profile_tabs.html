@@ -1,0 +1,7 @@
+{% load i18n staticfiles tz stats %}
+<nav id="nav_tabs">
+    <div class="nav_tabs">
+        <a href="{% url 'users:profile' %}">{% trans 'Profile' %}</a>
+        <a href="{% url 'squads:main' %}">{% trans 'My Squad' %}</a>
+    </div>
+</nav>

@@ -1,0 +1,7 @@
+{% load i18n staticfiles tz stats %}
+<nav id="nav_tabs">
+    <div class="nav_tabs">
+        <a href="{{ squad.get_profile_url }}">{% trans 'Squad Statistics' context 'squad_nav_tab' %}</a>
+        <a href="{{ squad.get_pilots_url }}">{% trans 'Pilots' context 'squad_nav_tab' %}</a>
+    </div>
+</nav>

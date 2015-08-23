@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'My Squad' %} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/profile_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="my_squad">
+        <div class="wrapper">
+            <div class="content_head"><h1>{% trans 'My Squad' %}</h1></div>
+            <h2>{{ squad.name }} | {{ squad.tag }}</h2>
+            {% if squad.about %}
+                <div class="squad_about">{{ squad.about }}</div>
+            {% endif %}
+            {% if squad_member.is_admin %}
+                <a class="button" href="{% url 'squads:profile' %}" style="margin-top: 20px;">{% trans 'Edit profile' %}</a>
+            {% endif %}
+
+            <h2 style="margin-top: 30px; color: #7c7c7c;">{% trans 'Squad members' %}</h2>
+
+            <div class="members_table">
+            {% for m in squad_members %}
+                <div class="row">
+                    <div class="cell">
+                        {{ m.member.username }}
+                    </div>
+                    {% if squad_member.is_admin %}
+                        {% if squad_member.pk != m.pk %}
+
+                            {% if not m.is_admin %}
+                                <div class="cell green" onclick="give_admin_role({{ m.pk }});">
+                                    {% trans 'Give admin role' %}</div>
+                            {% else %}
+                                <div class="cell orange" onclick="remove_admin_role({{ m.pk }});">
+                                    {% trans 'Remove admin role' %}</div>
+                            {% endif %}
+
+                            <div class="cell red" onclick="kick_from_squad({{ m.pk }});">{% trans 'Kick from squad' %}</div>
+                        {% else %}
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+            </div>
+
+            {% if squad_member.is_admin %}
+            <hr>
+
+{#            <h2>{% trans 'Join squad url' %}</h2>#}
+
+            <form class="form" action="" method="post" onsubmit="this.submit.disabled=true;">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="gen_new_url"/>
+
+                <div class="form_field url">
+                    <label for="id_website">{% trans 'Join squad url' %}</label>
+                    <div class="field_wrapper">
+                        <div class="help_text">{% trans 'With this url any registered user can join your squad.' %}</div>
+                        <input readonly id="join_code" name="join_code" type="text" style="width: 700px;"
+                               data-clipboard-target="#join_code"
+                               value="{{ request.scheme }}://{{ request.get_host }}{{ squad.get_join_url }}">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="green">{% trans 'Generate new url' %}</button>
+                </div>
+            </form>
+
+            {% endif %}
+
+            <hr>
+
+            <div><a class="button" href="{% url 'squads:leave' %}">{% trans 'Leave Squad' %}</a></div>
+            {% if squad_member.is_admin %}
+            <div style="margin-top: 20px;"><a class="button" href="{% url 'squads:remove' %}">{% trans 'Remove Squad' %}</a></div>
+            {% endif %}
+
+        </div>
+    </section>
+
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js"></script>
+
+    <form id="form_squad" action="" method="post" onsubmit="this.submit.disabled=true;">
+        {% csrf_token %}
+        <input id="form_squad_action" type="hidden" name="action" value=""/>
+        <input id="form_squad_member_id" type="hidden" name="member_id" value=""/>
+    </form>
+
+    <script>
+        new Clipboard('#join_code');
+
+        function kick_from_squad(member_id) {
+            $('#form_squad_action').val('kick');
+            $('#form_squad_member_id').val(member_id);
+            $('form#form_squad').submit();
+        }
+        function give_admin_role(member_id) {
+            $('#form_squad_action').val('give_admin');
+            $('#form_squad_member_id').val(member_id);
+            $('form#form_squad').submit();
+        }
+        function remove_admin_role(member_id) {
+            $('#form_squad_action').val('remove_admin');
+            $('#form_squad_member_id').val(member_id);
+            $('form#form_squad').submit();
+        }
+    </script>
+{% endblock bottom %}

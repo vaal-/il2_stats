@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Pilot Rankings' %} / {{ block.super }}{% endblock title %}
+
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Pilot Rankings' %}
+                    <div class="content_title_sm" id="sort_by_text"></div>
+                </div>
+                <div class="form_search">
+                    <form action="" method="GET">
+                        <input type="hidden" name="tour" value="{{ request.tour.id }}"/>
+                        <input type="text" name="search" value="" placeholder="{% trans 'Search pilot' %}">
+                    </form>
+                </div>
+            </div>
+
+            {% if players %}
+            <div class="content_table">
+                <div class="head_row">
+                    <div class="cell" style="width: 60px;"></div>
+                    <div class="cell"></div>
+                    <div class="cell" style="width: 60px;"></div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-ak_total">
+                            <img src="{% static 'img/icons/small/ak.png' %}" width="18" height="18"
+                                 alt="{% trans 'Air Kills' %}" title="{% trans 'Air Kills' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-streak_current">
+                            <img src="{% static 'img/icons/small/streak.png' %}" width="18" height="18"
+                                 alt="{% trans 'Current Streak' %}" title="{% trans 'Current Streak' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-gk_total">
+                            <img src="{% static 'img/icons/small/gk.png' %}" width="18" height="18"
+                                 alt="{% trans 'Ground Kills' %}" title="{% trans 'Ground Kills' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-flight_time">
+                            <img src="{% static 'img/icons/small/ft.png' %}" width="18" height="18"
+                                 alt="{% trans 'Flight Time (hours:minutes)' %}" title="{% trans 'Flight Time (hours:minutes)' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-kd">
+                            <img src="{% static 'img/icons/small/kd.png' %}" width="18" height="18"
+                                 alt="K/D" title="K/D">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-khr">
+                            <img src="{% static 'img/icons/small/khr.png' %}" width="18" height="18"
+                                 alt="K/Hr" title="K/Hr">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-accuracy">
+                            <img src="{% static 'img/icons/small/acc.png' %}" width="18" height="18"
+                                 alt="{% trans 'Gunnery Accuracy' %}" title="{% trans 'Gunnery Accuracy' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-rating">
+                            <img src="{% static 'img/icons/small/rating.png' %}" width="18" height="18"
+                                 alt="{% trans 'Rating' %}" title="{% trans 'Rating' %}">
+                        </a>
+                    </div>
+                </div>
+                {% for player in players %}
+                <a class="row" href="{{ player.get_profile_url }}">
+                    <div class="cell">{{ players.start_index|add:forloop.counter0 }}</div>
+                    <div class="cell" style="text-align: left;">{{ player.nickname }}</div>
+                    <div class="cell img">
+                        {% include 'inline/table_coal_pref_icon.html' with coal_pref=player.coal_pref %}
+                    </div>
+                    <div class="cell">{{ player.ak_total }}</div>
+                    <div class="cell">{{ player.streak_current }}</div>
+                    <div class="cell">{{ player.gk_total }}</div>
+                    <div class="cell">{{ player.flight_time|seconds_to_time }}</div>
+                    <div class="cell">{{ player.kd }}</div>
+                    <div class="cell">{{ player.khr }}</div>
+                    <div class="cell">{{ player.accuracy }}%</div>
+                    <div class="cell" title="{{ player.rating }}">{{ player.rating_format }}</div>
+                </a>
+                {% endfor %}
+            </div>
+                {% if players.paginator.num_pages > 1 %}
+                    <div class="paginator3000" id="paginator"></div>
+                {% endif %}
+            {% endif %}
+
+            <div class="info" style="padding-top: 20px;">
+                <div>
+                    {% blocktrans trimmed %}
+                    <strong>Attention!</strong> Algorithms collection statistics IL2 stats differs from statistics in-game. As a consequence of these statistics will not coincide with the game.
+                    {% endblocktrans %}
+                </div>
+                <div>
+                {% if INACTIVE_PLAYER_DAYS %}
+                    {% blocktrans trimmed count days=INACTIVE_PLAYER_DAYS.days %}
+                        Players inactive for more than {{ days }} day - do not participate in the rating.
+                    {% plural %}
+                        Players inactive for more than {{ days }} days - do not participate in the rating.
+                    {% endblocktrans %}
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="{% static 'js/table.js' %}"></script>
+    <script>
+        var sort_by_text = {
+            'ak_total': '{% trans 'on the number of air kills' %}',
+            'streak_current': '{% trans 'on the current streak of kills' %}',
+            'gk_total': '{% trans 'on the number of ground kills' %}',
+            'flight_time': '{% trans 'on the flight time (hours:minutes)' %}',
+            'kd': '{% trans 'on the average number of kill per one death (K/D)' %}',
+            'khr': '{% trans 'on the average number of kill per one hour (K/Hr)' %}',
+            'accuracy': '{% trans 'on the accuracy' %}',
+            'rating': ''
+        };
+
+        $(document).ready(function() {
+            uri_sort_by('-rating', sort_by_text);
+            var paginator = new Paginator('paginator', {{ players.paginator.num_pages }}, 15, {{ players.number }}, uri_paginator);
+        });
+    </script>
+{% endblock bottom %}

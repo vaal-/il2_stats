@@ -1,0 +1,53 @@
+Update Guide
+
+1) Complete the process of stats and waitress. If stats is currently being processed mission - to wait until the processing is complete.
+
+2) Update files to the new files from the archive
+
+3) Start run\update.cmd
+This process performs the following actions:
+- updates the library (if required)
+- update the scheme and content of the database (if required)
+- collect static files
+- updates information about game objects
+- clears the expired web session
+
+Log should look like this when the update goes well
+
+========================================================================================================================
+
+E:\games\il2_stats\run>cd ../
+
+E:\games\il2_stats>".venv/Scripts/pip.exe" install -U --quiet --no-index --find-links=wheelhouse -r requirements.txt
+
+E:\games\il2_stats>pause
+Press any key to continue . . .
+
+E:\games\il2_stats>cd src
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py migrate --noinput --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py collectstatic --noinput --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py import_csv_data --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+E:\games\il2_stats\src>"../.venv/Scripts/python.exe" manage.py clearsessions --verbosity 0
+
+E:\games\il2_stats\src>pause
+Press any key to continue . . .
+
+========================================================================================================================
+
+If at some point in the log display the any other information, it is likely this is a error and a reason to contact the developers.
+
+
+4) After the update, you can start the site and collection of statistics

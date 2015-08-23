@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Remove Squad' %} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/profile_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="my_squad">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Remove Squad' %}
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                {% trans 'Your squad will be removed, this action is irreversible. The old statistics will be available for viewing. Confirm the remove of the squad.' %}
+            </div>
+            <div style="margin-top: 20px;">
+                <form class="form" action="" method="post" onsubmit="this.submit.disabled=true;">
+                    {% csrf_token %}
+                    <div class="buttons">
+                        <button type="submit" class="green">{% trans 'Confirm' context 'action' %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
