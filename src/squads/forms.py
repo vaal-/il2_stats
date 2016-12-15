@@ -23,6 +23,8 @@ class RegistrationForm(forms.ModelForm):
 
     def clean_tag(self):
         tag = self.cleaned_data.get('tag')
+        # remove all whitespace characters (space, tab, newline...)
+        tag = ''.join(tag.split())
         if Squad.objects.filter(tag=tag, is_removed=False).exists():
             raise forms.ValidationError(_('A squad with that tag already exists.'))
         return tag
@@ -43,6 +45,8 @@ class ProfileForm(forms.ModelForm):
 
     def clean_tag(self):
         tag = self.cleaned_data.get('tag')
+        # remove all whitespace characters (space, tab, newline...)
+        tag = ''.join(tag.split())
         if Squad.objects.filter(tag=tag, is_removed=False).exclude(id=self.instance.pk).exists():
             raise forms.ValidationError(_('A squad with that tag already exists.'))
         return tag
@@ -50,9 +54,12 @@ class ProfileForm(forms.ModelForm):
     def clean_logo(self):
         uploaded_file = self.cleaned_data['logo']
         if uploaded_file:
-            if uploaded_file._size > MAX_FILE_SIZE:
-                raise forms.ValidationError(_('Maximum file size: %(size)s') % {'size': MAX_FILE_SIZE_STR})
-            if imghdr.what(uploaded_file) not in ALLOWED_FILE_FORMATS:
-                raise forms.ValidationError(_('Allowed file formats are: %(formats)s') %
-                                            {'formats': ALLOWED_FILE_FORMATS_STR})
+            try:
+                if uploaded_file._size > MAX_FILE_SIZE:
+                    raise forms.ValidationError(_('Maximum file size: %(size)s') % {'size': MAX_FILE_SIZE_STR})
+                if imghdr.what(uploaded_file) not in ALLOWED_FILE_FORMATS:
+                    raise forms.ValidationError(_('Allowed file formats are: %(formats)s') %
+                                                {'formats': ALLOWED_FILE_FORMATS_STR})
+            except AttributeError:
+                return
         return uploaded_file
