@@ -61,6 +61,9 @@ aircraft_pilot,BotPilot_Ju88,1,pilot,пилот
 aircraft_pilot,BotPilot_Il2,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3,1,pilot,пилот
 aircraft_pilot,BotPilot_Pe2,1,pilot,пилот
+aircraft_pilot,BotPilot_Ju52,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
+aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_open,0,parked aircraft,самолет на стоянке
@@ -187,6 +190,7 @@ bomb,BOMB_RUS_FAB250sv_P40,0,FAB-250sv,ФАБ-250св
 bomb,BOMB_RUS_FAB500M,0,FAB-500M,ФАБ-500М
 bomb,BOMB_RUS_FAB500M_P40,0,FAB-500M,ФАБ-500М
 bomb,BOMB_RUS_FAB50sv,0,FAB-50sv,ФАБ-50св
+bomb,test_container,0,Container,Container
 bridge,bridge_big_1,0,railway bridge,ж/д мост
 bridge,bridge_big_2,0,railway bridge,ж/д мост
 bridge,bridge_pontoon_100,0,pontoon bridge,понтонный мост
@@ -649,6 +653,12 @@ trash,sec2,0,,
 trash,sec3,0,,
 trash,secU,0,,
 trash,tunel,0,,
+trash,EjectionPlace,0,,
+trash,EjectionPlace controller AI,0,,
+trash,EjectorController,0,,
+trash,ParatroopersCreator_Ju52,0,,
+trash,Ju523mg4e_P2,0,,
+trash,Ju523mg4e_P3,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
@@ -661,6 +671,7 @@ vehicle_crew,BotGunner_PzIII,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunner_T34,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunnerHowitzer,0,gunner,стрелок-наводчик
 vehicle_crew,BotMachinist0,0,machinist,машинист
+vehicle_crew,ParatrooperGER,0,paratrooper,десантник
 vehicle_static,static_opel,0,truck,грузовик
 vehicle_static,static_opel_fuel,0,truck,грузовик
 vehicle_static,static_zis,0,truck,грузовик
