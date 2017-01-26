@@ -1,0 +1,9 @@
+coverage
+django-debug-toolbar
+django-rosetta
+pytest
+pytest-cov
+pytest-django
+pytest-mock
+django-rosetta
+pympler
