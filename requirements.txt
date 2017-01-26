@@ -4,7 +4,6 @@ setuptools==32.1.0
 
 argon2-cffi==16.3.0
 cffi==1.9.1
-contextlib2==0.5.4
 dj-static==0.0.6
 Django==1.10.4
 django-modeltranslation==0.12
@@ -13,7 +12,6 @@ Pillow==3.4.2
 psycopg2==2.6.2
 pycparser==2.17
 pytz
-raven==5.32.0
 six==1.10.0
 static3==0.7.0
 tzlocal==1.3

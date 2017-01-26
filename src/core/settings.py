@@ -61,7 +61,6 @@ SERVER_EMAIL = 'root@localhost'
 
 INSTALLED_APPS = [
     'modeltranslation',
-    'raven.contrib.django.raven_compat',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -80,7 +79,6 @@ INSTALLED_APPS = [
 
 
 MIDDLEWARE = [
-    'raven.contrib.django.raven_compat.middleware.Sentry404CatchMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -319,9 +317,6 @@ LOGGING = {
     }
 }
 
-RAVEN_CONFIG = {
-    'dsn': 'https://c0900d934e024a84afedd6727840d06a:7e901786db3043629847961ea70c24a8@sentry.io/118767',
-}
 
 #########
 # STATS #
