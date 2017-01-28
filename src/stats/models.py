@@ -854,6 +854,7 @@ class Sortie(models.Model):
     bonus = JSONField(default=dict)
 
     debug = JSONField(default=dict)
+    is_ignored = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['-id']

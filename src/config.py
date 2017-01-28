@@ -32,6 +32,7 @@ DEFAULT = {
         'win_by_score': True,
         'win_score_min': 2000,
         'win_score_ratio': 1.5,
+        'sortie_min_time': 0,
     },
     'email': {
         'send_email': False,
@@ -94,6 +95,7 @@ NEW_TOUR_BY_MONTH = conf['stats'].getboolean('new_tour_by_month')
 WIN_BY_SCORE = conf['stats'].getboolean('win_by_score')
 WIN_SCORE_MIN = conf['stats'].getint('win_score_min')
 WIN_SCORE_RATIO = conf['stats'].getfloat('win_score_ratio')
+SORTIE_MIN_TIME = conf['stats'].getint('sortie_min_time')
 
 SEND_EMAIL = conf['email'].getboolean('send_email')
 DEFAULT_FROM_EMAIL = conf['email']['from_email']

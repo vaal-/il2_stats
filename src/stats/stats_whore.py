@@ -38,6 +38,7 @@ TIME_ZONE = pytz.timezone(settings.MISSION_REPORT_TZ)
 WIN_BY_SCORE = settings.WIN_BY_SCORE
 WIN_SCORE_MIN = settings.WIN_SCORE_MIN
 WIN_SCORE_RATIO = settings.WIN_SCORE_RATIO
+SORTIE_MIN_TIME = settings.SORTIE_MIN_TIME
 
 
 def main():
@@ -430,6 +431,12 @@ def create_new_sortie(mission, profile, player, sortie, sortie_aircraft_id):
     sortie_date_end = mission.date_start + timedelta(seconds=sortie_tik_last // 50)
     flight_time = round((sortie_tik_last - (sortie.tik_takeoff or sortie.tik_spawn)) / 50, 0)
 
+    is_ignored = False
+    # вылет игнорируется если общее время вылета меньше установленного конфигом
+    if SORTIE_MIN_TIME:
+        if (sortie_tik_last // 50) - (sortie.tik_spawn // 50) < SORTIE_MIN_TIME:
+            is_ignored = True
+
     killboard_pvp = defaultdict(int)
     killboard_pve = defaultdict(int)
     # player_targets = []
@@ -525,7 +532,8 @@ def create_new_sortie(mission, profile, player, sortie, sortie_aircraft_id):
         ratio=sortie.ratio,
         damage=round(sortie.aircraft_damage, 2),
         wound=round(sortie.bot_damage, 2),
-        debug={'aircraft_id': sortie.aircraft_id, 'bot_id': sortie.bot_id}
+        debug={'aircraft_id': sortie.aircraft_id, 'bot_id': sortie.bot_id},
+        is_ignored=is_ignored,
     )
 
     return new_sortie
@@ -544,6 +552,9 @@ def update_sortie(new_sortie, player_mission, player_aircraft):
         player.disco += 1
         player_mission.disco += 1
         player_aircraft.disco += 1
+        return
+    # если вылет игнорируется по каким либо причинам
+    elif new_sortie.is_ignored:
         return
 
     # если в вылете было что-то уничтожено - считаем его боевым
