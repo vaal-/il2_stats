@@ -15,6 +15,8 @@ aaa_mg,M4,0,M4 AAA machinegun,зенитный пулемёт Максим
 aaa_mg,M4 turret,0,M4 AAA machinegun,зенитный пулемёт Максим
 aaa_mg,MG 34 AA,0,MG-34 AA machinegun,зенитный пулемёт MG-34
 aaa_mg,MG 34 AA turret,0,MG-34 AA machinegun,зенитный пулемёт MG-34
+aaa_mg,MG-34 AA,0,MG-34 AA machinegun,зенитный пулемёт MG-34
+aaa_mg,MG-34 AA turret,0,MG-34 AA machinegun,зенитный пулемёт MG-34
 aircraft_gunner,BotGunner,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6fwd,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6fwdM,1,Aircraft gunner,стрелок
@@ -28,6 +30,8 @@ aircraft_gunner,BotGunner_Ju88fwd,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88btm,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Bf110E2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Bf110G2,1,Aircraft gunner,стрелок
 aircraft_heavy,He 111 H-6,1,,
 aircraft_heavy,He 111 H-16,1,,
 aircraft_heavy,Ju 88 A-4,1,,
@@ -99,6 +103,7 @@ aircraft_static,static_mig3_net,0,parked aircraft,самолет на стоян
 aircraft_transport,Ju 52 3mg4e,1,,
 aircraft_turret,aircraft_turret,1,,
 aircraft_turret,Turret_Bf110E2,1,Bf 110 E-2 turret,турель Bf 110 E-2
+aircraft_turret,Turret_Bf110G2,1,Bf 110 G-2 turret,турель Bf 110 G-2
 aircraft_turret,Turret_He111H6_1,1,He 111 H-6 turret,турель He 111 H-6
 aircraft_turret,Turret_He111H6_1M,1,He 111 H-6 turret,турель He 111 H-6
 aircraft_turret,Turret_He111H6_2,1,He 111 H-6 turret,турель He 111 H-6
@@ -242,6 +247,8 @@ bridge,ferry2,0,pontoon bridge,понтонный мост
 bridge,ferryfloat,0,pontoon bridge,понтонный мост
 bullet,BULLET_GER_7-92x57_AP,0,,
 bullet,BULLET_GER_792x57_SS,0,,
+bullet,BULLET_GER_13x64_AP,0,,
+bullet,BULLET_GER_13x64_HE,0,,
 bullet,BULLET_ITA_12-7x81_AP,0,,
 bullet,BULLET_ITA_12-7x81_HE,0,,
 bullet,BULLET_ITA_7-7x56_AP,0,,
@@ -350,6 +357,7 @@ tank_light,BT-7M,0,BT-7M,БТ-7М
 tank_light,T-70,0,T-70,T-70
 tank_light,Marder III Ausf. H,0,SPG Marder III Ausf. H,
 tank_light,PzKpfw 38(t),0,Pz.Kpfw.38(t),
+tank_light,PzKpfw 38t,0,Pz.Kpfw.38(t),
 tank_medium,PzKpfw III Ausf.L,0,PzKpfw III Ausf.L,
 tank_medium,_PzKpfw III Ausf.L,1,PzKpfw III Ausf.L,
 tank_medium,PzKpfw IV Ausf.G,0,PzKpfw IV Ausf.G,
