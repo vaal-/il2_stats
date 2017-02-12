@@ -629,7 +629,7 @@ class Object:
                                        'target': self, 'is_friendly_fire': is_friendly_fire})
 
     def killed_by_damage(self):
-        if not self.is_killed and self.life_status.is_destroyed:
+        if not self.is_killed and (self.life_status.is_destroyed or self.is_captured):
             # если самолет приземлился не в зоне своего филда или пилот выпрыгнул или пилот мертв
             # - записываем его как сбитый
             if (self.on_ground and not self.is_rtb) or self.is_bailout or (self.bot and self.bot.life_status.is_destroyed):
