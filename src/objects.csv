@@ -32,6 +32,12 @@ aircraft_gunner,BotGunner_Ju88top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110E2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110G2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16fwd,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16fwdM,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16rearM,1,Aircraft gunner,стрелок
 aircraft_heavy,He 111 H-6,1,,
 aircraft_heavy,He 111 H-16,1,,
 aircraft_heavy,Ju 88 A-4,1,,
@@ -110,6 +116,12 @@ aircraft_turret,Turret_He111H6_2,1,He 111 H-6 turret,турель He 111 H-6
 aircraft_turret,Turret_He111H6_3,1,He 111 H-6 turret,турель He 111 H-6
 aircraft_turret,Turret_He111H6_3M,1,He 111 H-6 turret,турель He 111 H-6
 aircraft_turret,Turret_He111H6_4,1,He 111 H-6 turret,турель He 111 H-6
+aircraft_turret,Turret_he111h16_1,1,He 111 H-16 turret,турель He 111 H-16
+aircraft_turret,Turret_he111h16_2,1,He 111 H-16 turret,турель He 111 H-16
+aircraft_turret,Turret_he111h16_3,1,He 111 H-16 turret,турель He 111 H-16
+aircraft_turret,Turret_he111h16_4,1,He 111 H-16 turret,турель He 111 H-16
+aircraft_turret,Turret_He111H16_1M,1,He 111 H-16 turret,турель He 111 H-16
+aircraft_turret,Turret_He111H16_3M,1,He 111 H-16 turret,турель He 111 H-16
 aircraft_turret,Turret_Il2m42,1,IL-2 AM-38 turret,турель Ил-2 AM-38
 aircraft_turret,Turret_Ju523mg4e,1,Ju 52 3mg4e turret,турель Ju 52 3mg4e
 aircraft_turret,Turret_Ju87D3,1,Ju 87 D-3 turret,турель Ju-87 D-3
