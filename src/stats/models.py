@@ -358,8 +358,8 @@ class Player(models.Model):
     date_last_sortie = models.DateTimeField(null=True)
     date_last_combat = models.DateTimeField(null=True)
 
-    score = models.IntegerField(default=0, db_index=True)
-    rating = models.IntegerField(default=0, db_index=True)
+    score = models.BigIntegerField(default=0, db_index=True)
+    rating = models.BigIntegerField(default=0, db_index=True)
     ratio = models.FloatField(default=1)
 
     sorties_total = models.IntegerField(default=0)
@@ -375,7 +375,7 @@ class Player(models.Model):
     coal_pref = models.IntegerField(default=Coalition.neutral, choices=COALITIONS)
 
     # налет в секундах?
-    flight_time = models.IntegerField(default=0, db_index=True)
+    flight_time = models.BigIntegerField(default=0, db_index=True)
 
     ammo = JSONField(default=default_ammo)
     accuracy = models.FloatField(default=0, db_index=True)
@@ -560,7 +560,7 @@ class PlayerMission(models.Model):
     coal_pref = models.IntegerField(default=Coalition.neutral, choices=COALITIONS)
 
     # налет в секундах?
-    flight_time = models.IntegerField(default=0, db_index=True)
+    flight_time = models.BigIntegerField(default=0, db_index=True)
 
     ammo = JSONField(default=default_ammo)
     accuracy = models.FloatField(default=0, db_index=True)
@@ -675,7 +675,7 @@ class PlayerAircraft(models.Model):
     ratio = models.FloatField(default=1)
 
     sorties_total = models.IntegerField(default=0)
-    flight_time = models.IntegerField(default=0)
+    flight_time = models.BigIntegerField(default=0)
 
     ammo = JSONField(default=default_ammo)
     accuracy = models.FloatField(default=0)
@@ -1005,8 +1005,8 @@ class Squad(models.Model):
     num_members = models.PositiveIntegerField(default=0, db_index=True)
     max_members = models.PositiveIntegerField(default=0)
 
-    score = models.IntegerField(default=0, db_index=True)
-    rating = models.IntegerField(default=0, db_index=True)
+    score = models.BigIntegerField(default=0, db_index=True)
+    rating = models.BigIntegerField(default=0, db_index=True)
 
     sorties_total = models.IntegerField(default=0)
     sorties_coal = ArrayField(models.IntegerField(default=0), default=default_coal_list)
@@ -1021,7 +1021,7 @@ class Squad(models.Model):
     coal_pref = models.IntegerField(default=Coalition.neutral, choices=COALITIONS)
 
     # налет в секундах?
-    flight_time = models.IntegerField(default=0, db_index=True)
+    flight_time = models.BigIntegerField(default=0, db_index=True)
 
     bailout = models.IntegerField(default=0)
     wounded = models.IntegerField(default=0)
