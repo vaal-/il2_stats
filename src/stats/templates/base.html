@@ -144,16 +144,24 @@
                     {% if LANGUAGE_CODE == 'ru' %}
                         <a class="lang" href="/en{{ request.get_full_path|slice:'3:' }}">English version</a>
                         <a class="lang" href="/de{{ request.get_full_path|slice:'3:' }}">Deutsche Version</a>
+                        <a class="lang" href="/es{{ request.get_full_path|slice:'3:' }}">Spanish version</a>
                     {% elif LANGUAGE_CODE == 'en' %}
                         <a class="lang" href="/ru{{ request.get_full_path|slice:'3:' }}">Русская версия</a>
                         <a class="lang" href="/de{{ request.get_full_path|slice:'3:' }}">Deutsche Version</a>
+                        <a class="lang" href="/es{{ request.get_full_path|slice:'3:' }}">Spanish version</a>
                     {% elif LANGUAGE_CODE == 'de' %}
                         <a class="lang" href="/en{{ request.get_full_path|slice:'3:' }}">English version</a>
                         <a class="lang" href="/ru{{ request.get_full_path|slice:'3:' }}">Русская версия</a>
+                        <a class="lang" href="/es{{ request.get_full_path|slice:'3:' }}">Spanish version</a>
+                    {% elif LANGUAGE_CODE == 'es' %}
+                        <a class="lang" href="/en{{ request.get_full_path|slice:'3:' }}">English version</a>
+                        <a class="lang" href="/ru{{ request.get_full_path|slice:'3:' }}">Русская версия</a>
+                        <a class="lang" href="/de{{ request.get_full_path|slice:'3:' }}">Deutsche Version</a>
                     {% else %}
                         <a class="lang" href="/en{{ request.get_full_path|slice:'3:' }}">English version</a>
                         <a class="lang" href="/ru{{ request.get_full_path|slice:'3:' }}">Русская версия</a>
                         <a class="lang" href="/de{{ request.get_full_path|slice:'3:' }}">Deutsche Version</a>
+                        <a class="lang" href="/es{{ request.get_full_path|slice:'3:' }}">Spanish version</a>
                     {% endif %}
                 </div>
             </div>

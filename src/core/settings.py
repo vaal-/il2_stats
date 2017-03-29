@@ -153,6 +153,7 @@ LANGUAGES = (
     ('ru', _('Russian')),
     ('de', _('German')),
     ('fr', _('French')),
+    ('es', _('Spanish')),
 )
 
 TIME_ZONE = 'UTC'
@@ -162,6 +163,7 @@ TIME_ZONES = {
     'ru': 'Europe/Moscow',
     'de': 'Europe/Berlin',
     'fr': 'Europe/Paris',
+    'es': 'Europe/Madrid',
 }
 
 USE_I18N = True
