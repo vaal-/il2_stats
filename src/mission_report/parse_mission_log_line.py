@@ -2,6 +2,7 @@ from ast import literal_eval
 from datetime import datetime
 import functools
 import re
+import unicodedata
 
 
 class UnexpectedATypeWarning(Warning):
@@ -216,6 +217,7 @@ def parse(line):
     :type line: str
     :rtype: dict | None
     """
+    line = unicodedata.normalize('NFKD', line)
     atype_id = int(line.partition('AType:')[2][:2])
     if 0 <= atype_id <= 21:
         data = atype_handlers[atype_id].match(line.strip()).groupdict()

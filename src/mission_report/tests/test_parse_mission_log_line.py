@@ -175,11 +175,11 @@ def test_atype_10_pos_fuel_bug():
     assert parse(line) == result
 
 
-def test_atype_10_skin():
+def test_atype_10_skin_non_breaking_unicode_space():
     line = ('T:51768 AType:10 PLID:743436 PID:840716 BUL:1200 SH:0 BOMB:0 RCT:0 (78930.883,177.770,122328.320) '
-            'IDS:b2e40548-27f8-49fa-9a24-ed6bfef31a9e LOGIN:c8d4d124-2a93-43df-87ca-338f8df20614 '
-            'NAME:6./ZG26_Custard TYPE:Bf 109 F-2 COUNTRY:201 FORM:0 FIELD:16384 INAIR:2 PARENT:-1 PAYLOAD:0 '
-            'FUEL:1.000 SKIN:bf109f2/4k bf-109f-2 custard .dds WM:49')
+            'IDS:b2e40548-27f8-49fa-9a24-ed6bfef31a9e LOGIN:c8d4d124-2a93-43df-87ca-338f8df20614 NAME:6./ZG26_Custard '
+            'TYPE:Bf 109 F-2 COUNTRY:201 FORM:0 FIELD:16384 INAIR:2 PARENT:-1 PAYLOAD:0 '
+            'FUEL:1.000 SKIN:bf109f2/4k bf-109f-2 custard .dds WM:49')
     result = {'tik': 51768, 'atype_id': 10, 'aircraft_id': 743436, 'bot_id': 840716, 'cartridges': 1200, 'shells': 0,
               'bombs': 0, 'rockets': 0, 'pos': dict(x=78930.883, y=177.770, z=122328.32),
               'profile_id': 'b2e40548-27f8-49fa-9a24-ed6bfef31a9e', 'account_id': 'c8d4d124-2a93-43df-87ca-338f8df20614',
