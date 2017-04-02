@@ -1,15 +1,17 @@
 from datetime import datetime
 
-from ..parse_mission_log_line import parse
+import pytest
+
+from ..parse_mission_log_line import parse, UnexpectedATypeWarning
 
 
 def test_atype_0():
     line = ('T:0 AType:0 GDate:1942.9.19 GTime:14:0:0 MFile:Multiplayer/Dogfight\_gen.msnbin MID: GType:2 '
             'CNTRS:0:0,101:1,201:2 SETTS:000000000010000100000000110 MODS:0 PRESET:0 AQMID:0 ROUNDS: 1 POINTS: 15000')
-    result = {'tik': 0, 'atype_id': 0, 'date': datetime(1943, 1, 1, 9, 15),
-              'file_path': 'Multiplayer/Dogfight\\Commando-WL-012-01.msnbin', 'game_type_id': 2,
-              'countries': {0: 0, 201: 2, 50: 0, 101: 1, 202: 2},
-              'settings': (0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+    result = {'tik': 0, 'atype_id': 0, 'date': datetime(1942, 9, 19, 14),
+              'file_path': 'Multiplayer/Dogfight\_gen.msnbin', 'game_type_id': 2,
+              'countries': {0: 0, 201: 2,  101: 1},
+              'settings': (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0),
               'mods': False, 'preset_id': 0}
     assert parse(line) == result
 
@@ -173,6 +175,20 @@ def test_atype_10_pos_fuel_bug():
     assert parse(line) == result
 
 
+def test_atype_10_skin():
+    line = ('T:51768 AType:10 PLID:743436 PID:840716 BUL:1200 SH:0 BOMB:0 RCT:0 (78930.883,177.770,122328.320) '
+            'IDS:b2e40548-27f8-49fa-9a24-ed6bfef31a9e LOGIN:c8d4d124-2a93-43df-87ca-338f8df20614 '
+            'NAME:6./ZG26_Custard TYPE:Bf 109 F-2 COUNTRY:201 FORM:0 FIELD:16384 INAIR:2 PARENT:-1 PAYLOAD:0 '
+            'FUEL:1.000 SKIN:bf109f2/4k bf-109f-2 custard .dds WM:49')
+    result = {'tik': 51768, 'atype_id': 10, 'aircraft_id': 743436, 'bot_id': 840716, 'cartridges': 1200, 'shells': 0,
+              'bombs': 0, 'rockets': 0, 'pos': dict(x=78930.883, y=177.770, z=122328.32),
+              'profile_id': 'b2e40548-27f8-49fa-9a24-ed6bfef31a9e', 'account_id': 'c8d4d124-2a93-43df-87ca-338f8df20614',
+              'name': '6./ZG26_Custard', 'aircraft_name': 'Bf 109 F-2', 'country_id': 201, 'form': '0',
+              'airfield_id': 16384, 'airstart': False, 'parent_id': None, 'payload_id': 0, 'fuel': 100.0,
+              'skin': 'bf109f2/4k bf-109f-2 custard .dds', 'weapon_mods_id': [4, 5]}
+    assert parse(line) == result
+
+
 def test_atype_11():
     line = 'T:1 AType:11 GID:115711 IDS:17407,26623,35839 LID:17407'
     result = {'tik': 1, 'atype_id': 11, 'group_id': 115711, 'members_id': [17407, 26623, 35839], 'leader_id': 17407}
@@ -292,4 +308,5 @@ def test_atype_21():
 
 def test_atype_unknown():
     line = 'T:58 AType:25 VER:17'
-    assert parse(line) is None
+    with pytest.raises(UnexpectedATypeWarning):
+        parse(line)

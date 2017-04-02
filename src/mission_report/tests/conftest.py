@@ -6,8 +6,8 @@ from ..report import Airfield, Area, MissionReport, Object, Sortie
 @pytest.fixture
 def mission():
     mission_ = MissionReport(objects={
-        'la-5 ser.8': {'cls': 'aircraft_light', 'cls_base': 'aircraft'},
-        'botpilot': {'cls': 'aircraft_pilot', 'cls_base': 'crew'},
+        'la-5 ser.8': {'cls': 'aircraft_light', 'cls_base': 'aircraft', 'is_playable': True},
+        'botpilot': {'cls': 'aircraft_pilot', 'cls_base': 'crew', 'is_playable': True},
     })
     mission_.countries = {101: 1, 201: 2}
     return mission_
