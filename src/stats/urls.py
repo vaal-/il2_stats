@@ -20,6 +20,7 @@ from django.views.generic import RedirectView
 from . import views
 
 
+app_name = 'stats'
 urlpatterns = [
     url(r'^pilots/$', views.pilot_rankings, name='pilots'),
     url(r'^squads/$', views.squad_rankings, name='squads'),

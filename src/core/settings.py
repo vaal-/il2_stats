@@ -36,7 +36,8 @@ INTERNAL_IPS = ()
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_FILE = BASE_DIR.joinpath('SECRET_KEY')
 try:
-    SECRET_KEY = SECRET_FILE.open().read()
+    with SECRET_FILE.open() as f:
+        SECRET_KEY = f.read()
 except IOError:
     import string
     from django.utils.crypto import get_random_string

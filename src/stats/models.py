@@ -12,8 +12,6 @@ from django.utils.translation import ugettext_lazy as _, pgettext_lazy
 from mission_report.constants import Coalition, Country
 from mission_report.statuses import BotLifeStatus, SortieStatus, LifeStatus
 
-from stuff.fields import CaseInsensitiveCharField
-
 from .aircraft_mods import get_aircraft_mods
 from .aircraft_payloads import get_aircraft_payload
 from .models_managers import PlayerManager, SquadManager
@@ -119,7 +117,7 @@ class Object(models.Model):
     log_name = models.CharField(max_length=64, editable=False, unique=True)
     cls_base = models.CharField(choices=CLASSES_BASE, max_length=24, blank=True)
     cls = models.CharField(choices=CLASSES, max_length=24, blank=True)
-    score = models.ForeignKey(Score)
+    score = models.ForeignKey(Score, on_delete=models.CASCADE)
     is_playable = models.BooleanField(default=False, editable=False)
 
     class Meta:
@@ -240,7 +238,7 @@ class Tour(models.Model):
 
 
 class Mission(models.Model):
-    tour = models.ForeignKey(Tour, related_name='missions')
+    tour = models.ForeignKey(Tour, related_name='missions', on_delete=models.CASCADE)
 
     name = models.CharField(max_length=256, blank=True, db_index=True)
     path = models.CharField(max_length=256, blank=True)
@@ -344,14 +342,14 @@ class Profile(models.Model):
 
 
 class Player(models.Model):
-    tour = models.ForeignKey(Tour, related_name='+')
+    tour = models.ForeignKey(Tour, related_name='+', on_delete=models.CASCADE)
     PLAYER_TYPES = (
         ('pilot', 'pilot'),
         ('gunner', 'gunner'),
         ('tankman', 'tankman'),
     )
     type = models.CharField(choices=PLAYER_TYPES, max_length=8, default='pilot', db_index=True)
-    profile = models.ForeignKey(Profile, related_name='players')
+    profile = models.ForeignKey(Profile, related_name='players', on_delete=models.CASCADE)
     squad = models.ForeignKey('stats.Squad', related_name='players', blank=True, null=True, on_delete=models.SET_NULL)
 
     date_first_sortie = models.DateTimeField(null=True)
@@ -541,9 +539,9 @@ class Player(models.Model):
 
 
 class PlayerMission(models.Model):
-    profile = models.ForeignKey(Profile, related_name='+')
-    player = models.ForeignKey(Player, related_name='+')
-    mission = models.ForeignKey(Mission, related_name='+')
+    profile = models.ForeignKey(Profile, related_name='+', on_delete=models.CASCADE)
+    player = models.ForeignKey(Player, related_name='+', on_delete=models.CASCADE)
+    mission = models.ForeignKey(Mission, related_name='+', on_delete=models.CASCADE)
 
     score = models.IntegerField(default=0, db_index=True)
     ratio = models.FloatField(default=1)
@@ -667,8 +665,8 @@ class PlayerMission(models.Model):
 
 
 class PlayerAircraft(models.Model):
-    profile = models.ForeignKey(Profile, related_name='+')
-    player = models.ForeignKey(Player, related_name='+')
+    profile = models.ForeignKey(Profile, related_name='+', on_delete=models.CASCADE)
+    player = models.ForeignKey(Player, related_name='+', on_delete=models.CASCADE)
     aircraft = models.ForeignKey(Object, related_name='+', on_delete=models.PROTECT)
 
     score = models.IntegerField(default=0)
@@ -766,10 +764,10 @@ class PlayerAircraft(models.Model):
 
 
 class Sortie(models.Model):
-    profile = models.ForeignKey(Profile, related_name='+')
-    player = models.ForeignKey(Player, related_name='sorties_list')
-    tour = models.ForeignKey(Tour, related_name='sorties')
-    mission = models.ForeignKey(Mission, related_name='sorties_list')
+    profile = models.ForeignKey(Profile, related_name='+', on_delete=models.CASCADE)
+    player = models.ForeignKey(Player, related_name='sorties_list', on_delete=models.CASCADE)
+    tour = models.ForeignKey(Tour, related_name='sorties', on_delete=models.CASCADE)
+    mission = models.ForeignKey(Mission, related_name='sorties_list', on_delete=models.CASCADE)
 
     nickname = models.CharField(max_length=128)
 
@@ -932,8 +930,8 @@ class Sortie(models.Model):
 
 
 class KillboardPvP(models.Model):
-    player_1 = models.ForeignKey(Player, related_name='+')
-    player_2 = models.ForeignKey(Player, related_name='+')
+    player_1 = models.ForeignKey(Player, related_name='+', on_delete=models.CASCADE)
+    player_2 = models.ForeignKey(Player, related_name='+', on_delete=models.CASCADE)
     won_1 = models.IntegerField(default=0)
     won_2 = models.IntegerField(default=0)
     wl_1 = models.FloatField(default=0)
@@ -980,11 +978,11 @@ class LogEntry(models.Model):
         ('shotdown', 'shotdown'),
     )
 
-    mission = models.ForeignKey(Mission, related_name='+')
-    act_object = models.ForeignKey(Object, related_name='+', blank=True, null=True)
-    act_sortie = models.ForeignKey(Sortie, related_name='+', blank=True, null=True)
-    cact_object = models.ForeignKey(Object, related_name='+', blank=True, null=True)
-    cact_sortie = models.ForeignKey(Sortie, related_name='+', blank=True, null=True)
+    mission = models.ForeignKey(Mission, related_name='+', on_delete=models.CASCADE)
+    act_object = models.ForeignKey(Object, related_name='+', blank=True, null=True, on_delete=models.CASCADE)
+    act_sortie = models.ForeignKey(Sortie, related_name='+', blank=True, null=True, on_delete=models.CASCADE)
+    cact_object = models.ForeignKey(Object, related_name='+', blank=True, null=True, on_delete=models.CASCADE)
+    cact_sortie = models.ForeignKey(Sortie, related_name='+', blank=True, null=True, on_delete=models.CASCADE)
     date = models.DateTimeField()
     tik = models.IntegerField(db_index=True)
     type = models.CharField(max_length=16, choices=TYPES, db_index=True)
@@ -999,8 +997,8 @@ class LogEntry(models.Model):
 
 
 class Squad(models.Model):
-    tour = models.ForeignKey(Tour, related_name='+')
-    profile = models.ForeignKey('squads.Squad', related_name='stats')
+    tour = models.ForeignKey(Tour, related_name='+', on_delete=models.CASCADE)
+    profile = models.ForeignKey('squads.Squad', related_name='stats', on_delete=models.CASCADE)
 
     num_members = models.PositiveIntegerField(default=0, db_index=True)
     max_members = models.PositiveIntegerField(default=0)
@@ -1181,8 +1179,8 @@ class Award(models.Model):
 
 
 class Reward(models.Model):
-    award = models.ForeignKey(Award)
-    player = models.ForeignKey(Player)
+    award = models.ForeignKey(Award, on_delete=models.CASCADE)
+    player = models.ForeignKey(Player, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -1203,7 +1201,7 @@ class PlayerOnline(models.Model):
         (Coalition.Axis, pgettext_lazy('coalition', 'Axis')),
     )
     coalition = models.IntegerField(choices=COALITIONS)
-    profile = models.ForeignKey(Profile, blank=True, null=True)
+    profile = models.ForeignKey(Profile, blank=True, null=True, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now=True, db_index=True)
 
     class Meta:

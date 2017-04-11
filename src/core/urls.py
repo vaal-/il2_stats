@@ -32,7 +32,7 @@ urlpatterns = i18n_patterns(
 
     url(r'^robots\.txt$', RedirectView.as_view(url=staticfiles_storage.url('robots.txt'))),
 
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'^faq/$', chunks.views.page, {'key': 'faq', 'template': 'faq.html'}, name='faq'),
     url(r'^info/$', chunks.views.page, {'key': 'info', 'template': 'info.html'}, name='info'),
     url(r'^', include('stats.urls', namespace='stats')),
@@ -49,7 +49,7 @@ if settings.DEBUG:
 
     import debug_toolbar
     urlpatterns.extend([
-        url(r'^__debug__/', include(debug_toolbar.urls)),
+        url(r'^__debug__/', debug_toolbar.urls),
     ])
 
     from django.views.defaults import server_error, page_not_found, permission_denied

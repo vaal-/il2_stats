@@ -76,38 +76,39 @@ class MissionReport:
         # TODO https://docs.python.org/3/library/collections.html#deque-objects
         # TODO и собирать только 5-10 последних
         for file_path in files:
-            for line in file_path.open():
-                # игнорируем "плохие" строки без
-                if 'AType' not in line:
-                    logger.warning('ignored bad string: [{}]'.format(line))
-                    continue
-                self.lines.append(line)
+            with file_path.open() as f:
+                for line in f:
+                    # игнорируем "плохие" строки без
+                    if 'AType' not in line:
+                        logger.warning('ignored bad string: [{}]'.format(line))
+                        continue
+                    self.lines.append(line)
 
-                try:
-                    data = parse_mission_log_line.parse(line)
-                except parse_mission_log_line.UnexpectedATypeWarning:
-                    logger.warning('unexpected atype: [{}]'.format(line))
-                    continue
+                    try:
+                        data = parse_mission_log_line.parse(line)
+                    except parse_mission_log_line.UnexpectedATypeWarning:
+                        logger.warning('unexpected atype: [{}]'.format(line))
+                        continue
 
-                atype_id = data.pop('atype_id')
+                    atype_id = data.pop('atype_id')
 
-                if data['tik'] > self.tik_last:
-                    self.tik_last = data['tik']
+                    if data['tik'] > self.tik_last:
+                        self.tik_last = data['tik']
 
-                if 'country_id' in data:
-                    data['coal_id'] = self.countries[data['country_id']]
+                    if 'country_id' in data:
+                        data['coal_id'] = self.countries[data['country_id']]
 
-                # обновление последней позиции объектов события
-                if 'pos' in data:
-                    self.update_last_pos(data=data)
+                    # обновление последней позиции объектов события
+                    if 'pos' in data:
+                        self.update_last_pos(data=data)
 
-                # обновление ratio во время взлета, посадки, убийства, прыжка, завершения
-                if atype_id in (3, 4, 5, 6, 18):
-                    self.update_ratio(data=data)
+                    # обновление ratio во время взлета, посадки, убийства, прыжка, завершения
+                    if atype_id in (3, 4, 5, 6, 18):
+                        self.update_ratio(data=data)
 
-                self.events_handlers[atype_id](**data)
+                    self.events_handlers[atype_id](**data)
 
-                self.update_last_tik(data=data)
+                    self.update_last_tik(data=data)
 
     def logger_event(self, event):
         """
