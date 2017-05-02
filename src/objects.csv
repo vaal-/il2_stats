@@ -37,6 +37,7 @@ aircraft_gunner,BotGunner_He111H16top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16fwd,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16fwdM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16rearM,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Il2m42,1,Aircraft gunner,стрелок
 aircraft_heavy,He 111 H-6,1,,
 aircraft_heavy,He 111 H-16,1,,
 aircraft_heavy,Ju 88 A-4,1,,
@@ -62,6 +63,7 @@ aircraft_medium,Bf 110 G-2,1,,
 aircraft_medium,Il-2 mod.1941,1,IL-2 model 1941,Ил-2 модель 1941 года
 aircraft_medium,Il-2 mod.1942,1,IL-2 AM-38,Ил-2 AM-38
 aircraft_medium,Ju 87 D-3,1,,
+aircraft_medium,Il-2 mod.1943,1,IL-2 AM-38F,Ил-2 AM-38Ф
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_FW190,1,pilot,пилот
@@ -132,6 +134,7 @@ aircraft_turret,Turret_Pe2s35_2,1,Pe-2 (series 35) turret,турель Пе-2 35
 aircraft_turret,Turret_Pe2s87_1,1,Pe-2 (series 87) turret,турель Пе-2 87-й серии
 aircraft_turret,Turret_Pe2s87_1M,1,Pe-2 (series 87) turret,турель Пе-2 87-й серии
 aircraft_turret,Turret_Pe2s87_2,1,Pe-2 (series 87) turret,турель Пе-2 87-й серии
+aircraft_turret,Turret_Il2m43,1,IL-2 AM-38F turret,турель Ил-2 АМ-38Ф
 airfield,arf_ammo_1,0,airfield ammo dump,аэродромный склад вооружения
 airfield,arf_ammo_2,0,airfield ammo dump,аэродромный склад вооружения
 airfield,arf_ammo_3,0,airfield ammo dump,аэродромный склад вооружения
@@ -289,6 +292,7 @@ bullet,SHELL_RUS_37x195_HE,0,,
 bullet,NPC_SHELL_RUS_130_HE,0,,
 bullet,SHELL_RUS_76_naval_HE,0,,
 bullet,NPC_SHELL_RUS_122_HE,0,,
+bullet,BULLET_ENG_7-7x56_AP,0,,
 car,GAZ-M,0,GAZ-M car,автомобиль ГАЗ-М
 car,Horch 830,0,Horch 830 car,автомобиль Horch
 explosion,explosion,0,,
@@ -371,6 +375,8 @@ shell,NPC_SHELL_GER_37x263_AP,0,,
 shell,NPC_SHELL_GER_37x263_HE,0,,
 shell,NPC_SHELL_RUS_25_AP,0,,
 shell,NPC_SHELL_RUS_25_HE,0,,
+shell,SHELL_ENG_20x110_HE,0,,
+shell,SHELL_ENG_20x110_AP,0,,
 ship,Gun Boat 1124 AAA,0,Gunboat 1124 AAA,Бронекатер 1124
 ship,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗО
 ship,Gun Ship type A,0,Gunboat,Вооружённый буксир
