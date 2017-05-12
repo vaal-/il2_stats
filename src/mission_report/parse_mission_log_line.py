@@ -70,7 +70,7 @@ atype_10 = re.compile('^T:(?P<tik>\d+) AType:10 PLID:(?P<aircraft_id>\d+) PID:(?
                       'IDS:(?P<profile_id>[-\w]{36}) LOGIN:(?P<account_id>[-\w]{36}) NAME:(?P<name>.+) '
                       'TYPE:(?P<aircraft_name>[\w\(\) .\-_]+) COUNTRY:(?P<country_id>\d{1,3}) FORM:(?P<form>\d+) '
                       'FIELD:(?P<airfield_id>\d+) INAIR:(?P<airstart>\d) PARENT:(?P<parent_id>[-\d]+) '
-                      'PAYLOAD:(?P<payload_id>\d{1,2}) FUEL:(?P<fuel>\S{5,6}) '
+                      'PAYLOAD:(?P<payload_id>\d+) FUEL:(?P<fuel>\S{5,6}) '
                       'SKIN:(?P<skin>[\S ]*) WM:(?P<weapon_mods_id>\d+)$')
 
 
