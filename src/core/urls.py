@@ -39,17 +39,12 @@ urlpatterns = i18n_patterns(
 )
 
 
-if 'rosetta' in settings.INSTALLED_APPS:
-    urlpatterns.extend([
-        url(r'^rosetta/', include('rosetta.urls')),
-    ])
-
 if settings.DEBUG:
     urlpatterns.extend(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))
 
     import debug_toolbar
     urlpatterns.extend([
-        url(r'^__debug__/', debug_toolbar.urls),
+        url(r'^__debug__/', include(debug_toolbar.urls)),
     ])
 
     from django.views.defaults import server_error, page_not_found, permission_denied

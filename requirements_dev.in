@@ -1,6 +1,6 @@
-Django==1.11
+Django==1.11.2
 coverage
-django-debug-toolbar
+django-debug-toolbar==1.8
 django-rosetta
 pytest
 pytest-cov
