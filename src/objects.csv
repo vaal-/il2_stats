@@ -58,6 +58,7 @@ aircraft_light,MiG-3 ser.24,1,MiG-3 (series 24),МиГ-3 24-й серии
 aircraft_light,P-40E-1,1,P-40 E-1,
 aircraft_light,Yak-1 ser.69,1,Yak-1 (series 69),Як-1 69-й серии
 aircraft_light,Yak-1B ser.127,1,Yak-1B (series 127),Як-1б 127-й серии
+aircraft_light,Spitfire Mk.VB,1,,
 aircraft_medium,Bf 110 E-2,1,,
 aircraft_medium,Bf 110 G-2,1,,
 aircraft_medium,Il-2 mod.1941,1,IL-2 model 1941,Ил-2 модель 1941 года
@@ -293,6 +294,7 @@ bullet,NPC_SHELL_RUS_130_HE,0,,
 bullet,SHELL_RUS_76_naval_HE,0,,
 bullet,NPC_SHELL_RUS_122_HE,0,,
 bullet,BULLET_ENG_7-7x56_AP,0,,
+bullet,BULLET_USA_7-62x63_AP,0,,
 car,GAZ-M,0,GAZ-M car,автомобиль ГАЗ-М
 car,Horch 830,0,Horch 830 car,автомобиль Horch
 explosion,explosion,0,,
@@ -305,6 +307,16 @@ explosion,tnt4kg_frag30kg_HE_expl_water,0,,
 explosion,tnt500g_frag6kg_HE_expl_metal,0,,
 explosion,tnt500g_frag6kg_HE_expl_ground,0,,
 explosion,tnt500g_frag6kg_HE_expl_water,0,,
+explosion,explPlaneAlongWtr,0,,
+explosion,explPlaneWtr,0,,
+explosion,tnt10g_frag120g_HE_expl_building,0,,
+explosion,tnt10g_frag120g_HE_expl_ground,0,,
+explosion,tnt10g_frag120g_HE_expl_water,0,,
+explosion,ExplosionPlaneAlongWtr,0,,
+explosion,ExplosionPlaneWtr,0,,
+explosion,tnt70g_frag260g_HE_expl_building,0,,
+explosion,tnt70g_frag260g_HE_expl_ground,0,,
+explosion,tnt70g_frag260g_HE_expl_water,0,,
 flare,FlareGreen,0,,
 flare,FlareRed,0,,
 flare,FlareWhite,0,,
@@ -377,6 +389,8 @@ shell,NPC_SHELL_RUS_25_AP,0,,
 shell,NPC_SHELL_RUS_25_HE,0,,
 shell,SHELL_ENG_20x110_HE,0,,
 shell,SHELL_ENG_20x110_AP,0,,
+shell,SHELL_GER_30x184_AP,0,,
+shell,SHELL_GER_30x184_HE,0,,
 ship,Gun Boat 1124 AAA,0,Gunboat 1124 AAA,Бронекатер 1124
 ship,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗО
 ship,Gun Ship type A,0,Gunboat,Вооружённый буксир
