@@ -135,11 +135,14 @@ atype_handlers = [
 ]
 
 
+re_pos = re.compile('[.\-\d]+,\s*[.\-\d]+,\s*[.\-\d]+')
+
+
 def pos_handler(pos):
     """
     :type pos: str
     """
-    if '#' not in pos:
+    if re_pos.match(pos.strip()):
         pos = tuple(map(float, pos.split(',')))
         return dict(zip(['x', 'y', 'z'], pos))
     else:
