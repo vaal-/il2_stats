@@ -65,6 +65,7 @@ aircraft_medium,Il-2 mod.1941,1,IL-2 model 1941,Ил-2 модель 1941 год�
 aircraft_medium,Il-2 mod.1942,1,IL-2 AM-38,Ил-2 AM-38
 aircraft_medium,Ju 87 D-3,1,,
 aircraft_medium,Il-2 mod.1943,1,IL-2 AM-38F,Ил-2 AM-38Ф
+aircraft_medium,Hs 129 B-2,1,,
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_FW190,1,pilot,пилот
@@ -76,6 +77,7 @@ aircraft_pilot,BotPilot_Pe2,1,pilot,пилот
 aircraft_pilot,BotPilot_Ju52,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
+aircraft_pilot,BotPilot_Hs129B2,1,pilot,пилот
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_open,0,parked aircraft,самолет на стоянке
@@ -317,6 +319,8 @@ explosion,ExplosionPlaneWtr,0,,
 explosion,tnt70g_frag260g_HE_expl_building,0,,
 explosion,tnt70g_frag260g_HE_expl_ground,0,,
 explosion,tnt70g_frag260g_HE_expl_water,0,,
+explosion,tnt280kg_frag200kg_expl_water,0,,
+explosion,tnt300kg_frag200kg_expl_water,0,,
 flare,FlareGreen,0,,
 flare,FlareRed,0,,
 flare,FlareWhite,0,,
@@ -341,6 +345,35 @@ industrial,industrial_cornerL_02,0,factory facility,завод
 industrial,industrial_cornerR_01,0,factory facility,завод
 industrial,industrial_cornerR_02,0,factory facility,завод
 industrial,boosterStation,0,booster station,насосная станция
+industrial,industrial_block_BigWarehouse_300x100,0,warehouse,склад
+industrial,industrial_block_Fuel25m_300x100,0,fuel storage,топливное хранилище
+industrial,industrial_block_Fuel2_300x100,0,fuel storage,топливное хранилище
+industrial,industrial_block_Fuel35m_300x100,0,fuel storage,топливное хранилище
+industrial,industrial_block_Fuel_300x100,0,fuel storage,топливное хранилище
+industrial,industrial_block_MidWarehouse_200x140,0,warehouse,склад
+industrial,industrial_block_SmallWarehouse2_150x100,0,warehouse,склад
+industrial,industrial_block_SmallWarehouse2_300x100,0,warehouse,склад
+industrial,industrial_block_SmallWarehouse_150x100,0,warehouse,склад
+industrial,industrial_block_SmallWarehouse_300x100,0,warehouse,склад
+industrial,Industrial_block_ZavodCement,0,factory ,завод
+industrial,Industrial_block_ZavodOktyabr,0,factory ,завод
+industrial,industrial_object_oil,0,fuel storage,топливное хранилище
+industrial,industrial_object_smallwarehouse,0,warehouse,склад
+industrial,industrial_object_zavodkorpys45m,0,factory ,завод
+industrial,industrial_object_zavodkorpys70m,0,factory ,завод
+industrial,industrial_object_ОilSmall,0,fuel storage,топливное хранилище
+industrial,port_up_crane,0,crane,кран
+industrial,port_up_group_cargo_190x15,0,warehouse,склад
+industrial,port_up_group_cargo_50x25,0,warehouse,склад
+industrial,port_up_group_smallsklad,0,warehouse,склад
+industrial,port_up_group_smallwarehouse_1,0,warehouse,склад
+industrial,port_up_group_smallwarehouse_2,0,warehouse,склад
+industrial,port_up_object_smallsklad,0,warehouse,склад
+industrial,port_up_object_smallwarehouse,0,warehouse,склад
+industrial,port_up_unit_bags,0,warehouse,склад
+industrial,port_up_unit_container,0,warehouse,склад
+industrial,port_up_unit_woodbox_1x4,0,warehouse,склад
+industrial,port_up_unit_woodbox_2x24,0,warehouse,склад
 locomotive,Locomotive_E,0,E locomotive,локомотив Е
 locomotive,Locomotive_G8,0,G8 locomotive,локомотив G8
 machine_gunner,DShK,0,DShK machinegun,пулемёт ДШК
@@ -354,6 +387,7 @@ rocket,RKT_RUS_ROS82_1000,0,ROS-82,РОС-82
 rocket,RKT_RUS_ROS82_600,0,ROS-82,РОС-82
 rocket,RKT_RUS_ROS82_800,0,ROS-82,РОС-82
 rocket,Rocket 280 mm HE,0,,
+rocket,NPC_TORPEDO_G7a-53,0,G7a,G7a
 searchlight,German Landlight,0,landlight,посадочный прожектор
 searchlight,German Searchlight,0,landlight,посадочный прожектор
 searchlight,Landlight,0,landlight,посадочный прожектор
@@ -396,6 +430,13 @@ ship,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗ�
 ship,Gun Ship type A,0,Gunboat,Вооружённый буксир
 ship,River Cargo Ship type Georgia,0,Cargo Ship,Грузовое судно
 ship,River Cargo Ship type Georgia AAA,0,,
+ship,Destroyer Type 7,0,Soviet Type 7 destroyer,Советский эсминец Тип 7
+ship,Landing Boat type A,0,Marinefährprahm Typ A,Десантная баржка Type A
+ship,Submarine Type IIB,0,U-Boot-Klasse IIB,Подводная лодка тип IIB
+ship,Submarine Type Shch ser.10,0,Submarine Shch-10 (type Shchuka),Подводная лодка Тип Щ серия 10 (Щука) 
+ship,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
+ship,Torpedo Boat G-5 series 11-bis 213,0,Rocket Boat G-5 series 11-bis 213,Торпедный катер типа Г-5 XI-бис (проект 213)
+ship,Torpedo Boat type S-38,0,Schnellboot S-38,Торпедный катер типа S-38
 tank_heavy,KV-1-42,0,KV-1 1942,КВ-1 обр. 1942
 tank_heavy,KV-1-41,0,KV-1 1941,КВ-1 обр. 1941
 tank_light,BT-7M,0,BT-7M,БТ-7М
@@ -716,6 +757,14 @@ trash,ClusterGroundEffect,0,,
 trash,ClusterWaterEffect,0,,
 trash,BotRangefinder,0,,
 trash,VehicleRangefinderTurretInputController0,0,,
+trash,town_med_140x140_01,0,,
+trash,town_med_140x140_02,0,,
+trash,town_med_140x140_03,0,,
+trash,town_med_140x140_04,0,,
+trash,town_med_280x140,0,,
+trash,town_med_420x280,0,,
+trash,town_med_420x420,0,,
+trash,town_med_corner_140x140,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
@@ -760,6 +809,21 @@ vehicle_turret,HowitzerTurret,0,turret,башня
 vehicle_turret,TurretRiffle,0,turret,башня
 vehicle_turret,VehicleTurret,0,turret,башня
 vehicle_turret,VehicleTorpedoTurret,0,turret,башня
+vehicle_turret,DShK turret,0,,
+vehicle_turret,Kolt Twin turret,0,,
+vehicle_turret,B-13 turret,0,,
+vehicle_turret,B-13 turret b,0,,
+vehicle_turret,21-K turret,0,,
+vehicle_turret,34-K turret,0,,
+vehicle_turret,Type 7 AA rangefinder turret,0,,
+vehicle_turret,39-Ju torpedo turret,0,,
+vehicle_turret,TorpedoTurret,0,,
+vehicle_turret,MGC 30 turret,0,,
+vehicle_turret,SKC 35 turret,0,,
+vehicle_turret,21-K turret b,0,,
+vehicle_turret,21-K turret f,0,,
+vehicle_turret,M8M turret,0,,
+vehicle_turret,Flak 30 turret,0,,
 wagon,Wagon_AAPlatform,0,train platform,ж/д платформа
 wagon,Wagon_BoxB,0,train boxcar,ж/д вагон
 wagon,Wagon_BoxNB,0,train boxcar,ж/д вагон
