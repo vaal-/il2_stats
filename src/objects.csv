@@ -361,7 +361,7 @@ industrial,industrial_object_oil,0,fuel storage,топливное хранил�
 industrial,industrial_object_smallwarehouse,0,warehouse,склад
 industrial,industrial_object_zavodkorpys45m,0,factory ,завод
 industrial,industrial_object_zavodkorpys70m,0,factory ,завод
-industrial,industrial_object_ОilSmall,0,fuel storage,топливное хранилище
+industrial,industrial_object_OilSmall,0,fuel storage,топливное хранилище
 industrial,port_up_crane,0,crane,кран
 industrial,port_up_group_cargo_190x15,0,warehouse,склад
 industrial,port_up_group_cargo_50x25,0,warehouse,склад
@@ -437,6 +437,9 @@ ship,Submarine Type Shch ser.10,0,Submarine Shch-10 (type Shchuka),Подвод�
 ship,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
 ship,Torpedo Boat G-5 series 11-bis 213,0,Rocket Boat G-5 series 11-bis 213,Торпедный катер типа Г-5 XI-бис (проект 213)
 ship,Torpedo Boat type S-38,0,Schnellboot S-38,Торпедный катер типа S-38
+ship,Large Cargo Ship type 1,0,7000 tons cargo ship,7000-тонный сухогруз
+ship,Large Tanker Ship type 1,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
+ship,Large Tanker Ship type 1 ger,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
 tank_heavy,KV-1-42,0,KV-1 1942,КВ-1 обр. 1942
 tank_heavy,KV-1-41,0,KV-1 1941,КВ-1 обр. 1941
 tank_light,BT-7M,0,BT-7M,БТ-7М
@@ -825,6 +828,7 @@ vehicle_turret,21-K turret b,0,,
 vehicle_turret,21-K turret f,0,,
 vehicle_turret,M8M turret,0,,
 vehicle_turret,Flak 30 turret,0,,
+vehicle_turret,Flak 36 turret,0,,
 wagon,Wagon_AAPlatform,0,train platform,ж/д платформа
 wagon,Wagon_BoxB,0,train boxcar,ж/д вагон
 wagon,Wagon_BoxNB,0,train boxcar,ж/д вагон
