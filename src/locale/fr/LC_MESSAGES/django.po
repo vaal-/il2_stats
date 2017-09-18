@@ -31,7 +31,7 @@ msgstr "titre"
 
 #: .\chunks\models.py:9
 msgid "content"
-msgstr "content"
+msgstr "contenu"
 
 #: .\core\settings.py:152
 msgid "English"
@@ -64,12 +64,12 @@ msgstr "Enlever le logo"
 #: .\squads\forms.py:54
 #, python-format
 msgid "Maximum file size: %(size)s"
-msgstr "Taille maximale du fichier: %(size)s"
+msgstr "Taille maximale du fichier : %(size)s"
 
 #: .\squads\forms.py:56
 #, python-format
 msgid "Allowed file formats are: %(formats)s"
-msgstr "Formats de fichiers autorisés: %(formats)s"
+msgstr "Formats de fichiers autorisés : %(formats)s"
 
 #: .\squads\models.py:21
 msgid "squad name"
@@ -148,7 +148,7 @@ msgstr "Quitter l'escadrille"
 msgid ""
 "Now you are the sole admin of the squad. Therefore, if you leave the squad - "
 "the squad will be removed."
-msgstr "Vous êtes actuellement le seul admin de cette escadrille. En conséquence si vous quittez cette escadrille, elle sera dissoute"
+msgstr "Vous êtes actuellement le seul admin de cette escadrille. En conséquence si vous quittez cette escadrille, elle sera dissoute."
 
 #: .\squads\templates\squads\leave.html:21
 msgid "Confirm that you want to leave the squad."
@@ -188,7 +188,7 @@ msgstr "Lien pour rejoindre l'escadrille"
 
 #: .\squads\templates\squads\main_with_squad.html:62
 msgid "With this url any registered user can join your squad."
-msgstr "Donnez ce lien à un utilisateur enregistré pour lui permettre de rejoindre votre escadrille"
+msgstr "Donnez ce lien à un utilisateur enregistré pour lui permettre de rejoindre votre escadrille."
 
 #: .\squads\templates\squads\main_with_squad.html:70
 msgid "Generate new url"
@@ -204,7 +204,7 @@ msgstr "Dissoudre l'escadrille"
 msgid ""
 "You are not a member of a any squad. In order to join the squad, you need "
 "\"join url\", which can be obtained from the admin of the squad."
-msgstr "Vous n'êtes membre d'aucune escadrille. Pour pouvoir en rejoindre une, vous avez besoin \"join url\", qui vous sera donné par l'admin de l'escadrille."
+msgstr "Vous n'êtes membre d'aucune escadrille. Pour pouvoir en rejoindre une, vous avez besoin du lien \"join url\", qui vous sera donné par l'admin de l'escadrille."
 
 #: .\squads\templates\squads\main_wo_squad.html:25
 #: .\squads\templates\squads\registration.html:37
@@ -231,7 +231,7 @@ msgstr "Enregistrer une escadrille"
 msgid ""
 "Your squad will be removed, this action is irreversible. The old statistics "
 "will be available for viewing. Confirm the remove of the squad."
-msgstr "Votre escadrille sera dissoute, cette action est irréversible. Les statistiques passées seront toujours visibles. Veuillez confirmer cette action."
+msgstr "Votre escadrille sera dissoute et cette action est irréversible. Les statistiques passées seront toujours visibles. Veuillez confirmer cette action."
 
 #: .\squads\views.py:61
 msgid "Your squad has been successfully registered."
@@ -2113,12 +2113,12 @@ msgstr "fin"
 #: .\stats\sortie_log.py:28
 msgctxt "sortie_log"
 msgid "takeoff"
-msgstr ""
+msgstr "décollage"
 
 #: .\stats\sortie_log.py:29
 msgctxt "sortie_log"
 msgid "landed"
-msgstr "décollage"
+msgstr "atterrissage"
 
 #: .\stats\sortie_log.py:30
 msgctxt "sortie_log"
@@ -2143,7 +2143,7 @@ msgstr "dégât"
 #: .\stats\sortie_log.py:36
 msgctxt "sortie_log"
 msgid "wound"
-msgstr "blessure"
+msgstr "blessé"
 
 #: .\stats\sortie_log.py:37
 msgctxt "sortie_log"
@@ -2170,7 +2170,7 @@ msgstr "Panneau d'administration"
 #: .\users\templates\users\profile.html:3
 #: .\users\templates\users\profile.html:14
 msgid "Profile"
-msgstr "Profit"
+msgstr "Profil"
 
 #: .\stats\templates\base.html:69
 msgid "Logout"
@@ -2193,7 +2193,7 @@ msgstr "Principal"
 
 #: .\stats\templates\base.html:83
 msgid "Rankings"
-msgstr "Classement"
+msgstr "Classements"
 
 #: .\stats\templates\base.html:85 .\stats\templates\mission.html:36
 #: .\stats\templates\pilots.html:3 .\stats\templates\pilots.html:13
@@ -2299,7 +2299,7 @@ msgstr "Temps de vol (heures)"
 #: .\stats\templates\main.html:118
 msgctxt "tour_top"
 msgid "Best pilots in the last 24 hours"
-msgstr "Meilleurs pilotes dans les dernières 24 heures"
+msgstr "Meilleurs pilotes des dernières 24H"
 
 #: .\stats\templates\main.html:123 .\stats\templates\main.html:149
 #: .\stats\templates\tour.html:123 .\stats\templates\tour.html:149
@@ -2440,7 +2440,7 @@ msgid ""
 "<strong>Attention!</strong> Algorithms collection statistics IL2 stats "
 "differs from statistics in-game. As a consequence of these statistics will "
 "not coincide with the game."
-msgstr "<strong>Attention!<strong> L'algorithme de statistique de Il2 Stats est différents de celui en jeu. En conséquence les statistiques peuvent parfois être différentes entre le site et le jeu."
+msgstr "<strong>Attention!<strong> L'algorithme de statistique de Il2 Stats est différent de celui du jeu. En conséquence les statistiques peuvent parfois être différentes entre le site et le jeu."
 
 #: .\stats\templates\mission.html:124 .\stats\templates\pilots.html:127
 #: .\stats\templates\squads.html:107
@@ -2662,25 +2662,25 @@ msgstr "Voitures"
 #: .\stats\templates\squad.html:201
 msgctxt "total"
 msgid "Trucks"
-msgstr "Camion"
+msgstr "Camions"
 
 #: .\stats\templates\pilot.html:235 .\stats\templates\pilot_sortie.html:372
 #: .\stats\templates\squad.html:208
 msgctxt "total"
 msgid "Large-caliber AA guns"
-msgstr "DCA lourde"
+msgstr "DCA lourdes"
 
 #: .\stats\templates\pilot.html:242 .\stats\templates\pilot_sortie.html:386
 #: .\stats\templates\squad.html:215
 msgctxt "total"
 msgid "Medium-caliber AA guns"
-msgstr "DCA moyenne"
+msgstr "DCA moyennes"
 
 #: .\stats\templates\pilot.html:249 .\stats\templates\pilot_sortie.html:400
 #: .\stats\templates\squad.html:222
 msgctxt "total"
 msgid "Small-caliber AA guns"
-msgstr "DCA légère"
+msgstr "DCA légères"
 
 #: .\stats\templates\pilot.html:256 .\stats\templates\pilot_sortie.html:414
 #: .\stats\templates\squad.html:229
@@ -2850,35 +2850,35 @@ msgstr "Index de fairplay"
 
 #: .\stats\templates\pilot.html:504 .\stats\templates\squad.html:445
 msgid "K/D - Kills per Death"
-msgstr "K/D - Victoires par mort"
+msgstr "K/D - Victoires/Mort"
 
 #: .\stats\templates\pilot.html:512 .\stats\templates\squad.html:453
 msgid "K/L - Kills per Aircraft Lost"
-msgstr "K/L - Victoires par appareil perdu"
+msgstr "K/L - Victoires/Appareil perdu"
 
 #: .\stats\templates\pilot.html:520 .\stats\templates\squad.html:461
 msgid "K/S - Kills per Sortie"
-msgstr "K/S - Victoires par sortir"
+msgstr "K/S - Victoires/Sortie"
 
 #: .\stats\templates\pilot.html:528 .\stats\templates\squad.html:469
 msgid "K/H - Kills per Hour of Flight"
-msgstr "K/H - Victoires par heure de vol"
+msgstr "K/H - Victoires/Heure de vol"
 
 #: .\stats\templates\pilot.html:538 .\stats\templates\squad.html:479
 msgid "GK/D - G.Kills per Death"
-msgstr "GK/D - Cibles au sol détruites par mort"
+msgstr "GK/D - Cibles au sol/Mort"
 
 #: .\stats\templates\pilot.html:546 .\stats\templates\squad.html:487
 msgid "GK/L - G.Kills per Aircraft Lost"
-msgstr "GK/L - Cibles au sol détruites par appareil perdu"
+msgstr "GK/L - Cibles au sol/Appareil perdu"
 
 #: .\stats\templates\pilot.html:554 .\stats\templates\squad.html:495
 msgid "GK/S - G.Kills per Sortie"
-msgstr "GK/S - Cibles au sol détruites par sortie"
+msgstr "GK/S - Cibles au sol/Sortie"
 
 #: .\stats\templates\pilot.html:562 .\stats\templates\squad.html:503
 msgid "GK/H - G.Kills per Hour of Flight"
-msgstr "GK/H - Cibles au sol détruites par heure de vol"
+msgstr "GK/H - Cibles au sol/Heure de vol"
 
 #: .\stats\templates\pilot.html:577
 msgid "Other names of the pilot on this account"
@@ -3232,7 +3232,7 @@ msgid ""
 "<strong>Attention!</strong> Statistics squad - accumulative. When a player "
 "joins to squad, his past statistics does not affect the current squad "
 "statistics. Only new sorties will be added in the squad statistics."
-msgstr ""
+msgstr "<strong>Attention!<strong> Statistiques de l'escadrille. Quand un joueur rejoint l'escadrille, ses statistiques passées ne sont pas prises en compte. Seules les sorties effectuées après l'entrée dans l'escadrille comptent."
 
 #: .\stats\templates\squad_not_exist.html:14
 msgid "The squad did not participate in this tour"
