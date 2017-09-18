@@ -8,7 +8,7 @@ colorama==0.3.7           # via pytest
 coverage==4.3.4
 django-debug-toolbar==1.8
 django-rosetta==0.7.12
-django==1.11.2
+Django==1.11.5            # via django-debug-toolbar, django-rosetta
 microsofttranslator==0.8  # via django-rosetta
 polib==1.0.8              # via django-rosetta
 py==1.4.32                # via pytest
