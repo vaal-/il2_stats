@@ -465,6 +465,17 @@
                             </div>
                         </div>
                     {% endif %}
+                    {% if player.sorties_cls.aircraft_transport %}
+                        <div class="item">
+                            <div class="name">{% trans 'Transport' context 'specialty' %}</div>
+                            <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_cls.aircraft_transport }}</div>
+                            {% widthratio player.sorties_cls.aircraft_transport player.sorties_total 100 as width %}
+                            <div class="pct">{{ width|floatformat:'0' }}%</div>
+                            <div class="bar">
+                                <div class="progress yellow" style="width: {{ width }}%;"></div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
 
