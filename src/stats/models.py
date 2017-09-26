@@ -464,6 +464,11 @@ class Player(models.Model):
                                             tour_id=self.tour_id)
         return url
 
+    def get_killboard_url(self):
+        url = '{url}?tour={tour_id}'.format(url=reverse('stats:pilot_killboard', args=[self.profile_id, self.nickname]),
+                                            tour_id=self.tour_id)
+        return url
+
     def get_position_by_field(self, field='rating'):
         return get_position_by_field(player=self, field=field)
 

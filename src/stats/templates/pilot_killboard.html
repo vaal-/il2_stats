@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Killboard' %} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/pilot_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Killboard' %}
+                    <div class="content_title_sm">{% trans 'pilot' %}: {{ player.nickname }}</div>
+                </div>
+            </div>
+            {% if killboard %}
+            <div class="content_table" style="width: 700px;">
+                <div class="head_row">
+                    <div class="cell" style="width: 60px;"></div>
+                    <div class="cell"></div>
+                    <div class="cell" style="width: 60px;"></div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-won">
+                            <img src="{% static 'img/icons/small/kb_won.png' %}" width="18" height="18"
+                                 alt="{% trans 'Won' context 'killboard' %}" title="{% trans 'Won' context 'killboard' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-lose">
+                            <img src="{% static 'img/icons/small/kb_lose.png' %}" width="18" height="18"
+                                 alt="{% trans 'Lose' context 'killboard' %}" title="{% trans 'Lose' context 'killboard' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-wl">
+                            <img src="{% static 'img/icons/small/kd.png' %}" width="18" height="18"
+                                 alt="{% trans 'Won/Lose' context 'killboard' %}" title="{% trans 'Won/Lose' context 'killboard' %}">
+                        </a>
+                    </div>
+                </div>
+                {% for k in killboard %}
+                <a class="row" href="{{ k.player.get_profile_url }}">
+                    <div class="cell">{{ forloop.counter }}</div>
+                    <div class="cell" style="text-align: left;">{{ k.player.nickname }}</div>
+                    <div class="cell img">
+                        {% include 'inline/table_coal_pref_icon.html' with coal_pref=k.player.coal_pref %}
+                    </div>
+                    <div class="cell">{{ k.won }}</div>
+                    <div class="cell">{{ k.lose }}</div>
+                    <div class="cell">{{ k.wl }}</div>
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </section>
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="{% static 'js/table.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            uri_sort_by('-wl');
+        });
+    </script>
+{% endblock bottom %}

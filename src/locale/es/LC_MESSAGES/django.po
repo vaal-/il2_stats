@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-25 23:51+0300\n"
+"POT-Creation-Date: 2017-09-26 23:56+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2437,16 +2437,15 @@ msgstr "Total pilotos"
 msgid "Air Kills"
 msgstr "Victorias aéreas"
 
-#: .\stats\templates\mission.html:138
-#: .\stats\templates\pilot_killboard.html:33
-#: .\stats\templates\pilot_sorties.html:37 .\stats\templates\pilots.html:45
-#: .\stats\templates\squad_pilots.html:68 .\stats\templates\squads.html:44
+#: .\stats\templates\mission.html:138 .\stats\templates\pilot_sorties.html:37
+#: .\stats\templates\pilots.html:45 .\stats\templates\squad_pilots.html:68
+#: .\stats\templates\squads.html:44
 msgid "Ground Kills"
 msgstr "Destrucciones en tierra"
 
 #: .\stats\templates\mission.html:144 .\stats\templates\mission.html:145
-#: .\stats\templates\pilot_killboard.html:39 .\stats\templates\pilots.html:51
-#: .\stats\templates\squad_pilots.html:74 .\stats\templates\squads.html:50
+#: .\stats\templates\pilots.html:51 .\stats\templates\squad_pilots.html:74
+#: .\stats\templates\squads.html:50
 msgid "Flight Time (hours:minutes)"
 msgstr "Tiempo de vuelo (horas:minutos)"
 
@@ -2964,10 +2963,23 @@ msgstr ""
 msgid "pilot"
 msgstr "piloto"
 
-#: .\stats\templates\pilot_killboard.html:27 .\stats\templates\pilots.html:39
-#: .\stats\templates\squad_pilots.html:62
-msgid "Current Streak"
-msgstr "Racha Actual"
+#: .\stats\templates\pilot_killboard.html:27
+#, fuzzy
+#| msgctxt "total"
+#| msgid "Wagons"
+msgctxt "killboard"
+msgid "Won"
+msgstr "Vagones"
+
+#: .\stats\templates\pilot_killboard.html:33
+msgctxt "killboard"
+msgid "Lose"
+msgstr ""
+
+#: .\stats\templates\pilot_killboard.html:39
+msgctxt "killboard"
+msgid "Won/Lose"
+msgstr ""
 
 #: .\stats\templates\pilot_not_exist.html:13
 msgid "The player did not participate in this tour"
@@ -3253,6 +3265,10 @@ msgstr "Salidas"
 #: .\stats\templates\pilots.html:19
 msgid "Search pilot"
 msgstr "Buscar piloto"
+
+#: .\stats\templates\pilots.html:39 .\stats\templates\squad_pilots.html:62
+msgid "Current Streak"
+msgstr "Racha Actual"
 
 #: .\stats\templates\pilots.html:75 .\stats\templates\squad_pilots.html:98
 #: .\stats\templates\squads.html:68

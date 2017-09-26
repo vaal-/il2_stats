@@ -10,7 +10,7 @@ from mission_report.constants import Coalition, Country
 from squads.models import Squad as SquadProfile
 
 from .helpers import Paginator, get_sort_by, redirect_fix_url
-from .models import (Player, Mission, PlayerMission, PlayerAircraft, Sortie,
+from .models import (Player, Mission, PlayerMission, PlayerAircraft, Sortie, KillboardPvP,
                      Tour, LogEntry, Profile, Squad, Reward, PlayerOnline)
 from . import sortie_log
 
@@ -22,6 +22,7 @@ ITEMS_PER_PAGE = 20
 missions_sort_fields = ['id', 'pilots_total', 'winning_coalition', 'duration']
 squads_sort_fields = ['ak_total', 'gk_total', 'flight_time', 'kd', 'khr', 'score', 'rating', 'num_members']
 pilots_sort_fields = ['ak_total', 'streak_current', 'gk_total', 'flight_time', 'kd', 'khr', 'accuracy', 'score', 'rating']
+killboard_sort_fields = ['won', 'lose', 'wl']
 
 
 def _get_rating_position(item, field='rating'):
@@ -167,6 +168,39 @@ def pilot_awards(request, profile_id, nickname=None):
     return render(request, 'pilot_awards.html', {
         'player': player,
         'rewards': rewards,
+    })
+
+
+def pilot_killboard(request, profile_id, nickname=None):
+    try:
+        player = (Player.objects.select_related('profile', 'tour')
+                  .get(profile_id=profile_id, type='pilot', tour_id=request.tour.id))
+    except Player.DoesNotExist:
+        raise Http404
+
+    if player.nickname != nickname:
+        return redirect_fix_url(request=request, param='nickname', value=player.nickname)
+    if player.profile.is_hide:
+        return render(request, 'pilot_hide.html', {'player': player})
+
+    _killboard = (KillboardPvP.objects
+                  .select_related('player_1__profile', 'player_2__profile')
+                  .filter(Q(player_1_id=player.id) | Q(player_2_id=player.id)))
+    killboard = []
+    for k in _killboard:
+        if k.player_1_id == player.id:
+            killboard.append({'player': k.player_2, 'won': k.won_1, 'lose': k.won_2, 'wl': k.wl_1})
+        else:
+            killboard.append({'player': k.player_1, 'won': k.won_2, 'lose': k.won_1, 'wl': k.wl_2})
+
+    _sort_by = get_sort_by(request=request, sort_fields=killboard_sort_fields, default='-wl')
+    sort_reverse = True if _sort_by.startswith('-') else False
+    sort_by = _sort_by.replace('-', '')
+    killboard = sorted(killboard, key=lambda x: x[sort_by], reverse=sort_reverse)
+
+    return render(request, 'pilot_killboard.html', {
+        'player': player,
+        'killboard': killboard,
     })
 
 
