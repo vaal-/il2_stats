@@ -390,6 +390,14 @@ class Player(models.Model):
     sorties_streak_current = models.IntegerField(default=0)
     sorties_streak_max = models.IntegerField(default=0)
 
+    ft_streak_current = models.IntegerField(default=0)
+    ft_streak_max = models.IntegerField(default=0)
+
+    sortie_max_ak = models.IntegerField(default=0)
+    sortie_max_gk = models.IntegerField(default=0)
+
+    lost_aircraft_current = models.IntegerField(default=0)
+
     bailout = models.IntegerField(default=0)
     wounded = models.IntegerField(default=0)
     dead = models.IntegerField(default=0)

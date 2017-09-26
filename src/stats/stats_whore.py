@@ -600,8 +600,8 @@ def update_sortie(new_sortie, player_mission, player_aircraft):
         player.streak_ground_current = 0
         player.score_streak_current = 0
         player.sorties_streak_current = 0
-    # elif new_sortie.is_disco:
-    #     player.streak_current = 0
+        player.ft_streak_current = 0
+        player.lost_aircraft_current = 0
     else:
         player.streak_current += new_sortie.ak_total
         player.streak_max = max(player.streak_max, player.streak_current)
@@ -611,6 +611,13 @@ def update_sortie(new_sortie, player_mission, player_aircraft):
         player.score_streak_max = max(player.score_streak_max, player.score_streak_current)
         player.sorties_streak_current += 1
         player.sorties_streak_max = max(player.sorties_streak_max, player.sorties_streak_current)
+        player.ft_streak_current += new_sortie.flight_time
+        player.ft_streak_max = max(player.ft_streak_max, player.ft_streak_current)
+        if new_sortie.is_lost_aircraft:
+            player.lost_aircraft_current += 1
+
+    player.sortie_max_ak = max(player.sortie_max_ak, new_sortie.ak_total)
+    player.sortie_max_gk = max(player.sortie_max_gk, new_sortie.gk_total)
 
     update_status(new_sortie=new_sortie, player=player)
     update_status(new_sortie=new_sortie, player=player_mission)

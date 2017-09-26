@@ -397,6 +397,64 @@
 
             <div class="clearfix"></div>
 
+            <div class="player_detailed" style="float: left;">
+                <div class="title">
+                    {% trans 'Best results' %}
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Best Streak' %}</div>
+                    <div class="num">{{ player.streak_max }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Best Ground Streak' %}</div>
+                    <div class="num">{{ player.streak_ground_max }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Best Flight time Streak' %}</div>
+                    <div class="num">{{ player.ft_streak_max|seconds_to_time }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Best Sorties Streak' %}</div>
+                    <div class="num">{{ player.sorties_streak_max }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Max Aerial Victories in one sortie' %}</div>
+                    <div class="num">{{ player.sortie_max_ak }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Max Destroyed on Ground in one sortie' %}</div>
+                    <div class="num">{{ player.sortie_max_gk }}</div>
+                </div>
+            </div>
+
+            <div class="player_detailed" style="float: right;">
+                <div class="title">
+                    {% trans 'Current life' %}
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Aerial victories' %} ({% trans 'Streak' %})</div>
+                    <div class="num">{{ player.streak_current }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Destroyed on Ground' %} ({% trans 'Streak' %})</div>
+                    <div class="num">{{ player.streak_ground_current }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Flight Time' %}</div>
+                    <div class="num">{{ player.ft_streak_current|seconds_to_time }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Sorties' context 'total' %}</div>
+                    <div class="num">{{ player.sorties_streak_current }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Lost aircraft' context 'total' %}</div>
+                    <div class="num">{{ player.lost_aircraft_current }}</div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
             <div class="player_bars" style="float: left;">
                 <div class="title">
                     {% trans 'Coalitions' %}
