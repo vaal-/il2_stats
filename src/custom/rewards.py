@@ -51,6 +51,11 @@ def fighter_hero(sortie):
     return sortie.ak_total >= 5
 
 
-# 10 air kills in one mission
+# 15 air kills in one mission
 def mission_hero(player_mission):
     return player_mission.ak_total >= 15
+
+
+# 15 air kills in one virtual life
+def vlife_hero(vlife):
+    return vlife.ak_total >= 25

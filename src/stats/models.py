@@ -10,11 +10,11 @@ from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _, pgettext_lazy
 
 from mission_report.constants import Coalition, Country
-from mission_report.statuses import BotLifeStatus, SortieStatus, LifeStatus
+from mission_report.statuses import BotLifeStatus, SortieStatus, LifeStatus, VLifeStatus
 
 from .aircraft_mods import get_aircraft_mods
 from .aircraft_payloads import get_aircraft_payload
-from .models_managers import PlayerManager, SquadManager
+from .models_managers import PlayerManager, SquadManager, VLifeManager
 from .sql import get_position_by_field, get_squad_position_by_field
 
 
@@ -467,6 +467,11 @@ class Player(models.Model):
                                             tour_id=self.tour_id)
         return url
 
+    def get_vlifes_url(self):
+        url = '{url}?tour={tour_id}'.format(url=reverse('stats:pilot_vlifes', args=[self.profile_id, self.nickname]),
+                                            tour_id=self.tour_id)
+        return url
+
     def get_awards_url(self):
         url = '{url}?tour={tour_id}'.format(url=reverse('stats:pilot_awards', args=[self.profile_id, self.nickname]),
                                             tour_id=self.tour_id)
@@ -776,11 +781,214 @@ class PlayerAircraft(models.Model):
             self.ratio = round(ratio, 2)
 
 
+class VLife(models.Model):
+    profile = models.ForeignKey(Profile, related_name='+', on_delete=models.CASCADE)
+    player = models.ForeignKey(Player, related_name='+', on_delete=models.CASCADE)
+    tour = models.ForeignKey(Tour, related_name='+', on_delete=models.CASCADE)
+
+    date_first_sortie = models.DateTimeField(null=True)
+    date_last_sortie = models.DateTimeField(null=True)
+    date_last_combat = models.DateTimeField(null=True)
+
+    score = models.IntegerField(default=0, db_index=True)
+    ratio = models.FloatField(default=1)
+
+    sorties_total = models.IntegerField(default=0, db_index=True)
+    sorties_coal = ArrayField(models.IntegerField(default=0), default=default_coal_list)
+    sorties_cls = JSONField(default=default_sorties_cls)
+
+    COALITIONS = (
+        (Coalition.neutral, pgettext_lazy('coalition', _('neutral'))),
+        (Coalition.Allies, pgettext_lazy('coalition', _('Allies'))),
+        (Coalition.Axis, pgettext_lazy('coalition', _('Axis'))),
+    )
+
+    coal_pref = models.IntegerField(default=Coalition.neutral, choices=COALITIONS)
+
+    flight_time = models.BigIntegerField(default=0, db_index=True)
+
+    ammo = JSONField(default=default_ammo)
+    accuracy = models.FloatField(default=0, db_index=True)
+
+    bailout = models.IntegerField(default=0)
+    wounded = models.IntegerField(default=0)
+    dead = models.IntegerField(default=0)
+    captured = models.IntegerField(default=0)
+    relive = models.IntegerField(default=0, db_index=True)
+
+    takeoff = models.IntegerField(default=0)
+    landed = models.IntegerField(default=0)
+    ditched = models.IntegerField(default=0)
+    crashed = models.IntegerField(default=0)
+    in_flight = models.IntegerField(default=0)
+    shotdown = models.IntegerField(default=0)
+
+    respawn = models.IntegerField(default=0)
+    disco = models.IntegerField(default=0)
+
+    ak_total = models.IntegerField(default=0, db_index=True)
+    ak_assist = models.IntegerField(default=0)
+    gk_total = models.IntegerField(default=0, db_index=True)
+    fak_total = models.IntegerField(default=0)
+    fgk_total = models.IntegerField(default=0)
+
+    killboard_pvp = JSONField(default=dict)
+    killboard_pve = JSONField(default=dict)
+
+    STATUS = (
+        (SortieStatus.landed, pgettext_lazy('sortie_status', 'landed')),
+        (SortieStatus.ditched, pgettext_lazy('sortie_status', 'ditched')),
+        (SortieStatus.crashed, pgettext_lazy('sortie_status', 'crashed')),
+        (SortieStatus.shotdown, pgettext_lazy('sortie_status', 'shotdown')),
+        (SortieStatus.not_takeoff, pgettext_lazy('sortie_status', 'not takeoff')),
+        (SortieStatus.in_flight, pgettext_lazy('sortie_status', 'in flight')),
+    )
+
+    status = models.CharField(max_length=12, choices=STATUS, default=SortieStatus.not_takeoff)
+
+    AIRCRAFT_STATUS = (
+        (LifeStatus.unharmed, pgettext_lazy('aircraft_status', 'unharmed')),
+        (LifeStatus.damaged, pgettext_lazy('aircraft_status', 'damaged')),
+        (LifeStatus.destroyed, pgettext_lazy('aircraft_status', 'destroyed')),
+    )
+
+    aircraft_status = models.CharField(max_length=12, choices=AIRCRAFT_STATUS, default=LifeStatus.unharmed)
+
+    BOT_STATUS = (
+        (BotLifeStatus.healthy, pgettext_lazy('sortie_status', 'healthy')),
+        (BotLifeStatus.wounded, pgettext_lazy('sortie_status', 'wounded')),
+        (BotLifeStatus.dead, pgettext_lazy('sortie_status', 'dead')),
+    )
+
+    bot_status = models.CharField(max_length=12, choices=BOT_STATUS, default=BotLifeStatus.healthy)
+
+    ce = models.FloatField(default=0)
+    kl = models.FloatField(default=0)
+    ks = models.FloatField(default=0)
+    khr = models.FloatField(default=0)
+    gkl = models.FloatField(default=0)
+    gks = models.FloatField(default=0)
+    gkhr = models.FloatField(default=0)
+    wl = models.FloatField(default=0)
+
+    objects = models.Manager()
+    players = VLifeManager()
+
+    class Meta:
+        ordering = ['-id']
+        db_table = 'vlifes'
+
+    def __str__(self):
+        return self.profile.nickname
+
+    def save(self, *args, **kwargs):
+        self.update_accuracy()
+        self.update_analytics()
+        self.update_ratio()
+        self.update_coal_pref()
+        super().save(*args, **kwargs)
+
+    @property
+    def is_dead(self):
+        return self.bot_status == BotLifeStatus.dead
+
+    @property
+    def is_healthy(self):
+        return self.bot_status == BotLifeStatus.healthy
+
+    @property
+    def is_wounded(self):
+        return self.bot_status == BotLifeStatus.wounded
+
+    @property
+    def is_not_takeoff(self):
+        return self.status == SortieStatus.not_takeoff
+
+    @property
+    def is_landed(self):
+        return self.status == SortieStatus.landed
+
+    @property
+    def is_in_flight(self):
+        return self.status == SortieStatus.in_flight
+
+    @property
+    def is_ditched(self):
+        return self.status == SortieStatus.ditched
+
+    @property
+    def is_captured(self):
+        return self.captured
+
+    @property
+    def is_crashed(self):
+        return self.status == SortieStatus.crashed
+
+    @property
+    def is_shotdown(self):
+        return self.status == SortieStatus.shotdown
+
+    @property
+    def is_lost_aircraft(self):
+        return self.is_ditched or self.is_crashed or self.is_shotdown
+
+    @property
+    def nickname(self):
+        return self.profile.nickname
+
+    @property
+    def lost_aircraft(self):
+        return self.ditched + self.crashed + self.shotdown
+
+    @property
+    def flight_time_hours(self):
+        return self.flight_time / 3600
+
+    @property
+    def ak_total_ai(self):
+        aircraft_light = self.killboard_pve.get('aircraft_light', 0)
+        aircraft_medium = self.killboard_pve.get('aircraft_medium', 0)
+        aircraft_heavy = self.killboard_pve.get('aircraft_heavy', 0)
+        aircraft_transport = self.killboard_pve.get('aircraft_transport', 0)
+        return aircraft_light + aircraft_medium + aircraft_heavy + aircraft_transport
+
+    def update_accuracy(self):
+        if self.ammo['used_cartridges']:
+            self.accuracy = round(self.ammo['hit_bullets'] * 100 / self.ammo['used_cartridges'], 1)
+
+    def update_analytics(self):
+        self.kl = round(self.ak_total / max(self.lost_aircraft, 1), 2)
+        self.ks = round(self.ak_total / max(self.sorties_total, 1), 2)
+        self.khr = round(self.ak_total / max(self.flight_time_hours, 1), 2)
+        self.gkl = round(self.gk_total / max(self.lost_aircraft, 1), 2)
+        self.gks = round(self.gk_total / max(self.sorties_total, 1), 2)
+        self.gkhr = round(self.gk_total / max(self.flight_time_hours, 1), 2)
+        self.wl = round(self.ak_total / max(self.shotdown, 1), 2)
+        self.ce = round(self.kl * self.khr / 10, 2)
+
+    def update_ratio(self):
+        ratio = (Sortie.objects.filter(player_id=self.id, vlife_id=self.id)
+                 .aggregate(ratio=Avg('ratio'))['ratio'])
+        if ratio:
+            self.ratio = round(ratio, 2)
+
+    def update_coal_pref(self):
+        if self.sorties_total:
+            allies = round(self.sorties_coal[1] * 100 / self.sorties_total, 0)
+            if allies > 60:
+                self.coal_pref = 1
+            elif allies < 40:
+                self.coal_pref = 2
+            else:
+                self.coal_pref = 0
+
+
 class Sortie(models.Model):
     profile = models.ForeignKey(Profile, related_name='+', on_delete=models.CASCADE)
     player = models.ForeignKey(Player, related_name='sorties_list', on_delete=models.CASCADE)
     tour = models.ForeignKey(Tour, related_name='sorties', on_delete=models.CASCADE)
     mission = models.ForeignKey(Mission, related_name='sorties_list', on_delete=models.CASCADE)
+    vlife = models.ForeignKey(VLife, related_name='sorties_list', on_delete=models.CASCADE, blank=True, null=True)
 
     nickname = models.CharField(max_length=128)
 
@@ -1174,6 +1382,7 @@ class Award(models.Model):
         ('tour', pgettext_lazy('award_type', 'tour')),
         ('mission', pgettext_lazy('award_type', 'mission')),
         ('sortie', pgettext_lazy('award_type', 'sortie')),
+        ('vlife', pgettext_lazy('award_type', 'vlife')),
     )
     func = models.CharField(_('function name'), max_length=128, unique=True)
     title = models.CharField(_('title'), max_length=256)

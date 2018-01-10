@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'Virtual Lifes' context 'pilot_vlifes' %} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{% block nav_tabs %}
+    {% include 'inline/pilot_tabs.html' %}
+{% endblock nav_tabs %}
+
+{% block content %}
+    <section id="content">
+        <div class="wrapper">
+            <div class="content_head">
+                <div class="content_title">
+                    {% trans 'Virtual Lifes' context 'pilot_vlifes' %}
+                    <div class="content_title_sm">{% trans 'pilot' %}: {{ player.nickname }}</div>
+                </div>
+            </div>
+            {% if vlifes %}
+                <div class="content_table">
+                    <div class="head_row">
+                        <div class="cell" style="width: 40px;"></div>
+                        <div class="cell" style="width: 100px;"></div>
+{#                        <div class="cell" style="width: 80px;"></div>#}
+{#                        <div class="cell" style="width: 90px;">#}
+{#                            <img src="{% static 'img/icons/small/ak.png' %}" width="18" height="18"#}
+{#                                 alt="{% trans 'Sorties' %}" title="{% trans 'Sorties' %}">#}
+{#                        </div>#}
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/ft.png' %}" width="18" height="18"
+                                 alt="{% trans 'Duration (hours:minutes)' %}"
+                                 title="{% trans 'Duration (hours:minutes)' %}">
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/ak.png' %}" width="18" height="18"
+                                 alt="{% trans 'Air Kills' %}" title="{% trans 'Air Kills' %}">
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/gk.png' %}" width="18" height="18"
+                                 alt="{% trans 'Ground Kills' %}" title="{% trans 'Ground Kills' %}">
+                        </div>
+                        <div class="cell" style="width: 90px;">
+                            <img src="{% static 'img/icons/small/score.png' %}" width="18" height="18"
+                                 alt="{% trans 'Score' %}" title="{% trans 'Score' %}">
+                        </div>
+                    </div>
+                    {% for vlife in vlifes %}
+                        {# TODO get_sortie_url #}
+                        <a class="row" href="{% url 'stats:pilot_vlife' vlife.id %}?tour={{ player.tour_id }}">
+                            <div class="cell img">
+                                {% if vlife.is_dead %}
+                                    <img src="{% static 'img/sortie/status/dead.png' %}" width="20" height="20"
+                                         title="{% trans 'Dead' context 'sortie_status' %}"
+                                         alt="{% trans 'Dead' context 'sortie_status' %}">
+                                {% elif vlife.is_captured %}
+                                    <img src="{% static 'img/sortie/status/captured.png' %}" width="20" height="20"
+                                         title="{% trans 'Captured' context 'sortie_status' %}"
+                                         alt="{% trans 'Captured' context 'sortie_status' %}">
+                                {% elif vlife.is_bailout %}
+                                    <img src="{% static 'img/sortie/status/bailout.png' %}" width="20" height="20"
+                                         title="{% trans 'Bailout' context 'sortie_status' %}"
+                                         alt="{% trans 'Bailout' context 'sortie_status' %}">
+                                {% elif vlife.is_lost_aircraft %}
+                                    <img src="{% static 'img/sortie/status/crashed.png' %}" width="20" height="20"
+                                         title="{% trans 'Aircraft lost' context 'sortie_status' %}"
+                                         alt="{% trans 'Aircraft lost' context 'sortie_status' %}">
+                                {% elif vlife.is_in_flight %}
+                                    <img src="{% static 'img/sortie/status/in_flight.png' %}" width="20" height="20"
+                                         title="{% trans 'In Flight' context 'sortie_status' %}"
+                                         alt="{% trans 'In Flight' context 'sortie_status' %}">
+                                {% elif vlife.is_landed %}
+                                    <img src="{% static 'img/sortie/status/landed.png' %}" width="20" height="20"
+                                         title="{% trans 'Landed' context 'sortie_status' %}"
+                                         alt="{% trans 'Landed' context 'sortie_status' %}">
+                                {% endif %}
+                            </div>
+                            <div class="cell">
+                                {{ vlife.date_first_sortie|date:'d.m.Y' }}
+                                {% if vlife.date_last_sortie|date:'d.m.Y' != vlife.date_first_sortie|date:'d.m.Y' %}
+                                     - {{ vlife.date_last_sortie|date:'d.m.Y' }}
+                                {% endif %}
+                            </div>
+{#                            <div class="cell">{{ vlife.date_last_sortie|time:'H:i' }}</div>#}
+{#                            <div class="cell">{{ vlife.sorties_total }}</div>#}
+                            <div class="cell">{{ vlife.flight_time|seconds_to_time }}</div>
+                            <div class="cell">{{ vlife.ak_total }}</div>
+                            <div class="cell">{{ vlife.gk_total }}</div>
+                            <div class="cell">{{ vlife.score }}</div>
+                        </a>
+                    {% endfor %}
+                </div>
+
+                {% if vlifes.paginator.num_pages > 1 %}
+                    <div class="paginator3000" id="paginator"></div>
+                {% endif %}
+            {% endif %}
+
+{#            <div class="info">#}
+{##}
+{#            </div>#}
+        </div>
+    </section>
+{% endblock content %}
+
+{% block bottom %}
+    {{ block.super }}
+    <script src="{% static 'js/table.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            var paginator = new Paginator('paginator', {{ vlifes.paginator.num_pages }}, 15, {{ vlifes.number }}, uri_paginator);
+        });
+    </script>
+{% endblock bottom %}

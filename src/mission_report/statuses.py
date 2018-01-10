@@ -133,3 +133,10 @@ class BotLifeStatus(LifeStatus):
     @property
     def is_dead(self):
         return self.status == self.dead
+
+
+class VLifeStatus:
+    alive = 'alive'
+    killed = 'killed'
+    dead = 'dead'
+    captured = 'captured'

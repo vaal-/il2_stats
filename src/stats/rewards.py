@@ -7,6 +7,7 @@ from stats.models import Award, Reward
 _awards_tour = Award.objects.filter(type='tour')
 _awards_mission = Award.objects.filter(type='mission')
 _awards_sortie = Award.objects.filter(type='sortie')
+_awards_vlife = Award.objects.filter(type='vlife')
 
 
 @lru_cache(maxsize=32)
@@ -36,4 +37,11 @@ def reward_sortie(sortie):
     player = sortie.player
     for award in _awards_sortie:
         if get_reward_func(award.func)(sortie=sortie):
+            rewarding(award_id=award.id, player_id=player.id)
+
+
+def reward_vlife(vlife):
+    player = vlife.player
+    for award in _awards_vlife:
+        if get_reward_func(award.func)(vlife=vlife):
             rewarding(award_id=award.id, player_id=player.id)

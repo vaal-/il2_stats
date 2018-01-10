@@ -16,4 +16,5 @@ class Command(BaseCommand):
         cursor.execute('TRUNCATE TABLE sorties RESTART IDENTITY CASCADE')
         cursor.execute('TRUNCATE TABLE squads_stats RESTART IDENTITY CASCADE')
         cursor.execute('TRUNCATE TABLE tours RESTART IDENTITY CASCADE')
+        cursor.execute('TRUNCATE TABLE vlifes RESTART IDENTITY CASCADE')
         print('Statistics reseted')

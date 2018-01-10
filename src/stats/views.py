@@ -11,7 +11,7 @@ from squads.models import Squad as SquadProfile
 
 from .helpers import Paginator, get_sort_by, redirect_fix_url
 from .models import (Player, Mission, PlayerMission, PlayerAircraft, Sortie, KillboardPvP,
-                     Tour, LogEntry, Profile, Squad, Reward, PlayerOnline)
+                     Tour, LogEntry, Profile, Squad, Reward, PlayerOnline, VLife)
 from . import sortie_log
 
 
@@ -416,4 +416,37 @@ def online(request):
         'total_players': total_players,
         'total_allies': total_allies,
         'total_axis': total_axis,
+    })
+
+
+def pilot_vlifes(request, profile_id, nickname=None):
+    try:
+        player = (Player.objects.select_related('profile', 'tour')
+                  .get(profile_id=profile_id, type='pilot', tour_id=request.tour.id))
+    except Player.DoesNotExist:
+        raise Http404
+
+    if player.nickname != nickname:
+        return redirect_fix_url(request=request, param='nickname', value=player.nickname)
+    if player.profile.is_hide:
+        return render(request, 'pilot_hide.html', {'player': player})
+    vlifes = VLife.objects.filter(player_id=player.id).exclude(sorties_total=0).order_by('-id')
+    page = request.GET.get('page', 1)
+    vlifes = Paginator(vlifes, ITEMS_PER_PAGE).page(page)
+    return render(request, 'pilot_vlifes.html', {
+        'player': player,
+        'vlifes': vlifes,
+    })
+
+
+def pilot_vlife(request, vlife_id):
+    try:
+        vlife = (VLife.objects
+                 .select_related('player', 'player__profile', 'player__tour')
+                 .get(id=vlife_id, player__type='pilot'))
+    except VLife.DoesNotExist:
+        raise Http404
+    return render(request, 'pilot_vlife.html', {
+        'player': vlife.player,
+        'vlife': vlife,
     })

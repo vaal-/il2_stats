@@ -1,0 +1,357 @@
+{% extends 'base.html' %}
+{% load i18n staticfiles tz stats %}
+{% block title %}{% trans 'VLife' context 'vlife_page_title' %}:
+    {{ vlife.date_last_sortie|date:'d.m.Y - H:i' }} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
+
+{#{% block nav_tabs %}#}
+{# #}
+{#{% endblock nav_tabs %}#}
+
+
+{% block content %}
+    <section id="vlife">
+        <div class="wrapper">
+            <div class="vlife_title">
+                {% trans 'VLife' context 'vlife_page_title' %}:
+                {{ vlife.date_first_sortie|date:'d.m.Y' }}
+                {% if vlife.date_last_sortie|date:'d.m.Y' != vlife.date_first_sortie|date:'d.m.Y' %}
+                     - {{ vlife.date_last_sortie|date:'d.m.Y' }}
+                {% endif %}
+                {% if vlife.is_dead %}
+                    <img src="{% static 'img/sortie/status/dead_big.png' %}" width="28" height="28"
+                         title="{% trans 'Dead' context 'sortie_status' %}"
+                         alt="{% trans 'Dead' context 'sortie_status' %}">
+                {% elif vlife.is_captured %}
+                    <img src="{% static 'img/sortie/status/captured_big.png' %}" width="28" height="28"
+                         title="{% trans 'Captured' context 'sortie_status' %}"
+                         alt="{% trans 'Captured' context 'sortie_status' %}">
+                {% elif vlife.is_bailout %}
+                    <img src="{% static 'img/sortie/status/bailout_big.png' %}" width="28" height="28"
+                         title="{% trans 'Bailout' context 'sortie_status' %}"
+                         alt="{% trans 'Bailout' context 'sortie_status' %}">
+                {% elif vlife.is_lost_aircraft %}
+                    <img src="{% static 'img/sortie/status/crashed_big.png' %}" width="28" height="28"
+                         title="{% trans 'Aircraft lost' context 'sortie_status' %}"
+                         alt="{% trans 'Aircraft lost' context 'sortie_status' %}">
+                {% elif vlife.is_in_flight %}
+                    <img src="{% static 'img/sortie/status/in_flight_big.png' %}" width="28" height="28"
+                         title="{% trans 'In Flight' context 'sortie_status' %}"
+                         alt="{% trans 'In Flight' context 'sortie_status' %}">
+                {% elif vlife.is_landed %}
+                    <img src="{% static 'img/sortie/status/landed_big.png' %}" width="28" height="28"
+                         title="{% trans 'Landed' context 'sortie_status' %}"
+                         alt="{% trans 'Landed' context 'sortie_status' %}">
+                {% endif %}
+            </div>
+            <div class="pilot_nickname">
+                {% trans 'pilot' context 'pilot_vlifes' %}: {{ player.nickname }}
+            </div>
+
+            <a href="{{ player.get_vlifes_url }}">
+                <div class="vlife_back_to_vlifes">
+                    {% trans 'Back to vlifes list' %}
+                </div>
+            </a>
+
+            <div class="profile_main_stats" style="margin-top: 30px;">
+                <div class="item">
+                    <img src="{% static 'img/icons/big/ak.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Aerial victories' %}</div>
+                    <div class="num">{{ vlife.ak_total }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/gk.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Destroyed on Ground' %}</div>
+                    <div class="num">{{ vlife.gk_total }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/ft.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Flight Time' %}</div>
+                    <div class="num">{{ vlife.flight_time|seconds_to_time }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/acc.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Gunnery Accuracy' %}</div>
+                    <div class="num">{{ vlife.accuracy }}</div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/icons/big/rating.png' %}" width="" height="" title="" alt="">
+                    <div class="text">{% trans 'Score' %}</div>
+                    <div class="num">{{ vlife.score }}</div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="player_detailed" style="float: left;">
+                <div class="title">
+                    {% trans 'Detailed combat results' %}
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Total Aircraft' context 'total' %}</div>
+                    <div class="num">{{ vlife.ak_total }}</div>
+                </div>
+
+                {% if vlife.killboard_pvp.aircraft_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Fighters' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pvp.aircraft_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pvp.aircraft_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Attacker' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pvp.aircraft_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pvp.aircraft_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Bombers' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pvp.aircraft_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pvp.aircraft_transport %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Transport' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pvp.aircraft_transport }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aircraft_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Fighters' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ vlife.killboard_pve.aircraft_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aircraft_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Attacker' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ vlife.killboard_pve.aircraft_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aircraft_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Bombers' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ vlife.killboard_pve.aircraft_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aircraft_transport %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Transport' context 'total' %} ({% trans 'AI' context 'total' %})</div>
+                    <div class="num">{{ vlife.killboard_pve.aircraft_transport }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.ak_assist %}
+                <div class="item">
+                    <div class="name">{% trans 'Assisted' context 'total' %}</div>
+                    <div class="num">{{ vlife.ak_assist }}</div>
+                </div>
+                {% endif %}
+
+                <div class="item">
+                    <div class="name">{% trans 'Destroyed ground targets' context 'total' %}</div>
+                    <div class="num">{{ vlife.gk_total }}</div>
+                </div>
+
+                {% if vlife.killboard_pve.tank_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Heavy Tanks' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.tank_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.tank_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Medium Tanks' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.tank_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.tank_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Light Tanks' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.tank_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.armoured_vehicle %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Armored vehicles' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.armoured_vehicle }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.car %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Cars' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.car }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.truck %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Trucks' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.truck }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aaa_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Large-caliber AA guns' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.aaa_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aaa_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Medium-caliber AA guns' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.aaa_light }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aaa_mg %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Small-caliber AA guns' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.aaa_mg }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.searchlight %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Searchlights' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.searchlight }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.locomotive %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Locomotives' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.locomotive }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.wagon %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Wagons' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.wagon }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.artillery_field %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Field Artillery' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.artillery_field }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.artillery_howitzer %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Howitzers' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.artillery_howitzer }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.artillery_rocket %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Rocket Artillery' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.artillery_rocket }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.ship %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Ships' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.ship }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.aircraft_static %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Static Aircraft' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.aircraft_static }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.vehicle_static %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Static Vehicles' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.vehicle_static }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.airfield %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Airfield Objects' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.airfield }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.bridge %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Bridges' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.bridge }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.industrial %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Industrial Objects' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.industrial }}</div>
+                </div>
+                {% endif %}
+
+            </div>
+
+            <div class="player_detailed" style="float: right;">
+                <div class="title">
+                    {% trans 'Detailed sorties results' %}
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Score' context 'total' %}</div>
+                    <div class="num">{{ vlife.score }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Sorties' context 'total' %}</div>
+                    <div class="num">{{ vlife.sorties_total }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Lost aircraft' context 'total' %}</div>
+                    <div class="num">{{ vlife.lost_aircraft }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Bailout' context 'total' %}</div>
+                    <div class="num">{{ vlife.bailout }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Disco' context 'total' %}</div>
+                    <div class="num">{{ vlife.disco }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Shotdown Friendly Aircraft' context 'total' %}</div>
+                    <div class="num">{{ vlife.fak_total }}</div>
+                </div>
+                <div class="item">
+                    <div class="name">{% trans 'Destroyed Friendly Ground Targets' context 'total' %}</div>
+                    <div class="num">{{ vlife.fgk_total }}</div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+    </section>
+
+
+{% endblock content %}
+
+{#{% block bottom %}#}
+{#    {{ block.super }}#}
+{#{% endblock bottom %}#}
+

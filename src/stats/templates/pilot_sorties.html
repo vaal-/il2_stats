@@ -42,6 +42,9 @@
                         </div>
                     </div>
                     {% for sortie in sorties %}
+                        {% ifchanged sortie.vlife_id %}
+                            {% if not forloop.first %}<br>{% endif %}
+                        {% endifchanged %}
                         {# TODO get_sortie_url #}
                         <a class="row" href="{% url 'stats:pilot_sortie' sortie.id %}?tour={{ player.tour_id }}">
                             <div class="cell img">
