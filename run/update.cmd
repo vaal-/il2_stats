@@ -1,5 +1,5 @@
 cd ../
-".venv/Scripts/python.exe" -m pip install -U --quiet --no-index --find-links=wheelhouse -r requirements.txt
+".venv/Scripts/python.exe" -m pip install -U --quiet -r requirements.txt
 pause
 cd src
 "../.venv/Scripts/python.exe" manage.py collectstatic --noinput --verbosity 0
