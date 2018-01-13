@@ -37,10 +37,8 @@
                         <div class="aircraft">
                             {% trans 'favorite aircraft' %}: <span>{{ fav_aircraft.aircraft.name }}</span>
                         </div>
-                        {% with 'img/aircraft/'|add:fav_aircraft.aircraft.log_name|add:'.png' as fav_aircraft_img %}
-                            <img src="{% static fav_aircraft_img %}" width="670" height="240" class="fav_aircraft"
-                                 title="{% trans fav_aircraft.aircraft.name %}" alt="{% trans fav_aircraft.aircraft.name %}">
-                        {% endwith %}
+                        <img src="{{ fav_aircraft.aircraft.aircraft_image }}" width="670" height="240" class="fav_aircraft"
+                             title="{% trans fav_aircraft.aircraft.name %}" alt="{% trans fav_aircraft.aircraft.name %}">
                     {% endif %}
                 </div>
                 <div class="head_right">

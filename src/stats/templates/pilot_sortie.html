@@ -106,12 +106,10 @@
 {#                        {% endfor %}#}
                     {% endif %}
 
-                    {% with 'img/aircraft/'|add:sortie.aircraft.log_name|add:'.png' as sortie_aircraft_img %}
-                        <img src="{% static sortie_aircraft_img %}" width="335" height="120"
-                             style="margin-top: 10px;"
-                             title="{% trans sortie.aircraft.name %}"
-                             alt="{% trans sortie.aircraft.name %}">
-                    {% endwith %}
+                    <img src="{{ sortie.aircraft.aircraft_image }}" width="335" height="120"
+                         style="margin-top: 10px;"
+                         title="{% trans sortie.aircraft.name %}"
+                         alt="{% trans sortie.aircraft.name %}">
                     <br>
                     {% trans 'aircraft status' context 'sortie' %}:
                     {% if sortie.is_not_takeoff %}
