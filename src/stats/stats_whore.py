@@ -51,8 +51,8 @@ def main():
 
     while True:
         new_reports = []
-        for m_report_file in MISSION_REPORT_PATH.glob('missionReport*.txt'):
-            if m_report_file.name.endswith('[0].txt') and m_report_file.name not in processed_reports:
+        for m_report_file in MISSION_REPORT_PATH.glob('missionReport*[[]0[]].txt'):
+            if m_report_file.name not in processed_reports:
                 new_reports.append(m_report_file)
 
         if len(new_reports) > 1:
@@ -99,7 +99,9 @@ def backup_log(name, lines, date):
 
 
 def collect_mission_reports(m_report_file):
-    return sorted(MISSION_REPORT_PATH.glob('%s*.txt' % m_report_file.name[:34]), key=lambda x: x.stat().st_mtime)
+    """ сортировка файлов лога миссии по порядковому номеру """
+    return sorted(MISSION_REPORT_PATH.glob('%s*.txt' % m_report_file.name[:34]),
+                  key=lambda x: int(x.stem.split('[')[1][:-1]))
 
 
 def cleanup(m_report_file=None):
