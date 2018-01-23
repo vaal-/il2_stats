@@ -306,6 +306,12 @@ def test_atype_21():
     assert parse(line) == result
 
 
+def test_atype_22():
+    line = 'T:36160 AType:22 PID:1684580 POS(223718.406, 10.337, 242309.250)'
+    result = {'tik': 36160, 'atype_id': 22, 'parent_id': 1684580, 'pos': dict(x=223718.406, y=10.337, z=242309.250)}
+    assert parse(line) == result
+
+
 def test_atype_unknown():
     line = 'T:58 AType:25 VER:17'
     with pytest.raises(UnexpectedATypeWarning):

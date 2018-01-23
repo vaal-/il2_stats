@@ -65,7 +65,7 @@ class MissionReport:
                                 self.event_game_object, self.event_influence_area, self.event_influence_area_boundary,
                                 self.event_log_version, self.event_bot_deinitialization, self.event_pos_changed,
                                 self.event_bot_eject_leave, self.event_round_end, self.event_player_connected,
-                                self.event_player_disconnected)
+                                self.event_player_disconnected, self.event_tank_travel)
 
     def processing(self, files):
         """
@@ -363,6 +363,9 @@ class MissionReport:
             # вылет был завершен, был прыжок, не был создан самолет, самолет на земле
             if not (sortie.is_ended or sortie.is_bailout or (not sortie.aircraft) or sortie.aircraft.on_ground):
                 sortie.is_disco = True
+
+    def event_tank_travel(self, tik, parent_id, pos):
+        pass
 
 
 class Area:

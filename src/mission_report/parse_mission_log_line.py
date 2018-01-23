@@ -129,10 +129,14 @@ atype_20 = re.compile('^T:(?P<tik>\d+) AType:20 USERID:(?P<account_id>[-\w]{36})
 # T:18573 AType:21 USERID:d5bc9e4c-055c-46c2-8ace-8a7daa9eed4a USERNICKID:e608236e-332a-4843-8421-8e013c59685f
 atype_21 = re.compile('^T:(?P<tik>\d+) AType:21 USERID:(?P<account_id>[-\w]{36}) USERNICKID:(?P<profile_id>[-\w]{36})$')
 
+# начало движения танка
+# T:36160 AType:22 PID:1684580 POS(223718.406, 10.337, 242309.250)
+atype_22 = re.compile('^T:(?P<tik>\d+) AType:22 PID:(?P<parent_id>[-\d]+) POS\((?P<pos>.+)\)$')
+
 
 atype_handlers = [
     atype_0, atype_1, atype_2, atype_3, atype_4, atype_5, atype_6, atype_7, atype_8, atype_9, atype_10, atype_11,
-    atype_12, atype_13, atype_14, atype_15, atype_16, atype_17, atype_18, atype_19, atype_20, atype_21,
+    atype_12, atype_13, atype_14, atype_15, atype_16, atype_17, atype_18, atype_19, atype_20, atype_21, atype_22,
 ]
 
 
@@ -223,7 +227,7 @@ def parse(line):
     """
     line = unicodedata.normalize('NFKD', line)
     atype_id = int(line.partition('AType:')[2][:2])
-    if 0 <= atype_id <= 21:
+    if 0 <= atype_id <= 22:
         data = atype_handlers[atype_id].match(line.strip()).groupdict()
         data['atype_id'] = atype_id
         for key, value in list(data.items()):
