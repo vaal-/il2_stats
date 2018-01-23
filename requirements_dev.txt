@@ -17,9 +17,9 @@ pytest-cov==2.4.0
 pytest-django==3.1.2
 pytest-mock==1.5.0
 pytest==3.0.6
-pytz==2017.2              # via django
+pytz==2017.3              # via django
 requests==2.13.0          # via django-rosetta, microsofttranslator
-six==1.10.0               # via django-rosetta, microsofttranslator
+six==1.11.0               # via django-rosetta, microsofttranslator
 sqlparse==0.2.2           # via django-debug-toolbar
 
 # The following packages are considered to be unsafe in a requirements file:

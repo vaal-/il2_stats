@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ../
-.venv/bin/pip install -U --no-index --find-links=wheelhouse -r requirements.txt
+.venv/bin/pip install -U -r requirements.txt
 
 read -p "Press any key to continue... "
 
