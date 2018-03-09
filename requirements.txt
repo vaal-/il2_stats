@@ -7,13 +7,13 @@
 argon2-cffi==18.1.0
 cffi==1.9.1               # via argon2-cffi
 dj-static==0.0.6
-django-modeltranslation==0.12.1
-Django==1.11.9
+django-modeltranslation==0.12.2
+Django==1.11.11
 filelock==3.0.0
 Pillow==5.0.0
 psycopg2==2.7.3.2
 pycparser==2.17           # via cffi
-pytz==2017.3
+pytz==2018.3
 six==1.11.0
 static3==0.7.0
 tzlocal==1.5.1
