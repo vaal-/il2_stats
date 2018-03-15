@@ -69,9 +69,7 @@ atype_10 = re.compile(r'^T:(?P<tik>\d+) AType:10 PLID:(?P<aircraft_id>\d+) PID:(
                       r'SH:(?P<shells>\d+) BOMB:(?P<bombs>\d+) RCT:(?P<rockets>\d+) \((?P<pos>.+)\) '
                       r'IDS:(?P<profile_id>[-\w]{36}) LOGIN:(?P<account_id>[-\w]{36}) NAME:(?P<name>.+) '
                       r'TYPE:(?P<aircraft_name>[\w\(\) .\-_]+) COUNTRY:(?P<country_id>\d{1,3}) FORM:(?P<form>\d+) '
-                      r'FIELD:(?P<airfield_id>\d+) INAIR:(?P<airstart>\d) PARENT:(?P<parent_id>[-\d]+) '
-                      r'PAYLOAD:(?P<payload_id>\d+) FUEL:(?P<fuel>\S{5,6}) '
-                      r'SKIN:(?P<skin>[\S ]*) WM:(?P<weapon_mods_id>\d+)$')
+                      r'FIELD:(?P<airfield_id>\d+) INAIR:(?P<airstart>\d) PARENT:(?P<parent_id>[-\d]+) ')
 
 
 # группа объектов, с лидером и список членов
@@ -186,7 +184,6 @@ params_handlers = {
     'country_id': int,
     'game_type_id': int,
     'leader_id': int,
-    'payload_id': int,
     'preset_id': int,
     'rockets': int,
     'shells': int,
@@ -206,7 +203,6 @@ params_handlers = {
     'damage': lambda s: round(float(s) * 100, 1) if '#' not in s else None,
     'date': lambda s: datetime.strptime(s, '%Y.%m.%d GTime:%H:%M:%S'),
     'enabled': lambda s: s == '1',
-    'fuel': lambda s: float(s) * 100 if '#' not in s else None,
     'icon_type_id': lambda s: int(s) if s != '-1' else None,
     'in_air': lambda s: [int(s) for s in s.split(',')],
     'members_id': lambda s: list(map(int, s.split(','))) if s else [],
@@ -216,7 +212,6 @@ params_handlers = {
     'settings': lambda s: tuple(map(int, s)),
     'success': lambda s: s == '1',
     'object_name': object_name_handler,
-    'weapon_mods_id': lambda s: [i for i, wm in enumerate(bin(int(s))[2:-1][::-1], start=1) if wm == '1'],
 }
 
 

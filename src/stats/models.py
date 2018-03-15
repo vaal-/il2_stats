@@ -1007,7 +1007,7 @@ class Sortie(models.Model):
     fuel = models.IntegerField(default=100)  # в процентах!
     skin = models.CharField(max_length=256, blank=True)
     payload_id = models.IntegerField(default=0)
-    weapon_mods_id = ArrayField(models.IntegerField())
+    weapon_mods_id = ArrayField(models.IntegerField(), default=lambda: list())
 
     ammo = JSONField(default=default_ammo)
 

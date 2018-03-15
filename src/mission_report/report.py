@@ -291,12 +291,10 @@ class MissionReport:
             self.airfields[airfield_id] = airfield
 
     def event_player(self, tik, aircraft_id, bot_id, account_id, profile_id, name, pos, aircraft_name, country_id,
-                     coal_id, airfield_id, airstart, parent_id, payload_id, fuel, skin, weapon_mods_id,
-                     cartridges, shells, bombs, rockets, form):
+                     coal_id, airfield_id, airstart, parent_id, cartridges, shells, bombs, rockets, form):
         sortie = Sortie(mission=self, tik=tik, aircraft_id=aircraft_id, bot_id=bot_id, account_id=account_id,
                         profile_id=profile_id, name=name, pos=pos, aircraft_name=aircraft_name, country_id=country_id,
                         coal_id=coal_id, airfield_id=airfield_id, airstart=airstart, parent_id=parent_id,
-                        payload_id=payload_id, fuel=fuel, skin=skin, weapon_mods_id=weapon_mods_id,
                         cartridges=cartridges, shells=shells, bombs=bombs, rockets=rockets)
 
         self.add_active_sortie(sortie=sortie)
@@ -683,8 +681,7 @@ class Sortie:
     :type mission: MissionReport
     """
     def __init__(self, mission, tik, aircraft_id, bot_id, account_id, profile_id, name, pos, aircraft_name, country_id,
-                 coal_id, airfield_id, airstart, parent_id, payload_id, fuel, skin, weapon_mods_id,
-                 cartridges, shells, bombs, rockets):
+                 coal_id, airfield_id, airstart, parent_id, cartridges, shells, bombs, rockets):
         self.index = mission.index()
 
         self.mission = mission
@@ -709,10 +706,6 @@ class Sortie:
         self.is_airstart = airstart
         self.parent_id = parent_id
         self.parent = mission.sorties_aircraft.get(parent_id)
-        self.payload_id = payload_id
-        self.fuel = fuel
-        self.skin = skin
-        self.weapon_mods_id = weapon_mods_id
 
         self.tik_spawn = tik
         self.tik_takeoff = None

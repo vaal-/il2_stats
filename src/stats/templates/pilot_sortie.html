@@ -90,22 +90,6 @@
                     <div class="sortie_aircraft">
                         {% trans 'Aircraft' context 'sortie' %}: {{ sortie.aircraft.name }}
                     </div>
-                    {% trans 'fuel' context 'sortie' %}: {{ sortie.fuel }}%<br>
-                    {% trans 'payload' %}:
-                    {% if sortie.payload %}
-                        {{ sortie.payload }}
-                    {% else %}
-                        {% trans 'Default' context 'aircraft_payload' %}
-                    {% endif %}
-                    <br>
-                    {% if sortie.modifications %}
-                        {% trans 'modifications' %}: {{ sortie.modifications|join:', ' }}<br>
-{#                        {% trans 'modifications' %}:<br>#}
-{#                        {% for m in sortie.modifications %}#}
-{#                            - {{ m }}<br>#}
-{#                        {% endfor %}#}
-                    {% endif %}
-
                     <img src="{{ sortie.aircraft.aircraft_image }}" width="335" height="120"
                          style="margin-top: 10px;"
                          title="{% trans sortie.aircraft.name %}"
