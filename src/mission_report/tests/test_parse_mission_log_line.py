@@ -148,16 +148,15 @@ def test_atype_9_pos_bug():
 
 
 def test_atype_10():
-    line = ('T:504435 AType:10 PLID:32779 PID:93195 BUL:1082 SH:0 BOMB:0 RCT:0 '
-            '(23732.977,36.585,26604.607) IDS:e6cfcefe-a3a1-4d0d-90e7-fe24caf27d2e '
-            'LOGIN:5c6480cb-6d80-40cb-85de-e55167895b7f NAME:IRFC_Artun_Beta TYPE:Bristol F2B (F.II) COUNTRY:103 '
-            'FORM:0 FIELD:235520 INAIR:0 PARENT:-1 PAYLOAD:10 FUEL:1.000 SKIN:bristolf2bf2/f2bf2_irfc_def.dds WM:3')
-    result = {'tik': 504435, 'atype_id': 10, 'aircraft_id': 32779, 'bot_id': 93195, 'cartridges': 1082, 'shells': 0,
-              'bombs': 0, 'rockets': 0, 'pos': dict(x=23732.977, y=36.585, z=26604.607),
-              'profile_id': 'e6cfcefe-a3a1-4d0d-90e7-fe24caf27d2e', 'account_id': '5c6480cb-6d80-40cb-85de-e55167895b7f',
-              'name': 'IRFC_Artun_Beta', 'aircraft_name': 'Bristol F2B (F.II)', 'country_id': 103, 'form': '0',
-              'airfield_id': 235520, 'airstart': True, 'parent_id': None, 'payload_id': 10, 'fuel': 100.0,
-              'skin': 'bristolf2bf2/f2bf2_irfc_def.dds', 'weapon_mods_id': [1]}
+    line = ('T:15 AType:10 PLID:276479 PID:277503 BUL:2000 SH:0 BOMB:0 RCT:0 (133119.406,998.935,185101.141) '
+            'IDS:6f3b5e69-38d7-4d83-868c-4e7b8129f41a LOGIN:60dc67e3-ffb2-4df3-a6e5-579e945b4018 NAME:=FB=Vaal '
+            'TYPE:Il-2 mod.1942 COUNTRY:101 FORM:0 FIELD:0 INAIR:0 PARENT:-1 ISPL:1 ISTSTART:1 PAYLOAD:0 FUEL:1.000 SKIN: WM:1')
+    result = {'tik': 15, 'atype_id': 10, 'aircraft_id': 276479, 'bot_id': 277503, 'cartridges': 2000, 'shells': 0,
+              'bombs': 0, 'rockets': 0, 'pos': dict(x=133119.406, y=998.935, z=185101.141),
+              'profile_id': '6f3b5e69-38d7-4d83-868c-4e7b8129f41a', 'account_id': '60dc67e3-ffb2-4df3-a6e5-579e945b4018',
+              'name': '=FB=Vaal', 'aircraft_name': 'Il-2 mod.1942', 'country_id': 101, 'form': '0',
+              'airfield_id': None, 'airstart': True, 'parent_id': None, 'payload_id': 0, 'fuel': 100.0,
+              'skin': '', 'weapon_mods_id': [], 'is_player': '1', 'is_tracking_stat': '1'}
     assert parse(line) == result
 
 
@@ -165,27 +164,27 @@ def test_atype_10_pos_fuel_bug():
     line = ('T:109651 AType:10 PLID:1056791 PID:987159 BUL:340 SH:0 BOMB:0 RCT:0 (1.#QO,1.#QO,1.#QO) '
             'IDS:8d8a0ac5-095d-41ea-93b5-09599a5fde4c LOGIN:76638c27-16d7-4ee2-95be-d326a9c499b7 '
             'NAME:174driver TYPE:La-5 ser.8 COUNTRY:101 FORM:0 FIELD:0 INAIR:2 '
-            'PARENT:-1 PAYLOAD:0 FUEL:-1.#QO SKIN:la5s8/la5s8_skin_01.dds WM:1')
+            'PARENT:-1 ISPL:1 ISTSTART:1 PAYLOAD:0 FUEL:-1.#QO SKIN:la5s8/la5s8_skin_01.dds WM:1')
     result = {'tik': 109651, 'atype_id': 10, 'aircraft_id': 1056791, 'bot_id': 987159, 'cartridges': 340, 'shells': 0,
               'bombs': 0, 'rockets': 0, 'pos': None, 'profile_id': '8d8a0ac5-095d-41ea-93b5-09599a5fde4c',
               'account_id': '76638c27-16d7-4ee2-95be-d326a9c499b7', 'name': '174driver',
               'aircraft_name': 'La-5 ser.8', 'country_id': 101, 'form': '0',
               'airfield_id': None, 'airstart': False, 'parent_id': None, 'payload_id': 0, 'fuel': None,
-              'skin': 'la5s8/la5s8_skin_01.dds', 'weapon_mods_id': []}
+              'skin': 'la5s8/la5s8_skin_01.dds', 'weapon_mods_id': [], 'is_player': '1', 'is_tracking_stat': '1'}
     assert parse(line) == result
 
 
 def test_atype_10_skin_non_breaking_unicode_space():
     line = ('T:51768 AType:10 PLID:743436 PID:840716 BUL:1200 SH:0 BOMB:0 RCT:0 (78930.883,177.770,122328.320) '
             'IDS:b2e40548-27f8-49fa-9a24-ed6bfef31a9e LOGIN:c8d4d124-2a93-43df-87ca-338f8df20614 NAME:6./ZG26_Custard '
-            'TYPE:Bf 109 F-2 COUNTRY:201 FORM:0 FIELD:16384 INAIR:2 PARENT:-1 PAYLOAD:0 '
+            'TYPE:Bf 109 F-2 COUNTRY:201 FORM:0 FIELD:16384 INAIR:2 PARENT:-1 ISPL:1 ISTSTART:1 PAYLOAD:0 '
             'FUEL:1.000 SKIN:bf109f2/4k bf-109f-2 custard .dds WM:49')
     result = {'tik': 51768, 'atype_id': 10, 'aircraft_id': 743436, 'bot_id': 840716, 'cartridges': 1200, 'shells': 0,
               'bombs': 0, 'rockets': 0, 'pos': dict(x=78930.883, y=177.770, z=122328.32),
               'profile_id': 'b2e40548-27f8-49fa-9a24-ed6bfef31a9e', 'account_id': 'c8d4d124-2a93-43df-87ca-338f8df20614',
               'name': '6./ZG26_Custard', 'aircraft_name': 'Bf 109 F-2', 'country_id': 201, 'form': '0',
               'airfield_id': 16384, 'airstart': False, 'parent_id': None, 'payload_id': 0, 'fuel': 100.0,
-              'skin': 'bf109f2/4k bf-109f-2 custard .dds', 'weapon_mods_id': [4, 5]}
+              'skin': 'bf109f2/4k bf-109f-2 custard .dds', 'weapon_mods_id': [4, 5], 'is_player': '1', 'is_tracking_stat': '1'}
     assert parse(line) == result
 
 
