@@ -60,6 +60,7 @@ aircraft_light,Bf 109 F-4,1,,
 aircraft_light,Bf 109 G-2,1,,
 aircraft_light,Bf 109 G-4,1,,
 aircraft_light,Bf 109 G-6,1,,
+aircraft_light,Bf 109 G-14,1,,
 aircraft_light,Fw 190 A-3,1,,
 aircraft_light,Fw 190 A-5,1,,
 aircraft_light,I-16 type 24,1,I-16 Type 24,И-16 тип 24
@@ -74,6 +75,7 @@ aircraft_light,Yak-1B ser.127,1,Yak-1B (series 127),Як-1б 127-й серии
 aircraft_light,Spitfire Mk.VB,1,,
 aircraft_light,P-39L-1,1,,
 aircraft_light,Yak-7B ser.36,1,Yak-7B (series 36),Як-7б 36-й серии
+aircraft_light,Spitfire Mk.IXe,1,,
 aircraft_medium,Bf 110 E-2,1,,
 aircraft_medium,Bf 110 G-2,1,,
 aircraft_medium,Il-2 mod.1941,1,IL-2 model 1941,Ил-2 модель 1941 года
@@ -95,6 +97,7 @@ aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilot_Hs129B2,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B,1,pilot,пилот
 aircraft_pilot,BotPilot_P39,1,pilot,пилот
+aircraft_pilot,BotPilot_Spit9,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_net,0,parked aircraft,самолет на стоянке
@@ -238,6 +241,8 @@ bomb,CLUSTER_RUS_PTAB2515,0,PTAB,ПТАБ
 bomb,CLUSTER_RUS_PTAB2515_HIT,0,PTAB,ПТАБ 
 bomb,BOMB_RUS_FAB100M_P39,0,FAB-100M,ФАБ-100М
 bomb,BOMB_RUS_FAB250tsk,0,FAB-250,ФАБ-250
+bomb,BOMB_GBR_GPB250,0,,
+bomb,BOMB_GBR_GPB500,0,,
 bridge,bridge_big_1,0,railway bridge,ж/д мост
 bridge,bridge_big_2,0,railway bridge,ж/д мост
 bridge,bridge_pontoon_100,0,pontoon bridge,понтонный мост
@@ -421,6 +426,12 @@ rocket,RKT_RUS_ROS82_800,0,ROS-82,РОС-82
 rocket,Rocket 280 mm HE,0,,
 rocket,NPC_TORPEDO_G7a-53,0,G7a,G7a
 rocket,NPC_TORPEDO_53-38,0,,
+rocket,RKT_GBR_RP3AP,0,,
+rocket,RKT_GBR_RP3HE,0,,
+rocket,RKT_GER_WGR21,0,,
+rocket,RKT_GER_WGR21_1000,0,,
+rocket,RKT_GER_WGR21_1200,0,,
+rocket,RKT_GER_WGR21_800,0,,
 searchlight,German Landlight,0,landlight,посадочный прожектор
 searchlight,German Searchlight,0,landlight,посадочный прожектор
 searchlight,Landlight,0,landlight,посадочный прожектор
@@ -494,6 +505,7 @@ tank_medium,_T-34-76 STZ,1,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34-76 UVZ 43,0,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
 tank_driver,BotDriver_PzIII,1,driver,водитель
 tank_driver,BotDriver_T34,1,driver,водитель
+tank_driver,BotDriver_KV1,1,driver,
 tank_turret,Turret_PzIII-L,1,turret PzKpfw III Ausf.L,башня PzKpfw III Ausf.L
 tank_turret,Turret_T34-76STZ,1,turret T-34-76 STZ,башня Т-34 СТЗ
 trash,art_position_amb1,0,,
@@ -812,6 +824,7 @@ trash,CEjectionPlace,0,,
 trash,A20B_P2,0,,
 trash,CBatchTrash,0,,
 trash,Fake Vehicle,0,,
+trash,Forest,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
@@ -822,6 +835,7 @@ vehicle_crew,BotDriver1,0,driver,водитель
 vehicle_crew,BotGunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunner_PzIII,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunner_T34,0,gunner,стрелок-наводчик
+vehicle_crew,BotGunner_KV1,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunnerHowitzer,0,gunner,стрелок-наводчик
 vehicle_crew,BotMachinist0,0,machinist,машинист
 vehicle_crew,ParatrooperGER,0,paratrooper,десантник
@@ -993,3 +1007,12 @@ explosion,tnt85g_frag500g_HE_expl_water,0,,
 explosion,tnt970kg_frag810kg_expl_building,0,,
 explosion,tnt970kg_frag810kg_expl_ground,0,,
 explosion,tnt970kg_frag810kg_expl_water,0,,
+explosion,tnt10kg_frag30kg_expl_building,0,,
+explosion,tnt10kg_frag30kg_expl_ground,0,,
+explosion,tnt10kg_frag30kg_expl_water,0,,
+explosion,tnt30kg_frag82kg_expl_building,0,,
+explosion,tnt30kg_frag82kg_expl_ground,0,,
+explosion,tnt30kg_frag82kg_expl_water,0,,
+explosion,tnt65kg_frag145kg_expl_building,0,,
+explosion,tnt65kg_frag145kg_expl_ground,0,,
+explosion,tnt65kg_frag145kg_expl_water,0,,
