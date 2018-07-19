@@ -67,7 +67,7 @@ atype_9 = re.compile(r'^T:(?P<tik>\d+) AType:9 AID:(?P<airfield_id>\d+) COUNTRY:
 atype_10 = re.compile(r'^T:(?P<tik>\d+) AType:10 PLID:(?P<aircraft_id>\d+) PID:(?P<bot_id>\d+) BUL:(?P<cartridges>\d+) '
                       r'SH:(?P<shells>\d+) BOMB:(?P<bombs>\d+) RCT:(?P<rockets>\d+) \((?P<pos>.+)\) '
                       r'IDS:(?P<profile_id>[-\w]{36}) LOGIN:(?P<account_id>[-\w]{36}) NAME:(?P<name>.+) '
-                      r'TYPE:(?P<aircraft_name>[\w\(\) .\-_]+) COUNTRY:(?P<country_id>\d{1,3}) FORM:(?P<form>\d+) '
+                      r'TYPE:(?P<aircraft_name>[\w\(\) .\-_/]+) COUNTRY:(?P<country_id>\d{1,3}) FORM:(?P<form>\d+) '
                       r'FIELD:(?P<airfield_id>\d+) INAIR:(?P<airstart>\d) PARENT:(?P<parent_id>[-\d]+) '
                       r'ISPL:(?P<is_player>\d+) ISTSTART:(?P<is_tracking_stat>\d+) '
                       r'PAYLOAD:(?P<payload_id>\d+) FUEL:(?P<fuel>\S{5,6}) '
@@ -86,7 +86,7 @@ atype_11 = re.compile(r'^T:(?P<tik>\d+) AType:11 GID:(?P<group_id>\d+) '
 # T:171760 AType:12 ID:1266700 TYPE:CParachute_1266700 COUNTRY:101 NAME:CParachute_1266700 PID:-1
 # T:15 AType:12 ID:137215 TYPE:LaGG-3 ser.29 COUNTRY:101 NAME:LaGG-3 ser.29 PID:-1 POS(19666.344,998.778,33864.637)
 atype_12 = re.compile(r'^T:(?P<tik>\d+) AType:12 ID:(?P<object_id>\d+) '
-                      r'TYPE:(?P<object_name>[ .\'\-\w\(\)]*)(\[-?\d+,-?\d+\])* '
+                      r'TYPE:(?P<object_name>[ .\'\-\w\(\)/]*)(\[-?\d+,-?\d+\])* '
                       r'COUNTRY:(?P<country_id>\d{1,3}) NAME:(?P<name>.*) PID:(?P<parent_id>[-\d]+)')
 
 # зона, количество самолетов в воздухе для каждой коалиции (0, 1, 2, 3, 4, 5, 6, 7) находящихся в данный момент в зоне
