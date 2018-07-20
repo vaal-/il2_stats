@@ -199,7 +199,7 @@ def stats_whore(m_report_file):
             player = players_pilots[sortie.account_id]
         elif sortie.cls == 'aircraft_turret':
             player = players_gunners[sortie.account_id]
-        elif sortie.cls in ('tank_medium', 'tank_turret'):
+        elif sortie.cls in ('tank_light', 'tank_heavy', 'tank_medium', 'tank_turret'):
             player = players_tankmans[sortie.account_id]
         else:
             continue
@@ -414,7 +414,7 @@ def create_profiles(tour, sorties):
         elif s.cls == 'aircraft_turret':
             players_gunners.setdefault(
                 s.account_id, Player.objects.get_or_create(profile_id=profile.id, tour_id=tour.id, type='gunner')[0])
-        elif s.cls in ('tank_medium', 'tank_turret'):
+        elif s.cls in ('tank_light', 'tank_heavy', 'tank_medium', 'tank_turret'):
             players_tankmans.setdefault(
                 s.account_id, Player.objects.get_or_create(profile_id=profile.id, tour_id=tour.id, type='tankman')[0])
 
