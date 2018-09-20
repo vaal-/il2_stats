@@ -156,7 +156,7 @@ def test_atype_10():
               'profile_id': '6f3b5e69-38d7-4d83-868c-4e7b8129f41a', 'account_id': '60dc67e3-ffb2-4df3-a6e5-579e945b4018',
               'name': '=FB=Vaal', 'aircraft_name': 'Il-2 mod.1942', 'country_id': 101, 'form': '0',
               'airfield_id': None, 'airstart': True, 'parent_id': None, 'payload_id': 0, 'fuel': 100.0,
-              'skin': '', 'weapon_mods_id': [], 'is_player': '1', 'is_tracking_stat': '1'}
+              'skin': '', 'weapon_mods_id': [], 'is_player': True, 'is_tracking_stat': '1'}
     assert parse(line) == result
 
 
@@ -170,7 +170,7 @@ def test_atype_10_pos_fuel_bug():
               'account_id': '76638c27-16d7-4ee2-95be-d326a9c499b7', 'name': '174driver',
               'aircraft_name': 'La-5 ser.8', 'country_id': 101, 'form': '0',
               'airfield_id': None, 'airstart': False, 'parent_id': None, 'payload_id': 0, 'fuel': None,
-              'skin': 'la5s8/la5s8_skin_01.dds', 'weapon_mods_id': [], 'is_player': '1', 'is_tracking_stat': '1'}
+              'skin': 'la5s8/la5s8_skin_01.dds', 'weapon_mods_id': [], 'is_player': True, 'is_tracking_stat': '1'}
     assert parse(line) == result
 
 
@@ -184,7 +184,20 @@ def test_atype_10_skin_non_breaking_unicode_space():
               'profile_id': 'b2e40548-27f8-49fa-9a24-ed6bfef31a9e', 'account_id': 'c8d4d124-2a93-43df-87ca-338f8df20614',
               'name': '6./ZG26_Custard', 'aircraft_name': 'Bf 109 F-2', 'country_id': 201, 'form': '0',
               'airfield_id': 16384, 'airstart': False, 'parent_id': None, 'payload_id': 0, 'fuel': 100.0,
-              'skin': 'bf109f2/4k bf-109f-2 custard .dds', 'weapon_mods_id': [4, 5], 'is_player': '1', 'is_tracking_stat': '1'}
+              'skin': 'bf109f2/4k bf-109f-2 custard .dds', 'weapon_mods_id': [4, 5], 'is_player': True, 'is_tracking_stat': '1'}
+    assert parse(line) == result
+
+
+def test_atype_10_bot():
+    line = ('T:11148 AType:10 PLID:232448 PID:233472 BUL:0 SH:0 BOMB:0 RCT:0 (66710.656,1148.806,113743.523) '
+            'IDS:00000000-0000-0000-0000-100000000000 LOGIN:00000000-0000-0000-0000-100000000000 NAME: TYPE:MiG-3 ser.24 '
+            'COUNTRY:101 FORM:0 FIELD:0 INAIR:0 PARENT:-1 ISPL:0 ISTSTART:1 PAYLOAD:0 FUEL:0.600 SKIN: WM:1')
+    result = {'tik': 11148, 'aircraft_id': 232448, 'bot_id': 233472, 'cartridges': 0, 'shells': 0, 'bombs': 0,
+              'rockets': 0, 'pos': {'x': 66710.656, 'y': 1148.806, 'z': 113743.523},
+              'profile_id': '00000000-0000-0000-0000-100000000000', 'account_id': '00000000-0000-0000-0000-100000000000',
+              'name': '', 'aircraft_name': 'MiG-3 ser.24', 'country_id': 101, 'form': '0', 'airfield_id': None,
+              'airstart': True, 'parent_id': None, 'is_player': False, 'is_tracking_stat': '1', 'payload_id': 0,
+              'fuel': 60.0, 'skin': '', 'weapon_mods_id': [], 'atype_id': 10}
     assert parse(line) == result
 
 

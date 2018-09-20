@@ -293,21 +293,23 @@ class MissionReport:
     def event_player(self, tik, aircraft_id, bot_id, account_id, profile_id, name, pos, aircraft_name, country_id,
                      coal_id, airfield_id, airstart, parent_id, payload_id, fuel, skin, weapon_mods_id,
                      cartridges, shells, bombs, rockets, form, is_player, is_tracking_stat):
-        sortie = Sortie(mission=self, tik=tik, aircraft_id=aircraft_id, bot_id=bot_id, account_id=account_id,
-                        profile_id=profile_id, name=name, pos=pos, aircraft_name=aircraft_name, country_id=country_id,
-                        coal_id=coal_id, airfield_id=airfield_id, airstart=airstart, parent_id=parent_id,
-                        payload_id=payload_id, fuel=fuel, skin=skin, weapon_mods_id=weapon_mods_id,
-                        cartridges=cartridges, shells=shells, bombs=bombs, rockets=rockets)
+        # игнорируем записи про ботов
+        if is_player:
+            sortie = Sortie(mission=self, tik=tik, aircraft_id=aircraft_id, bot_id=bot_id, account_id=account_id,
+                            profile_id=profile_id, name=name, pos=pos, aircraft_name=aircraft_name, country_id=country_id,
+                            coal_id=coal_id, airfield_id=airfield_id, airstart=airstart, parent_id=parent_id,
+                            payload_id=payload_id, fuel=fuel, skin=skin, weapon_mods_id=weapon_mods_id,
+                            cartridges=cartridges, shells=shells, bombs=bombs, rockets=rockets)
 
-        self.add_active_sortie(sortie=sortie)
-        self.sorties.append(sortie)
-        self.sorties_aircraft[sortie.aircraft_id] = sortie
-        self.sorties_bots[sortie.bot_id] = sortie
-        self.sorties_accounts[sortie.account_id] = sortie
+            self.add_active_sortie(sortie=sortie)
+            self.sorties.append(sortie)
+            self.sorties_aircraft[sortie.aircraft_id] = sortie
+            self.sorties_bots[sortie.bot_id] = sortie
+            self.sorties_accounts[sortie.account_id] = sortie
 
-        current_ratio = self.get_current_ratio(sortie_coal_id=sortie.coal_id)
-        sortie.update_ratio(current_ratio=current_ratio)
-        self.logger_event({'type': 'respawn', 'sortie': sortie, 'pos': pos})
+            current_ratio = self.get_current_ratio(sortie_coal_id=sortie.coal_id)
+            sortie.update_ratio(current_ratio=current_ratio)
+            self.logger_event({'type': 'respawn', 'sortie': sortie, 'pos': pos})
 
     def event_group(self, tik, group_id, members_id, leader_id):
         pass

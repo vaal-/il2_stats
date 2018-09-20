@@ -66,7 +66,7 @@ atype_9 = re.compile(r'^T:(?P<tik>\d+) AType:9 AID:(?P<airfield_id>\d+) COUNTRY:
 # TYPE:Il-2 mod.1942 COUNTRY:101 FORM:0 FIELD:0 INAIR:0 PARENT:-1 ISPL:1 ISTSTART:1 PAYLOAD:0 FUEL:1.000 SKIN: WM:1
 atype_10 = re.compile(r'^T:(?P<tik>\d+) AType:10 PLID:(?P<aircraft_id>\d+) PID:(?P<bot_id>\d+) BUL:(?P<cartridges>\d+) '
                       r'SH:(?P<shells>\d+) BOMB:(?P<bombs>\d+) RCT:(?P<rockets>\d+) \((?P<pos>.+)\) '
-                      r'IDS:(?P<profile_id>[-\w]{36}) LOGIN:(?P<account_id>[-\w]{36}) NAME:(?P<name>.+) '
+                      r'IDS:(?P<profile_id>[-\w]{36}) LOGIN:(?P<account_id>[-\w]{36}) NAME:(?P<name>.*) '
                       r'TYPE:(?P<aircraft_name>[\w\(\) .\-_/]+) COUNTRY:(?P<country_id>\d{1,3}) FORM:(?P<form>\d+) '
                       r'FIELD:(?P<airfield_id>\d+) INAIR:(?P<airstart>\d) PARENT:(?P<parent_id>[-\d]+) '
                       r'ISPL:(?P<is_player>\d+) ISTSTART:(?P<is_tracking_stat>\d+) '
@@ -201,6 +201,7 @@ params_handlers = {
     'aircraft_id_list': lambda s: list(map(int, s.split(','))) if s else [],
     'airfield_id': lambda s: int(s) or None,
     'airstart': lambda s: s == '0',
+    'is_player': lambda s: s == '1',
     'boundary': literal_eval,
     'countries': lambda s: dict(map(int, x.split(':')) for x in s.split(',')),
     'damage': lambda s: round(float(s) * 100, 1) if '#' not in s else None,
