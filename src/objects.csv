@@ -249,6 +249,7 @@ artillery_rocket,BM-13 turret,0,BM-13 MRLS,РСЗО БМ-13
 artillery_rocket,Sd Kfz 251 Wurfrahmen 40,0,Sd Kfz 251 Wurfrahmen 40 MRLS,РСЗО Wurframen 40
 artillery_rocket,ZiS-6 BM-13,0,BM-13 MRLS,РСЗО БМ-13
 bomb,BOMB_GER_SC1000,0,SC 1000,
+bomb,BOMB_GER_SC1000_190,0,SC 1000,
 bomb,BOMB_GER_SC1800,0,SC 1800,
 bomb,BOMB_GER_SC250,0,SC 250,
 bomb,BOMB_GER_SC250_87,0,SC 250,
@@ -273,6 +274,8 @@ bomb,BOMB_RUS_FAB250tsk,0,FAB-250,ФАБ-250
 bomb,BOMB_GBR_GPB250,0,,
 bomb,BOMB_GBR_GPB500,0,,
 bomb,BOMB_GBR_20lb,0,,
+bomb,BOMB_USA_M64,0,,
+bomb,BOMB_USA_M65,0,,
 bridge,bridge_big_1,0,railway bridge,ж/д мост
 bridge,bridge_big_2,0,railway bridge,ж/д мост
 bridge,bridge_pontoon_100,0,pontoon bridge,понтонный мост
@@ -481,6 +484,8 @@ rocket,RKT_GER_WGR21_1000,0,,
 rocket,RKT_GER_WGR21_1200,0,,
 rocket,RKT_GER_WGR21_800,0,,
 rocket,RKT_GER_PB1,0,,
+rocket,RKT_GER_PB1_M8,0,,
+rocket,RKT_USA_M8,0,,
 searchlight,German Landlight,0,landlight,посадочный прожектор
 searchlight,German Searchlight,0,landlight,посадочный прожектор
 searchlight,Landlight,0,landlight,посадочный прожектор
