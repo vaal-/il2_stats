@@ -503,6 +503,48 @@
                     </div>
                 {% endif %}
 
+                {% if sortie.killboard_pve.ship_heavy %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Heavy Ships' context 'total' %}
+                            <span>{{ sortie.killboard_pve.ship_heavy }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.ship_heavy }}
+                            &times;
+                            {{ score_dict.ship_heavy }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.ship_medium %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Medium Ships' context 'total' %}
+                            <span>{{ sortie.killboard_pve.ship_medium }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.ship_medium }}
+                            &times;
+                            {{ score_dict.ship_medium }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.ship_light %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Light Ships' context 'total' %}
+                            <span>{{ sortie.killboard_pve.ship_light }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.ship_light }}
+                            &times;
+                            {{ score_dict.ship_light }}
+                        </div>
+                    </div>
+                {% endif %}
+
                 {% if sortie.killboard_pve.aircraft_static %}
                     <div class="sub_row">
                         <div class="left">

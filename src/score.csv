@@ -29,7 +29,10 @@ parachute,0,int
 rocket,0,int
 searchlight,15,int
 shell,0,int
-ship,80,int
+ship,200,int
+ship_heavy,300,int
+ship_medium,200,int
+ship_light,100,int
 tank_heavy,60,int
 tank_light,30,int
 tank_medium,45,int

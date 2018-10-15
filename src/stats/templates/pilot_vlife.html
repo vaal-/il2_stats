@@ -267,8 +267,29 @@
 
                 {% if vlife.killboard_pve.ship %}
                 <div class="sub_item">
-                    <div class="name">{% trans 'Ships' context 'total' %}</div>
+                    <div class="name">{% trans 'Ships' context 'total' %} ({% trans 'outdated parameter' %})</div>
                     <div class="num">{{ vlife.killboard_pve.ship }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.ship_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Heavy Ships' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.ship_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.ship_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Medium Ships' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.ship_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if vlife.killboard_pve.ship_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Light Ships' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.ship_light }}</div>
                 </div>
                 {% endif %}
 

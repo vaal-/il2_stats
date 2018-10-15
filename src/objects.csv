@@ -534,21 +534,21 @@ shell,SHELL_RUS_76_HV,0,,
 shell,SHELL_GER_50_HE,0,,
 shell,SHELL_RUS_76_AP,0,,
 shell,SHELL_RUS_76_HE,0,,
-ship,Gun Boat 1124 AAA,0,Gunboat 1124 AAA,Бронекатер 1124
-ship,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗО
-ship,Gun Ship type A,0,Gunboat,Вооружённый буксир
-ship,River Cargo Ship type Georgia,0,Cargo Ship,Грузовое судно
-ship,River Cargo Ship type Georgia AAA,0,,
-ship,Destroyer Type 7,0,Soviet Type 7 destroyer,Советский эсминец Тип 7
-ship,Landing Boat type A,0,Marinefährprahm Typ A,Десантная баржка Type A
-ship,Submarine Type IIB,0,U-Boot-Klasse IIB,Подводная лодка тип IIB
-ship,Submarine Type Shch ser.10,0,Submarine Shch-10 (type Shchuka),Подводная лодка Тип Щ серия 10 (Щука) 
-ship,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
-ship,Torpedo Boat G-5 series 11-bis 213,0,Rocket Boat G-5 series 11-bis 213,Торпедный катер типа Г-5 XI-бис (проект 213)
-ship,Torpedo Boat type S-38,0,Schnellboot S-38,Торпедный катер типа S-38
-ship,Large Cargo Ship type 1,0,7000 tons cargo ship,7000-тонный сухогруз
-ship,Large Tanker Ship type 1,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
-ship,Large Tanker Ship type 1 ger,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
+ship_light,Gun Boat 1124 AAA,0,Gunboat 1124 AAA,Бронекатер 1124
+ship_light,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗО
+ship_light,Gun Ship type A,0,Gunboat,Вооружённый буксир
+ship_medium,River Cargo Ship type Georgia,0,Cargo Ship,Грузовое судно
+ship_medium,River Cargo Ship type Georgia AAA,0,,
+ship_heavy,Destroyer Type 7,0,Soviet Type 7 destroyer,Советский эсминец Тип 7
+ship_light,Landing Boat type A,0,Marinefährprahm Typ A,Десантная баржка Type A
+ship_medium,Submarine Type IIB,0,U-Boot-Klasse IIB,Подводная лодка тип IIB
+ship_medium,Submarine Type Shch ser.10,0,Submarine Shch-10 (type Shchuka),Подводная лодка Тип Щ серия 10 (Щука) 
+ship_light,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
+ship_light,Torpedo Boat G-5 series 11-bis 213,0,Rocket Boat G-5 series 11-bis 213,Торпедный катер типа Г-5 XI-бис (проект 213)
+ship_light,Torpedo Boat type S-38,0,Schnellboot S-38,Торпедный катер типа S-38
+ship_medium,Large Cargo Ship type 1,0,7000 tons cargo ship,7000-тонный сухогруз
+ship_medium,Large Tanker Ship type 1,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
+ship_medium,Large Tanker Ship type 1 ger,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
 tank_heavy,KV-1-42,0,KV-1 1942,КВ-1 обр. 1942
 tank_heavy,KV-1-41,0,KV-1 1941,КВ-1 обр. 1941
 tank_heavy,KV-1s,1,KV-1s,КВ-1С
