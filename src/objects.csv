@@ -61,9 +61,11 @@ aircraft_light,Bf 109 G-2,1,,
 aircraft_light,Bf 109 G-4,1,,
 aircraft_light,Bf 109 G-6,1,,
 aircraft_light,Bf 109 G-14,1,,
+aircraft_light,Bf 109 K-4,1,,
 aircraft_light,Fw 190 A-3,1,,
 aircraft_light,Fw 190 A-5,1,,
 aircraft_light,Fw 190 A-8,1,,
+aircraft_light,Fw 190 D-9,1,,
 aircraft_light,I-16 type 24,1,I-16 Type 24,И-16 тип 24
 aircraft_light,La-5 ser.8,1,La-5 (series 8),Ла-5 8-й серии
 aircraft_light,La-5FN ser.2,1,La-5FN (series 2),Ла-5ФН 2-й серии
@@ -90,6 +92,7 @@ aircraft_light,S.E.5a,1,,
 aircraft_light,Sopwith Camel,1,,
 aircraft_light,Sopwith Dolphin,1,,
 aircraft_light,SPAD 13.C1,1,,
+aircraft_light,P-47D-28,1,,
 aircraft_medium,Bf 110 E-2,1,,
 aircraft_medium,Bf 110 G-2,1,,
 aircraft_medium,Il-2 mod.1941,1,IL-2 model 1941,Ил-2 модель 1941 года
@@ -97,6 +100,7 @@ aircraft_medium,Il-2 mod.1942,1,IL-2 AM-38,Ил-2 AM-38
 aircraft_medium,Ju 87 D-3,1,,
 aircraft_medium,Il-2 mod.1943,1,IL-2 AM-38F,Ил-2 AM-38Ф
 aircraft_medium,Hs 129 B-2,1,,
+aircraft_medium,U-2VS,1,U-﻿2,У-2
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_FW190,1,pilot,пилот
@@ -115,6 +119,9 @@ aircraft_pilot,BotPilot_Spit9,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_pilot,BotPilot_Spad13,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1,1,pilot,пилот
+aircraft_pilot,BotPilot_P47,1,pilot,пилот
+aircraft_pilot,BotPilot_Fw190D,1,pilot,пилот
+aircraft_pilot,BotPilot_Bf109K,1,pilot,пилот
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_open,0,parked aircraft,самолет на стоянке
