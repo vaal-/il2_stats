@@ -615,6 +615,48 @@
                     </div>
                 {% endif %}
 
+                {% if sortie.killboard_pve.building_big %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Big buildings' context 'total' %}
+                            <span>{{ sortie.killboard_pve.building_big }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.building_big }}
+                            &times;
+                            {{ score_dict.building_big }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.building_medium %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Medium buildings' context 'total' %}
+                            <span>{{ sortie.killboard_pve.building_medium }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.building_medium }}
+                            &times;
+                            {{ score_dict.building_medium }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.building_small %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Small buildings' context 'total' %}
+                            <span>{{ sortie.killboard_pve.building_small }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.building_small }}
+                            &times;
+                            {{ score_dict.building_small }}
+                        </div>
+                    </div>
+                {% endif %}
+
                 {% if sortie.bonus.total %}
                     <div class="row">
                         <div class="left">

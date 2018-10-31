@@ -43,7 +43,7 @@ class ScoreAdmin(admin.ModelAdmin):
 class ObjectAdmin(TranslationAdmin):
     list_display = ('name', 'log_name', 'cls_base', 'cls', 'is_playable')
     list_filter = ('cls_base', 'cls', 'is_playable')
-    readonly_fields = ('cls_base', 'cls', 'log_name', 'score', 'is_playable')
+    readonly_fields = ('log_name', 'score', 'is_playable')
 
     actions = None
 

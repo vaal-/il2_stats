@@ -329,6 +329,27 @@
                 </div>
                 {% endif %}
 
+                {% if squad.killboard_pve.building_big %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Big buildings' context 'total' %}</div>
+                    <div class="num">{{ squad.killboard_pve.building_big }}</div>
+                </div>
+                {% endif %}
+
+                {% if squad.killboard_pve.building_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Medium buildings' context 'total' %}</div>
+                    <div class="num">{{ squad.killboard_pve.building_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if squad.killboard_pve.building_small %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Small buildings' context 'total' %}</div>
+                    <div class="num">{{ squad.killboard_pve.building_small }}</div>
+                </div>
+                {% endif %}
+
             </div>
 
             <div class="player_detailed" style="float: right;">
