@@ -322,7 +322,7 @@ def main(request):
                   .active(tour=request.tour).order_by('-score_streak_current')[:10])
 
     top_24_score = (Sortie.objects
-                    .filter(tour_id=request.tour.id, is_disco=False, player__type='pilot')
+                    .filter(tour_id=request.tour.id, is_disco=False, player__type='pilot', profile__is_hide=False)
                     .filter(date_start__gt=timezone.now()-timedelta(hours=24))
                     .exclude(score=0)
                     .values('player')
