@@ -3,6 +3,7 @@ aaa_heavy,52-K,0,52-K AAA gun,зенитное орудие 52-K
 aaa_heavy,Flak 37,0,Flak 37 AAA gun,зенитное орудие Flak 37
 aaa_heavy,Flak 36,0,Flak 36 AAA gun,зенитное орудие Flak 36
 aaa_light,61-K,0,61-K AAA gun,зенитное орудие 61-K
+aaa_light,61-K turret 1124,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,61-K turret,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,61-K ship turret,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,Flak 38,0,Flak 38 AAA gun,зенитное орудие Flak 38
@@ -409,6 +410,7 @@ explosion,tnt64g_frag10kg_HE_expl_ground,0,,
 explosion,tnt64g_frag10kg_HE_expl_internal,0,,
 explosion,tnt64g_frag10kg_HE_expl_metal,0,,
 explosion,tnt64g_frag10kg_HE_expl_water,0,,
+explosion,ExplosionSkyPP,0,,
 flare,FlareGreen,0,,
 flare,FlareRed,0,,
 flare,FlareWhite,0,,
@@ -493,6 +495,7 @@ rocket,RKT_GER_WGR21_800,0,,
 rocket,RKT_GER_PB1,0,,
 rocket,RKT_GER_PB1_M8,0,,
 rocket,RKT_USA_M8,0,,
+rocket,RKT_GER_R4M,0,,
 searchlight,German Landlight,0,landlight,посадочный прожектор
 searchlight,German Searchlight,0,landlight,посадочный прожектор
 searchlight,Landlight,0,landlight,посадочный прожектор
@@ -541,6 +544,9 @@ shell,SHELL_RUS_76_HV,0,,
 shell,SHELL_GER_50_HE,0,,
 shell,SHELL_RUS_76_AP,0,,
 shell,SHELL_RUS_76_HE,0,,
+shell,SHELL_USA_75_AP,0,,
+shell,SHELL_USA_75_CV,0,,
+shell,SHELL_USA_75_HE,0,,
 ship_light,Gun Boat 1124 AAA,0,Gunboat 1124 AAA,Бронекатер 1124
 ship_light,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗО
 ship_light,Gun Ship type A,0,Gunboat,Вооружённый буксир
