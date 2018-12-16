@@ -275,7 +275,7 @@ def missions_list(request):
     page = request.GET.get('page', 1)
     search = request.GET.get('search', '').strip()
     sort_by = get_sort_by(request=request, sort_fields=missions_sort_fields, default='-id')
-    missions = Mission.objects.filter(tour_id=request.tour.id).order_by(sort_by)
+    missions = Mission.objects.filter(tour_id=request.tour.id, is_hide=False).order_by(sort_by)
     if search:
         missions = missions.filter(name__icontains=search)
     missions = Paginator(missions, ITEMS_PER_PAGE).page(page)

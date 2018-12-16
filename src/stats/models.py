@@ -285,6 +285,8 @@ class Mission(models.Model):
     # стоимость объектов и т.п. на момент завершения миссии
     score_dict = JSONField(default=dict)
 
+    is_hide = models.BooleanField(default=False, db_index=True)
+
     class Meta:
         ordering = ['-id']
         db_table = 'missions'
@@ -1013,7 +1015,7 @@ class Sortie(models.Model):
     fuel = models.IntegerField(default=100)  # в процентах!
     skin = models.CharField(max_length=256, blank=True)
     payload_id = models.IntegerField(default=0)
-    weapon_mods_id = ArrayField(models.IntegerField(), default=lambda: list())
+    weapon_mods_id = ArrayField(models.IntegerField(), default=list)
 
     ammo = JSONField(default=default_ammo)
 

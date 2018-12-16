@@ -55,11 +55,22 @@ class ObjectAdmin(TranslationAdmin):
 
 
 @admin.register(Mission)
-class MissionAdmin(ReadOnlyModelAdmin):
-    list_display = ('id', 'name', 'tour', 'date_start', 'date_end', 'duration',
-                    'players_total', 'pilots_total', 'winning_coalition', 'preset', 'is_correctly_completed')
+class MissionAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'tour', 'date_start', 'date_end', 'duration', 'players_total', 'pilots_total',
+                    'winning_coalition', 'preset', 'is_correctly_completed', 'is_hide')
     list_display_links = ('id', 'name')
-    list_filter = ('winning_coalition', 'preset', 'is_correctly_completed')
+    list_filter = ('winning_coalition', 'preset', 'is_correctly_completed', 'is_hide')
+    readonly_fields = ('tour', 'name', 'path', 'date_start', 'date_end', 'duration', 'timestamp', 'players_total',
+                       'pilots_total', 'gunners_total', 'winning_coalition', 'win_reason', 'preset', 'settings',
+                       'is_correctly_completed', 'score_dict')
+
+    actions = None
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
 
 
 @admin.register(Tour)
