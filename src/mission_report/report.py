@@ -530,7 +530,8 @@ class Object:
             self.captured()
         if self.is_aircraft_rtb(pos=pos):
             self.is_rtb = True
-        self.killed_by_damage()
+        # если повреждения самолета более 50% предполагаем что посадка была жесткой
+        self.killed_by_damage(dmg_pct=50)
 
     def bot_eject_leave(self, tik, pos):
         self.is_bailout = True
@@ -634,8 +635,8 @@ class Object:
             self.mission.logger_event({'type': 'kill', 'attacker': attacker, 'pos': pos,
                                        'target': self, 'is_friendly_fire': is_friendly_fire})
 
-    def killed_by_damage(self):
-        if not self.is_killed and (self.life_status.is_destroyed or self.is_captured):
+    def killed_by_damage(self, dmg_pct=0):
+        if not self.is_killed and (self.damage > dmg_pct or self.is_captured):
             # если самолет приземлился не в зоне своего филда или пилот выпрыгнул или пилот мертв
             # - записываем его как сбитый
             if (self.on_ground and not self.is_rtb) or self.is_bailout or (self.bot and self.bot.life_status.is_destroyed):
