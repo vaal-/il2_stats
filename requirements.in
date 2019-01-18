@@ -1,16 +1,16 @@
-wheel==0.31.1
-pip==18.0
-setuptools==40.4.2
+wheel==0.32.3
+pip==18.1
+setuptools==40.6.3
 
 argon2-cffi==18.3.0
 dj-static==0.0.6
-Django==1.11.15
+Django==1.11.18
 django-modeltranslation==0.12.2
-filelock==3.0.8
-Pillow==5.2.0
-psycopg2==2.7.5
-pytz==2018.5
+filelock==3.0.10
+Pillow==5.4.1
+psycopg2==2.7.6.1
+pytz==2018.9
 six==1.11.0
 static3==0.7.0
 tzlocal==1.5.1
-waitress==1.1.0
+waitress==1.2.0
