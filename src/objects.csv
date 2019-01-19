@@ -242,6 +242,12 @@ airfield,Arf_HangarBox,0,hangar,ангар
 airfield,Arf_Saray,0,hangar,сарай
 airfield,Arf_Sklad,0,hangar,склад
 airfield,Arf_Tower,0,flight control tower,командная вышка
+airfield,arf_eu_barrackblack,0,,
+airfield,arf_eu_barrackblack4,0,,
+airfield,arf_eu_barrackwhite,0,,
+airfield,arf_eu_barrackwhite4,0,,
+airfield,arf_eu_controltower,0,,
+airfield,arf_eu_lufthangar,0,,
 armoured_vehicle,_BA-64,0,BA-64 armored car,БА-64
 armoured_vehicle,BA-10M,0,BA-10M armored car,БА-10М
 armoured_vehicle,BA-64,0,BA-64 armored car,БА-64
@@ -337,6 +343,24 @@ bridge,ferry_pontoon_end,0,pontoon bridge,понтонный мост
 bridge,ferry_pontoon_part,0,pontoon bridge,понтонный мост
 bridge,ferry2,0,pontoon bridge,понтонный мост
 bridge,ferryfloat,0,pontoon bridge,понтонный мост
+bridge,bridgestower,0,bridge,мост
+bridge,bridge_hw110,0,bridge,мост
+bridge,bridge_hw130,0,bridge,мост
+bridge,bridge_hw150,0,bridge,мост
+bridge,bridge_hw170,0,bridge,мост
+bridge,bridge_hw190,0,bridge,мост
+bridge,bridge_hw70,0,bridge,мост
+bridge,bridge_hw90,0,bridge,мост
+bridge,bridge_rr110,0,bridge,мост
+bridge,bridge_rr130,0,bridge,мост
+bridge,bridge_rr150,0,bridge,мост
+bridge,bridge_rr170,0,bridge,мост
+bridge,bridge_rr190,0,bridge,мост
+bridge,bridge_rr70,0,bridge,мост
+bridge,bridge_rr90,0,bridge,мост
+bridge,br_rd_arch170,0,bridge,мост
+bridge,br_rd_sspnsn,0,bridge,мост
+bridge,br_rw_arch170,0,bridge,мост
 bullet,BULLET_GER_7-92x57_AP,0,,
 bullet,BULLET_GER_792x57_SS,0,,
 bullet,BULLET_GER_13x64_AP,0,,
@@ -415,6 +439,126 @@ explosion,tnt64g_frag10kg_HE_expl_internal,0,,
 explosion,tnt64g_frag10kg_HE_expl_metal,0,,
 explosion,tnt64g_frag10kg_HE_expl_water,0,,
 explosion,ExplosionSkyPP,0,,
+explosion,tnt10g_frag200g_HE_expl_building,0,,
+explosion,tnt10g_frag200g_HE_expl_ground,0,,
+explosion,tnt10g_frag200g_HE_expl_water,0,,
+explosion,tnt130kg_frag120kg_expl_building,0,,
+explosion,tnt130kg_frag120kg_expl_ground,0,,
+explosion,tnt130kg_frag120kg_expl_water,0,,
+explosion,tnt13g_frag275g_HE_expl_building,0,,
+explosion,tnt13g_frag275g_HE_expl_ground,0,,
+explosion,tnt13g_frag275g_HE_expl_water,0,,
+explosion,tnt150g_frag2kg_HE_expl_ground,0,,
+explosion,tnt150g_frag2kg_HE_expl_metal,0,,
+explosion,tnt150g_frag2kg_HE_expl_water,0,,
+explosion,tnt1900kg_frag500kg_expl_ground,0,,
+explosion,tnt1900kg_frag500kg_expl_object,0,,
+explosion,tnt1900kg_frag500kg_expl_water,0,,
+explosion,tnt1g_frag30g_HE_expl_building,0,,
+explosion,tnt1g_frag30g_HE_expl_ground,0,,
+explosion,tnt1g_frag30g_HE_expl_water,0,,
+explosion,tnt1kg_frag13kg_HE_expl_ground,0,,
+explosion,tnt1kg_frag13kg_HE_expl_metal,0,,
+explosion,tnt1kg_frag13kg_HE_expl_water,0,,
+explosion,tnt1kg_frag6kg_HE_expl_ground,0,,
+explosion,tnt1kg_frag6kg_HE_expl_metal,0,,
+explosion,tnt1kg_frag6kg_HE_expl_water,0,,
+explosion,tnt1kg_frag8kg_HE_expl_ground,0,,
+explosion,tnt1kg_frag8kg_HE_expl_metal,0,,
+explosion,tnt1kg_frag8kg_HE_expl_water,0,,
+explosion,tnt20g_frag70g_HE_expl_building,0,,
+explosion,tnt20g_frag70g_HE_expl_ground,0,,
+explosion,tnt20g_frag70g_HE_expl_water,0,,
+explosion,tnt20kg_frag50kg_expl_building,0,,
+explosion,tnt20kg_frag50kg_expl_ground,0,,
+explosion,tnt20kg_frag50kg_expl_water,0,,
+explosion,tnt220g_frag3kg_HE_expl_ground,0,,
+explosion,tnt220g_frag3kg_HE_expl_metal,0,,
+explosion,tnt220g_frag3kg_HE_expl_water,0,,
+explosion,tnt220g_frag500g_HE_expl_building,0,,
+explosion,tnt220g_frag500g_HE_expl_ground,0,,
+explosion,tnt220g_frag500g_HE_expl_water,0,,
+explosion,tnt240kg_frag260kg_expl_building,0,,
+explosion,tnt240kg_frag260kg_expl_ground,0,,
+explosion,tnt240kg_frag260kg_expl_water,0,,
+explosion,tnt25kg_frag25kg_expl_building,0,,
+explosion,tnt25kg_frag25kg_expl_ground,0,,
+explosion,tnt25kg_frag25kg_expl_water,0,,
+explosion,tnt2g_frag35g_HE_expl_building,0,,
+explosion,tnt2g_frag35g_HE_expl_ground,0,,
+explosion,tnt2g_frag35g_HE_expl_water,0,,
+explosion,tnt2g_frag55g_HE_expl_building,0,,
+explosion,tnt2g_frag55g_HE_expl_ground,0,,
+explosion,tnt2g_frag55g_HE_expl_water,0,,
+explosion,tnt2g_frag90g_HE_expl_building,0,,
+explosion,tnt2g_frag90g_HE_expl_ground,0,,
+explosion,tnt2g_frag90g_HE_expl_water,0,,
+explosion,tnt2kg_frag7kg_HE_expl_ground,0,,
+explosion,tnt2kg_frag7kg_HE_expl_metal,0,,
+explosion,tnt2kg_frag7kg_HE_expl_water,0,,
+explosion,tnt30kg_frag30kg_expl_building,0,,
+explosion,tnt30kg_frag30kg_expl_ground,0,,
+explosion,tnt30kg_frag30kg_expl_water,0,,
+explosion,tnt30kg_frag70kg_expl_building,0,,
+explosion,tnt30kg_frag70kg_expl_ground,0,,
+explosion,tnt30kg_frag70kg_expl_water,0,,
+explosion,tnt44g_frag575g_HE_expl_building,0,,
+explosion,tnt44g_frag575g_HE_expl_ground,0,,
+explosion,tnt44g_frag575g_HE_expl_water,0,,
+explosion,tnt4kg_frag18kg_HE_expl_ground,0,,
+explosion,tnt4kg_frag18kg_HE_expl_metal,0,,
+explosion,tnt4kg_frag18kg_HE_expl_water,0,,
+explosion,tnt50g_frag775g_HE_expl_building,0,,
+explosion,tnt50g_frag775g_HE_expl_ground,0,,
+explosion,tnt50g_frag775g_HE_expl_water,0,,
+explosion,tnt50kg_frag50kg_expl_building,0,,
+explosion,tnt50kg_frag50kg_expl_ground,0,,
+explosion,tnt50kg_frag50kg_expl_water,0,,
+explosion,tnt50kg_frag60kg_expl_building,0,,
+explosion,tnt50kg_frag60kg_expl_ground,0,,
+explosion,tnt50kg_frag60kg_expl_water,0,,
+explosion,tnt550g_frag2kg_expl_building,0,,
+explosion,tnt550g_frag2kg_expl_ground,0,,
+explosion,tnt550g_frag2kg_expl_water,0,,
+explosion,tnt5kg_frag22kg_expl_building,0,,
+explosion,tnt5kg_frag22kg_expl_ground,0,,
+explosion,tnt5kg_frag22kg_expl_water,0,,
+explosion,tnt620kg_frag470kg_expl_building,0,,
+explosion,tnt620kg_frag470kg_expl_ground,0,,
+explosion,tnt620kg_frag470kg_expl_water,0,,
+explosion,tnt660g_frag9kg_expl_building,0,,
+explosion,tnt660g_frag9kg_expl_ground,0,,
+explosion,tnt660g_frag9kg_expl_water,0,,
+explosion,tnt6kg_frag37kg_HE_expl_ground,0,,
+explosion,tnt6kg_frag37kg_HE_expl_metal,0,,
+explosion,tnt6kg_frag37kg_HE_expl_water,0,,
+explosion,tnt85g_frag500g_HE_expl_building,0,,
+explosion,tnt85g_frag500g_HE_expl_ground,0,,
+explosion,tnt85g_frag500g_HE_expl_water,0,,
+explosion,tnt970kg_frag810kg_expl_building,0,,
+explosion,tnt970kg_frag810kg_expl_ground,0,,
+explosion,tnt970kg_frag810kg_expl_water,0,,
+explosion,tnt10kg_frag30kg_expl_building,0,,
+explosion,tnt10kg_frag30kg_expl_ground,0,,
+explosion,tnt10kg_frag30kg_expl_water,0,,
+explosion,tnt30kg_frag82kg_expl_building,0,,
+explosion,tnt30kg_frag82kg_expl_ground,0,,
+explosion,tnt30kg_frag82kg_expl_water,0,,
+explosion,tnt65kg_frag145kg_expl_building,0,,
+explosion,tnt65kg_frag145kg_expl_ground,0,,
+explosion,tnt65kg_frag145kg_expl_water,0,,
+explosion,Explosion,0,,
+explosion,ExplosionBalloon,0,,
+explosion,ExplosionFT,0,,
+explosion,ExplosionPlaneAir,0,,
+explosion,ExplosionPlaneAlongGnd,0,,
+explosion,ExplosionPlaneFireball,0,,
+explosion,ExplosionPlaneGnd,0,,
+explosion,ExplosionSkyPP,0,,
+explosion,explPlaneAir,0,,
+explosion,explPlaneAlongGnd,0,,
+explosion,explPlaneGnd,0,,
+explosion,explosion_sky_pp,0,,
 flare,FlareGreen,0,,
 flare,FlareRed,0,,
 flare,FlareWhite,0,,
@@ -475,6 +619,11 @@ industrial,kuban_funicolare1,0,funicolare,фуникулер
 industrial,kuban_funicolare2,0,funicolare,фуникулер
 industrial,kuban_railroadstation00,0,railway station facilit,строение ж/д станции
 industrial,kuban_tower,0,tower,башня
+industrial,industrial_block_eu_fabric200x200,0,factory ,завод
+industrial,industrial_block_eu_fabric200x200_2,0,factory ,завод
+industrial,industrial_block_eu_fabric250x100,0,factory ,завод
+industrial,industrial_block_eu_fabric300x200,0,factory ,завод
+industrial,industrial_block_eu_fabric300x200_2,0,factory ,завод
 locomotive,Locomotive_E,0,E locomotive,локомотив Е
 locomotive,Locomotive_G8,0,G8 locomotive,локомотив G8
 machine_gunner,DShK,0,DShK machinegun,пулемёт ДШК
@@ -551,21 +700,24 @@ shell,SHELL_RUS_76_HE,0,,
 shell,SHELL_USA_75_AP,0,,
 shell,SHELL_USA_75_CV,0,,
 shell,SHELL_USA_75_HE,0,,
+ship_heavy,Destroyer Type 7,0,Soviet Type 7 destroyer,Советский эсминец Тип 7
 ship_light,Gun Boat 1124 AAA,0,Gunboat 1124 AAA,Бронекатер 1124
 ship_light,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗО
 ship_light,Gun Ship type A,0,Gunboat,Вооружённый буксир
-ship_medium,River Cargo Ship type Georgia,0,Cargo Ship,Грузовое судно
-ship_medium,River Cargo Ship type Georgia AAA,0,,
-ship_heavy,Destroyer Type 7,0,Soviet Type 7 destroyer,Советский эсминец Тип 7
 ship_light,Landing Boat type A,0,Marinefährprahm Typ A,Десантная баржка Type A
-ship_medium,Submarine Type IIB,0,U-Boot-Klasse IIB,Подводная лодка тип IIB
-ship_medium,Submarine Type Shch ser.10,0,Submarine Shch-10 (type Shchuka),Подводная лодка Тип Щ серия 10 (Щука) 
 ship_light,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
 ship_light,Torpedo Boat G-5 series 11-bis 213,0,Rocket Boat G-5 series 11-bis 213,Торпедный катер типа Г-5 XI-бис (проект 213)
 ship_light,Torpedo Boat type S-38,0,Schnellboot S-38,Торпедный катер типа S-38
+ship_medium,River Cargo Ship type Georgia,0,Cargo Ship,Грузовое судно
+ship_medium,River Cargo Ship type Georgia AAA,0,,
+ship_medium,Submarine Type IIB,0,U-Boot-Klasse IIB,Подводная лодка тип IIB
+ship_medium,Submarine Type Shch ser.10,0,Submarine Shch-10 (type Shchuka),Подводная лодка Тип Щ серия 10 (Щука) 
 ship_medium,Large Cargo Ship type 1,0,7000 tons cargo ship,7000-тонный сухогруз
 ship_medium,Large Tanker Ship type 1,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
 ship_medium,Large Tanker Ship type 1 ger,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
+tank_driver,BotDriver_PzIII,1,driver,водитель
+tank_driver,BotDriver_T34,1,driver,водитель
+tank_driver,BotDriver_KV1,1,driver,
 tank_heavy,KV-1-42,0,KV-1 1942,КВ-1 обр. 1942
 tank_heavy,KV-1-41,0,KV-1 1941,КВ-1 обр. 1941
 tank_heavy,KV-1s,1,KV-1s,КВ-1С
@@ -589,14 +741,12 @@ tank_medium,T-34-76 STZ 41,0,T-34-76 STZ 1941,Т-34 СТЗ обр. 1941
 tank_medium,_T-34-76 STZ,1,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34/76 STZ(1942),1,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34-76 UVZ 43,0,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
-tank_driver,BotDriver_PzIII,1,driver,водитель
-tank_driver,BotDriver_T34,1,driver,водитель
-tank_driver,BotDriver_KV1,1,driver,
 tank_turret,Turret_PzIII-L,1,turret PzKpfw III Ausf.L,башня PzKpfw III Ausf.L
 tank_turret,Turret_T34-76STZ,1,turret T-34-76 STZ,башня Т-34 СТЗ
 tank_turret,_KV1S_T0,1,turret KV-1s,башня КВ-1С
 tank_turret,_KV1S_T1,1,,
 tank_turret,_KV1S_T2,1,,
+tank_turret,_KV1S_T3,1,,
 tank_turret,_PzVI-H1_T0,1,turret Pz.Kpfw.VI Ausf.H1,башня Pz.Kpfw.VI Ausf.H1
 tank_turret,_PzVI-H1_T1,1,,
 tank_turret,_PzVI-H1_T2,1,,
@@ -920,6 +1070,104 @@ trash,CBatchTrash,0,,
 trash,Fake Vehicle,0,,
 trash,Forest,0,,
 trash,BulletEffect,0,,
+trash,town_eu_lrg_block_01_01,0,,
+trash,town_eu_lrg_block_01_02,0,,
+trash,town_eu_lrg_block_01_03,0,,
+trash,town_eu_lrg_block_01_04,0,,
+trash,town_eu_lrg_block_01_05,0,,
+trash,town_eu_lrg_block_01_06,0,,
+trash,town_eu_lrg_block_01_07,0,,
+trash,town_eu_lrg_block_01_08,0,,
+trash,town_eu_lrg_block_01_09,0,,
+trash,town_eu_lrg_block_01_10,0,,
+trash,town_eu_lrg_block_01_11,0,,
+trash,town_eu_lrg_block_01_12,0,,
+trash,town_eu_lrg_block_02_01,0,,
+trash,town_eu_lrg_block_02_02,0,,
+trash,town_eu_lrg_block_02_03,0,,
+trash,town_eu_lrg_block_02_04,0,,
+trash,town_eu_lrg_block_03_01,0,,
+trash,town_eu_lrg_block_03_02,0,,
+trash,town_eu_lrg_block_03_03,0,,
+trash,town_eu_lrg_block_03_04,0,,
+trash,town_eu_lrg_block_03_05,0,,
+trash,town_eu_lrg_block_03_06,0,,
+trash,town_eu_lrg_block_03_07,0,,
+trash,town_eu_lrg_block_03_08,0,,
+trash,town_eu_lrg_block_04_01,0,,
+trash,town_eu_lrg_block_04_02,0,,
+trash,town_eu_lrg_block_04_03,0,,
+trash,town_eu_lrg_block_04_04,0,,
+trash,town_eu_lrg_block_05_01,0,,
+trash,town_eu_lrg_block_05_02,0,,
+trash,town_eu_lrg_block_05_03,0,,
+trash,town_eu_lrg_block_06_01,0,,
+trash,town_eu_lrg_block_06_02,0,,
+trash,town_eu_lrg_block_06_03,0,,
+trash,town_eu_lrg_block_07_01,0,,
+trash,town_eu_lrg_block_07_02,0,,
+trash,town_eu_lrg_block_08_01,0,,
+trash,town_eu_lrg_block_08_02,0,,
+trash,town_eu_lrg_block_08_03,0,,
+trash,town_eu_lrg_block_08_04,0,,
+trash,town_eu_lrg_block_08_05,0,,
+trash,town_eu_lrg_block_08_06,0,,
+trash,town_eu_lrg_block_08_07,0,,
+trash,town_eu_lrg_block_08_08,0,,
+trash,town_eu_lrg_block_08_09,0,,
+trash,town_eu_lrg_block_08_10,0,,
+trash,town_eu_lrg_block_08_11,0,,
+trash,town_eu_lrg_object_01,0,,
+trash,town_eu_lrg_object_02,0,,
+trash,town_eu_lrg_object_03,0,,
+trash,town_eu_lrg_object_04,0,,
+trash,town_eu_lrg_object_05,0,,
+trash,town_eu_lrg_object_06,0,,
+trash,town_eu_lrg_object_07,0,,
+trash,town_eu_lrg_object_08,0,,
+trash,town_eu_lrg_object_09,0,,
+trash,town_eu_lrg_object_10,0,,
+trash,town_eu_lrg_object_11,0,,
+trash,town_eu_lrg_object_12,0,,
+trash,town_eu_lrg_object_13,0,,
+trash,town_eu_lrg_object_14,0,,
+trash,town_eu_med_block_01_01,0,,
+trash,town_eu_med_block_01_02,0,,
+trash,town_eu_med_block_01_03,0,,
+trash,town_eu_med_block_01_04,0,,
+trash,town_eu_med_block_01_05,0,,
+trash,town_eu_med_block_01_06,0,,
+trash,town_eu_med_block_01_07,0,,
+trash,town_eu_med_block_01_08,0,,
+trash,town_eu_med_block_01_09,0,,
+trash,town_eu_med_block_02_01,0,,
+trash,town_eu_med_block_02_02,0,,
+trash,town_eu_med_block_02_03,0,,
+trash,town_eu_med_block_02_04,0,,
+trash,town_eu_med_block_02_05,0,,
+trash,town_eu_med_block_02_06,0,,
+trash,town_eu_med_block_03_01,0,,
+trash,town_eu_med_block_03_02,0,,
+trash,town_eu_med_block_03_03,0,,
+trash,town_eu_med_block_03_04,0,,
+trash,town_eu_med_block_03_05,0,,
+trash,town_eu_med_block_03_06,0,,
+trash,town_eu_med_block_03_07,0,,
+trash,town_eu_med_block_03_08,0,,
+trash,town_eu_med_block_03_09,0,,
+trash,town_eu_med_object_01,0,,
+trash,town_eu_med_object_02,0,,
+trash,town_eu_med_object_03,0,,
+trash,town_eu_med_object_04,0,,
+trash,town_eu_med_object_05,0,,
+trash,town_eu_med_object_06,0,,
+trash,town_eu_med_object_07,0,,
+trash,town_eu_med_object_08,0,,
+trash,town_eu_med_object_09,0,,
+trash,town_eu_med_object_10,0,,
+trash,town_eu_med_object_11,0,,
+trash,town_eu_med_object_12,0,,
+trash,BotFieldTankmanController,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
@@ -932,8 +1180,26 @@ vehicle_crew,BotGunner_PzIII,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunner_T34,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunner_KV1,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunnerHowitzer,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankKV1_Gunner,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankPz6H1_Gunner,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankPzIIIL_Gunner,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankT3442_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotMachinist0,0,machinist,машинист
 vehicle_crew,ParatrooperGER,0,paratrooper,десантник
+vehicle_crew,BotCommander_KV1,0,commander,
+vehicle_crew,BotCommander_Pz6H1,0,commander,
+vehicle_crew,BotTankKV1_Commander,0,commander,
+vehicle_crew,BotTankPz6H1_Commander,0,commander,
+vehicle_crew,BotTankPz6H1_Radist,0,radist,
+vehicle_crew,BotTankT3442_Driver,0,driver,водитель
+vehicle_crew,BotTankPzIIIL_Driver,0,driver,водитель
+vehicle_crew,BotTankPz6H1_Driver,0,driver,водитель
+vehicle_crew,BotTankKV1_Driver,0,driver,водитель
+vehicle_crew,BotDriver_Pz6H1,0,driver,водитель
+vehicle_crew,BotGunner_Pz6H1,0,gunner,стрелок-наводчик
+vehicle_crew,BotLoader_Pz6H1,0,loader,
+vehicle_crew,BotTankPz6H1_Loader,0,loader,
+vehicle_crew,BotRadist_Pz6H1,0,radist,
 vehicle_static,static_opel,0,truck,грузовик
 vehicle_static,static_opel_fuel,0,truck,грузовик
 vehicle_static,static_zis,0,truck,грузовик
@@ -1003,123 +1269,3 @@ wagon,Wagon_PlatformEmptyNB,0,train platform,ж/д платформа
 wagon,Wagon_PlatformNB,0,train platform,ж/д платформа
 wagon,Wagon_TankB,0,train oil tank,ж/д цистерна
 wagon,Wagon_TankNB,0,train oil tank,ж/д цистерна
-explosion,tnt10g_frag200g_HE_expl_building,0,,
-explosion,tnt10g_frag200g_HE_expl_ground,0,,
-explosion,tnt10g_frag200g_HE_expl_water,0,,
-explosion,tnt130kg_frag120kg_expl_building,0,,
-explosion,tnt130kg_frag120kg_expl_ground,0,,
-explosion,tnt130kg_frag120kg_expl_water,0,,
-explosion,tnt13g_frag275g_HE_expl_building,0,,
-explosion,tnt13g_frag275g_HE_expl_ground,0,,
-explosion,tnt13g_frag275g_HE_expl_water,0,,
-explosion,tnt150g_frag2kg_HE_expl_ground,0,,
-explosion,tnt150g_frag2kg_HE_expl_metal,0,,
-explosion,tnt150g_frag2kg_HE_expl_water,0,,
-explosion,tnt1900kg_frag500kg_expl_ground,0,,
-explosion,tnt1900kg_frag500kg_expl_object,0,,
-explosion,tnt1900kg_frag500kg_expl_water,0,,
-explosion,tnt1g_frag30g_HE_expl_building,0,,
-explosion,tnt1g_frag30g_HE_expl_ground,0,,
-explosion,tnt1g_frag30g_HE_expl_water,0,,
-explosion,tnt1kg_frag13kg_HE_expl_ground,0,,
-explosion,tnt1kg_frag13kg_HE_expl_metal,0,,
-explosion,tnt1kg_frag13kg_HE_expl_water,0,,
-explosion,tnt1kg_frag6kg_HE_expl_ground,0,,
-explosion,tnt1kg_frag6kg_HE_expl_metal,0,,
-explosion,tnt1kg_frag6kg_HE_expl_water,0,,
-explosion,tnt1kg_frag8kg_HE_expl_ground,0,,
-explosion,tnt1kg_frag8kg_HE_expl_metal,0,,
-explosion,tnt1kg_frag8kg_HE_expl_water,0,,
-explosion,tnt20g_frag70g_HE_expl_building,0,,
-explosion,tnt20g_frag70g_HE_expl_ground,0,,
-explosion,tnt20g_frag70g_HE_expl_water,0,,
-explosion,tnt20kg_frag50kg_expl_building,0,,
-explosion,tnt20kg_frag50kg_expl_ground,0,,
-explosion,tnt20kg_frag50kg_expl_water,0,,
-explosion,tnt220g_frag3kg_HE_expl_ground,0,,
-explosion,tnt220g_frag3kg_HE_expl_metal,0,,
-explosion,tnt220g_frag3kg_HE_expl_water,0,,
-explosion,tnt220g_frag500g_HE_expl_building,0,,
-explosion,tnt220g_frag500g_HE_expl_ground,0,,
-explosion,tnt220g_frag500g_HE_expl_water,0,,
-explosion,tnt240kg_frag260kg_expl_building,0,,
-explosion,tnt240kg_frag260kg_expl_ground,0,,
-explosion,tnt240kg_frag260kg_expl_water,0,,
-explosion,tnt25kg_frag25kg_expl_building,0,,
-explosion,tnt25kg_frag25kg_expl_ground,0,,
-explosion,tnt25kg_frag25kg_expl_water,0,,
-explosion,tnt2g_frag35g_HE_expl_building,0,,
-explosion,tnt2g_frag35g_HE_expl_ground,0,,
-explosion,tnt2g_frag35g_HE_expl_water,0,,
-explosion,tnt2g_frag55g_HE_expl_building,0,,
-explosion,tnt2g_frag55g_HE_expl_ground,0,,
-explosion,tnt2g_frag55g_HE_expl_water,0,,
-explosion,tnt2g_frag90g_HE_expl_building,0,,
-explosion,tnt2g_frag90g_HE_expl_ground,0,,
-explosion,tnt2g_frag90g_HE_expl_water,0,,
-explosion,tnt2kg_frag7kg_HE_expl_ground,0,,
-explosion,tnt2kg_frag7kg_HE_expl_metal,0,,
-explosion,tnt2kg_frag7kg_HE_expl_water,0,,
-explosion,tnt30kg_frag30kg_expl_building,0,,
-explosion,tnt30kg_frag30kg_expl_ground,0,,
-explosion,tnt30kg_frag30kg_expl_water,0,,
-explosion,tnt30kg_frag70kg_expl_building,0,,
-explosion,tnt30kg_frag70kg_expl_ground,0,,
-explosion,tnt30kg_frag70kg_expl_water,0,,
-explosion,tnt44g_frag575g_HE_expl_building,0,,
-explosion,tnt44g_frag575g_HE_expl_ground,0,,
-explosion,tnt44g_frag575g_HE_expl_water,0,,
-explosion,tnt4kg_frag18kg_HE_expl_ground,0,,
-explosion,tnt4kg_frag18kg_HE_expl_metal,0,,
-explosion,tnt4kg_frag18kg_HE_expl_water,0,,
-explosion,tnt50g_frag775g_HE_expl_building,0,,
-explosion,tnt50g_frag775g_HE_expl_ground,0,,
-explosion,tnt50g_frag775g_HE_expl_water,0,,
-explosion,tnt50kg_frag50kg_expl_building,0,,
-explosion,tnt50kg_frag50kg_expl_ground,0,,
-explosion,tnt50kg_frag50kg_expl_water,0,,
-explosion,tnt50kg_frag60kg_expl_building,0,,
-explosion,tnt50kg_frag60kg_expl_ground,0,,
-explosion,tnt50kg_frag60kg_expl_water,0,,
-explosion,tnt550g_frag2kg_expl_building,0,,
-explosion,tnt550g_frag2kg_expl_ground,0,,
-explosion,tnt550g_frag2kg_expl_water,0,,
-explosion,tnt5kg_frag22kg_expl_building,0,,
-explosion,tnt5kg_frag22kg_expl_ground,0,,
-explosion,tnt5kg_frag22kg_expl_water,0,,
-explosion,tnt620kg_frag470kg_expl_building,0,,
-explosion,tnt620kg_frag470kg_expl_ground,0,,
-explosion,tnt620kg_frag470kg_expl_water,0,,
-explosion,tnt660g_frag9kg_expl_building,0,,
-explosion,tnt660g_frag9kg_expl_ground,0,,
-explosion,tnt660g_frag9kg_expl_water,0,,
-explosion,tnt6kg_frag37kg_HE_expl_ground,0,,
-explosion,tnt6kg_frag37kg_HE_expl_metal,0,,
-explosion,tnt6kg_frag37kg_HE_expl_water,0,,
-explosion,tnt85g_frag500g_HE_expl_building,0,,
-explosion,tnt85g_frag500g_HE_expl_ground,0,,
-explosion,tnt85g_frag500g_HE_expl_water,0,,
-explosion,tnt970kg_frag810kg_expl_building,0,,
-explosion,tnt970kg_frag810kg_expl_ground,0,,
-explosion,tnt970kg_frag810kg_expl_water,0,,
-explosion,tnt10kg_frag30kg_expl_building,0,,
-explosion,tnt10kg_frag30kg_expl_ground,0,,
-explosion,tnt10kg_frag30kg_expl_water,0,,
-explosion,tnt30kg_frag82kg_expl_building,0,,
-explosion,tnt30kg_frag82kg_expl_ground,0,,
-explosion,tnt30kg_frag82kg_expl_water,0,,
-explosion,tnt65kg_frag145kg_expl_building,0,,
-explosion,tnt65kg_frag145kg_expl_ground,0,,
-explosion,tnt65kg_frag145kg_expl_water,0,,
-explosion,Explosion,0,,
-explosion,ExplosionBalloon,0,,
-explosion,ExplosionFT,0,,
-explosion,ExplosionPlaneAir,0,,
-explosion,ExplosionPlaneAlongGnd,0,,
-explosion,ExplosionPlaneFireball,0,,
-explosion,ExplosionPlaneGnd,0,,
-explosion,ExplosionSkyPP,0,,
-explosion,explPlaneAir,0,,
-explosion,explPlaneAlongGnd,0,,
-explosion,explPlaneGnd,0,,
-explosion,explosion_sky_pp,0,,

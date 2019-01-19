@@ -24,3 +24,4 @@
 /run/db_backup.cmd
 /src/conf.local.ini
 /run/install_3.5.cmd
+/objects
