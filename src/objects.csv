@@ -750,6 +750,7 @@ tank_turret,_KV1S_T3,1,,
 tank_turret,_PzVI-H1_T0,1,turret Pz.Kpfw.VI Ausf.H1,башня Pz.Kpfw.VI Ausf.H1
 tank_turret,_PzVI-H1_T1,1,,
 tank_turret,_PzVI-H1_T2,1,,
+tank_turret,_PzVI-H1_T3,1,,
 trash,art_position_amb1,0,,
 trash,art_position_amb2,0,,
 trash,art_position_AT,0,,
