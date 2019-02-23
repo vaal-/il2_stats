@@ -1200,7 +1200,9 @@ vehicle_crew,BotDriver_Pz6H1,0,driver,водитель
 vehicle_crew,BotGunner_Pz6H1,0,gunner,стрелок-наводчик
 vehicle_crew,BotLoader_Pz6H1,0,loader,
 vehicle_crew,BotTankPz6H1_Loader,0,loader,
+vehicle_crew,BotTankKV1_Loader,0,loader,
 vehicle_crew,BotRadist_Pz6H1,0,radist,
+vehicle_crew,BotTankKV1_Radist,0,radist,
 vehicle_static,static_opel,0,truck,грузовик
 vehicle_static,static_opel_fuel,0,truck,грузовик
 vehicle_static,static_zis,0,truck,грузовик
