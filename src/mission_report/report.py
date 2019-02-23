@@ -86,6 +86,9 @@ class MissionReport:
 
                     try:
                         data = parse_mission_log_line.parse(line)
+                    except AttributeError:
+                        logger.error('bad line: [{}]'.format(line.strip()))
+                        continue
                     except parse_mission_log_line.UnexpectedATypeWarning:
                         logger.warning('unexpected atype: [{}]'.format(line))
                         continue
