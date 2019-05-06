@@ -244,6 +244,9 @@ class MissionReport:
         target = self.get_object(object_id=target_id)
         # дамага может не быть из-за бага логов
         if target and damage:
+            # в логах дамаг может прийти на игрока который уже завершил вылет
+            if target.sortie and target.sortie.is_ended:
+                return
             target.got_damaged(damage=damage, attacker=attacker, pos=pos)
 
     def event_kill(self, tik, attacker_id, target_id, pos):
@@ -251,6 +254,9 @@ class MissionReport:
         # потому что в логах так бывает что кто-то умер, а кто не известно :)
         target = self.get_object(object_id=target_id)
         if target:
+            # в логах килл может прийти на игрока который уже завершил вылет
+            if target.sortie and target.sortie.is_ended:
+                return
             target.got_killed(attacker=attacker, pos=pos)
             if target.sortie:
                 self.rm_active_sortie(sortie=target.sortie)
@@ -563,6 +569,7 @@ class Object:
                 elif ammo == 'rocket':
                     attacker.sortie.hit_rockets += 1
                 elif ammo == 'shell':
+                    attacker.sortie.hit_bullets += 1  # потому что игра в логах не разделяет пули и снаряды
                     attacker.sortie.hit_shells += 1
             # попадания со стрелка(который и пилот) передаются самолету т.к. боезапас самолета общий
             elif attacker.parent and attacker.parent.sortie:
@@ -573,6 +580,7 @@ class Object:
                 elif ammo == 'rocket':
                     attacker.parent.sortie.hit_rockets += 1
                 elif ammo == 'shell':
+                    attacker.parent.sortie.hit_bullets += 1  # потому что игра в логах не разделяет пули и снаряды
                     attacker.parent.sortie.hit_shells += 1
 
     def got_damaged(self, damage, attacker=None, pos=None):
