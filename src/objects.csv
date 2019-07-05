@@ -50,6 +50,11 @@ aircraft_gunner,BotGunner_Pe2s35top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_BFF2B,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_BFF2B_M,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HCL2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HCL2_M,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HCL2_M2,1,Aircraft gunner,стрелок
 aircraft_heavy,He 111 H-6,1,,
 aircraft_heavy,He 111 H-16,1,,
 aircraft_heavy,Ju 88 A-4,1,,
@@ -104,6 +109,10 @@ aircraft_medium,Ju 87 D-3,1,,
 aircraft_medium,Il-2 mod.1943,1,IL-2 AM-38F,Ил-2 AM-38Ф
 aircraft_medium,Hs 129 B-2,1,,
 aircraft_medium,U-2VS,1,U-﻿2,У-2
+aircraft_medium,Bristol F2B (F.II),1,,
+aircraft_medium,Bristol F2B (F.III),1,,
+aircraft_medium,Halberstadt CL.II,1,,
+aircraft_medium,Halberstadt CL.II 200hp,1,,
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_FW190,1,pilot,пилот
@@ -204,6 +213,14 @@ aircraft_turret,TurretHalberstadtCL2au_1_WM_beckAP,1,Halberstadt turret,туре
 aircraft_turret,TurretHalberstadtCL2au_1_WM_beckHE,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2au_1_WM_beckHEAP,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2au_1_WM_TwinPar,1,Halberstadt turret,турель Halberstadt
+aircraft_turret,TurretBristolF2BF2_1,1,Bristol turret,турель Bristol
+aircraft_turret,TurretBristolF2BF2_1M,1,Bristol turret,турель Bristol
+aircraft_turret,TurretBristolF2BF3_1,1,Bristol turret,турель Bristol
+aircraft_turret,TurretBristolF2BF3_1M,1,Bristol turret,турель Bristol
+aircraft_turret,TurretHalberstadtCL2au_1M,1,Halberstadt turret,турель Halberstadt
+aircraft_turret,TurretHalberstadtCL2au_1M2,1,Halberstadt turret,турель Halberstadt
+aircraft_turret,TurretHalberstadtCL2_1M,1,Halberstadt turret,турель Halberstadt
+aircraft_turret,TurretHalberstadtCL2_1M2,1,Halberstadt turret,турель Halberstadt
 airfield,arf_ammo_1,0,airfield ammo dump,аэродромный склад вооружения
 airfield,arf_ammo_2,0,airfield ammo dump,аэродромный склад вооружения
 airfield,arf_ammo_3,0,airfield ammo dump,аэродромный склад вооружения
@@ -278,6 +295,10 @@ bomb,BOMB_GER_SC50,0,SC 50,
 bomb,BOMB_GER_SC500,0,SC 500,
 bomb,BOMB_GER_SC500_87,0,SC 500,
 bomb,BOMB_GER_SD70,0,SD 70,
+bomb,BOMB_GBR_112lb,0,,
+bomb,BOMB_GER_10kg,0,,
+bomb,BOMB_GER_12kg,0,,
+bomb,BOMB_GER_50kg,0,,
 bomb,BOMB_ITA_100T,0,100-T,
 bomb,BOMB_ITA_50T,0,50-T,
 bomb,BOMB_RUS_FAB100M,0,FAB-100M,ФАБ-100М
@@ -294,6 +315,7 @@ bomb,BOMB_RUS_FAB250tsk,0,FAB-250,ФАБ-250
 bomb,BOMB_GBR_GPB250,0,,
 bomb,BOMB_GBR_GPB500,0,,
 bomb,BOMB_GBR_20lb,0,,
+bomb,BOMB_GBR_24lb,0,,
 bomb,BOMB_USA_M64,0,,
 bomb,BOMB_USA_M65,0,,
 bridge,bridge_big_1,0,railway bridge,ж/д мост
@@ -699,6 +721,9 @@ shell,SHELL_GER_88_CV,0,,
 shell,SHELL_GER_50_CV,0,,
 shell,SHELL_GER_50_HV,0,,
 shell,SHELL_GER_88_HE,0,,
+shell,SHELL_GER_75_HT,0,,
+shell,SHELL_GER_75_HE,0,,
+shell,SHELL_GER_75_HV,0,,
 shell,SHELL_GER_88_AP,0,,
 shell,SHELL_GER_88_HV,0,,
 shell,SHELL_GER_75_CV,0,,
@@ -743,6 +768,7 @@ tank_medium,_PzKpfw III Ausf.L,1,Pz.Kpfw.III Ausf.L,
 tank_medium,PzKpfw III Ausf.L,0,Pz.Kpfw III Ausf.L,
 tank_medium,Pz.Kpfw.III Ausf.L,1,Pz.Kpfw.III Ausf.L,
 tank_medium,PzKpfw IV Ausf.G,0,Pz.Kpfw IV Ausf.G,
+tank_medium,Pz.Kpfw.IV Ausf.G,1,,
 tank_medium,PzKpfw III Ausf.H,1,Pz.Kpfw III Ausf.H,
 tank_medium,PzKpfw IV Ausf.F1,0,Pz.Kpfw IV Ausf.F1,
 tank_medium,StuG III Ausf.C-D,0,StuG III Ausf.C-D,
@@ -765,6 +791,10 @@ tank_turret,_PzVI-H1_T0,1,turret Pz.Kpfw.VI Ausf.H1,башня Pz.Kpfw.VI Ausf.H
 tank_turret,_PzVI-H1_T1,1,,
 tank_turret,_PzVI-H1_T2,1,,
 tank_turret,_PzVI-H1_T3,1,,
+tank_turret,Turret_PzIV-G,1,,
+tank_turret,_PzIV-G_T1,1,,
+tank_turret,_PzIV-G_T2,1,,
+tank_turret,_PzIV-G_T3,1,,
 trash,art_position_amb1,0,,
 trash,art_position_amb2,0,,
 trash,art_position_AT,0,,
@@ -1199,13 +1229,17 @@ vehicle_crew,BotTankKV1_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotTankPz6H1_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotTankPzIIIL_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotTankT3442_Gunner,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankPz4G_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotMachinist0,0,machinist,машинист
 vehicle_crew,ParatrooperGER,0,paratrooper,десантник
 vehicle_crew,BotCommander_KV1,0,commander,
 vehicle_crew,BotCommander_Pz6H1,0,commander,
 vehicle_crew,BotTankKV1_Commander,0,commander,
+vehicle_crew,BotTankPz4G_Commander,0,commander,
 vehicle_crew,BotTankPz6H1_Commander,0,commander,
 vehicle_crew,BotTankPz6H1_Radist,0,radist,
+vehicle_crew,BotTankPz4G_Radist,0,radist,
+vehicle_crew,BotTankPz4G_Driver,0,driver,водитель
 vehicle_crew,BotTankT3442_Driver,0,driver,водитель
 vehicle_crew,BotTankPzIIIL_Driver,0,driver,водитель
 vehicle_crew,BotTankPz6H1_Driver,0,driver,водитель
@@ -1213,6 +1247,7 @@ vehicle_crew,BotTankKV1_Driver,0,driver,водитель
 vehicle_crew,BotDriver_Pz6H1,0,driver,водитель
 vehicle_crew,BotGunner_Pz6H1,0,gunner,стрелок-наводчик
 vehicle_crew,BotLoader_Pz6H1,0,loader,
+vehicle_crew,BotTankPz4G_Loader,0,loader,
 vehicle_crew,BotTankPz6H1_Loader,0,loader,
 vehicle_crew,BotTankKV1_Loader,0,loader,
 vehicle_crew,BotRadist_Pz6H1,0,radist,
