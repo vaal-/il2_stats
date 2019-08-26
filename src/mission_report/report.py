@@ -245,7 +245,7 @@ class MissionReport:
         # дамага может не быть из-за бага логов
         if target and damage:
             # в логах дамаг может прийти на игрока который уже завершил вылет
-            if target.sortie and target.sortie.is_ended:
+            if target.sortie and target.sortie.is_ended_by_timeout(timeout=120, tik=tik):
                 return
             target.got_damaged(damage=damage, attacker=attacker, pos=pos)
 
@@ -255,7 +255,7 @@ class MissionReport:
         target = self.get_object(object_id=target_id)
         if target:
             # в логах килл может прийти на игрока который уже завершил вылет
-            if target.sortie and target.sortie.is_ended:
+            if target.sortie and target.sortie.is_ended_by_timeout(timeout=120, tik=tik):
                 return
             target.got_killed(attacker=attacker, pos=pos)
             if target.sortie:
@@ -884,3 +884,9 @@ class Sortie:
     def update_ratio(self, current_ratio):
         self._ratio_list.append(current_ratio)
         self.ratio = round((sum(self._ratio_list) / len(self._ratio_list)), 2)
+
+    def is_ended_by_timeout(self, timeout, tik):
+        if not self.is_ended or (tik - self.tik_end) / 50 < timeout:
+            return False
+        else:
+            return True
