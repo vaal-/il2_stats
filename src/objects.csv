@@ -2,6 +2,7 @@ cls,log_name,playable,name,name_ru
 aaa_heavy,52-K,0,52-K AAA gun,зенитное орудие 52-K
 aaa_heavy,Flak 36,0,Flak 36 AAA gun,зенитное орудие Flak 36
 aaa_heavy,Flak 37,0,Flak 37 AAA gun,зенитное орудие Flak 37
+aaa_heavy,M1A1 90 mm Gun,0,,
 aaa_light,61-K,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,61-K ship turret,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,61-K turret,0,61-K AAA gun,зенитное орудие 61-K
@@ -9,9 +10,11 @@ aaa_light,61-K turret 1124,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,72-K,0,72-К AAA gun,зенитная пушка 72-К
 aaa_light,Flak 38,0,Flak 38 AAA gun,зенитное орудие Flak 38
 aaa_light,Flak 38 turret,0,Flak 38 AAA gun,зенитное орудие Flak 38
+aaa_light,M16 Half-Track,0,,
 aaa_light,Sd Kfz 10 Flak 38,0,Sd Kfz 10 APC with Flak 38 AAA gun,самоходное зенитное орудие Flak 38
 aaa_light,US Landlight,0,,
 aaa_light,US Searchlight,0,,
+aaa_light,US Searchlight Generator,0,,
 aaa_light,ZiS-5 72-K,0,ZiS-5 72-K AAA gun,самоходная зенитная пушка 72-К
 aaa_mg,DShK-AA,0,DShK AA machinegun,зенитный пулемёт ДШК
 aaa_mg,GAZ-AA M4,0,GAZ-AA truck with M4 AAA machinegun,самоходный зенитный пулемёт Максим
@@ -25,6 +28,9 @@ aaa_mg,MG-34 AA turret,0,MG-34 AA machinegun,зенитный пулемёт MG-
 aircraft_gunner,BotGunner,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Bbtm,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Btop,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110E2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110G2,1,Aircraft gunner,стрелок
@@ -59,6 +65,8 @@ aircraft_gunner,BotGunner_Pe2s87top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
 aircraft_heavy,A-20B,1,,
+aircraft_heavy,B-25D,0,,
+aircraft_heavy,B-25D (RAF),0,,
 aircraft_heavy,He 111 H-16,1,,
 aircraft_heavy,He 111 H-6,1,,
 aircraft_heavy,Ju 88 A-4,1,,
@@ -117,6 +125,7 @@ aircraft_medium,P-38J-25,1,,
 aircraft_medium,U-2VS,1,U-﻿2,У-2
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B,1,pilot,пилот
+aircraft_pilot,BotPilot_B25D,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109K,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1,1,pilot,пилот
@@ -137,19 +146,25 @@ aircraft_pilot,BotPilot_Spad13,1,pilot,пилот
 aircraft_pilot,BotPilot_Spit9,1,pilot,пилот
 aircraft_pilot,BotPilot_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
+aircraft_static,static_A20B,0,parked aircraft,самолет на стоянке
+aircraft_static,static_B25D,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_open,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109e7,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109e7_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109e7_open,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Bf109K4,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf110e2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf110e2_open,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Fw190A8,0,parked aircraft,самолет на стоянке
 aircraft_static,static_he111,0,parked aircraft,самолет на стоянке
 aircraft_static,static_he111_open,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Hs129B2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_i16,0,parked aircraft,самолет на стоянке
 aircraft_static,static_i16_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_il2,0,parked aircraft,самолет на стоянке
@@ -165,10 +180,20 @@ aircraft_static,static_lagg3,0,parked aircraft,самолет на стоянк�
 aircraft_static,static_lagg3_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_lagg3_w1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_lagg3_w2,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Me262A,0,parked aircraft,самолет на стоянке
 aircraft_static,static_mig3,0,parked aircraft,самолет на стоянке
 aircraft_static,static_mig3_net,0,parked aircraft,самолет на стоянке
+aircraft_static,static_P38J25,0,parked aircraft,самолет на стоянке
+aircraft_static,static_P39L1,0,parked aircraft,самолет на стоянке
+aircraft_static,static_P40E1,0,parked aircraft,самолет на стоянке
+aircraft_static,static_P47D28,0,parked aircraft,самолет на стоянке
+aircraft_static,static_P51D15,0,parked aircraft,самолет на стоянке
 aircraft_static,static_pe2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_pe2_open,0,parked aircraft,самолет на стоянке
+aircraft_static,static_SpitfireMkIXe,0,parked aircraft,самолет на стоянке
+aircraft_static,static_TempestMkVs2,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Typhoon,0,parked aircraft,самолет на стоянке
+aircraft_static,static_U2VS,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_open,0,parked aircraft,самолет на стоянке
@@ -176,9 +201,12 @@ aircraft_transport,Ju 52 3mg4e,1,,
 aircraft_turret,aircraft_turret,1,,
 aircraft_turret,Turret_A20B_1,1,A-20B turret,турель A-20B
 aircraft_turret,Turret_A20B_2,1,A-20B turret,турель A-20B
-aircraft_turret,Turret_B25D_1,1,B25 turret,турель B25
-aircraft_turret,Turret_B25D_2,1,B25 turret,турель B25
-aircraft_turret,Turret_B25D_3,1,B25 turret,турель B25
+aircraft_turret,Turret_B25D_1,0,B25 turret,турель B25
+aircraft_turret,Turret_B25D_2,0,B25 turret,турель B25
+aircraft_turret,Turret_B25D_3,0,B25 turret,турель B25
+aircraft_turret,Turret_B25Draf_1,0,B25 turret,турель B25
+aircraft_turret,Turret_B25Draf_2,0,B25 turret,турель B25
+aircraft_turret,Turret_B25Draf_3,0,B25 turret,турель B25
 aircraft_turret,Turret_Bf110E2,1,Bf 110 E-2 turret,турель Bf 110 E-2
 aircraft_turret,Turret_Bf110G2,1,Bf 110 G-2 turret,турель Bf 110 G-2
 aircraft_turret,Turret_he111h16_1,1,He 111 H-16 turret,турель He 111 H-16
@@ -227,6 +255,16 @@ aircraft_turret,TurretHalberstadtCL2au_1_WM_beckHEAP,1,Halberstadt turret,тур
 aircraft_turret,TurretHalberstadtCL2au_1_WM_TwinPar,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2au_1M,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2au_1M2,1,Halberstadt turret,турель Halberstadt
+airfield,af_barracksround1,0,,
+airfield,af_barracksround2,0,,
+airfield,af_barrackssmall,0,,
+airfield,af_camptents1,0,,
+airfield,af_camptents2,0,,
+airfield,af_guardgate,0,,
+airfield,af_hangardoubleside,0,,
+airfield,af_hangartent1,0,,
+airfield,af_hangartent2,0,,
+airfield,af_smalltents,0,,
 airfield,arf_ammo_1,0,airfield ammo dump,аэродромный склад вооружения
 airfield,arf_ammo_2,0,airfield ammo dump,аэродромный склад вооружения
 airfield,arf_ammo_3,0,airfield ammo dump,аэродромный склад вооружения
@@ -285,6 +323,7 @@ artillery_field,Pak 38,0,Pak 38 gun,ПТ орудие Pak 38
 artillery_field,Pak 40,0,Pak 40 gun,ПТ орудие Pak 40
 artillery_field,ZIS-2,0,ZiS-2 gun,ПТ орудие ЗиС-2
 artillery_field,ZIS-3,0,ZiS-3 gun,орудие ЗиС-3
+artillery_howitzer,155 mm Howitzer M1,0,,
 artillery_howitzer,B-24 turret,0,B-24 naval gun,орудие Б-24
 artillery_howitzer,leFH 18,0,leFH 18 howitzer,гаубица Lefh18
 artillery_howitzer,ML-20,0,ML-20 howitzer,гаубица МЛ-20
@@ -369,6 +408,7 @@ bridge,bridge_hw130,0,bridge,мост
 bridge,bridge_hw150,0,bridge,мост
 bridge,bridge_hw170,0,bridge,мост
 bridge,bridge_hw190,0,bridge,мост
+bridge,bridge_hw50,0,bridge,мост
 bridge,bridge_hw70,0,bridge,мост
 bridge,bridge_hw90,0,bridge,мост
 bridge,bridge_pontoon_100,0,pontoon bridge,понтонный мост
@@ -416,6 +456,9 @@ bullet,NPC_BULLET_RUS_7-62_AP_short,0,,
 bullet,NPC_BULLET_RUS_7-62x4,0,,
 bullet,NPC_SHELL_RUS_122_HE,0,,
 bullet,NPC_SHELL_RUS_130_HE,0,,
+bullet,NPC_SHELL_USA_155_HE,0,,
+bullet,NPC_SHELL_USA_90_CV,0,,
+bullet,NPC_SHELL_USA_90_HE,0,,
 bullet,SHELL_GER_15x96_AP,0,,
 bullet,SHELL_GER_15x96_HE,0,,
 bullet,SHELL_GER_20x82_AP,0,,
@@ -524,6 +567,11 @@ explosion,tnt1kg_frag6kg_HE_expl_water,0,,
 explosion,tnt1kg_frag8kg_HE_expl_ground,0,,
 explosion,tnt1kg_frag8kg_HE_expl_metal,0,,
 explosion,tnt1kg_frag8kg_HE_expl_water,0,,
+explosion,tnt1kg_frag9kg_expl_building,0,,
+explosion,tnt1kg_frag9kg_expl_building,0,,
+explosion,tnt1kg_frag9kg_expl_building,0,,
+explosion,tnt1kg_frag9kg_expl_ground,0,,
+explosion,tnt1kg_frag9kg_expl_water,0,,
 explosion,tnt20g_frag70g_HE_expl_building,0,,
 explosion,tnt20g_frag70g_HE_expl_ground,0,,
 explosion,tnt20g_frag70g_HE_expl_water,0,,
@@ -719,6 +767,7 @@ industrial,port_up_unit_container,0,warehouse,склад
 industrial,port_up_unit_woodbox_1x4,0,warehouse,склад
 industrial,port_up_unit_woodbox_2x24,0,warehouse,склад
 industrial,Radio Beacon,0,Non-Directional Beacon,приводной радиомаяк
+industrial,rw,0,railway station facilit,строение ж/д станции
 industrial,RWplatform_eu,0,railway station facilit,строение ж/д станции
 industrial,RWstation_b,0,railway station facilit,строение ж/д станции
 industrial,RWstation_eu,0,railway station facilit,строение ж/д станции
@@ -726,6 +775,11 @@ industrial,rwstation_industrial_01,0,railway station facilit,строение ж
 industrial,rwstation_industrial_02,0,railway station facilit,строение ж/д станции
 industrial,RWstation_s1,0,railway station facilit,строение ж/д станции
 industrial,RWstation_s2,0,railway station facilit,строение ж/д станции
+industrial,rwstation01,0,railway station facilit,строение ж/д станции
+industrial,rwstation02,0,railway station facilit,строение ж/д станции
+industrial,rwstation03,0,railway station facilit,строение ж/д станции
+industrial,rwstation04,0,railway station facilit,строение ж/д станции
+industrial,rwstation05,0,railway station facilit,строение ж/д станции
 industrial,Scot_01,0,factory facility,скотный двор
 industrial,Sklad_01,0,factory facility,склад
 locomotive,Locomotive_E,0,E locomotive,локомотив Е
@@ -851,6 +905,7 @@ tank_medium,PzKpfw III Ausf.H,1,Pz.Kpfw III Ausf.H,
 tank_medium,PzKpfw III Ausf.L,0,Pz.Kpfw III Ausf.L,
 tank_medium,PzKpfw IV Ausf.F1,0,Pz.Kpfw IV Ausf.F1,
 tank_medium,PzKpfw IV Ausf.G,0,Pz.Kpfw IV Ausf.G,
+tank_medium,PzKpfw IV Ausf.H,1,,
 tank_medium,StuG III Ausf.C-D,0,StuG III Ausf.C-D,
 tank_medium,StuG III Ausf.F,0,StuG III Ausf.F,
 tank_medium,T-34-76 STZ,0,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
@@ -887,11 +942,13 @@ tank_turret,Turret_T34-76STZ,1,turret T-34-76 STZ,башня Т-34 СТЗ
 trash,_KV1S_T0_sight1,0,,
 trash,_KV1S_T0_sight2,0,,
 trash,A20B_P2,0,,
+trash,abbayesaintvaast,0,,
 trash,Aiming Bot's head,0,,
 trash,arf_sign_forward,0,,
 trash,arf_sign_left,0,,
 trash,arf_sign_noway,0,,
 trash,arf_sign_right,0,,
+trash,arrascitadelle,0,,
 trash,art_position_amb1,0,,
 trash,art_position_amb2,0,,
 trash,art_position_AT,0,,
@@ -899,6 +956,9 @@ trash,art_position_AT2,0,,
 trash,art_position_big,0,,
 trash,art_position_medium,0,,
 trash,art_position_small,0,,
+trash,B25D_P2,0,,
+trash,B25Draf_P2,0,,
+trash,ballgate,0,,
 trash,BAR_01,0,,
 trash,BAR_02,0,,
 trash,BAR_03,0,,
@@ -907,6 +967,35 @@ trash,BAR_05,0,,
 trash,BAR_06,0,,
 trash,BAR_07,0,,
 trash,BAR_09,0,,
+trash,barbed1,0,,
+trash,barbed2,0,,
+trash,barbed3,0,,
+trash,barrackround,0,,
+trash,barracksmall,0,,
+trash,barrels,0,,
+trash,barrels_4x4,0,,
+trash,beauxartsdelille,0,,
+trash,beffroidelamairiedelille,0,,
+trash,bench,0,,
+trash,bench2,0,,
+trash,bf_barbed_1,0,,
+trash,bf_barbed_2,0,,
+trash,bf_barbed_3,0,,
+trash,bf_barbed_4,0,,
+trash,bf_barbed_5,0,,
+trash,bf_barbed_50,0,,
+trash,bf_gunpos_1,0,,
+trash,bf_gunpos_2,0,,
+trash,bf_gunpos_3,0,,
+trash,bf_gunpos_4,0,,
+trash,bf_gunpos_5,0,,
+trash,bf_gunpos_6,0,,
+trash,bf_gunpos_7,0,,
+trash,bf_gunpos_8,0,,
+trash,bf_tents_1,0,,
+trash,bf_tents_2,0,,
+trash,bf_tents_3,0,,
+trash,bike,0,,
 trash,Block of buildings,0,,
 trash,BlocksArray,0,,
 trash,Bomb Sight He111,0,,
@@ -921,7 +1010,10 @@ trash,BotRangefinder,0,,
 trash,bridge_section_dmg,0,,
 trash,BulletEffect,0,,
 trash,CAeroplaneFragment,0,,
+trash,camptent1,0,,
+trash,camptent2,0,,
 trash,CappyChateau,0,,
+trash,cart,0,,
 trash,CBanner,0,,
 trash,CBatchTrash,0,,
 trash,CBlocksArray,0,,
@@ -937,6 +1029,7 @@ trash,Church_eu_small1,0,,
 trash,Church_eu_small2,0,,
 trash,ChurchRed,0,,
 trash,ChurchYellow,0,,
+trash,citadelledelille,0,,
 trash,ClusterGroundEffect,0,,
 trash,ClusterWaterEffect,0,,
 trash,Common Bot's head,0,,
@@ -966,6 +1059,8 @@ trash,country_m_corner_block5,0,,
 trash,country_m_corner_block6,0,,
 trash,country_m_corner_block7,0,,
 trash,country_m_corner_block8,0,,
+trash,coverstructure,0,,
+trash,cow,0,,
 trash,CSolidTrash,0,,
 trash,CStaticEmitter,0,,
 trash,CTurretCamera,0,,
@@ -996,6 +1091,14 @@ trash,det-object-Farm,0,,
 trash,det-object-Haystack,0,,
 trash,det-object-HouseBlue,0,,
 trash,DinamoWTR,0,,
+trash,dot1,0,,
+trash,dot2,0,,
+trash,dot3,0,,
+trash,dot4,0,,
+trash,dot5,0,,
+trash,dot6,0,,
+trash,dottent1,0,,
+trash,dottent2,0,,
 trash,EjectionPlace,0,,
 trash,EjectionPlace controller AI,0,,
 trash,EjectorController,0,,
@@ -1003,9 +1106,21 @@ trash,Fake Vehicle,0,,
 trash,fake_block,0,,
 trash,fakefield,0,,
 trash,fakefield_rnwSpawn,0,,
+trash,fence_brick1,0,,
+trash,fence_plank1,0,,
+trash,fence_stone1,0,,
 trash,Flag,0,,
 trash,Forest,0,,
 trash,fountain,0,,
+trash,guardgate1,0,,
+trash,guardhouse,0,,
+trash,hangardoubleside,0,,
+trash,hangartent1,0,,
+trash,hangartent2,0,,
+trash,Horse_01,0,,
+trash,Horse_02,0,,
+trash,Horse_03,0,,
+trash,hoteldeville,0,,
 trash,Ju523mg4e_P2,0,,
 trash,Ju523mg4e_P3,0,,
 trash,kuban_block_zdravnica,0,,
@@ -1014,6 +1129,8 @@ trash,kuban_lighthousesmall,0,,
 trash,kuban_museum,0,,
 trash,Landing Canvas,0,,
 trash,Landing Fire,0,,
+trash,markettent1,0,,
+trash,markettent2,0,,
 trash,mg_position,0,,
 trash,noname,0,,
 trash,OKT_01,0,,
@@ -1024,9 +1141,12 @@ trash,OKT_05,0,,
 trash,OKT_06,0,,
 trash,OKT_07,0,,
 trash,OKT_08,0,,
+trash,operadelille,0,,
 trash,ParatroopersCreator_Ju52,0,,
 trash,Plane controller,0,,
 trash,Plane controller AI,0,,
+trash,portedeparis,0,,
+trash,prefecturedelille,0,,
 trash,Rechnoy,0,,
 trash,Schodnya,0,,
 trash,sec1,0,,
@@ -1107,6 +1227,9 @@ trash,stalingrad_53,0,,
 trash,stalingrad_54,0,,
 trash,stalingrad_bridge_01,0,,
 trash,stalingrad_bridge_02,0,,
+trash,stand,0,,
+trash,stela,0,,
+trash,streetlamp,0,,
 trash,STZ_01,0,,
 trash,STZ_02,0,,
 trash,STZ_03,0,,
@@ -1120,6 +1243,8 @@ trash,STZ_10,0,,
 trash,STZ_11,0,,
 trash,STZ_12,0,,
 trash,tank_position,0,,
+trash,tent1,0,,
+trash,tentcart,0,,
 trash,test_bridge_1,0,,
 trash,tonnel,0,,
 trash,town_block_01_480x420,0,,
@@ -1137,6 +1262,18 @@ trash,town_block_12_480x70,0,,
 trash,town_block_13_280x200,0,,
 trash,town_block_14_140x300,0,,
 trash,town_block_15_280x100,0,,
+trash,town_eu_arras_01,0,,
+trash,town_eu_arras_02,0,,
+trash,town_eu_arras_03,0,,
+trash,town_eu_arras_03,0,,
+trash,town_eu_arras_04,0,,
+trash,town_eu_arras_05,0,,
+trash,town_eu_lille_01,0,,
+trash,town_eu_lille_02,0,,
+trash,town_eu_lille_03,0,,
+trash,town_eu_lille_04,0,,
+trash,town_eu_lille_05,0,,
+trash,town_eu_lille_06,0,,
 trash,town_eu_lrg_block_01_01,0,,
 trash,town_eu_lrg_block_01_02,0,,
 trash,town_eu_lrg_block_01_03,0,,
@@ -1184,6 +1321,14 @@ trash,town_eu_lrg_block_08_08,0,,
 trash,town_eu_lrg_block_08_09,0,,
 trash,town_eu_lrg_block_08_10,0,,
 trash,town_eu_lrg_block_08_11,0,,
+trash,town_eu_lrg_block_arras,0,,
+trash,town_eu_lrg_det_01_01,0,,
+trash,town_eu_lrg_det_01_02,0,,
+trash,town_eu_lrg_det_01_03,0,,
+trash,town_eu_lrg_det_01_04,0,,
+trash,town_eu_lrg_det_01_05,0,,
+trash,town_eu_lrg_det_01_06,0,,
+trash,town_eu_lrg_det_01_07,0,,
 trash,town_eu_lrg_object_01,0,,
 trash,town_eu_lrg_object_02,0,,
 trash,town_eu_lrg_object_03,0,,
@@ -1222,6 +1367,24 @@ trash,town_eu_med_block_03_06,0,,
 trash,town_eu_med_block_03_07,0,,
 trash,town_eu_med_block_03_08,0,,
 trash,town_eu_med_block_03_09,0,,
+trash,town_eu_med_det_01_01,0,,
+trash,town_eu_med_det_01_03,0,,
+trash,town_eu_med_det_01_04,0,,
+trash,town_eu_med_det_01_05,0,,
+trash,town_eu_med_det_01_06,0,,
+trash,town_eu_med_det_01_07,0,,
+trash,town_eu_med_det_01_08,0,,
+trash,town_eu_med_det_01_09,0,,
+trash,town_eu_med_det_02_01,0,,
+trash,town_eu_med_det_02_02,0,,
+trash,town_eu_med_det_02_03,0,,
+trash,town_eu_med_det_02_04,0,,
+trash,town_eu_med_det_02_05,0,,
+trash,town_eu_med_det_02_06,0,,
+trash,town_eu_med_det_03_01,0,,
+trash,town_eu_med_det_03_02,0,,
+trash,town_eu_med_det_03_03,0,,
+trash,town_eu_med_det_03_04,0,,
 trash,town_eu_med_object_01,0,,
 trash,town_eu_med_object_02,0,,
 trash,town_eu_med_object_03,0,,
@@ -1234,6 +1397,8 @@ trash,town_eu_med_object_09,0,,
 trash,town_eu_med_object_10,0,,
 trash,town_eu_med_object_11,0,,
 trash,town_eu_med_object_12,0,,
+trash,town_eu_objgrp_01,0,,
+trash,town_eu_objgrp_02,0,,
 trash,town_lrg_01,0,,
 trash,town_lrg_02,0,,
 trash,town_lrg_03,0,,
@@ -1361,6 +1526,7 @@ trash,Windmill1_eu_2,0,,
 trash,Windsock,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
+truck,GMC CCKW 353,0,GMC CCKW truck,грузовик GMC CCKW
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
 truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
 vehicle_crew,BotBoatSwain,0,boatswain,боцман
