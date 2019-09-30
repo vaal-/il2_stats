@@ -1,4 +1,4 @@
-Django==1.11.18
+Django==1.11.23
 coverage
 django-debug-toolbar==1.11
 django-rosetta

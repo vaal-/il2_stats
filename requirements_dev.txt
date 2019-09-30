@@ -4,11 +4,10 @@
 #
 #    pip-compile --output-file requirements_dev.txt requirements_dev.in
 #
-colorama==0.3.7           # via pytest
 coverage==4.3.4
 django-debug-toolbar==1.11
 django-rosetta==0.7.12
-django==1.11.18
+django==1.11.23
 microsofttranslator==0.8  # via django-rosetta
 polib==1.0.8              # via django-rosetta
 py==1.4.32                # via pytest
