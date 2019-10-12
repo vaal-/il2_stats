@@ -280,7 +280,7 @@ th {
   padding: 2px 8px;
 }
 .paginator3000 span strong {
-  background: #cf2d1c;
+  background: #CF2D1C;
   font-style: normal;
   font-weight: normal;
 }
@@ -315,7 +315,7 @@ th {
   width: 0;
   height: 2px;
   overflow: hidden;
-  background: #cf2d1c;
+  background: #CF2D1C;
 }
 .fullsize .scroll_thumb {
   display: none;
@@ -706,7 +706,7 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 #enable_javascript {
-  background-color: #cf2d1c;
+  background-color: #CF2D1C;
   max-width: 1920px;
   margin: 0 auto;
   width: 100%;
@@ -751,7 +751,7 @@ hr {
   margin: 25px 0;
 }
 header {
-  background: #e74c3c url(../img/head_1.jpg) top center no-repeat;
+  background: #E74C3C url(../img/head_1.jpg) top center no-repeat;
   width: 100%;
   max-width: 1920px;
   min-width: 1180px;
@@ -1058,10 +1058,10 @@ section {
   margin: 0 auto;
   padding-bottom: 50px;
   background-color: #303030;
-  color: #c8c8c8;
+  color: #C8C8C8;
 }
 section a {
-  color: #c8c8c8;
+  color: #C8C8C8;
   text-decoration: none;
 }
 section .wrapper {
@@ -1756,7 +1756,7 @@ section#sortie .wrapper .pilot_nickname {
 section#sortie .wrapper .sortie_back_to_sorties {
   display: inline-block;
   color: #969696;
-  background: #4f4f4f url(../img/sortie/back_to_sorties.png) no-repeat 5% center;
+  background: #4F4F4F url(../img/sortie/back_to_sorties.png) no-repeat 5% center;
   margin-top: 10px;
   padding: 4px 10px 4px 35px;
 }
@@ -2089,7 +2089,7 @@ section#vlife .wrapper .pilot_nickname {
 section#vlife .wrapper .vlife_back_to_vlifes {
   display: inline-block;
   color: #969696;
-  background: #4f4f4f url(../img/sortie/back_to_sorties.png) no-repeat 5% center;
+  background: #4F4F4F url(../img/sortie/back_to_sorties.png) no-repeat 5% center;
   margin-top: 10px;
   padding: 4px 10px 4px 35px;
 }
@@ -2186,15 +2186,15 @@ section#vlife .wrapper .player_detailed .sub_item .name {
   text-align: left;
   padding-left: 20px;
 }
-.online_allies,
-.online_axis {
+.online_coal_1,
+.online_coal_2 {
   display: inline-block;
   width: 49%;
 }
-.online_axis {
+.online_coal_2 {
   float: right;
 }
-.online_axis .header:after {
+.online_coal_2 .header:after {
   background-color: #3166CE;
 }
 footer {

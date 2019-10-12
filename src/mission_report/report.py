@@ -3,6 +3,7 @@ from itertools import count
 import logging
 import operator
 
+from mission_report.constants import COALITION_ALIAS
 from mission_report.statuses import BotLifeStatus, SortieStatus, LifeStatus
 from mission_report.helpers import distance, point_in_polygon, is_pos_correct
 from mission_report import parse_mission_log_line
@@ -100,6 +101,10 @@ class MissionReport:
 
                     if 'country_id' in data:
                         data['coal_id'] = self.countries[data['country_id']]
+
+                    # стастистика работает только с двумя коалициями
+                    if 'coal_id' in data:
+                        data['coal_id'] = COALITION_ALIAS[data['coal_id']]
 
                     # обновление последней позиции объектов события
                     if 'pos' in data:

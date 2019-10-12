@@ -33,6 +33,7 @@ DEFAULT = {
         'win_score_min': 2000,
         'win_score_ratio': 1.5,
         'sortie_min_time': 0,
+        'skin_id': 1,
     },
     'email': {
         'send_email': False,
@@ -96,6 +97,7 @@ WIN_BY_SCORE = conf['stats'].getboolean('win_by_score')
 WIN_SCORE_MIN = conf['stats'].getint('win_score_min')
 WIN_SCORE_RATIO = conf['stats'].getfloat('win_score_ratio')
 SORTIE_MIN_TIME = conf['stats'].getint('sortie_min_time')
+SKIN_ID = conf['stats'].getint('skin_id')
 
 SEND_EMAIL = conf['email'].getboolean('send_email')
 DEFAULT_FROM_EMAIL = conf['email']['from_email']

@@ -9,3 +9,10 @@ def tours(request):
     return {
         'TOURS': OrderedDict(((tour.id, tour) for tour in Tour.objects.all().order_by('-id')))
     }
+
+
+def coalition_names(request):
+    return {
+        'COAL_1_NAME': settings.COAL_1_NAME,
+        'COAL_2_NAME': settings.COAL_2_NAME,
+    }

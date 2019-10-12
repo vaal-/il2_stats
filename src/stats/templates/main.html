@@ -186,11 +186,11 @@
                     <div class="legend_items">
                         <div class="legend_item">
                             <div class="square red"></div>
-                            {% trans 'Allies' context 'coalition' %}
+                            {{ COAL_1_NAME }}
                         </div>
                         <div class="legend_item">
                             <div class="square blue"></div>
-                            {% trans 'Axis' context 'coalition' %}
+                            {{ COAL_2_NAME }}
                         </div>
                     </div>
                 </div>
@@ -268,16 +268,16 @@
                     <div class="bar_mini" style="float: right;">
                         <div class="bar">
                             <div class="bar_grid" style="width: 50%;"></div>
-                            {% widthratio allies_online total_online 100 as width %}
+                            {% widthratio coal_1_online total_online 100 as width %}
                             <div class="bar_red" style="width: {{ width }}%;"></div>
-                            {% widthratio axis_online total_online 100 as width %}
+                            {% widthratio coal_2_online total_online 100 as width %}
                             <div class="bar_blue" style="width: {{ width }}%;"></div>
                         </div>
                         <div class="bar_red_num">
-                            {{ allies_online }}
+                            {{ coal_1_online }}
                         </div>
                         <div class="bar_blue_num">
-                            {{ axis_online }}
+                            {{ coal_2_online }}
                         </div>
                     </div>
                     <a class="online_button" href="{% url 'stats:online' %}">

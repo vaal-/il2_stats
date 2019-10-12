@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 from datetime import timedelta
 import pathlib
 
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _, pgettext_lazy
 
 BASE_DIR = pathlib.Path('.').absolute()
 
@@ -114,6 +114,7 @@ TEMPLATES = [
                 'core.context_processors.settings',
                 'core.context_processors.version',
                 'stats.context_processors.tours',
+                'stats.context_processors.coalition_names',
             ],
             # 'loaders': [
             #     'django.template.loaders.filesystem.Loader',
@@ -192,9 +193,9 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = str(BASE_DIR.parent.joinpath('static'))
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     str(BASE_DIR.joinpath('custom', 'static')),
-)
+]
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
@@ -344,6 +345,14 @@ try:
 except ImportError:
     pass
 
+if SKIN_ID == 2:
+    STATICFILES_DIRS.append(str(BASE_DIR.joinpath('skins', '2')))
+    COAL_1_NAME = pgettext_lazy('coalition', 'Entente')
+    COAL_2_NAME = pgettext_lazy('coalition', 'Central Powers')
+else:
+    STATICFILES_DIRS.append(str(BASE_DIR.joinpath('skins', '1')))
+    COAL_1_NAME = pgettext_lazy('coalition', 'Allies')
+    COAL_2_NAME = pgettext_lazy('coalition', 'Axis')
 
 if INACTIVE_PLAYER_DAYS:
     INACTIVE_PLAYER_DAYS = timedelta(days=INACTIVE_PLAYER_DAYS)

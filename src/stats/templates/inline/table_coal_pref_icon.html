@@ -1,17 +1,17 @@
 {% load i18n staticfiles tz stats %}
 {% if coal_pref == 1 %}
-    <img src="{% static 'img/icons/small/allies.png' %}" width="15" height="15"
-         title="{% trans 'Allies' context 'coalition' %}"
-         alt="{% trans 'Allies' context 'coalition' %}">
+    <img src="{% static 'img/icons/small/coal_1.png' %}" width="15" height="24"
+         title="{{ COAL_1_NAME }}"
+         alt="{{ COAL_1_NAME }}">
 {% elif coal_pref == 2 %}
-    <img src="{% static 'img/icons/small/axis.png' %}" width="15" height="15"
-         title="{% trans 'Axis' context 'coalition' %}"
-         alt="{% trans 'Axis' context 'coalition' %}">
+    <img src="{% static 'img/icons/small/coal_2.png' %}" width="15" height="24"
+         title="{{ COAL_2_NAME }}"
+         alt="{{ COAL_2_NAME }}">
 {% else %}
-    <img src="{% static 'img/icons/small/allies.png' %}" width="15" height="15"
-         title="{% trans 'Allies' context 'coalition' %}"
-         alt="{% trans 'Allies' context 'coalition' %}">
-    <img src="{% static 'img/icons/small/axis.png' %}" width="15" height="15"
-         title="{% trans 'Axis' context 'coalition' %}"
-         alt="{% trans 'Axis' context 'coalition' %}">
+    <img src="{% static 'img/icons/small/coal_1.png' %}" width="15" height="24"
+         title="{{ COAL_1_NAME }}"
+         alt="{{ COAL_1_NAME }}">
+    <img src="{% static 'img/icons/small/coal_2.png' %}" width="15" height="24"
+         title="{{ COAL_2_NAME }}"
+         alt="{{ COAL_2_NAME }}">
 {% endif %}

@@ -18,20 +18,17 @@
             <div class="profile_head">
                 <div class="head_left">
                     {% if player.coal_pref == 1 %}
-                        <img src="{% static 'img/flag/allies.png' %}" width="140" height="70" class="coal_flag"
-                             title="{% trans 'Allies' context 'coalition' %}" alt="{% trans 'Allies' context 'coalition' %}" align="left">
-                        <div class="coalition">{% trans 'favorite coalition' %}: <span>{% trans 'Allies' context 'coalition' %}</span></div>
-                        {% static 'img/icons/big/streak_allies.png' as streak_img %}
+                        <img src="{% static 'img/flag/coal_1.png' %}" width="" height="" class="coal_flag"
+                             title="{{ COAL_1_NAME }}" alt="{{ COAL_1_NAME }}" align="left">
+                        <div class="coalition">{% trans 'favorite coalition' %}: <span>{{ COAL_1_NAME }}</span></div>
                     {% elif player.coal_pref == 2 %}
-                        <img src="{% static 'img/flag/axis.png' %}" width="140" height="70" class="coal_flag"
-                             title="{% trans 'Axis' context 'coalition' %}" alt="{% trans 'Axis' context 'coalition' %}" align="left">
-                        <div class="coalition">{% trans 'favorite coalition' %}: <span>{% trans 'Axis' context 'coalition' %}</div>
-                        {% static 'img/icons/big/streak_axis.png' as streak_img %}
+                        <img src="{% static 'img/flag/coal_2.png' %}" width="" height="" class="coal_flag"
+                             title="{{ COAL_2_NAME }}" alt="{{ COAL_2_NAME }}" align="left">
+                        <div class="coalition">{% trans 'favorite coalition' %}: <span>{{ COAL_2_NAME }}</div>
                     {% else %}
-                        <img src="{% static 'img/flag/neutral.png' %}" width="140" height="70" class="coal_flag"
+                        <img src="{% static 'img/flag/neutral.png' %}" width="" height="" class="coal_flag"
                              title="{% trans 'No' context 'favorite_coalition' %}" alt="{% trans 'No' context 'favorite_coalition' %}" align="left">
                         <div class="coalition">{% trans 'favorite coalition' %}: <span>{% trans 'No' context 'favorite_coalition' %}</span></div>
-                        {% static 'img/icons/big/streak_neutral.png' as streak_img %}
                     {% endif %}
                     {% if fav_aircraft %}
                         <div class="aircraft">
@@ -48,7 +45,7 @@
                         {% if player.streak_current %}
                             {# TODO хак - переделать #}
                             {% for i in 'x'|ljust:player.streak_current %}
-                                <img src="{{ streak_img }}" width="" height="" title="" alt="">
+                                <img src="{% static 'img/icons/big/streak_neutral.png' %}" width="" height="" title="" alt="">
                             {% endfor %}
                         {% endif %}
                     </div>
@@ -502,7 +499,7 @@
                 <div class="block_wrapper">
                     {% if player.sorties_coal.1 %}
                         <div class="item">
-                            <div class="name">{% trans 'Allies' context 'coalition' %}</div>
+                            <div class="name">{{ COAL_1_NAME }}</div>
                             <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_coal.1 }}</div>
                             {% widthratio player.sorties_coal.1 player.sorties_total 100 as width %}
                             <div class="pct">{{ width|floatformat:'0' }}%</div>
@@ -513,7 +510,7 @@
                     {% endif %}
                     {% if player.sorties_coal.2 %}
                         <div class="item">
-                            <div class="name">{% trans 'Axis' context 'coalition' %}</div>
+                            <div class="name">{{ COAL_2_NAME }}</div>
                             <div class="desc">{% trans 'number of sorties' %}: {{ player.sorties_coal.2 }}</div>
                             {% widthratio player.sorties_coal.2 player.sorties_total 100 as width %}
                             <div class="pct">{{ width|floatformat:'0' }}%</div>

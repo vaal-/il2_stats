@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-31 21:12+0300\n"
+"POT-Creation-Date: 2019-10-12 22:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "clé"
 msgid "A unique name for this chunk of content"
 msgstr "Un nom unique pour ce contenu"
 
-#: .\chunks\models.py:8 .\stats\models.py:231 .\stats\models.py:1398
+#: .\chunks\models.py:8 .\stats\models.py:232 .\stats\models.py:1412
 msgid "title"
 msgstr "titre"
 
@@ -33,25 +33,47 @@ msgstr "titre"
 msgid "content"
 msgstr "contenu"
 
-#: .\core\settings.py:151
+#: .\core\settings.py:152
 msgid "English"
 msgstr "Anglais"
 
-#: .\core\settings.py:152
+#: .\core\settings.py:153
 msgid "Russian"
 msgstr "Russe"
 
-#: .\core\settings.py:153
+#: .\core\settings.py:154
 msgid "German"
 msgstr "Allemand"
 
-#: .\core\settings.py:154
+#: .\core\settings.py:155
 msgid "French"
 msgstr "Français"
 
-#: .\core\settings.py:155
+#: .\core\settings.py:156
 msgid "Spanish"
 msgstr ""
+
+#: .\core\settings.py:350
+#, fuzzy
+#| msgid "content"
+msgctxt "coalition"
+msgid "Entente"
+msgstr "contenu"
+
+#: .\core\settings.py:351
+msgctxt "coalition"
+msgid "Central Powers"
+msgstr ""
+
+#: .\core\settings.py:354
+msgctxt "coalition"
+msgid "Allies"
+msgstr "Alliés"
+
+#: .\core\settings.py:355
+msgctxt "coalition"
+msgid "Axis"
+msgstr "Axe"
 
 #: .\squads\apps.py:7
 msgid "Squads"
@@ -1863,36 +1885,6 @@ msgstr "objet"
 msgid "objects"
 msgstr "objets"
 
-#: .\stats\models.py:150 .\stats\models.py:265 .\stats\models.py:1432
-#: .\stats\templates\inline\table_coal_pref_icon.html:4
-#: .\stats\templates\inline\table_coal_pref_icon.html:5
-#: .\stats\templates\inline\table_coal_pref_icon.html:12
-#: .\stats\templates\inline\table_coal_pref_icon.html:13
-#: .\stats\templates\main.html:189 .\stats\templates\missions.html:58
-#: .\stats\templates\missions.html:59 .\stats\templates\pilot.html:22
-#: .\stats\templates\pilot.html:23 .\stats\templates\pilot.html:505
-#: .\stats\templates\squad.html:19 .\stats\templates\squad.html:20
-#: .\stats\templates\squad.html:406 .\stats\templates\squad_pilots.html:19
-#: .\stats\templates\squad_pilots.html:20 .\stats\templates\tour.html:189
-msgctxt "coalition"
-msgid "Allies"
-msgstr "Alliés"
-
-#: .\stats\models.py:151 .\stats\models.py:266 .\stats\models.py:1433
-#: .\stats\templates\inline\table_coal_pref_icon.html:8
-#: .\stats\templates\inline\table_coal_pref_icon.html:9
-#: .\stats\templates\inline\table_coal_pref_icon.html:15
-#: .\stats\templates\inline\table_coal_pref_icon.html:16
-#: .\stats\templates\main.html:193 .\stats\templates\missions.html:62
-#: .\stats\templates\missions.html:63 .\stats\templates\pilot.html:27
-#: .\stats\templates\pilot.html:28 .\stats\templates\pilot.html:516
-#: .\stats\templates\squad.html:23 .\stats\templates\squad.html:24
-#: .\stats\templates\squad.html:417 .\stats\templates\squad_pilots.html:23
-#: .\stats\templates\squad_pilots.html:24 .\stats\templates\tour.html:193
-msgctxt "coalition"
-msgid "Axis"
-msgstr "Axe"
-
 #: .\stats\models.py:158
 msgid "tour"
 msgstr "campagne"
@@ -1901,173 +1893,199 @@ msgstr "campagne"
 msgid "tours"
 msgstr "campagnes"
 
-#: .\stats\models.py:276
+#: .\stats\models.py:277
 msgctxt "preset"
 msgid "custom"
 msgstr "personnalisé"
 
-#: .\stats\models.py:277
+#: .\stats\models.py:278
 msgctxt "preset"
 msgid "normal"
 msgstr "normal"
 
-#: .\stats\models.py:278
+#: .\stats\models.py:279
 msgctxt "preset"
 msgid "expert"
 msgstr "expert"
 
-#: .\stats\models.py:331
+#: .\stats\models.py:334
 msgid "profile"
 msgstr "profil"
 
-#: .\stats\models.py:332
+#: .\stats\models.py:335
 msgid "profiles"
 msgstr "profils"
 
-#: .\stats\models.py:378 .\stats\models.py:581 .\stats\models.py:811
-#: .\stats\models.py:1021 .\stats\models.py:1027 .\stats\models.py:1245
+#: .\stats\models.py:381 .\stats\models.py:584 .\stats\models.py:814
+#: .\stats\models.py:1024 .\stats\models.py:1030 .\stats\models.py:1259
 msgid "neutral"
 msgstr "neutre"
 
-#: .\stats\models.py:379 .\stats\models.py:582 .\stats\models.py:812
-#: .\stats\models.py:1022 .\stats\models.py:1246
-msgid "Allies"
-msgstr "Alliés"
-
-#: .\stats\models.py:380 .\stats\models.py:583 .\stats\models.py:813
-#: .\stats\models.py:1023 .\stats\models.py:1247
-msgid "Axis"
-msgstr "Axe"
-
-#: .\stats\models.py:849 .\stats\models.py:1045
+#: .\stats\models.py:852 .\stats\models.py:1059
 msgctxt "sortie_status"
 msgid "landed"
 msgstr "posé"
 
-#: .\stats\models.py:850 .\stats\models.py:1046
+#: .\stats\models.py:853 .\stats\models.py:1060
 msgctxt "sortie_status"
 msgid "ditched"
 msgstr "posé en catastrophe"
 
-#: .\stats\models.py:851 .\stats\models.py:1047
+#: .\stats\models.py:854 .\stats\models.py:1061
 msgctxt "sortie_status"
 msgid "crashed"
 msgstr "crashé"
 
-#: .\stats\models.py:852 .\stats\models.py:1048
+#: .\stats\models.py:855 .\stats\models.py:1062
 msgctxt "sortie_status"
 msgid "shotdown"
 msgstr "abattu"
 
-#: .\stats\models.py:853 .\stats\models.py:1049
+#: .\stats\models.py:856 .\stats\models.py:1063
 msgctxt "sortie_status"
 msgid "not takeoff"
 msgstr "pas décollé"
 
-#: .\stats\models.py:854 .\stats\models.py:1050
+#: .\stats\models.py:857 .\stats\models.py:1064
 msgctxt "sortie_status"
 msgid "in flight"
 msgstr "en vol"
 
-#: .\stats\models.py:860 .\stats\models.py:1056
+#: .\stats\models.py:863 .\stats\models.py:1070
 msgctxt "aircraft_status"
 msgid "unharmed"
 msgstr "intact"
 
-#: .\stats\models.py:861 .\stats\models.py:1057
+#: .\stats\models.py:864 .\stats\models.py:1071
 msgctxt "aircraft_status"
 msgid "damaged"
 msgstr "endommagé"
 
-#: .\stats\models.py:862 .\stats\models.py:1058
+#: .\stats\models.py:865 .\stats\models.py:1072
 msgctxt "aircraft_status"
 msgid "destroyed"
 msgstr "détruit"
 
-#: .\stats\models.py:868 .\stats\models.py:1064
+#: .\stats\models.py:871 .\stats\models.py:1078
 msgctxt "sortie_status"
 msgid "healthy"
 msgstr "en bonne santé"
 
-#: .\stats\models.py:869 .\stats\models.py:1065
+#: .\stats\models.py:872 .\stats\models.py:1079
 msgctxt "sortie_status"
 msgid "wounded"
 msgstr "blessé"
 
-#: .\stats\models.py:870 .\stats\models.py:1066
+#: .\stats\models.py:873 .\stats\models.py:1080
 msgctxt "sortie_status"
 msgid "dead"
 msgstr "tué"
 
-#: .\stats\models.py:1028
+#: .\stats\models.py:1031
 msgid "USSR"
 msgstr "URSS"
 
-#: .\stats\models.py:1029
+#: .\stats\models.py:1032 .\stats\models.py:1038
+msgid "Great Britain"
+msgstr ""
+
+#: .\stats\models.py:1033 .\stats\models.py:1039
+msgid "USA"
+msgstr ""
+
+#: .\stats\models.py:1034 .\stats\models.py:1042
 msgid "Germany"
 msgstr "Allemagne"
 
-#: .\stats\models.py:1392
+#: .\stats\models.py:1035
+msgid "Italy"
+msgstr ""
+
+#: .\stats\models.py:1036
+msgid "Japan"
+msgstr ""
+
+#: .\stats\models.py:1037
+#, fuzzy
+#| msgid "French"
+msgid "France"
+msgstr "Français"
+
+#: .\stats\models.py:1040
+msgid "Belgium"
+msgstr ""
+
+#: .\stats\models.py:1041
+#, fuzzy
+#| msgid "Russian"
+msgid "Russia"
+msgstr "Russe"
+
+#: .\stats\models.py:1043
+msgid "Austria-Hungary"
+msgstr ""
+
+#: .\stats\models.py:1406
 msgctxt "award_type"
 msgid "tour"
 msgstr "campagne"
 
-#: .\stats\models.py:1393
+#: .\stats\models.py:1407
 msgctxt "award_type"
 msgid "mission"
 msgstr "mission"
 
-#: .\stats\models.py:1394
+#: .\stats\models.py:1408
 msgctxt "award_type"
 msgid "sortie"
 msgstr "sortie"
 
-#: .\stats\models.py:1395
+#: .\stats\models.py:1409
 msgctxt "award_type"
 msgid "vlife"
 msgstr ""
 
-#: .\stats\models.py:1397
+#: .\stats\models.py:1411
 msgid "function name"
 msgstr "nom de fonction"
 
-#: .\stats\models.py:1399
+#: .\stats\models.py:1413
 msgid "type"
 msgstr "type"
 
-#: .\stats\models.py:1400
+#: .\stats\models.py:1414
 msgid "description"
 msgstr "description"
 
-#: .\stats\models.py:1401
+#: .\stats\models.py:1415
 msgid "image"
 msgstr "image"
 
-#: .\stats\models.py:1402
+#: .\stats\models.py:1416
 msgid "Image size should be 180x180"
 msgstr "La taille de l'image doit être de 180x180"
 
-#: .\stats\models.py:1406
+#: .\stats\models.py:1420
 msgid "award"
 msgstr "médaille"
 
-#: .\stats\models.py:1407
+#: .\stats\models.py:1421
 msgid "awards"
 msgstr "médailles"
 
-#: .\stats\models.py:1421
+#: .\stats\models.py:1435
 msgid "reward"
 msgstr "récompense"
 
-#: .\stats\models.py:1422
+#: .\stats\models.py:1436
 msgid "rewards"
 msgstr "récompenses"
 
-#: .\stats\models.py:1441
+#: .\stats\models.py:1455
 msgid "player online"
 msgstr "joueur en ligne"
 
-#: .\stats\models.py:1442
+#: .\stats\models.py:1456
 msgid "players online"
 msgstr "joueurs en ligne"
 
@@ -2538,14 +2556,6 @@ msgstr "Durée (heures:minutes)"
 #: .\stats\templates\online.html:13
 msgid "Pilots on the server"
 msgstr "Pilotes sur le serveur"
-
-#: .\stats\templates\online.html:21
-msgid "Allied Pilots"
-msgstr "Pilotes Alliés"
-
-#: .\stats\templates\online.html:36
-msgid "Axis Pilots"
-msgstr "Pilotes de l'Axe"
 
 #: .\stats\templates\pilot.html:23 .\stats\templates\pilot.html:28
 #: .\stats\templates\pilot.html:33 .\stats\templates\squad.html:20
@@ -3779,6 +3789,18 @@ msgstr ""
 #: .\users\views.py:165
 msgid "Profile successfully changed."
 msgstr "Profil édité avec succès."
+
+#~ msgid "Allies"
+#~ msgstr "Alliés"
+
+#~ msgid "Axis"
+#~ msgstr "Axe"
+
+#~ msgid "Allied Pilots"
+#~ msgstr "Pilotes Alliés"
+
+#~ msgid "Axis Pilots"
+#~ msgstr "Pilotes de l'Axe"
 
 #, fuzzy
 #~| msgid "active"

@@ -6,8 +6,7 @@ from django.http import Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 
-from mission_report.constants import Coalition, Country
-from squads.models import Squad as SquadProfile
+from mission_report.constants import Coalition
 
 from .helpers import Paginator, get_sort_by, redirect_fix_url
 from .models import (Player, Mission, PlayerMission, PlayerAircraft, Sortie, KillboardPvP,
@@ -348,9 +347,9 @@ def main(request):
     else:
         previous_tour_top = None
 
-    allies_online = PlayerOnline.objects.filter(coalition=Coalition.Allies).count()
-    axis_online = PlayerOnline.objects.filter(coalition=Coalition.Axis).count()
-    total_online = allies_online + axis_online
+    coal_1_online = PlayerOnline.objects.filter(coalition=Coalition.coal_1).count()
+    coal_2_online = PlayerOnline.objects.filter(coalition=Coalition.coal_2).count()
+    total_online = coal_1_online + coal_2_online
 
     return render(request, 'main.html', {
         'tour': request.tour,
@@ -365,8 +364,8 @@ def main(request):
         'previous_tour': previous_tour,
         'previous_tour_top': previous_tour_top,
         'total_online': total_online,
-        'allies_online': allies_online,
-        'axis_online': axis_online,
+        'coal_1_online': coal_1_online,
+        'coal_2_online': coal_2_online,
     })
 
 
@@ -402,20 +401,20 @@ def tour(request):
 
 
 def online(request):
-    players_allies = PlayerOnline.objects.filter(coalition=Coalition.Allies).order_by('nickname')
-    players_axis = PlayerOnline.objects.filter(coalition=Coalition.Axis).order_by('nickname')
+    players_coal_1 = PlayerOnline.objects.filter(coalition=Coalition.coal_1).order_by('nickname')
+    players_coal_2 = PlayerOnline.objects.filter(coalition=Coalition.coal_2).order_by('nickname')
 
-    total_allies = len(players_allies)
-    total_axis = len(players_axis)
-    total_players = total_allies + total_axis
+    total_coal_1 = len(players_coal_1)
+    total_coal_2 = len(players_coal_2)
+    total_players = total_coal_1 + total_coal_2
 
     return render(request, 'online.html', {
         'tour': request.tour,
-        'players_allies': players_allies,
-        'players_axis': players_axis,
+        'players_coal_1': players_coal_1,
+        'players_coal_2': players_coal_2,
         'total_players': total_players,
-        'total_allies': total_allies,
-        'total_axis': total_axis,
+        'total_coal_1': total_coal_1,
+        'total_coal_2': total_coal_2,
     })
 
 

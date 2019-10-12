@@ -16,13 +16,13 @@
 
             <div class="online_players">
 
-                <div class="online_allies">
+                <div class="online_coal_1">
                     <div class="header">
-                        {% trans 'Allied Pilots' %}: {{ total_allies }}
+                        {{ COAL_1_NAME }}: {{ total_coal_1 }}
                     </div>
 
                     <div class="content_table">
-                        {% for op in players_allies %}
+                        {% for op in players_coal_1 %}
                             <a class="row" {% if op.profile_id %}href="{% url 'stats:pilot' op.profile_id op.nickname %}"{% endif %}>
                                 <div class="cell">{{ op.nickname }}</div>
                             </a>
@@ -31,13 +31,13 @@
 
                 </div>
 
-                <div class="online_axis">
+                <div class="online_coal_2">
                     <div class="header">
-                        {% trans 'Axis Pilots' %}: {{ total_axis }}
+                        {{ COAL_2_NAME }}: {{ total_coal_2 }}
                     </div>
 
                     <div class="content_table">
-                        {% for op in players_axis %}
+                        {% for op in players_coal_2 %}
                             <a class="row" {% if op.profile_id %}href="{% url 'stats:pilot' op.profile_id op.nickname %}"{% endif %}>
                                 <div class="cell">{{ op.nickname }}</div>
                             </a>

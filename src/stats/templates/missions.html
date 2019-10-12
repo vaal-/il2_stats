@@ -54,23 +54,23 @@
                             <div class="cell">{{ mission.pilots_total }}</div>
                             <div class="cell img">
                                 {% if mission.winning_coalition == 1 %}
-                                    <img src="{% static 'img/icons/small/allies.png' %}" width="15" height="15"
-                                         title="{% trans 'Allies' context 'coalition' %}"
-                                         alt="{% trans 'Allies' context 'coalition' %}">
+                                    <img src="{% static 'img/icons/small/coal_1.png' %}" width="15" height="24"
+                                         title="{{ COAL_1_NAME }}"
+                                         alt="{{ COAL_1_NAME }}">
                                 {% elif mission.winning_coalition == 2 %}
-                                    <img src="{% static 'img/icons/small/axis.png' %}" width="15" height="15"
-                                         title="{% trans 'Axis' context 'coalition' %}"
-                                         alt="{% trans 'Axis' context 'coalition' %}">
+                                    <img src="{% static 'img/icons/small/coal_2.png' %}" width="15" height="24"
+                                         title="{{ COAL_2_NAME }}"
+                                         alt="{{ COAL_2_NAME }}">
                                 {% endif %}
                                 {% if mission.winning_coalition %}
                                     {% if mission.win_reason == 'task' %}
                                         <img src="{% static 'img/icons/small/win_reason_task.png' %}" width="15" height="15"
-                                             style="margin-left: 10px;"
+                                             style="margin-left: 10px; margin-bottom: 4px;"
                                              title="{% trans 'Performed the task of the mission' %}"
                                              alt="{% trans 'Performed the task of the mission' %}">
                                     {% elif mission.win_reason == 'score' %}
                                         <img src="{% static 'img/icons/small/win_reason_score.png' %}" width="15" height="15"
-                                             style="margin-left: 10px;"
+                                             style="margin-left: 10px; margin-bottom: 4px;"
                                              title="{% trans 'Won by score' %}"
                                              alt="{% trans 'Won by score' %}">
                                     {% endif %}
