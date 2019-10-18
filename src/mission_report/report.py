@@ -249,8 +249,10 @@ class MissionReport:
         target = self.get_object(object_id=target_id)
         # дамага может не быть из-за бага логов
         if target and damage:
-            # в логах дамаг может прийти на игрока который уже завершил вылет
-            if target.sortie and target.sortie.is_ended_by_timeout(timeout=120, tik=tik):
+            # таймаут для парашютистов
+            if target.sortie and target.is_crew() and target.sortie.is_ended_by_timeout(timeout=120, tik=tik):
+                return
+            if target.sortie and not target.is_crew() and target.sortie.is_ended:
                 return
             target.got_damaged(damage=damage, attacker=attacker, pos=pos)
 
@@ -259,8 +261,10 @@ class MissionReport:
         # потому что в логах так бывает что кто-то умер, а кто не известно :)
         target = self.get_object(object_id=target_id)
         if target:
-            # в логах килл может прийти на игрока который уже завершил вылет
-            if target.sortie and target.sortie.is_ended_by_timeout(timeout=120, tik=tik):
+            # таймаут для парашютистов
+            if target.sortie and target.is_crew() and target.sortie.is_ended_by_timeout(timeout=120, tik=tik):
+                return
+            if target.sortie and not target.is_crew() and target.sortie.is_ended:
                 return
             target.got_killed(attacker=attacker, pos=pos)
             if target.sortie:
@@ -593,17 +597,18 @@ class Object:
         :type damage: int | float
         :type attacker: Object | None
         """
-        if not self.life_status.is_destroyed:
-            self.life_status.damage()
-            self.damage += damage
-            # если атакуем сами себя - убираем прямое упоминание об этом
-            if self.is_attack_itself(attacker=attacker):
-                attacker = None
-            if attacker:
-                self.damagers[attacker] += damage
-            is_friendly_fire = True if attacker and attacker.coal_id == self.coal_id else False
-            self.mission.logger_event({'type': 'damage', 'damage': damage, 'pos': pos, 'attacker': attacker,
-                                       'target': self, 'is_friendly_fire': is_friendly_fire})
+        if self.life_status.is_destroyed:
+            return
+        self.life_status.damage()
+        self.damage += damage
+        # если атакуем сами себя - убираем прямое упоминание об этом
+        if self.is_attack_itself(attacker=attacker):
+            attacker = None
+        if attacker:
+            self.damagers[attacker] += damage
+        is_friendly_fire = True if attacker and attacker.coal_id == self.coal_id else False
+        self.mission.logger_event({'type': 'damage', 'damage': damage, 'pos': pos, 'attacker': attacker,
+                                   'target': self, 'is_friendly_fire': is_friendly_fire})
 
     def got_killed(self, attacker=None, pos=None, force_by_dmg=False):
         """
@@ -693,6 +698,9 @@ class Object:
             if attacker.sortie and self.sortie and attacker.sortie == self.sortie:
                 return True
         return False
+
+    def is_crew(self):
+        return self.cls_base == 'crew'
 
 
 class Sortie:
