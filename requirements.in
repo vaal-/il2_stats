@@ -7,7 +7,7 @@ dj-static==0.0.6
 Django==1.11.18
 django-modeltranslation==0.12.2
 filelock==3.0.10
-Pillow==5.4.1
+Pillow==6.2.0
 psycopg2==2.7.6.1
 pytz==2018.9
 six==1.11.0
