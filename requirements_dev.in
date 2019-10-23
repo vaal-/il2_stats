@@ -1,6 +1,6 @@
-Django==1.11.18
+Django==1.11.25
 coverage
-django-debug-toolbar==1.11
+django-debug-toolbar==2.0
 django-rosetta
 pytest
 pytest-cov
@@ -8,4 +8,4 @@ pytest-django
 pytest-mock
 django-rosetta
 pympler
-pytz==2018.9
+pytz==2019.3
