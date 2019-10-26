@@ -68,6 +68,7 @@ class Object(models.Model):
         ('aaa_heavy', 'aaa_heavy'),
         ('aaa_light', 'aaa_light'),
         ('aaa_mg', 'aaa_mg'),
+        ('aerostat', 'aerostat'),
         ('aircraft_gunner', 'aircraft_gunner'),
         ('aircraft_heavy', 'aircraft_heavy'),
         ('aircraft_light', 'aircraft_light'),

@@ -7,17 +7,25 @@ aaa_light,61-K,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,61-K ship turret,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,61-K turret,0,61-K AAA gun,зенитное орудие 61-K
 aaa_light,61-K turret 1124,0,61-K AAA gun,зенитное орудие 61-K
+aaa_light,7.7 cm FlaK L/27,0,,
+aaa_light,7.7 cm FlaK L/27 turret,0,,
 aaa_light,72-K,0,72-К AAA gun,зенитная пушка 72-К
+aaa_light,Daimler M1914 FlaK 77/L27,0,,
 aaa_light,Flak 38,0,Flak 38 AAA gun,зенитное орудие Flak 38
 aaa_light,Flak 38 turret,0,Flak 38 AAA gun,зенитное орудие Flak 38
 aaa_light,M16 Half-Track,0,,
+aaa_light,QF 13 pounder 6 cwt,0,,
+aaa_light,QF 13 pounder 6 cwt turret,0,,
 aaa_light,Sd Kfz 10 Flak 38,0,Sd Kfz 10 APC with Flak 38 AAA gun,самоходное зенитное орудие Flak 38
+aaa_light,Thornycroft J-type 13pdr AA,0,,
 aaa_light,US Landlight,0,,
 aaa_light,US Searchlight,0,,
 aaa_light,US Searchlight Generator,0,,
 aaa_light,ZiS-5 72-K,0,ZiS-5 72-K AAA gun,самоходная зенитная пушка 72-К
 aaa_mg,DShK-AA,0,DShK AA machinegun,зенитный пулемёт ДШК
 aaa_mg,GAZ-AA M4,0,GAZ-AA truck with M4 AAA machinegun,самоходный зенитный пулемёт Максим
+aaa_mg,Hotchkiss Mle 14 AA,0,,
+aaa_mg,Hotchkiss Mle 14 AA turret,0,,
 aaa_mg,M2.50 AA,0,M2.50 AA machinegun,зенитный пулемёт M2.50
 aaa_mg,M4,0,M4 AAA machinegun,зенитный пулемёт Максим
 aaa_mg,M4 turret,0,M4 AAA machinegun,зенитный пулемёт Максим
@@ -25,6 +33,12 @@ aaa_mg,MG 34 AA,0,MG-34 AA machinegun,зенитный пулемёт MG-34
 aaa_mg,MG 34 AA turret,0,MG-34 AA machinegun,зенитный пулемёт MG-34
 aaa_mg,MG-34 AA,0,MG-34 AA machinegun,зенитный пулемёт MG-34
 aaa_mg,MG-34 AA turret,0,MG-34 AA machinegun,зенитный пулемёт MG-34
+aaa_mg,Spandau MG 08 AA,0,,
+aaa_mg,Spandau MG 08 AA turret,0,,
+aerostat,AeType,0,,
+aerostat,Caquot,0,,
+aerostat,Drachen,0,,
+aerostat,Parseval,0,,
 aircraft_gunner,BotGunner,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Bbtm,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Btop,1,Aircraft gunner,стрелок
@@ -147,6 +161,8 @@ aircraft_pilot,BotPilot_Spit9,1,pilot,пилот
 aircraft_pilot,BotPilot_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_Fra,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_Ger,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
@@ -316,6 +332,11 @@ armoured_vehicle,BA-10M,0,BA-10M armored car,БА-10М
 armoured_vehicle,BA-64,0,BA-64 armored car,БА-64
 armoured_vehicle,Sd Kfz 251-1 Ausf.C,0,Sd Kfz 251-1 Ausf.C APC,бронетранспортёр Sd Kfz 251-1 Ausf.C
 artillery_field,53-K,0,53-К gun,орудие 53-К
+artillery_field,7.7 cm FK 96 n.A.,0,,
+artillery_field,7.7 cm FK 96 n.A. cart,0,,
+artillery_field,Canon de 75 mle 1897,0,,
+artillery_field,Canon de 75 mle 1897 cart A,0,,
+artillery_field,Canon de 75 mle 1897 cart B,0,,
 artillery_field,M-30,0,M-30 gun,гаубица М-30
 artillery_field,M-42,0,M-42 gun,ПТ М-42
 artillery_field,Pak 35-36,0,Pak 35/36 gun,ПТ орудие Pak 35/36
@@ -327,6 +348,8 @@ artillery_howitzer,155 mm Howitzer M1,0,,
 artillery_howitzer,B-24 turret,0,B-24 naval gun,орудие Б-24
 artillery_howitzer,leFH 18,0,leFH 18 howitzer,гаубица Lefh18
 artillery_howitzer,ML-20,0,ML-20 howitzer,гаубица МЛ-20
+artillery_howitzer,QF 4.5-inch howitzer,0,,
+artillery_howitzer,QF 4.5-inch howitzer cart,0,,
 artillery_rocket,BM-13 turret,0,BM-13 MRLS,РСЗО БМ-13
 artillery_rocket,Sd Kfz 251 Wurfrahmen 40,0,Sd Kfz 251 Wurfrahmen 40 MRLS,РСЗО Wurframen 40
 artillery_rocket,ZiS-6 BM-13,0,BM-13 MRLS,РСЗО БМ-13
@@ -478,8 +501,10 @@ bullet,SHELL_USA_37x145_AP,0,,
 bullet,SHELL_USA_37x145_HE,0,,
 bullet,SHELL_USA_76_CV,0,,
 bullet,SHELL_USA_76_HE,0,,
+car,Crossley T5,0,,
 car,GAZ-M,0,GAZ-M car,автомобиль ГАЗ-М
 car,Horch 830,0,Horch 830 car,автомобиль Horch
+car,Mercedes Kettenwagen 22,0,,
 car,Willys MB,0,,
 explosion,BombFallEffect,0,,
 explosion,BombFallEffect,0,,
@@ -563,6 +588,7 @@ explosion,tnt1g_frag30g_HE_expl_water,0,,
 explosion,tnt1kg_frag13kg_HE_expl_ground,0,,
 explosion,tnt1kg_frag13kg_HE_expl_metal,0,,
 explosion,tnt1kg_frag13kg_HE_expl_water,0,,
+explosion,tnt1kg_frag6kg_HE_expl_air,0,,
 explosion,tnt1kg_frag6kg_HE_expl_ground,0,,
 explosion,tnt1kg_frag6kg_HE_expl_metal,0,,
 explosion,tnt1kg_frag6kg_HE_expl_water,0,,
@@ -788,8 +814,10 @@ locomotive,Locomotive_E,0,E locomotive,локомотив Е
 locomotive,Locomotive_G8,0,G8 locomotive,локомотив G8
 machine_gunner,DShK,0,DShK machinegun,пулемёт ДШК
 machine_gunner,DShK Twin turret,0,DShK twin machinegun,сдвоенный пулемёт ДШК
+machine_gunner,Hotchkiss Mle 14,0,,
 machine_gunner,M2.50,0,M2.50 machinegun,пулемёт M2.50
 machine_gunner,MG 34,0,MG 34 machinegun,пулемёт MG-34
+machine_gunner,Spandau MG 08,0,,
 parachute,CParachute,0,Parachute,Парашют
 rocket,NPC_TORPEDO_53-38,0,,
 rocket,NPC_TORPEDO_G7a-53,0,G7a,G7a
@@ -812,8 +840,10 @@ rocket,RKT_RUS_ROS82_600,0,ROS-82,РОС-82
 rocket,RKT_RUS_ROS82_800,0,ROS-82,РОС-82
 rocket,RKT_USA_M8,0,,
 rocket,Rocket 280 mm HE,0,,
+searchlight,British Searchlight 1914,0,searchlight,зенитный прожектор
 searchlight,German Landlight,0,landlight,посадочный прожектор
 searchlight,German Searchlight,0,landlight,посадочный прожектор
+searchlight,German Searchlight 1914,0,searchlight,зенитный прожектор
 searchlight,Landlight,0,landlight,посадочный прожектор
 searchlight,Searchlight,0,searchlight,зенитный прожектор
 searchlight,Soviet Landlight,0,searchlight,зенитный прожектор
@@ -868,10 +898,14 @@ shell,SHELL_USA_75_AP,0,,
 shell,SHELL_USA_75_CV,0,,
 shell,SHELL_USA_75_HE,0,,
 ship_heavy,Destroyer Type 7,0,Soviet Type 7 destroyer,Советский эсминец Тип 7
+ship_light,British AAA Peniche,0,,
+ship_light,German AAA Peniche,0,,
 ship_light,Gun Boat 1124 AAA,0,Gunboat 1124 AAA,Бронекатер 1124
 ship_light,Gun Boat 1124 MRLS,0,Gunboat 1124 MRLS,Бронекатер 1124 с РСЗО
 ship_light,Gun Ship type A,0,Gunboat,Вооружённый буксир
 ship_light,Landing Boat type A,0,Marinefährprahm Typ A,Десантная баржка Type A
+ship_light,Peniche type A,0,,
+ship_light,Peniche type B,0,,
 ship_light,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
 ship_light,Torpedo Boat G-5 series 11-bis 213,0,Rocket Boat G-5 series 11-bis 213,Торпедный катер типа Г-5 XI-бис (проект 213)
 ship_light,Torpedo Boat type S-38,0,Schnellboot S-38,Торпедный катер типа S-38
@@ -890,7 +924,9 @@ tank_heavy,KV-1-41,0,KV-1 1941,КВ-1 обр. 1941
 tank_heavy,KV-1-42,0,KV-1 1942,КВ-1 обр. 1942
 tank_heavy,KV-1s,1,KV-1s,КВ-1С
 tank_heavy,KV-1s ChTZ(1943),1,KV-1s ChTZ (1943),КВ-1С ЧТЗ 1943
+tank_heavy,Mark V (male),0,,
 tank_heavy,Pz.Kpfw.VI Ausf.H1,1,Pz.Kpfw.VI Ausf.H1,
+tank_heavy,Sturmpanzerwagen A7V,0,,
 tank_light,BT-7M,0,BT-7M,БТ-7М
 tank_light,Marder III Ausf. H,0,SPG Marder III Ausf. H,
 tank_light,PzKpfw 38(t),0,Pz.Kpfw.38(t),
@@ -934,10 +970,13 @@ tank_turret,_PzVI-H1_T0,1,turret Pz.Kpfw.VI Ausf.H1,башня Pz.Kpfw.VI Ausf.H
 tank_turret,_PzVI-H1_T1,1,,
 tank_turret,_PzVI-H1_T2,1,,
 tank_turret,_PzVI-H1_T3,1,,
+tank_turret,_SU122_T0,1,,
+tank_turret,_SU122_T2,1,,
 tank_turret,_T34-76UVZ-43_T0,1,,
 tank_turret,_T34-76UVZ-43_T1,1,,
 tank_turret,_T34-76UVZ-43_T2,1,,
 tank_turret,_T34-76UVZ-43_T3,1,,
+tank_turret,TankTurret,0,,
 tank_turret,Turret_PzIII-L,1,turret PzKpfw III Ausf.L,башня PzKpfw III Ausf.L
 tank_turret,Turret_PzIII-M,1,,
 tank_turret,Turret_PzIII-M,1,,
@@ -945,8 +984,12 @@ tank_turret,Turret_PzIV-G,1,,
 tank_turret,Turret_T34-76STZ,1,turret T-34-76 STZ,башня Т-34 СТЗ
 trash,_KV1S_T0_sight1,0,,
 trash,_KV1S_T0_sight2,0,,
+trash,_SU122_T3,0,,
+trash,_SU122_T4,0,,
 trash,A20B_P2,0,,
 trash,abbayesaintvaast,0,,
+trash,Aerostat controller AI,0,,
+trash,AeType_P2,0,,
 trash,AI Point of Interest,0,,
 trash,Aiming Bot's head,0,,
 trash,Airfield,0,,
@@ -1023,6 +1066,7 @@ trash,CameraOperator,0,,
 trash,camptent1,0,,
 trash,camptent2,0,,
 trash,CappyChateau,0,,
+trash,Caquot_P2,0,,
 trash,cart,0,,
 trash,CBanner,0,,
 trash,CBatchTrash,0,,
@@ -1113,6 +1157,7 @@ trash,dot5,0,,
 trash,dot6,0,,
 trash,dottent1,0,,
 trash,dottent2,0,,
+trash,Drachen_P2,0,,
 trash,EjectionPlace,0,,
 trash,EjectionPlace controller AI,0,,
 trash,EjectorController,0,,
@@ -1162,6 +1207,7 @@ trash,OKT_07,0,,
 trash,OKT_08,0,,
 trash,operadelille,0,,
 trash,ParatroopersCreator_Ju52,0,,
+trash,Parseval_P2,0,,
 trash,Plane controller,0,,
 trash,Plane controller AI,0,,
 trash,portedeparis,0,,
@@ -1268,6 +1314,8 @@ trash,tent1,0,,
 trash,tentcart,0,,
 trash,Terrain,0,,
 trash,test_bridge_1,0,,
+trash,TestTank,0,,
+trash,TestTankPlates,0,,
 trash,tonnel,0,,
 trash,town_block_01_480x420,0,,
 trash,town_block_02_480x280,0,,
@@ -1547,9 +1595,11 @@ trash,Watertower_eu_2,0,,
 trash,Windmill1_eu_1,0,,
 trash,Windmill1_eu_2,0,,
 trash,Windsock,0,,
+truck,Benz LKW 1912,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,GMC CCKW 353,0,GMC CCKW truck,грузовик GMC CCKW
+truck,Leyland 3 Ton RAF,0,,
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
 truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
 vehicle_crew,BotBoatSwain,0,boatswain,боцман
@@ -1566,6 +1616,8 @@ vehicle_crew,BotGunner_T34,0,gunner,стрелок-наводчик
 vehicle_crew,BotGunnerHowitzer,0,gunner,стрелок-наводчик
 vehicle_crew,BotLoader_Pz6H1,0,loader,
 vehicle_crew,BotMachinist0,0,machinist,машинист
+vehicle_crew,BotPilotBalloon_Fra,0,pilot balloon,
+vehicle_crew,BotPilotBalloon_Ger,0,pilot balloon,
 vehicle_crew,BotRadist_Pz6H1,0,radist,
 vehicle_crew,BotTankKV1_Commander,0,commander,
 vehicle_crew,BotTankKV1_Driver,0,driver,водитель

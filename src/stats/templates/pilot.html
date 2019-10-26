@@ -246,6 +246,13 @@
                 </div>
                 {% endif %}
 
+                {% if player.killboard_pve.aerostat %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Aerostats' context 'total' %}</div>
+                    <div class="num">{{ player.killboard_pve.aerostat }}</div>
+                </div>
+                {% endif %}
+
                 {% if player.killboard_pve.searchlight %}
                 <div class="sub_item">
                     <div class="name">{% trans 'Searchlights' context 'total' %}</div>

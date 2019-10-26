@@ -2,6 +2,7 @@ key,value,type
 aaa_heavy,30,int
 aaa_light,30,int
 aaa_mg,30,int
+aerostat,15,int
 aircraft_gunner,0,int
 aircraft_heavy,200,int
 aircraft_light,100,int

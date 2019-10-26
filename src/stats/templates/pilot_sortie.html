@@ -405,6 +405,20 @@
                     </div>
                 {% endif %}
 
+                {% if sortie.killboard_pve.aerostat %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Aerostats' context 'total' %}
+                            <span>{{ sortie.killboard_pve.aerostat }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.aerostat }}
+                            &times;
+                            {{ score_dict.aerostat }}
+                        </div>
+                    </div>
+                {% endif %}
+
                 {% if sortie.killboard_pve.searchlight %}
                     <div class="sub_row">
                         <div class="left">
