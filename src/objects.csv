@@ -925,6 +925,7 @@ tank_heavy,KV-1-42,0,KV-1 1942,КВ-1 обр. 1942
 tank_heavy,KV-1s,1,KV-1s,КВ-1С
 tank_heavy,KV-1s ChTZ(1943),1,KV-1s ChTZ (1943),КВ-1С ЧТЗ 1943
 tank_heavy,Mark V (male),0,,
+tank_heavy,Pz.Kpfw.VI Ausf.H,1,Pz.Kpfw.VI Ausf.H,
 tank_heavy,Pz.Kpfw.VI Ausf.H1,1,Pz.Kpfw.VI Ausf.H1,
 tank_heavy,Sturmpanzerwagen A7V,0,,
 tank_light,BT-7M,0,BT-7M,БТ-7М
@@ -1197,6 +1198,7 @@ trash,mg_position,0,,
 trash,millitarytower1,0,,
 trash,MouseControlCameraOperator,0,,
 trash,noname,0,,
+trash,notredamedamiens,0,,
 trash,OKT_01,0,,
 trash,OKT_02,0,,
 trash,OKT_03,0,,
@@ -1618,6 +1620,8 @@ vehicle_crew,BotLoader_Pz6H1,0,loader,
 vehicle_crew,BotMachinist0,0,machinist,машинист
 vehicle_crew,BotPilotBalloon_Fra,0,pilot balloon,
 vehicle_crew,BotPilotBalloon_Ger,0,pilot balloon,
+vehicle_crew,BotPilotBalloonNPC_Fra,0,pilot balloon,
+vehicle_crew,BotPilotBalloonNPC_Ger,0,pilot balloon,
 vehicle_crew,BotRadist_Pz6H1,0,radist,
 vehicle_crew,BotTankKV1_Commander,0,commander,
 vehicle_crew,BotTankKV1_Driver,0,driver,водитель
@@ -1654,6 +1658,7 @@ vehicle_crew,BotTankT34UVZ43_Gunner,0,gunner,
 vehicle_crew,BotTankT34UVZ43_Loader,0,loader,
 vehicle_crew,BotTankT34UVZ43_Radist,0,radist,
 vehicle_crew,ParatrooperGER,0,paratrooper,десантник
+vehicle_static,15 cm schwere Feldhaubitze 13,0,,
 vehicle_static,Flakvierling 38,0,,
 vehicle_static,M5 3-inch gun,0,,
 vehicle_static,static_BM13,0,tank,танк
@@ -1666,6 +1671,7 @@ vehicle_static,static_G8,0,tank,танк
 vehicle_static,static_G8T,0,tank,танк
 vehicle_static,static_gaz-m,0,tank,танк
 vehicle_static,static_gazAA,0,tank,танк
+vehicle_static,static_GMC-CCKW,0,,
 vehicle_static,static_Horch830,0,tank,танк
 vehicle_static,static_kv1-41,0,tank,танк
 vehicle_static,static_opel,0,truck,грузовик
