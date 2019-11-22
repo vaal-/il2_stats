@@ -78,6 +78,9 @@ aircraft_gunner,BotGunner_Pe2s87rear,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm_RAF,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd_RAF,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop_RAF,1,Aircraft gunner,стрелок
 aircraft_heavy,A-20B,1,,
 aircraft_heavy,B-25D,0,,
 aircraft_heavy,B-25D (RAF),0,,
@@ -166,6 +169,9 @@ aircraft_pilot,BotPilotNPC_Ger,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D_RAF,0,pilot,пилот
+aircraft_pilot,BotPilot_B25D_RAF,1,pilot,пилот
+aircraft_pilot,BotPilot_P47_RAF,1,pilot,пилот
 aircraft_static,static_A20B,0,parked aircraft,самолет на стоянке
 aircraft_static,static_B25D,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
@@ -737,6 +743,10 @@ explosion,tnt970kg_frag810kg_expl_ground,0,,
 explosion,tnt970kg_frag810kg_expl_water,0,,
 explosion,VehicleComTwrNoDmg,0,,
 explosion,VehicleExtFuelNoDmg,0,,
+explosion,tnt2kg_frag11kg_HE_expl_metal,0,,
+explosion,tnt2kg_frag11kg_HE_expl_ground,0,,
+explosion,tnt2kg_frag11kg_HE_expl_metal,0,,
+explosion,tnt2kg_frag11kg_HE_expl_water,0,,
 flare,FlareGreen,0,,
 flare,FlareRed,0,,
 flare,FlareWhite,0,,
@@ -954,6 +964,9 @@ tank_medium,T-34-76 STZ 41,0,T-34-76 STZ 1941,Т-34 СТЗ обр. 1941
 tank_medium,T-34-76 UVZ 43,1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
 tank_medium,T-34/76 STZ(1942),1,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34/76 UVZ (1943),1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
+tank_medium,T-34/76 UTZ (1943),1,,
+tank_medium,T-34-76 UTZ 43,1,,
+tank_medium,SU-122 UZTM (1943),1,,
 tank_turret,_KV1S_T0,1,turret KV-1s,башня КВ-1С
 tank_turret,_KV1S_T1,1,,
 tank_turret,_KV1S_T2,1,,
@@ -1597,11 +1610,14 @@ trash,Watertower_eu_2,0,,
 trash,Windmill1_eu_1,0,,
 trash,Windmill1_eu_2,0,,
 trash,Windsock,0,,
+trash,_SU122_T0_sight1,0,,
+trash,_SU122_T1_sight1,0,,
 truck,Benz LKW 1912,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,GMC CCKW 353,0,GMC CCKW truck,грузовик GMC CCKW
 truck,Leyland 3 Ton RAF,0,,
+truck,GMC CCKW 353 Fuel,0,,
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
 truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
 vehicle_crew,BotBoatSwain,0,boatswain,боцман
@@ -1657,8 +1673,17 @@ vehicle_crew,BotTankT34UVZ43_Driver,0,driver,
 vehicle_crew,BotTankT34UVZ43_Gunner,0,gunner,
 vehicle_crew,BotTankT34UVZ43_Loader,0,loader,
 vehicle_crew,BotTankT34UVZ43_Radist,0,radist,
+vehicle_crew,BotTankSU122_Commander,0,commander,
+vehicle_crew,BotTankSU122_Gunner,0,gunner,
+vehicle_crew,BotTankSU122_Driver,0,driver,
+vehicle_crew,BotTankSU122_Loader1,0,loader,
+vehicle_crew,BotTankSU122_Loader2,0,loader,
 vehicle_crew,ParatrooperGER,0,paratrooper,десантник
 vehicle_static,15 cm schwere Feldhaubitze 13,0,,
+vehicle_static,static_GMC-CCKW-Fuel,0,,
+vehicle_static,static_M4A3,0,,
+vehicle_static,static_PzVI-H1,0,,
+vehicle_static,static_WillysMB,0,,
 vehicle_static,Flakvierling 38,0,,
 vehicle_static,M5 3-inch gun,0,,
 vehicle_static,static_BM13,0,tank,танк
