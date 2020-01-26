@@ -223,6 +223,13 @@
                 </div>
                 {% endif %}
 
+                {% if vlife.killboard_pve.machine_gunner %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Machine gunners' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pve.machine_gunner }}</div>
+                </div>
+                {% endif %}
+
                 {% if vlife.killboard_pve.aerostat %}
                 <div class="sub_item">
                     <div class="name">{% trans 'Aerostats' context 'total' %}</div>

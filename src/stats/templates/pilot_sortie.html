@@ -405,6 +405,20 @@
                     </div>
                 {% endif %}
 
+                {% if sortie.killboard_pve.machine_gunner %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Machine gunners' context 'total' %}
+                            <span>{{ sortie.killboard_pve.machine_gunner }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pve.machine_gunner }}
+                            &times;
+                            {{ score_dict.machine_gunner }}
+                        </div>
+                    </div>
+                {% endif %}
+
                 {% if sortie.killboard_pve.aerostat %}
                     <div class="sub_row">
                         <div class="left">

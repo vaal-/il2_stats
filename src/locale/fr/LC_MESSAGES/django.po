@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-27 02:39+0300\n"
+"POT-Creation-Date: 2020-01-26 15:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7375,8 +7375,8 @@ msgstr "Meilleurs pilotes en vie"
 msgid "Overall Pilot Rankings"
 msgstr "Classement général des pilotes"
 
-#: .\stats\templates\main.html:184 .\stats\templates\pilot.html:504
-#: .\stats\templates\squad.html:408 .\stats\templates\tour.html:184
+#: .\stats\templates\main.html:184 .\stats\templates\pilot.html:511
+#: .\stats\templates\squad.html:415 .\stats\templates\tour.html:184
 msgid "Coalitions"
 msgstr "Coalitions"
 
@@ -7478,7 +7478,7 @@ msgid "Flight Time (hours:minutes)"
 msgstr "Temps de vol (heures:minutes)"
 
 #: .\stats\templates\mission.html:163 .\stats\templates\pilot.html:93
-#: .\stats\templates\pilot_sortie.html:726
+#: .\stats\templates\pilot_sortie.html:740
 #: .\stats\templates\pilot_vlife.html:74 .\stats\templates\pilots.html:69
 #: .\stats\templates\squad_pilots.html:92
 msgid "Gunnery Accuracy"
@@ -7490,7 +7490,7 @@ msgstr "Précision des tirs"
 msgid "Score"
 msgstr "Score"
 
-#: .\stats\templates\mission.html:192 .\stats\templates\pilot.html:700
+#: .\stats\templates\mission.html:192 .\stats\templates\pilot.html:707
 #: .\stats\templates\pilots.html:104
 msgid ""
 "<strong>Attention!</strong> Algorithms collection statistics IL2 stats "
@@ -7575,8 +7575,8 @@ msgstr "Non"
 msgid "favorite aircraft"
 msgstr "Appareil favori"
 
-#: .\stats\templates\pilot.html:42 .\stats\templates\pilot.html:479
-#: .\stats\templates\pilot.html:483
+#: .\stats\templates\pilot.html:42 .\stats\templates\pilot.html:486
+#: .\stats\templates\pilot.html:490
 msgid "Streak"
 msgstr "Série"
 
@@ -7592,25 +7592,25 @@ msgstr "Série de cibles au sol"
 msgid "number of destroyed ground targets for the current virtual life"
 msgstr "nombre de cibles au sol détruites pour le pilote virtuel actuel"
 
-#: .\stats\templates\pilot.html:68 .\stats\templates\pilot.html:479
+#: .\stats\templates\pilot.html:68 .\stats\templates\pilot.html:486
 #: .\stats\templates\pilot_vlife.html:59 .\stats\templates\squad.html:61
 msgid "Aerial victories"
 msgstr "Victoires aériennes"
 
-#: .\stats\templates\pilot.html:73 .\stats\templates\pilot.html:449
+#: .\stats\templates\pilot.html:73 .\stats\templates\pilot.html:456
 msgid "Best Streak"
 msgstr "Meilleure série"
 
-#: .\stats\templates\pilot.html:78 .\stats\templates\pilot.html:483
+#: .\stats\templates\pilot.html:78 .\stats\templates\pilot.html:490
 #: .\stats\templates\pilot_vlife.html:64 .\stats\templates\squad.html:66
 msgid "Destroyed on Ground"
 msgstr "Détruit au sol"
 
-#: .\stats\templates\pilot.html:83 .\stats\templates\pilot.html:453
+#: .\stats\templates\pilot.html:83 .\stats\templates\pilot.html:460
 msgid "Best Ground Streak"
 msgstr "Meilleure série de cibles au sol"
 
-#: .\stats\templates\pilot.html:88 .\stats\templates\pilot.html:487
+#: .\stats\templates\pilot.html:88 .\stats\templates\pilot.html:494
 #: .\stats\templates\pilot_vlife.html:69 .\stats\templates\squad.html:71
 msgid "Flight Time"
 msgstr "Temps de vol"
@@ -7755,58 +7755,64 @@ msgstr "DCA légères"
 #: .\stats\templates\pilot.html:251 .\stats\templates\pilot_sortie.html:411
 #: .\stats\templates\pilot_vlife.html:228 .\stats\templates\squad.html:229
 msgctxt "total"
-msgid "Aerostats"
+msgid "Machine gunners"
 msgstr ""
 
 #: .\stats\templates\pilot.html:258 .\stats\templates\pilot_sortie.html:425
 #: .\stats\templates\pilot_vlife.html:235 .\stats\templates\squad.html:236
 msgctxt "total"
-msgid "Searchlights"
-msgstr "Projecteur"
+msgid "Aerostats"
+msgstr ""
 
 #: .\stats\templates\pilot.html:265 .\stats\templates\pilot_sortie.html:439
 #: .\stats\templates\pilot_vlife.html:242 .\stats\templates\squad.html:243
 msgctxt "total"
-msgid "Locomotives"
-msgstr "Locomotives"
+msgid "Searchlights"
+msgstr "Projecteur"
 
 #: .\stats\templates\pilot.html:272 .\stats\templates\pilot_sortie.html:453
 #: .\stats\templates\pilot_vlife.html:249 .\stats\templates\squad.html:250
 msgctxt "total"
-msgid "Wagons"
-msgstr "Wagons"
+msgid "Locomotives"
+msgstr "Locomotives"
 
 #: .\stats\templates\pilot.html:279 .\stats\templates\pilot_sortie.html:467
 #: .\stats\templates\pilot_vlife.html:256 .\stats\templates\squad.html:257
 msgctxt "total"
-msgid "Field Artillery"
-msgstr "Canons d'artillerie"
+msgid "Wagons"
+msgstr "Wagons"
 
 #: .\stats\templates\pilot.html:286 .\stats\templates\pilot_sortie.html:481
 #: .\stats\templates\pilot_vlife.html:263 .\stats\templates\squad.html:264
 msgctxt "total"
-msgid "Howitzers"
-msgstr "Howitzers"
+msgid "Field Artillery"
+msgstr "Canons d'artillerie"
 
 #: .\stats\templates\pilot.html:293 .\stats\templates\pilot_sortie.html:495
 #: .\stats\templates\pilot_vlife.html:270 .\stats\templates\squad.html:271
 msgctxt "total"
-msgid "Rocket Artillery"
-msgstr "Lanceur de roquettes"
+msgid "Howitzers"
+msgstr "Howitzers"
 
 #: .\stats\templates\pilot.html:300 .\stats\templates\pilot_sortie.html:509
 #: .\stats\templates\pilot_vlife.html:277 .\stats\templates\squad.html:278
 msgctxt "total"
-msgid "Ships"
-msgstr "Bateaux"
-
-#: .\stats\templates\pilot.html:300 .\stats\templates\pilot_vlife.html:277
-#: .\stats\templates\squad.html:278
-msgid "outdated parameter"
-msgstr ""
+msgid "Rocket Artillery"
+msgstr "Lanceur de roquettes"
 
 #: .\stats\templates\pilot.html:307 .\stats\templates\pilot_sortie.html:523
 #: .\stats\templates\pilot_vlife.html:284 .\stats\templates\squad.html:285
+msgctxt "total"
+msgid "Ships"
+msgstr "Bateaux"
+
+#: .\stats\templates\pilot.html:307 .\stats\templates\pilot_vlife.html:284
+#: .\stats\templates\squad.html:285
+msgid "outdated parameter"
+msgstr ""
+
+#: .\stats\templates\pilot.html:314 .\stats\templates\pilot_sortie.html:537
+#: .\stats\templates\pilot_vlife.html:291 .\stats\templates\squad.html:292
 #, fuzzy
 #| msgctxt "total"
 #| msgid "Heavy Tanks"
@@ -7814,8 +7820,8 @@ msgctxt "total"
 msgid "Heavy Ships"
 msgstr "Chars lourds"
 
-#: .\stats\templates\pilot.html:314 .\stats\templates\pilot_sortie.html:537
-#: .\stats\templates\pilot_vlife.html:291 .\stats\templates\squad.html:292
+#: .\stats\templates\pilot.html:321 .\stats\templates\pilot_sortie.html:551
+#: .\stats\templates\pilot_vlife.html:298 .\stats\templates\squad.html:299
 #, fuzzy
 #| msgctxt "total"
 #| msgid "Medium Tanks"
@@ -7823,8 +7829,8 @@ msgctxt "total"
 msgid "Medium Ships"
 msgstr "Chars moyens"
 
-#: .\stats\templates\pilot.html:321 .\stats\templates\pilot_sortie.html:551
-#: .\stats\templates\pilot_vlife.html:298 .\stats\templates\squad.html:299
+#: .\stats\templates\pilot.html:328 .\stats\templates\pilot_sortie.html:565
+#: .\stats\templates\pilot_vlife.html:305 .\stats\templates\squad.html:306
 #, fuzzy
 #| msgctxt "total"
 #| msgid "Light Tanks"
@@ -7832,44 +7838,44 @@ msgctxt "total"
 msgid "Light Ships"
 msgstr "Chars légers"
 
-#: .\stats\templates\pilot.html:328 .\stats\templates\pilot_sortie.html:565
-#: .\stats\templates\pilot_vlife.html:305 .\stats\templates\squad.html:306
+#: .\stats\templates\pilot.html:335 .\stats\templates\pilot_sortie.html:579
+#: .\stats\templates\pilot_vlife.html:312 .\stats\templates\squad.html:313
 msgctxt "total"
 msgid "Static Aircraft"
 msgstr "Avions statiques"
 
-#: .\stats\templates\pilot.html:335 .\stats\templates\pilot_sortie.html:579
-#: .\stats\templates\pilot_vlife.html:312 .\stats\templates\squad.html:313
+#: .\stats\templates\pilot.html:342 .\stats\templates\pilot_sortie.html:593
+#: .\stats\templates\pilot_vlife.html:319 .\stats\templates\squad.html:320
 msgctxt "total"
 msgid "Static Vehicles"
 msgstr "Véhicules statiques"
 
-#: .\stats\templates\pilot.html:342 .\stats\templates\pilot_sortie.html:593
-#: .\stats\templates\pilot_vlife.html:319 .\stats\templates\squad.html:320
+#: .\stats\templates\pilot.html:349 .\stats\templates\pilot_sortie.html:607
+#: .\stats\templates\pilot_vlife.html:326 .\stats\templates\squad.html:327
 msgctxt "total"
 msgid "Airfield Objects"
 msgstr "Cibles d'aérodrome"
 
-#: .\stats\templates\pilot.html:349 .\stats\templates\pilot_sortie.html:607
-#: .\stats\templates\pilot_vlife.html:326 .\stats\templates\squad.html:327
+#: .\stats\templates\pilot.html:356 .\stats\templates\pilot_sortie.html:621
+#: .\stats\templates\pilot_vlife.html:333 .\stats\templates\squad.html:334
 msgctxt "total"
 msgid "Bridges"
 msgstr "Ponts"
 
-#: .\stats\templates\pilot.html:356 .\stats\templates\pilot_sortie.html:621
-#: .\stats\templates\pilot_vlife.html:333 .\stats\templates\squad.html:334
+#: .\stats\templates\pilot.html:363 .\stats\templates\pilot_sortie.html:635
+#: .\stats\templates\pilot_vlife.html:340 .\stats\templates\squad.html:341
 msgctxt "total"
 msgid "Industrial Objects"
 msgstr "Cibles industrielles"
 
-#: .\stats\templates\pilot.html:363 .\stats\templates\pilot_sortie.html:635
-#: .\stats\templates\pilot_vlife.html:340 .\stats\templates\squad.html:341
+#: .\stats\templates\pilot.html:370 .\stats\templates\pilot_sortie.html:649
+#: .\stats\templates\pilot_vlife.html:347 .\stats\templates\squad.html:348
 msgctxt "total"
 msgid "Big buildings"
 msgstr ""
 
-#: .\stats\templates\pilot.html:370 .\stats\templates\pilot_sortie.html:649
-#: .\stats\templates\pilot_vlife.html:347 .\stats\templates\squad.html:348
+#: .\stats\templates\pilot.html:377 .\stats\templates\pilot_sortie.html:663
+#: .\stats\templates\pilot_vlife.html:354 .\stats\templates\squad.html:355
 #, fuzzy
 #| msgctxt "total"
 #| msgid "Medium Tanks"
@@ -7877,136 +7883,136 @@ msgctxt "total"
 msgid "Medium buildings"
 msgstr "Chars moyens"
 
-#: .\stats\templates\pilot.html:377 .\stats\templates\pilot_sortie.html:663
-#: .\stats\templates\pilot_vlife.html:354 .\stats\templates\squad.html:355
+#: .\stats\templates\pilot.html:384 .\stats\templates\pilot_sortie.html:677
+#: .\stats\templates\pilot_vlife.html:361 .\stats\templates\squad.html:362
 msgctxt "total"
 msgid "Small buildings"
 msgstr ""
 
-#: .\stats\templates\pilot.html:386 .\stats\templates\pilot_vlife.html:363
-#: .\stats\templates\squad.html:364
+#: .\stats\templates\pilot.html:393 .\stats\templates\pilot_vlife.html:370
+#: .\stats\templates\squad.html:371
 msgid "Detailed sorties results"
 msgstr "Résultats détaillés de la sortie"
 
-#: .\stats\templates\pilot.html:389 .\stats\templates\pilot_vlife.html:366
-#: .\stats\templates\squad.html:367
+#: .\stats\templates\pilot.html:396 .\stats\templates\pilot_vlife.html:373
+#: .\stats\templates\squad.html:374
 msgctxt "total"
 msgid "Score"
 msgstr "Score"
 
-#: .\stats\templates\pilot.html:393 .\stats\templates\pilot.html:491
-#: .\stats\templates\pilot_vlife.html:370 .\stats\templates\squad.html:371
+#: .\stats\templates\pilot.html:400 .\stats\templates\pilot.html:498
+#: .\stats\templates\pilot_vlife.html:377 .\stats\templates\squad.html:378
 msgctxt "total"
 msgid "Sorties"
 msgstr "Sorties"
 
-#: .\stats\templates\pilot.html:405 .\stats\templates\pilot.html:495
-#: .\stats\templates\pilot_vlife.html:374 .\stats\templates\squad.html:375
+#: .\stats\templates\pilot.html:412 .\stats\templates\pilot.html:502
+#: .\stats\templates\pilot_vlife.html:381 .\stats\templates\squad.html:382
 msgctxt "total"
 msgid "Lost aircraft"
 msgstr "Avion perdu"
 
-#: .\stats\templates\pilot.html:413 .\stats\templates\pilot_vlife.html:378
-#: .\stats\templates\squad.html:379
+#: .\stats\templates\pilot.html:420 .\stats\templates\pilot_vlife.html:385
+#: .\stats\templates\squad.html:386
 msgctxt "total"
 msgid "Bailout"
 msgstr "Ejecté"
 
-#: .\stats\templates\pilot.html:421 .\stats\templates\squad.html:383
+#: .\stats\templates\pilot.html:428 .\stats\templates\squad.html:390
 msgctxt "total"
 msgid "Dead"
 msgstr "Tué"
 
-#: .\stats\templates\pilot.html:425 .\stats\templates\squad.html:387
+#: .\stats\templates\pilot.html:432 .\stats\templates\squad.html:394
 msgctxt "total"
 msgid "Captured"
 msgstr "Capturé"
 
-#: .\stats\templates\pilot.html:429 .\stats\templates\pilot_vlife.html:382
-#: .\stats\templates\squad.html:391
+#: .\stats\templates\pilot.html:436 .\stats\templates\pilot_vlife.html:389
+#: .\stats\templates\squad.html:398
 msgctxt "total"
 msgid "Disco"
 msgstr "Déconnexion"
 
-#: .\stats\templates\pilot.html:433 .\stats\templates\pilot_vlife.html:386
-#: .\stats\templates\squad.html:395
+#: .\stats\templates\pilot.html:440 .\stats\templates\pilot_vlife.html:393
+#: .\stats\templates\squad.html:402
 msgctxt "total"
 msgid "Shotdown Friendly Aircraft"
 msgstr "Avion ami abattu"
 
-#: .\stats\templates\pilot.html:437 .\stats\templates\pilot_vlife.html:390
-#: .\stats\templates\squad.html:399
+#: .\stats\templates\pilot.html:444 .\stats\templates\pilot_vlife.html:397
+#: .\stats\templates\squad.html:406
 msgctxt "total"
 msgid "Destroyed Friendly Ground Targets"
 msgstr "Cibles au sol amies détruites"
 
-#: .\stats\templates\pilot.html:446
+#: .\stats\templates\pilot.html:453
 #, fuzzy
 #| msgctxt "sortie"
 #| msgid "Detailed results"
 msgid "Best results"
 msgstr "Résultats détaillés"
 
-#: .\stats\templates\pilot.html:457
+#: .\stats\templates\pilot.html:464
 #, fuzzy
 #| msgid "Best Streak"
 msgid "Best Flight time Streak"
 msgstr "Meilleure série"
 
-#: .\stats\templates\pilot.html:461
+#: .\stats\templates\pilot.html:468
 #, fuzzy
 #| msgctxt "tour_top"
 #| msgid "Best pilots streak"
 msgid "Best Sorties Streak"
 msgstr "Meilleures séries"
 
-#: .\stats\templates\pilot.html:465
+#: .\stats\templates\pilot.html:472
 #, fuzzy
 #| msgid "Aerial victories"
 msgid "Max Aerial Victories in one sortie"
 msgstr "Victoires aériennes"
 
-#: .\stats\templates\pilot.html:469
+#: .\stats\templates\pilot.html:476
 #, fuzzy
 #| msgid "Destroyed on Ground"
 msgid "Max Destroyed on Ground in one sortie"
 msgstr "Détruit au sol"
 
-#: .\stats\templates\pilot.html:476
+#: .\stats\templates\pilot.html:483
 #, fuzzy
 #| msgid "Current Streak"
 msgid "Current life"
 msgstr "Série en cours"
 
-#: .\stats\templates\pilot.html:510 .\stats\templates\pilot.html:521
-#: .\stats\templates\pilot.html:540 .\stats\templates\pilot.html:551
-#: .\stats\templates\pilot.html:562 .\stats\templates\pilot.html:573
-#: .\stats\templates\squad.html:414 .\stats\templates\squad.html:425
-#: .\stats\templates\squad.html:444 .\stats\templates\squad.html:455
-#: .\stats\templates\squad.html:466 .\stats\templates\squad.html:477
+#: .\stats\templates\pilot.html:517 .\stats\templates\pilot.html:528
+#: .\stats\templates\pilot.html:547 .\stats\templates\pilot.html:558
+#: .\stats\templates\pilot.html:569 .\stats\templates\pilot.html:580
+#: .\stats\templates\squad.html:421 .\stats\templates\squad.html:432
+#: .\stats\templates\squad.html:451 .\stats\templates\squad.html:462
+#: .\stats\templates\squad.html:473 .\stats\templates\squad.html:484
 msgid "number of sorties"
 msgstr "nombre de sorties"
 
-#: .\stats\templates\pilot.html:534 .\stats\templates\squad.html:438
+#: .\stats\templates\pilot.html:541 .\stats\templates\squad.html:445
 msgid "Specialty"
 msgstr "Spécialité"
 
-#: .\stats\templates\pilot.html:539
+#: .\stats\templates\pilot.html:546
 msgctxt "specialty"
 msgid "Fighter"
 msgstr "Chasseur"
 
-#: .\stats\templates\pilot.html:550
+#: .\stats\templates\pilot.html:557
 msgctxt "specialty"
 msgid "Attacker"
 msgstr "Attacker"
 
-#: .\stats\templates\pilot.html:561
+#: .\stats\templates\pilot.html:568
 msgctxt "specialty"
 msgid "Bomber"
 msgstr "Bombardier"
 
-#: .\stats\templates\pilot.html:572 .\stats\templates\squad.html:476
+#: .\stats\templates\pilot.html:579 .\stats\templates\squad.html:483
 #, fuzzy
 #| msgctxt "total"
 #| msgid "Transport"
@@ -8014,11 +8020,11 @@ msgctxt "specialty"
 msgid "Transport"
 msgstr "Transport"
 
-#: .\stats\templates\pilot.html:591 .\stats\templates\squad.html:495
+#: .\stats\templates\pilot.html:598 .\stats\templates\squad.html:502
 msgid "W/L - Win/Loss"
 msgstr "V/D - Victoires/Défaites"
 
-#: .\stats\templates\pilot.html:597
+#: .\stats\templates\pilot.html:604
 msgid ""
 "if ratio > 1 - pilot flying in the minority, if ratio < 1 - pilot flying in "
 "the majority"
@@ -8026,51 +8032,51 @@ msgstr ""
 "Si le ratio > 1 - le pilote vole pour le côté en sousnombre, si le ratio < 1 "
 "- le pilote vole pour le côté en surnombre"
 
-#: .\stats\templates\pilot.html:599
+#: .\stats\templates\pilot.html:606
 msgid "Ratio"
 msgstr "Ratio"
 
-#: .\stats\templates\pilot.html:607 .\stats\templates\pilot_sortie.html:712
+#: .\stats\templates\pilot.html:614 .\stats\templates\pilot_sortie.html:726
 msgid "Fairplay Index"
 msgstr "Index de fairplay"
 
-#: .\stats\templates\pilot.html:617 .\stats\templates\squad.html:505
+#: .\stats\templates\pilot.html:624 .\stats\templates\squad.html:512
 msgid "K/D - Kills per Death"
 msgstr "K/D - Victoires/Mort"
 
-#: .\stats\templates\pilot.html:625 .\stats\templates\squad.html:513
+#: .\stats\templates\pilot.html:632 .\stats\templates\squad.html:520
 msgid "K/L - Kills per Aircraft Lost"
 msgstr "K/L - Victoires/Appareil perdu"
 
-#: .\stats\templates\pilot.html:633 .\stats\templates\squad.html:521
+#: .\stats\templates\pilot.html:640 .\stats\templates\squad.html:528
 msgid "K/S - Kills per Sortie"
 msgstr "K/S - Victoires/Sortie"
 
-#: .\stats\templates\pilot.html:641 .\stats\templates\squad.html:529
+#: .\stats\templates\pilot.html:648 .\stats\templates\squad.html:536
 msgid "K/H - Kills per Hour of Flight"
 msgstr "K/H - Victoires/Heure de vol"
 
-#: .\stats\templates\pilot.html:651 .\stats\templates\squad.html:539
+#: .\stats\templates\pilot.html:658 .\stats\templates\squad.html:546
 msgid "GK/D - G.Kills per Death"
 msgstr "GK/D - Cibles au sol/Mort"
 
-#: .\stats\templates\pilot.html:659 .\stats\templates\squad.html:547
+#: .\stats\templates\pilot.html:666 .\stats\templates\squad.html:554
 msgid "GK/L - G.Kills per Aircraft Lost"
 msgstr "GK/L - Cibles au sol/Appareil perdu"
 
-#: .\stats\templates\pilot.html:667 .\stats\templates\squad.html:555
+#: .\stats\templates\pilot.html:674 .\stats\templates\squad.html:562
 msgid "GK/S - G.Kills per Sortie"
 msgstr "GK/S - Cibles au sol/Sortie"
 
-#: .\stats\templates\pilot.html:675 .\stats\templates\squad.html:563
+#: .\stats\templates\pilot.html:682 .\stats\templates\squad.html:570
 msgid "GK/H - G.Kills per Hour of Flight"
 msgstr "GK/H - Cibles au sol/Heure de vol"
 
-#: .\stats\templates\pilot.html:690
+#: .\stats\templates\pilot.html:697
 msgid "Other names of the pilot on this account"
 msgstr "Autres noms du pilote sur ce compte"
 
-#: .\stats\templates\pilot.html:707 .\stats\templates\pilots.html:110
+#: .\stats\templates\pilot.html:714 .\stats\templates\pilots.html:110
 #, python-format
 msgid ""
 "Players inactive for more than %(days)s day - do not participate in the "
@@ -8336,7 +8342,7 @@ msgid "Not Takeoff"
 msgstr "Pas décollé"
 
 #: .\stats\templates\pilot_sortie.html:117
-#: .\stats\templates\pilot_sortie.html:691
+#: .\stats\templates\pilot_sortie.html:705
 msgctxt "sortie"
 msgid "Landed on Airfield"
 msgstr "Posé sur un aérodrome"
@@ -8376,37 +8382,37 @@ msgctxt "sortie"
 msgid "Scoring"
 msgstr "Score"
 
-#: .\stats\templates\pilot_sortie.html:677
+#: .\stats\templates\pilot_sortie.html:691
 msgctxt "total"
 msgid "Bonuses"
 msgstr "Bonus"
 
-#: .\stats\templates\pilot_sortie.html:702
+#: .\stats\templates\pilot_sortie.html:716
 msgctxt "sortie"
 msgid "Coalition won a mission"
 msgstr "La coalition a gagné une mission"
 
-#: .\stats\templates\pilot_sortie.html:723
+#: .\stats\templates\pilot_sortie.html:737
 msgid "Stats of weapons"
 msgstr "Stats armement"
 
-#: .\stats\templates\pilot_sortie.html:730
+#: .\stats\templates\pilot_sortie.html:744
 msgid "Number of shots"
 msgstr "Nombre de tirs"
 
-#: .\stats\templates\pilot_sortie.html:734
+#: .\stats\templates\pilot_sortie.html:748
 msgid "Number of bullets hit the target"
 msgstr "Nombre de tirs touchant la cible"
 
-#: .\stats\templates\pilot_sortie.html:738
+#: .\stats\templates\pilot_sortie.html:752
 msgid "Number of rockets launches"
 msgstr "Nombre de roquettes tirées"
 
-#: .\stats\templates\pilot_sortie.html:742
+#: .\stats\templates\pilot_sortie.html:756
 msgid "Number of bombs dropped"
 msgstr "Nombre de bombes larguées"
 
-#: .\stats\templates\pilot_sortie.html:746
+#: .\stats\templates\pilot_sortie.html:760
 msgid ""
 "This block may contain incorrect information, this is due to the errors in "
 "the game log."
@@ -8480,22 +8486,22 @@ msgstr "Nombre de pilotes"
 msgid "Not enough pilots to participate in the rating"
 msgstr "Pas assez de pilotes pour entrer dans le classement"
 
-#: .\stats\templates\squad.html:443
+#: .\stats\templates\squad.html:450
 msgctxt "specialty"
 msgid "Fighters"
 msgstr "Chasseurs"
 
-#: .\stats\templates\squad.html:454
+#: .\stats\templates\squad.html:461
 msgctxt "specialty"
 msgid "Attackers"
 msgstr "Attackers"
 
-#: .\stats\templates\squad.html:465
+#: .\stats\templates\squad.html:472
 msgctxt "specialty"
 msgid "Bombers"
 msgstr "Bombardiers"
 
-#: .\stats\templates\squad.html:577
+#: .\stats\templates\squad.html:584
 msgid ""
 "<strong>Attention!</strong> Statistics squad - accumulative. When a player "
 "joins to squad, his past statistics does not affect the current squad "
