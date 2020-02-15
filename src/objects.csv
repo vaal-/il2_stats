@@ -219,6 +219,8 @@ aircraft_static,static_U2VS,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_open,0,parked aircraft,самолет на стоянке
+aircraft_static,static_a20raf,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Fw190D9,0,parked aircraft,самолет на стоянке
 aircraft_transport,Ju 52 3mg4e,1,,
 aircraft_turret,aircraft_turret,1,,
 aircraft_turret,Turret_A20B_1,1,A-20B turret,турель A-20B
@@ -1625,6 +1627,10 @@ truck,Leyland 3 Ton RAF,0,,
 truck,GMC CCKW 353 Fuel,0,,
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
 truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
+truck,BZ-35,0,,
+truck,GAZ-55,0,,
+truck,Opel Blitz Ambulance,0,,
+truck,Opel Blitz Tankwagen,0,,
 vehicle_crew,BotBoatSwain,0,boatswain,боцман
 vehicle_crew,BotCommander_KV1,0,commander,
 vehicle_crew,BotCommander_Pz6H1,0,commander,
