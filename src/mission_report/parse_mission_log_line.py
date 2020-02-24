@@ -4,6 +4,8 @@ import functools
 import re
 import unicodedata
 
+from .constants import GAME_CLASSES
+
 
 class UnexpectedATypeWarning(Warning):
     pass
@@ -159,20 +161,8 @@ def object_name_handler(type_):
     """
     :type type_: str
     """
-    if 'CParachute_' in type_:
-        return 'CParachute'
-    elif 'CStaticEmitter_' in type_:
-        return 'CStaticEmitter'
-    elif 'CBotCharacter_' in type_:
-        return 'CBotCharacter'
-    elif 'CFlareGun_' in type_:
-        return 'CFlareGun'
-    elif 'CAeroplaneFragment_' in type_:
-        return 'CAeroplaneFragment'
-    elif 'CBlocksArray_' in type_:
-        return 'CBlocksArray'
-    elif 'CTurretCamera_' in type_:
-        return 'CTurretCamera'
+    if type_.startswith(GAME_CLASSES):
+        return type_.split('_')[0]
     else:
         return type_
 

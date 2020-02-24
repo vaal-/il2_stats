@@ -43,8 +43,11 @@ aircraft_gunner,BotGunner,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Bbtm,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Btop,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dbtm,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm_RAF,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dfwd,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd_RAF,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dtop,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop_RAF,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110E2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110G2,1,Aircraft gunner,стрелок
@@ -78,9 +81,6 @@ aircraft_gunner,BotGunner_Pe2s87rear,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
-aircraft_gunner,BotGunner_B25Dbtm_RAF,1,Aircraft gunner,стрелок
-aircraft_gunner,BotGunner_B25Dfwd_RAF,1,Aircraft gunner,стрелок
-aircraft_gunner,BotGunner_B25Dtop_RAF,1,Aircraft gunner,стрелок
 aircraft_heavy,A-20B,1,,
 aircraft_heavy,B-25D,0,,
 aircraft_heavy,B-25D (RAF),0,,
@@ -143,6 +143,7 @@ aircraft_medium,U-2VS,1,U-﻿2,У-2
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D,1,pilot,пилот
+aircraft_pilot,BotPilot_B25D_RAF,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109K,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1,1,pilot,пилот
@@ -158,21 +159,21 @@ aircraft_pilot,BotPilot_Me262,1,pilot,пилот
 aircraft_pilot,BotPilot_P38,1,pilot,пилот
 aircraft_pilot,BotPilot_P39,1,pilot,пилот
 aircraft_pilot,BotPilot_P47,1,pilot,пилот
+aircraft_pilot,BotPilot_P47_RAF,1,pilot,пилот
 aircraft_pilot,BotPilot_Pe2,1,pilot,пилот
 aircraft_pilot,BotPilot_Spad13,1,pilot,пилот
 aircraft_pilot,BotPilot_Spit9,1,pilot,пилот
 aircraft_pilot,BotPilot_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D_RAF,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Fra,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ger,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
-aircraft_pilot,BotPilotNPC_B25D_RAF,0,pilot,пилот
-aircraft_pilot,BotPilot_B25D_RAF,1,pilot,пилот
-aircraft_pilot,BotPilot_P47_RAF,1,pilot,пилот
 aircraft_static,static_A20B,0,parked aircraft,самолет на стоянке
+aircraft_static,static_a20raf,0,parked aircraft,самолет на стоянке
 aircraft_static,static_B25D,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_net,0,parked aircraft,самолет на стоянке
@@ -184,6 +185,7 @@ aircraft_static,static_Bf109K4,0,parked aircraft,самолет на стоян�
 aircraft_static,static_bf110e2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf110e2_open,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Fw190A8,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Fw190D9,0,parked aircraft,самолет на стоянке
 aircraft_static,static_he111,0,parked aircraft,самолет на стоянке
 aircraft_static,static_he111_open,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Hs129B2,0,parked aircraft,самолет на стоянке
@@ -219,8 +221,6 @@ aircraft_static,static_U2VS,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_open,0,parked aircraft,самолет на стоянке
-aircraft_static,static_a20raf,0,parked aircraft,самолет на стоянке
-aircraft_static,static_Fw190D9,0,parked aircraft,самолет на стоянке
 aircraft_transport,Ju 52 3mg4e,1,,
 aircraft_turret,aircraft_turret,1,,
 aircraft_turret,Turret_A20B_1,1,A-20B turret,турель A-20B
@@ -636,6 +636,10 @@ explosion,tnt2g_frag55g_HE_expl_water,0,,
 explosion,tnt2g_frag90g_HE_expl_building,0,,
 explosion,tnt2g_frag90g_HE_expl_ground,0,,
 explosion,tnt2g_frag90g_HE_expl_water,0,,
+explosion,tnt2kg_frag11kg_HE_expl_ground,0,,
+explosion,tnt2kg_frag11kg_HE_expl_metal,0,,
+explosion,tnt2kg_frag11kg_HE_expl_metal,0,,
+explosion,tnt2kg_frag11kg_HE_expl_water,0,,
 explosion,tnt2kg_frag7kg_HE_expl_ground,0,,
 explosion,tnt2kg_frag7kg_HE_expl_metal,0,,
 explosion,tnt2kg_frag7kg_HE_expl_water,0,,
@@ -745,10 +749,6 @@ explosion,tnt970kg_frag810kg_expl_ground,0,,
 explosion,tnt970kg_frag810kg_expl_water,0,,
 explosion,VehicleComTwrNoDmg,0,,
 explosion,VehicleExtFuelNoDmg,0,,
-explosion,tnt2kg_frag11kg_HE_expl_metal,0,,
-explosion,tnt2kg_frag11kg_HE_expl_ground,0,,
-explosion,tnt2kg_frag11kg_HE_expl_metal,0,,
-explosion,tnt2kg_frag11kg_HE_expl_water,0,,
 flare,FlareGreen,0,,
 flare,FlareRed,0,,
 flare,FlareWhite,0,,
@@ -954,22 +954,22 @@ tank_medium,M4A3(75)W,1,,
 tank_medium,Pz.Kpfw.III Ausf.L,1,Pz.Kpfw.III Ausf.L,
 tank_medium,Pz.Kpfw.III Ausf.M,1,Pz.Kpfw.III Ausf.M,
 tank_medium,Pz.Kpfw.IV Ausf.G,1,,
+tank_medium,Pz.Kpfw.V Ausf.D,1,,
 tank_medium,PzKpfw III Ausf.H,1,Pz.Kpfw III Ausf.H,
 tank_medium,PzKpfw III Ausf.L,0,Pz.Kpfw III Ausf.L,
 tank_medium,PzKpfw IV Ausf.F1,0,Pz.Kpfw IV Ausf.F1,
 tank_medium,PzKpfw IV Ausf.G,0,Pz.Kpfw IV Ausf.G,
 tank_medium,PzKpfw IV Ausf.H,1,,
-tank_medium,Pz.Kpfw.V Ausf.D,1,,
 tank_medium,StuG III Ausf.C-D,0,StuG III Ausf.C-D,
 tank_medium,StuG III Ausf.F,0,StuG III Ausf.F,
+tank_medium,SU-122 UZTM (1943),1,,
 tank_medium,T-34-76 STZ,0,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34-76 STZ 41,0,T-34-76 STZ 1941,Т-34 СТЗ обр. 1941
+tank_medium,T-34-76 UTZ 43,1,,
 tank_medium,T-34-76 UVZ 43,1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
 tank_medium,T-34/76 STZ(1942),1,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
-tank_medium,T-34/76 UVZ (1943),1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
 tank_medium,T-34/76 UTZ (1943),1,,
-tank_medium,T-34-76 UTZ 43,1,,
-tank_medium,SU-122 UZTM (1943),1,,
+tank_medium,T-34/76 UVZ (1943),1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
 tank_turret,_KV1S_T0,1,turret KV-1s,башня КВ-1С
 tank_turret,_KV1S_T1,1,,
 tank_turret,_KV1S_T2,1,,
@@ -983,6 +983,10 @@ tank_turret,_PzIII-M_T3,1,,
 tank_turret,_PzIV-G_T1,1,,
 tank_turret,_PzIV-G_T2,1,,
 tank_turret,_PzIV-G_T3,1,,
+tank_turret,_PzV-D_T0,1,,
+tank_turret,_PzV-D_T1,1,,
+tank_turret,_PzV-D_T2,1,,
+tank_turret,_PzV-D_T3,1,,
 tank_turret,_PzVI-H1_T0,1,turret Pz.Kpfw.VI Ausf.H1,башня Pz.Kpfw.VI Ausf.H1
 tank_turret,_PzVI-H1_T1,1,,
 tank_turret,_PzVI-H1_T2,1,,
@@ -999,12 +1003,10 @@ tank_turret,Turret_PzIII-M,1,,
 tank_turret,Turret_PzIII-M,1,,
 tank_turret,Turret_PzIV-G,1,,
 tank_turret,Turret_T34-76STZ,1,turret T-34-76 STZ,башня Т-34 СТЗ
-tank_turret,_PzV-D_T0,1,,
-tank_turret,_PzV-D_T1,1,,
-tank_turret,_PzV-D_T2,1,,
-tank_turret,_PzV-D_T3,1,,
 trash,_KV1S_T0_sight1,0,,
 trash,_KV1S_T0_sight2,0,,
+trash,_SU122_T0_sight1,0,,
+trash,_SU122_T1_sight1,0,,
 trash,_SU122_T3,0,,
 trash,_SU122_T4,0,,
 trash,A20B_P2,0,,
@@ -1083,19 +1085,50 @@ trash,BotRangefinder,0,,
 trash,bridge_section_dmg,0,,
 trash,BulletEffect,0,,
 trash,CAeroplaneFragment,0,,
+trash,CAerostat,0,,
+trash,CAerostatAI,0,,
+trash,CAIPoi,0,,
+trash,CAirfield,0,,
 trash,CameraOperator,0,,
 trash,camptent1,0,,
 trash,camptent2,0,,
+trash,CAnimationOperator,0,,
 trash,CappyChateau,0,,
 trash,Caquot_P2,0,,
 trash,cart,0,,
+trash,CAttachedVehicle,0,,
+trash,CBallistics,0,,
 trash,CBanner,0,,
+trash,CBatchBallistics,0,,
+trash,CBatchExplosion,0,,
 trash,CBatchTrash,0,,
+trash,CBatchTrashAnimated,0,,
+trash,CBFManager,0,,
 trash,CBlocksArray,0,,
+trash,CBombSiteAim,0,,
+trash,CBot,0,,
+trash,CBotAimingHead,0,,
 trash,CBotCharacter,0,,
+trash,CBotController,0,,
+trash,CBotFieldController,0,,
+trash,CBotHead,0,,
+trash,CBotInputController,0,,
+trash,CCameraOperator,0,,
+trash,CCloudSky,0,,
+trash,CClusterBallistics,0,,
 trash,CCommanderInputController,0,,
+trash,CComplexTrigger,0,,
+trash,CCumulativeRocket,0,,
+trash,CDFMission,0,,
+trash,CDistantLOD,0,,
+trash,CDummyObject,0,,
 trash,CEjectionPlace,0,,
+trash,CEjectorController,0,,
+trash,CFlag,0,,
 trash,CFlareGun,0,,
+trash,CForestBody,0,,
+trash,CGameChat,0,,
+trash,CGameMission,0,,
 trash,CHK,0,,
 trash,Church_eu_big,0,,
 trash,Church_eu_mid1,0,,
@@ -1105,10 +1138,12 @@ trash,Church_eu_small1,0,,
 trash,Church_eu_small2,0,,
 trash,ChurchRed,0,,
 trash,ChurchYellow,0,,
+trash,CInfluenceArea,0,,
 trash,citadelledelille,0,,
 trash,CloudSky,0,,
 trash,ClusterGroundEffect,0,,
 trash,ClusterWaterEffect,0,,
+trash,CMouseControlCameraOperator,0,,
 trash,Common Bot's head,0,,
 trash,ComplexTrigger,0,,
 trash,country_100x100_1,0,,
@@ -1139,11 +1174,52 @@ trash,country_m_corner_block7,0,,
 trash,country_m_corner_block8,0,,
 trash,coverstructure,0,,
 trash,cow,0,,
+trash,CParachutedContainer,0,,
+trash,CParatroopersCreator,0,,
+trash,CPhysPlatformRadioTurretAI,0,,
+trash,CPlane,0,,
+trash,CPlaneAI,0,,
+trash,CPlaneInputController,0,,
+trash,CPlatformTank,0,,
+trash,CRobotCameraOperator,0,,
+trash,CRocket,0,,
+trash,CSharedGroup,0,,
+trash,CShip,0,,
+trash,CShipAI,0,,
 trash,CSolidTrash,0,,
+trash,CSpotlight,0,,
+trash,CSpotter,0,,
+trash,CStaticBlock,0,,
 trash,CStaticEmitter,0,,
+trash,CStaticVehicle,0,,
+trash,CSubmarine,0,,
+trash,CTank,0,,
+trash,CTerrainArray,0,,
+trash,CTorpedo,0,,
+trash,CTrainAI,0,,
+trash,CTrainLocomotive,0,,
+trash,CTrainWagon,0,,
+trash,CTrash,0,,
+trash,CTrashAnimated,0,,
+trash,CTruck,0,,
+trash,CTurret,0,,
 trash,CTurretCamera,0,,
 trash,CTurretRadioAI,0,,
 trash,CTurretRadioAIInputController,0,,
+trash,CTurretRiffle,0,,
+trash,CVehicleAI,0,,
+trash,CVehicleExplosionTurret,0,,
+trash,CVehicleInputController,0,,
+trash,CVehicleRangefinderTurret,0,,
+trash,CVehicleRangefinderTurretAI,0,,
+trash,CVehicleRocketTurret,0,,
+trash,CVehicleRocketTurretAI,0,,
+trash,CVehicleTorpedoTurret,0,,
+trash,CVehicleTorpedoTurretAI,0,,
+trash,CVehicleTurret,0,,
+trash,CVehicleTurretAI,0,,
+trash,CVehicleTurretInputController,0,,
+trash,CWindsock,0,,
 trash,det-block-admina,0,,
 trash,det-block-admina2,0,,
 trash,det-block-Farm,0,,
@@ -1617,20 +1693,18 @@ trash,Watertower_eu_2,0,,
 trash,Windmill1_eu_1,0,,
 trash,Windmill1_eu_2,0,,
 trash,Windsock,0,,
-trash,_SU122_T0_sight1,0,,
-trash,_SU122_T1_sight1,0,,
 truck,Benz LKW 1912,0,,
+truck,BZ-35,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
+truck,GAZ-55,0,,
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,GMC CCKW 353,0,GMC CCKW truck,грузовик GMC CCKW
-truck,Leyland 3 Ton RAF,0,,
 truck,GMC CCKW 353 Fuel,0,,
+truck,Leyland 3 Ton RAF,0,,
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
-truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
-truck,BZ-35,0,,
-truck,GAZ-55,0,,
 truck,Opel Blitz Ambulance,0,,
 truck,Opel Blitz Tankwagen,0,,
+truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
 vehicle_crew,BotBoatSwain,0,boatswain,боцман
 vehicle_crew,BotCommander_KV1,0,commander,
 vehicle_crew,BotCommander_Pz6H1,0,commander,
@@ -1671,6 +1745,11 @@ vehicle_crew,BotTankPz4G_Driver,0,driver,водитель
 vehicle_crew,BotTankPz4G_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotTankPz4G_Loader,0,loader,
 vehicle_crew,BotTankPz4G_Radist,0,radist,
+vehicle_crew,BotTankPz5D_Commander,0,commander,
+vehicle_crew,BotTankPz5D_Driver,0,driver,
+vehicle_crew,BotTankPz5D_Gunner,0,gunner,
+vehicle_crew,BotTankPz5D_Loader,0,loader,
+vehicle_crew,BotTankPz5D_Radist,0,radist,
 vehicle_crew,BotTankPz6H1_Commander,0,commander,
 vehicle_crew,BotTankPz6H1_Driver,0,driver,водитель
 vehicle_crew,BotTankPz6H1_Gunner,0,gunner,стрелок-наводчик
@@ -1678,28 +1757,19 @@ vehicle_crew,BotTankPz6H1_Loader,0,loader,
 vehicle_crew,BotTankPz6H1_Radist,0,radist,
 vehicle_crew,BotTankPzIIIL_Driver,0,driver,водитель
 vehicle_crew,BotTankPzIIIL_Gunner,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankSU122_Commander,0,commander,
+vehicle_crew,BotTankSU122_Driver,0,driver,
+vehicle_crew,BotTankSU122_Gunner,0,gunner,
+vehicle_crew,BotTankSU122_Loader1,0,loader,
+vehicle_crew,BotTankSU122_Loader2,0,loader,
 vehicle_crew,BotTankT3442_Driver,0,driver,водитель
 vehicle_crew,BotTankT3442_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotTankT34UVZ43_Driver,0,driver,
 vehicle_crew,BotTankT34UVZ43_Gunner,0,gunner,
 vehicle_crew,BotTankT34UVZ43_Loader,0,loader,
 vehicle_crew,BotTankT34UVZ43_Radist,0,radist,
-vehicle_crew,BotTankSU122_Commander,0,commander,
-vehicle_crew,BotTankSU122_Gunner,0,gunner,
-vehicle_crew,BotTankSU122_Driver,0,driver,
-vehicle_crew,BotTankSU122_Loader1,0,loader,
-vehicle_crew,BotTankSU122_Loader2,0,loader,
-vehicle_crew,BotTankPz5D_Commander,0,commander,
-vehicle_crew,BotTankPz5D_Driver,0,driver,
-vehicle_crew,BotTankPz5D_Gunner,0,gunner,
-vehicle_crew,BotTankPz5D_Loader,0,loader,
-vehicle_crew,BotTankPz5D_Radist,0,radist,
 vehicle_crew,ParatrooperGER,0,paratrooper,десантник
 vehicle_static,15 cm schwere Feldhaubitze 13,0,,
-vehicle_static,static_GMC-CCKW-Fuel,0,,
-vehicle_static,static_M4A3,0,,
-vehicle_static,static_PzVI-H1,0,,
-vehicle_static,static_WillysMB,0,,
 vehicle_static,Flakvierling 38,0,,
 vehicle_static,M5 3-inch gun,0,,
 vehicle_static,static_BM13,0,tank,танк
@@ -1713,8 +1783,10 @@ vehicle_static,static_G8T,0,tank,танк
 vehicle_static,static_gaz-m,0,tank,танк
 vehicle_static,static_gazAA,0,tank,танк
 vehicle_static,static_GMC-CCKW,0,,
+vehicle_static,static_GMC-CCKW-Fuel,0,,
 vehicle_static,static_Horch830,0,tank,танк
 vehicle_static,static_kv1-41,0,tank,танк
+vehicle_static,static_M4A3,0,,
 vehicle_static,static_opel,0,truck,грузовик
 vehicle_static,static_opel_fuel,0,truck,грузовик
 vehicle_static,static_pass,0,tank,танк
@@ -1722,11 +1794,13 @@ vehicle_static,static_PlatformEmptyNB,0,tank,танк
 vehicle_static,static_PlatformNB,0,tank,танк
 vehicle_static,static_Pz_IIIH,0,tank,танк
 vehicle_static,static_Pz_IVF1,0,tank,танк
+vehicle_static,static_PzVI-H1,0,,
 vehicle_static,static_SdKfz251-1C,0,tank,танк
 vehicle_static,static_Stug37L24,0,tank,танк
 vehicle_static,static_T34-76,0,tank,танк
 vehicle_static,static_T70,0,tank,танк
 vehicle_static,static_tanknb,0,tank,танк
+vehicle_static,static_WillysMB,0,,
 vehicle_static,static_zis,0,truck,грузовик
 vehicle_static,static_zis_fuel,0,truck,грузовик
 vehicle_turret,21-K turret,0,,
