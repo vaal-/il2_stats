@@ -3,11 +3,11 @@ from ..helpers import point_in_polygon, distance, is_pos_correct
 
 def test_point_in_polygon():
     point = {'x': 7500.0, 'y': 0.0, 'z': 7500.0}
-    polygon_square = [[0, 0, 0], [15000, 0, 0], [15000, 0, 15000], [0, 0, 15000]]
+    polygon_square = [[0, 0], [15000, 0], [15000, 15000], [0, 15000]]
     assert point_in_polygon(point=point, polygon=polygon_square)
     # точка окружена полигоном
-    polygon_square = [[0, 0, 0], [15000, 0, 0], [15000, 0, 5000], [15000, 0, 15000], [5000, 0, 15000], [5000, 0, 10000],
-                      [10000, 0, 10000], [10000, 0, 5000], [5000, 0, 5000], [5000, 0, 15000], [0, 0, 15000]]
+    polygon_square = [[0, 0], [15000, 0], [15000, 5000], [15000, 15000], [5000, 15000], [5000, 10000],
+                      [10000, 10000], [10000, 5000], [5000, 5000], [5000, 15000], [0, 15000]]
     assert not point_in_polygon(point=point, polygon=polygon_square)
 
 

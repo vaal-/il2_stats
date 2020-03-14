@@ -41,7 +41,7 @@ def test_area(mission):
     assert not area.is_enabled
     assert area.in_air == [1, 0, 0, 0, 0, 0, 0, 0]
 
-    area.boundary = [[0, 0, 0], [15000, 0, 0], [15000, 0, 15000], [0, 0, 15000]]
+    area.boundary = [[0, 0], [15000, 0], [15000, 15000], [0, 15000]]
     assert area.is_inside(pos={'x': 7500.0, 'y': 0.0, 'z': 7500.0})
     assert not area.is_inside(pos={'x': 17500.0, 'y': 0.0, 'z': 17500.0})
 
