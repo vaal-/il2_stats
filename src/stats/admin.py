@@ -94,7 +94,7 @@ if settings.DEV_MODE:
     @admin.register(Profile)
     class ProfileAdmin(admin.ModelAdmin):
         list_display = ('id', 'nickname', 'uuid', 'is_hide')
-        list_display_links = ('nickname',)
+        list_display_links = ('id', 'nickname',)
         list_filter = ('is_hide',)
         ordering = ('nickname',)
         readonly_fields = ('uuid',)
@@ -111,7 +111,7 @@ else:
     @admin.register(Profile)
     class ProfileAdmin(admin.ModelAdmin):
         list_display = ('id', 'nickname', 'uuid', 'is_hide')
-        list_display_links = ('nickname',)
+        list_display_links = ('id', 'nickname',)
         list_filter = ('is_hide',)
         ordering = ('nickname',)
         readonly_fields = ('uuid', 'nickname', 'user', 'squad')
