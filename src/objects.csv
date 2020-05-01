@@ -41,46 +41,90 @@ aerostat,Drachen,0,,
 aerostat,Parseval,0,,
 aircraft_gunner,BotGunner,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Bbtm,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Bbtm_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Btop,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Btop_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dbtm,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dbtm_RAF,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm_RAF43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm_RUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm_RUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dbtm_USA43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dfwd,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dfwd_RAF,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd_RAF43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd_RUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd_RUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dfwd_USA43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dtop,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dtop_RAF,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop_RAF43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop_RUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop_RUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B25Dtop_USA43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110E2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Bf110E2_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110G2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Bf110G2_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_M,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_BFF2B_M_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_BFF2B_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HCL2_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2_M,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HCL2_M_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2_M2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16fwd,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16fwdM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16rear_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16rearM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16side,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16side_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H16top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H16top_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6fwd,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H6fwd_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6fwdM,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H6fwdM_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H6rear_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6rearM,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H6rearM_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6side,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H6side_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_He111H6top_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Il2m42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Il2m42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Il2m42_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Il2m43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Il2m43_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju87D3,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju87D3_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88btm,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88btm_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88fwd,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88fwd_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88top_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35rear_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35top_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87rear_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87top_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87topM_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_U2_RUSwi,1,Aircraft gunner,стрелок
 aircraft_heavy,A-20B,1,,
 aircraft_heavy,B-25D,0,,
 aircraft_heavy,B-25D (RAF),0,,
@@ -126,6 +170,8 @@ aircraft_light,Tempest Mk.V ser.2,1,,
 aircraft_light,Yak-1 ser.69,1,Yak-1 (series 69),Як-1 69-й серии
 aircraft_light,Yak-1B ser.127,1,Yak-1B (series 127),Як-1б 127-й серии
 aircraft_light,Yak-7B ser.36,1,Yak-7B (series 36),Як-7б 36-й серии
+aircraft_light,Yak-9 ser.1,1,Yak-9 series 1,Як-9 1-й серии
+aircraft_light,Yak-9T ser.1,1,Yak-9T series 1,Як-9Т 1-й серии
 aircraft_medium,Bf 110 E-2,1,,
 aircraft_medium,Bf 110 G-2,1,,
 aircraft_medium,Bristol F2B (F.II),1,,
@@ -142,36 +188,85 @@ aircraft_medium,P-38J-25,1,,
 aircraft_medium,U-2VS,1,U-﻿2,У-2
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B,1,pilot,пилот
+aircraft_pilot,BotPilot_A20B_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_A20B_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_A20B_RUSwi,1,pilot,пилот
+aircraft_pilot,BotPilot_A20B_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_RAF,1,pilot,пилот
+aircraft_pilot,BotPilot_B25D_RAF43,1,pilot,пилот
+aircraft_pilot,BotPilot_B25D_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_B25D_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_B25D_RUSwi,1,pilot,пилот
+aircraft_pilot,BotPilot_B25D_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
+aircraft_pilot,BotPilot_Bf109_GER41,1,pilot,пилот
+aircraft_pilot,BotPilot_Bf109_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109K,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1,1,pilot,пилот
+aircraft_pilot,BotPilot_FokkerDr1_GER17,1,pilot,пилот
 aircraft_pilot,BotPilot_FW190,1,pilot,пилот
+aircraft_pilot,BotPilot_Fw190_GER41,1,pilot,пилот
+aircraft_pilot,BotPilot_Fw190_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190D,1,pilot,пилот
 aircraft_pilot,BotPilot_He111,1,pilot,пилот
+aircraft_pilot,BotPilot_He111_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Hs129B2,1,pilot,пилот
+aircraft_pilot,BotPilot_Hs129B2_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Il2,1,pilot,пилот
+aircraft_pilot,BotPilot_Il2_RUS41,1,pilot,пилот
+aircraft_pilot,BotPilot_Il2_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_Il2_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_Il2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_Ju52,1,pilot,пилот
+aircraft_pilot,BotPilot_Ju52_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Ju88,1,pilot,пилот
+aircraft_pilot,BotPilot_Ju88_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3,1,pilot,пилот
+aircraft_pilot,BotPilot_LaGG3_RAF43,1,pilot,пилот
+aircraft_pilot,BotPilot_LaGG3_RUS41,1,pilot,пилот
+aircraft_pilot,BotPilot_LaGG3_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_LaGG3_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_LaGG3_RUSwi,1,pilot,пилот
+aircraft_pilot,BotPilot_LaGG3_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_Me262,1,pilot,пилот
+aircraft_pilot,BotPilot_Me262_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_P38,1,pilot,пилот
+aircraft_pilot,BotPilot_P38_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_P39,1,pilot,пилот
+aircraft_pilot,BotPilot_P39_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_P47,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_RAF,1,pilot,пилот
+aircraft_pilot,BotPilot_P47_RAF43,1,pilot,пилот
+aircraft_pilot,BotPilot_P47_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_P47_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_Pe2,1,pilot,пилот
+aircraft_pilot,BotPilot_Pe2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_Spad13,1,pilot,пилот
+aircraft_pilot,BotPilot_Spad13_RAF17,1,pilot,пилот
 aircraft_pilot,BotPilot_Spit9,1,pilot,пилот
+aircraft_pilot,BotPilot_Spit9_RAF43,1,pilot,пилот
+aircraft_pilot,BotPilot_Spit9_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_Spit9_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_U2,1,pilot,пилот
+aircraft_pilot,BotPilot_U2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_A20B_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D_RAF,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D_RAF43,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D_RUSwi,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_B25D_USA43,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_Fra,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ger,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_Ju52_GER41,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_U2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
+aircraft_pilot,BotPilotNPC2_Ju52_GER41,1,pilot,пилот
 aircraft_static,static_A20B,0,parked aircraft,самолет на стоянке
 aircraft_static,static_a20raf,0,parked aircraft,самолет на стоянке
 aircraft_static,static_B25D,0,parked aircraft,самолет на стоянке
@@ -696,10 +791,19 @@ explosion,HE_090mm_11kg_975g_building,0,,
 explosion,HE_090mm_11kg_975g_ground,0,,
 explosion,HE_090mm_11kg_975g_object,0,,
 explosion,HE_090mm_11kg_975g_water,0,,
+explosion,HE_100mm_16kg_1kg,0,,
+explosion,HE_100mm_16kg_1kg_building,0,,
+explosion,HE_100mm_16kg_1kg_ground,0,,
+explosion,HE_100mm_16kg_1kg_object,0,,
+explosion,HE_100mm_16kg_1kg_water,0,,
 explosion,HE_105mm_15kg_1kg_building,0,,
 explosion,HE_105mm_15kg_1kg_ground,0,,
 explosion,HE_105mm_15kg_1kg_object,0,,
 explosion,HE_105mm_15kg_1kg_water,0,,
+explosion,HE_115mm_16kg_2kg_building,0,,
+explosion,HE_115mm_16kg_2kg_ground,0,,
+explosion,HE_115mm_16kg_2kg_object,0,,
+explosion,HE_115mm_16kg_2kg_water,0,,
 explosion,HE_122mm_13kg_2kg_building,0,,
 explosion,HE_122mm_13kg_2kg_ground,0,,
 explosion,HE_122mm_13kg_2kg_object,0,,
@@ -708,6 +812,11 @@ explosion,HE_122mm_22kg_4kg_building,0,,
 explosion,HE_122mm_22kg_4kg_ground,0,,
 explosion,HE_122mm_22kg_4kg_object,0,,
 explosion,HE_122mm_22kg_4kg_water,0,,
+explosion,HE_130mm_33kg_2kg_building,0,,
+explosion,HE_130mm_33kg_2kg_ground,0,,
+explosion,HE_130mm_33kg_2kg_internal,0,,
+explosion,HE_130mm_33kg_2kg_object,0,,
+explosion,HE_130mm_33kg_2kg_water,0,,
 explosion,HE_130mm_33kg_4kg_building,0,,
 explosion,HE_130mm_33kg_4kg_ground,0,,
 explosion,HE_130mm_33kg_4kg_object,0,,
@@ -720,6 +829,10 @@ explosion,HE_132mm_9kg_2kg_building,0,,
 explosion,HE_132mm_9kg_2kg_ground,0,,
 explosion,HE_132mm_9kg_2kg_object,0,,
 explosion,HE_132mm_9kg_2kg_water,0,,
+explosion,HE_150mm_42kg_5kg_building,0,,
+explosion,HE_150mm_42kg_5kg_ground,0,,
+explosion,HE_150mm_42kg_5kg_object,0,,
+explosion,HE_150mm_42kg_5kg_water,0,,
 explosion,HE_152mm_44kg_6kg_building,0,,
 explosion,HE_152mm_44kg_6kg_ground,0,,
 explosion,HE_152mm_44kg_6kg_object,0,,
@@ -729,6 +842,10 @@ explosion,HE_152mm_49kg_1kg_ground,0,,
 explosion,HE_152mm_49kg_1kg_internal,0,,
 explosion,HE_152mm_49kg_1kg_object,0,,
 explosion,HE_152mm_49kg_1kg_water,0,,
+explosion,HE_155mm_43kg_7kg_building,0,,
+explosion,HE_155mm_43kg_7kg_ground,0,,
+explosion,HE_155mm_43kg_7kg_object,0,,
+explosion,HE_155mm_43kg_7kg_water,0,,
 explosion,HE_203mm_70kg_21kg_building,0,,
 explosion,HE_203mm_70kg_21kg_ground,0,,
 explosion,HE_203mm_70kg_21kg_object,0,,
@@ -1123,6 +1240,8 @@ shell,NPC_SHELL_ENG_76_HE,0,,
 shell,NPC_SHELL_GER_105_HE,0,,
 shell,NPC_SHELL_GER_20_AP,0,,
 shell,NPC_SHELL_GER_20_HE,0,,
+shell,NPC_SHELL_GER_37_CV,0,,
+shell,NPC_SHELL_GER_37_HE,0,,
 shell,NPC_SHELL_GER_37x250_AP,0,,
 shell,NPC_SHELL_GER_37x250_HE,0,,
 shell,NPC_SHELL_GER_37x263_AP,0,,
@@ -1141,15 +1260,23 @@ shell,NPC_SHELL_RUS_25_HE,0,,
 shell,NPC_SHELL_RUS_37_AP,0,,
 shell,NPC_SHELL_RUS_37_HE,0,,
 shell,NPC_SHELL_RUS_45_AP,0,,
+shell,NPC_SHELL_RUS_45_CV,0,,
 shell,NPC_SHELL_RUS_45_HE,0,,
 shell,NPC_SHELL_RUS_57_AP,0,,
+shell,NPC_SHELL_RUS_57_CV,0,,
 shell,NPC_SHELL_RUS_57_HE,0,,
 shell,NPC_SHELL_RUS_76_AP,0,,
 shell,NPC_SHELL_RUS_76_HE,0,,
+shell,NPC_SHELL_RUS_76_naval_HE,0,,
 shell,NPC_SHELL_RUS_85_AP,0,,
+shell,NPC_SHELL_RUS_85_CV,0,,
 shell,NPC_SHELL_RUS_85_HE,0,,
+shell,SHELL_ENG_115_HE,0,,
 shell,SHELL_ENG_20x110_AP,0,,
 shell,SHELL_ENG_20x110_HE,0,,
+shell,SHELL_GER_105_HE,0,,
+shell,SHELL_GER_105_HT,0,,
+shell,SHELL_GER_150_HE,0,,
 shell,SHELL_GER_30x184_AP,0,,
 shell,SHELL_GER_30x184_HE,0,,
 shell,SHELL_GER_50_CV,0,,
@@ -1163,12 +1290,16 @@ shell,SHELL_GER_88_AP,0,,
 shell,SHELL_GER_88_CV,0,,
 shell,SHELL_GER_88_HE,0,,
 shell,SHELL_GER_88_HV,0,,
+shell,SHELL_RUS_100_HE,0,,
+shell,SHELL_RUS_130_CV,0,,
+shell,SHELL_RUS_130_HE,0,,
 shell,SHELL_RUS_152_CV,0,,
 shell,SHELL_RUS_152_HE,0,,
 shell,SHELL_RUS_76_AP,0,,
 shell,SHELL_RUS_76_CV,0,,
 shell,SHELL_RUS_76_HE,0,,
 shell,SHELL_RUS_76_HV,0,,
+shell,SHELL_USA_155_HE,0,,
 shell,SHELL_USA_75_AP,0,,
 shell,SHELL_USA_75_CV,0,,
 shell,SHELL_USA_75_HE,0,,
@@ -1203,6 +1334,7 @@ tank_heavy,Mark V (male),0,,
 tank_heavy,Pz.Kpfw.VI Ausf.H,1,Pz.Kpfw.VI Ausf.H,
 tank_heavy,Pz.Kpfw.VI Ausf.H1,1,Pz.Kpfw.VI Ausf.H1,
 tank_heavy,Sturmpanzerwagen A7V,0,,
+tank_heavy,SU-152 ChKZ (1943),1,SU-152 ChKZ (1943),СУ-152 1943
 tank_light,BT-7M,0,BT-7M,БТ-7М
 tank_light,Marder III Ausf. H,0,SPG Marder III Ausf. H,
 tank_light,PzKpfw 38(t),0,Pz.Kpfw.38(t),
@@ -1256,6 +1388,10 @@ tank_turret,_PzVI-H1_T2,1,,
 tank_turret,_PzVI-H1_T3,1,,
 tank_turret,_SU122_T0,1,,
 tank_turret,_SU122_T2,1,,
+tank_turret,_SU152_T0,1,turret SU152,башня СУ-152
+tank_turret,_SU152_T2,1,,
+tank_turret,_SU152_T3,1,,
+tank_turret,_SU152_T4,1,,
 tank_turret,_T34-76UVZ-43_T0,1,,
 tank_turret,_T34-76UVZ-43_T1,1,,
 tank_turret,_T34-76UVZ-43_T2,1,,
@@ -1268,10 +1404,17 @@ tank_turret,Turret_PzIV-G,1,,
 tank_turret,Turret_T34-76STZ,1,turret T-34-76 STZ,башня Т-34 СТЗ
 trash,_KV1S_T0_sight1,0,,
 trash,_KV1S_T0_sight2,0,,
+trash,_M4A2_T0_sight1,0,,
+trash,_PzIII-M_T0_sight1,0,,
+trash,_PzIII-M_T2_sight1,0,,
+trash,_PzIV-G_T0_sight1,0,,
+trash,_PzV-D_T0_sight1,0,,
+trash,_PzVI-H1_T0_sight1,0,,
 trash,_SU122_T0_sight1,0,,
 trash,_SU122_T1_sight1,0,,
 trash,_SU122_T3,0,,
 trash,_SU122_T4,0,,
+trash,_SU152_T0_sight1,0,,
 trash,A20B_P2,0,,
 trash,abbayesaintvaast,0,,
 trash,Aerostat controller AI,0,,
@@ -1985,8 +2128,12 @@ vehicle_crew,BotLoader_Pz6H1,0,loader,
 vehicle_crew,BotMachinist0,0,machinist,машинист
 vehicle_crew,BotPilotBalloon_Fra,0,pilot balloon,
 vehicle_crew,BotPilotBalloon_Ger,0,pilot balloon,
+vehicle_crew,BotPilotBalloon_GER17,0,pilot balloon,
+vehicle_crew,BotPilotBalloon_RAF17,0,pilot balloon,
 vehicle_crew,BotPilotBalloonNPC_Fra,0,pilot balloon,
 vehicle_crew,BotPilotBalloonNPC_Ger,0,pilot balloon,
+vehicle_crew,BotPilotBalloonNPC_GER17,0,pilot balloon,
+vehicle_crew,BotPilotBalloonNPC_RAF17,0,pilot balloon,
 vehicle_crew,BotRadist_Pz6H1,0,radist,
 vehicle_crew,BotTankKV1_Commander,0,commander,
 vehicle_crew,BotTankKV1_Driver,0,driver,водитель
@@ -2026,6 +2173,11 @@ vehicle_crew,BotTankSU122_Driver,0,driver,
 vehicle_crew,BotTankSU122_Gunner,0,gunner,
 vehicle_crew,BotTankSU122_Loader1,0,loader,
 vehicle_crew,BotTankSU122_Loader2,0,loader,
+vehicle_crew,BotTankSU152_Commander,0,commander,
+vehicle_crew,BotTankSU152_Driver,0,driver,водитель
+vehicle_crew,BotTankSU152_Gunner,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankSU152_Loader1,0,loader,
+vehicle_crew,BotTankSU152_Loader2,0,loader,
 vehicle_crew,BotTankT3442_Driver,0,driver,водитель
 vehicle_crew,BotTankT3442_Gunner,0,gunner,стрелок-наводчик
 vehicle_crew,BotTankT34UVZ43_Driver,0,driver,
