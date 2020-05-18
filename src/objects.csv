@@ -252,6 +252,10 @@ aircraft_pilot,BotPilot_U2,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RUSwi,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_A20B_RAF43,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_A20B_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_A20B_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_A20B_USA43,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D_RAF,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D_RAF43,1,pilot,пилот
