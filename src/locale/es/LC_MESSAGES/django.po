@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 15:13+0300\n"
+"POT-Creation-Date: 2020-05-23 23:26+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -686,6 +686,7 @@ msgstr ""
 #: .\stats\aircraft_mods.py:346 .\stats\aircraft_mods.py:355
 #: .\stats\aircraft_mods.py:366 .\stats\aircraft_mods.py:426
 #: .\stats\aircraft_mods.py:433 .\stats\aircraft_mods.py:455
+#: .\stats\aircraft_mods.py:473 .\stats\aircraft_mods.py:479
 msgctxt "aircraft_mod"
 msgid "Mirror"
 msgstr ""
@@ -840,6 +841,7 @@ msgstr ""
 
 #: .\stats\aircraft_mods.py:281 .\stats\aircraft_mods.py:445
 #: .\stats\aircraft_mods.py:453 .\stats\aircraft_mods.py:468
+#: .\stats\aircraft_mods.py:472 .\stats\aircraft_mods.py:478
 #, fuzzy
 #| msgctxt "sortie_status"
 #| msgid "in flight"
@@ -849,7 +851,8 @@ msgstr "en vuelo"
 
 #: .\stats\aircraft_mods.py:282 .\stats\aircraft_mods.py:289
 #: .\stats\aircraft_mods.py:454 .\stats\aircraft_mods.py:462
-#: .\stats\aircraft_mods.py:467
+#: .\stats\aircraft_mods.py:467 .\stats\aircraft_mods.py:471
+#: .\stats\aircraft_mods.py:477
 msgctxt "aircraft_mod"
 msgid "RPK-10"
 msgstr ""
@@ -1172,6 +1175,16 @@ msgctxt "aircraft_mod"
 msgid "2 x ROS-82 rockets"
 msgstr ""
 
+#: .\stats\aircraft_mods.py:474 .\stats\aircraft_mods.py:480
+msgctxt "aircraft_mod"
+msgid "Reflector Gunsight"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:481
+msgctxt "aircraft_mod"
+msgid "Ammo counter"
+msgstr ""
+
 #: .\stats\aircraft_payloads.py:16 .\stats\aircraft_payloads.py:55
 #: .\stats\aircraft_payloads.py:74
 msgctxt "aircraft_payload"
@@ -1234,7 +1247,8 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1756 .\stats\aircraft_payloads.py:1772
 #: .\stats\aircraft_payloads.py:1790 .\stats\aircraft_payloads.py:1805
 #: .\stats\aircraft_payloads.py:1852 .\stats\aircraft_payloads.py:1878
-#: .\stats\aircraft_payloads.py:1896
+#: .\stats\aircraft_payloads.py:1896 .\stats\aircraft_payloads.py:1912
+#: .\stats\aircraft_payloads.py:1930
 msgctxt "aircraft_payload"
 msgid "Empty"
 msgstr ""
@@ -1269,6 +1283,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1773 .\stats\aircraft_payloads.py:1791
 #: .\stats\aircraft_payloads.py:1835 .\stats\aircraft_payloads.py:1853
 #: .\stats\aircraft_payloads.py:1879 .\stats\aircraft_payloads.py:1897
+#: .\stats\aircraft_payloads.py:1913 .\stats\aircraft_payloads.py:1931
 msgctxt "aircraft_payload"
 msgid "White Smoke [1]"
 msgstr ""
@@ -1303,6 +1318,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1774 .\stats\aircraft_payloads.py:1792
 #: .\stats\aircraft_payloads.py:1836 .\stats\aircraft_payloads.py:1854
 #: .\stats\aircraft_payloads.py:1880 .\stats\aircraft_payloads.py:1898
+#: .\stats\aircraft_payloads.py:1914 .\stats\aircraft_payloads.py:1932
 msgctxt "aircraft_payload"
 msgid "White Smoke [2]"
 msgstr ""
@@ -1337,6 +1353,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1775 .\stats\aircraft_payloads.py:1793
 #: .\stats\aircraft_payloads.py:1837 .\stats\aircraft_payloads.py:1855
 #: .\stats\aircraft_payloads.py:1881 .\stats\aircraft_payloads.py:1899
+#: .\stats\aircraft_payloads.py:1915 .\stats\aircraft_payloads.py:1933
 msgctxt "aircraft_payload"
 msgid "Blue Smoke [1]"
 msgstr ""
@@ -1371,6 +1388,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1776 .\stats\aircraft_payloads.py:1794
 #: .\stats\aircraft_payloads.py:1838 .\stats\aircraft_payloads.py:1856
 #: .\stats\aircraft_payloads.py:1882 .\stats\aircraft_payloads.py:1900
+#: .\stats\aircraft_payloads.py:1916 .\stats\aircraft_payloads.py:1934
 msgctxt "aircraft_payload"
 msgid "Blue Smoke [2]"
 msgstr ""
@@ -1405,6 +1423,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1777 .\stats\aircraft_payloads.py:1795
 #: .\stats\aircraft_payloads.py:1839 .\stats\aircraft_payloads.py:1857
 #: .\stats\aircraft_payloads.py:1883 .\stats\aircraft_payloads.py:1901
+#: .\stats\aircraft_payloads.py:1917 .\stats\aircraft_payloads.py:1935
 msgctxt "aircraft_payload"
 msgid "Red Smoke [1]"
 msgstr ""
@@ -1439,6 +1458,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1778 .\stats\aircraft_payloads.py:1796
 #: .\stats\aircraft_payloads.py:1840 .\stats\aircraft_payloads.py:1858
 #: .\stats\aircraft_payloads.py:1884 .\stats\aircraft_payloads.py:1902
+#: .\stats\aircraft_payloads.py:1918 .\stats\aircraft_payloads.py:1936
 msgctxt "aircraft_payload"
 msgid "Red Smoke [2]"
 msgstr ""
@@ -1473,6 +1493,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1779 .\stats\aircraft_payloads.py:1797
 #: .\stats\aircraft_payloads.py:1841 .\stats\aircraft_payloads.py:1859
 #: .\stats\aircraft_payloads.py:1885 .\stats\aircraft_payloads.py:1903
+#: .\stats\aircraft_payloads.py:1919 .\stats\aircraft_payloads.py:1937
 msgctxt "aircraft_payload"
 msgid "Green Smoke [1]"
 msgstr ""
@@ -1507,6 +1528,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1780 .\stats\aircraft_payloads.py:1798
 #: .\stats\aircraft_payloads.py:1842 .\stats\aircraft_payloads.py:1860
 #: .\stats\aircraft_payloads.py:1886 .\stats\aircraft_payloads.py:1904
+#: .\stats\aircraft_payloads.py:1920 .\stats\aircraft_payloads.py:1938
 msgctxt "aircraft_payload"
 msgid "Green Smoke [2]"
 msgstr ""
@@ -1541,6 +1563,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1781 .\stats\aircraft_payloads.py:1799
 #: .\stats\aircraft_payloads.py:1843 .\stats\aircraft_payloads.py:1861
 #: .\stats\aircraft_payloads.py:1887 .\stats\aircraft_payloads.py:1905
+#: .\stats\aircraft_payloads.py:1921 .\stats\aircraft_payloads.py:1939
 msgctxt "aircraft_payload"
 msgid "Yellow Smoke [1]"
 msgstr ""
@@ -1575,6 +1598,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1782 .\stats\aircraft_payloads.py:1800
 #: .\stats\aircraft_payloads.py:1844 .\stats\aircraft_payloads.py:1862
 #: .\stats\aircraft_payloads.py:1888 .\stats\aircraft_payloads.py:1906
+#: .\stats\aircraft_payloads.py:1922 .\stats\aircraft_payloads.py:1940
 msgctxt "aircraft_payload"
 msgid "Yellow Smoke [2]"
 msgstr ""
@@ -1609,6 +1633,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1783 .\stats\aircraft_payloads.py:1801
 #: .\stats\aircraft_payloads.py:1845 .\stats\aircraft_payloads.py:1863
 #: .\stats\aircraft_payloads.py:1889 .\stats\aircraft_payloads.py:1907
+#: .\stats\aircraft_payloads.py:1923 .\stats\aircraft_payloads.py:1941
 msgctxt "aircraft_payload"
 msgid "Black Smoke [1]"
 msgstr ""
@@ -1643,6 +1668,7 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1784 .\stats\aircraft_payloads.py:1802
 #: .\stats\aircraft_payloads.py:1846 .\stats\aircraft_payloads.py:1864
 #: .\stats\aircraft_payloads.py:1890 .\stats\aircraft_payloads.py:1908
+#: .\stats\aircraft_payloads.py:1924 .\stats\aircraft_payloads.py:1942
 msgctxt "aircraft_payload"
 msgid "Black Smoke [2]"
 msgstr ""
@@ -5199,6 +5225,26 @@ msgstr ""
 #: .\stats\aircraft_payloads.py:1895
 msgctxt "aircraft_payload"
 msgid "UB AP/HE [400], SHVAK AP/HE [120], FAB-100M [2]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:1911
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], SHVAK AP/HE [120]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:1927
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], NS-37 AP/HE [30]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:1928
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], NS-37 AP [30]"
+msgstr ""
+
+#: .\stats\aircraft_payloads.py:1929
+msgctxt "aircraft_payload"
+msgid "UB AP/HE [200], NS-37 HE [30]"
 msgstr ""
 
 #: .\stats\apps.py:7

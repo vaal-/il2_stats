@@ -467,4 +467,17 @@ aircraft_mods = {
         3: pgettext_lazy('aircraft_mod', 'RPK-10'),
         4: pgettext_lazy('aircraft_mod', 'Landing light'),
     },
+    'yak-9 ser.1': {
+        1: pgettext_lazy('aircraft_mod', 'RPK-10'),
+        2: pgettext_lazy('aircraft_mod', 'Landing light'),
+        3: pgettext_lazy('aircraft_mod', 'Mirror'),
+        4: pgettext_lazy('aircraft_mod', 'Reflector Gunsight'),
+    },
+    'yak-9t ser.1': {
+        1: pgettext_lazy('aircraft_mod', 'RPK-10'),
+        2: pgettext_lazy('aircraft_mod', 'Landing light'),
+        3: pgettext_lazy('aircraft_mod', 'Mirror'),
+        4: pgettext_lazy('aircraft_mod', 'Reflector Gunsight'),
+        5: pgettext_lazy('aircraft_mod', 'Ammo counter'),
+    },
 }
