@@ -4,7 +4,7 @@ setuptools==41.4.0
 
 argon2-cffi==19.1.0
 dj-static==0.0.6
-Django==1.11.25
+Django==1.11.29
 django-modeltranslation==0.13.3
 filelock==3.0.12
 Pillow==6.2.1
