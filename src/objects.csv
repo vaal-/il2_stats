@@ -201,12 +201,14 @@ aircraft_pilot,BotPilot_B25D_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109_GER41,1,pilot,пилот
+aircraft_pilot,BotPilot_Bf109_GER41wi,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109K,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1_GER17,1,pilot,пилот
 aircraft_pilot,BotPilot_FW190,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190_GER41,1,pilot,пилот
+aircraft_pilot,BotPilot_Fw190_GER41wi,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190D,1,pilot,пилот
 aircraft_pilot,BotPilot_He111,1,pilot,пилот
@@ -251,10 +253,10 @@ aircraft_pilot,BotPilot_Spit9_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_U2,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
-aircraft_pilot,BotPilotNPC_A20B_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RAF43,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_A20B_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_USA43,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D_RAF,0,pilot,пилот
@@ -785,6 +787,10 @@ explosion,HE_088mm_8kg_640g_building,0,,
 explosion,HE_088mm_8kg_640g_ground,0,,
 explosion,HE_088mm_8kg_640g_object,0,,
 explosion,HE_088mm_8kg_640g_water,0,,
+explosion,HE_088mm_9kg_1kg_building,0,,
+explosion,HE_088mm_9kg_1kg_ground,0,,
+explosion,HE_088mm_9kg_1kg_object,0,,
+explosion,HE_088mm_9kg_1kg_water,0,,
 explosion,HE_088mm_9kg_900g_air,0,,
 explosion,HE_088mm_9kg_900g_building,0,,
 explosion,HE_088mm_9kg_900g_ground,0,,
@@ -1293,6 +1299,7 @@ shell,SHELL_GER_75_HV,0,,
 shell,SHELL_GER_88_AP,0,,
 shell,SHELL_GER_88_CV,0,,
 shell,SHELL_GER_88_HE,0,,
+shell,SHELL_GER_88_HE_kwk43,0,,
 shell,SHELL_GER_88_HV,0,,
 shell,SHELL_RUS_100_HE,0,,
 shell,SHELL_RUS_130_CV,0,,
