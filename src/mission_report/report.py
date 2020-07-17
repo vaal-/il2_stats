@@ -384,7 +384,7 @@ class MissionReport:
             if not (sortie.is_ended or sortie.is_bailout or (not sortie.aircraft) or sortie.aircraft.on_ground):
                 sortie.is_disco = True
 
-    def event_tank_travel(self, tik, parent_id, pos):
+    def event_tank_travel(self, tik, tank_id, pos):
         pass
 
 

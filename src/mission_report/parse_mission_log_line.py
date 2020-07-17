@@ -133,7 +133,7 @@ atype_21 = re.compile(r'^T:(?P<tik>\d+) AType:21 USERID:(?P<account_id>[-\w]{36}
 
 # начало движения танка
 # T:36160 AType:22 PID:1684580 POS(223718.406, 10.337, 242309.250)
-atype_22 = re.compile(r'^T:(?P<tik>\d+) AType:22 PID:(?P<parent_id>[-\d]+) POS\((?P<pos>.+)\)$')
+atype_22 = re.compile(r'^T:(?P<tik>\d+) AType:22 PID:(?P<tank_id>[-\d]+) POS\((?P<pos>.+)\)$')
 
 
 atype_handlers = [
@@ -186,6 +186,7 @@ params_handlers = {
     'group_id': int,
     'object_id': int,
     'area_id': int,
+    'tank_id': int,
 
     'attacker_id': lambda s: int(s) if s != '-1' else None,
     'aircraft_id_list': lambda s: list(map(int, s.split(','))) if s else [],
