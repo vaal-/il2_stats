@@ -124,6 +124,12 @@ aircraft_gunner,BotGunner_Pe2s87top_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_U2_femRUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_U2_femRUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_U2_femRUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_U2_RUS41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_U2_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_U2_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_RUSwi,1,Aircraft gunner,стрелок
 aircraft_heavy,A-20B,1,,
 aircraft_heavy,B-25D,0,,
@@ -252,6 +258,12 @@ aircraft_pilot,BotPilot_Spit9_RAF43,1,pilot,пилот
 aircraft_pilot,BotPilot_Spit9_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_Spit9_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_U2,1,pilot,пилот
+aircraft_pilot,BotPilot_U2_femRUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_U2_femRUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_U2_femRUSwi,1,pilot,пилот
+aircraft_pilot,BotPilot_U2_RUS41,1,pilot,пилот
+aircraft_pilot,BotPilot_U2_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_U2_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RAF43,1,pilot,пилот
@@ -271,6 +283,12 @@ aircraft_pilot,BotPilotNPC_Ger,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52_GER41,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_U2_femRUS42,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_U2_femRUS43,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_U2_femRUSwi,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_U2_RUS41,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_U2_RUS42,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_U2_RUS43,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52_GER41,1,pilot,пилот
@@ -1290,6 +1308,8 @@ shell,NPC_SHELL_RUS_85_HE,0,,
 shell,SHELL_ENG_115_HE,0,,
 shell,SHELL_ENG_20x110_AP,0,,
 shell,SHELL_ENG_20x110_HE,0,,
+shell,SHELL_ENG_40x158_AP,0,,
+shell,SHELL_ENG_40x158_HE,0,,
 shell,SHELL_GER_105_HE,0,,
 shell,SHELL_GER_105_HT,0,,
 shell,SHELL_GER_150_HE,0,,
@@ -1723,6 +1743,9 @@ trash,millitarytower1,0,,
 trash,MouseControlCameraOperator,0,,
 trash,noname,0,,
 trash,notredamedamiens,0,,
+trash,od_railcoal,0,,
+trash,od_railcross,0,,
+trash,od_windmil,0,,
 trash,OKT_01,0,,
 trash,OKT_02,0,,
 trash,OKT_03,0,,
@@ -1732,6 +1755,7 @@ trash,OKT_06,0,,
 trash,OKT_07,0,,
 trash,OKT_08,0,,
 trash,operadelille,0,,
+trash,ParatroopersCreator_C47,0,,
 trash,ParatroopersCreator_Ju52,0,,
 trash,Parseval_P2,0,,
 trash,Plane controller,0,,
@@ -2216,34 +2240,49 @@ vehicle_crew,ParatrooperGER,0,paratrooper,десантник
 vehicle_static,15 cm schwere Feldhaubitze 13,0,,
 vehicle_static,Flakvierling 38,0,,
 vehicle_static,M5 3-inch gun,0,,
-vehicle_static,static_BM13,0,tank,танк
-vehicle_static,static_BoxNB,0,tank,танк
-vehicle_static,static_Bt-7m,0,tank,танк
-vehicle_static,static_E,0,tank,танк
-vehicle_static,static_ET,0,tank,танк
-vehicle_static,static_ford-G917,0,tank,танк
-vehicle_static,static_G8,0,tank,танк
-vehicle_static,static_G8T,0,tank,танк
-vehicle_static,static_gaz-m,0,tank,танк
-vehicle_static,static_gazAA,0,tank,танк
+vehicle_static,static_BM13,0,,
+vehicle_static,static_BoxNB,0,,
+vehicle_static,static_boxnb_3,0,,
+vehicle_static,static_boxnb_5,0,,
+vehicle_static,static_BP_d3t26,0,,
+vehicle_static,static_BP_locomotive,0,,
+vehicle_static,static_BP_pl37,0,,
+vehicle_static,static_BP_pl42,0,,
+vehicle_static,static_BP_pl43,0,,
+vehicle_static,static_Bt-7m,0,,
+vehicle_static,static_E,0,,
+vehicle_static,static_ET,0,,
+vehicle_static,static_ford-G917,0,,
+vehicle_static,static_G8,0,,
+vehicle_static,static_G8T,0,,
+vehicle_static,static_gaz-m,0,,
+vehicle_static,static_gazAA,0,,
 vehicle_static,static_GMC-CCKW,0,,
 vehicle_static,static_GMC-CCKW-Fuel,0,,
-vehicle_static,static_Horch830,0,tank,танк
-vehicle_static,static_kv1-41,0,tank,танк
+vehicle_static,static_Horch830,0,,
+vehicle_static,static_kv1-41,0,,
 vehicle_static,static_M4A3,0,,
 vehicle_static,static_opel,0,truck,грузовик
 vehicle_static,static_opel_fuel,0,truck,грузовик
-vehicle_static,static_pass,0,tank,танк
-vehicle_static,static_PlatformEmptyNB,0,tank,танк
-vehicle_static,static_PlatformNB,0,tank,танк
-vehicle_static,static_Pz_IIIH,0,tank,танк
-vehicle_static,static_Pz_IVF1,0,tank,танк
+vehicle_static,static_pass,0,,
+vehicle_static,static_pass_3,0,,
+vehicle_static,static_pass_5,0,,
+vehicle_static,static_PlatformEmptyNB,0,,
+vehicle_static,static_platformemptynb_3,0,,
+vehicle_static,static_platformemptynb_5,0,,
+vehicle_static,static_PlatformNB,0,,
+vehicle_static,static_platformnb_3,0,,
+vehicle_static,static_platformnb_5,0,,
+vehicle_static,static_Pz_IIIH,0,,
+vehicle_static,static_Pz_IVF1,0,,
 vehicle_static,static_PzVI-H1,0,,
-vehicle_static,static_SdKfz251-1C,0,tank,танк
-vehicle_static,static_Stug37L24,0,tank,танк
-vehicle_static,static_T34-76,0,tank,танк
-vehicle_static,static_T70,0,tank,танк
-vehicle_static,static_tanknb,0,tank,танк
+vehicle_static,static_SdKfz251-1C,0,,
+vehicle_static,static_Stug37L24,0,,
+vehicle_static,static_T34-76,0,,
+vehicle_static,static_T70,0,,
+vehicle_static,static_tanknb,0,,
+vehicle_static,static_tanknb_3,0,,
+vehicle_static,static_tanknb_5,0,,
 vehicle_static,static_WillysMB,0,,
 vehicle_static,static_zis,0,truck,грузовик
 vehicle_static,static_zis_fuel,0,truck,грузовик
