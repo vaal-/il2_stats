@@ -235,6 +235,13 @@ def test_atype_12_block_2():
     assert parse(line) == result
 
 
+def test_atype_12_country_minus_1():
+    line = "T:60788 AType:12 ID:88077 TYPE:Common Bot's head COUNTRY:-1 NAME:Common Bot's head PID:-1 POS(0.0000,0.0000,0.0000)"
+    result = {'tik': 60788, 'atype_id': 12, 'object_id': 88077, 'object_name': "Common Bot's head",
+              'country_id': 0, 'name': "Common Bot's head", 'parent_id': None}
+    assert parse(line) == result
+
+
 def test_atype_13():
     line = 'T:0 AType:13 AID:39936 COUNTRY:501 ENABLED:1 BC(0,0,0,0,0,0,0,0)'
     result = {'tik': 0, 'atype_id': 13, 'area_id': 39936, 'country_id': 501, 'enabled': True,
@@ -320,7 +327,7 @@ def test_atype_21():
 
 def test_atype_22():
     line = 'T:36160 AType:22 PID:1684580 POS(223718.406, 10.337, 242309.250)'
-    result = {'tik': 36160, 'atype_id': 22, 'parent_id': 1684580, 'pos': dict(x=223718.406, y=10.337, z=242309.250)}
+    result = {'tik': 36160, 'atype_id': 22, 'tank_id': 1684580, 'pos': dict(x=223718.406, y=10.337, z=242309.250)}
     assert parse(line) == result
 
 

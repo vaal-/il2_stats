@@ -87,9 +87,10 @@ atype_11 = re.compile(r'^T:(?P<tik>\d+) AType:11 GID:(?P<group_id>\d+) '
 # T:48738 AType:12 ID:649216 TYPE:static_zis[-1,-1] COUNTRY:101 NAME:Block PID:-1
 # T:171760 AType:12 ID:1266700 TYPE:CParachute_1266700 COUNTRY:101 NAME:CParachute_1266700 PID:-1
 # T:15 AType:12 ID:137215 TYPE:LaGG-3 ser.29 COUNTRY:101 NAME:LaGG-3 ser.29 PID:-1 POS(19666.344,998.778,33864.637)
+# T:60788 AType:12 ID:88077 TYPE:Common Bot's head COUNTRY:-1 NAME:Common Bot's head PID:-1 POS(0.0000,0.0000,0.0000)
 atype_12 = re.compile(r'^T:(?P<tik>\d+) AType:12 ID:(?P<object_id>\d+) '
                       r'TYPE:(?P<object_name>[ .\'\-\w\(\)/]*)(\[-?\d+,-?\d+\])* '
-                      r'COUNTRY:(?P<country_id>\d{1,3}) NAME:(?P<name>.*) PID:(?P<parent_id>[-\d]+)')
+                      r'COUNTRY:(?P<country_id>[-\d]+) NAME:(?P<name>.*) PID:(?P<parent_id>[-\d]+)')
 
 # зона, количество самолетов в воздухе для каждой коалиции (0, 1, 2, 3, 4, 5, 6, 7) находящихся в данный момент в зоне
 # T:0 AType:13 AID:39936 COUNTRY:501 ENABLED:1 BC(0,0,0,0,0,0,0,0)
@@ -173,7 +174,7 @@ params_handlers = {
     'bot_id': int,
     'cartridges': int,
     'coal_id': int,
-    'country_id': int,
+    'country_id': lambda s: int(s) if s != '-1' else 0,
     'game_type_id': int,
     'leader_id': int,
     'payload_id': int,
