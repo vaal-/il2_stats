@@ -241,6 +241,7 @@ aircraft_pilot,BotPilot_LaGG3_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_Me262,1,pilot,пилот
 aircraft_pilot,BotPilot_Me262_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_P38,1,pilot,пилот
+aircraft_pilot,BotPilot_P38_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_P38_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_P39,1,pilot,пилот
 aircraft_pilot,BotPilot_P39_RUSwi,1,pilot,пилот
@@ -248,6 +249,7 @@ aircraft_pilot,BotPilot_P47,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_RAF,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_RAF43,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_P47_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_Pe2,1,pilot,пилот
 aircraft_pilot,BotPilot_Pe2_RUSwi,1,pilot,пилот
@@ -1447,6 +1449,7 @@ trash,_KV1S_T0_sight2,0,,
 trash,_M4A2_T0_sight1,0,,
 trash,_PzIII-M_T0_sight1,0,,
 trash,_PzIII-M_T2_sight1,0,,
+trash,_PzIII-M_visor,0,,
 trash,_PzIV-G_T0_sight1,0,,
 trash,_PzV-D_T0_sight1,0,,
 trash,_PzVI-H1_T0_sight1,0,,
