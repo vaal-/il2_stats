@@ -1415,6 +1415,7 @@ class Award(models.Model):
     desc = models.TextField(_('description'), blank=True)
     img = models.ImageField(_('image'), upload_to='awards/',
                             help_text=_('Image size should be 180x180'))
+    order = models.CharField(_('order field'), max_length=8, default='', blank=True, db_index=True)
 
     class Meta:
         db_table = 'awards'

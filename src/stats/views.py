@@ -162,7 +162,7 @@ def pilot_awards(request, profile_id, nickname=None):
     if player.profile.is_hide:
         return render(request, 'pilot_hide.html', {'player': player})
 
-    rewards = Reward.objects.select_related('award').filter(player_id=player.id).order_by('-date')
+    rewards = Reward.objects.select_related('award').filter(player_id=player.id).order_by('award__order', '-date')
 
     return render(request, 'pilot_awards.html', {
         'player': player,

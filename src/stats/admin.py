@@ -84,9 +84,9 @@ class TourAdmin(TranslationAdmin):
 
 @admin.register(Award)
 class AwardAdmin(TranslationAdmin):
-    list_display = ('title', 'func', 'type')
+    list_display = ('title', 'func', 'type', 'order')
     list_display_links = ('title', 'func')
-    ordering = ['type', 'func']
+    ordering = ['order', 'type', 'func']
 
 
 if settings.DEV_MODE:
