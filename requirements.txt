@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-argon2-cffi==19.1.0       # via -r requirements.in
+argon2-cffi==20.1.0       # via -r requirements.in
 cffi==1.13.1              # via argon2-cffi
 dj-static==0.0.6          # via -r requirements.in
 django-modeltranslation==0.13.3  # via -r requirements.in

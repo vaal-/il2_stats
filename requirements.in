@@ -2,7 +2,7 @@ wheel==0.35.1
 pip==20.2.4
 setuptools==50.3.2
 
-argon2-cffi==19.1.0
+argon2-cffi==20.1.0
 dj-static==0.0.6
 Django==1.11.29
 django-modeltranslation==0.13.3
