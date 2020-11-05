@@ -10,7 +10,7 @@ dj-static==0.0.6          # via -r requirements.in
 django-modeltranslation==0.13.3  # via -r requirements.in
 django==1.11.29           # via -r requirements.in
 filelock==3.0.12          # via -r requirements.in
-pillow==6.2.2             # via -r requirements.in
+pillow==7.1.0             # via -r requirements.in
 psycopg2==2.8.6           # via -r requirements.in
 pycparser==2.19           # via cffi
 pytz==2020.1              # via -r requirements.in, django, tzlocal
