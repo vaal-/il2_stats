@@ -1,13 +1,15 @@
+from copy import deepcopy
 import logging
 
 from mission_report import parse_mission_log_line
+from mission_report.constants import COUNTRIES_COALITION_DEFAULT, COALITION_ALIAS
 from stats.models import PlayerOnline, Profile
 
 
 logger = logging.getLogger('online')
 
 
-_countries = {0: 0, 101: 1, 201: 2, 202: 2}
+_countries = deepcopy(COUNTRIES_COALITION_DEFAULT)
 
 
 def update_online(m_report_files, online_timestamp):
@@ -41,7 +43,8 @@ def update_online(m_report_files, online_timestamp):
                     elif atype_id == 21:
                         PlayerOnline.objects.filter(uuid=data['account_id']).delete()
                     elif atype_id == 0:
-                        _countries.update(data['countries'])
+                        for country, coalition in data['countries'].items():
+                            _countries[country] = COALITION_ALIAS[coalition]
 
     return online_timestamp
 

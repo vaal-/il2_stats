@@ -27,6 +27,28 @@ class Country:
     AustriaHungary = 402
 
 
+COUNTRIES_COALITION_DEFAULT = {
+    Country.neutral: Coalition.neutral,
+
+    Country.USSR: Coalition.Allies,
+    Country.GreatBritain: Coalition.Allies,
+    Country.USA: Coalition.Allies,
+
+    Country.France: Coalition.Allies,
+    Country.GreatBritainWW1: Coalition.Allies,
+    Country.UnitedStatesWW1: Coalition.Allies,
+    Country.Belgium: Coalition.Allies,
+    Country.Russia: Coalition.Allies,
+
+    Country.Germany: Coalition.Axis,
+    Country.Italy: Coalition.Axis,
+    Country.Japan: Coalition.Axis,
+
+    Country.GermanyWW1: Coalition.Axis,
+    Country.AustriaHungary: Coalition.Axis,
+}
+
+
 COALITION_ALIAS = {
     0: Coalition.neutral,
     1: Coalition.coal_1,
