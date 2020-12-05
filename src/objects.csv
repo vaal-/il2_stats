@@ -41,9 +41,17 @@ aerostat,Drachen,0,,
 aerostat,Parseval,0,,
 aircraft_gunner,BotGunner,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Bbtm,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Bbtm_RAF43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Bbtm_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Bbtm_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Bbtm_RUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Bbtm_USA43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Btop,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Btop_RAF43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Btop_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Btop_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_A20Btop_RUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_A20Btop_USA43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dbtm,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dbtm_RAF,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dbtm_RAF43,1,Aircraft gunner,стрелок
@@ -252,7 +260,11 @@ aircraft_pilot,BotPilot_P38,1,pilot,пилот
 aircraft_pilot,BotPilot_P38_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_P38_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_P39,1,pilot,пилот
+aircraft_pilot,BotPilot_P39_RAF43,1,pilot,пилот
+aircraft_pilot,BotPilot_P39_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_P39_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_P39_RUSwi,1,pilot,пилот
+aircraft_pilot,BotPilot_P39_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_P47,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_RAF,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_RAF43,1,pilot,пилот
@@ -1359,6 +1371,8 @@ shell,SHELL_RUS_130_CV,0,,
 shell,SHELL_RUS_130_HE,0,,
 shell,SHELL_RUS_152_CV,0,,
 shell,SHELL_RUS_152_HE,0,,
+shell,SHELL_RUS_25x218_AP,0,,
+shell,SHELL_RUS_25x218_HE,0,,
 shell,SHELL_RUS_76_AP,0,,
 shell,SHELL_RUS_76_CV,0,,
 shell,SHELL_RUS_76_HE,0,,
