@@ -167,7 +167,7 @@ def stats_whore(m_report_file):
 
     mission = Mission.objects.create(
         tour_id=tour.id,
-        name=m_report.file_path.replace('\\', '/').split('/')[-1].split('.')[0],
+        name=m_report.file_path.replace('\\', '/').split('/')[-1].rsplit('.', 1)[0],
         path=m_report.file_path,
         date_start=real_date,
         date_end=real_date + timedelta(seconds=m_report.tik_last // 50),
