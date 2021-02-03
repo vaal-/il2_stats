@@ -122,6 +122,12 @@ aircraft_gunner,BotGunner_Ju88fwd_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35rear_femRUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35rear_femRUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35rear_femRUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35rear_RUS41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35rear_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35rear_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35top_RUSwi,1,Aircraft gunner,стрелок
@@ -162,6 +168,7 @@ aircraft_light,Fokker D.VIIF,1,,
 aircraft_light,Fokker Dr.I,1,,
 aircraft_light,Fw 190 A-3,1,,
 aircraft_light,Fw 190 A-5,1,,
+aircraft_light,Fw 190 A-6,1,,
 aircraft_light,Fw 190 A-8,1,,
 aircraft_light,Fw 190 D-9,1,,
 aircraft_light,Hurricane Mk.II,1,,
@@ -803,6 +810,10 @@ explosion,HE_075mm_7kg_667g_building,0,,
 explosion,HE_075mm_7kg_667g_ground,0,,
 explosion,HE_075mm_7kg_667g_object,0,,
 explosion,HE_075mm_7kg_667g_water,0,,
+explosion,HE_076mm_6kg_480g_building,0,,
+explosion,HE_076mm_6kg_480g_ground,0,,
+explosion,HE_076mm_6kg_480g_object,0,,
+explosion,HE_076mm_6kg_480g_water,0,,
 explosion,HE_076mm_6kg_710g_air,0,,
 explosion,HE_076mm_6kg_710g_building,0,,
 explosion,HE_076mm_6kg_710g_ground,0,,
@@ -2191,15 +2202,21 @@ trash,Windmill1_eu_1,0,,
 trash,Windmill1_eu_2,0,,
 trash,Windsock,0,,
 truck,Benz LKW 1912,0,,
+truck,Benz LKW 1912 ammo,0,,
 truck,BZ-35,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
+truck,Ford G917 ammo,0,,
 truck,GAZ-55,0,,
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
+truck,GAZ-AA ammo,0,,
 truck,GMC CCKW 353,0,GMC CCKW truck,грузовик GMC CCKW
+truck,GMC CCKW 353 ammo,0,,
 truck,GMC CCKW 353 Fuel,0,,
 truck,Leyland 3 Ton RAF,0,,
+truck,Leyland 3 Ton RAF ammo,0,,
 truck,Opel Blitz,0,Opel Blitz truck,грузовик Opel Blitz
 truck,Opel Blitz Ambulance,0,,
+truck,Opel Blitz ammo,0,,
 truck,Opel Blitz Tankwagen,0,,
 truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
 vehicle_crew,BotBoatSwain,0,boatswain,боцман
