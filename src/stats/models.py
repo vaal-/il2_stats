@@ -371,6 +371,9 @@ class Player(models.Model):
     date_last_combat = models.DateTimeField(null=True)
 
     score = models.BigIntegerField(default=0, db_index=True)
+    score_bomber = models.BigIntegerField(default=0, db_index=True)
+    score_attacker = models.BigIntegerField(default=0, db_index=True)
+    score_fighter = models.BigIntegerField(default=0, db_index=True)
     rating = models.BigIntegerField(default=0, db_index=True)
     rating_bomber = models.BigIntegerField(default=0, db_index=True)
     rating_attacker = models.BigIntegerField(default=0, db_index=True)
