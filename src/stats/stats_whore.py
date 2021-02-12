@@ -672,7 +672,15 @@ def update_general(player, new_sortie):
     player.fgk_total += new_sortie.fgk_total
     player.ak_assist += new_sortie.ak_assist
     player.score += new_sortie.score
-
+    try:
+        if new_sortie.aircraft.cls == "aircraft_light":
+            player.score_light += new_sortie.score
+        elif new_sortie.aircraft.cls == "aircraft_medium":
+            player.score_medium += new_sortie.score
+        elif new_sortie.aircraft.cls == "aircraft_heavy":
+            player.score_heavy += new_sortie.score
+    except AttributeError:
+        pass # Some new_sortie objects have no score_light/score_medium/score_heavy.
 
 def update_ammo(sortie, player):
     # в логах есть баги, по окончание вылета у самолета может быть больше боемкомплекта чем было вначале
