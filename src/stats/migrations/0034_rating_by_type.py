@@ -41,4 +41,19 @@ class Migration(migrations.Migration):
             name='rating_light',
             field=models.IntegerField(db_index=True, default=0),
         ),
+        migrations.AddField(
+            model_name='PlayerMission',
+            name='score_heavy',
+            field=models.IntegerField(db_index=True, default=0),
+        ),
+        migrations.AddField(
+            model_name='PlayerMission',
+            name='score_medium',
+            field=models.IntegerField(db_index=True, default=0),
+        ),
+        migrations.AddField(
+            model_name='PlayerMission',
+            name='score_light',
+            field=models.IntegerField(db_index=True, default=0),
+        ),
     ]

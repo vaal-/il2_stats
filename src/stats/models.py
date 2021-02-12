@@ -582,6 +582,9 @@ class PlayerMission(models.Model):
     mission = models.ForeignKey(Mission, related_name='+', on_delete=models.CASCADE)
 
     score = models.IntegerField(default=0, db_index=True)
+    score_heavy = models.IntegerField(default=0, db_index=True)
+    score_medium = models.IntegerField(default=0, db_index=True)
+    score_light = models.IntegerField(default=0, db_index=True)
     ratio = models.FloatField(default=1)
 
     sorties_total = models.IntegerField(default=0)
