@@ -372,6 +372,9 @@ class Player(models.Model):
 
     score = models.BigIntegerField(default=0, db_index=True)
     rating = models.BigIntegerField(default=0, db_index=True)
+    rating_bomber = models.BigIntegerField(default=0, db_index=True)
+    rating_attacker = models.BigIntegerField(default=0, db_index=True)
+    rating_fighter = models.BigIntegerField(default=0, db_index=True)
     ratio = models.FloatField(default=1)
 
     sorties_total = models.IntegerField(default=0)
