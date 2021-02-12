@@ -13,32 +13,32 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='player',
-            name='score_bomber',
+            name='score_heavy',
             field=models.IntegerField(db_index=True, default=0),
         ),
         migrations.AddField(
             model_name='player',
-            name='score_attacker',
+            name='score_medium',
             field=models.IntegerField(db_index=True, default=0),
         ),
         migrations.AddField(
             model_name='player',
-            name='score_fighter',
+            name='score_light',
             field=models.IntegerField(db_index=True, default=0),
         ),
         migrations.AddField(
             model_name='player',
-            name='rating_bomber',
+            name='rating_heavy',
             field=models.IntegerField(db_index=True, default=0),
         ),
         migrations.AddField(
             model_name='player',
-            name='rating_attacker',
+            name='rating_medium',
             field=models.IntegerField(db_index=True, default=0),
         ),
         migrations.AddField(
             model_name='player',
-            name='rating_fighter',
+            name='rating_light',
             field=models.IntegerField(db_index=True, default=0),
         ),
     ]
