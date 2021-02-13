@@ -659,9 +659,11 @@ def update_sortie(new_sortie, player_mission, player_aircraft, vlife):
 
 
 def update_general(player, new_sortie):
+    flight_time_add = 0
     if not new_sortie.is_not_takeoff:
         player.sorties_total += 1
-        player.flight_time += new_sortie.flight_time
+        flight_time_add = new_sortie.flight_time
+    player.flight_time += flight_time_add
 
     relive_add = 1 if new_sortie.is_relive else 0
     player.relive += relive_add
@@ -676,15 +678,15 @@ def update_general(player, new_sortie):
     try:
         if new_sortie.aircraft.cls == "aircraft_light":
             player.score_light += new_sortie.score
-            player.flight_time_light += new_sortie.flight_time
+            player.flight_time_light += flight_time_add
             player.relive_light += relive_add
         elif new_sortie.aircraft.cls == "aircraft_medium":
             player.score_medium += new_sortie.score
-            player.flight_time_medium += new_sortie.flight_time
+            player.flight_time_medium += flight_time_add
             player.relive_medium += relive_add
         elif new_sortie.aircraft.cls == "aircraft_heavy":
             player.score_heavy += new_sortie.score
-            player.flight_time_heavy += new_sortie.flight_time
+            player.flight_time_heavy += flight_time_add
             player.relive_heavy += relive_add
     except AttributeError:
         pass # Some player objects have no score or relive attributes for light/medium/heavy aircraft.
