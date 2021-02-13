@@ -192,6 +192,7 @@ def stats_whore(m_report_file):
 
     coalition_score = {1: 0, 2: 0}
     new_sorties = []
+    new_sortie_to_cls = {}
     for sortie in m_report.sorties:
         sortie_aircraft_id = objects[sortie.aircraft_name]['id']
         profile = profiles[sortie.account_id]
@@ -209,8 +210,9 @@ def stats_whore(m_report_file):
 
         new_sortie = create_new_sortie(mission=mission, sortie=sortie, profile=profile, player=player,
                                        sortie_aircraft_id=sortie_aircraft_id)
+        new_sortie_to_cls[new_sortie.id] = sortie.cls
         update_fairplay(new_sortie=new_sortie)
-        update_bonus_score(new_sortie=new_sortie)
+        update_bonus_score(new_sortie=new_sortie, cls=sortie.cls)
 
         # не добавляем очки в сумму если было диско
         if not new_sortie.is_disco:
@@ -249,7 +251,7 @@ def stats_whore(m_report_file):
 
         # если случилась победа по очкам - требуется обновить бонусы
         if mission.win_reason == 'score':
-            update_bonus_score(new_sortie=new_sortie)
+            update_bonus_score(new_sortie=new_sortie, cls=new_sortie_to_cls[new_sortie.id])
 
         update_sortie(new_sortie=new_sortie, player_mission=player_mission, player_aircraft=player_aircraft, vlife=vlife)
         reward_sortie(sortie=new_sortie)
@@ -794,7 +796,7 @@ def update_fairplay(new_sortie):
     new_sortie.fairplay = player.fairplay
 
 
-def update_bonus_score(new_sortie):
+def update_bonus_score(new_sortie, cls):
     # бонус процент
     bonus_pct = 0
     bonus_dict = {}
@@ -820,3 +822,10 @@ def update_bonus_score(new_sortie):
     new_sortie.score_dict['penalty'] = penalty_score
     new_sortie.score -= penalty_score
     # new_sortie.save()
+
+    if cls == "aircraft_heavy":
+        new_sortie.score_heavy = new_sortie.score
+    elif cls == "aircraft_medium":
+        new_sortie.score_medium = new_sortie.score
+    elif cls == "aircraft_light":
+        new_sortie.score_light = new_sortie.score
