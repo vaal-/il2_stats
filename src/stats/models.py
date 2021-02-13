@@ -394,6 +394,9 @@ class Player(models.Model):
 
     # налет в секундах?
     flight_time = models.BigIntegerField(default=0, db_index=True)
+    flight_time_heavy = models.BigIntegerField(default=0)
+    flight_time_medium = models.BigIntegerField(default=0)
+    flight_time_light = models.BigIntegerField(default=0)
 
     ammo = JSONField(default=default_ammo)
     accuracy = models.FloatField(default=0, db_index=True)
@@ -423,6 +426,9 @@ class Player(models.Model):
     dead = models.IntegerField(default=0)
     captured = models.IntegerField(default=0)
     relive = models.IntegerField(default=0)
+    relive_heavy = models.IntegerField(default=0)
+    relive_medium = models.IntegerField(default=0)
+    relive_light = models.IntegerField(default=0)
 
     takeoff = models.IntegerField(default=0)
     landed = models.IntegerField(default=0)

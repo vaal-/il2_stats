@@ -42,6 +42,36 @@ class Migration(migrations.Migration):
             field=models.IntegerField(db_index=True, default=0),
         ),
         migrations.AddField(
+            model_name='player',
+            name='relive_heavy',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='relive_medium',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='relive_light',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='flight_time_heavy',
+            field=models.BigIntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='flight_time_medium',
+            field=models.BigIntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='flight_time_light',
+            field=models.BigIntegerField(default=0),
+        ),
+        migrations.AddField(
             model_name='PlayerMission',
             name='score_heavy',
             field=models.IntegerField(db_index=True, default=0),

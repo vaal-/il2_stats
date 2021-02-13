@@ -680,7 +680,7 @@ def update_general(player, new_sortie):
         elif new_sortie.aircraft.cls == "aircraft_heavy":
             player.score_heavy += new_sortie.score
     except AttributeError:
-        pass # Some new_sortie objects have no score_light/score_medium/score_heavy.
+        pass # Some player objects have no score_light/score_medium/score_heavy.
 
 def update_ammo(sortie, player):
     # в логах есть баги, по окончание вылета у самолета может быть больше боемкомплекта чем было вначале
