@@ -344,8 +344,17 @@ def main(request):
     if previous_tour:
         previous_tour_top = (Player.players.pilots(tour_id=previous_tour.id)
                              .active(tour=previous_tour).order_by('-rating')[:20])
+        previous_tour_top_light =(Player.players.pilots(tour_id=previous_tour.id)
+                             .active(tour=previous_tour).order_by('-rating_light')[:20])
+        previous_tour_top_medium =(Player.players.pilots(tour_id=previous_tour.id)
+                             .active(tour=previous_tour).order_by('-rating_medium')[:20])
+        previous_tour_top_heavy =(Player.players.pilots(tour_id=previous_tour.id)
+                             .active(tour=previous_tour).order_by('-rating_heavy')[:20])
     else:
         previous_tour_top = None
+        previous_tour_top_light = None
+        previous_tour_top_medium = None
+        previous_tour_top_heavy = None
 
     coal_1_online = PlayerOnline.objects.filter(coalition=Coalition.coal_1).count()
     coal_2_online = PlayerOnline.objects.filter(coalition=Coalition.coal_2).count()
@@ -363,6 +372,9 @@ def main(request):
         'total_active_players': total_active_players,
         'previous_tour': previous_tour,
         'previous_tour_top': previous_tour_top,
+        'previous_tour_top_light': previous_tour_top_light,
+        'previous_tour_top_medium': previous_tour_top_medium,
+        'previous_tour_top_heavy': previous_tour_top_heavy,
         'total_online': total_online,
         'coal_1_online': coal_1_online,
         'coal_2_online': coal_2_online,

@@ -323,6 +323,39 @@
                         {% endfor %}
                     </div>
                 </div>
+                <div class="top_pilots">
+                    <div class="title">{% trans 'Top Fighter Pilots' %}</div>
+                    <div class="top_pilots_columns">
+                        {% for player in previous_tour_top_light %}
+                            <a class="pilot" href="{{ player.get_profile_url }}">
+                                <div class="num">{{ forloop.counter }}</div>
+                                <div class="nickname">{{ player.nickname }}</div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="top_pilots">
+                    <div class="title">{% trans 'Top Attacker Pilots' %}</div>
+                    <div class="top_pilots_columns">
+                        {% for player in previous_tour_top_medium %}
+                            <a class="pilot" href="{{ player.get_profile_url }}">
+                                <div class="num">{{ forloop.counter }}</div>
+                                <div class="nickname">{{ player.nickname }}</div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="top_pilots">
+                    <div class="title">{% trans 'Top Bomber Pilots' %}</div>
+                    <div class="top_pilots_columns">
+                        {% for player in previous_tour_top_heavy %}
+                            <a class="pilot" href="{{ player.get_profile_url }}">
+                                <div class="num">{{ forloop.counter }}</div>
+                                <div class="nickname">{{ player.nickname }}</div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
             {% endif %}
         </div>
