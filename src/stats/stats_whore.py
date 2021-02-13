@@ -663,8 +663,8 @@ def update_general(player, new_sortie):
         player.sorties_total += 1
         player.flight_time += new_sortie.flight_time
 
-    if new_sortie.is_relive:
-        player.relive += 1
+    relive_add = 1 if new_sortie.is_relive else 0
+    player.relive += relive_add
 
     player.ak_total += new_sortie.ak_total
     player.fak_total += new_sortie.fak_total
@@ -672,15 +672,22 @@ def update_general(player, new_sortie):
     player.fgk_total += new_sortie.fgk_total
     player.ak_assist += new_sortie.ak_assist
     player.score += new_sortie.score
+
     try:
         if new_sortie.aircraft.cls == "aircraft_light":
             player.score_light += new_sortie.score
+            player.flight_time_light += new_sortie.flight_time
+            player.relive_light += relive_add
         elif new_sortie.aircraft.cls == "aircraft_medium":
             player.score_medium += new_sortie.score
+            player.flight_time_medium += new_sortie.flight_time
+            player.relive_medium += relive_add
         elif new_sortie.aircraft.cls == "aircraft_heavy":
             player.score_heavy += new_sortie.score
+            player.flight_time_heavy += new_sortie.flight_time
+            player.relive_heavy += relive_add
     except AttributeError:
-        pass # Some player objects have no score_light/score_medium/score_heavy.
+        pass # Some player objects have no score or relive attributes for light/medium/heavy aircraft.
 
 def update_ammo(sortie, player):
     # в логах есть баги, по окончание вылета у самолета может быть больше боемкомплекта чем было вначале
