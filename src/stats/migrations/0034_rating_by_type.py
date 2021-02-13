@@ -5,7 +5,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('stats', '0033_award_order_field'),
     ]
@@ -100,5 +99,19 @@ class Migration(migrations.Migration):
             name='score_light',
             field=models.IntegerField(db_index=True, default=0),
         ),
+        migrations.AddField(
+            model_name='Sortie',
+            name='score_heavy',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='Sortie',
+            name='score_medium',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='Sortie',
+            name='score_light',
+            field=models.IntegerField(default=0),
+        ),
     ]
-

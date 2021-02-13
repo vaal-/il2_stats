@@ -1126,6 +1126,9 @@ class Sortie(models.Model):
 
     ratio = models.FloatField(default=1)
     score = models.IntegerField(default=0)
+    score_heavy = models.IntegerField(default=0)
+    score_medium = models.IntegerField(default=0)
+    score_light = models.IntegerField(default=0)
     score_dict = JSONField(default=dict)
     damage = models.FloatField(default=0)
     wound = models.FloatField(default=0)
