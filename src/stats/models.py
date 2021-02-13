@@ -405,6 +405,9 @@ class Player(models.Model):
     streak_max = models.IntegerField(default=0)
 
     score_streak_current = models.IntegerField(default=0, db_index=True)
+    score_streak_current_heavy = models.IntegerField(default=0, db_index=True)
+    score_streak_current_medium = models.IntegerField(default=0, db_index=True)
+    score_streak_current_light = models.IntegerField(default=0, db_index=True)
     score_streak_max = models.IntegerField(default=0)
 
     streak_ground_current = models.IntegerField(default=0, db_index=True)

@@ -9,7 +9,6 @@ class Migration(migrations.Migration):
     dependencies = [
         ('stats', '0033_award_order_field'),
     ]
-
     operations = [
         migrations.AddField(
             model_name='player',
@@ -24,6 +23,21 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='player',
             name='score_light',
+            field=models.IntegerField(db_index=True, default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='score_streak_current_heavy',
+            field=models.IntegerField(db_index=True, default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='score_streak_current_medium',
+            field=models.IntegerField(db_index=True, default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='score_streak_current_light',
             field=models.IntegerField(db_index=True, default=0),
         ),
         migrations.AddField(
@@ -87,3 +101,4 @@ class Migration(migrations.Migration):
             field=models.IntegerField(db_index=True, default=0),
         ),
     ]
+
