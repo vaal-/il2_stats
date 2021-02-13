@@ -320,19 +320,10 @@ def main(request):
                   .exclude(score_streak_current=0)
                   .active(tour=request.tour).order_by('-score_streak_current')[:10])
 
-    top_24_score = (Sortie.objects
-                    .filter(tour_id=request.tour.id, is_disco=False, player__type='pilot', profile__is_hide=False)
-                    .filter(date_start__gt=timezone.now()-timedelta(hours=24))
-                    .exclude(score=0)
-                    .values('player')
-                    .annotate(sum_score=Sum('score'))
-                    .order_by('-sum_score')[:10])
-    top_24_pilots = (Player.players.pilots(tour_id=request.tour.id)
-                     .filter(id__in=[s['player'] for s in top_24_score]))
-    top_24_pilots = {p.id: p for p in top_24_pilots}
-    top_24 = []
-    for p in top_24_score:
-        top_24.append((top_24_pilots[p['player']], p['sum_score']))
+    top_24 = top_pilots(request, "score")
+    top_24_heavy = top_pilots(request, "score_heavy")
+    top_24_medium = top_pilots(request, "score_medium")
+    top_24_light = top_pilots(request, "score_light")
 
     coal_active_players = request.tour.coal_active_players()
     total_active_players = sum(coal_active_players.values())
@@ -368,6 +359,9 @@ def main(request):
         'summary_coal': summary_coal,
         'top_streak': top_streak,
         'top_24': top_24,
+        'top_24_heavy': top_24_heavy,
+        'top_24_medium': top_24_medium,
+        'top_24_light': top_24_light,
         'coal_active_players': coal_active_players,
         'total_active_players': total_active_players,
         'previous_tour': previous_tour,
@@ -379,6 +373,23 @@ def main(request):
         'coal_1_online': coal_1_online,
         'coal_2_online': coal_2_online,
     })
+
+
+def top_pilots(request, score_type):
+    top_24_score = (Sortie.objects
+                        .filter(tour_id=request.tour.id, is_disco=False, player__type='pilot', profile__is_hide=False)
+                        .filter(date_start__gt=timezone.now() - timedelta(hours=24))
+                        .exclude(score=0)
+                        .values('player')
+                        .annotate(sum_score=Sum(score_type))
+                        .order_by('-sum_score')[:10])
+    top_24_pilots = (Player.players.pilots(tour_id=request.tour.id)
+                     .filter(id__in=[s['player'] for s in top_24_score]))
+    top_24_pilots = {p.id: p for p in top_24_pilots}
+    top_24 = []
+    for p in top_24_score:
+        top_24.append((top_24_pilots[p['player']], p['sum_score']))
+    return top_24
 
 
 def tour(request):
