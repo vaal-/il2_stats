@@ -602,18 +602,18 @@ class Player(models.Model):
                 self.coal_pref = 0
 
     def update_rating(self):
-        self.rating = self.calculate_rating(self.score, self.relive, self.flight_time_hours)
-        self.rating_light = self.calculate_rating(self.score_light, self.relive_light, self.flight_time_light_hours)
-        self.rating_medium = self.calculate_rating(self.score_medium, self.relive_medium, self.flight_time_medium_hours)
-        self.rating_heavy = self.calculate_rating(self.score_heavy, self.relive_heavy, self.flight_time_heavy_hours)
+        self.rating = calculate_rating(self.score, self.relive, self.flight_time_hours)
+        self.rating_light = calculate_rating(self.score_light, self.relive_light, self.flight_time_light_hours)
+        self.rating_medium = calculate_rating(self.score_medium, self.relive_medium, self.flight_time_medium_hours)
+        self.rating_heavy = calculate_rating(self.score_heavy, self.relive_heavy, self.flight_time_heavy_hours)
 
-    @staticmethod
-    def calculate_rating(score, relive, flight_time_hours):
-        # score per death
-        sd = score / max(relive, 1)
-        # score per hour
-        shr = score / max(flight_time_hours, 1)
-        return int((sd * shr * score) / 1000)
+
+def calculate_rating(score, relive, flight_time_hours, max_members=1):
+    # score per death
+    sd = score / max(relive, 1)
+    # score per hour
+    shr = score / max(flight_time_hours, 1)
+    return (int((sd * shr * score) / 1000)) / max_members
 
 def rating_format_helper(rating):
     if rating > 10000:
@@ -1333,12 +1333,18 @@ class Squad(models.Model):
 
     # налет в секундах?
     flight_time = models.BigIntegerField(default=0, db_index=True)
+    flight_time_light = models.BigIntegerField(default=0, db_index=True)
+    flight_time_medium = models.BigIntegerField(default=0, db_index=True)
+    flight_time_heavy = models.BigIntegerField(default=0, db_index=True)
 
     bailout = models.IntegerField(default=0)
     wounded = models.IntegerField(default=0)
     dead = models.IntegerField(default=0)
     captured = models.IntegerField(default=0)
     relive = models.IntegerField(default=0)
+    relive_light = models.IntegerField(default=0)
+    relive_medium = models.IntegerField(default=0)
+    relive_heavy = models.IntegerField(default=0)
 
     takeoff = models.IntegerField(default=0)
     landed = models.IntegerField(default=0)
@@ -1420,6 +1426,18 @@ class Squad(models.Model):
         return self.flight_time / 3600
 
     @property
+    def flight_time_light_hours(self):
+        return self.flight_time_light / 3600
+
+    @property
+    def flight_time_medium_hours(self):
+        return self.flight_time_medium / 3600
+
+    @property
+    def flight_time_heavy_hours(self):
+        return self.flight_time_heavy / 3600
+    
+    @property
     def rating_format(self):
         return rating_format_helper(self.rating)
 
@@ -1433,7 +1451,6 @@ class Squad(models.Model):
 
     @property
     def rating_format_light(self):
-        print(self.rating_light)
         return rating_format_helper(self.rating_light)
 
     @property
@@ -1457,11 +1474,10 @@ class Squad(models.Model):
         self.ce = round(self.kl * self.khr / 10, 2)
 
     def update_rating(self):
-        # score per death
-        sd = self.score / max(self.relive, 1)
-        # score per hour
-        shr = self.score / max(self.flight_time_hours, 1)
-        self.rating = int(((sd * shr * self.score) / 1000) / self.max_members)
+        self.rating = calculate_rating(self.score, self.relive, self.flight_time_hours, self.max_members)
+        self.rating_light = calculate_rating(self.score_light, self.relive_light, self.flight_time_light_hours, self.max_members)
+        self.rating_medium = calculate_rating(self.score_medium, self.relive_medium, self.flight_time_medium_hours, self.max_members)
+        self.rating_heavy = calculate_rating(self.score_heavy, self.relive_heavy, self.flight_time_heavy_hours, self.max_members)
 
     def update_coal_pref(self):
         if self.sorties_total:

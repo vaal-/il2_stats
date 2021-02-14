@@ -174,4 +174,34 @@ class Migration(migrations.Migration):
             name='rating_light',
             field=models.BigIntegerField(default=0, db_index=True),
         ),
+        migrations.AddField(
+            model_name='Squad',
+            name='flight_time_light',
+            field=models.BigIntegerField(default=0, db_index=True)
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='flight_time_medium',
+            field=models.BigIntegerField(default=0, db_index=True)
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='flight_time_heavy',
+            field=models.BigIntegerField(default=0, db_index=True)
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='relive_light',
+            field= models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='relive_medium',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='relive_heavy',
+            field=models.IntegerField(default=0),
+        ),
     ]
