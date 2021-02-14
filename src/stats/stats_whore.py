@@ -636,6 +636,10 @@ def update_sortie(new_sortie, player_mission, player_aircraft, vlife):
     player.score_streak_current_medium = vlife.score_medium
     player.score_streak_current_light = vlife.score_light
     player.score_streak_max = max(player.score_streak_max, player.score_streak_current)
+    player.score_streak_max_heavy = max(player.score_streak_max_heavy, player.score_streak_current_heavy)
+    player.score_streak_max_medium = max(player.score_streak_max_medium, player.score_streak_current_medium)
+    player.score_streak_max_light = max(player.score_streak_max_light, player.score_streak_current_light)
+
     player.sorties_streak_current = vlife.sorties_total
     player.sorties_streak_max = max(player.sorties_streak_max, player.sorties_streak_current)
     player.ft_streak_current = vlife.flight_time

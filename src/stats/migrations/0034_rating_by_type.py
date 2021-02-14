@@ -41,6 +41,21 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='player',
+            name='score_streak_max_heavy',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='score_streak_max_medium',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
+            name='score_streak_max_light',
+            field=models.IntegerField(default=0),
+        ),
+        migrations.AddField(
+            model_name='player',
             name='rating_heavy',
             field=models.IntegerField(db_index=True, default=0),
         ),
