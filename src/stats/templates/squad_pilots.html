@@ -93,6 +93,24 @@
                         </a>
                     </div>
                     <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-rating_light">
+                            <img src="{% static 'img/icons/small/rating_light.png' %}" width="18" height="18"
+                                 alt="{% trans 'Fighter Rating' %}" title="{% trans 'Fighter Rating' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-rating_medium">
+                            <img src="{% static 'img/icons/small/rating_medium.png' %}" width="18" height="18"
+                                 alt="{% trans 'Attacker Rating' %}" title="{% trans 'Attacker Rating' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
+                        <a class="sort_by" href="?sort_by=-rating_heavy">
+                            <img src="{% static 'img/icons/small/rating_heavy.png' %}" width="18" height="18"
+                                 alt="{% trans 'Bomber Rating' %}" title="{% trans 'Bomber Rating' %}">
+                        </a>
+                    </div>
+                    <div class="cell" style="width: 90px;">
                         <a class="sort_by" href="?sort_by=-rating">
                             <img src="{% static 'img/icons/small/rating.png' %}" width="18" height="18"
                                  alt="{% trans 'Rating' %}" title="{% trans 'Rating' %}">
@@ -113,7 +131,10 @@
                     <div class="cell">{{ pilot.kd }}</div>
                     <div class="cell">{{ pilot.khr }}</div>
                     <div class="cell">{{ pilot.accuracy }}%</div>
-                    <div class="cell" title="{{ pilot.rating }}">{{ pilot.rating_format }}</div>
+                    <div class="cell" title="{{ pilot.rating_medium }}">{{ pilot.rating_format_light }}</div>
+                    <div class="cell" title="{{ pilot.rating_heavy }}">{{ pilot.rating_format_medium }}</div>
+                    <div class="cell" title="{{ pilot.rating }}">{{ pilot.rating_format_heavy }}</div>
+                    <div class="cell" title="{{ pilot.rating_light }}">{{ pilot.rating_format }}</div>
                 </a>
                 {% endfor %}
             </div>
