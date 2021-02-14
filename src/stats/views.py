@@ -59,10 +59,20 @@ def squad(request, squad_id, squad_tag=None):
     # подменяем тур на случай если выдаем другой
     request.tour = squad_.tour
     rating_position, page_position = _get_rating_position(item=squad_)
+    rating_light_position, page_light_position = _get_rating_position(item=squad_, field="rating_heavy")
+    rating_medium_position, page_medium_position = _get_rating_position(item=squad_, field="rating_heavy")
+    rating_heavy_position, page_heavy_position = _get_rating_position(item=squad_, field="rating_heavy")
+
     return render(request, 'squad.html', {
         'squad': squad_,
         'rating_position': rating_position,
+        'rating_light_position': rating_light_position,
+        'rating_medium_position': rating_medium_position,
+        'rating_heavy_position': rating_heavy_position,
         'page_position': page_position,
+        'page_light_position': page_light_position,
+        'page_medium_position': page_medium_position,
+        'page_heavy_position': page_heavy_position,
     })
 
 
