@@ -19,7 +19,8 @@ ITEMS_PER_PAGE = 20
 
 
 missions_sort_fields = ['id', 'pilots_total', 'winning_coalition', 'duration']
-squads_sort_fields = ['ak_total', 'gk_total', 'flight_time', 'kd', 'khr', 'score', 'rating', 'num_members']
+squads_sort_fields = ['ak_total', 'gk_total', 'flight_time', 'kd', 'khr', 'score', 'num_members',
+                      'rating_light', 'rating_medium', 'rating_heavy', 'rating']
 pilots_sort_fields = ['ak_total', 'streak_current', 'gk_total', 'flight_time', 'kd', 'khr', 'accuracy',
                       'score', 'score_light', 'score_medium', 'score_heavy',
                       'rating_light', 'rating_medium', 'rating_heavy', 'rating']

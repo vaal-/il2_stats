@@ -547,26 +547,20 @@ class Player(models.Model):
 
     @property
     def rating_format(self):
-        return self.rating_format_helper(self.rating)
+        return rating_format_helper(self.rating)
 
     @property
     def rating_format_heavy(self):
-        return self.rating_format_helper(self.rating_heavy)
+        return rating_format_helper(self.rating_heavy)
 
     @property
     def rating_format_medium(self):
-        return self.rating_format_helper(self.rating_medium)
+        return rating_format_helper(self.rating_medium)
 
     @property
     def rating_format_light(self):
-        return self.rating_format_helper(self.rating_light)
+        return rating_format_helper(self.rating_light)
 
-    @staticmethod
-    def rating_format_helper(rating):
-        if rating > 10000:
-            return '{}K'.format(rating // 1000)
-        else:
-            return rating
 
     @property
     def ak_total_ai(self):
@@ -620,6 +614,12 @@ class Player(models.Model):
         # score per hour
         shr = score / max(flight_time_hours, 1)
         return int((sd * shr * score) / 1000)
+
+def rating_format_helper(rating):
+    if rating > 10000:
+        return '{}K'.format(rating // 1000)
+    else:
+        return rating
 
 
 class PlayerMission(models.Model):
@@ -1421,10 +1421,20 @@ class Squad(models.Model):
 
     @property
     def rating_format(self):
-        if self.rating > 10000:
-            return '{}K'.format(self.rating // 1000)
-        else:
-            return self.rating
+        return rating_format_helper(self.rating)
+
+    @property
+    def rating_format_heavy(self):
+        return rating_format_helper(self.rating_heavy)
+
+    @property
+    def rating_format_medium(self):
+        return rating_format_helper(self.rating_medium)
+
+    @property
+    def rating_format_light(self):
+        print(self.rating_light)
+        return rating_format_helper(self.rating_light)
 
     @property
     def ak_total_ai(self):
