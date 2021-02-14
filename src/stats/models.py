@@ -547,10 +547,26 @@ class Player(models.Model):
 
     @property
     def rating_format(self):
-        if self.rating > 10000:
-            return '{}K'.format(self.rating // 1000)
+        return self.rating_format_helper(self.rating)
+
+    @property
+    def rating_format_heavy(self):
+        return self.rating_format_helper(self.rating_heavy)
+
+    @property
+    def rating_format_medium(self):
+        return self.rating_format_helper(self.rating_medium)
+
+    @property
+    def rating_format_light(self):
+        return self.rating_format_helper(self.rating_light)
+
+    @staticmethod
+    def rating_format_helper(rating):
+        if rating > 10000:
+            return '{}K'.format(rating // 1000)
         else:
-            return self.rating
+            return rating
 
     @property
     def ak_total_ai(self):
@@ -592,18 +608,18 @@ class Player(models.Model):
                 self.coal_pref = 0
 
     def update_rating(self):
-        self.rating = calculate_rating(self.score, self.relive, self.flight_time_hours)
-        self.rating_light = calculate_rating(self.score_light, self.relive_light, self.flight_time_light_hours)
-        self.rating_medium = calculate_rating(self.score_medium, self.relive_medium, self.flight_time_medium_hours)
-        self.rating_heavy = calculate_rating(self.score_heavy, self.relive_heavy, self.flight_time_heavy_hours)
+        self.rating = self.calculate_rating(self.score, self.relive, self.flight_time_hours)
+        self.rating_light = self.calculate_rating(self.score_light, self.relive_light, self.flight_time_light_hours)
+        self.rating_medium = self.calculate_rating(self.score_medium, self.relive_medium, self.flight_time_medium_hours)
+        self.rating_heavy = self.calculate_rating(self.score_heavy, self.relive_heavy, self.flight_time_heavy_hours)
 
-
-def calculate_rating(score, relive, flight_time_hours):
-    # score per death
-    sd = score / max(relive, 1)
-    # score per hour
-    shr = score / max(flight_time_hours, 1)
-    return int((sd * shr * score) / 1000)
+    @staticmethod
+    def calculate_rating(score, relive, flight_time_hours):
+        # score per death
+        sd = score / max(relive, 1)
+        # score per hour
+        shr = score / max(flight_time_hours, 1)
+        return int((sd * shr * score) / 1000)
 
 
 class PlayerMission(models.Model):
