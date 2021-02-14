@@ -144,4 +144,34 @@ class Migration(migrations.Migration):
             name='score_light',
             field=models.IntegerField(default=0, db_index=True),
         ),
+        migrations.AddField(
+            model_name='Squad',
+            name='score_heavy',
+            field=models.BigIntegerField(default=0, db_index=True),
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='score_medium',
+            field=models.BigIntegerField(default=0, db_index=True),
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='score_light',
+            field=models.BigIntegerField(default=0, db_index=True),
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='rating_heavy',
+            field=models.BigIntegerField(default=0, db_index=True),
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='rating_medium',
+            field=models.BigIntegerField(default=0, db_index=True),
+        ),
+        migrations.AddField(
+            model_name='Squad',
+            name='rating_light',
+            field=models.BigIntegerField(default=0, db_index=True),
+        ),
     ]

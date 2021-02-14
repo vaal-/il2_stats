@@ -1311,7 +1311,13 @@ class Squad(models.Model):
     max_members = models.PositiveIntegerField(default=0)
 
     score = models.BigIntegerField(default=0, db_index=True)
+    score_heavy = models.BigIntegerField(default=0, db_index=True)
+    score_medium = models.BigIntegerField(default=0, db_index=True)
+    score_light = models.BigIntegerField(default=0, db_index=True)
     rating = models.BigIntegerField(default=0, db_index=True)
+    rating_heavy = models.BigIntegerField(default=0, db_index=True)
+    rating_medium = models.BigIntegerField(default=0, db_index=True)
+    rating_light = models.BigIntegerField(default=0, db_index=True)
 
     sorties_total = models.IntegerField(default=0)
     sorties_coal = ArrayField(models.IntegerField(default=0), default=default_coal_list)
