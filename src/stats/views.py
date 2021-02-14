@@ -143,12 +143,21 @@ def pilot(request, profile_id, nickname=None):
         fav_aircraft = None
 
     rating_position, page_position = _get_rating_position(item=player)
+    rating_light_position, page_light_position = _get_rating_position(item=player, field='rating_light')
+    rating_medium_position, page_medium_position = _get_rating_position(item=player, field='rating_medium')
+    rating_heavy_position, page_heavy_position = _get_rating_position(item=player, field='rating_heavy')
 
     return render(request, 'pilot.html', {
         'fav_aircraft': fav_aircraft,
         'player': player,
         'rating_position': rating_position,
+        'rating_light_position': rating_light_position,
+        'rating_medium_position': rating_medium_position,
+        'rating_heavy_position': rating_heavy_position,
         'page_position': page_position,
+        'page_light_position': page_light_position,
+        'page_medium_position': page_medium_position,
+        'page_heavy_position': page_heavy_position,
     })
 
 
