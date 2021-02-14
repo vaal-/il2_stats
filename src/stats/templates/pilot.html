@@ -106,7 +106,7 @@
                 </div>
                 <div class="item">
                     <img src="{% static 'img/icons/big/rating_light.png' %}" width="" height="" title="" alt="">
-                    <div class="text">{% trans 'Position in Fighter Rating' %}</div>
+                    <div class="text">{% trans 'Position Fighter Rating' %}</div>
                     <div class="num" title="{{ player.rating_light }}">
                         {% if rating_light_position %}
                             <a href="{% url 'stats:pilots' %}?page={{ page_light_position }}&tour={{ player.tour_id }}&sort_by=-rating_light">{{ rating_light_position }}</a>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="item">
                     <img src="{% static 'img/icons/big/rating_medium.png' %}" width="" height="" title="" alt="">
-                    <div class="text">{% trans 'Position in Attacker Rating' %}</div>
+                    <div class="text">{% trans 'Position Attacker Rating' %}</div>
                     <div class="num" title="{{ player.rating_medium }}">
                         {% if rating_medium_position %}
                             <a href="{% url 'stats:pilots' %}?page={{ page_medium_position }}&tour={{ player.tour_id }}&sort_by=-rating_medium">{{ rating_medium_position }}</a>
@@ -128,7 +128,7 @@
                 </div>
                 <div class="item">
                     <img src="{% static 'img/icons/big/rating_heavy.png' %}" width="" height="" title="" alt="">
-                    <div class="text">{% trans 'Position in Bomber Rating' %}</div>
+                    <div class="text">{% trans 'Position Bomber Rating' %}</div>
                     <div class="num" title="{{ player.rating_heavy }}">
                         {% if rating_heavy_position %}
                             <a href="{% url 'stats:pilots' %}?page={{ page_heavy_position }}&tour={{ player.tour_id }}&sort_by=-rating_heavy">{{ rating_heavy_position }}</a>
