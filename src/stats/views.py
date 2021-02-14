@@ -417,9 +417,33 @@ def tour(request):
                   .exclude(score_streak_max=0)
                   .active(tour=request.tour).order_by('-score_streak_max')[:10])
 
+    top_streak_heavy = (Player.players.pilots(tour_id=request.tour.id)
+                  .exclude(score_streak_max_heavy=0)
+                  .active(tour=request.tour).order_by('-score_streak_max_heavy')[:10])
+
+    top_streak_medium = (Player.players.pilots(tour_id=request.tour.id)
+                  .exclude(score_streak_max_medium=0)
+                  .active(tour=request.tour).order_by('-score_streak_max_medium')[:10])
+
+    top_streak_light = (Player.players.pilots(tour_id=request.tour.id)
+                  .exclude(score_streak_max_light=0)
+                  .active(tour=request.tour).order_by('-score_streak_max_light')[:10])
+
     top_rating = (Player.players.pilots(tour_id=request.tour.id)
                   .exclude(rating=0)
                   .active(tour=request.tour).order_by('-rating')[:10])
+
+    top_rating_heavy = (Player.players.pilots(tour_id=request.tour.id)
+                  .exclude(rating=0)
+                  .active(tour=request.tour).order_by('-rating_heavy')[:10])
+
+    top_rating_medium = (Player.players.pilots(tour_id=request.tour.id)
+                  .exclude(rating=0)
+                  .active(tour=request.tour).order_by('-rating_medium')[:10])
+
+    top_rating_light = (Player.players.pilots(tour_id=request.tour.id)
+                  .exclude(rating=0)
+                  .active(tour=request.tour).order_by('-rating_light')[:10])
 
     coal_active_players = request.tour.coal_active_players()
     total_active_players = sum(coal_active_players.values())
@@ -431,7 +455,13 @@ def tour(request):
         'summary_total': summary_total,
         'summary_coal': summary_coal,
         'top_streak': top_streak,
+        'top_streak_heavy': top_streak_heavy,
+        'top_streak_medium': top_streak_medium,
+        'top_streak_light': top_streak_light,
         'top_rating': top_rating,
+        'top_rating_heavy': top_rating_heavy,
+        'top_rating_medium': top_rating_medium,
+        'top_rating_light': top_rating_light,
         'coal_active_players': coal_active_players,
         'total_active_players': total_active_players,
     })
