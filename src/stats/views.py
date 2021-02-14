@@ -434,15 +434,15 @@ def tour(request):
                   .active(tour=request.tour).order_by('-rating')[:10])
 
     top_rating_heavy = (Player.players.pilots(tour_id=request.tour.id)
-                  .exclude(rating=0)
+                  .exclude(rating_heavy=0)
                   .active(tour=request.tour).order_by('-rating_heavy')[:10])
 
     top_rating_medium = (Player.players.pilots(tour_id=request.tour.id)
-                  .exclude(rating=0)
+                  .exclude(rating_medium=0)
                   .active(tour=request.tour).order_by('-rating_medium')[:10])
 
     top_rating_light = (Player.players.pilots(tour_id=request.tour.id)
-                  .exclude(rating=0)
+                  .exclude(rating_light=0)
                   .active(tour=request.tour).order_by('-rating_light')[:10])
 
     coal_active_players = request.tour.coal_active_players()
