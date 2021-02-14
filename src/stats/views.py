@@ -1,7 +1,7 @@
 from datetime import timedelta
 
 from django.conf import settings
-from django.db.models import Q, Count, Sum
+from django.db.models import Q, Sum
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
@@ -316,15 +316,23 @@ def main(request):
     summary_total = request.tour.stats_summary_total()
     summary_coal = request.tour.stats_summary_coal()
 
-    top_streak = compute_top_streak(request, "score_streak_current")
-    top_streak_heavy = compute_top_streak(request, "score_streak_current_heavy")
-    top_streak_medium = compute_top_streak(request, "score_streak_current_medium")
-    top_streak_light = compute_top_streak(request, "score_streak_current_light")
+    top_streak = (Player.players.pilots(tour_id=request.tour.id)
+                      .exclude(score_streak_current=0)
+                      .active(tour=request.tour).order_by('-score_streak_current')[:10])
+    top_streak_heavy = (Player.players.pilots(tour_id=request.tour.id)
+                            .exclude(score_streak_current_heavy=0)
+                            .active(tour=request.tour).order_by('-score_streak_current_heavy')[:10])
+    top_streak_medium = (Player.players.pilots(tour_id=request.tour.id)
+                             .exclude(score_streak_current_medium=0)
+                             .active(tour=request.tour).order_by('-score_streak_current_medium')[:10])
+    top_streak_light = (Player.players.pilots(tour_id=request.tour.id)
+                            .exclude(score_streak_current_light=0)
+                            .active(tour=request.tour).order_by('-score_streak_current_light')[:10])
 
-    top_24 = top_pilots(request, "score")
-    top_24_heavy = top_pilots(request, "score_heavy")
-    top_24_medium = top_pilots(request, "score_medium")
-    top_24_light = top_pilots(request, "score_light")
+    top_24 = top_pilots(request, query_helper_tp(request, "score").exclude(score=0))
+    top_24_heavy = top_pilots(request, query_helper_tp(request, "score_heavy").exclude(score_heavy=0))
+    top_24_medium = top_pilots(request, query_helper_tp(request, "score_medium").exclude(score_medium=0))
+    top_24_light = top_pilots(request, query_helper_tp(request, "score_light").exclude(score_light=0))
 
     coal_active_players = request.tour.coal_active_players()
     total_active_players = sum(coal_active_players.values())
@@ -379,20 +387,16 @@ def main(request):
     })
 
 
-def compute_top_streak(request, score_streak_type):
-    return (Player.players.pilots(tour_id=request.tour.id)
-                .exclude(score_streak_current=0)
-                .active(tour=request.tour).order_by('-' + score_streak_type)[:10])
-
-
-def top_pilots(request, score_type):
-    top_24_score = (Sortie.objects
+def query_helper_tp(request, score_type):
+    return (Sortie.objects
                         .filter(tour_id=request.tour.id, is_disco=False, player__type='pilot', profile__is_hide=False)
                         .filter(date_start__gt=timezone.now() - timedelta(hours=24))
-                        .exclude(score=0)
                         .values('player')
-                        .annotate(sum_score=Sum(score_type))
-                        .order_by('-sum_score')[:10])
+                        .annotate(sum_score=Sum(score_type)))
+
+
+def top_pilots(request, query):
+    top_24_score = query.order_by('-sum_score')[:10]
     top_24_pilots = (Player.players.pilots(tour_id=request.tour.id)
                      .filter(id__in=[s['player'] for s in top_24_score]))
     top_24_pilots = {p.id: p for p in top_24_pilots}
