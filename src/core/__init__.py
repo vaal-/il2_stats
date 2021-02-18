@@ -6,5 +6,5 @@ from django.utils.version import get_version
 
 # https://www.python.org/dev/peps/pep-0440/
 
-VERSION = (1, 2, 46)
+VERSION = (1, 2, 47)
 __version__ = '.'.join(map(str, VERSION))
