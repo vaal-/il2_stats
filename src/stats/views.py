@@ -28,7 +28,6 @@ killboard_sort_fields = ['won', 'lose', 'wl']
 
 
 def _get_rating_position(item, field='rating'):
-    print(field)
     rating_position = item.get_position_by_field(field=field)
     if rating_position:
         page_position = rating_position // ITEMS_PER_PAGE
