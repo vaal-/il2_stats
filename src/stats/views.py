@@ -28,6 +28,7 @@ killboard_sort_fields = ['won', 'lose', 'wl']
 
 
 def _get_rating_position(item, field='rating'):
+    print(field)
     rating_position = item.get_position_by_field(field=field)
     if rating_position:
         page_position = rating_position // ITEMS_PER_PAGE
@@ -60,8 +61,8 @@ def squad(request, squad_id, squad_tag=None):
     # подменяем тур на случай если выдаем другой
     request.tour = squad_.tour
     rating_position, page_position = _get_rating_position(item=squad_)
-    rating_light_position, page_light_position = _get_rating_position(item=squad_, field="rating_heavy")
-    rating_medium_position, page_medium_position = _get_rating_position(item=squad_, field="rating_heavy")
+    rating_light_position, page_light_position = _get_rating_position(item=squad_, field="rating_light")
+    rating_medium_position, page_medium_position = _get_rating_position(item=squad_, field="rating_medium")
     rating_heavy_position, page_heavy_position = _get_rating_position(item=squad_, field="rating_heavy")
 
     return render(request, 'squad.html', {
