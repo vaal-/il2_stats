@@ -177,17 +177,17 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='Squad',
             name='flight_time_light',
-            field=models.BigIntegerField(default=0, db_index=True)
+            field=models.BigIntegerField(default=0)
         ),
         migrations.AddField(
             model_name='Squad',
             name='flight_time_medium',
-            field=models.BigIntegerField(default=0, db_index=True)
+            field=models.BigIntegerField(default=0)
         ),
         migrations.AddField(
             model_name='Squad',
             name='flight_time_heavy',
-            field=models.BigIntegerField(default=0, db_index=True)
+            field=models.BigIntegerField(default=0)
         ),
         migrations.AddField(
             model_name='Squad',

@@ -1333,9 +1333,9 @@ class Squad(models.Model):
 
     # налет в секундах?
     flight_time = models.BigIntegerField(default=0, db_index=True)
-    flight_time_light = models.BigIntegerField(default=0, db_index=True)
-    flight_time_medium = models.BigIntegerField(default=0, db_index=True)
-    flight_time_heavy = models.BigIntegerField(default=0, db_index=True)
+    flight_time_light = models.BigIntegerField(default=0)
+    flight_time_medium = models.BigIntegerField(default=0)
+    flight_time_heavy = models.BigIntegerField(default=0)
 
     bailout = models.IntegerField(default=0)
     wounded = models.IntegerField(default=0)
