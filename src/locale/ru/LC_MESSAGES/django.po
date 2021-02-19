@@ -5768,52 +5768,34 @@ msgid "Best live pilots"
 msgstr "Лучшие живые пилоты"
 
 #: .\stats\templates\main.html:170
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best pilots in the last 24 hours"
 msgctxt "tour_top"
 msgid "Best fighter pilots in the last 24 hours"
-msgstr "Лучшие пилоты за последние 24 часа"
+msgstr "Лучшие игроки на истребителях за последние 24 часа"
 
 #: .\stats\templates\main.html:196
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best live pilots"
 msgctxt "tour_top"
 msgid "Best live fighter pilots"
-msgstr "Лучшие живые пилоты"
+msgstr "Счёт за наилучший вылет на истребителе"
 
 #: .\stats\templates\main.html:222
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best pilots in the last 24 hours"
 msgctxt "tour_top"
 msgid "Best attacker pilots in the last 24 hours"
-msgstr "Лучшие пилоты за последние 24 часа"
+msgstr "Лучшие игроки на штурмовиках за последние 24 часа"
 
 #: .\stats\templates\main.html:248
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best live pilots"
 msgctxt "tour_top"
 msgid "Best live attacker pilots"
-msgstr "Лучшие живые пилоты"
+msgstr "Счёт за наилучший вылет на штурмовике"
 
 #: .\stats\templates\main.html:274
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best pilots in the last 24 hours"
 msgctxt "tour_top"
 msgid "Best bomber pilots in the last 24 hours"
-msgstr "Лучшие пилоты за последние 24 часа"
+msgstr "Лучшие игроки на бомбардировщиках за последние 24 часа"
 
 #: .\stats\templates\main.html:300
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best live pilots"
 msgctxt "tour_top"
 msgid "Best live bomber pilots"
-msgstr "Лучшие живые пилоты"
+msgstr "Счёт за наилучший вылет на бомбардировщике"
 
 #: .\stats\templates\main.html:328 .\stats\templates\tour.html:328
 msgid "Overall Pilot Rankings"
@@ -5868,22 +5850,16 @@ msgid "Top Pilots"
 msgstr "Лучшие пилоты"
 
 #: .\stats\templates\main.html:483
-#, fuzzy
-#| msgid "Top Pilots"
 msgid "Top Fighter Pilots"
-msgstr "Лучшие пилоты"
+msgstr "Лучшие игроки на истребителях"
 
 #: .\stats\templates\main.html:494
-#, fuzzy
-#| msgid "Top Pilots"
 msgid "Top Attacker Pilots"
-msgstr "Лучшие пилоты"
+msgstr "Лучшие игроки на штурмовиках"
 
 #: .\stats\templates\main.html:505
-#, fuzzy
-#| msgid "Top Pilots"
 msgid "Top Bomber Pilots"
-msgstr "Лучшие пилоты"
+msgstr "Лучшие игроки на бомбардировщиках"
 
 #: .\stats\templates\mission.html:3 .\stats\templates\mission.html:13
 msgid "Mission"
@@ -5955,25 +5931,16 @@ msgid "Score"
 msgstr "Очки"
 
 #: .\stats\templates\mission.html:169
-#, fuzzy
-#| msgctxt "specialty"
-#| msgid "Fighter"
-msgid "Fighter Score"
+msgid "Счёт (Истребитель)"
 msgstr "Истребитель"
 
 #: .\stats\templates\mission.html:175
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Attacker"
 msgid "Attacker Score"
-msgstr "Ударные"
+msgstr "Счёт (Штурмовик)"
 
 #: .\stats\templates\mission.html:181
-#, fuzzy
-#| msgctxt "specialty"
-#| msgid "Bomber"
 msgid "Bomber Score"
-msgstr "Бомбардировщик"
+msgstr "Счёт (Бомбардировщик)"
 
 #: .\stats\templates\mission.html:213 .\stats\templates\pilot.html:740
 #: .\stats\templates\pilots.html:125
@@ -6105,22 +6072,16 @@ msgid "Position in Rating"
 msgstr "Позиция в рейтинге"
 
 #: .\stats\templates\pilot.html:109 .\stats\templates\squad.html:76
-#, fuzzy
-#| msgid "Position in Rating"
 msgid "Position Fighter Rating"
-msgstr "Позиция в рейтинге"
+msgstr "Позиция в рейтинге<br/>(Истребитель)"
 
 #: .\stats\templates\pilot.html:120 .\stats\templates\squad.html:87
-#, fuzzy
-#| msgid "Position in Rating"
 msgid "Position Attacker Rating"
-msgstr "Позиция в рейтинге"
+msgstr "Позиция в рейтинге<br/>(Штурмовик)"
 
 #: .\stats\templates\pilot.html:131 .\stats\templates\squad.html:98
-#, fuzzy
-#| msgid "Position in Rating"
 msgid "Position Bomber Rating"
-msgstr "Позиция в рейтинге"
+msgstr "Позиция в рейтинге<br/>(Бомбардировщик)"
 
 #: .\stats\templates\pilot.html:144 .\stats\templates\pilot_vlife.html:88
 #: .\stats\templates\squad.html:123
@@ -6933,26 +6894,18 @@ msgstr "Рейтинг"
 
 #: .\stats\templates\pilots.html:75 .\stats\templates\squad_pilots.html:98
 #: .\stats\templates\squads.html:68
-#, fuzzy
-#| msgctxt "specialty"
-#| msgid "Fighter"
 msgid "Fighter Rating"
-msgstr "Истребитель"
+msgstr "Рейтинг летчиков-истребителей"
 
 #: .\stats\templates\pilots.html:81 .\stats\templates\squad_pilots.html:104
 #: .\stats\templates\squads.html:74
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Attacker"
 msgid "Attacker Rating"
-msgstr "Ударные"
+msgstr "Рейтинг пилотов штурмовика"
 
 #: .\stats\templates\pilots.html:87 .\stats\templates\squad_pilots.html:110
 #: .\stats\templates\squads.html:80
-#, fuzzy
-#| msgid "Rating"
 msgid "Bomber Rating"
-msgstr "Рейтинг"
+msgstr "Рейтинг пилотов бомбардировщика"
 
 #: .\stats\templates\squad.html:33 .\stats\templates\squad_pilots.html:33
 msgid "Go to the website of the squad"
@@ -7034,51 +6987,34 @@ msgid "Best pilots streak"
 msgstr "Лучшие стрики пилотов"
 
 #: .\stats\templates\tour.html:170
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best live pilots"
 msgctxt "tour_top"
 msgid "Best fighter pilots"
-msgstr "Лучшие живые пилоты"
+msgstr "Лучшие игроки на истребителе"
 
 #: .\stats\templates\tour.html:196
-#, fuzzy
-#| msgid "Best Flight time Streak"
 msgctxt "tour_top"
 msgid "Best fighter streak"
-msgstr "Макс. налет за одну жизнь"
+msgstr "Лучшая серия побед на истребителе"
 
 #: .\stats\templates\tour.html:222
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best live pilots"
 msgctxt "tour_top"
 msgid "Best attacker pilots"
-msgstr "Лучшие живые пилоты"
+msgstr "Лучшие игроки на штурмовике"
 
 #: .\stats\templates\tour.html:248
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best pilots streak"
 msgctxt "tour_top"
 msgid "Best attacker streak"
-msgstr "Лучшие стрики пилотов"
+msgstr "Лучшая серия побед на штурмовике"
 
 #: .\stats\templates\tour.html:274
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best live pilots"
 msgctxt "tour_top"
 msgid "Best bomber pilots"
-msgstr "Лучшие живые пилоты"
+msgstr "Лучшие игроки на бомбардировщике"
 
 #: .\stats\templates\tour.html:300
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best pilots streak"
 msgctxt "tour_top"
 msgid "Best bomber streak"
-msgstr "Лучшие стрики пилотов"
+msgstr "Лучшая серия побед на бомбардировщике"
 
 #: .\stats\utils.py:11 .\stats\utils.py:14 .\stats\utils.py:26
 #: .\stats\utils.py:29 .\stats\utils.py:35 .\stats\utils.py:41
