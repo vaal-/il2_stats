@@ -4,7 +4,7 @@ import os
 
 from tzlocal import get_localzone
 
-from core.settings import DATABASES
+from core.settings import DATABASES, INSTALLED_APPS
 
 DEFAULT = {
     'http': {
@@ -34,6 +34,7 @@ DEFAULT = {
         'win_score_ratio': 1.5,
         'sortie_min_time': 0,
         'skin_id': 1,
+        'mods': '',
     },
     'email': {
         'send_email': False,
@@ -65,6 +66,13 @@ def get_conf():
     return conf
 
 conf = get_conf()
+
+mods = conf['stats']['mods'].strip()
+if mods:
+    for mod in reversed(mods.split(',')):
+        mod = mod.strip()
+        INSTALLED_APPS.insert(0, mod)
+        print('Mod [{mod}] added to INSTALLED_APPS'.format(mod=mod))
 
 HTTP_HOST = conf['http']['host']
 HTTP_PORT = int(conf['http']['port'])

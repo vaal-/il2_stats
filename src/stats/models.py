@@ -5,7 +5,7 @@ from django.conf import settings
 from django.contrib.postgres.fields import ArrayField, JSONField
 from django.templatetags.static import static
 from django.db import connection, models
-from django.db.models import Avg, Count, Sum
+from django.db.models import Avg, Count, Sum, BigIntegerField
 from django.urls import reverse, reverse_lazy
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _, pgettext_lazy
@@ -35,6 +35,18 @@ def default_sorties_cls():
         'aircraft_light': 0, 'aircraft_medium': 0, 'aircraft_heavy': 0, 'aircraft_transport': 0,
         'aircraft_turret': 0,
     }
+
+
+def calculate_rating(score, relive, flight_time_hours, max_members=1):
+    # score per death
+    sd = score / max(relive, 1)
+    # score per hour
+    shr = score / max(flight_time_hours, 1)
+    return (int((sd * shr * score) / 1000)) / max_members
+
+
+def rating_format_helper(rating):
+    return '{}K'.format(rating // 1000) if rating > 10000 else rating
 
 
 class Score(models.Model):
@@ -452,6 +464,26 @@ class Player(models.Model):
     fairplay = models.IntegerField(default=100)
     fairplay_time = models.IntegerField(default=0)
 
+    # for mod pilots stats aircraft cls
+    score_heavy = models.BigIntegerField(default=0, db_index=True)
+    score_medium = models.BigIntegerField(default=0, db_index=True)
+    score_light = models.BigIntegerField(default=0, db_index=True)
+    rating_heavy = models.BigIntegerField(default=0, db_index=True)
+    rating_medium = models.BigIntegerField(default=0, db_index=True)
+    rating_light = models.BigIntegerField(default=0, db_index=True)
+    flight_time_heavy = models.BigIntegerField(default=0)
+    flight_time_medium = models.BigIntegerField(default=0)
+    flight_time_light = models.BigIntegerField(default=0)
+    score_streak_current_heavy = models.IntegerField(default=0, db_index=True)
+    score_streak_current_medium = models.IntegerField(default=0, db_index=True)
+    score_streak_current_light = models.IntegerField(default=0, db_index=True)
+    score_streak_max_heavy = models.IntegerField(default=0)
+    score_streak_max_medium = models.IntegerField(default=0)
+    score_streak_max_light = models.IntegerField(default=0)
+    relive_heavy = models.IntegerField(default=0)
+    relive_medium = models.IntegerField(default=0)
+    relive_light = models.IntegerField(default=0)
+
     objects = models.Manager()
     players = PlayerManager()
 
@@ -516,11 +548,32 @@ class Player(models.Model):
         return self.flight_time / 3600
 
     @property
+    def flight_time_light_hours(self):
+        return self.flight_time_light / 3600
+
+    @property
+    def flight_time_medium_hours(self):
+        return self.flight_time_medium / 3600
+
+    @property
+    def flight_time_heavy_hours(self):
+        return self.flight_time_heavy / 3600
+
+    @property
     def rating_format(self):
-        if self.rating > 10000:
-            return '{}K'.format(self.rating // 1000)
-        else:
-            return self.rating
+        return rating_format_helper(self.rating)
+
+    @property
+    def rating_format_heavy(self):
+        return rating_format_helper(self.rating_heavy)
+
+    @property
+    def rating_format_medium(self):
+        return rating_format_helper(self.rating_medium)
+
+    @property
+    def rating_format_light(self):
+        return rating_format_helper(self.rating_light)
 
     @property
     def ak_total_ai(self):
@@ -547,12 +600,10 @@ class Player(models.Model):
         self.ce = round(self.kl * self.khr / 10, 2)
 
     def update_rating(self):
-        # score per death
-        sd = self.score / max(self.relive, 1)
-        # score per hour
-        shr = self.score / max(self.flight_time_hours, 1)
-        # self.rating = int((sd * shr * self.score) / 1000000)
-        self.rating = int((sd * shr * self.score) / 1000)
+        self.rating = calculate_rating(self.score, self.relive, self.flight_time_hours)
+        self.rating_light = calculate_rating(self.score_light, self.relive_light, self.flight_time_light_hours)
+        self.rating_medium = calculate_rating(self.score_medium, self.relive_medium, self.flight_time_medium_hours)
+        self.rating_heavy = calculate_rating(self.score_heavy, self.relive_heavy, self.flight_time_heavy_hours)
 
     def update_ratio(self):
         ratio = Sortie.objects.filter(player_id=self.id).aggregate(ratio=Avg('ratio'))['ratio']
@@ -630,6 +681,11 @@ class PlayerMission(models.Model):
     gks = models.FloatField(default=0)
     gkhr = models.FloatField(default=0)
     wl = models.FloatField(default=0)
+
+    # for mod pilots stats aircraft cls
+    score_heavy = models.IntegerField(default=0, db_index=True)
+    score_medium = models.IntegerField(default=0, db_index=True)
+    score_light = models.IntegerField(default=0, db_index=True)
 
     class Meta:
         ordering = ['-id']
@@ -884,6 +940,11 @@ class VLife(models.Model):
     gks = models.FloatField(default=0)
     gkhr = models.FloatField(default=0)
     wl = models.FloatField(default=0)
+
+    # for mod pilots stats aircraft cls
+    score_heavy = models.IntegerField(default=0, db_index=True)
+    score_medium = models.IntegerField(default=0, db_index=True)
+    score_light = models.IntegerField(default=0, db_index=True)
 
     objects = models.Manager()
     players = VLifeManager()
@@ -1300,6 +1361,20 @@ class Squad(models.Model):
     gkhr = models.FloatField(default=0)
     wl = models.FloatField(default=0)
 
+    # for mod pilots stats aircraft cls
+    score_heavy = models.BigIntegerField(default=0, db_index=True)
+    score_medium = models.BigIntegerField(default=0, db_index=True)
+    score_light = models.BigIntegerField(default=0, db_index=True)
+    rating_heavy = models.BigIntegerField(default=0, db_index=True)
+    rating_medium = models.BigIntegerField(default=0, db_index=True)
+    rating_light = models.BigIntegerField(default=0, db_index=True)
+    flight_time_light = models.BigIntegerField(default=0)
+    flight_time_medium = models.BigIntegerField(default=0)
+    flight_time_heavy = models.BigIntegerField(default=0)
+    relive_light = models.IntegerField(default=0)
+    relive_medium = models.IntegerField(default=0)
+    relive_heavy = models.IntegerField(default=0)
+
     objects = models.Manager()
     squads = SquadManager()
 
@@ -1353,11 +1428,32 @@ class Squad(models.Model):
         return self.flight_time / 3600
 
     @property
+    def flight_time_light_hours(self):
+        return self.flight_time_light / 3600
+
+    @property
+    def flight_time_medium_hours(self):
+        return self.flight_time_medium / 3600
+
+    @property
+    def flight_time_heavy_hours(self):
+        return self.flight_time_heavy / 3600
+
+    @property
     def rating_format(self):
-        if self.rating > 10000:
-            return '{}K'.format(self.rating // 1000)
-        else:
-            return self.rating
+        return rating_format_helper(self.rating)
+
+    @property
+    def rating_format_heavy(self):
+        return rating_format_helper(self.rating_heavy)
+
+    @property
+    def rating_format_medium(self):
+        return rating_format_helper(self.rating_medium)
+
+    @property
+    def rating_format_light(self):
+        return rating_format_helper(self.rating_light)
 
     @property
     def ak_total_ai(self):
@@ -1380,11 +1476,10 @@ class Squad(models.Model):
         self.ce = round(self.kl * self.khr / 10, 2)
 
     def update_rating(self):
-        # score per death
-        sd = self.score / max(self.relive, 1)
-        # score per hour
-        shr = self.score / max(self.flight_time_hours, 1)
-        self.rating = int(((sd * shr * self.score) / 1000) / self.max_members)
+        self.rating = calculate_rating(self.score, self.relive, self.flight_time_hours, self.max_members)
+        self.rating_light = calculate_rating(self.score_light, self.relive_light, self.flight_time_light_hours, self.max_members)
+        self.rating_medium = calculate_rating(self.score_medium, self.relive_medium, self.flight_time_medium_hours, self.max_members)
+        self.rating_heavy = calculate_rating(self.score_heavy, self.relive_heavy, self.flight_time_heavy_hours, self.max_members)
 
     def update_coal_pref(self):
         if self.sorties_total:

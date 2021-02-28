@@ -630,7 +630,14 @@ def update_sortie(new_sortie, player_mission, player_aircraft, vlife):
     player.streak_ground_current = vlife.gk_total
     player.streak_ground_max = max(player.streak_ground_max, player.streak_ground_current)
     player.score_streak_current = vlife.score
+    player.score_streak_current_heavy = vlife.score_heavy
+    player.score_streak_current_medium = vlife.score_medium
+    player.score_streak_current_light = vlife.score_light
     player.score_streak_max = max(player.score_streak_max, player.score_streak_current)
+    player.score_streak_max_heavy = max(player.score_streak_max_heavy, player.score_streak_current_heavy)
+    player.score_streak_max_medium = max(player.score_streak_max_medium, player.score_streak_current_medium)
+    player.score_streak_max_light = max(player.score_streak_max_light, player.score_streak_current_light)
+
     player.sorties_streak_current = vlife.sorties_total
     player.sorties_streak_max = max(player.sorties_streak_max, player.sorties_streak_current)
     player.ft_streak_current = vlife.flight_time
@@ -640,6 +647,9 @@ def update_sortie(new_sortie, player_mission, player_aircraft, vlife):
         player.streak_current = 0
         player.streak_ground_current = 0
         player.score_streak_current = 0
+        player.score_streak_current_heavy = 0
+        player.score_streak_current_medium = 0
+        player.score_streak_current_light = 0
         player.sorties_streak_current = 0
         player.ft_streak_current = 0
         player.lost_aircraft_current = 0
@@ -659,12 +669,14 @@ def update_sortie(new_sortie, player_mission, player_aircraft, vlife):
 
 
 def update_general(player, new_sortie):
+    flight_time_add = 0
     if not new_sortie.is_not_takeoff:
         player.sorties_total += 1
-        player.flight_time += new_sortie.flight_time
+        flight_time_add = new_sortie.flight_time
+    player.flight_time += flight_time_add
 
-    if new_sortie.is_relive:
-        player.relive += 1
+    relive_add = 1 if new_sortie.is_relive else 0
+    player.relive += relive_add
 
     player.ak_total += new_sortie.ak_total
     player.fak_total += new_sortie.fak_total
@@ -672,6 +684,22 @@ def update_general(player, new_sortie):
     player.fgk_total += new_sortie.fgk_total
     player.ak_assist += new_sortie.ak_assist
     player.score += new_sortie.score
+
+    try:
+        if new_sortie.aircraft.cls == "aircraft_light":
+            player.score_light += new_sortie.score
+            player.flight_time_light += flight_time_add
+            player.relive_light += relive_add
+        elif new_sortie.aircraft.cls == "aircraft_medium":
+            player.score_medium += new_sortie.score
+            player.flight_time_medium += flight_time_add
+            player.relive_medium += relive_add
+        elif new_sortie.aircraft.cls == "aircraft_heavy":
+            player.score_heavy += new_sortie.score
+            player.flight_time_heavy += flight_time_add
+            player.relive_heavy += relive_add
+    except AttributeError:
+        pass  # Some player objects have no score or relive attributes for light/medium/heavy aircraft.
 
 
 def update_ammo(sortie, player):
