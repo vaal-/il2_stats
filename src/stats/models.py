@@ -58,6 +58,7 @@ class Score(models.Model):
     type = models.CharField(max_length=3, choices=SCORE_TYPE, editable=False, default='int')
     value = models.IntegerField(default=0, editable=False)
     custom_value = models.IntegerField(null=True, blank=True)
+    ai_value = models.IntegerField(null=True, blank=True)
 
     class Meta:
         db_table = 'scoring'
@@ -73,6 +74,12 @@ class Score(models.Model):
             return self.custom_value
         else:
             return self.value
+
+    def get_ai_value(self):
+        if self.ai_value is not None:
+            return self.ai_value
+        else:
+            return self.get_value()
 
 
 class Object(models.Model):

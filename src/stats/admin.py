@@ -34,8 +34,8 @@ class ReadOnlyModelAdmin(admin.ModelAdmin):
 
 @admin.register(Score)
 class ScoreAdmin(admin.ModelAdmin):
-    list_display = ('key', 'type', 'value', 'custom_value')
-    fields = ('key', 'type', 'value', 'custom_value')
+    list_display = ('key', 'type', 'value', 'custom_value', 'ai_value')
+    fields = ('key', 'type', 'value', 'custom_value', 'ai_value')
     readonly_fields = ('key', 'type', 'value')
 
 

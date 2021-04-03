@@ -702,6 +702,9 @@ class Object:
     def is_crew(self):
         return self.cls_base == 'crew'
 
+    def is_ai(self):
+        return self.sortie is None
+
 
 class Sortie:
     """

@@ -152,8 +152,7 @@ def stats_whore(m_report_file):
     real_date = real_date.astimezone(pytz.UTC)
 
     objects = MappingProxyType({obj['log_name']: obj for obj in Object.objects.values()})
-    # classes = MappingProxyType({obj['cls']: obj['cls_base'] for obj in objects.values()})
-    score_dict = MappingProxyType({s.key: s.get_value() for s in Score.objects.all()})
+    score_dict = MappingProxyType({s.key: {'base': s.get_value(), 'ai': s.get_ai_value()} for s in Score.objects.all()})
 
     m_report = MissionReport(objects=objects)
     m_report.processing(files=m_report_files)
@@ -461,7 +460,7 @@ def create_new_sortie(mission, profile, player, sortie, sortie_aircraft_id):
             is_friendly = sortie.coal_id == target.coal_id
 
             if not is_friendly:
-                score += mission.score_dict[target.cls]
+                score += mission.score_dict[target.cls]['ai' if target.is_ai() else 'base']
                 if target.cls_base == 'aircraft':
                     ak_total += 1
                 elif target.cls_base in ('block', 'vehicle', 'tank'):
@@ -488,7 +487,7 @@ def create_new_sortie(mission, profile, player, sortie, sortie_aircraft_id):
                 if sortie.coal_id == target.coal_id:
                     continue
                 ak_assist += 1
-                score += mission.score_dict['ak_assist']
+                score += mission.score_dict['ak_assist']['base']
 
     new_sortie = Sortie(
         profile=profile,
@@ -781,11 +780,11 @@ def update_fairplay(new_sortie):
     score_dict = new_sortie.mission.score_dict
 
     if new_sortie.is_disco:
-        player.fairplay -= score_dict['fairplay_disco']
+        player.fairplay -= score_dict['fairplay_disco']['base']
     if new_sortie.fak_total:
-        player.fairplay -= score_dict['fairplay_fak']
+        player.fairplay -= score_dict['fairplay_fak']['base']
     if new_sortie.fgk_total:
-        player.fairplay -= score_dict['fairplay_fgk']
+        player.fairplay -= score_dict['fairplay_fgk']['base']
 
     if player.fairplay < 0:
         player.fairplay = 0
@@ -796,7 +795,7 @@ def update_fairplay(new_sortie):
         player.fairplay_time += new_sortie.flight_time
         fairplay_hours = player.fairplay_time // 3600
         if fairplay_hours > 0:
-            player.fairplay += (score_dict['fairplay_up'] * fairplay_hours)
+            player.fairplay += (score_dict['fairplay_up']['base'] * fairplay_hours)
             player.fairplay_time -= 3600 * fairplay_hours
 
     if player.fairplay > 100:

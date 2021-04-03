@@ -231,10 +231,16 @@ def pilot_sortie(request, sortie_id):
                   .get(id=sortie_id, player__type='pilot'))
     except Sortie.DoesNotExist:
         raise Http404
+    # обработка старого формат хранения очков, без AI очков
+    mission_score_dict = {}
+    for k, v in sortie.mission.score_dict.items():
+        if isinstance(v, dict):
+            break
+        mission_score_dict[k] = {'base': v, 'ai': v}
     return render(request, 'pilot_sortie.html', {
         'player': sortie.player,
         'sortie': sortie,
-        'score_dict': sortie.mission.score_dict,
+        'score_dict': mission_score_dict or sortie.mission.score_dict,
     })
 
 

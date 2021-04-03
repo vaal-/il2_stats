@@ -154,7 +154,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pvp.aircraft_light }}
                             &times;
-                            {{ score_dict.aircraft_light }}
+                            {{ score_dict.aircraft_light.base }}
                         </div>
                     </div>
                 {% endif %}
@@ -168,7 +168,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pvp.aircraft_medium }}
                             &times;
-                            {{ score_dict.aircraft_medium }}
+                            {{ score_dict.aircraft_medium.base }}
                         </div>
                     </div>
                 {% endif %}
@@ -182,7 +182,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pvp.aircraft_heavy }}
                             &times;
-                            {{ score_dict.aircraft_heavy }}
+                            {{ score_dict.aircraft_heavy.base }}
                         </div>
                     </div>
                 {% endif %}
@@ -196,7 +196,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pvp.aircraft_transport }}
                             &times;
-                            {{ score_dict.aircraft_transport }}
+                            {{ score_dict.aircraft_transport.base }}
                         </div>
                     </div>
                 {% endif %}
@@ -210,7 +210,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aircraft_light }}
                             &times;
-                            {{ score_dict.aircraft_light }}
+                            {{ score_dict.aircraft_light.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -224,7 +224,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aircraft_medium }}
                             &times;
-                            {{ score_dict.aircraft_medium }}
+                            {{ score_dict.aircraft_medium.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -238,7 +238,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aircraft_heavy }}
                             &times;
-                            {{ score_dict.aircraft_heavy }}
+                            {{ score_dict.aircraft_heavy.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -252,7 +252,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aircraft_transport }}
                             &times;
-                            {{ score_dict.aircraft_transport }}
+                            {{ score_dict.aircraft_transport.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -266,7 +266,7 @@
                     <div class="right score">
                         {{ sortie.ak_assist }}
                         &times;
-                        {{ score_dict.ak_assist }}
+                        {{ score_dict.ak_assist.base }}
                     </div>
                 </div>
                 {% endif %}
@@ -288,7 +288,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.tank_heavy }}
                             &times;
-                            {{ score_dict.tank_heavy }}
+                            {{ score_dict.tank_heavy.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -302,7 +302,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.tank_medium }}
                             &times;
-                            {{ score_dict.tank_medium }}
+                            {{ score_dict.tank_medium.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -316,7 +316,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.tank_light }}
                             &times;
-                            {{ score_dict.tank_light }}
+                            {{ score_dict.tank_light.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -330,7 +330,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.armoured_vehicle }}
                             &times;
-                            {{ score_dict.armoured_vehicle }}
+                            {{ score_dict.armoured_vehicle.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -344,7 +344,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.car }}
                             &times;
-                            {{ score_dict.car }}
+                            {{ score_dict.car.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -358,7 +358,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.truck }}
                             &times;
-                            {{ score_dict.truck }}
+                            {{ score_dict.truck.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -372,7 +372,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aaa_heavy }}
                             &times;
-                            {{ score_dict.aaa_heavy }}
+                            {{ score_dict.aaa_heavy.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -386,7 +386,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aaa_light }}
                             &times;
-                            {{ score_dict.aaa_light }}
+                            {{ score_dict.aaa_light.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -400,7 +400,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aaa_mg }}
                             &times;
-                            {{ score_dict.aaa_mg }}
+                            {{ score_dict.aaa_mg.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -414,7 +414,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.machine_gunner }}
                             &times;
-                            {{ score_dict.machine_gunner }}
+                            {{ score_dict.machine_gunner.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -428,7 +428,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aerostat }}
                             &times;
-                            {{ score_dict.aerostat }}
+                            {{ score_dict.aerostat.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -442,7 +442,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.searchlight }}
                             &times;
-                            {{ score_dict.searchlight }}
+                            {{ score_dict.searchlight.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -456,7 +456,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.locomotive }}
                             &times;
-                            {{ score_dict.locomotive }}
+                            {{ score_dict.locomotive.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -470,7 +470,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.wagon }}
                             &times;
-                            {{ score_dict.wagon }}
+                            {{ score_dict.wagon.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -484,7 +484,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.artillery_field }}
                             &times;
-                            {{ score_dict.artillery_field }}
+                            {{ score_dict.artillery_field.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -498,7 +498,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.artillery_howitzer }}
                             &times;
-                            {{ score_dict.artillery_howitzer }}
+                            {{ score_dict.artillery_howitzer.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -512,7 +512,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.artillery_rocket }}
                             &times;
-                            {{ score_dict.artillery_rocket }}
+                            {{ score_dict.artillery_rocket.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -526,7 +526,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.ship }}
                             &times;
-                            {{ score_dict.ship }}
+                            {{ score_dict.ship.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -540,7 +540,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.ship_heavy }}
                             &times;
-                            {{ score_dict.ship_heavy }}
+                            {{ score_dict.ship_heavy.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -554,7 +554,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.ship_medium }}
                             &times;
-                            {{ score_dict.ship_medium }}
+                            {{ score_dict.ship_medium.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -568,7 +568,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.ship_light }}
                             &times;
-                            {{ score_dict.ship_light }}
+                            {{ score_dict.ship_light.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -582,7 +582,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.aircraft_static }}
                             &times;
-                            {{ score_dict.aircraft_static }}
+                            {{ score_dict.aircraft_static.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -596,7 +596,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.vehicle_static }}
                             &times;
-                            {{ score_dict.vehicle_static }}
+                            {{ score_dict.vehicle_static.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -610,7 +610,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.airfield }}
                             &times;
-                            {{ score_dict.airfield }}
+                            {{ score_dict.airfield.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -624,7 +624,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.bridge }}
                             &times;
-                            {{ score_dict.bridge }}
+                            {{ score_dict.bridge.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -638,7 +638,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.industrial }}
                             &times;
-                            {{ score_dict.industrial }}
+                            {{ score_dict.industrial.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -652,7 +652,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.building_big }}
                             &times;
-                            {{ score_dict.building_big }}
+                            {{ score_dict.building_big.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -666,7 +666,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.building_medium }}
                             &times;
-                            {{ score_dict.building_medium }}
+                            {{ score_dict.building_medium.ai }}
                         </div>
                     </div>
                 {% endif %}
@@ -680,7 +680,7 @@
                         <div class="right score">
                             {{ sortie.killboard_pve.building_small }}
                             &times;
-                            {{ score_dict.building_small }}
+                            {{ score_dict.building_small.ai }}
                         </div>
                     </div>
                 {% endif %}
