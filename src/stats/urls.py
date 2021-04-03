@@ -39,6 +39,8 @@ urlpatterns = [
     url(r'^mission/(?P<mission_id>\d+)/$', views.mission, name='mission'),
     url(r'^vlife/(?P<vlife_id>\d+)/$', views.pilot_vlife, name='pilot_vlife'),
 
+    url(r'^overall/$', views.overall, name='overall'),
+
     url(r'^online/$', views.online, name='online'),
     url(r'^$', views.main, name='main'),
 

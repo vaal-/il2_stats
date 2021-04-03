@@ -455,3 +455,73 @@ def pilot_vlife(request, vlife_id):
         'player': vlife.player,
         'vlife': vlife,
     })
+
+
+def _overall_missions_wins():
+    wins = Mission.objects.values('winning_coalition').order_by().annotate(num=Count('winning_coalition'))
+    wins = {d['winning_coalition']: d['num'] for d in wins}
+    return {
+        1: wins.get(1, 0),
+        2: wins.get(2, 0)
+    }
+
+
+def _overall_stats_summary_total():
+    summary_total = {'ak_total': 0, 'gk_total': 0, 'score': 0, 'flight_time': 0}
+    _summary_total = (Sortie.objects
+                      .filter(is_disco=False)
+                      .aggregate(ak_total=Sum('ak_total'), gk_total=Sum('gk_total'),
+                                 score=Sum('score'), flight_time=Sum('flight_time')))
+    summary_total.update(_summary_total)
+    return summary_total
+
+
+def _overall_stats_summary_coal():
+    summary_coal = {
+        1: {'ak_total': 0, 'gk_total': 0, 'score': 0, 'flight_time': 0},
+        2: {'ak_total': 0, 'gk_total': 0, 'score': 0, 'flight_time': 0},
+    }
+    _summary_coal = (Sortie.objects
+                     .filter(is_disco=False)
+                     .values('coalition')
+                     .order_by()
+                     .annotate(ak_total=Sum('ak_total'), gk_total=Sum('gk_total'),
+                               score=Sum('score'), flight_time=Sum('flight_time')))
+    for s in _summary_coal:
+        summary_coal[s['coalition']].update(s)
+    return summary_coal
+
+
+def overall(request):
+    missions_wins = _overall_missions_wins()
+    missions_wins_total = sum(missions_wins.values())
+    summary_total = _overall_stats_summary_total()
+    summary_coal = _overall_stats_summary_coal()
+
+    top_rating = (Player.players.pilots()
+                  .exclude(rating=0)
+                  .order_by('-rating')[:10])
+
+    top_streak_score = (Player.players.pilots()
+                        .exclude(score_streak_max=0)
+                        .order_by('-score_streak_max')[:10])
+
+    top_streak_ak = (Player.players.pilots()
+                     .exclude(streak_max=0)
+                     .order_by('-streak_max')[:10])
+
+    top_streak_gk = (Player.players.pilots()
+                     .exclude(streak_ground_max=0)
+                     .order_by('-streak_ground_max')[:10])
+
+    return render(request, 'overall.html', {
+        'tour': request.tour,
+        'missions_wins': missions_wins,
+        'missions_wins_total': missions_wins_total,
+        'summary_total': summary_total,
+        'summary_coal': summary_coal,
+        'top_rating': top_rating,
+        'top_streak_score': top_streak_score,
+        'top_streak_ak': top_streak_ak,
+        'top_streak_gk': top_streak_gk,
+    })

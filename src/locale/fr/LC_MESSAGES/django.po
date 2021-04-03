@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:19+0100\n"
+"POT-Creation-Date: 2021-04-03 19:45+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "clé"
 msgid "A unique name for this chunk of content"
 msgstr "Un nom unique pour ce contenu"
 
-#: .\chunks\models.py:8 .\stats\models.py:245 .\stats\models.py:1508
+#: .\chunks\models.py:8 .\stats\models.py:252 .\stats\models.py:1515
 msgid "title"
 msgstr "titre"
 
@@ -7002,227 +7002,227 @@ msgstr "UB AP/HE [140], Sh-37 HE [20]"
 msgid "Stats"
 msgstr "Statistiques"
 
-#: .\stats\models.py:65
+#: .\stats\models.py:66
 msgid "score"
 msgstr "score"
 
-#: .\stats\models.py:66
+#: .\stats\models.py:67
 msgid "scoring"
 msgstr "score"
 
-#: .\stats\models.py:146
+#: .\stats\models.py:153
 msgid "object"
 msgstr "objet"
 
-#: .\stats\models.py:147
+#: .\stats\models.py:154
 msgid "objects"
 msgstr "objets"
 
-#: .\stats\models.py:171
+#: .\stats\models.py:178
 msgid "tour"
 msgstr "campagne"
 
-#: .\stats\models.py:172
+#: .\stats\models.py:179
 msgid "tours"
 msgstr "campagnes"
 
-#: .\stats\models.py:290
+#: .\stats\models.py:297
 msgctxt "preset"
 msgid "custom"
 msgstr "personnalisé"
 
-#: .\stats\models.py:291
+#: .\stats\models.py:298
 msgctxt "preset"
 msgid "normal"
 msgstr "normal"
 
-#: .\stats\models.py:292
+#: .\stats\models.py:299
 msgctxt "preset"
 msgid "expert"
 msgstr "expert"
 
-#: .\stats\models.py:347
+#: .\stats\models.py:354
 msgid "profile"
 msgstr "profil"
 
-#: .\stats\models.py:348
+#: .\stats\models.py:355
 msgid "profiles"
 msgstr "profils"
 
-#: .\stats\models.py:394 .\stats\models.py:636 .\stats\models.py:871
-#: .\stats\models.py:1086 .\stats\models.py:1092 .\stats\models.py:1321
+#: .\stats\models.py:401 .\stats\models.py:643 .\stats\models.py:878
+#: .\stats\models.py:1093 .\stats\models.py:1099 .\stats\models.py:1328
 msgid "neutral"
 msgstr "neutre"
 
-#: .\stats\models.py:909 .\stats\models.py:1121
+#: .\stats\models.py:916 .\stats\models.py:1128
 msgctxt "sortie_status"
 msgid "landed"
 msgstr "posé"
 
-#: .\stats\models.py:910 .\stats\models.py:1122
+#: .\stats\models.py:917 .\stats\models.py:1129
 msgctxt "sortie_status"
 msgid "ditched"
 msgstr "posé en catastrophe"
 
-#: .\stats\models.py:911 .\stats\models.py:1123
+#: .\stats\models.py:918 .\stats\models.py:1130
 msgctxt "sortie_status"
 msgid "crashed"
 msgstr "crashé"
 
-#: .\stats\models.py:912 .\stats\models.py:1124
+#: .\stats\models.py:919 .\stats\models.py:1131
 msgctxt "sortie_status"
 msgid "shotdown"
 msgstr "abattu"
 
-#: .\stats\models.py:913 .\stats\models.py:1125
+#: .\stats\models.py:920 .\stats\models.py:1132
 msgctxt "sortie_status"
 msgid "not takeoff"
 msgstr "pas décollé"
 
-#: .\stats\models.py:914 .\stats\models.py:1126
+#: .\stats\models.py:921 .\stats\models.py:1133
 msgctxt "sortie_status"
 msgid "in flight"
 msgstr "en vol"
 
-#: .\stats\models.py:920 .\stats\models.py:1132
+#: .\stats\models.py:927 .\stats\models.py:1139
 msgctxt "aircraft_status"
 msgid "unharmed"
 msgstr "intact"
 
-#: .\stats\models.py:921 .\stats\models.py:1133
+#: .\stats\models.py:928 .\stats\models.py:1140
 msgctxt "aircraft_status"
 msgid "damaged"
 msgstr "endommagé"
 
-#: .\stats\models.py:922 .\stats\models.py:1134
+#: .\stats\models.py:929 .\stats\models.py:1141
 msgctxt "aircraft_status"
 msgid "destroyed"
 msgstr "détruit"
 
-#: .\stats\models.py:928 .\stats\models.py:1140
+#: .\stats\models.py:935 .\stats\models.py:1147
 msgctxt "sortie_status"
 msgid "healthy"
 msgstr "en bonne santé"
 
-#: .\stats\models.py:929 .\stats\models.py:1141
+#: .\stats\models.py:936 .\stats\models.py:1148
 msgctxt "sortie_status"
 msgid "wounded"
 msgstr "blessé"
 
-#: .\stats\models.py:930 .\stats\models.py:1142
+#: .\stats\models.py:937 .\stats\models.py:1149
 msgctxt "sortie_status"
 msgid "dead"
 msgstr "tué"
 
-#: .\stats\models.py:1093
+#: .\stats\models.py:1100
 msgid "USSR"
 msgstr "URSS"
 
-#: .\stats\models.py:1094 .\stats\models.py:1100
+#: .\stats\models.py:1101 .\stats\models.py:1107
 msgid "Great Britain"
 msgstr ""
 
-#: .\stats\models.py:1095 .\stats\models.py:1101
+#: .\stats\models.py:1102 .\stats\models.py:1108
 msgid "USA"
 msgstr ""
 
-#: .\stats\models.py:1096 .\stats\models.py:1104
+#: .\stats\models.py:1103 .\stats\models.py:1111
 msgid "Germany"
 msgstr "Allemagne"
 
-#: .\stats\models.py:1097
+#: .\stats\models.py:1104
 msgid "Italy"
 msgstr ""
 
-#: .\stats\models.py:1098
+#: .\stats\models.py:1105
 msgid "Japan"
 msgstr ""
 
-#: .\stats\models.py:1099
+#: .\stats\models.py:1106
 #, fuzzy
 #| msgid "French"
 msgid "France"
 msgstr "Français"
 
-#: .\stats\models.py:1102
+#: .\stats\models.py:1109
 msgid "Belgium"
 msgstr ""
 
-#: .\stats\models.py:1103
+#: .\stats\models.py:1110
 #, fuzzy
 #| msgid "Russian"
 msgid "Russia"
 msgstr "Russe"
 
-#: .\stats\models.py:1105
+#: .\stats\models.py:1112
 msgid "Austria-Hungary"
 msgstr ""
 
-#: .\stats\models.py:1502
+#: .\stats\models.py:1509
 msgctxt "award_type"
 msgid "tour"
 msgstr "campagne"
 
-#: .\stats\models.py:1503
+#: .\stats\models.py:1510
 msgctxt "award_type"
 msgid "mission"
 msgstr "mission"
 
-#: .\stats\models.py:1504
+#: .\stats\models.py:1511
 msgctxt "award_type"
 msgid "sortie"
 msgstr "sortie"
 
-#: .\stats\models.py:1505
+#: .\stats\models.py:1512
 msgctxt "award_type"
 msgid "vlife"
 msgstr ""
 
-#: .\stats\models.py:1507
+#: .\stats\models.py:1514
 msgid "function name"
 msgstr "nom de fonction"
 
-#: .\stats\models.py:1509
+#: .\stats\models.py:1516
 msgid "type"
 msgstr "type"
 
-#: .\stats\models.py:1510
+#: .\stats\models.py:1517
 msgid "description"
 msgstr "description"
 
-#: .\stats\models.py:1511
+#: .\stats\models.py:1518
 msgid "image"
 msgstr "image"
 
-#: .\stats\models.py:1512
+#: .\stats\models.py:1519
 msgid "Image size should be 180x180"
 msgstr "La taille de l'image doit être de 180x180"
 
-#: .\stats\models.py:1513
+#: .\stats\models.py:1520
 msgid "order field"
 msgstr ""
 
-#: .\stats\models.py:1517
+#: .\stats\models.py:1524
 msgid "award"
 msgstr "médaille"
 
-#: .\stats\models.py:1518
+#: .\stats\models.py:1525
 msgid "awards"
 msgstr "médailles"
 
-#: .\stats\models.py:1532
+#: .\stats\models.py:1539
 msgid "reward"
 msgstr "récompense"
 
-#: .\stats\models.py:1533
+#: .\stats\models.py:1540
 msgid "rewards"
 msgstr "récompenses"
 
-#: .\stats\models.py:1552
+#: .\stats\models.py:1559
 msgid "player online"
 msgstr "joueur en ligne"
 
-#: .\stats\models.py:1553
+#: .\stats\models.py:1560
 msgid "players online"
 msgstr "joueurs en ligne"
 
@@ -7389,15 +7389,20 @@ msgstr "Classement des escadrilles"
 msgid "Missions"
 msgstr "Missions"
 
-#: .\stats\templates\base.html:91
+#: .\stats\templates\base.html:90
+msgctxt "menu"
+msgid "Overall"
+msgstr ""
+
+#: .\stats\templates\base.html:92
 msgid "Forum"
 msgstr "Forum"
 
-#: .\stats\templates\base.html:94
+#: .\stats\templates\base.html:95
 msgid "Info"
 msgstr "Infos"
 
-#: .\stats\templates\base.html:97 .\stats\templates\main.html:201
+#: .\stats\templates\base.html:98 .\stats\templates\main.html:201
 #: .\stats\templates\tour.html:3
 msgid "Tour"
 msgstr "Tour"
@@ -7455,36 +7460,38 @@ msgstr "Pilotes"
 msgid "Current Tour"
 msgstr "Tour en cours"
 
-#: .\stats\templates\main.html:16 .\stats\templates\tour.html:19
+#: .\stats\templates\main.html:16 .\stats\templates\overall.html:16
+#: .\stats\templates\tour.html:19
 msgctxt "tour"
 msgid "Dominance"
 msgstr "Domination"
 
-#: .\stats\templates\main.html:19 .\stats\templates\tour.html:22
+#: .\stats\templates\main.html:19 .\stats\templates\overall.html:19
+#: .\stats\templates\tour.html:22
 msgctxt "tour"
 msgid "Won missions"
 msgstr "Missions réussies"
 
 #: .\stats\templates\main.html:38 .\stats\templates\mission.html:41
-#: .\stats\templates\tour.html:40
+#: .\stats\templates\overall.html:38 .\stats\templates\tour.html:40
 msgctxt "tour"
 msgid "Shotdown aircraft"
 msgstr "Appareils abattus"
 
 #: .\stats\templates\main.html:56 .\stats\templates\mission.html:59
-#: .\stats\templates\tour.html:58
+#: .\stats\templates\overall.html:56 .\stats\templates\tour.html:58
 msgctxt "tour"
 msgid "Ground targets destroyed"
 msgstr "Cibles au sol détruites"
 
 #: .\stats\templates\main.html:74 .\stats\templates\mission.html:77
-#: .\stats\templates\tour.html:76
+#: .\stats\templates\overall.html:74 .\stats\templates\tour.html:76
 msgctxt "tour"
 msgid "Score"
 msgstr "Score"
 
 #: .\stats\templates\main.html:93 .\stats\templates\mission.html:95
-#: .\stats\templates\tour.html:94
+#: .\stats\templates\overall.html:93 .\stats\templates\tour.html:94
 msgctxt "tour"
 msgid "Flight time (hours)"
 msgstr "Temps de vol (heures)"
@@ -7495,13 +7502,15 @@ msgid "Best pilots in the last 24 hours"
 msgstr "Meilleurs pilotes des dernières 24H"
 
 #: .\stats\templates\main.html:123 .\stats\templates\main.html:149
+#: .\stats\templates\overall.html:123 .\stats\templates\overall.html:149
+#: .\stats\templates\overall.html:177 .\stats\templates\overall.html:203
 #: .\stats\templates\tour.html:123 .\stats\templates\tour.html:149
 msgctxt "tour_top"
 msgid "pilot nickname"
 msgstr "pseudo du pilote"
 
 #: .\stats\templates\main.html:125 .\stats\templates\main.html:151
-#: .\stats\templates\tour.html:151
+#: .\stats\templates\overall.html:151 .\stats\templates\tour.html:151
 msgctxt "tour_top"
 msgid "score"
 msgstr "score"
@@ -7515,8 +7524,9 @@ msgstr "Meilleurs pilotes en vie"
 msgid "Overall Pilot Rankings"
 msgstr "Classement général des pilotes"
 
-#: .\stats\templates\main.html:184 .\stats\templates\pilot.html:511
-#: .\stats\templates\squad.html:415 .\stats\templates\tour.html:184
+#: .\stats\templates\main.html:184 .\stats\templates\overall.html:237
+#: .\stats\templates\pilot.html:511 .\stats\templates\squad.html:415
+#: .\stats\templates\tour.html:184
 msgid "Coalitions"
 msgstr "Coalitions"
 
@@ -7692,6 +7702,60 @@ msgstr "Durée (heures:minutes)"
 #: .\stats\templates\online.html:13
 msgid "Pilots on the server"
 msgstr "Pilotes sur le serveur"
+
+#: .\stats\templates\overall.html:3 .\stats\templates\overall.html:9
+#, fuzzy
+#| msgid "Overall Pilot Rankings"
+msgid "Overall stats"
+msgstr "Classement général des pilotes"
+
+#: .\stats\templates\overall.html:118
+#, fuzzy
+#| msgctxt "tour_top"
+#| msgid "Best pilots"
+msgctxt "overall"
+msgid "Best pilots"
+msgstr "Meilleurs pilotes"
+
+#: .\stats\templates\overall.html:125 .\stats\templates\tour.html:125
+msgctxt "tour_top"
+msgid "rating"
+msgstr "classement"
+
+#: .\stats\templates\overall.html:144
+#, fuzzy
+#| msgctxt "sortie"
+#| msgid "Detailed results"
+msgctxt "overall_top"
+msgid "Best virtual lifes"
+msgstr "Résultats détaillés"
+
+#: .\stats\templates\overall.html:172
+#, fuzzy
+#| msgid "Best Streak"
+msgctxt "overall"
+msgid "Best streak"
+msgstr "Meilleure série"
+
+#: .\stats\templates\overall.html:179 .\stats\templates\overall.html:205
+#, fuzzy
+#| msgid "Streak"
+msgctxt "overall"
+msgid "streak"
+msgstr "Série"
+
+#: .\stats\templates\overall.html:198
+#, fuzzy
+#| msgid "Best Ground Streak"
+msgctxt "overall"
+msgid "Best ground streak"
+msgstr "Meilleure série de cibles au sol"
+
+#: .\stats\templates\overall.html:225
+msgid ""
+"<strong>Attention!</strong> The same player can appear in the ranking "
+"several times (profiles from different tours) and this is expected behavior."
+msgstr ""
 
 #: .\stats\templates\pilot.html:23 .\stats\templates\pilot.html:27
 #: .\stats\templates\pilot.html:31 .\stats\templates\squad.html:20
@@ -8672,11 +8736,6 @@ msgstr "Victoire %(coal)s"
 msgctxt "tour_top"
 msgid "Best pilots"
 msgstr "Meilleurs pilotes"
-
-#: .\stats\templates\tour.html:125
-msgctxt "tour_top"
-msgid "rating"
-msgstr "classement"
 
 #: .\stats\templates\tour.html:144
 msgctxt "tour_top"

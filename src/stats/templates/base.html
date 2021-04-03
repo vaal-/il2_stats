@@ -87,6 +87,7 @@
                 </div>
             </div>
             <a href="{% url 'stats:missions_list' %}?tour={{ request.tour.id }}">{% trans 'Missions' %}</a>
+            <a href="{% url 'stats:overall' %}">{% trans 'Overall' context 'menu' %}</a>
             {% if server_forum_url.content %}
                 <a href="{{ server_forum_url.content }}" target="_blank">{% trans 'Forum' %}</a>
             {% endif %}
