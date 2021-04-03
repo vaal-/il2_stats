@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-23 23:26+0300\n"
+"POT-Creation-Date: 2021-03-16 13:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,7 +26,7 @@ msgstr "llave"
 msgid "A unique name for this chunk of content"
 msgstr "Un nombre único para este fragmento de contenido"
 
-#: .\chunks\models.py:8 .\stats\models.py:233 .\stats\models.py:1413
+#: .\chunks\models.py:8 .\stats\models.py:245 .\stats\models.py:1508
 msgid "title"
 msgstr "título"
 
@@ -137,8 +138,7 @@ msgstr "miembro del escuadrón"
 msgid "squads members"
 msgstr "miembros de escuadrones"
 
-#: .\squads\templates\squads\join.html:3
-#: .\squads\templates\squads\join.html:14
+#: .\squads\templates\squads\join.html:3 .\squads\templates\squads\join.html:14
 msgid "Join Squad"
 msgstr "Unirse al Escuadrón"
 
@@ -286,30 +286,30 @@ msgctxt "aircraft_mod"
 msgid "4 x FAB-250tsk bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:22 .\stats\aircraft_mods.py:330
-#: .\stats\aircraft_mods.py:338 .\stats\aircraft_mods.py:354
-#: .\stats\aircraft_mods.py:365
+#: .\stats\aircraft_mods.py:22 .\stats\aircraft_mods.py:358
+#: .\stats\aircraft_mods.py:366 .\stats\aircraft_mods.py:382
+#: .\stats\aircraft_mods.py:390 .\stats\aircraft_mods.py:402
 msgctxt "aircraft_mod"
 msgid "Bendix MN-26"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:25 .\stats\aircraft_mods.py:130
-#: .\stats\aircraft_mods.py:140 .\stats\aircraft_mods.py:149
-#: .\stats\aircraft_mods.py:383
+#: .\stats\aircraft_mods.py:25 .\stats\aircraft_mods.py:139
+#: .\stats\aircraft_mods.py:149 .\stats\aircraft_mods.py:158
+#: .\stats\aircraft_mods.py:420
 msgctxt "aircraft_mod"
 msgid "Collimator Day"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:26 .\stats\aircraft_mods.py:131
-#: .\stats\aircraft_mods.py:141 .\stats\aircraft_mods.py:150
-#: .\stats\aircraft_mods.py:384
+#: .\stats\aircraft_mods.py:26 .\stats\aircraft_mods.py:140
+#: .\stats\aircraft_mods.py:150 .\stats\aircraft_mods.py:159
+#: .\stats\aircraft_mods.py:421
 msgctxt "aircraft_mod"
 msgid "Collimator Night"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:27 .\stats\aircraft_mods.py:132
-#: .\stats\aircraft_mods.py:142 .\stats\aircraft_mods.py:151
-#: .\stats\aircraft_mods.py:385
+#: .\stats\aircraft_mods.py:27 .\stats\aircraft_mods.py:141
+#: .\stats\aircraft_mods.py:151 .\stats\aircraft_mods.py:160
+#: .\stats\aircraft_mods.py:422
 msgctxt "aircraft_mod"
 msgid "Gunsight"
 msgstr ""
@@ -319,32 +319,32 @@ msgctxt "aircraft_mod"
 msgid "Anemometer, Altimeter, Clock"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:29 .\stats\aircraft_mods.py:152
-#: .\stats\aircraft_mods.py:388
+#: .\stats\aircraft_mods.py:29 .\stats\aircraft_mods.py:161
+#: .\stats\aircraft_mods.py:425
 msgctxt "aircraft_mod"
 msgid "Inclinometer"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:30 .\stats\aircraft_mods.py:153
-#: .\stats\aircraft_mods.py:389
+#: .\stats\aircraft_mods.py:30 .\stats\aircraft_mods.py:162
+#: .\stats\aircraft_mods.py:426
 msgctxt "aircraft_mod"
 msgid "Bullet Counters"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:31 .\stats\aircraft_mods.py:136
-#: .\stats\aircraft_mods.py:145 .\stats\aircraft_mods.py:390
-#: .\stats\aircraft_mods.py:409
+#: .\stats\aircraft_mods.py:31 .\stats\aircraft_mods.py:145
+#: .\stats\aircraft_mods.py:154 .\stats\aircraft_mods.py:427
+#: .\stats\aircraft_mods.py:446
 msgctxt "aircraft_mod"
 msgid "Thermometer"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:32 .\stats\aircraft_mods.py:114
-#: .\stats\aircraft_mods.py:124 .\stats\aircraft_mods.py:137
-#: .\stats\aircraft_mods.py:146 .\stats\aircraft_mods.py:154
-#: .\stats\aircraft_mods.py:194 .\stats\aircraft_mods.py:205
-#: .\stats\aircraft_mods.py:391 .\stats\aircraft_mods.py:396
-#: .\stats\aircraft_mods.py:402 .\stats\aircraft_mods.py:410
-#: .\stats\aircraft_mods.py:417
+#: .\stats\aircraft_mods.py:32 .\stats\aircraft_mods.py:123
+#: .\stats\aircraft_mods.py:133 .\stats\aircraft_mods.py:146
+#: .\stats\aircraft_mods.py:155 .\stats\aircraft_mods.py:163
+#: .\stats\aircraft_mods.py:212 .\stats\aircraft_mods.py:223
+#: .\stats\aircraft_mods.py:428 .\stats\aircraft_mods.py:433
+#: .\stats\aircraft_mods.py:439 .\stats\aircraft_mods.py:447
+#: .\stats\aircraft_mods.py:454
 #, fuzzy
 #| msgctxt "sortie_status"
 #| msgid "in flight"
@@ -360,7 +360,7 @@ msgstr ""
 #: .\stats\aircraft_mods.py:36 .\stats\aircraft_mods.py:44
 #: .\stats\aircraft_mods.py:51 .\stats\aircraft_mods.py:67
 #: .\stats\aircraft_mods.py:74 .\stats\aircraft_mods.py:82
-#: .\stats\aircraft_mods.py:157 .\stats\aircraft_mods.py:164
+#: .\stats\aircraft_mods.py:166 .\stats\aircraft_mods.py:173
 msgctxt "aircraft_mod"
 msgid "4 x SC 50 bombs"
 msgstr ""
@@ -368,15 +368,15 @@ msgstr ""
 #: .\stats\aircraft_mods.py:37 .\stats\aircraft_mods.py:45
 #: .\stats\aircraft_mods.py:52 .\stats\aircraft_mods.py:61
 #: .\stats\aircraft_mods.py:68 .\stats\aircraft_mods.py:75
-#: .\stats\aircraft_mods.py:83 .\stats\aircraft_mods.py:90
-#: .\stats\aircraft_mods.py:158 .\stats\aircraft_mods.py:165
-#: .\stats\aircraft_mods.py:181
+#: .\stats\aircraft_mods.py:83 .\stats\aircraft_mods.py:92
+#: .\stats\aircraft_mods.py:99 .\stats\aircraft_mods.py:167
+#: .\stats\aircraft_mods.py:174 .\stats\aircraft_mods.py:199
 msgctxt "aircraft_mod"
 msgid "1 x SC 250 bomb"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:38 .\stats\aircraft_mods.py:46
-#: .\stats\aircraft_mods.py:53 .\stats\aircraft_mods.py:302
+#: .\stats\aircraft_mods.py:53 .\stats\aircraft_mods.py:330
 msgctxt "aircraft_mod"
 msgid "Armoured Wind Screen"
 msgstr ""
@@ -384,13 +384,13 @@ msgstr ""
 #: .\stats\aircraft_mods.py:39 .\stats\aircraft_mods.py:47
 #: .\stats\aircraft_mods.py:54 .\stats\aircraft_mods.py:70
 #: .\stats\aircraft_mods.py:77 .\stats\aircraft_mods.py:85
-#: .\stats\aircraft_mods.py:102
+#: .\stats\aircraft_mods.py:111
 msgctxt "aircraft_mod"
 msgid "Removed Headrest"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:40 .\stats\aircraft_mods.py:96
-#: .\stats\aircraft_mods.py:267
+#: .\stats\aircraft_mods.py:40 .\stats\aircraft_mods.py:105
+#: .\stats\aircraft_mods.py:295
 msgctxt "aircraft_mod"
 msgid "Additional armour plates"
 msgstr ""
@@ -407,24 +407,28 @@ msgstr ""
 
 #: .\stats\aircraft_mods.py:55 .\stats\aircraft_mods.py:59
 #: .\stats\aircraft_mods.py:66 .\stats\aircraft_mods.py:73
-#: .\stats\aircraft_mods.py:81 .\stats\aircraft_mods.py:89
-#: .\stats\aircraft_mods.py:168 .\stats\aircraft_mods.py:306
+#: .\stats\aircraft_mods.py:81 .\stats\aircraft_mods.py:90
+#: .\stats\aircraft_mods.py:98 .\stats\aircraft_mods.py:177
+#: .\stats\aircraft_mods.py:334
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG 151/20 gun pods"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:58 .\stats\aircraft_mods.py:80
+#: .\stats\aircraft_mods.py:89
 msgctxt "aircraft_mod"
 msgid "30mm MK 108 gun"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:60 .\stats\aircraft_mods.py:180
+#: .\stats\aircraft_mods.py:60 .\stats\aircraft_mods.py:91
+#: .\stats\aircraft_mods.py:198
 msgctxt "aircraft_mod"
 msgid "4 x SD 70 bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:62 .\stats\aircraft_mods.py:174
-#: .\stats\aircraft_mods.py:183
+#: .\stats\aircraft_mods.py:62 .\stats\aircraft_mods.py:93
+#: .\stats\aircraft_mods.py:185 .\stats\aircraft_mods.py:192
+#: .\stats\aircraft_mods.py:201
 msgctxt "aircraft_mod"
 msgid "21 cm BR"
 msgstr ""
@@ -440,408 +444,485 @@ msgctxt "aircraft_mod"
 msgid "Armoured Glass Head Rest"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:86 .\stats\aircraft_mods.py:227
+#: .\stats\aircraft_mods.py:86 .\stats\aircraft_mods.py:255
 msgctxt "aircraft_mod"
 msgid "Peilrahmen PR 16"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:91 .\stats\aircraft_mods.py:159
-#: .\stats\aircraft_mods.py:166 .\stats\aircraft_mods.py:182
+#: .\stats\aircraft_mods.py:94
 msgctxt "aircraft_mod"
-msgid "1 x SC 500 bomb"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:92
-msgctxt "aircraft_mod"
-msgid "DB 605 DC engine"
+msgid "MW-50 System"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:95
 msgctxt "aircraft_mod"
+msgid "Erla Haube"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:100 .\stats\aircraft_mods.py:168
+#: .\stats\aircraft_mods.py:175 .\stats\aircraft_mods.py:200
+msgctxt "aircraft_mod"
+msgid "1 x SC 500 bomb"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:101
+msgctxt "aircraft_mod"
+msgid "DB 605 DC engine"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:104
+msgctxt "aircraft_mod"
 msgid "Armoured Windscreen and pilot's Headrest"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:97 .\stats\aircraft_mods.py:103
+#: .\stats\aircraft_mods.py:106 .\stats\aircraft_mods.py:112
 msgctxt "aircraft_mod"
 msgid "12 x SC 50 bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:98 .\stats\aircraft_mods.py:104
+#: .\stats\aircraft_mods.py:107 .\stats\aircraft_mods.py:113
 msgctxt "aircraft_mod"
 msgid "2 x SC 500 bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:99 .\stats\aircraft_mods.py:105
+#: .\stats\aircraft_mods.py:108 .\stats\aircraft_mods.py:114
 msgctxt "aircraft_mod"
 msgid "SC 1000 heavy bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:106
+#: .\stats\aircraft_mods.py:115
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG 151/20 gun pod"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:107
+#: .\stats\aircraft_mods.py:116
 msgctxt "aircraft_mod"
 msgid "37mm 3.7cm BK gun pod"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:110 .\stats\aircraft_mods.py:120
-#: .\stats\aircraft_mods.py:406
+#: .\stats\aircraft_mods.py:119 .\stats\aircraft_mods.py:129
+#: .\stats\aircraft_mods.py:443
 msgctxt "aircraft_mod"
 msgid "Twin Lewis Overwing"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:111 .\stats\aircraft_mods.py:121
+#: .\stats\aircraft_mods.py:120 .\stats\aircraft_mods.py:130
 msgctxt "aircraft_mod"
 msgid "Twin Lewis MG turret"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:112 .\stats\aircraft_mods.py:122
-#: .\stats\aircraft_mods.py:394 .\stats\aircraft_mods.py:400
-#: .\stats\aircraft_mods.py:408 .\stats\aircraft_mods.py:415
+#: .\stats\aircraft_mods.py:121 .\stats\aircraft_mods.py:131
+#: .\stats\aircraft_mods.py:431 .\stats\aircraft_mods.py:437
+#: .\stats\aircraft_mods.py:445 .\stats\aircraft_mods.py:452
 #, fuzzy
 #| msgid "Allies"
 msgctxt "aircraft_mod"
 msgid "Aldis"
 msgstr "Aliados"
 
-#: .\stats\aircraft_mods.py:113 .\stats\aircraft_mods.py:123
-#: .\stats\aircraft_mods.py:395
+#: .\stats\aircraft_mods.py:122 .\stats\aircraft_mods.py:132
+#: .\stats\aircraft_mods.py:432
 msgctxt "aircraft_mod"
 msgid "Fuel Gauge"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:115 .\stats\aircraft_mods.py:125
+#: .\stats\aircraft_mods.py:124 .\stats\aircraft_mods.py:134
 msgctxt "aircraft_mod"
 msgid "Cooper / H.E.R.L. bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:116 .\stats\aircraft_mods.py:126
-#: .\stats\aircraft_mods.py:196 .\stats\aircraft_mods.py:207
-#: .\stats\aircraft_mods.py:419
+#: .\stats\aircraft_mods.py:125 .\stats\aircraft_mods.py:135
+#: .\stats\aircraft_mods.py:214 .\stats\aircraft_mods.py:225
+#: .\stats\aircraft_mods.py:456
 msgctxt "aircraft_mod"
 msgid "Camera"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:117 .\stats\aircraft_mods.py:127
-#: .\stats\aircraft_mods.py:197 .\stats\aircraft_mods.py:208
+#: .\stats\aircraft_mods.py:126 .\stats\aircraft_mods.py:136
+#: .\stats\aircraft_mods.py:215 .\stats\aircraft_mods.py:226
 msgctxt "aircraft_mod"
 msgid "Radio"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:133 .\stats\aircraft_mods.py:143
-#: .\stats\aircraft_mods.py:386
+#: .\stats\aircraft_mods.py:142 .\stats\aircraft_mods.py:152
+#: .\stats\aircraft_mods.py:423
 msgctxt "aircraft_mod"
 msgid "Anemometer"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:134 .\stats\aircraft_mods.py:144
-#: .\stats\aircraft_mods.py:387
+#: .\stats\aircraft_mods.py:143 .\stats\aircraft_mods.py:153
+#: .\stats\aircraft_mods.py:424
 msgctxt "aircraft_mod"
 msgid "High Altimeter"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:135
+#: .\stats\aircraft_mods.py:144
 msgctxt "aircraft_mod"
 msgid "Bullet counters"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:160
+#: .\stats\aircraft_mods.py:169
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG FF/M (120 rounds)"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:161 .\stats\aircraft_mods.py:167
+#: .\stats\aircraft_mods.py:170 .\stats\aircraft_mods.py:176
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG FF/M (180 rounds)"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:169
+#: .\stats\aircraft_mods.py:178
 #, fuzzy
 #| msgid "modifications"
 msgctxt "aircraft_mod"
 msgid "U17 strike modification"
 msgstr "modificaciones"
 
-#: .\stats\aircraft_mods.py:172
+#: .\stats\aircraft_mods.py:181
 msgctxt "aircraft_mod"
-msgid "30mm MK 108 guns"
+msgid "FW 190 A-6 Sturmjäger"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:173
+#: .\stats\aircraft_mods.py:182
 msgctxt "aircraft_mod"
-msgid "ETC 501 Central Bombholder"
+msgid "FW 190 G-3"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:175
+#: .\stats\aircraft_mods.py:183
 msgctxt "aircraft_mod"
-msgid "Sturmjäger"
+msgid "FW 190 G-3/R-5"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:176
+#: .\stats\aircraft_mods.py:184 .\stats\aircraft_mods.py:343
+#: .\stats\aircraft_mods.py:480
 msgctxt "aircraft_mod"
-msgid "Fw 190 F-8 / G-8"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:177
-msgctxt "aircraft_mod"
-msgid "Removal of MG 131"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:184
-msgctxt "aircraft_mod"
-msgid "26 x R4M rockets"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:185 .\stats\aircraft_mods.py:309
-#: .\stats\aircraft_mods.py:353 .\stats\aircraft_mods.py:363
-#: .\stats\aircraft_mods.py:425
-msgctxt "aircraft_mod"
-msgid "Gyro Gunsight"
+msgid "Bomb load"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:186
 msgctxt "aircraft_mod"
+msgid "Removal of MG 151/20"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:187
+msgctxt "aircraft_mod"
+msgid "Installation of MG-17"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:190
+msgctxt "aircraft_mod"
+msgid "30mm MK 108 guns"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:191
+msgctxt "aircraft_mod"
+msgid "ETC 501 Central Bombholder"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:193
+msgctxt "aircraft_mod"
+msgid "Sturmjäger"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:194
+msgctxt "aircraft_mod"
+msgid "Fw 190 F-8 / G-8"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:195
+msgctxt "aircraft_mod"
+msgid "Removal of MG 131"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:202
+msgctxt "aircraft_mod"
+msgid "26 x R4M rockets"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:203 .\stats\aircraft_mods.py:337
+#: .\stats\aircraft_mods.py:389 .\stats\aircraft_mods.py:400
+#: .\stats\aircraft_mods.py:462
+msgctxt "aircraft_mod"
+msgid "Gyro Gunsight"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:204
+msgctxt "aircraft_mod"
 msgid "Bubble Canopy"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:189 .\stats\aircraft_mods.py:200
+#: .\stats\aircraft_mods.py:207 .\stats\aircraft_mods.py:218
 msgctxt "aircraft_mod"
 msgid "Twin Spandau MG"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:190 .\stats\aircraft_mods.py:201
+#: .\stats\aircraft_mods.py:208 .\stats\aircraft_mods.py:219
 msgctxt "aircraft_mod"
 msgid "Twin Parabellum MG Turret"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:191 .\stats\aircraft_mods.py:202
+#: .\stats\aircraft_mods.py:209 .\stats\aircraft_mods.py:220
 msgctxt "aircraft_mod"
 msgid "20mm Becker Turret"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:192 .\stats\aircraft_mods.py:203
+#: .\stats\aircraft_mods.py:210 .\stats\aircraft_mods.py:221
 msgctxt "aircraft_mod"
 msgid "Aldis (Trophy)"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:193 .\stats\aircraft_mods.py:204
+#: .\stats\aircraft_mods.py:211 .\stats\aircraft_mods.py:222
 msgctxt "aircraft_mod"
 msgid "Additional Gauges"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:195 .\stats\aircraft_mods.py:206
+#: .\stats\aircraft_mods.py:213 .\stats\aircraft_mods.py:224
 msgctxt "aircraft_mod"
 msgid "P.u.W. Bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:211 .\stats\aircraft_mods.py:218
-#: .\stats\aircraft_mods.py:274
+#: .\stats\aircraft_mods.py:229
 msgctxt "aircraft_mod"
-msgid "2 x SC 1000 heavy bombs"
+msgid "Four additional \"Browning .303\" MGs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:212 .\stats\aircraft_mods.py:219
+#: .\stats\aircraft_mods.py:230
 msgctxt "aircraft_mod"
-msgid "2 x SC 1800 heavy bombs"
+msgid "4 x 20mm \"Hispano Mk.II\" gun"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:213 .\stats\aircraft_mods.py:220
+#: .\stats\aircraft_mods.py:231
 msgctxt "aircraft_mod"
-msgid "SC 2500 heavy bomb"
+msgid "2 x 40mm Vickers Class S gun pods"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:216
+#: .\stats\aircraft_mods.py:232
 msgctxt "aircraft_mod"
-msgid "Belly 20mm gun turret"
+msgid "2 x 40mm Vickers gun pods + Armor"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:217
+#: .\stats\aircraft_mods.py:233
 msgctxt "aircraft_mod"
-msgid "Nose 20mm gun turret"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:223
-msgctxt "aircraft_mod"
-msgid "2 x 20mm MG 151/20 gun"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:224
-msgctxt "aircraft_mod"
-msgid "4 x 7.92mm MG 17 gun pod"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:225
-msgctxt "aircraft_mod"
-msgid "30mm MK 101"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:226
-msgctxt "aircraft_mod"
-msgid "30mm MK 103"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:228 .\stats\aircraft_mods.py:283
-#: .\stats\aircraft_mods.py:346 .\stats\aircraft_mods.py:355
-#: .\stats\aircraft_mods.py:366 .\stats\aircraft_mods.py:426
-#: .\stats\aircraft_mods.py:433 .\stats\aircraft_mods.py:455
-#: .\stats\aircraft_mods.py:473 .\stats\aircraft_mods.py:479
-msgctxt "aircraft_mod"
-msgid "Mirror"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:231 .\stats\aircraft_mods.py:343
-msgctxt "aircraft_mod"
-msgid "4 x ROS-82 rockets"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:232 .\stats\aircraft_mods.py:299
-#: .\stats\aircraft_mods.py:319 .\stats\aircraft_mods.py:459
-msgctxt "aircraft_mod"
-msgid "6 x ROS-82 rockets"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:233 .\stats\aircraft_mods.py:320
-msgctxt "aircraft_mod"
-msgid "2 x FAB-50sv / FAB-100M bombs"
+msgid "2 x 12.7 mm BS and 2 x 20mm ShVAK"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:234
 msgctxt "aircraft_mod"
-msgid "One-piece Windscreen"
+msgid "Merlin XX engine with +14 lb boost"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:235
+#: .\stats\aircraft_mods.py:235 .\stats\aircraft_mods.py:256
+#: .\stats\aircraft_mods.py:311 .\stats\aircraft_mods.py:374
+#: .\stats\aircraft_mods.py:391 .\stats\aircraft_mods.py:403
+#: .\stats\aircraft_mods.py:463 .\stats\aircraft_mods.py:470
+#: .\stats\aircraft_mods.py:492 .\stats\aircraft_mods.py:510
+#: .\stats\aircraft_mods.py:516
 msgctxt "aircraft_mod"
-msgid "2 x 20mm ShVAK (180 rounds)"
+msgid "Mirror"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:238 .\stats\aircraft_mods.py:245
-#: .\stats\aircraft_mods.py:252
+#: .\stats\aircraft_mods.py:236
 msgctxt "aircraft_mod"
-msgid "2 x 23mm VYa-23 gun"
+msgid "Air Cleaner"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:239
+#: .\stats\aircraft_mods.py:239 .\stats\aircraft_mods.py:246
+#: .\stats\aircraft_mods.py:302
 msgctxt "aircraft_mod"
-msgid "6 x FAB-50sv / FAB-100M bombs"
+msgid "2 x SC 1000 heavy bombs"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:240 .\stats\aircraft_mods.py:247
-#: .\stats\aircraft_mods.py:254
 msgctxt "aircraft_mod"
-msgid "2 x FAB-250sv bombs"
+msgid "2 x SC 1800 heavy bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:241
+#: .\stats\aircraft_mods.py:241 .\stats\aircraft_mods.py:248
 msgctxt "aircraft_mod"
-msgid "8 x RBS-82 rockets"
+msgid "SC 2500 heavy bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:242
+#: .\stats\aircraft_mods.py:244
 msgctxt "aircraft_mod"
-msgid "8 x ROFS-132 rockets"
+msgid "Belly 20mm gun turret"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:246
+#: .\stats\aircraft_mods.py:245
 msgctxt "aircraft_mod"
-msgid "2 x 37mm Sh-37 gun"
+msgid "Nose 20mm gun turret"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:248
+#: .\stats\aircraft_mods.py:251
 msgctxt "aircraft_mod"
-msgid "8 x RBS-82 / ROFS-132 rockets"
+msgid "2 x 20mm MG 151/20 gun"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:249 .\stats\aircraft_mods.py:262
-#: .\stats\aircraft_mods.py:441
+#: .\stats\aircraft_mods.py:252
 msgctxt "aircraft_mod"
-msgid "Rear turret"
+msgid "4 x 7.92mm MG 17 gun pod"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:253
 msgctxt "aircraft_mod"
-msgid "2 x 37mm NS-37gun"
+msgid "30mm MK 101"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:255
+#: .\stats\aircraft_mods.py:254
 msgctxt "aircraft_mod"
-msgid "4 x RBS-82 / ROFS-132 rockets"
+msgid "30mm MK 103"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:256
+#: .\stats\aircraft_mods.py:259 .\stats\aircraft_mods.py:371
 msgctxt "aircraft_mod"
-msgid "192(240) x PTAB-2.5-1.5 bomblets"
+msgid "4 x ROS-82 rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:259
+#: .\stats\aircraft_mods.py:260 .\stats\aircraft_mods.py:327
+#: .\stats\aircraft_mods.py:347 .\stats\aircraft_mods.py:496
 msgctxt "aircraft_mod"
-msgid "2300 kg of cargo"
+msgid "6 x ROS-82 rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:260
+#: .\stats\aircraft_mods.py:261 .\stats\aircraft_mods.py:348
 msgctxt "aircraft_mod"
-msgid "10 x MAB 250 containers"
+msgid "2 x FAB-50sv / FAB-100M bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:261
+#: .\stats\aircraft_mods.py:262
 msgctxt "aircraft_mod"
-msgid "12 paratroopers"
+msgid "One-piece Windscreen"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:265
+#: .\stats\aircraft_mods.py:263
 msgctxt "aircraft_mod"
-msgid "Siren"
+msgid "2 x 20mm ShVAK (180 rounds)"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:266 .\stats\aircraft_mods.py:275
+#: .\stats\aircraft_mods.py:266 .\stats\aircraft_mods.py:273
+#: .\stats\aircraft_mods.py:280
 msgctxt "aircraft_mod"
-msgid "SC 1800 heavy bomb"
+msgid "2 x 23mm VYa-23 gun"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:268
+#: .\stats\aircraft_mods.py:267
 msgctxt "aircraft_mod"
-msgid "Machine gun pods"
+msgid "6 x FAB-50sv / FAB-100M bombs"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:268 .\stats\aircraft_mods.py:275
+#: .\stats\aircraft_mods.py:282
+msgctxt "aircraft_mod"
+msgid "2 x FAB-250sv bombs"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:269
 msgctxt "aircraft_mod"
-msgid "2 x 37mm 3.7cm BK gun pods"
+msgid "8 x RBS-82 rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:272
+#: .\stats\aircraft_mods.py:270
 msgctxt "aircraft_mod"
-msgid "6 x SC 250 bombs"
+msgid "8 x ROFS-132 rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:273
+#: .\stats\aircraft_mods.py:274
 msgctxt "aircraft_mod"
-msgid "4 x SC 500 bombs"
+msgid "2 x 37mm Sh-37 gun"
 msgstr ""
 
 #: .\stats\aircraft_mods.py:276
 msgctxt "aircraft_mod"
+msgid "8 x RBS-82 / ROFS-132 rockets"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:277 .\stats\aircraft_mods.py:290
+#: .\stats\aircraft_mods.py:478
+msgctxt "aircraft_mod"
+msgid "Rear turret"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:281
+msgctxt "aircraft_mod"
+msgid "2 x 37mm NS-37gun"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:283
+msgctxt "aircraft_mod"
+msgid "4 x RBS-82 / ROFS-132 rockets"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:284
+msgctxt "aircraft_mod"
+msgid "192(240) x PTAB-2.5-1.5 bomblets"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:287
+msgctxt "aircraft_mod"
+msgid "2300 kg of cargo"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:288
+msgctxt "aircraft_mod"
+msgid "10 x MAB 250 containers"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:289
+msgctxt "aircraft_mod"
+msgid "12 paratroopers"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:293
+msgctxt "aircraft_mod"
+msgid "Siren"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:294 .\stats\aircraft_mods.py:303
+msgctxt "aircraft_mod"
+msgid "SC 1800 heavy bomb"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:296
+msgctxt "aircraft_mod"
+msgid "Machine gun pods"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:297
+msgctxt "aircraft_mod"
+msgid "2 x 37mm 3.7cm BK gun pods"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:300
+msgctxt "aircraft_mod"
+msgid "6 x SC 250 bombs"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:301
+msgctxt "aircraft_mod"
+msgid "4 x SC 500 bombs"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:304
+msgctxt "aircraft_mod"
 msgid "44 x SC 50 bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:279 .\stats\aircraft_mods.py:287
-#: .\stats\aircraft_mods.py:297 .\stats\aircraft_mods.py:451
-#: .\stats\aircraft_mods.py:460 .\stats\aircraft_mods.py:465
+#: .\stats\aircraft_mods.py:307 .\stats\aircraft_mods.py:315
+#: .\stats\aircraft_mods.py:325 .\stats\aircraft_mods.py:488
+#: .\stats\aircraft_mods.py:497 .\stats\aircraft_mods.py:502
 msgctxt "aircraft_mod"
 msgid "2 x FAB-50sv bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:280 .\stats\aircraft_mods.py:288
-#: .\stats\aircraft_mods.py:298 .\stats\aircraft_mods.py:452
-#: .\stats\aircraft_mods.py:461 .\stats\aircraft_mods.py:466
+#: .\stats\aircraft_mods.py:308 .\stats\aircraft_mods.py:316
+#: .\stats\aircraft_mods.py:326 .\stats\aircraft_mods.py:489
+#: .\stats\aircraft_mods.py:498 .\stats\aircraft_mods.py:503
 msgctxt "aircraft_mod"
 msgid "2 x FAB-100M bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:281 .\stats\aircraft_mods.py:445
-#: .\stats\aircraft_mods.py:453 .\stats\aircraft_mods.py:468
-#: .\stats\aircraft_mods.py:472 .\stats\aircraft_mods.py:478
+#: .\stats\aircraft_mods.py:309 .\stats\aircraft_mods.py:482
+#: .\stats\aircraft_mods.py:490 .\stats\aircraft_mods.py:505
+#: .\stats\aircraft_mods.py:509 .\stats\aircraft_mods.py:515
 #, fuzzy
 #| msgctxt "sortie_status"
 #| msgid "in flight"
@@ -849,60 +930,60 @@ msgctxt "aircraft_mod"
 msgid "Landing light"
 msgstr "en vuelo"
 
-#: .\stats\aircraft_mods.py:282 .\stats\aircraft_mods.py:289
-#: .\stats\aircraft_mods.py:454 .\stats\aircraft_mods.py:462
-#: .\stats\aircraft_mods.py:467 .\stats\aircraft_mods.py:471
-#: .\stats\aircraft_mods.py:477
+#: .\stats\aircraft_mods.py:310 .\stats\aircraft_mods.py:317
+#: .\stats\aircraft_mods.py:491 .\stats\aircraft_mods.py:499
+#: .\stats\aircraft_mods.py:504 .\stats\aircraft_mods.py:508
+#: .\stats\aircraft_mods.py:514
 msgctxt "aircraft_mod"
 msgid "RPK-10"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:284 .\stats\aircraft_mods.py:291
+#: .\stats\aircraft_mods.py:312 .\stats\aircraft_mods.py:319
 msgctxt "aircraft_mod"
 msgid "Special Guns Ammo Load"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:290
+#: .\stats\aircraft_mods.py:318
 msgctxt "aircraft_mod"
 msgid "Flat Windscreen"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:292
+#: .\stats\aircraft_mods.py:320
 msgctxt "aircraft_mod"
 msgid "M-82F engine"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:295
+#: .\stats\aircraft_mods.py:323
 msgctxt "aircraft_mod"
 msgid "23mm VYa-23 gun"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:296
+#: .\stats\aircraft_mods.py:324
 msgctxt "aircraft_mod"
 msgid "37mm Sh-37 gun"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:303
+#: .\stats\aircraft_mods.py:331
 msgctxt "aircraft_mod"
 msgid "2 x 50-T bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:304
+#: .\stats\aircraft_mods.py:332
 msgctxt "aircraft_mod"
 msgid "2 x 100-T bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:305
+#: .\stats\aircraft_mods.py:333
 msgctxt "aircraft_mod"
 msgid "2 x 7.7mm machineguns"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:310
+#: .\stats\aircraft_mods.py:338
 msgctxt "aircraft_mod"
 msgid "24 x R4M rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:311
+#: .\stats\aircraft_mods.py:339
 #, fuzzy
 #| msgctxt "total"
 #| msgid "Armored vehicles"
@@ -910,244 +991,241 @@ msgctxt "aircraft_mod"
 msgid "Armoured Headrest"
 msgstr "Vehículos Blindados"
 
-#: .\stats\aircraft_mods.py:312
+#: .\stats\aircraft_mods.py:340
 msgctxt "aircraft_mod"
 msgid "Back Armor"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:313
+#: .\stats\aircraft_mods.py:341
 #, fuzzy
 #| msgid "Remove admin role"
 msgctxt "aircraft_mod"
 msgid "Removed Front Armor"
 msgstr "Remover función de administrador"
 
-#: .\stats\aircraft_mods.py:314
+#: .\stats\aircraft_mods.py:342
 msgctxt "aircraft_mod"
 msgid "Removed Inner Cannons"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:315 .\stats\aircraft_mods.py:443
-msgctxt "aircraft_mod"
-msgid "Bomb load"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:316
+#: .\stats\aircraft_mods.py:344
 msgctxt "aircraft_mod"
 msgid "Fuel regulating valve"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:321
+#: .\stats\aircraft_mods.py:349
 msgctxt "aircraft_mod"
 msgid "2 x 12.7 mm BK machinegun pods"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:322
+#: .\stats\aircraft_mods.py:350
 msgctxt "aircraft_mod"
 msgid "2 x BS 12.7 mm (700 rounds)"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:323
+#: .\stats\aircraft_mods.py:351
 msgctxt "aircraft_mod"
 msgid "2 x 20mm ShVAK (300 rounds)"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:326 .\stats\aircraft_mods.py:342
-#: .\stats\aircraft_mods.py:351 .\stats\aircraft_mods.py:359
+#: .\stats\aircraft_mods.py:354 .\stats\aircraft_mods.py:370
+#: .\stats\aircraft_mods.py:379 .\stats\aircraft_mods.py:387
+#: .\stats\aircraft_mods.py:396
 msgctxt "aircraft_mod"
 msgid "Additional ANM2 .50 cal MG ammo"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:327
+#: .\stats\aircraft_mods.py:355
 msgctxt "aircraft_mod"
 msgid "General purpose bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:328
+#: .\stats\aircraft_mods.py:356
 msgctxt "aircraft_mod"
 msgid "Additional bomb racks"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:329 .\stats\aircraft_mods.py:362
+#: .\stats\aircraft_mods.py:357 .\stats\aircraft_mods.py:399
 msgctxt "aircraft_mod"
 msgid "M8 rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:333
+#: .\stats\aircraft_mods.py:361
 msgctxt "aircraft_mod"
 msgid "FAB-100M bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:334
+#: .\stats\aircraft_mods.py:362
 msgctxt "aircraft_mod"
 msgid "FAB-250tsk bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:335
+#: .\stats\aircraft_mods.py:363
 msgctxt "aircraft_mod"
 msgid "Additional ANM2 .30 cal MG ammo"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:336
+#: .\stats\aircraft_mods.py:364
 msgctxt "aircraft_mod"
 msgid "Removal of ANM2 .30"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:337
+#: .\stats\aircraft_mods.py:365
 msgctxt "aircraft_mod"
 msgid "Special 37mm Gun Ammo Load"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:341 .\stats\aircraft_mods.py:350
-#: .\stats\aircraft_mods.py:358
+#: .\stats\aircraft_mods.py:369 .\stats\aircraft_mods.py:378
+#: .\stats\aircraft_mods.py:386 .\stats\aircraft_mods.py:395
 msgctxt "aircraft_mod"
 msgid "4 x ANM2 .50 cal machine guns"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:344
+#: .\stats\aircraft_mods.py:372
 msgctxt "aircraft_mod"
 msgid "FAB-250sv bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:345
+#: .\stats\aircraft_mods.py:373
 msgctxt "aircraft_mod"
 msgid "FAB-500M bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:349
+#: .\stats\aircraft_mods.py:377 .\stats\aircraft_mods.py:385
 msgctxt "aircraft_mod"
 msgid "6 x ANM2 .50 cal machine guns"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:352
+#: .\stats\aircraft_mods.py:380 .\stats\aircraft_mods.py:388
 #, fuzzy
 #| msgid "modifications"
 msgctxt "aircraft_mod"
 msgid "Ground attack modification"
 msgstr "modificaciones"
 
-#: .\stats\aircraft_mods.py:360
-msgctxt "aircraft_mod"
-msgid "2 x M64 bombs"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:361
-msgctxt "aircraft_mod"
-msgid "2 x M65 bombs"
-msgstr ""
-
-#: .\stats\aircraft_mods.py:364 .\stats\aircraft_mods.py:429
+#: .\stats\aircraft_mods.py:381 .\stats\aircraft_mods.py:392
+#: .\stats\aircraft_mods.py:401 .\stats\aircraft_mods.py:466
 msgctxt "aircraft_mod"
 msgid "150 grade fuel"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:369 .\stats\aircraft_mods.py:376
+#: .\stats\aircraft_mods.py:397
+msgctxt "aircraft_mod"
+msgid "2 x M64 bombs"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:398
+msgctxt "aircraft_mod"
+msgid "2 x M65 bombs"
+msgstr ""
+
+#: .\stats\aircraft_mods.py:406 .\stats\aircraft_mods.py:413
 msgctxt "aircraft_mod"
 msgid "10 x FAB-100M bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:370 .\stats\aircraft_mods.py:377
+#: .\stats\aircraft_mods.py:407 .\stats\aircraft_mods.py:414
 msgctxt "aircraft_mod"
 msgid "4 x FAB-250sv bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:371 .\stats\aircraft_mods.py:378
+#: .\stats\aircraft_mods.py:408 .\stats\aircraft_mods.py:415
 msgctxt "aircraft_mod"
 msgid "2 x FAB-500M bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:372 .\stats\aircraft_mods.py:379
+#: .\stats\aircraft_mods.py:409 .\stats\aircraft_mods.py:416
 msgctxt "aircraft_mod"
 msgid "10 x ROS-132 rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:373
+#: .\stats\aircraft_mods.py:410
 msgctxt "aircraft_mod"
 msgid "RPK-2"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:380
+#: .\stats\aircraft_mods.py:417
 msgctxt "aircraft_mod"
 msgid "Blister turret"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:397 .\stats\aircraft_mods.py:403
-#: .\stats\aircraft_mods.py:411 .\stats\aircraft_mods.py:418
+#: .\stats\aircraft_mods.py:434 .\stats\aircraft_mods.py:440
+#: .\stats\aircraft_mods.py:448 .\stats\aircraft_mods.py:455
 msgctxt "aircraft_mod"
 msgid "Cooper bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:401
+#: .\stats\aircraft_mods.py:438
 msgctxt "aircraft_mod"
 msgid "Enlarged window"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:407
+#: .\stats\aircraft_mods.py:444
 msgctxt "aircraft_mod"
 msgid "Twin Lewis lower-wing"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:414
+#: .\stats\aircraft_mods.py:451
 msgctxt "aircraft_mod"
 msgid "Balloon guns"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:416
+#: .\stats\aircraft_mods.py:453
 msgctxt "aircraft_mod"
 msgid "Le-Chretien"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:422
+#: .\stats\aircraft_mods.py:459
 msgctxt "aircraft_mod"
 msgid "500 lb G.P. bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:423
+#: .\stats\aircraft_mods.py:460
 msgctxt "aircraft_mod"
 msgid "2 x 250 lb G.P. bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:424
+#: .\stats\aircraft_mods.py:461
 msgctxt "aircraft_mod"
 msgid "2 х RP-3 HE / AP rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:427
+#: .\stats\aircraft_mods.py:464
 msgctxt "aircraft_mod"
 msgid "Clipped Wing"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:428
+#: .\stats\aircraft_mods.py:465
 msgctxt "aircraft_mod"
 msgid "Merlin 70 engine"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:432
+#: .\stats\aircraft_mods.py:469
 msgctxt "aircraft_mod"
 msgid "Merlin 45 engine"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:436
+#: .\stats\aircraft_mods.py:473
 msgctxt "aircraft_mod"
 msgid "2 x 500 lb M.C. bombs"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:437
+#: .\stats\aircraft_mods.py:474
 msgctxt "aircraft_mod"
 msgid "2 x 1000 lb M.C. bomb"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:438
+#: .\stats\aircraft_mods.py:475
 msgctxt "aircraft_mod"
 msgid "Sabre IIA engine with +11 lb boost"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:442
+#: .\stats\aircraft_mods.py:479
 msgctxt "aircraft_mod"
 msgid "Bow MG"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:444
+#: .\stats\aircraft_mods.py:481
 #, fuzzy
 #| msgctxt "sortie"
 #| msgid "Duration of flight"
@@ -1155,32 +1233,32 @@ msgctxt "aircraft_mod"
 msgid "Navigation lights"
 msgstr "Duración del vuelo"
 
-#: .\stats\aircraft_mods.py:446
+#: .\stats\aircraft_mods.py:483
 msgctxt "aircraft_mod"
 msgid "Horizon indicator"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:447
+#: .\stats\aircraft_mods.py:484
 msgctxt "aircraft_mod"
 msgid "Radio transmitter"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:448
+#: .\stats\aircraft_mods.py:485
 msgctxt "aircraft_mod"
 msgid "Rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:458
+#: .\stats\aircraft_mods.py:495
 msgctxt "aircraft_mod"
 msgid "2 x ROS-82 rockets"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:474 .\stats\aircraft_mods.py:480
+#: .\stats\aircraft_mods.py:511 .\stats\aircraft_mods.py:517
 msgctxt "aircraft_mod"
 msgid "Reflector Gunsight"
 msgstr ""
 
-#: .\stats\aircraft_mods.py:481
+#: .\stats\aircraft_mods.py:518
 msgctxt "aircraft_mod"
 msgid "Ammo counter"
 msgstr ""
@@ -5251,223 +5329,227 @@ msgstr ""
 msgid "Stats"
 msgstr "Estadísticas"
 
-#: .\stats\models.py:53
+#: .\stats\models.py:65
 msgid "score"
 msgstr "puntos"
 
-#: .\stats\models.py:54
+#: .\stats\models.py:66
 msgid "scoring"
 msgstr "puntuación"
 
-#: .\stats\models.py:134
+#: .\stats\models.py:146
 msgid "object"
 msgstr "objeto"
 
-#: .\stats\models.py:135
+#: .\stats\models.py:147
 msgid "objects"
 msgstr "objetos"
 
-#: .\stats\models.py:159
+#: .\stats\models.py:171
 msgid "tour"
 msgstr "campaña"
 
-#: .\stats\models.py:160
+#: .\stats\models.py:172
 msgid "tours"
 msgstr "campañas"
 
-#: .\stats\models.py:278
+#: .\stats\models.py:290
 msgctxt "preset"
 msgid "custom"
 msgstr "custom"
 
-#: .\stats\models.py:279
+#: .\stats\models.py:291
 msgctxt "preset"
 msgid "normal"
 msgstr "normal"
 
-#: .\stats\models.py:280
+#: .\stats\models.py:292
 msgctxt "preset"
 msgid "expert"
 msgstr "experto"
 
-#: .\stats\models.py:335
+#: .\stats\models.py:347
 msgid "profile"
 msgstr "perfil"
 
-#: .\stats\models.py:336
+#: .\stats\models.py:348
 msgid "profiles"
 msgstr "perfiles"
 
-#: .\stats\models.py:382 .\stats\models.py:585 .\stats\models.py:815
-#: .\stats\models.py:1025 .\stats\models.py:1031 .\stats\models.py:1260
+#: .\stats\models.py:394 .\stats\models.py:636 .\stats\models.py:871
+#: .\stats\models.py:1086 .\stats\models.py:1092 .\stats\models.py:1321
 msgid "neutral"
 msgstr "neutral"
 
-#: .\stats\models.py:853 .\stats\models.py:1060
+#: .\stats\models.py:909 .\stats\models.py:1121
 msgctxt "sortie_status"
 msgid "landed"
 msgstr "aterrizado"
 
-#: .\stats\models.py:854 .\stats\models.py:1061
+#: .\stats\models.py:910 .\stats\models.py:1122
 msgctxt "sortie_status"
 msgid "ditched"
 msgstr "forzoso"
 
-#: .\stats\models.py:855 .\stats\models.py:1062
+#: .\stats\models.py:911 .\stats\models.py:1123
 msgctxt "sortie_status"
 msgid "crashed"
 msgstr "estrellado"
 
-#: .\stats\models.py:856 .\stats\models.py:1063
+#: .\stats\models.py:912 .\stats\models.py:1124
 msgctxt "sortie_status"
 msgid "shotdown"
 msgstr "derribado"
 
-#: .\stats\models.py:857 .\stats\models.py:1064
+#: .\stats\models.py:913 .\stats\models.py:1125
 msgctxt "sortie_status"
 msgid "not takeoff"
 msgstr "sin despegar"
 
-#: .\stats\models.py:858 .\stats\models.py:1065
+#: .\stats\models.py:914 .\stats\models.py:1126
 msgctxt "sortie_status"
 msgid "in flight"
 msgstr "en vuelo"
 
-#: .\stats\models.py:864 .\stats\models.py:1071
+#: .\stats\models.py:920 .\stats\models.py:1132
 msgctxt "aircraft_status"
 msgid "unharmed"
 msgstr "sin daños"
 
-#: .\stats\models.py:865 .\stats\models.py:1072
+#: .\stats\models.py:921 .\stats\models.py:1133
 msgctxt "aircraft_status"
 msgid "damaged"
 msgstr "dañado"
 
-#: .\stats\models.py:866 .\stats\models.py:1073
+#: .\stats\models.py:922 .\stats\models.py:1134
 msgctxt "aircraft_status"
 msgid "destroyed"
 msgstr "destruido"
 
-#: .\stats\models.py:872 .\stats\models.py:1079
+#: .\stats\models.py:928 .\stats\models.py:1140
 msgctxt "sortie_status"
 msgid "healthy"
 msgstr "sano"
 
-#: .\stats\models.py:873 .\stats\models.py:1080
+#: .\stats\models.py:929 .\stats\models.py:1141
 msgctxt "sortie_status"
 msgid "wounded"
 msgstr "herido"
 
-#: .\stats\models.py:874 .\stats\models.py:1081
+#: .\stats\models.py:930 .\stats\models.py:1142
 msgctxt "sortie_status"
 msgid "dead"
 msgstr "muerto"
 
-#: .\stats\models.py:1032
+#: .\stats\models.py:1093
 msgid "USSR"
 msgstr "USSR"
 
-#: .\stats\models.py:1033 .\stats\models.py:1039
+#: .\stats\models.py:1094 .\stats\models.py:1100
 msgid "Great Britain"
 msgstr ""
 
-#: .\stats\models.py:1034 .\stats\models.py:1040
+#: .\stats\models.py:1095 .\stats\models.py:1101
 msgid "USA"
 msgstr ""
 
-#: .\stats\models.py:1035 .\stats\models.py:1043
+#: .\stats\models.py:1096 .\stats\models.py:1104
 msgid "Germany"
 msgstr "Alemania"
 
-#: .\stats\models.py:1036
+#: .\stats\models.py:1097
 msgid "Italy"
 msgstr ""
 
-#: .\stats\models.py:1037
+#: .\stats\models.py:1098
 msgid "Japan"
 msgstr ""
 
-#: .\stats\models.py:1038
+#: .\stats\models.py:1099
 #, fuzzy
 #| msgid "French"
 msgid "France"
 msgstr "Francés"
 
-#: .\stats\models.py:1041
+#: .\stats\models.py:1102
 msgid "Belgium"
 msgstr ""
 
-#: .\stats\models.py:1042
+#: .\stats\models.py:1103
 #, fuzzy
 #| msgid "Russian"
 msgid "Russia"
 msgstr "Ruso"
 
-#: .\stats\models.py:1044
+#: .\stats\models.py:1105
 msgid "Austria-Hungary"
 msgstr ""
 
-#: .\stats\models.py:1407
+#: .\stats\models.py:1502
 msgctxt "award_type"
 msgid "tour"
 msgstr "campaña"
 
-#: .\stats\models.py:1408
+#: .\stats\models.py:1503
 msgctxt "award_type"
 msgid "mission"
 msgstr "misión"
 
-#: .\stats\models.py:1409
+#: .\stats\models.py:1504
 msgctxt "award_type"
 msgid "sortie"
 msgstr "salida"
 
-#: .\stats\models.py:1410
+#: .\stats\models.py:1505
 msgctxt "award_type"
 msgid "vlife"
 msgstr ""
 
-#: .\stats\models.py:1412
+#: .\stats\models.py:1507
 msgid "function name"
 msgstr "nombre de función"
 
-#: .\stats\models.py:1414
+#: .\stats\models.py:1509
 msgid "type"
 msgstr "tipo"
 
-#: .\stats\models.py:1415
+#: .\stats\models.py:1510
 msgid "description"
 msgstr "descripción"
 
-#: .\stats\models.py:1416
+#: .\stats\models.py:1511
 msgid "image"
 msgstr "imagen"
 
-#: .\stats\models.py:1417
+#: .\stats\models.py:1512
 msgid "Image size should be 180x180"
 msgstr "El tamaño de la imagen debe ser 180x180"
 
-#: .\stats\models.py:1421
+#: .\stats\models.py:1513
+msgid "order field"
+msgstr ""
+
+#: .\stats\models.py:1517
 msgid "award"
 msgstr "condecoración"
 
-#: .\stats\models.py:1422
+#: .\stats\models.py:1518
 msgid "awards"
 msgstr "condecoraciones"
 
-#: .\stats\models.py:1436
+#: .\stats\models.py:1532
 msgid "reward"
 msgstr "recompensa"
 
-#: .\stats\models.py:1437
+#: .\stats\models.py:1533
 msgid "rewards"
 msgstr "recompensas"
 
-#: .\stats\models.py:1456
+#: .\stats\models.py:1552
 msgid "player online"
 msgstr "piloto online"
 
-#: .\stats\models.py:1457
+#: .\stats\models.py:1553
 msgid "players online"
 msgstr "pilotos online"
 
@@ -5870,8 +5952,7 @@ msgid "Gunnery Accuracy"
 msgstr "Puntería"
 
 #: .\stats\templates\mission.html:169 .\stats\templates\pilot_sorties.html:41
-#: .\stats\templates\pilot_vlife.html:79
-#: .\stats\templates\pilot_vlifes.html:43
+#: .\stats\templates\pilot_vlife.html:79 .\stats\templates\pilot_vlifes.html:43
 msgid "Score"
 msgstr "Puntos"
 
@@ -6018,9 +6099,8 @@ msgstr "Total Aviones"
 #: .\stats\templates\pilot.html:120 .\stats\templates\pilot.html:148
 #: .\stats\templates\pilot_sortie.html:151
 #: .\stats\templates\pilot_sortie.html:207
-#: .\stats\templates\pilot_vlife.html:97
-#: .\stats\templates\pilot_vlife.html:125 .\stats\templates\squad.html:98
-#: .\stats\templates\squad.html:126
+#: .\stats\templates\pilot_vlife.html:97 .\stats\templates\pilot_vlife.html:125
+#: .\stats\templates\squad.html:98 .\stats\templates\squad.html:126
 msgctxt "total"
 msgid "Fighters"
 msgstr "Cazas"
@@ -6474,8 +6554,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Pilotos inactivos por más de %(days)s días no participan en el ranking."
 
-#: .\stats\templates\pilot_awards.html:3
-#: .\stats\templates\pilot_awards.html:14
+#: .\stats\templates\pilot_awards.html:3 .\stats\templates\pilot_awards.html:14
 msgctxt "pilot_awards"
 msgid "Awards"
 msgstr "Condecoraciones"
@@ -6524,8 +6603,7 @@ msgstr ""
 msgid "The player did not participate in this tour"
 msgstr "El piloto no participó en esta campaña"
 
-#: .\stats\templates\pilot_sortie.html:3
-#: .\stats\templates\pilot_sortie.html:16
+#: .\stats\templates\pilot_sortie.html:3 .\stats\templates\pilot_sortie.html:16
 #: .\stats\templates\pilot_sortie_log.html:17
 msgctxt "sortie_page_title"
 msgid "Sortie"
@@ -6838,8 +6916,7 @@ msgstr "piloto"
 msgid "Back to vlifes list"
 msgstr "Volver a la lista de salidas"
 
-#: .\stats\templates\pilot_vlifes.html:3
-#: .\stats\templates\pilot_vlifes.html:14
+#: .\stats\templates\pilot_vlifes.html:3 .\stats\templates\pilot_vlifes.html:14
 msgctxt "pilot_vlifes"
 msgid "Virtual Lifes"
 msgstr ""

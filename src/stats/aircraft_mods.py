@@ -85,6 +85,15 @@ aircraft_mods = {
         6: pgettext_lazy('aircraft_mod', 'Removed Headrest'),
         7: pgettext_lazy('aircraft_mod', 'Peilrahmen PR 16'),
     },
+    'Bf 109 g-6 late': {
+        1: pgettext_lazy('aircraft_mod', '30mm MK 108 gun'),
+        2: pgettext_lazy('aircraft_mod', '2 x 20mm MG 151/20 gun pods'),
+        3: pgettext_lazy('aircraft_mod', '4 x SD 70 bombs'),
+        4: pgettext_lazy('aircraft_mod', '1 x SC 250 bomb'),
+        5: pgettext_lazy('aircraft_mod', '21 cm BR'),
+        6: pgettext_lazy('aircraft_mod', 'MW-50 System'),
+        7: pgettext_lazy('aircraft_mod', 'Erla Haube'),
+    },
     'bf 109 k-4': {
         1: pgettext_lazy('aircraft_mod', '2 x 20mm MG 151/20 gun pods'),
         2: pgettext_lazy('aircraft_mod', '1 x SC 250 bomb'),
@@ -168,6 +177,15 @@ aircraft_mods = {
         5: pgettext_lazy('aircraft_mod', '2 x 20mm MG 151/20 gun pods'),
         6: pgettext_lazy('aircraft_mod', 'U17 strike modification'),
     },
+    'fw 190 a-6': {
+        1: pgettext_lazy('aircraft_mod', 'FW 190 A-6 Sturmjäger'),
+        2: pgettext_lazy('aircraft_mod', 'FW 190 G-3'),
+        3: pgettext_lazy('aircraft_mod', 'FW 190 G-3/R-5'),
+        4: pgettext_lazy('aircraft_mod', 'Bomb load'),
+        5: pgettext_lazy('aircraft_mod', '21 cm BR'),
+        6: pgettext_lazy('aircraft_mod', 'Removal of MG 151/20'),
+        7: pgettext_lazy('aircraft_mod', 'Installation of MG-17'),
+    },
     'fw 190 a-8': {
         1: pgettext_lazy('aircraft_mod', '30mm MK 108 guns'),
         2: pgettext_lazy('aircraft_mod', 'ETC 501 Central Bombholder'),
@@ -206,6 +224,16 @@ aircraft_mods = {
         7: pgettext_lazy('aircraft_mod', 'P.u.W. Bombs'),
         8: pgettext_lazy('aircraft_mod', 'Camera'),
         9: pgettext_lazy('aircraft_mod', 'Radio'),
+    },
+    'hurricane mk.II': {
+        1: pgettext_lazy('aircraft_mod', 'Four additional "Browning .303" MGs'),
+        2: pgettext_lazy('aircraft_mod', '4 x 20mm "Hispano Mk.II" gun'),
+        3: pgettext_lazy('aircraft_mod', '2 x 40mm Vickers Class S gun pods'),
+        4: pgettext_lazy('aircraft_mod', '2 x 40mm Vickers gun pods + Armor'),
+        5: pgettext_lazy('aircraft_mod', '2 x 12.7 mm BS and 2 x 20mm ShVAK'),
+        6: pgettext_lazy('aircraft_mod', 'Merlin XX engine with +14 lb boost'),
+        7: pgettext_lazy('aircraft_mod', 'Mirror'),
+        8: pgettext_lazy('aircraft_mod', 'Air Cleaner')
     },
     'he 111 h-16': {
         1: pgettext_lazy('aircraft_mod', '2 x SC 1000 heavy bombs'),
@@ -345,6 +373,14 @@ aircraft_mods = {
         5: pgettext_lazy('aircraft_mod', 'FAB-500M bomb'),
         6: pgettext_lazy('aircraft_mod', 'Mirror'),
     },
+    'p-47d-22': {
+        1: pgettext_lazy('aircraft_mod', '6 x ANM2 .50 cal machine guns'),
+        2: pgettext_lazy('aircraft_mod', '4 x ANM2 .50 cal machine guns'),
+        3: pgettext_lazy('aircraft_mod', 'Additional ANM2 .50 cal MG ammo'),
+        4: pgettext_lazy('aircraft_mod', 'Ground attack modification'),
+        5: pgettext_lazy('aircraft_mod', '150 grade fuel'),
+        6: pgettext_lazy('aircraft_mod', 'Bendix MN-26'),
+    },
     'p-47d-28': {
         1: pgettext_lazy('aircraft_mod', '6 x ANM2 .50 cal machine guns'),
         2: pgettext_lazy('aircraft_mod', '4 x ANM2 .50 cal machine guns'),
@@ -353,6 +389,7 @@ aircraft_mods = {
         5: pgettext_lazy('aircraft_mod', 'Gyro Gunsight'),
         6: pgettext_lazy('aircraft_mod', 'Bendix MN-26'),
         7: pgettext_lazy('aircraft_mod', 'Mirror'),
+        8: pgettext_lazy('aircraft_mod', '150 grade fuel'),
     },
     'p-51d-15': {
         1: pgettext_lazy('aircraft_mod', '4 x ANM2 .50 cal machine guns'),
