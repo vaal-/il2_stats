@@ -55,16 +55,14 @@ msgid "Spanish"
 msgstr ""
 
 #: .\core\settings.py:350
-#, fuzzy
-#| msgid "content"
 msgctxt "coalition"
 msgid "Entente"
-msgstr "Inhalt"
+msgstr "Entente"
 
 #: .\core\settings.py:351
 msgctxt "coalition"
 msgid "Central Powers"
-msgstr ""
+msgstr "Mittelmächte"
 
 #: .\core\settings.py:354
 msgctxt "coalition"
@@ -135,10 +133,8 @@ msgid "squad member"
 msgstr "Squad Mitglied"
 
 #: .\squads\models.py:64
-#, fuzzy
-#| msgid "squad member"
 msgid "squads members"
-msgstr "Squad Mitglied"
+msgstr "Squadmitglieder"
 
 #: .\squads\templates\squads\join.html:3 .\squads\templates\squads\join.html:14
 msgid "Join Squad"
@@ -195,8 +191,6 @@ msgid "My Squad"
 msgstr "Mein Squad"
 
 #: .\squads\templates\squads\main_with_squad.html:18
-#, fuzzy
-#| msgid "profile"
 msgid "Edit profile"
 msgstr "Editiere Profil"
 
@@ -250,14 +244,10 @@ msgstr "Squad registrieren"
 
 #: .\squads\templates\squads\profile.html:3
 #: .\squads\templates\squads\profile.html:14
-#, fuzzy
-#| msgid "profile"
 msgid "Squad Profile"
 msgstr "Squad Profil"
 
 #: .\squads\templates\squads\profile.html:45
-#, fuzzy
-#| msgid "active"
 msgctxt "action"
 msgid "Save"
 msgstr "Speichern"
@@ -286,64 +276,64 @@ msgstr "Squad Profil erfolgreich geändert"
 #: .\stats\aircraft_mods.py:20
 msgctxt "aircraft_mod"
 msgid "20 x FAB-100M bombs"
-msgstr ""
+msgstr "20 x FAB-100M Bomben"
 
 #: .\stats\aircraft_mods.py:21
 msgctxt "aircraft_mod"
 msgid "4 x FAB-250tsk bombs"
-msgstr ""
+msgstr "4 x FAB-250tsk Bomben"
 
 #: .\stats\aircraft_mods.py:22 .\stats\aircraft_mods.py:358
 #: .\stats\aircraft_mods.py:366 .\stats\aircraft_mods.py:382
 #: .\stats\aircraft_mods.py:390 .\stats\aircraft_mods.py:402
 msgctxt "aircraft_mod"
 msgid "Bendix MN-26"
-msgstr ""
+msgstr "Bendix MN-26"
 
 #: .\stats\aircraft_mods.py:25 .\stats\aircraft_mods.py:139
 #: .\stats\aircraft_mods.py:149 .\stats\aircraft_mods.py:158
 #: .\stats\aircraft_mods.py:420
 msgctxt "aircraft_mod"
 msgid "Collimator Day"
-msgstr ""
+msgstr "Kollimator Tag"
 
 #: .\stats\aircraft_mods.py:26 .\stats\aircraft_mods.py:140
 #: .\stats\aircraft_mods.py:150 .\stats\aircraft_mods.py:159
 #: .\stats\aircraft_mods.py:421
 msgctxt "aircraft_mod"
 msgid "Collimator Night"
-msgstr ""
+msgstr "Kollimator Nacht"
 
 #: .\stats\aircraft_mods.py:27 .\stats\aircraft_mods.py:141
 #: .\stats\aircraft_mods.py:151 .\stats\aircraft_mods.py:160
 #: .\stats\aircraft_mods.py:422
 msgctxt "aircraft_mod"
 msgid "Gunsight"
-msgstr ""
+msgstr "Visier"
 
 #: .\stats\aircraft_mods.py:28
 msgctxt "aircraft_mod"
 msgid "Anemometer, Altimeter, Clock"
-msgstr ""
+msgstr "Anemometer, Höhenmesser, Uhr"
 
 #: .\stats\aircraft_mods.py:29 .\stats\aircraft_mods.py:161
 #: .\stats\aircraft_mods.py:425
 msgctxt "aircraft_mod"
 msgid "Inclinometer"
-msgstr ""
+msgstr "Querneigungsmesse"
 
 #: .\stats\aircraft_mods.py:30 .\stats\aircraft_mods.py:162
 #: .\stats\aircraft_mods.py:426
 msgctxt "aircraft_mod"
 msgid "Bullet Counters"
-msgstr ""
+msgstr "Schusszähler"
 
 #: .\stats\aircraft_mods.py:31 .\stats\aircraft_mods.py:145
 #: .\stats\aircraft_mods.py:154 .\stats\aircraft_mods.py:427
 #: .\stats\aircraft_mods.py:446
 msgctxt "aircraft_mod"
 msgid "Thermometer"
-msgstr ""
+msgstr "Thermometer"
 
 #: .\stats\aircraft_mods.py:32 .\stats\aircraft_mods.py:123
 #: .\stats\aircraft_mods.py:133 .\stats\aircraft_mods.py:146
@@ -352,17 +342,14 @@ msgstr ""
 #: .\stats\aircraft_mods.py:428 .\stats\aircraft_mods.py:433
 #: .\stats\aircraft_mods.py:439 .\stats\aircraft_mods.py:447
 #: .\stats\aircraft_mods.py:454
-#, fuzzy
-#| msgctxt "sortie_status"
-#| msgid "in flight"
 msgctxt "aircraft_mod"
 msgid "Cockpit light"
-msgstr "Im Flug"
+msgstr "Instrumentenlicht"
 
 #: .\stats\aircraft_mods.py:33
 msgctxt "aircraft_mod"
 msgid "Lewis Overwing"
-msgstr ""
+msgstr "Lewis Überflügel-Maschinengewehr"
 
 #: .\stats\aircraft_mods.py:36 .\stats\aircraft_mods.py:44
 #: .\stats\aircraft_mods.py:51 .\stats\aircraft_mods.py:67
@@ -370,7 +357,7 @@ msgstr ""
 #: .\stats\aircraft_mods.py:166 .\stats\aircraft_mods.py:173
 msgctxt "aircraft_mod"
 msgid "4 x SC 50 bombs"
-msgstr ""
+msgstr "4 x Bomben, Typ SC 50"
 
 #: .\stats\aircraft_mods.py:37 .\stats\aircraft_mods.py:45
 #: .\stats\aircraft_mods.py:52 .\stats\aircraft_mods.py:61
@@ -380,42 +367,37 @@ msgstr ""
 #: .\stats\aircraft_mods.py:174 .\stats\aircraft_mods.py:199
 msgctxt "aircraft_mod"
 msgid "1 x SC 250 bomb"
-msgstr ""
+msgstr "1 x Bombe, Typ SC 250"
 
 #: .\stats\aircraft_mods.py:38 .\stats\aircraft_mods.py:46
 #: .\stats\aircraft_mods.py:53 .\stats\aircraft_mods.py:330
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Armored vehicles"
 msgctxt "aircraft_mod"
 msgid "Armoured Wind Screen"
-msgstr "Gepanzertes Fahrzeug"
+msgstr "Gepanzerte Windschutzscheibe"
 
 #: .\stats\aircraft_mods.py:39 .\stats\aircraft_mods.py:47
 #: .\stats\aircraft_mods.py:54 .\stats\aircraft_mods.py:70
 #: .\stats\aircraft_mods.py:77 .\stats\aircraft_mods.py:85
 #: .\stats\aircraft_mods.py:111
-#, fuzzy
-#| msgid "Remove admin role"
 msgctxt "aircraft_mod"
 msgid "Removed Headrest"
-msgstr "Entferne Administrator Rechte"
+msgstr "Zurückgesetze Kopftstütze"
 
 #: .\stats\aircraft_mods.py:40 .\stats\aircraft_mods.py:105
 #: .\stats\aircraft_mods.py:295
 msgctxt "aircraft_mod"
 msgid "Additional armour plates"
-msgstr ""
+msgstr "Zusätzliche Panzerungsplatten"
 
 #: .\stats\aircraft_mods.py:43
 msgctxt "aircraft_mod"
 msgid "20mm MG 151/20 gun"
-msgstr ""
+msgstr "20mm MG 151/20"
 
 #: .\stats\aircraft_mods.py:50
 msgctxt "aircraft_mod"
 msgid "2 x 15mm MG 151/15 gun pods"
-msgstr ""
+msgstr "2 x 15mm MG 151/15 in Geschützbehältern"
 
 #: .\stats\aircraft_mods.py:55 .\stats\aircraft_mods.py:59
 #: .\stats\aircraft_mods.py:66 .\stats\aircraft_mods.py:73
@@ -424,139 +406,132 @@ msgstr ""
 #: .\stats\aircraft_mods.py:334
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG 151/20 gun pods"
-msgstr ""
+msgstr "2 x 20mm MG 151/15 in Geschützbehältern"
 
 #: .\stats\aircraft_mods.py:58 .\stats\aircraft_mods.py:80
 #: .\stats\aircraft_mods.py:89
 msgctxt "aircraft_mod"
 msgid "30mm MK 108 gun"
-msgstr ""
+msgstr "30mm MK 108"
 
 #: .\stats\aircraft_mods.py:60 .\stats\aircraft_mods.py:91
 #: .\stats\aircraft_mods.py:198
 msgctxt "aircraft_mod"
 msgid "4 x SD 70 bombs"
-msgstr ""
+msgstr "4 x Bomben, Typ SD 70"
 
 #: .\stats\aircraft_mods.py:62 .\stats\aircraft_mods.py:93
 #: .\stats\aircraft_mods.py:185 .\stats\aircraft_mods.py:192
 #: .\stats\aircraft_mods.py:201
 msgctxt "aircraft_mod"
 msgid "21 cm BR"
-msgstr ""
+msgstr "21 cm BR"
 
 #: .\stats\aircraft_mods.py:63
 msgctxt "aircraft_mod"
 msgid "FuG-16ZY"
-msgstr ""
+msgstr "FuG-16ZY Funkkompass"
 
 #: .\stats\aircraft_mods.py:69 .\stats\aircraft_mods.py:76
 #: .\stats\aircraft_mods.py:84
 msgctxt "aircraft_mod"
 msgid "Armoured Glass Head Rest"
-msgstr ""
+msgstr "Panzerglas-Kopfstütze"
 
 #: .\stats\aircraft_mods.py:86 .\stats\aircraft_mods.py:255
 msgctxt "aircraft_mod"
 msgid "Peilrahmen PR 16"
-msgstr ""
+msgstr "Peilrahmen PR 16"
 
 #: .\stats\aircraft_mods.py:94
 msgctxt "aircraft_mod"
 msgid "MW-50 System"
-msgstr ""
+msgstr "MW-50 System"
 
 #: .\stats\aircraft_mods.py:95
 msgctxt "aircraft_mod"
 msgid "Erla Haube"
-msgstr ""
+msgstr "Erla Haube"
 
 #: .\stats\aircraft_mods.py:100 .\stats\aircraft_mods.py:168
 #: .\stats\aircraft_mods.py:175 .\stats\aircraft_mods.py:200
 msgctxt "aircraft_mod"
 msgid "1 x SC 500 bomb"
-msgstr ""
+msgstr "1 x Bombe, Typ SC 500"
 
 #: .\stats\aircraft_mods.py:101
 msgctxt "aircraft_mod"
 msgid "DB 605 DC engine"
-msgstr ""
+msgstr "DB 605 DC Motor"
 
-#: .\stats\aircraft_mods.py:104
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Armored vehicles"
+#: .\stats\aircraft_mods.py:104"
 msgctxt "aircraft_mod"
 msgid "Armoured Windscreen and pilot's Headrest"
-msgstr "Gepanzertes Fahrzeug"
+msgstr "Gepanzerte Windschutzscheibe und Kopfstütze"
 
 #: .\stats\aircraft_mods.py:106 .\stats\aircraft_mods.py:112
 msgctxt "aircraft_mod"
 msgid "12 x SC 50 bombs"
-msgstr ""
+msgstr "12 x Bomben, Typ SC 50"
 
 #: .\stats\aircraft_mods.py:107 .\stats\aircraft_mods.py:113
 msgctxt "aircraft_mod"
 msgid "2 x SC 500 bomb"
-msgstr ""
+msgstr "2 x Bomben, Typ SC 500"
 
 #: .\stats\aircraft_mods.py:108 .\stats\aircraft_mods.py:114
 msgctxt "aircraft_mod"
 msgid "SC 1000 heavy bomb"
-msgstr ""
+msgstr "SC 1000 schwere Bombe"
 
 #: .\stats\aircraft_mods.py:115
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG 151/20 gun pod"
-msgstr ""
+msgstr "2 x 20mm MG 151/20 in Geschützbehältern"
 
 #: .\stats\aircraft_mods.py:116
 msgctxt "aircraft_mod"
 msgid "37mm 3.7cm BK gun pod"
-msgstr ""
+msgstr "37mm 3.7cm BK Waffengondel"
 
 #: .\stats\aircraft_mods.py:119 .\stats\aircraft_mods.py:129
 #: .\stats\aircraft_mods.py:443
 msgctxt "aircraft_mod"
 msgid "Twin Lewis Overwing"
-msgstr ""
+msgstr "Leweis Überflügel-Zwillings-Maschinengewehr"
 
 #: .\stats\aircraft_mods.py:120 .\stats\aircraft_mods.py:130
 msgctxt "aircraft_mod"
 msgid "Twin Lewis MG turret"
-msgstr ""
+msgstr "Twin Lewis MG turret"
 
 #: .\stats\aircraft_mods.py:121 .\stats\aircraft_mods.py:131
 #: .\stats\aircraft_mods.py:431 .\stats\aircraft_mods.py:437
 #: .\stats\aircraft_mods.py:445 .\stats\aircraft_mods.py:452
-#, fuzzy
-#| msgid "Allies"
 msgctxt "aircraft_mod"
 msgid "Aldis"
-msgstr "Alliierte"
+msgstr "Aldis"
 
 #: .\stats\aircraft_mods.py:122 .\stats\aircraft_mods.py:132
 #: .\stats\aircraft_mods.py:432
 msgctxt "aircraft_mod"
 msgid "Fuel Gauge"
-msgstr ""
+msgstr "Benzinuhr"
 
 #: .\stats\aircraft_mods.py:124 .\stats\aircraft_mods.py:134
 msgctxt "aircraft_mod"
 msgid "Cooper / H.E.R.L. bombs"
-msgstr ""
+msgstr "Cooper / H.E.R.L. bomben"
 
 #: .\stats\aircraft_mods.py:125 .\stats\aircraft_mods.py:135
 #: .\stats\aircraft_mods.py:214 .\stats\aircraft_mods.py:225
 #: .\stats\aircraft_mods.py:456
 msgctxt "aircraft_mod"
 msgid "Camera"
-msgstr ""
+msgstr "Kamera"
 
 #: .\stats\aircraft_mods.py:126 .\stats\aircraft_mods.py:136
 #: .\stats\aircraft_mods.py:215 .\stats\aircraft_mods.py:226
-#, fuzzy
-#| msgid "Ratio"
 msgctxt "aircraft_mod"
 msgid "Radio"
 msgstr "Verhältnis"
@@ -565,35 +540,33 @@ msgstr "Verhältnis"
 #: .\stats\aircraft_mods.py:423
 msgctxt "aircraft_mod"
 msgid "Anemometer"
-msgstr ""
+msgstr "Funkgerät"
 
 #: .\stats\aircraft_mods.py:143 .\stats\aircraft_mods.py:153
 #: .\stats\aircraft_mods.py:424
 msgctxt "aircraft_mod"
 msgid "High Altimeter"
-msgstr ""
+msgstr "Kompensierter Höhenmesser"
 
 #: .\stats\aircraft_mods.py:144
 msgctxt "aircraft_mod"
 msgid "Bullet counters"
-msgstr ""
+msgstr "Schusszähler"
 
 #: .\stats\aircraft_mods.py:169
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG FF/M (120 rounds)"
-msgstr ""
+msgstr "2 x 20mm MG FF/M mit 120 Schuss"
 
 #: .\stats\aircraft_mods.py:170 .\stats\aircraft_mods.py:176
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG FF/M (180 rounds)"
-msgstr ""
+msgstr "2 x 20mm MG FF/M mit 180 Schuss"
 
 #: .\stats\aircraft_mods.py:178
-#, fuzzy
-#| msgid "Coalitions"
 msgctxt "aircraft_mod"
 msgid "U17 strike modification"
-msgstr "Koalition"
+msgstr "U17 Jagdomber Modifikation"
 
 #: .\stats\aircraft_mods.py:181
 msgctxt "aircraft_mod"
@@ -614,27 +587,27 @@ msgstr ""
 #: .\stats\aircraft_mods.py:480
 msgctxt "aircraft_mod"
 msgid "Bomb load"
-msgstr ""
+msgstr "Bombelnlast"
 
 #: .\stats\aircraft_mods.py:186
 msgctxt "aircraft_mod"
 msgid "Removal of MG 151/20"
-msgstr ""
+msgstr "Entfernung der MG 151-20"
 
 #: .\stats\aircraft_mods.py:187
 msgctxt "aircraft_mod"
 msgid "Installation of MG-17"
-msgstr ""
+msgstr "Einbau von MG 17"
 
 #: .\stats\aircraft_mods.py:190
 msgctxt "aircraft_mod"
 msgid "30mm MK 108 guns"
-msgstr ""
+msgstr "30mm MK 108 Kannonen"
 
 #: .\stats\aircraft_mods.py:191
 msgctxt "aircraft_mod"
 msgid "ETC 501 Central Bombholder"
-msgstr ""
+msgstr "ETC 501 Unterrumpfbombenhalterung"
 
 #: .\stats\aircraft_mods.py:193
 msgctxt "aircraft_mod"
@@ -649,12 +622,12 @@ msgstr ""
 #: .\stats\aircraft_mods.py:195
 msgctxt "aircraft_mod"
 msgid "Removal of MG 131"
-msgstr ""
+msgstr "Entfernen der MG 131"
 
 #: .\stats\aircraft_mods.py:202
 msgctxt "aircraft_mod"
 msgid "26 x R4M rockets"
-msgstr ""
+msgstr "26 x R4M Raketen"
 
 #: .\stats\aircraft_mods.py:203 .\stats\aircraft_mods.py:337
 #: .\stats\aircraft_mods.py:389 .\stats\aircraft_mods.py:400
@@ -666,7 +639,7 @@ msgstr ""
 #: .\stats\aircraft_mods.py:204
 msgctxt "aircraft_mod"
 msgid "Bubble Canopy"
-msgstr ""
+msgstr "Geblasene Cockpithaube"
 
 #: .\stats\aircraft_mods.py:207 .\stats\aircraft_mods.py:218
 msgctxt "aircraft_mod"
@@ -686,37 +659,37 @@ msgstr ""
 #: .\stats\aircraft_mods.py:210 .\stats\aircraft_mods.py:221
 msgctxt "aircraft_mod"
 msgid "Aldis (Trophy)"
-msgstr ""
+msgstr "Aldis (Trophäe)"
 
 #: .\stats\aircraft_mods.py:211 .\stats\aircraft_mods.py:222
 msgctxt "aircraft_mod"
 msgid "Additional Gauges"
-msgstr ""
+msgstr "Zusätzlichen Anzeigen"
 
 #: .\stats\aircraft_mods.py:213 .\stats\aircraft_mods.py:224
 msgctxt "aircraft_mod"
 msgid "P.u.W. Bombs"
-msgstr ""
+msgstr "Bomben, Typ P.u.W."
 
 #: .\stats\aircraft_mods.py:229
 msgctxt "aircraft_mod"
 msgid "Four additional \"Browning .303\" MGs"
-msgstr ""
+msgstr "4x 7.7mm Maschinengewehr \"Browning .303\""
 
 #: .\stats\aircraft_mods.py:230
 msgctxt "aircraft_mod"
 msgid "4 x 20mm \"Hispano Mk.II\" gun"
-msgstr ""
+msgstr "4 x 20mm \"Hispano Mk.II\" Kanonen"
 
 #: .\stats\aircraft_mods.py:231
 msgctxt "aircraft_mod"
 msgid "2 x 40mm Vickers Class S gun pods"
-msgstr ""
+msgstr "2 x 40mm Vickers Class S Behälter"
 
 #: .\stats\aircraft_mods.py:232
 msgctxt "aircraft_mod"
 msgid "2 x 40mm Vickers gun pods + Armor"
-msgstr ""
+msgstr "2 x 40mm Vickers Class S Behälter + Panzerung"
 
 #: .\stats\aircraft_mods.py:233
 msgctxt "aircraft_mod"
@@ -726,7 +699,7 @@ msgstr ""
 #: .\stats\aircraft_mods.py:234
 msgctxt "aircraft_mod"
 msgid "Merlin XX engine with +14 lb boost"
-msgstr ""
+msgstr "Merlin XX Motor with +14 lb boost"
 
 #: .\stats\aircraft_mods.py:235 .\stats\aircraft_mods.py:256
 #: .\stats\aircraft_mods.py:311 .\stats\aircraft_mods.py:374
@@ -736,218 +709,213 @@ msgstr ""
 #: .\stats\aircraft_mods.py:516
 msgctxt "aircraft_mod"
 msgid "Mirror"
-msgstr ""
+msgstr "Rückspiegel"
 
 #: .\stats\aircraft_mods.py:236
 msgctxt "aircraft_mod"
 msgid "Air Cleaner"
-msgstr ""
+msgstr "Luftfilter"
 
 #: .\stats\aircraft_mods.py:239 .\stats\aircraft_mods.py:246
 #: .\stats\aircraft_mods.py:302
 msgctxt "aircraft_mod"
 msgid "2 x SC 1000 heavy bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ SC 1000"
 
 #: .\stats\aircraft_mods.py:240 .\stats\aircraft_mods.py:247
 msgctxt "aircraft_mod"
 msgid "2 x SC 1800 heavy bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ SC 1800"
 
 #: .\stats\aircraft_mods.py:241 .\stats\aircraft_mods.py:248
 msgctxt "aircraft_mod"
 msgid "SC 2500 heavy bomb"
-msgstr ""
+msgstr "SC 2500 schwere Bombe"
 
 #: .\stats\aircraft_mods.py:244
 msgctxt "aircraft_mod"
 msgid "Belly 20mm gun turret"
-msgstr ""
+msgstr "Unterer 20-mm-Gechützturm"
 
 #: .\stats\aircraft_mods.py:245
 msgctxt "aircraft_mod"
 msgid "Nose 20mm gun turret"
-msgstr ""
+msgstr "20-mm-Kinnturm"
 
 #: .\stats\aircraft_mods.py:251
 msgctxt "aircraft_mod"
 msgid "2 x 20mm MG 151/20 gun"
-msgstr ""
+msgstr "2 x 20mm MG 151/20"
 
 #: .\stats\aircraft_mods.py:252
 msgctxt "aircraft_mod"
 msgid "4 x 7.92mm MG 17 gun pod"
-msgstr ""
+msgstr "4 x 7.92mm MG 17 Waffengondel"
 
 #: .\stats\aircraft_mods.py:253
 msgctxt "aircraft_mod"
 msgid "30mm MK 101"
-msgstr ""
+msgstr "30mm MK 101 Waffengondel"
 
 #: .\stats\aircraft_mods.py:254
 msgctxt "aircraft_mod"
 msgid "30mm MK 103"
-msgstr ""
+msgstr "30mm MK 103 Waffengondel"
 
 #: .\stats\aircraft_mods.py:259 .\stats\aircraft_mods.py:371
 msgctxt "aircraft_mod"
 msgid "4 x ROS-82 rockets"
-msgstr ""
+msgstr "4 x Raketen, Typ ROS-82"
 
 #: .\stats\aircraft_mods.py:260 .\stats\aircraft_mods.py:327
 #: .\stats\aircraft_mods.py:347 .\stats\aircraft_mods.py:496
 msgctxt "aircraft_mod"
 msgid "6 x ROS-82 rockets"
-msgstr ""
+msgstr "6 x Raketen, Typ ROS-82"
 
 #: .\stats\aircraft_mods.py:261 .\stats\aircraft_mods.py:348
 msgctxt "aircraft_mod"
 msgid "2 x FAB-50sv / FAB-100M bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ FAB-50sv / FAB-100M"
 
 #: .\stats\aircraft_mods.py:262
 msgctxt "aircraft_mod"
 msgid "One-piece Windscreen"
-msgstr ""
+msgstr "Flache Windschutzscheibe"
 
 #: .\stats\aircraft_mods.py:263
 msgctxt "aircraft_mod"
 msgid "2 x 20mm ShVAK (180 rounds)"
-msgstr ""
+msgstr "2 x 20mm ShVAK mit 180 Schuss"
 
 #: .\stats\aircraft_mods.py:266 .\stats\aircraft_mods.py:273
 #: .\stats\aircraft_mods.py:280
 msgctxt "aircraft_mod"
 msgid "2 x 23mm VYa-23 gun"
-msgstr ""
+msgstr "2 x 23mm VYa-23-Geschütz"
 
 #: .\stats\aircraft_mods.py:267
 msgctxt "aircraft_mod"
 msgid "6 x FAB-50sv / FAB-100M bombs"
-msgstr ""
+msgstr "6 x Bomben, Typ FAB-50sv / FAB-100M"
 
 #: .\stats\aircraft_mods.py:268 .\stats\aircraft_mods.py:275
 #: .\stats\aircraft_mods.py:282
 msgctxt "aircraft_mod"
 msgid "2 x FAB-250sv bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ FAB-250sv"
 
 #: .\stats\aircraft_mods.py:269
 msgctxt "aircraft_mod"
 msgid "8 x RBS-82 rockets"
-msgstr ""
+msgstr "8 x Raketen, Typ RBS-82"
 
 #: .\stats\aircraft_mods.py:270
 msgctxt "aircraft_mod"
 msgid "8 x ROFS-132 rockets"
-msgstr ""
+msgstr "8x Raketen, Typ ROFS-132"
 
 #: .\stats\aircraft_mods.py:274
 msgctxt "aircraft_mod"
 msgid "2 x 37mm Sh-37 gun"
-msgstr ""
+msgstr "2 x 37mm Sh-37-Geschütz"
 
 #: .\stats\aircraft_mods.py:276
 msgctxt "aircraft_mod"
 msgid "8 x RBS-82 / ROFS-132 rockets"
-msgstr ""
+msgstr "8 x Raketen, Typ RBS-82 / ROFS-132"
 
 #: .\stats\aircraft_mods.py:277 .\stats\aircraft_mods.py:290
 #: .\stats\aircraft_mods.py:478
 msgctxt "aircraft_mod"
 msgid "Rear turret"
-msgstr ""
+msgstr "Heckgeschützturm"
 
 #: .\stats\aircraft_mods.py:281
 msgctxt "aircraft_mod"
 msgid "2 x 37mm NS-37gun"
-msgstr ""
+msgstr "2 x 37mm NS-37-Geschütz"
 
 #: .\stats\aircraft_mods.py:283
 msgctxt "aircraft_mod"
 msgid "4 x RBS-82 / ROFS-132 rockets"
-msgstr ""
+msgstr "4 x Raketen, Typ RBS-82 / ROFS-132"
 
 #: .\stats\aircraft_mods.py:284
 msgctxt "aircraft_mod"
 msgid "192(240) x PTAB-2.5-1.5 bomblets"
-msgstr ""
+msgstr "192(240) x Bomben, Typ PTAB-2.5-1.5"
 
 #: .\stats\aircraft_mods.py:287
 msgctxt "aircraft_mod"
 msgid "2300 kg of cargo"
-msgstr ""
+msgstr "Luftfracht, 2300kg"
 
 #: .\stats\aircraft_mods.py:288
 msgctxt "aircraft_mod"
 msgid "10 x MAB 250 containers"
-msgstr ""
+msgstr "10 x MAB 250 Behälter"
 
 #: .\stats\aircraft_mods.py:289
 msgctxt "aircraft_mod"
 msgid "12 paratroopers"
-msgstr ""
+msgstr "12 Fallschirmjäger"
 
 #: .\stats\aircraft_mods.py:293
-#, fuzzy
-#| msgid "Score"
 msgctxt "aircraft_mod"
 msgid "Siren"
-msgstr "Punktestand"
+msgstr "Sirene"
 
 #: .\stats\aircraft_mods.py:294 .\stats\aircraft_mods.py:303
 msgctxt "aircraft_mod"
 msgid "SC 1800 heavy bomb"
-msgstr ""
+msgstr "SC 1800 schwere Bombe"
 
 #: .\stats\aircraft_mods.py:296
 msgctxt "aircraft_mod"
 msgid "Machine gun pods"
-msgstr ""
+msgstr "Maschinengewehrrbehälter"
 
 #: .\stats\aircraft_mods.py:297
 msgctxt "aircraft_mod"
 msgid "2 x 37mm 3.7cm BK gun pods"
-msgstr ""
+msgstr "2 x 37mm 3.7cm BK in Geschützbehältern"
 
 #: .\stats\aircraft_mods.py:300
 msgctxt "aircraft_mod"
 msgid "6 x SC 250 bombs"
-msgstr ""
+msgstr "6 x Bomben, Typ SC 250"
 
 #: .\stats\aircraft_mods.py:301
 msgctxt "aircraft_mod"
 msgid "4 x SC 500 bombs"
-msgstr ""
+msgstr "4 x Bomben, Typ SC 500"
 
 #: .\stats\aircraft_mods.py:304
 msgctxt "aircraft_mod"
 msgid "44 x SC 50 bombs"
-msgstr ""
+msgstr "44 x Bomben, Typ SC 50"
 
 #: .\stats\aircraft_mods.py:307 .\stats\aircraft_mods.py:315
 #: .\stats\aircraft_mods.py:325 .\stats\aircraft_mods.py:488
 #: .\stats\aircraft_mods.py:497 .\stats\aircraft_mods.py:502
 msgctxt "aircraft_mod"
 msgid "2 x FAB-50sv bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ FAB-50sv"
 
 #: .\stats\aircraft_mods.py:308 .\stats\aircraft_mods.py:316
 #: .\stats\aircraft_mods.py:326 .\stats\aircraft_mods.py:489
 #: .\stats\aircraft_mods.py:498 .\stats\aircraft_mods.py:503
 msgctxt "aircraft_mod"
 msgid "2 x FAB-100M bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ FAB-100m"
 
 #: .\stats\aircraft_mods.py:309 .\stats\aircraft_mods.py:482
 #: .\stats\aircraft_mods.py:490 .\stats\aircraft_mods.py:505
 #: .\stats\aircraft_mods.py:509 .\stats\aircraft_mods.py:515
-#, fuzzy
-#| msgctxt "sortie_status"
-#| msgid "in flight"
 msgctxt "aircraft_mod"
 msgid "Landing light"
-msgstr "Im Flug"
+msgstr "Scheinwerfer"
 
 #: .\stats\aircraft_mods.py:310 .\stats\aircraft_mods.py:317
 #: .\stats\aircraft_mods.py:491 .\stats\aircraft_mods.py:499
@@ -960,202 +928,196 @@ msgstr ""
 #: .\stats\aircraft_mods.py:312 .\stats\aircraft_mods.py:319
 msgctxt "aircraft_mod"
 msgid "Special Guns Ammo Load"
-msgstr ""
+msgstr "Spezielle Gescützmunition"
 
 #: .\stats\aircraft_mods.py:318
 msgctxt "aircraft_mod"
 msgid "Flat Windscreen"
-msgstr ""
+msgstr "Flache Windschutzscheibe"
 
 #: .\stats\aircraft_mods.py:320
 msgctxt "aircraft_mod"
 msgid "M-82F engine"
-msgstr ""
+msgstr "M-82F Motor"
 
 #: .\stats\aircraft_mods.py:323
 msgctxt "aircraft_mod"
 msgid "23mm VYa-23 gun"
-msgstr ""
+msgstr "23mm VYA-23 Geschütz"
 
 #: .\stats\aircraft_mods.py:324
 msgctxt "aircraft_mod"
 msgid "37mm Sh-37 gun"
-msgstr ""
+msgstr "37mm Sh-37 Geschütz"
 
 #: .\stats\aircraft_mods.py:331
 msgctxt "aircraft_mod"
 msgid "2 x 50-T bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ 50-T"
 
 #: .\stats\aircraft_mods.py:332
 msgctxt "aircraft_mod"
 msgid "2 x 100-T bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ 100-T"
 
 #: .\stats\aircraft_mods.py:333
 msgctxt "aircraft_mod"
 msgid "2 x 7.7mm machineguns"
-msgstr ""
+msgstr "2 x 7.7mm Maschinengewehr"
 
 #: .\stats\aircraft_mods.py:338
 msgctxt "aircraft_mod"
 msgid "24 x R4M rockets"
-msgstr ""
+msgstr "24 x Raketen, Typ R4m"
 
 #: .\stats\aircraft_mods.py:339
-#, fuzzy
-#| msgid "Remove admin role"
 msgctxt "aircraft_mod"
 msgid "Armoured Headrest"
-msgstr "Entferne Administrator Rechte"
+msgstr "Gepanzerte Kopfstütze"
 
 #: .\stats\aircraft_mods.py:340
 msgctxt "aircraft_mod"
 msgid "Back Armor"
-msgstr ""
+msgstr "Rückenpanzerung"
 
 #: .\stats\aircraft_mods.py:341
-#, fuzzy
-#| msgid "Remove admin role"
 msgctxt "aircraft_mod"
 msgid "Removed Front Armor"
-msgstr "Entferne Administrator Rechte"
+msgstr "Entfernte Frontpanzerung"
 
 #: .\stats\aircraft_mods.py:342
 msgctxt "aircraft_mod"
 msgid "Removed Inner Cannons"
-msgstr ""
+msgstr "Entfernte innere Kannonen"
 
 #: .\stats\aircraft_mods.py:344
 msgctxt "aircraft_mod"
 msgid "Fuel regulating valve"
-msgstr ""
+msgstr "Treibstoffregilierungsventil"
 
 #: .\stats\aircraft_mods.py:349
 msgctxt "aircraft_mod"
 msgid "2 x 12.7 mm BK machinegun pods"
-msgstr ""
+msgstr "2 x 12.7 mm BK in Geschützbehältern"
 
 #: .\stats\aircraft_mods.py:350
 msgctxt "aircraft_mod"
 msgid "2 x BS 12.7 mm (700 rounds)"
-msgstr ""
+msgstr "2 x BS 12.7 mm mit 700 Schuss"
 
 #: .\stats\aircraft_mods.py:351
 msgctxt "aircraft_mod"
 msgid "2 x 20mm ShVAK (300 rounds)"
-msgstr ""
+msgstr "2 x 20mm ShVAK mit 300 Schuss"
 
 #: .\stats\aircraft_mods.py:354 .\stats\aircraft_mods.py:370
 #: .\stats\aircraft_mods.py:379 .\stats\aircraft_mods.py:387
 #: .\stats\aircraft_mods.py:396
 msgctxt "aircraft_mod"
 msgid "Additional ANM2 .50 cal MG ammo"
-msgstr ""
+msgstr "Zusätzliche Munition für .50 Browning"
 
 #: .\stats\aircraft_mods.py:355
 msgctxt "aircraft_mod"
 msgid "General purpose bombs"
-msgstr ""
+msgstr "Allzweckbomben"
 
 #: .\stats\aircraft_mods.py:356
 msgctxt "aircraft_mod"
 msgid "Additional bomb racks"
-msgstr ""
+msgstr "Zusätzliche Bombenhalterungen"
 
 #: .\stats\aircraft_mods.py:357 .\stats\aircraft_mods.py:399
 msgctxt "aircraft_mod"
 msgid "M8 rockets"
-msgstr ""
+msgstr "M8-Raketen"
 
 #: .\stats\aircraft_mods.py:361
 msgctxt "aircraft_mod"
 msgid "FAB-100M bomb"
-msgstr ""
+msgstr "FAB-100M Bombe"
 
 #: .\stats\aircraft_mods.py:362
 msgctxt "aircraft_mod"
 msgid "FAB-250tsk bomb"
-msgstr ""
+msgstr "FAB-250tsk Bombe"
 
 #: .\stats\aircraft_mods.py:363
 msgctxt "aircraft_mod"
 msgid "Additional ANM2 .30 cal MG ammo"
-msgstr ""
+msgstr "Zusätzliche .30 cal MG Munition"
 
 #: .\stats\aircraft_mods.py:364
 msgctxt "aircraft_mod"
 msgid "Removal of ANM2 .30"
-msgstr ""
+msgstr "Entfernen von M2 .30"
 
 #: .\stats\aircraft_mods.py:365
 msgctxt "aircraft_mod"
 msgid "Special 37mm Gun Ammo Load"
-msgstr ""
+msgstr "Spezielle Geschützmunition"
 
 #: .\stats\aircraft_mods.py:369 .\stats\aircraft_mods.py:378
 #: .\stats\aircraft_mods.py:386 .\stats\aircraft_mods.py:395
 msgctxt "aircraft_mod"
 msgid "4 x ANM2 .50 cal machine guns"
-msgstr ""
+msgstr "4 x 12.7mm M2 .50"
 
 #: .\stats\aircraft_mods.py:372
 msgctxt "aircraft_mod"
 msgid "FAB-250sv bomb"
-msgstr ""
+msgstr "FAB-250sv Bombe"
 
 #: .\stats\aircraft_mods.py:373
 msgctxt "aircraft_mod"
 msgid "FAB-500M bomb"
-msgstr ""
+msgstr "FAB-500M Bombe"
 
 #: .\stats\aircraft_mods.py:377 .\stats\aircraft_mods.py:385
 msgctxt "aircraft_mod"
 msgid "6 x ANM2 .50 cal machine guns"
-msgstr ""
+msgstr "6 x ANM2 .50 cal Maschinengewehr"
 
 #: .\stats\aircraft_mods.py:380 .\stats\aircraft_mods.py:388
-#, fuzzy
-#| msgid "Coalitions"
 msgctxt "aircraft_mod"
 msgid "Ground attack modification"
-msgstr "Koalition"
+msgstr "Jagdbomber-Modifiaktion"
 
 #: .\stats\aircraft_mods.py:381 .\stats\aircraft_mods.py:392
 #: .\stats\aircraft_mods.py:401 .\stats\aircraft_mods.py:466
 msgctxt "aircraft_mod"
 msgid "150 grade fuel"
-msgstr ""
+msgstr "150-Oktan-Kraftstoff"
 
 #: .\stats\aircraft_mods.py:397
 msgctxt "aircraft_mod"
 msgid "2 x M64 bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ M64"
 
 #: .\stats\aircraft_mods.py:398
 msgctxt "aircraft_mod"
 msgid "2 x M65 bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ M65"
 
 #: .\stats\aircraft_mods.py:406 .\stats\aircraft_mods.py:413
 msgctxt "aircraft_mod"
 msgid "10 x FAB-100M bombs"
-msgstr ""
+msgstr "10 x Bomben, Typ FAB-100m"
 
 #: .\stats\aircraft_mods.py:407 .\stats\aircraft_mods.py:414
 msgctxt "aircraft_mod"
 msgid "4 x FAB-250sv bombs"
-msgstr ""
+msgstr "4 x Bomben, Typ FAB-250sv"
 
 #: .\stats\aircraft_mods.py:408 .\stats\aircraft_mods.py:415
 msgctxt "aircraft_mod"
 msgid "2 x FAB-500M bombs"
-msgstr ""
+msgstr "2 x Bomben, Typ FAB-500m"
 
 #: .\stats\aircraft_mods.py:409 .\stats\aircraft_mods.py:416
 msgctxt "aircraft_mod"
 msgid "10 x ROS-132 rockets"
-msgstr ""
+msgstr "10 x Raketen, Typ ROS-132"
 
 #: .\stats\aircraft_mods.py:410
 msgctxt "aircraft_mod"
@@ -1165,18 +1127,18 @@ msgstr ""
 #: .\stats\aircraft_mods.py:417
 msgctxt "aircraft_mod"
 msgid "Blister turret"
-msgstr ""
+msgstr "Heckgescützturm"
 
 #: .\stats\aircraft_mods.py:434 .\stats\aircraft_mods.py:440
 #: .\stats\aircraft_mods.py:448 .\stats\aircraft_mods.py:455
 msgctxt "aircraft_mod"
 msgid "Cooper bombs"
-msgstr ""
+msgstr "Cooper Bomben"
 
 #: .\stats\aircraft_mods.py:438
 msgctxt "aircraft_mod"
 msgid "Enlarged window"
-msgstr ""
+msgstr "Vergrößetes Fenster"
 
 #: .\stats\aircraft_mods.py:444
 msgctxt "aircraft_mod"
@@ -1186,7 +1148,7 @@ msgstr ""
 #: .\stats\aircraft_mods.py:451
 msgctxt "aircraft_mod"
 msgid "Balloon guns"
-msgstr ""
+msgstr "Ballon Maschinengewehre"
 
 #: .\stats\aircraft_mods.py:453
 msgctxt "aircraft_mod"
@@ -1196,90 +1158,87 @@ msgstr ""
 #: .\stats\aircraft_mods.py:459
 msgctxt "aircraft_mod"
 msgid "500 lb G.P. bomb"
-msgstr ""
+msgstr "500 lb G.P. Bombe"
 
 #: .\stats\aircraft_mods.py:460
 msgctxt "aircraft_mod"
 msgid "2 x 250 lb G.P. bombs"
-msgstr ""
+msgstr "2 x 250 lb G.P. Bomben"
 
 #: .\stats\aircraft_mods.py:461
 msgctxt "aircraft_mod"
 msgid "2 х RP-3 HE / AP rockets"
-msgstr ""
+msgstr "2 х RP-3 HE / AP Raketen"
 
 #: .\stats\aircraft_mods.py:464
 msgctxt "aircraft_mod"
 msgid "Clipped Wing"
-msgstr ""
+msgstr "Gekappter Flügel"
 
 #: .\stats\aircraft_mods.py:465
 msgctxt "aircraft_mod"
 msgid "Merlin 70 engine"
-msgstr ""
+msgstr "Merlin 70 Motor"
 
 #: .\stats\aircraft_mods.py:469
 msgctxt "aircraft_mod"
 msgid "Merlin 45 engine"
-msgstr ""
+msgstr "Merlin 45 Motor"
 
 #: .\stats\aircraft_mods.py:473
 msgctxt "aircraft_mod"
 msgid "2 x 500 lb M.C. bombs"
-msgstr ""
+msgstr "2 x 500 lb M.C. Bomben"
 
 #: .\stats\aircraft_mods.py:474
 msgctxt "aircraft_mod"
 msgid "2 x 1000 lb M.C. bomb"
-msgstr ""
+msgstr "2 x 1000 lb M.C. Bomben"
 
 #: .\stats\aircraft_mods.py:475
 msgctxt "aircraft_mod"
 msgid "Sabre IIA engine with +11 lb boost"
-msgstr ""
+msgstr "Sabre IIA Motor with +11 lb boost"
 
 #: .\stats\aircraft_mods.py:479
 msgctxt "aircraft_mod"
 msgid "Bow MG"
-msgstr ""
+msgstr "Bug-MG"
 
 #: .\stats\aircraft_mods.py:481
-#, fuzzy
-#| msgctxt "sortie"
-#| msgid "Duration of flight"
 msgctxt "aircraft_mod"
 msgid "Navigation lights"
-msgstr "Flugdauer"
+msgstr "Navigationslichter"
 
 #: .\stats\aircraft_mods.py:483
 msgctxt "aircraft_mod"
 msgid "Horizon indicator"
-msgstr ""
+msgstr "Fluglaganzeige"
 
 #: .\stats\aircraft_mods.py:484
 msgctxt "aircraft_mod"
 msgid "Radio transmitter"
-msgstr ""
+msgstr "Funkgerät"
 
 #: .\stats\aircraft_mods.py:485
 msgctxt "aircraft_mod"
 msgid "Rockets"
-msgstr ""
+msgstr "Raketen"
 
 #: .\stats\aircraft_mods.py:495
 msgctxt "aircraft_mod"
 msgid "2 x ROS-82 rockets"
-msgstr ""
+msgstr "2 x Raketen, Typ ROS-82"
 
 #: .\stats\aircraft_mods.py:511 .\stats\aircraft_mods.py:517
 msgctxt "aircraft_mod"
 msgid "Reflector Gunsight"
-msgstr ""
+msgstr "Reflexvisier"
 
 #: .\stats\aircraft_mods.py:518
 msgctxt "aircraft_mod"
 msgid "Ammo counter"
-msgstr ""
+msgstr "Munitiorszähler"
 
 #: .\stats\aircraft_payloads.py:16 .\stats\aircraft_payloads.py:55
 #: .\stats\aircraft_payloads.py:74
@@ -5465,11 +5424,11 @@ msgstr "Russland"
 
 #: .\stats\models.py:1101 .\stats\models.py:1107
 msgid "Great Britain"
-msgstr ""
+msgstr "Großbritannien"
 
 #: .\stats\models.py:1102 .\stats\models.py:1108
 msgid "USA"
-msgstr ""
+msgstr "USA"
 
 #: .\stats\models.py:1103 .\stats\models.py:1111
 msgid "Germany"
@@ -5477,31 +5436,27 @@ msgstr "Deutschland"
 
 #: .\stats\models.py:1104
 msgid "Italy"
-msgstr ""
+msgstr "Italien"
 
 #: .\stats\models.py:1105
 msgid "Japan"
-msgstr ""
+msgstr "Japan"
 
 #: .\stats\models.py:1106
-#, fuzzy
-#| msgid "French"
 msgid "France"
-msgstr "Französisch"
+msgstr "Frankreich"
 
 #: .\stats\models.py:1109
 msgid "Belgium"
-msgstr ""
+msgstr "Belgien"
 
 #: .\stats\models.py:1110
-#, fuzzy
-#| msgid "Russian"
 msgid "Russia"
-msgstr "Russisch"
+msgstr "Russland"
 
 #: .\stats\models.py:1112
 msgid "Austria-Hungary"
-msgstr ""
+msgstr "Östereich-Ungarn"
 
 #: .\stats\models.py:1509
 #, fuzzy
@@ -5532,15 +5487,15 @@ msgstr ""
 
 #: .\stats\models.py:1514
 msgid "function name"
-msgstr ""
+msgstr "Funktionsnamen"
 
 #: .\stats\models.py:1516
 msgid "type"
-msgstr ""
+msgstr "Typ"
 
 #: .\stats\models.py:1517
 msgid "description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: .\stats\models.py:1518
 #, fuzzy
@@ -5551,7 +5506,7 @@ msgstr "beschädigt"
 
 #: .\stats\models.py:1519
 msgid "Image size should be 180x180"
-msgstr ""
+msgstr "Die Imagegröße soll 180x180 sein"
 
 #: .\stats\models.py:1520
 msgid "order field"
@@ -5559,27 +5514,27 @@ msgstr ""
 
 #: .\stats\models.py:1524
 msgid "award"
-msgstr ""
+msgstr "Auszeichnung"
 
 #: .\stats\models.py:1525
 msgid "awards"
-msgstr ""
+msgstr "Auszeichnungen"
 
 #: .\stats\models.py:1539
 msgid "reward"
-msgstr ""
+msgstr "Belohnung"
 
 #: .\stats\models.py:1540
 msgid "rewards"
-msgstr ""
+msgstr "Belohnungen"
 
 #: .\stats\models.py:1559
 msgid "player online"
-msgstr ""
+msgstr "Spieler Online"
 
 #: .\stats\models.py:1560
 msgid "players online"
-msgstr ""
+msgstr "Spiler Online"
 
 #: .\stats\sortie_log.py:8
 msgctxt "sortie_log"
@@ -5695,7 +5650,7 @@ msgstr "Für diese Seite muss JavaScript aktiviert werden"
 
 #: .\stats\templates\base.html:62
 msgid "Admin panel"
-msgstr ""
+msgstr "Verwaltungspanel"
 
 #: .\stats\templates\base.html:64 .\stats\templates\inline\profile_tabs.html:4
 #: .\users\templates\users\profile.html:3
@@ -5707,17 +5662,17 @@ msgstr "Profil"
 
 #: .\stats\templates\base.html:69
 msgid "Logout"
-msgstr ""
+msgstr "Logout"
 
 #: .\stats\templates\base.html:71 .\users\templates\users\registration.html:38
 msgctxt "action"
 msgid "Registration"
-msgstr ""
+msgstr "Neues Konto erstellen"
 
 #: .\stats\templates\base.html:72 .\users\templates\users\login.html:38
 msgctxt "action"
 msgid "Login"
-msgstr ""
+msgstr "Anmelden"
 
 #: .\stats\templates\base.html:81
 msgctxt "nav_menu"
@@ -5737,10 +5692,8 @@ msgstr "Rangliste"
 
 #: .\stats\templates\base.html:86 .\stats\templates\squads.html:3
 #: .\stats\templates\squads.html:13
-#, fuzzy
-#| msgid "Pilot Rankings"
 msgid "Squad Rankings"
-msgstr "Rangliste"
+msgstr "Squad-Rangliste"
 
 #: .\stats\templates\base.html:89 .\stats\templates\missions.html:3
 #: .\stats\templates\missions.html:14
@@ -5748,12 +5701,9 @@ msgid "Missions"
 msgstr "Missionen"
 
 #: .\stats\templates\base.html:90
-#, fuzzy
-#| msgctxt "preset"
-#| msgid "normal"
 msgctxt "menu"
 msgid "Overall"
-msgstr "Normal"
+msgstr "Gesamt"
 
 #: .\stats\templates\base.html:92
 msgid "Forum"
@@ -5761,7 +5711,7 @@ msgstr "Forum"
 
 #: .\stats\templates\base.html:95
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: .\stats\templates\base.html:98 .\stats\templates\main.html:201
 #: .\stats\templates\tour.html:3
@@ -5785,17 +5735,17 @@ msgstr "Einsätze"
 #: .\stats\templates\inline\pilot_tabs.html:6
 msgctxt "pilot_nav_tab"
 msgid "Virtual Lifes"
-msgstr ""
+msgstr "Virtuelle Leben"
 
 #: .\stats\templates\inline\pilot_tabs.html:7
 msgctxt "pilot_nav_tab"
 msgid "Awards"
-msgstr ""
+msgstr "Auszeichnungen"
 
 #: .\stats\templates\inline\pilot_tabs.html:8
 msgctxt "pilot_nav_tab"
 msgid "Killboard"
-msgstr ""
+msgstr "Killboard"
 
 #: .\stats\templates\inline\sortie_tabs.html:5
 msgctxt "sortie_nav_tab"
@@ -5914,19 +5864,16 @@ msgstr "Gesamt"
 
 #: .\stats\templates\main.html:259 .\stats\templates\online.html:3
 msgid "Online"
-msgstr ""
+msgstr "Online"
 
 #: .\stats\templates\main.html:262
-#, fuzzy
-#| msgctxt "pilot_sorties"
-#| msgid "pilot"
 msgctxt "online"
 msgid "pilots"
-msgstr "Pilot"
+msgstr "Piloten"
 
 #: .\stats\templates\main.html:284
 msgid "List of pilots online"
-msgstr ""
+msgstr "Liste der online Piloten"
 
 #: .\stats\templates\main.html:299
 msgid "Summary previous tour"
@@ -5946,28 +5893,19 @@ msgid "Mission"
 msgstr "Missionen"
 
 #: .\stats\templates\mission.html:19
-#, fuzzy
-#| msgctxt "sortie"
-#| msgid "Start Time"
 msgctxt "mission"
 msgid "Start Date"
 msgstr "Startzeit"
 
 #: .\stats\templates\mission.html:20
-#, fuzzy
-#| msgctxt "sortie"
-#| msgid "End Time"
 msgctxt "mission"
 msgid "End Date"
 msgstr "Endzeit"
 
 #: .\stats\templates\mission.html:21
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "rating"
 msgctxt "mission"
 msgid "Duration"
-msgstr "Bewertung"
+msgstr "Dauer"
 
 #: .\stats\templates\mission.html:23 .\stats\templates\missions.html:38
 msgid "Winning coalition"
@@ -6065,10 +6003,8 @@ msgid "on the score"
 msgstr "Auswertung"
 
 #: .\stats\templates\missions.html:19
-#, fuzzy
-#| msgid "Permissions"
 msgid "Search mission"
-msgstr "Berechtigung"
+msgstr "Suche"
 
 #: .\stats\templates\missions.html:44 .\stats\templates\missions.html:45
 #: .\stats\templates\pilot_sorties.html:28
@@ -6079,16 +6015,12 @@ msgid "Duration (hours:minutes)"
 msgstr "Dauer (Stunden:Minuten)"
 
 #: .\stats\templates\online.html:13
-#, fuzzy
-#| msgid "on the score"
 msgid "Pilots on the server"
-msgstr "Auswertung"
+msgstr "Piloten auf dem Server"
 
 #: .\stats\templates\overall.html:3 .\stats\templates\overall.html:9
-#, fuzzy
-#| msgid "Overall Pilot Rankings"
 msgid "Overall stats"
-msgstr "Gesamtübersicht der Rangliste"
+msgstr "Gesamtstatistik"
 
 #: .\stats\templates\overall.html:118
 #, fuzzy
@@ -6104,30 +6036,21 @@ msgid "rating"
 msgstr "Bewertung"
 
 #: .\stats\templates\overall.html:144
-#, fuzzy
-#| msgctxt "sortie"
-#| msgid "Detailed results"
 msgctxt "overall_top"
 msgid "Best virtual lifes"
-msgstr "Detaillierte Ergebnisse"
+msgstr "Beste virtuelle Leben"
 
 #: .\stats\templates\overall.html:172
-#, fuzzy
-#| msgid "Best Streak"
 msgctxt "overall"
 msgid "Best streak"
 msgstr "Beste Luftsiege in Folge"
 
 #: .\stats\templates\overall.html:179 .\stats\templates\overall.html:205
-#, fuzzy
-#| msgid "Streak"
 msgctxt "overall"
 msgid "streak"
-msgstr "Luftsiege"
+msgstr "Siege"
 
 #: .\stats\templates\overall.html:198
-#, fuzzy
-#| msgid "Best Ground Streak"
 msgctxt "overall"
 msgid "Best ground streak"
 msgstr "Beste zer. Bodenziele in Folge"
@@ -6345,7 +6268,7 @@ msgstr "Maschinengewehrschützen"
 #: .\stats\templates\pilot_vlife.html:235 .\stats\templates\squad.html:236
 msgctxt "total"
 msgid "Aerostats"
-msgstr ""
+msgstr "Ballons"
 
 #: .\stats\templates\pilot.html:265 .\stats\templates\pilot_sortie.html:439
 #: .\stats\templates\pilot_vlife.html:242 .\stats\templates\squad.html:243
@@ -6392,34 +6315,25 @@ msgstr "Schiffe"
 #: .\stats\templates\pilot.html:307 .\stats\templates\pilot_vlife.html:284
 #: .\stats\templates\squad.html:285
 msgid "outdated parameter"
-msgstr ""
+msgstr "veraltetes Parameter"
 
 #: .\stats\templates\pilot.html:314 .\stats\templates\pilot_sortie.html:537
 #: .\stats\templates\pilot_vlife.html:291 .\stats\templates\squad.html:292
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Heavy Tanks"
 msgctxt "total"
 msgid "Heavy Ships"
-msgstr "Schwerer Panzerkampfwagen"
+msgstr "Schwere Schiffe"
 
 #: .\stats\templates\pilot.html:321 .\stats\templates\pilot_sortie.html:551
 #: .\stats\templates\pilot_vlife.html:298 .\stats\templates\squad.html:299
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Medium Tanks"
 msgctxt "total"
 msgid "Medium Ships"
-msgstr "Mittlerer Panzerkampfwagen"
+msgstr "Mittlere Schiffe"
 
 #: .\stats\templates\pilot.html:328 .\stats\templates\pilot_sortie.html:565
 #: .\stats\templates\pilot_vlife.html:305 .\stats\templates\squad.html:306
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Light Tanks"
 msgctxt "total"
 msgid "Light Ships"
-msgstr "Leichter Panzerkampfwagen"
+msgstr "Leichte Schiffe"
 
 #: .\stats\templates\pilot.html:335 .\stats\templates\pilot_sortie.html:579
 #: .\stats\templates\pilot_vlife.html:312 .\stats\templates\squad.html:313
@@ -6455,22 +6369,19 @@ msgstr "Industrieanlagen"
 #: .\stats\templates\pilot_vlife.html:347 .\stats\templates\squad.html:348
 msgctxt "total"
 msgid "Big buildings"
-msgstr ""
+msgstr "Große Gebäuden"
 
 #: .\stats\templates\pilot.html:377 .\stats\templates\pilot_sortie.html:663
 #: .\stats\templates\pilot_vlife.html:354 .\stats\templates\squad.html:355
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Medium Tanks"
 msgctxt "total"
 msgid "Medium buildings"
-msgstr "Mittlerer Panzerkampfwagen"
+msgstr "Mittlerer Gebäuden"
 
 #: .\stats\templates\pilot.html:384 .\stats\templates\pilot_sortie.html:677
 #: .\stats\templates\pilot_vlife.html:361 .\stats\templates\squad.html:362
 msgctxt "total"
 msgid "Small buildings"
-msgstr ""
+msgstr "Kleine Gebäuden"
 
 #: .\stats\templates\pilot.html:393 .\stats\templates\pilot_vlife.html:370
 #: .\stats\templates\squad.html:371
@@ -6537,34 +6448,23 @@ msgid "Best results"
 msgstr "Detaillierte Ergebnisse"
 
 #: .\stats\templates\pilot.html:464
-#, fuzzy
-#| msgid "Best Streak"
 msgid "Best Flight time Streak"
-msgstr "Beste Luftsiege in Folge"
+msgstr "Beste Flugzeit in Folge ohne Tod"
 
 #: .\stats\templates\pilot.html:468
-#, fuzzy
-#| msgctxt "tour_top"
-#| msgid "Best pilots streak"
 msgid "Best Sorties Streak"
-msgstr "Besten Piloten in einer Serie"
+msgstr "Beste Anzahl Einsätze in Folge ohne Tod"
 
 #: .\stats\templates\pilot.html:472
-#, fuzzy
-#| msgid "Aerial victories"
 msgid "Max Aerial Victories in one sortie"
-msgstr "Luftsiege"
+msgstr "Höchster Anzahl Siege in einem Einsatz"
 
 #: .\stats\templates\pilot.html:476
-#, fuzzy
-#| msgid "Destroyed on Ground"
 msgid "Max Destroyed on Ground in one sortie"
-msgstr "Bodenziele"
+msgstr "Höchster Anzahl Bodenziele zer. in einem Einsatz"
 
 #: .\stats\templates\pilot.html:483
-#, fuzzy
-#| msgid "Current Streak"
-msgid "Current life"
+msgid "Aktuelles Leben"
 msgstr "aktuelle Abschussserie"
 
 #: .\stats\templates\pilot.html:517 .\stats\templates\pilot.html:528
@@ -6596,9 +6496,6 @@ msgid "Bomber"
 msgstr "Bomber"
 
 #: .\stats\templates\pilot.html:579 .\stats\templates\squad.html:483
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Transport"
 msgctxt "specialty"
 msgid "Transport"
 msgstr "Transporter"
@@ -6677,12 +6574,9 @@ msgstr[1] ""
 #: .\stats\templates\pilot_awards.html:3 .\stats\templates\pilot_awards.html:14
 msgctxt "pilot_awards"
 msgid "Awards"
-msgstr ""
+msgstr "Auszeichnungen"
 
 #: .\stats\templates\pilot_awards.html:15
-#, fuzzy
-#| msgctxt "pilot_sorties"
-#| msgid "pilot"
 msgctxt "pilot_awards"
 msgid "pilot"
 msgstr "Pilot"
@@ -6694,33 +6588,27 @@ msgstr "Spielerprofil war versteckt"
 #: .\stats\templates\pilot_killboard.html:3
 #: .\stats\templates\pilot_killboard.html:14
 msgid "Killboard"
-msgstr ""
+msgstr "Killboard"
 
 #: .\stats\templates\pilot_killboard.html:15
 #: .\stats\templates\pilot_vlifes.html:15
-#, fuzzy
-#| msgctxt "pilot_sorties"
-#| msgid "pilot"
 msgid "pilot"
 msgstr "Pilot"
 
 #: .\stats\templates\pilot_killboard.html:27
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Wagons"
 msgctxt "killboard"
 msgid "Won"
-msgstr "Waggons"
+msgstr "Siege"
 
 #: .\stats\templates\pilot_killboard.html:33
 msgctxt "killboard"
 msgid "Lose"
-msgstr ""
+msgstr "Verluste"
 
 #: .\stats\templates\pilot_killboard.html:39
 msgctxt "killboard"
 msgid "Won/Lose"
-msgstr ""
+msgstr "Siege/Verluste"
 
 #: .\stats\templates\pilot_not_exist.html:13
 msgid "The player did not participate in this tour"
@@ -6904,18 +6792,16 @@ msgstr "Kraftstoff"
 
 #: .\stats\templates\pilot_sortie.html:94
 msgid "payload"
-msgstr ""
+msgstr "Nutzlast"
 
 #: .\stats\templates\pilot_sortie.html:98
 msgctxt "aircraft_payload"
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: .\stats\templates\pilot_sortie.html:102
-#, fuzzy
-#| msgid "Coalitions"
 msgid "modifications"
-msgstr "Koalition"
+msgstr "Modifikationen"
 
 #: .\stats\templates\pilot_sortie.html:113
 msgctxt "sortie"
@@ -7042,7 +6928,7 @@ msgstr "Zurück zur Einsatzliste"
 #: .\stats\templates\pilot_vlifes.html:3 .\stats\templates\pilot_vlifes.html:14
 msgctxt "pilot_vlifes"
 msgid "Virtual Lifes"
-msgstr ""
+msgstr "Virtuele Leben"
 
 #: .\stats\templates\pilots.html:19
 msgid "Search pilot"
@@ -7059,7 +6945,7 @@ msgstr "Bewertung"
 
 #: .\stats\templates\squad.html:33 .\stats\templates\squad_pilots.html:33
 msgid "Go to the website of the squad"
-msgstr ""
+msgstr "Zu der Webseite von dem Squad"
 
 #: .\stats\templates\squad.html:50
 #, fuzzy
@@ -7069,28 +6955,19 @@ msgstr "Anzahl der Schüsse"
 
 #: .\stats\templates\squad.html:52
 msgid "Not enough pilots to participate in the rating"
-msgstr ""
+msgstr "Nicht genügend Piloten um in die Bewertung teilzunehmen"
 
 #: .\stats\templates\squad.html:450
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Fighters"
 msgctxt "specialty"
 msgid "Fighters"
 msgstr "Jäger"
 
 #: .\stats\templates\squad.html:461
-#, fuzzy
-#| msgctxt "specialty"
-#| msgid "Attacker"
 msgctxt "specialty"
 msgid "Attackers"
 msgstr "Schlachtflugzeug"
 
 #: .\stats\templates\squad.html:472
-#, fuzzy
-#| msgctxt "total"
-#| msgid "Bombers"
 msgctxt "specialty"
 msgid "Bombers"
 msgstr "Bomber"
@@ -7100,23 +6977,21 @@ msgid ""
 "<strong>Attention!</strong> Statistics squad - accumulative. When a player "
 "joins to squad, his past statistics does not affect the current squad "
 "statistics. Only new sorties will be added in the squad statistics."
-msgstr ""
+msgstr "<strong>Achtung!</strong> Squadstatistik ist kumulativ. Wenn ein Pilot "
+"die Squad beitritt, dann zählen seine vorherige Einsätze nicht zur Squadstatistik. "
+"Nur neue Einsätze von dem Piloten werden berücksichtigt."
 
 #: .\stats\templates\squad_not_exist.html:14
-#, fuzzy
-#| msgid "The player did not participate in this tour"
 msgid "The squad did not participate in this tour"
-msgstr "Der Spieler beteiligte sich nicht in der Luftschlacht"
+msgstr "Die Squad beteiligte sich nicht in der Luftschlacht"
 
 #: .\stats\templates\squads.html:19
 msgid "Search squad"
-msgstr ""
+msgstr "Suche"
 
 #: .\stats\templates\squads.html:113
-#, fuzzy
-#| msgid "on the number of air kills"
 msgid "on the number of squad members"
-msgstr "Anzahl der Luftsiege"
+msgstr "Anzahl der Squadmitglieder"
 
 #: .\stats\templates\tour.html:9
 #, python-format
@@ -7179,31 +7054,31 @@ msgstr "Wichtige Daten"
 
 #: .\users\apps.py:7
 msgid "Users"
-msgstr ""
+msgstr "Benutzer"
 
 #: .\users\forms.py:18
 msgid "Remember me"
-msgstr ""
+msgstr "Login speichern"
 
 #: .\users\forms.py:23
 msgid "Password"
-msgstr ""
+msgstr "Kennwort"
 
 #: .\users\forms.py:24
 msgid "Protection from bots"
-msgstr ""
+msgstr "Anti-Bot"
 
 #: .\users\forms.py:25
 msgid "Enter number associated with correct part of the aircraft."
-msgstr ""
+msgstr "Wählen Sie bitte die Zahl, die den richtigen Teil den Flugzeug zuordnet."
 
 #: .\users\forms.py:34
 msgid "Incorrect answer."
-msgstr ""
+msgstr "Falsche Antwort."
 
 #: .\users\forms.py:54 .\users\forms.py:69
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: .\users\forms.py:61 .\users\forms.py:76
 #, fuzzy
@@ -7213,43 +7088,41 @@ msgstr "Benutzernamen existiert bereits."
 
 #: .\users\forms.py:63
 msgid "Registration has already been confirmed. This user is activated."
-msgstr ""
+msgstr "Der User wurde bereits bestätigt. Der User ist bereits aktiv."
 
 #: .\users\forms.py:82 .\users\forms.py:95
 msgid "New password"
-msgstr ""
+msgstr "Neues Kennwort"
 
 #: .\users\forms.py:96
-#, fuzzy
-#| msgid "Current Tour"
 msgid "Current password"
-msgstr "Aktuelle Luftschlacht"
+msgstr "Aktuelles Kennwort"
 
 #: .\users\forms.py:97 .\users\forms.py:124
 msgid "To change the email or password you must enter current password."
-msgstr ""
+msgstr "Um ihre Email oder Kennwort zu ändern müssen Sie das aktuelle Passwort eingeben."
 
 #: .\users\forms.py:126
 msgid "Incorrect current password."
-msgstr ""
+msgstr "Falsches Passwort."
 
 #: .\users\mail.py:26
 msgid "IL2 stats: registration confirm"
-msgstr ""
+msgstr "IL2 stats: Registrierung bestätigt"
 
 #: .\users\mail.py:28
 #, python-format
 msgid "Confirmation of registration: %(url)s"
-msgstr ""
+msgstr "Registrierung bestätigen: %(url)s"
 
 #: .\users\mail.py:39
 msgid "IL2 stats: password reset"
-msgstr ""
+msgstr "IL2 stats: Kennwort zürucksetzen"
 
 #: .\users\mail.py:41
 #, python-format
 msgid "Password reset: %(url)s"
-msgstr ""
+msgstr "Kennwort zurücksetzen: %(url)s"
 
 #: .\users\models.py:40
 msgid "username"
@@ -7257,7 +7130,7 @@ msgstr "Benutzername"
 
 #: .\users\models.py:41
 msgid "Username must match the name in the game IL-2 (including squad tag)."
-msgstr ""
+msgstr "Der Benutzernamen muss gleich den Ingame-Namen bei IL-2 sein (inklusive Squad-Tag)."
 
 #: .\users\models.py:43
 msgid "A user with that username already exists."
@@ -7276,10 +7149,6 @@ msgid "active"
 msgstr "aktiv"
 
 #: .\users\models.py:48
-#, fuzzy
-#| msgid ""
-#| "Designates whether this user should be treated as active. Unselect "
-#| "thisinstead of deleting accounts."
 msgid ""
 "Designates whether this user should be treated as active. Unselect this "
 "instead of deleting accounts."
@@ -7289,7 +7158,7 @@ msgstr ""
 
 #: .\users\models.py:51
 msgid "timezone"
-msgstr ""
+msgstr "Zeitzone"
 
 #: .\users\models.py:62
 msgid "user"
@@ -7301,51 +7170,46 @@ msgstr "Benutzer"
 
 #: .\users\templates\users\login.html:3 .\users\templates\users\login.html:10
 msgid "Login"
-msgstr ""
+msgstr "Anmelden"
 
 #: .\users\templates\users\login.html:43
 msgid "Forgot password"
-msgstr ""
+msgstr "Kennwort vergessen"
 
 #: .\users\templates\users\login.html:44
 #: .\users\templates\users\registration_confirm_repeat.html:3
 #: .\users\templates\users\registration_confirm_repeat.html:10
-#, fuzzy
-#| msgctxt "action"
-#| msgid "Registration Squad"
 msgid "Registration confirmation"
-msgstr "Squad registrieren"
+msgstr "Registrierung bestätigt"
 
 #: .\users\templates\users\password_reset.html:3
 #: .\users\templates\users\password_reset.html:10 .\users\views.py:120
 msgid "Password reset"
-msgstr ""
+msgstr "Kennwort zurücksetzen"
 
 #: .\users\templates\users\password_reset.html:38
 msgctxt "action"
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: .\users\templates\users\password_reset_confirm.html:3
 #: .\users\templates\users\password_reset_confirm.html:10
 msgid "Set new password"
-msgstr ""
+msgstr "Neues Passwort setzen"
 
 #: .\users\templates\users\password_reset_confirm.html:38
 msgid "Save new password"
-msgstr ""
+msgstr "Neues Passwort speichern"
 
 #: .\users\templates\users\profile.html:42
-#, fuzzy
-#| msgid "active"
 msgid "Save"
-msgstr "aktiv"
+msgstr "Speichern"
 
 #: .\users\templates\users\registration.html:3
 #: .\users\templates\users\registration.html:10 .\users\views.py:61
 #: .\users\views.py:87 .\users\views.py:103
 msgid "Registration"
-msgstr ""
+msgstr "Registrierung"
 
 #: .\users\validators.py:6
 msgid ""
@@ -7360,36 +7224,38 @@ msgid ""
 "We send to your email address message with a link to confirm your "
 "registration."
 msgstr ""
+"Wir haben Ihnen eine Email geschickt, mit einen Link um ihre Registierung zu bestätigen."
 
 #: .\users\views.py:66 .\users\views.py:83
 msgid "Your registration has been confirmed. Now you can login."
-msgstr ""
+msgstr "Ihre Registrierung wurde bestätigt. Sie können sicht jetzt anmelden."
 
 #: .\users\views.py:88
 msgid "Incorrect link to confirm your registration."
-msgstr ""
+msgstr "Falsches Link um ihre Registrierung zu bestätigen."
 
 #: .\users\views.py:121
 msgid "We send to your email address message with a link to reset password."
-msgstr ""
+msgstr "Wir haben ihnen eine Email geschickt, womit Sie ihren Passwort zurücksetzen können."
 
 #: .\users\views.py:144
 msgid "Password successfully changed. Now you can login."
-msgstr ""
+msgstr "Der Passwort wurde erfolgreich geändert. Sie können sich anmelden."
 
 #: .\users\views.py:150
 msgid "Password reset unsuccessful"
-msgstr ""
+msgstr "Der Passwort konnte nicht zurückgesetzet werden."
 
 #: .\users\views.py:151
 msgid ""
 "Retry a using link from the email or start the password reset procedure "
 "again."
 msgstr ""
+"Bitte versuchen Sie den Link aus der Email nochmal, oder fangen Sie ganz von vorne an."
 
 #: .\users\views.py:165
 msgid "Profile successfully changed."
-msgstr ""
+msgstr "Profil erfolgreich geändert."
 
 #~ msgid "Axis"
 #~ msgstr "Achsenmächte"
