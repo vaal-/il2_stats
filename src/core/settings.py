@@ -154,6 +154,7 @@ LANGUAGES = (
     ('de', _('German')),
     ('fr', _('French')),
     ('es', _('Spanish')),
+    ('pt-br', _('Portuguese')),
 )
 
 TIME_ZONE = 'UTC'
