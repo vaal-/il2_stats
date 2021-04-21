@@ -178,6 +178,7 @@ aircraft_light,La-5FN ser.2,1,La-5FN (series 2),Ла-5ФН 2-й серии
 aircraft_light,LaGG-3 ser.29,1,LaGG-3 (series 29),ЛаГГ-3 29-й серии
 aircraft_light,MC.202 ser.VIII,1,MC.202 Series VIII,
 aircraft_light,MiG-3 ser.24,1,MiG-3 (series 24),МиГ-3 24-й серии
+aircraft_light,Nieuport 28,1,,
 aircraft_light,P-39L-1,1,,
 aircraft_light,P-40E-1,1,P-40 E-1,
 aircraft_light,P-47D-22,1,,
@@ -190,6 +191,7 @@ aircraft_light,Sopwith Dolphin,1,,
 aircraft_light,SPAD 13.C1,1,,
 aircraft_light,Spitfire Mk.IXe,1,,
 aircraft_light,Spitfire Mk.VB,1,,
+aircraft_light,Spitfire Mk.XIV,1,,
 aircraft_light,Tempest Mk.V ser.2,1,,
 aircraft_light,Yak-1 ser.69,1,Yak-1 (series 69),Як-1 69-й серии
 aircraft_light,Yak-1B ser.127,1,Yak-1B (series 127),Як-1б 127-й серии
@@ -712,6 +714,10 @@ explosion,HE_015mm_57g_2g_building,0,,
 explosion,HE_015mm_57g_2g_ground,0,,
 explosion,HE_015mm_57g_2g_object,0,,
 explosion,HE_015mm_57g_2g_water,0,,
+explosion,HE_020mm_120g_6g_building,0,,
+explosion,HE_020mm_120g_6g_ground,0,,
+explosion,HE_020mm_120g_6g_object,0,,
+explosion,HE_020mm_120g_6g_water,0,,
 explosion,HE_020mm_130g_11g_building,0,,
 explosion,HE_020mm_130g_11g_ground,0,,
 explosion,HE_020mm_130g_11g_object,0,,
@@ -930,6 +936,10 @@ explosion,HE_155mm_43kg_7kg_building,0,,
 explosion,HE_155mm_43kg_7kg_ground,0,,
 explosion,HE_155mm_43kg_7kg_object,0,,
 explosion,HE_155mm_43kg_7kg_water,0,,
+explosion,HE_155mm_45kg_5kg_building,0,,
+explosion,HE_155mm_45kg_5kg_ground,0,,
+explosion,HE_155mm_45kg_5kg_object,0,,
+explosion,HE_155mm_45kg_5kg_water,0,,
 explosion,HE_203mm_70kg_21kg_building,0,,
 explosion,HE_203mm_70kg_21kg_ground,0,,
 explosion,HE_203mm_70kg_21kg_object,0,,
@@ -1294,6 +1304,7 @@ parachute,CParachute,0,Parachute,Парашют
 rocket,NPC_TORPEDO_53-38,0,,
 rocket,NPC_TORPEDO_G7a-53,0,G7a,G7a
 rocket,RKT_GBR_RP3AP,0,,
+rocket,RKT_GBR_RP3AP_HIT,0,,
 rocket,RKT_GBR_RP3HE,0,,
 rocket,RKT_GER_PB1,0,,
 rocket,RKT_GER_PB1_HIT,0,,
@@ -1321,6 +1332,8 @@ searchlight,Searchlight,0,searchlight,зенитный прожектор
 searchlight,Soviet Landlight,0,searchlight,зенитный прожектор
 searchlight,Soviet Searchlight,0,searchlight,зенитный прожектор
 shell,NPC_SHELL_ENG_76_HE,0,,
+shell,NPC_SHELL_ENG_94_AP,0,,
+shell,NPC_SHELL_ENG_94_HE,0,,
 shell,NPC_SHELL_GER_105_HE,0,,
 shell,NPC_SHELL_GER_20_AP,0,,
 shell,NPC_SHELL_GER_20_HE,0,,
@@ -1356,6 +1369,7 @@ shell,NPC_SHELL_RUS_85_AP,0,,
 shell,NPC_SHELL_RUS_85_CV,0,,
 shell,NPC_SHELL_RUS_85_HE,0,,
 shell,SHELL_ENG_115_HE,0,,
+shell,SHELL_ENG_140_HE,0,,
 shell,SHELL_ENG_20x110_AP,0,,
 shell,SHELL_ENG_20x110_HE,0,,
 shell,SHELL_ENG_40x158_AP,0,,
@@ -1455,6 +1469,9 @@ tank_medium,T-34-76 UVZ 43,1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
 tank_medium,T-34/76 STZ(1942),1,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34/76 UTZ (1943),1,,
 tank_medium,T-34/76 UVZ (1943),1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
+tank_turret,_GAZ-MM-72K_T0,1,,
+tank_turret,_GAZ-MM-72K_T1,1,,
+tank_turret,_GAZ-MM-72K_T3,1,,
 tank_turret,_KV1S_T0,1,turret KV-1s,башня КВ-1С
 tank_turret,_KV1S_T1,1,,
 tank_turret,_KV1S_T2,1,,
@@ -2209,6 +2226,7 @@ truck,Ford G917 ammo,0,,
 truck,GAZ-55,0,,
 truck,GAZ-AA,0,GAZ-AA truck,грузовик ГАЗ-АА
 truck,GAZ-AA ammo,0,,
+truck,GAZ-MM 72-K,1,,
 truck,GMC CCKW 353,0,GMC CCKW truck,грузовик GMC CCKW
 truck,GMC CCKW 353 ammo,0,,
 truck,GMC CCKW 353 Fuel,0,,
@@ -2242,6 +2260,10 @@ vehicle_crew,BotPilotBalloonNPC_Ger,0,pilot balloon,
 vehicle_crew,BotPilotBalloonNPC_GER17,0,pilot balloon,
 vehicle_crew,BotPilotBalloonNPC_RAF17,0,pilot balloon,
 vehicle_crew,BotRadist_Pz6H1,0,radist,
+vehicle_crew,BotTankGAZMM72K_CoAimer,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankGAZMM72K_Commander,0,commander,
+vehicle_crew,BotTankGAZMM72K_Driver,0,driver,водитель
+vehicle_crew,BotTankGAZMM72K_Loader,0,loader,
 vehicle_crew,BotTankKV1_Commander,0,commander,
 vehicle_crew,BotTankKV1_Driver,0,driver,водитель
 vehicle_crew,BotTankKV1_Gunner,0,gunner,стрелок-наводчик
