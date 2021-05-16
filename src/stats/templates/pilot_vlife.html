@@ -181,6 +181,13 @@
                 </div>
                 {% endif %}
 
+                {% if vlife.killboard_pvp.truck %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Trucks' context 'total' %}</div>
+                    <div class="num">{{ vlife.killboard_pvp.truck }}</div>
+                </div>
+                {% endif %}
+
                 {% if vlife.killboard_pve.tank_heavy %}
                 <div class="sub_item">
                     <div class="name">{% trans 'Heavy Tanks' context 'total' %} ({% trans 'AI' context 'total' %})</div>
@@ -218,7 +225,7 @@
 
                 {% if vlife.killboard_pve.truck %}
                 <div class="sub_item">
-                    <div class="name">{% trans 'Trucks' context 'total' %}</div>
+                    <div class="name">{% trans 'Trucks' context 'total' %} ({% trans 'AI' context 'total' %})</div>
                     <div class="num">{{ vlife.killboard_pve.truck }}</div>
                 </div>
                 {% endif %}
