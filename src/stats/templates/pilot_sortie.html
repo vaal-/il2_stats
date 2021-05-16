@@ -321,6 +321,20 @@
                     </div>
                 {% endif %}
 
+                {% if sortie.killboard_pvp.truck %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Trucks' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.truck }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.truck }}
+                            &times;
+                            {{ score_dict.truck.ai }}
+                        </div>
+                    </div>
+                {% endif %}
+
                 {% if sortie.killboard_pve.tank_heavy %}
                     <div class="sub_row">
                         <div class="left">
@@ -394,7 +408,7 @@
                 {% if sortie.killboard_pve.truck %}
                     <div class="sub_row">
                         <div class="left">
-                            {% trans 'Trucks' context 'total' %}
+                            {% trans 'Trucks' context 'total' %} ({% trans 'AI' context 'total' %})
                             <span>{{ sortie.killboard_pve.truck }}</span>
                         </div>
                         <div class="right score">
