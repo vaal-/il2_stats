@@ -279,10 +279,52 @@
                     <div class="right">&nbsp;</div>
                 </div>
 
-                {% if sortie.killboard_pve.tank_heavy %}
+                {% if sortie.killboard_pvp.tank_heavy %}
                     <div class="sub_row">
                         <div class="left">
                             {% trans 'Heavy Tanks' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.tank_heavy }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.tank_heavy }}
+                            &times;
+                            {{ score_dict.tank_heavy.ai }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pvp.tank_medium %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Medium Tanks' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.tank_medium }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.tank_medium }}
+                            &times;
+                            {{ score_dict.tank_medium.ai }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pvp.tank_light %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Light Tanks' context 'total' %}
+                            <span>{{ sortie.killboard_pvp.tank_light }}</span>
+                        </div>
+                        <div class="right score">
+                            {{ sortie.killboard_pvp.tank_light }}
+                            &times;
+                            {{ score_dict.tank_light.ai }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if sortie.killboard_pve.tank_heavy %}
+                    <div class="sub_row">
+                        <div class="left">
+                            {% trans 'Heavy Tanks' context 'total' %} ({% trans 'AI' context 'total' %})
                             <span>{{ sortie.killboard_pve.tank_heavy }}</span>
                         </div>
                         <div class="right score">
@@ -296,7 +338,7 @@
                 {% if sortie.killboard_pve.tank_medium %}
                     <div class="sub_row">
                         <div class="left">
-                            {% trans 'Medium Tanks' context 'total' %}
+                            {% trans 'Medium Tanks' context 'total' %} ({% trans 'AI' context 'total' %})
                             <span>{{ sortie.killboard_pve.tank_medium }}</span>
                         </div>
                         <div class="right score">
@@ -310,7 +352,7 @@
                 {% if sortie.killboard_pve.tank_light %}
                     <div class="sub_row">
                         <div class="left">
-                            {% trans 'Light Tanks' context 'total' %}
+                            {% trans 'Light Tanks' context 'total' %} ({% trans 'AI' context 'total' %})
                             <span>{{ sortie.killboard_pve.tank_light }}</span>
                         </div>
                         <div class="right score">
