@@ -160,24 +160,45 @@
                     <div class="name">{% trans 'Destroyed ground targets' context 'total' %}</div>
                     <div class="num">{{ squad.gk_total }}</div>
                 </div>
+                
+                {% if squad.killboard_pvp.tank_heavy %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Heavy Tanks' context 'total' %}</div>
+                    <div class="num">{{ squad.killboard_pvp.tank_heavy }}</div>
+                </div>
+                {% endif %}
+
+                {% if squad.killboard_pvp.tank_medium %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Medium Tanks' context 'total' %}</div>
+                    <div class="num">{{ squad.killboard_pvp.tank_medium }}</div>
+                </div>
+                {% endif %}
+
+                {% if squad.killboard_pvp.tank_light %}
+                <div class="sub_item">
+                    <div class="name">{% trans 'Light Tanks' context 'total' %}</div>
+                    <div class="num">{{ squad.killboard_pvp.tank_light }}</div>
+                </div>
+                {% endif %}
 
                 {% if squad.killboard_pve.tank_heavy %}
                 <div class="sub_item">
-                    <div class="name">{% trans 'Heavy Tanks' context 'total' %}</div>
+                    <div class="name">{% trans 'Heavy Tanks' context 'total' %} ({% trans 'AI' context 'total' %})</div>
                     <div class="num">{{ squad.killboard_pve.tank_heavy }}</div>
                 </div>
                 {% endif %}
 
                 {% if squad.killboard_pve.tank_medium %}
                 <div class="sub_item">
-                    <div class="name">{% trans 'Medium Tanks' context 'total' %}</div>
+                    <div class="name">{% trans 'Medium Tanks' context 'total' %} ({% trans 'AI' context 'total' %})</div>
                     <div class="num">{{ squad.killboard_pve.tank_medium }}</div>
                 </div>
                 {% endif %}
 
                 {% if squad.killboard_pve.tank_light %}
                 <div class="sub_item">
-                    <div class="name">{% trans 'Light Tanks' context 'total' %}</div>
+                    <div class="name">{% trans 'Light Tanks' context 'total' %} ({% trans 'AI' context 'total' %})</div>
                     <div class="num">{{ squad.killboard_pve.tank_light }}</div>
                 </div>
                 {% endif %}
