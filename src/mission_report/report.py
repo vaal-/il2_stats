@@ -181,7 +181,7 @@ class MissionReport:
                     object_name = 'botpilot'
                 elif bot_sortie.cls_base == 'turret':
                     object_name = 'botgunner'
-                elif bot_sortie.cls_base == 'tank':
+                elif bot_sortie.cls_base in ('tank', 'vehicle'):
                     object_name = 'botdriver'
                 else:
                     raise ValueError('sortie: unknown object')
@@ -458,7 +458,7 @@ class Object:
         # бывают ситуации когда в логах запаздывает инициализация объектов связанных с игроком
         # для таких объектов нужно найти вылет
         if obj['is_playable']:
-            if self.cls_base in ('aircraft', 'turret', 'tank'):
+            if self.cls_base in ('aircraft', 'turret', 'tank', 'vehicle'):
                 sortie = mission.lost_aircraft.pop(self.id, None)
                 if sortie:
                     sortie.aircraft = self
