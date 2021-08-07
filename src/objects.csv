@@ -83,6 +83,8 @@ aircraft_gunner,BotGunner_BFF2B,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_M,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_DH4_M_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_DH4_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2_M,1,Aircraft gunner,стрелок
@@ -187,10 +189,12 @@ aircraft_light,P-47D-22,1,,
 aircraft_light,P-47D-28,1,,
 aircraft_light,P-51D-15,1,,
 aircraft_light,Pfalz D.IIIa,1,,
+aircraft_light,Pfalz D.XII,1,,
 aircraft_light,S.E.5a,1,,
 aircraft_light,Sopwith Camel,1,,
 aircraft_light,Sopwith Dolphin,1,,
 aircraft_light,SPAD 13.C1,1,,
+aircraft_light,SPAD 7.C1 150hp,1,,
 aircraft_light,Spitfire Mk.IXe,1,,
 aircraft_light,Spitfire Mk.VB,1,,
 aircraft_light,Spitfire Mk.XIV,1,,
@@ -201,6 +205,7 @@ aircraft_light,Yak-1B ser.127,1,Yak-1B (series 127),Як-1б 127-й серии
 aircraft_light,Yak-7B ser.36,1,Yak-7B (series 36),Як-7б 36-й серии
 aircraft_light,Yak-9 ser.1,1,Yak-9 series 1,Як-9 1-й серии
 aircraft_light,Yak-9T ser.1,1,Yak-9T series 1,Як-9Т 1-й серии
+aircraft_medium,Airco D.H.4,1,,
 aircraft_medium,Bf 110 E-2,1,,
 aircraft_medium,Bf 110 G-2,1,,
 aircraft_medium,Bristol F2B (F.II),1,,
@@ -425,6 +430,8 @@ aircraft_turret,Turret_Pe2s87_1,1,Pe-2 (series 87) turret,турель Пе-2 87
 aircraft_turret,Turret_Pe2s87_1M,1,Pe-2 (series 87) turret,турель Пе-2 87-й серии
 aircraft_turret,Turret_Pe2s87_2,1,Pe-2 (series 87) turret,турель Пе-2 87-й серии
 aircraft_turret,Turret_U2VS,1,U-2VS turret,турель У-2ВС
+aircraft_turret,TurretAircoDH4_1,1,Airco DH4 turret,турель Airco DH4
+aircraft_turret,TurretAircoDH4_1M,1,Airco DH4 turret,турель Airco DH4
 aircraft_turret,TurretBristolF2B_1,1,Bristol turret,турель Bristol
 aircraft_turret,TurretBristolF2BF2_1,1,Bristol turret,турель Bristol
 aircraft_turret,TurretBristolF2BF2_1_WM2,1,Bristol turret,турель Bristol
@@ -534,7 +541,9 @@ bomb,BOMB_GBR_24lb,0,,
 bomb,BOMB_GBR_GPB250,0,,
 bomb,BOMB_GBR_GPB500,0,,
 bomb,BOMB_GBR_MC1000,0,,
+bomb,BOMB_GBR_MC250MK2,0,,
 bomb,BOMB_GBR_MC500,0,,
+bomb,BOMB_GBR_MC500MK7,0,,
 bomb,BOMB_GER_10kg,0,,
 bomb,BOMB_GER_12kg,0,,
 bomb,BOMB_GER_50kg,0,,
@@ -656,8 +665,11 @@ bullet,NPC_BULLET_RUS_7-62x4,0,,
 bullet,NPC_SHELL_RUS_122_HE,0,,
 bullet,NPC_SHELL_RUS_130_HE,0,,
 bullet,NPC_SHELL_USA_155_HE,0,,
+bullet,NPC_SHELL_USA_37_CV,0,,
+bullet,NPC_SHELL_USA_37_HE,0,,
 bullet,NPC_SHELL_USA_90_CV,0,,
 bullet,NPC_SHELL_USA_90_HE,0,,
+bullet,SHELL_ENG_57x441_AP,0,,
 bullet,SHELL_GER_15x96_AP,0,,
 bullet,SHELL_GER_15x96_HE,0,,
 bullet,SHELL_GER_20x82_AP,0,,
@@ -770,6 +782,10 @@ explosion,HE_040mm_820g_71g_building,0,,
 explosion,HE_040mm_820g_71g_ground,0,,
 explosion,HE_040mm_820g_71g_object,0,,
 explosion,HE_040mm_820g_71g_water,0,,
+explosion,HE_044mm_1kg_100g_building,0,,
+explosion,HE_044mm_1kg_100g_ground,0,,
+explosion,HE_044mm_1kg_100g_object,0,,
+explosion,HE_044mm_1kg_100g_water,0,,
 explosion,HE_045mm_1kg_360g_building,0,,
 explosion,HE_045mm_1kg_360g_ground,0,,
 explosion,HE_045mm_1kg_360g_internal,0,,
@@ -1348,12 +1364,20 @@ machine_gunner,Spandau MG 08,0,,
 parachute,CParachute,0,Parachute,Парашют
 rocket,NPC_TORPEDO_53-38,0,,
 rocket,NPC_TORPEDO_G7a-53,0,G7a,G7a
+rocket,RKT_FRA_LePrieur,0,,
+rocket,RKT_FRA_LePrieurHE,0,,
 rocket,RKT_GBR_RP3AP,0,,
 rocket,RKT_GBR_RP3AP_HIT,0,,
 rocket,RKT_GBR_RP3AP_MK3,0,,
 rocket,RKT_GBR_RP3HE,0,,
 rocket,RKT_GBR_RP3HE_DOUBLE,0,,
 rocket,RKT_GBR_RP3HE_MK3,0,,
+rocket,RKT_GBR_RP3MK3AP,0,,
+rocket,RKT_GBR_RP3MK3HE,0,,
+rocket,RKT_GBR_RP3MK3TLAP,0,,
+rocket,RKT_GBR_RP3MK3TLHE,0,,
+rocket,RKT_GBR_RP3MK3TUAP,0,,
+rocket,RKT_GBR_RP3MK3TUHE,0,,
 rocket,RKT_GER_PB1,0,,
 rocket,RKT_GER_PB1_HIT,0,,
 rocket,RKT_GER_PB1_M8,0,,
@@ -1549,6 +1573,9 @@ tank_turret,_PzVI-H1_T0,1,turret Pz.Kpfw.VI Ausf.H1,башня Pz.Kpfw.VI Ausf.H
 tank_turret,_PzVI-H1_T1,1,,
 tank_turret,_PzVI-H1_T2,1,,
 tank_turret,_PzVI-H1_T3,1,,
+tank_turret,_SdKfz10-5_T0,1,,
+tank_turret,_SdKfz10-5_T1,1,,
+tank_turret,_SdKfz10-5_T2,1,,
 tank_turret,_SdKfz184_T0,1,turret Sd.Kfz.184,башня Sd.Kfz.184
 tank_turret,_SdKfz184_T2,1,turret Sd.Kfz.184,башня Sd.Kfz.184
 tank_turret,_SU122_T0,1,,
@@ -1697,12 +1724,14 @@ trash,CComplexTrigger,0,,
 trash,CCumulativeRocket,0,,
 trash,CDFMission,0,,
 trash,CDistantLOD,0,,
+trash,CDropFuelTank,0,,
 trash,CDummyObject,0,,
 trash,CEjectionPlace,0,,
 trash,CEjectorController,0,,
 trash,CFlag,0,,
 trash,CFlareGun,0,,
 trash,CForestBody,0,,
+trash,CFortification,0,,
 trash,CGameChat,0,,
 trash,CGameMission,0,,
 trash,CHK,0,,
@@ -1831,6 +1860,9 @@ trash,dot6,0,,
 trash,dottent1,0,,
 trash,dottent2,0,,
 trash,Drachen_P2,0,,
+trash,Drop Tank GB 45 gal Spit_IX,0,,
+trash,Drop Tank GB 90 gal Spit_IX,0,,
+trash,Drop Tank german 300 liters,0,,
 trash,EjectionPlace,0,,
 trash,EjectionPlace controller AI,0,,
 trash,EjectorController,0,,
@@ -1900,6 +1932,7 @@ trash,sec3,0,,
 trash,secU,0,,
 trash,Shared Group,0,,
 trash,Ship Controller AI,0,,
+trash,ShipSinkEffect,0,,
 trash,Sight_eu_antverplady,0,,
 trash,Sight_eu_beffroi,0,,
 trash,Sight_eu_keln,0,,
@@ -2296,6 +2329,7 @@ truck,Opel Blitz Ambulance,0,,
 truck,Opel Blitz ammo,0,,
 truck,Opel Blitz Tankwagen,0,,
 truck,Sd Kfz 222,0,,
+truck,Sd.Kfz.10-5,1,,
 truck,ZiS-5,0,ZiS-5 truck,грузовик ЗиС-5
 vehicle_crew,BotBoatSwain,0,boatswain,боцман
 vehicle_crew,BotCommander_KV1,0,commander,
@@ -2358,6 +2392,9 @@ vehicle_crew,BotTankPz6H1_Loader,0,loader,
 vehicle_crew,BotTankPz6H1_Radist,0,radist,
 vehicle_crew,BotTankPzIIIL_Driver,0,driver,водитель
 vehicle_crew,BotTankPzIIIL_Gunner,0,gunner,стрелок-наводчик
+vehicle_crew,BotTankSdKfz10_Commander,0,commander,
+vehicle_crew,BotTankSdKfz10_Driver,0,driver,водитель
+vehicle_crew,BotTankSdKfz10_Loader,0,loader,
 vehicle_crew,BotTankSdKfz184_Commander,0,commander,
 vehicle_crew,BotTankSdKfz184_Driver,0,driver,
 vehicle_crew,BotTankSdKfz184_Gunner,0,gunner,
@@ -2462,6 +2499,7 @@ vehicle_turret,HowitzerTurret,0,turret,башня
 vehicle_turret,Kolt Twin turret,0,,
 vehicle_turret,M8M turret,0,,
 vehicle_turret,MGC 30 turret,0,,
+vehicle_turret,Oerlikon 20 mm turret,0,,
 vehicle_turret,SKC 35 turret,0,,
 vehicle_turret,TorpedoTurret,0,,
 vehicle_turret,TurretRiffle,0,turret,башня
