@@ -606,6 +606,9 @@ class Object:
             attacker = None
         if attacker:
             self.damagers[attacker] += damage
+            # на случай когда самолет сбивают убив пилота, "не повредив" самолет
+            if self.parent:
+                self.parent.damagers[attacker] += damage
         is_friendly_fire = True if attacker and attacker.coal_id == self.coal_id else False
         self.mission.logger_event({'type': 'damage', 'damage': damage, 'pos': pos, 'attacker': attacker,
                                    'target': self, 'is_friendly_fire': is_friendly_fire})
