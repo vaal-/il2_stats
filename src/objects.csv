@@ -83,6 +83,7 @@ aircraft_gunner,BotGunner_BFF2B,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_M,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Breguet14_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2,1,Aircraft gunner,стрелок
@@ -209,6 +210,7 @@ aircraft_light,Yak-9T ser.1,1,Yak-9T series 1,Як-9Т 1-й серии
 aircraft_medium,Airco D.H.4,1,,
 aircraft_medium,Bf 110 E-2,1,,
 aircraft_medium,Bf 110 G-2,1,,
+aircraft_medium,Breguet 14.B2,1,,
 aircraft_medium,Bristol F2B (F.II),1,,
 aircraft_medium,Bristol F2B (F.III),1,,
 aircraft_medium,Halberstadt CL.II,1,,
@@ -433,6 +435,7 @@ aircraft_turret,Turret_Pe2s87_2,1,Pe-2 (series 87) turret,турель Пе-2 87
 aircraft_turret,Turret_U2VS,1,U-2VS turret,турель У-2ВС
 aircraft_turret,TurretAircoDH4_1,1,Airco DH4 turret,турель Airco DH4
 aircraft_turret,TurretAircoDH4_1M,1,Airco DH4 turret,турель Airco DH4
+aircraft_turret,TurretBreguet14_1,1,Breguet 14.B2 turret,турель Breguet 14.B2
 aircraft_turret,TurretBristolF2B_1,1,Bristol turret,турель Bristol
 aircraft_turret,TurretBristolF2BF2_1,1,Bristol turret,турель Bristol
 aircraft_turret,TurretBristolF2BF2_1_WM2,1,Bristol turret,турель Bristol
@@ -473,6 +476,8 @@ airfield,arf_caponiers_1_V_5,0,airfield shelter,аэродромное укры�
 airfield,arf_caponiers_10_H_3,0,airfield shelter,аэродромное укрытие
 airfield,arf_caponiers_11_H_5,0,airfield shelter,аэродромное укрытие
 airfield,arf_caponiers_12_H_5,0,airfield shelter,аэродромное укрытие
+airfield,arf_caponiers_13_H_1,0,airfield shelter,аэродромное укрытие
+airfield,arf_caponiers_14_H_1,0,airfield shelter,аэродромное укрытие
 airfield,arf_caponiers_2_V_5,0,airfield shelter,аэродромное укрытие
 airfield,arf_caponiers_3_V_5,0,airfield shelter,аэродромное укрытие
 airfield,arf_caponiers_4_R_6,0,airfield shelter,аэродромное укрытие
@@ -536,8 +541,12 @@ artillery_howitzer,QF 4.5-inch howitzer cart,0,,
 artillery_rocket,BM-13 turret,0,BM-13 MRLS,РСЗО БМ-13
 artillery_rocket,Sd Kfz 251 Wurfrahmen 40,0,Sd Kfz 251 Wurfrahmen 40 MRLS,РСЗО Wurframen 40
 artillery_rocket,ZiS-6 BM-13,0,BM-13 MRLS,РСЗО БМ-13
+bomb,BOMB_FRA_20kg,0,,
+bomb,BOMB_FRA_40kg,0,,
+bomb,BOMB_FRA_8kg,0,,
 bomb,BOMB_GBR_112lb,0,,
 bomb,BOMB_GBR_20lb,0,,
+bomb,BOMB_GBR_230lb,0,,
 bomb,BOMB_GBR_24lb,0,,
 bomb,BOMB_GBR_GPB250,0,,
 bomb,BOMB_GBR_GPB500,0,,
@@ -581,6 +590,7 @@ bridge,br_rd_ramp_dn,0,automobile bridge,автомобильный мост
 bridge,br_rd_ramp_up,0,automobile bridge,автомобильный мост
 bridge,br_rd_ramphi_dn,0,automobile bridge,автомобильный мост
 bridge,br_rd_ramphi_up,0,automobile bridge,автомобильный мост
+bridge,br_rd_ramphish_dn,0,bridge,мост
 bridge,br_rd_rampmed_dn,0,automobile bridge,автомобильный мост
 bridge,br_rd_rampmed_up,0,automobile bridge,автомобильный мост
 bridge,br_rd_sspnsn,0,bridge,мост
@@ -595,10 +605,12 @@ bridge,br_rd_upgrid,0,automobile bridge,автомобильный мост
 bridge,br_rw_arch,0,railway bridge,ж/д мост
 bridge,br_rw_arch170,0,bridge,мост
 bridge,br_rw_dngrid,0,railway bridge,ж/д мост
+bridge,br_rw_invarch,0,bridge,мост
 bridge,br_rw_ramp_dn,0,railway bridge,ж/д мост
 bridge,br_rw_ramp_up,0,railway bridge,ж/д мост
 bridge,br_rw_ramphi_dn,0,railway bridge,ж/д мост
 bridge,br_rw_ramphi_up,0,railway bridge,ж/д мост
+bridge,br_rw_ramphish_dn,0,bridge,мост
 bridge,br_rw_rampmed_dn,0,railway bridge,ж/д мост
 bridge,br_rw_rampmed_up,0,railway bridge,ж/д мост
 bridge,br_rw_start_dn_lft,0,railway bridge,ж/д мост
@@ -619,6 +631,7 @@ bridge,bridge_hw190,0,bridge,мост
 bridge,bridge_hw50,0,bridge,мост
 bridge,bridge_hw70,0,bridge,мост
 bridge,bridge_hw90,0,bridge,мост
+bridge,bridge_pegas,0,bridge,мост
 bridge,bridge_pontoon_100,0,pontoon bridge,понтонный мост
 bridge,bridge_railroad_100,0,railway bridge,ж/д мост
 bridge,bridge_railroad_200,0,railway bridge,ж/д мост
@@ -666,10 +679,12 @@ bullet,NPC_BULLET_RUS_7-62x4,0,,
 bullet,NPC_SHELL_RUS_122_HE,0,,
 bullet,NPC_SHELL_RUS_130_HE,0,,
 bullet,NPC_SHELL_USA_155_HE,0,,
+bullet,NPC_SHELL_USA_37_AP,0,,
 bullet,NPC_SHELL_USA_37_CV,0,,
 bullet,NPC_SHELL_USA_37_HE,0,,
 bullet,NPC_SHELL_USA_90_CV,0,,
 bullet,NPC_SHELL_USA_90_HE,0,,
+bullet,SHELL_ENG_57x390_CV,0,,
 bullet,SHELL_ENG_57x441_AP,0,,
 bullet,SHELL_GER_15x96_AP,0,,
 bullet,SHELL_GER_15x96_HE,0,,
@@ -758,6 +773,10 @@ explosion,HE_030mm_330g_72g_building,0,,
 explosion,HE_030mm_330g_72g_ground,0,,
 explosion,HE_030mm_330g_72g_object,0,,
 explosion,HE_030mm_330g_72g_water,0,,
+explosion,HE_037mm_454g_17g_building,0,,
+explosion,HE_037mm_454g_17g_ground,0,,
+explosion,HE_037mm_454g_17g_object,0,,
+explosion,HE_037mm_454g_17g_water,0,,
 explosion,HE_037mm_535g_85g_building,0,,
 explosion,HE_037mm_535g_85g_ground,0,,
 explosion,HE_037mm_535g_85g_object,0,,
@@ -771,6 +790,10 @@ explosion,HE_037mm_685g_13g_ground,0,,
 explosion,HE_037mm_685g_13g_internal,0,,
 explosion,HE_037mm_685g_13g_object,0,,
 explosion,HE_037mm_685g_13g_water,0,,
+explosion,HE_037mm_730g_39g_building,0,,
+explosion,HE_037mm_730g_39g_ground,0,,
+explosion,HE_037mm_730g_39g_object,0,,
+explosion,HE_037mm_730g_39g_water,0,,
 explosion,HE_037mm_732g_35g_building,0,,
 explosion,HE_037mm_732g_35g_ground,0,,
 explosion,HE_037mm_732g_35g_object,0,,
@@ -808,6 +831,11 @@ explosion,HE_057mm_368g_218g_building,0,,
 explosion,HE_057mm_368g_218g_ground,0,,
 explosion,HE_057mm_368g_218g_object,0,,
 explosion,HE_057mm_368g_218g_water,0,,
+explosion,HE_057mm_3kg_100g_building,0,,
+explosion,HE_057mm_3kg_100g_ground,0,,
+explosion,HE_057mm_3kg_100g_internal,0,,
+explosion,HE_057mm_3kg_100g_object,0,,
+explosion,HE_057mm_3kg_100g_water,0,,
 explosion,HE_057mm_3kg_14g_building,0,,
 explosion,HE_057mm_3kg_14g_ground,0,,
 explosion,HE_057mm_3kg_14g_internal,0,,
@@ -929,6 +957,14 @@ explosion,HE_115mm_16kg_2kg_building,0,,
 explosion,HE_115mm_16kg_2kg_ground,0,,
 explosion,HE_115mm_16kg_2kg_object,0,,
 explosion,HE_115mm_16kg_2kg_water,0,,
+explosion,HE_115mm_20kg_12kg_building,0,,
+explosion,HE_115mm_20kg_12kg_ground,0,,
+explosion,HE_115mm_20kg_12kg_object,0,,
+explosion,HE_115mm_20kg_12kg_water,0,,
+explosion,HE_115mm_8kg_4kg_building,0,,
+explosion,HE_115mm_8kg_4kg_ground,0,,
+explosion,HE_115mm_8kg_4kg_object,0,,
+explosion,HE_115mm_8kg_4kg_water,0,,
 explosion,HE_122mm_13kg_2kg_building,0,,
 explosion,HE_122mm_13kg_2kg_ground,0,,
 explosion,HE_122mm_13kg_2kg_object,0,,
@@ -980,6 +1016,10 @@ explosion,HE_152mm_49kg_1kg_ground,0,,
 explosion,HE_152mm_49kg_1kg_internal,0,,
 explosion,HE_152mm_49kg_1kg_object,0,,
 explosion,HE_152mm_49kg_1kg_water,0,,
+explosion,HE_155mm_40kg_24kg_building,0,,
+explosion,HE_155mm_40kg_24kg_ground,0,,
+explosion,HE_155mm_40kg_24kg_object,0,,
+explosion,HE_155mm_40kg_24kg_water,0,,
 explosion,HE_155mm_43kg_7kg_building,0,,
 explosion,HE_155mm_43kg_7kg_ground,0,,
 explosion,HE_155mm_43kg_7kg_object,0,,
@@ -1413,6 +1453,7 @@ searchlight,Landlight,0,landlight,посадочный прожектор
 searchlight,Searchlight,0,searchlight,зенитный прожектор
 searchlight,Soviet Landlight,0,searchlight,зенитный прожектор
 searchlight,Soviet Searchlight,0,searchlight,зенитный прожектор
+shell,NPC_SHELL_ENG_37_HE,0,,
 shell,NPC_SHELL_ENG_40_AP,0,,
 shell,NPC_SHELL_ENG_40_HE,0,,
 shell,NPC_SHELL_ENG_76_HE,0,,
@@ -1803,6 +1844,7 @@ trash,CPlaneInputController,0,,
 trash,CPlatformTank,0,,
 trash,CRobotCameraOperator,0,,
 trash,CRocket,0,,
+trash,CRope,0,,
 trash,CSharedGroup,0,,
 trash,CShip,0,,
 trash,CShipAI,0,,
@@ -1940,6 +1982,7 @@ trash,portedeparis,0,,
 trash,prefecturedelille,0,,
 trash,Rechnoy,0,,
 trash,RobotCameraOperator,0,,
+trash,Rope,0,,
 trash,Schodnya,0,,
 trash,sec1,0,,
 trash,sec2,0,,
@@ -2441,9 +2484,12 @@ vehicle_static,BL 5.5-inch howitzer,0,,
 vehicle_static,Bofors L60,0,,
 vehicle_static,Bren Mk I,0,,
 vehicle_static,Bren Mk I AA,0,,
+vehicle_static,Chain Home RX Radar,0,,
+vehicle_static,Chain Home TX Radar,0,,
 vehicle_static,Flak 38/39,0,,
 vehicle_static,Flak 43,0,,
 vehicle_static,Flakvierling 38,0,,
+vehicle_static,FuMG 41-42 Mammut Radar,0,,
 vehicle_static,FuSE 65 Radar,0,,
 vehicle_static,M5 3-inch gun,0,,
 vehicle_static,QF 17-pounder gun,0,,
