@@ -146,5 +146,6 @@ GAME_CLASSES = (
     'CVehicleTurret',
     'CVehicleTurretAI',
     'CVehicleTurretInputController',
+    'CVisorCamera',
     'CWindsock',
 )
