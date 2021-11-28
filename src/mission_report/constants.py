@@ -95,6 +95,7 @@ GAME_CLASSES = (
     'CEjectorController',
     'CFlag',
     'CFlareGun',
+    'CFlexRope',
     'CForestBody',
     'CGameChat',
     'CGameMission',
@@ -110,6 +111,8 @@ GAME_CLASSES = (
     'CPlatformTank',
     'CRobotCameraOperator',
     'CRocket',
+    'CRopeNode',
+    'CRopeSeg',
     'CSharedGroup',
     'CShip',
     'CShipAI',
@@ -148,4 +151,5 @@ GAME_CLASSES = (
     'CVehicleTurretInputController',
     'CVisorCamera',
     'CWindsock',
+    'CWireRope',
 )
