@@ -1,0 +1,22 @@
+footer .footer .wrapper .footer_coffee {
+  position: absolute;
+  top: 24px;
+  right: 0;
+}
+
+.bmc-button-kofi img {
+  width: 143px;
+  height: 37px;
+  margin-bottom: 1px;
+  box-shadow: none;
+  border: none;
+  vertical-align: middle;
+}
+
+.bmc-button-kofi:hover,
+.bmc-button-kofi:active,
+.bmc-button-kofi:focus {
+  text-decoration: none;
+  opacity: 0.85;
+  color: #ffffff;
+}

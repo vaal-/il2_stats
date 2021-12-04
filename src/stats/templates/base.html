@@ -33,6 +33,7 @@
     <link href='//fonts.googleapis.com/css?family=Cookie|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
 
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/footer_coffee.css' %}" rel="stylesheet">
     <script>
         var LANGUAGE_CODE = '{{ LANGUAGE_CODE }}';
         var TOUR_ID = {{ request.tour.id }};
@@ -197,10 +198,7 @@
                 </div>
             </div>
             <div class="footer_coffee">
-                <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/IL2stats">
-                    <img src="{% static 'bmc-new-btn-logo.svg' %}" alt="Buy us a coffee">
-                    <span style="margin-left:5px; font-size:24px;">Buy us a coffee</span>
-                </a>
+                {% include 'inline/buy_me_coffee.html' %}
             </div>
         </div>
     </div>
