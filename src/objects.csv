@@ -85,6 +85,10 @@ aircraft_gunner,BotGunner_DFWC5_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DFWC5_M_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5bwd_GER17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5bwdM_GER17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5fwd_GER17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5fwdM_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2_M,1,Aircraft gunner,стрелок
@@ -111,6 +115,11 @@ aircraft_gunner,BotGunner_He111H6side,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6side_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_He111H6top_GER41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HP400btm_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HP400fwd_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HP400fwdM_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HP400rear_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_HP400rearM_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Il2m42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Il2m42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Il2m42_RUSwi,1,Aircraft gunner,стрелок
@@ -120,10 +129,15 @@ aircraft_gunner,BotGunner_Ju87D3,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju87D3_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88btm,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88btm_GER41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88btm_GER44,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88C6top_GER41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88C6top_GER44,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88fwd,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88fwd_GER41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88fwd_GER44,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top_GER41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Ju88top_GER44,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear_femRUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear_femRUS43,1,Aircraft gunner,стрелок
@@ -151,9 +165,12 @@ aircraft_gunner,BotGunner_U2_RUSwi,1,Aircraft gunner,стрелок
 aircraft_heavy,A-20B,1,,
 aircraft_heavy,B-25D,0,,
 aircraft_heavy,B-25D (RAF),0,,
+aircraft_heavy,Gotha G.V,1,,
+aircraft_heavy,Handley Page O/400,1,,
 aircraft_heavy,He 111 H-16,1,,
 aircraft_heavy,He 111 H-6,1,,
 aircraft_heavy,Ju 88 A-4,1,,
+aircraft_heavy,Ju 88 C-6,1,,
 aircraft_heavy,Pe-2 ser.35,1,Pe-2 (series 35),Пе-2 35-й серии
 aircraft_heavy,Pe-2 ser.87,1,Pe-2 (series 87),Пе-2 87-й серии
 aircraft_light,Albatros D.Va,1,,
@@ -255,8 +272,10 @@ aircraft_pilot,BotPilot_Fw190_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190_GER41wi,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190D,1,pilot,пилот
+aircraft_pilot,BotPilot_GothaG5_GER17,1,pilot,пилот
 aircraft_pilot,BotPilot_He111,1,pilot,пилот
 aircraft_pilot,BotPilot_He111_GER41,1,pilot,пилот
+aircraft_pilot,BotPilot_HP400_RAF17,1,pilot,пилот
 aircraft_pilot,BotPilot_Hs129B2,1,pilot,пилот
 aircraft_pilot,BotPilot_Hs129B2_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Il2,1,pilot,пилот
@@ -268,6 +287,7 @@ aircraft_pilot,BotPilot_Ju52,1,pilot,пилот
 aircraft_pilot,BotPilot_Ju52_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Ju88,1,pilot,пилот
 aircraft_pilot,BotPilot_Ju88_GER41,1,pilot,пилот
+aircraft_pilot,BotPilot_Ju88_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3_RAF43,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3_RUS41,1,pilot,пилот
@@ -331,6 +351,8 @@ aircraft_pilot,BotPilotNPC_Fra,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ger,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52_GER41,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_Ju88C6_GER41,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_Ju88C6_GER44,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2_femRUS42,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2_femRUS43,0,pilot,пилот
@@ -428,6 +450,8 @@ aircraft_turret,Turret_Ju87D3,1,Ju 87 D-3 turret,турель Ju-87 D-3
 aircraft_turret,Turret_Ju88A4_1,1,Ju 88 A-4 turret,турель Ju 88 A-4
 aircraft_turret,Turret_Ju88A4_2,1,Ju 88 A-4 turret,турель Ju 88 A-4
 aircraft_turret,Turret_Ju88A4_3,1,Ju 88 A-4 turret,турель Ju 88 A-4
+aircraft_turret,Turret_Ju88C6_1,1,Ju 88 C-6 turret,турель Ju 88 C-6
+aircraft_turret,Turret_Ju88C6_1M,1,Ju 88 C-6 turret,турель Ju 88 C-6
 aircraft_turret,Turret_Pe2s35_1,1,Pe-2 (series 35) turret,турель Пе-2 35-й серии
 aircraft_turret,Turret_Pe2s35_2,1,Pe-2 (series 35) turret,турель Пе-2 35-й серии
 aircraft_turret,Turret_Pe2s87_1,1,Pe-2 (series 87) turret,турель Пе-2 87-й серии
@@ -447,6 +471,12 @@ aircraft_turret,TurretBristolF2BF3_1M,1,Bristol turret,турель Bristol
 aircraft_turret,TurretDFWC5_1,1,DFW C.V turret,турель DFW C.V
 aircraft_turret,TurretDFWC5_1M,1,DFW C.V turret,турель DFW C.V
 aircraft_turret,TurretDFWC5_1M2,1,DFW C.V turret,турель DFW C.V
+aircraft_turret,TurretGothaG5_1,1,Gotha G.V turret,турель Gotha G.V
+aircraft_turret,TurretGothaG5_1M,1,Gotha G.V turret,турель Gotha G.V
+aircraft_turret,TurretGothaG5_1M2,1,Gotha G.V turret,турель Gotha G.V
+aircraft_turret,TurretGothaG5_2,1,Gotha G.V turret,турель Gotha G.V
+aircraft_turret,TurretGothaG5_2M,1,Gotha G.V turret,турель Gotha G.V
+aircraft_turret,TurretGothaG5_2M2,1,Gotha G.V turret,турель Gotha G.V
 aircraft_turret,TurretHalberstadtCL2_1,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2_1_WM_beckAP,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2_1_WM_beckHE,1,Halberstadt turret,турель Halberstadt
@@ -461,6 +491,12 @@ aircraft_turret,TurretHalberstadtCL2au_1_WM_beckHEAP,1,Halberstadt turret,тур
 aircraft_turret,TurretHalberstadtCL2au_1_WM_TwinPar,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2au_1M,1,Halberstadt turret,турель Halberstadt
 aircraft_turret,TurretHalberstadtCL2au_1M2,1,Halberstadt turret,турель Halberstadt
+aircraft_turret,TurretHandleyPage400_1,1,Handley Page O/400 turret,турель Handley Page O/400
+aircraft_turret,TurretHandleyPage400_1M,1,Handley Page O/400 turret,турель Handley Page O/400
+aircraft_turret,TurretHandleyPage400_1M2,1,Handley Page O/400 turret,турель Handley Page O/400
+aircraft_turret,TurretHandleyPage400_2,1,Handley Page O/400 turret,турель Handley Page O/400
+aircraft_turret,TurretHandleyPage400_2M,1,Handley Page O/400 turret,турель Handley Page O/400
+aircraft_turret,TurretHandleyPage400_3,1,Handley Page O/400 turret,турель Handley Page O/400
 airfield,af_barracksround1,0,,
 airfield,af_barracksround2,0,,
 airfield,af_barrackssmall,0,,
@@ -561,14 +597,17 @@ bomb,BOMB_GBR_112lb,0,,
 bomb,BOMB_GBR_20lb,0,,
 bomb,BOMB_GBR_230lb,0,,
 bomb,BOMB_GBR_24lb,0,,
+bomb,BOMB_GBR_250lb,0,,
 bomb,BOMB_GBR_GPB250,0,,
 bomb,BOMB_GBR_GPB500,0,,
 bomb,BOMB_GBR_MC1000,0,,
 bomb,BOMB_GBR_MC250MK2,0,,
 bomb,BOMB_GBR_MC500,0,,
 bomb,BOMB_GBR_MC500MK7,0,,
+bomb,BOMB_GER_100kg,0,,
 bomb,BOMB_GER_10kg,0,,
 bomb,BOMB_GER_12kg,0,,
+bomb,BOMB_GER_300kg,0,,
 bomb,BOMB_GER_50kg,0,,
 bomb,BOMB_GER_SC1000,0,SC 1000,
 bomb,BOMB_GER_SC1000_190,0,SC 1000,
@@ -1057,6 +1096,10 @@ explosion,HE_155mm_45kg_5kg_building,0,,
 explosion,HE_155mm_45kg_5kg_ground,0,,
 explosion,HE_155mm_45kg_5kg_object,0,,
 explosion,HE_155mm_45kg_5kg_water,0,,
+explosion,HE_180mm_50kg_18kg_building,0,,
+explosion,HE_180mm_50kg_18kg_ground,0,,
+explosion,HE_180mm_50kg_18kg_object,0,,
+explosion,HE_180mm_50kg_18kg_water,0,,
 explosion,HE_203mm_70kg_21kg_building,0,,
 explosion,HE_203mm_70kg_21kg_ground,0,,
 explosion,HE_203mm_70kg_21kg_object,0,,
@@ -1074,6 +1117,14 @@ explosion,HE_210mm_41kg_10kg_building,0,,
 explosion,HE_210mm_41kg_10kg_ground,0,,
 explosion,HE_210mm_41kg_10kg_object,0,,
 explosion,HE_210mm_41kg_10kg_water,0,,
+explosion,HE_230mm_48kg_12kg_building,0,,
+explosion,HE_230mm_48kg_12kg_ground,0,,
+explosion,HE_230mm_48kg_12kg_object,0,,
+explosion,HE_230mm_48kg_12kg_water,0,,
+explosion,HE_242mm_100kg_58kg_building,0,,
+explosion,HE_242mm_100kg_58kg_ground,0,,
+explosion,HE_242mm_100kg_58kg_object,0,,
+explosion,HE_242mm_100kg_58kg_water,0,,
 explosion,HE_250mm_50kg_25kg_building,0,,
 explosion,HE_250mm_50kg_25kg_ground,0,,
 explosion,HE_250mm_50kg_25kg_object,0,,
@@ -1082,6 +1133,10 @@ explosion,HE_250mm_60kg_30kg_building,0,,
 explosion,HE_250mm_60kg_30kg_ground,0,,
 explosion,HE_250mm_60kg_30kg_object,0,,
 explosion,HE_250mm_60kg_30kg_water,0,,
+explosion,HE_255mm_104kg_63kg_building,0,,
+explosion,HE_255mm_104kg_63kg_ground,0,,
+explosion,HE_255mm_104kg_63kg_object,0,,
+explosion,HE_255mm_104kg_63kg_water,0,,
 explosion,HE_262mm_112kg_30kg_building,0,,
 explosion,HE_262mm_112kg_30kg_ground,0,,
 explosion,HE_262mm_112kg_30kg_object,0,,
@@ -1098,6 +1153,10 @@ explosion,HE_280mm_82kg_50kg_building,0,,
 explosion,HE_280mm_82kg_50kg_ground,0,,
 explosion,HE_280mm_82kg_50kg_object,0,,
 explosion,HE_280mm_82kg_50kg_water,0,,
+explosion,HE_317mm_113kg_50kg_building,0,,
+explosion,HE_317mm_113kg_50kg_ground,0,,
+explosion,HE_317mm_113kg_50kg_object,0,,
+explosion,HE_317mm_113kg_50kg_water,0,,
 explosion,HE_322mm_232kg_101kg_building,0,,
 explosion,HE_322mm_232kg_101kg_ground,0,,
 explosion,HE_322mm_232kg_101kg_object,0,,
@@ -1106,6 +1165,10 @@ explosion,HE_328mm_213kg_66kg_building,0,,
 explosion,HE_328mm_213kg_66kg_ground,0,,
 explosion,HE_328mm_213kg_66kg_object,0,,
 explosion,HE_328mm_213kg_66kg_water,0,,
+explosion,HE_364mm_300kg_180kg_building,0,,
+explosion,HE_364mm_300kg_180kg_ground,0,,
+explosion,HE_364mm_300kg_180kg_object,0,,
+explosion,HE_364mm_300kg_180kg_water,0,,
 explosion,HE_370mm_250kg_130kg_building,0,,
 explosion,HE_370mm_250kg_130kg_ground,0,,
 explosion,HE_370mm_250kg_130kg_object,0,,
@@ -1123,6 +1186,10 @@ explosion,HE_450mm_500kg_240kg_building,0,,
 explosion,HE_450mm_500kg_240kg_ground,0,,
 explosion,HE_450mm_500kg_240kg_object,0,,
 explosion,HE_450mm_500kg_240kg_water,0,,
+explosion,HE_450mm_748kg_363kg_building,0,,
+explosion,HE_450mm_748kg_363kg_ground,0,,
+explosion,HE_450mm_748kg_363kg_object,0,,
+explosion,HE_450mm_748kg_363kg_water,0,,
 explosion,HE_533mm_500kg_300kg_water,0,,
 explosion,HE_588mm_929kg_498kg_building,0,,
 explosion,HE_588mm_929kg_498kg_ground,0,,
@@ -1793,6 +1860,7 @@ trash,BFManager,0,,
 trash,bike,0,,
 trash,Block of buildings,0,,
 trash,BlocksArray,0,,
+trash,Bomb Sight DH4,0,,
 trash,Bomb Sight He111,0,,
 trash,Bomb Sight He111,0,,
 trash,Bomb Sight HP400,0,,
@@ -2023,6 +2091,7 @@ trash,hoteldeville,0,,
 trash,Influence Area,0,,
 trash,Ju523mg4e_P2,0,,
 trash,Ju523mg4e_P3,0,,
+trash,Ju88C6_P2,0,,
 trash,kuban_block_zdravnica,0,,
 trash,kuban_lighthousebig,0,,
 trash,kuban_lighthousesmall,0,,
@@ -2557,6 +2626,8 @@ trash,Windmill1_eu_1,0,,
 trash,Windmill1_eu_2,0,,
 trash,Windsock,0,,
 truck,Austin K2 Ambulance,0,,
+truck,Bedford QLD,0,,
+truck,Bedford QLD ammo,0,,
 truck,Benz LKW 1912,0,,
 truck,Benz LKW 1912 ammo,0,,
 truck,Benz LKW 1912 open,0,,
@@ -2564,6 +2635,7 @@ truck,Benz LKW 1912 Searchlight,0,,
 truck,BZ-35,0,,
 truck,Daimler DR4,0,,
 truck,Daimler DR4 Ambulance,0,,
+truck,Daimler DR4 Winch,0,,
 truck,Dodge WC54 Ambulance,0,,
 truck,Ford G917,0,Ford G917 truck,грузовик Ford
 truck,Ford G917 ammo,0,,
@@ -2577,6 +2649,7 @@ truck,GMC CCKW 353 Fuel,0,,
 truck,Jeffery Quad,0,,
 truck,Jeffery Quad Ambulance,0,,
 truck,Jeffery Quad Searchlight,0,,
+truck,Jeffery Quad Winch,0,,
 truck,Leyland 3 Ton RAF,0,,
 truck,Leyland 3 Ton RAF ammo,0,,
 truck,Leyland 3 Ton RAF open,0,,
@@ -2762,14 +2835,18 @@ vehicle_turret,34-K turret,0,,
 vehicle_turret,39-Ju torpedo turret,0,,
 vehicle_turret,B-13 turret,0,,
 vehicle_turret,B-13 turret b,0,,
+vehicle_turret,Bofors L60 turret,0,,
 vehicle_turret,DShK G5 turret,0,,
 vehicle_turret,DShK T7 turret,0,,
 vehicle_turret,DShK turret,0,,
+vehicle_turret,DShK-AA turret,0,,
 vehicle_turret,F-34 turret,0,F-34 gun,орудие Ф-34
 vehicle_turret,Flak 30 turret,0,,
 vehicle_turret,Flak 36 turret,0,,
+vehicle_turret,Flakvierling 38 turret,0,,
 vehicle_turret,HowitzerTurret,0,turret,башня
 vehicle_turret,Kolt Twin turret,0,,
+vehicle_turret,M2.50 AA turret,0,,
 vehicle_turret,M8M turret,0,,
 vehicle_turret,MGC 30 turret,0,,
 vehicle_turret,Oerlikon 20 mm turret,0,,
@@ -2790,7 +2867,11 @@ wagon,Wagon_GondolaNB,0,train gondola,ж/д полувагон
 wagon,Wagon_Pass,0,train passenger car,ж/д пассажирский вагон
 wagon,Wagon_PassC,0,train passenger car,ж/д пассажирский вагон
 wagon,Wagon_PlatformAA-61K,0,train platform,ж/д платформа
+wagon,Wagon_PlatformAA-BoforsL60,0,,
+wagon,Wagon_PlatformAA-DShK,0,,
 wagon,Wagon_PlatformAA-Flak38,0,train platform,ж/д платформа
+wagon,Wagon_PlatformAA-Flakvierling38,0,,
+wagon,Wagon_PlatformAA-M2,0,,
 wagon,Wagon_PlatformAA-M4,0,train platform,ж/д платформа
 wagon,Wagon_PlatformAA-MG34,0,train platform,ж/д платформа
 wagon,Wagon_PlatformB,0,train platform,ж/д платформа
