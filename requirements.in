@@ -13,4 +13,4 @@ pytz==2020.1
 six==1.15.0
 static3==0.7.0
 tzlocal==2.0.0
-waitress==1.4.4
+waitress==2.1.1
