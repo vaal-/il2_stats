@@ -67,6 +67,7 @@ GAME_CLASSES = (
     'CAnimationOperator',
     'CAttachedVehicle',
     'CBallistics',
+    'CBaloonWinch',
     'CBanner',
     'CBatchBallistics',
     'CBatchExplosion',

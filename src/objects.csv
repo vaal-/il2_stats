@@ -240,6 +240,7 @@ aircraft_medium,Il-2 mod.1942,1,IL-2 AM-38,Ил-2 AM-38
 aircraft_medium,Il-2 mod.1943,1,IL-2 AM-38F,Ил-2 AM-38Ф
 aircraft_medium,Ju 87 D-3,1,,
 aircraft_medium,Me 262 A,1,,
+aircraft_medium,Mosquito F.B. Mk.VI ser.2,1,,
 aircraft_medium,P-38J-25,1,,
 aircraft_medium,U-2VS,1,U-﻿2,У-2
 aircraft_pilot,BotPilot,1,pilot,пилот
@@ -298,6 +299,7 @@ aircraft_pilot,BotPilot_LaGG3_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_Me262,1,pilot,пилот
 aircraft_pilot,BotPilot_Me262_GER44,1,pilot,пилот
+aircraft_pilot,BotPilot_Mosq_RAF43,1,pilot,пилот
 aircraft_pilot,BotPilot_P38,1,pilot,пилот
 aircraft_pilot,BotPilot_P38_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_P38_USA44,1,pilot,пилот
@@ -354,6 +356,7 @@ aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52_GER41,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju88C6_GER41,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju88C6_GER44,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_Mosq_RAF43,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2_femRUS42,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2_femRUS43,0,pilot,пилот
@@ -1821,6 +1824,7 @@ trash,art_position_small,0,,
 trash,B25D_P2,0,,
 trash,B25Draf_P2,0,,
 trash,ballgate,0,,
+trash,BaloonWinch,0,,
 trash,BAR_01,0,,
 trash,BAR_02,0,,
 trash,BAR_03,0,,
@@ -1891,6 +1895,7 @@ trash,Caquot_P2,0,,
 trash,cart,0,,
 trash,CAttachedVehicle,0,,
 trash,CBallistics,0,,
+trash,CBaloonWinch,0,,
 trash,CBanner,0,,
 trash,CBatchBallistics,0,,
 trash,CBatchExplosion,0,,
@@ -2046,6 +2051,8 @@ trash,det-object-Farm,0,,
 trash,det-object-Haystack,0,,
 trash,det-object-HouseBlue,0,,
 trash,DinamoWTR,0,,
+trash,Dive Bomb Sight Ar 234,0,,
+trash,Dive Bomb Sight Reticle Ar 234,0,,
 trash,Dogfight Mission,0,,
 trash,dot1,0,,
 trash,dot2,0,,
@@ -2082,6 +2089,7 @@ trash,Game Chat,0,,
 trash,Game Mission,0,,
 trash,guardgate1,0,,
 trash,guardhouse,0,,
+trash,GunSightMe410A1_T,0,,
 trash,hangardoubleside,0,,
 trash,hangartent1,0,,
 trash,hangartent2,0,,
@@ -2103,6 +2111,7 @@ trash,markettent1,0,,
 trash,markettent2,0,,
 trash,mg_position,0,,
 trash,millitarytower1,0,,
+trash,MosquitoFBMkVIs2_P2,0,,
 trash,MouseControlCameraOperator,0,,
 trash,noname,0,,
 trash,notredamedamiens,0,,
