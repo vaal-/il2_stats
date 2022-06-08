@@ -107,6 +107,7 @@ class Object(models.Model):
         ('building_small', 'building_small'),
         ('bullet', 'bullet'),
         ('car', 'car'),
+        ('cruise_missile', 'cruise_missile'),
         ('driver', 'driver'),
         ('explosion', 'explosion'),
         ('locomotive', 'locomotive'),

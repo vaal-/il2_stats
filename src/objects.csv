@@ -71,6 +71,10 @@ aircraft_gunner,BotGunner_B25Dtop_RUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dtop_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dtop_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_B25Dtop_USA43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B26Bfwd_USA43,0,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B26Brear_USA43,0,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B26Bside_USA43,0,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_B26Btop_USA43,0,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110E2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Bf110E2_GER41,1,Aircraft gunner,стрелок
@@ -163,8 +167,10 @@ aircraft_gunner,BotGunner_U2_RUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_RUSwi,1,Aircraft gunner,стрелок
 aircraft_heavy,A-20B,1,,
+aircraft_heavy,Ar 234 B-2,1,,
 aircraft_heavy,B-25D,0,,
 aircraft_heavy,B-25D (RAF),0,,
+aircraft_heavy,B-26B-55,0,,
 aircraft_heavy,Gotha G.V,1,,
 aircraft_heavy,Handley Page O/400,1,,
 aircraft_heavy,He 111 H-16,1,,
@@ -249,6 +255,7 @@ aircraft_pilot,BotPilot_A20B_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B_USA43,1,pilot,пилот
+aircraft_pilot,BotPilot_Ar234_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_RAF,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_RAF43,1,pilot,пилот
@@ -256,6 +263,7 @@ aircraft_pilot,BotPilot_B25D_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_USA43,1,pilot,пилот
+aircraft_pilot,BotPilot_B26B_USA43,0,pilot,пилот
 aircraft_pilot,BotPilot_Bf109,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Bf109_GER41wi,1,pilot,пилот
@@ -331,6 +339,7 @@ aircraft_pilot,BotPilot_U2_RUS41,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUSwi,1,pilot,пилот
+aircraft_pilot,BotPilot_V1_GER44,0,,
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RAF43,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RUS42,1,pilot,пилот
@@ -344,6 +353,7 @@ aircraft_pilot,BotPilotNPC_B25D_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_B25D_USA43,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_B26B_USA43,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_C47A_RAF43,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_C47A_RUS41,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_C47A_RUS42,0,pilot,пилот
@@ -433,6 +443,10 @@ aircraft_turret,Turret_B25D_3,0,B25 turret,турель B25
 aircraft_turret,Turret_B25Draf_1,0,B25 turret,турель B25
 aircraft_turret,Turret_B25Draf_2,0,B25 turret,турель B25
 aircraft_turret,Turret_B25Draf_3,0,B25 turret,турель B25
+aircraft_turret,Turret_B26B55_1,0,B26 turret,турель B26
+aircraft_turret,Turret_B26B55_2,0,B26 turret,турель B26
+aircraft_turret,Turret_B26B55_3,0,B26 turret,турель B26
+aircraft_turret,Turret_B26B55_4,0,B26 turret,турель B26
 aircraft_turret,Turret_Bf110E2,1,Bf 110 E-2 turret,турель Bf 110 E-2
 aircraft_turret,Turret_Bf110G2,1,Bf 110 G-2 turret,турель Bf 110 G-2
 aircraft_turret,Turret_he111h16_1,1,He 111 H-16 turret,турель He 111 H-16
@@ -776,6 +790,7 @@ car,GAZ-M,0,GAZ-M car,автомобиль ГАЗ-М
 car,Horch 830,0,Horch 830 car,автомобиль Horch
 car,Mercedes Kettenwagen 22,0,,
 car,Willys MB,0,,
+cruise_missile,V-1,0,,
 explosion,BombFallEffect,0,,
 explosion,BombFallEffect,0,,
 explosion,BombFallEffect,0,,
@@ -1680,6 +1695,8 @@ ship_light,Gun Ship type A,0,Gunboat,Вооружённый буксир
 ship_light,Landing Boat type A,0,Marinefährprahm Typ A,Десантная баржка Type A
 ship_light,Landing Craft LCA,0,,
 ship_light,Landing Craft LCI(L),0,,
+ship_light,Landing Craft LCM,0,,
+ship_light,Landing Craft LCT,0,,
 ship_light,Peniche type A,0,,
 ship_light,Peniche type B,0,,
 ship_light,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
@@ -1823,6 +1840,7 @@ trash,art_position_medium,0,,
 trash,art_position_small,0,,
 trash,B25D_P2,0,,
 trash,B25Draf_P2,0,,
+trash,B26B55_P2,0,,
 trash,ballgate,0,,
 trash,BaloonWinch,0,,
 trash,BAR_01,0,,
@@ -1941,6 +1959,7 @@ trash,ChurchRed,0,,
 trash,ChurchYellow,0,,
 trash,CInfluenceArea,0,,
 trash,citadelledelille,0,,
+trash,CLauncherRamp,0,,
 trash,CloudSky,0,,
 trash,ClusterGroundEffect,0,,
 trash,ClusterWaterEffect,0,,
@@ -1976,6 +1995,7 @@ trash,country_m_corner_block8,0,,
 trash,coverstructure,0,,
 trash,cow,0,,
 trash,CParachutedContainer,0,,
+trash,CParachutedJetBooster,0,,
 trash,CParatroopersCreator,0,,
 trash,CPhysPlatformRadioTurretAI,0,,
 trash,CPlane,0,,
@@ -2011,6 +2031,7 @@ trash,CTurretCamera,0,,
 trash,CTurretRadioAI,0,,
 trash,CTurretRadioAIInputController,0,,
 trash,CTurretRiffle,0,,
+trash,CUnmannedPlane,0,,
 trash,CVehicleAI,0,,
 trash,CVehicleExplosionTurret,0,,
 trash,CVehicleInputController,0,,
@@ -2135,6 +2156,8 @@ trash,Plane controller,0,,
 trash,Plane controller AI,0,,
 trash,portedeparis,0,,
 trash,prefecturedelille,0,,
+trash,Rato_L,0,,
+trash,Rato_R,0,,
 trash,Rechnoy,0,,
 trash,RobotCameraOperator,0,,
 trash,Rope,0,,
@@ -2565,6 +2588,8 @@ trash,TownHall_eu_2,0,,
 trash,Train Controller AI,0,,
 trash,trash,0,,
 trash,tunel,0,,
+trash,V1_Carriage,0,,
+trash,V1_Piston,0,,
 trash,Vehicle Tank Controller AI,0,,
 trash,Vehicle Tank Controller AI,0,,
 trash,Vehicle Truck Controller AI,0,,
@@ -2636,6 +2661,7 @@ trash,Windmill1_eu_1,0,,
 trash,Windmill1_eu_2,0,,
 trash,Windsock,0,,
 truck,Austin K2 Ambulance,0,,
+truck,Bedford QLC,0,,
 truck,Bedford QLD,0,,
 truck,Bedford QLD ammo,0,,
 truck,Benz LKW 1912,0,,
@@ -2775,6 +2801,7 @@ vehicle_static,Flakvierling 38,0,,
 vehicle_static,FuMG 41-42 Mammut Radar,0,,
 vehicle_static,FuMG-401 Freya LZ-A Radar,0,,
 vehicle_static,FuSE 65 Radar,0,,
+vehicle_static,LauncherRamp,0,,
 vehicle_static,M5 3-inch gun,0,,
 vehicle_static,Maxim Flak M14,0,,
 vehicle_static,mlbr_flooded_ship_a,0,,
@@ -2858,6 +2885,7 @@ vehicle_turret,Flakvierling 38 turret,0,,
 vehicle_turret,HowitzerTurret,0,turret,башня
 vehicle_turret,Kolt Twin turret,0,,
 vehicle_turret,M2.50 AA turret,0,,
+vehicle_turret,M2.50 AA turret (LCM),0,,
 vehicle_turret,M8M turret,0,,
 vehicle_turret,MGC 30 turret,0,,
 vehicle_turret,Oerlikon 20 mm turret,0,,

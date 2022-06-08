@@ -101,9 +101,11 @@ GAME_CLASSES = (
     'CGameChat',
     'CGameMission',
     'CInfluenceArea',
+    'CLauncherRamp',
     'CMouseControlCameraOperator',
     'CParachute',
     'CParachutedContainer',
+    'CParachutedJetBooster',
     'CParatroopersCreator',
     'CPhysPlatformRadioTurretAI',
     'CPlane',
@@ -153,4 +155,5 @@ GAME_CLASSES = (
     'CVisorCamera',
     'CWindsock',
     'CWireRope',
+    'CUnmannedPlane',
 )

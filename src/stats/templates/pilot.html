@@ -178,6 +178,13 @@
                 </div>
                 {% endif %}
 
+                {% if player.killboard_pve.cruise_missile %}
+                <div class="item">
+                    <div class="name">{% trans 'Cruise Missile' context 'total' %}</div>
+                    <div class="num">{{ layer.killboard_pve.cruise_missile }}</div>
+                </div>
+                {% endif %}
+
                 <div class="item">
                     <div class="name">{% trans 'Destroyed ground targets' context 'total' %}</div>
                     <div class="num">{{ player.gk_total }}</div>

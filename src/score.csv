@@ -23,6 +23,7 @@ building_medium,0,int
 building_small,0,int
 bullet,0,int
 car,15,int
+cruise_missile,30,int
 driver,0,int
 explosion,0,int
 flare,0,int
