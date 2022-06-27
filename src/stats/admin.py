@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.utils.translation import ugettext, ugettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 
-from .models import Object, Profile, Tour, Mission, Score, Squad, Award
+from .models import Object, Profile, Tour, Mission, Score, Squad, Award, Player
 
 
 class ReadOnlyModelAdmin(admin.ModelAdmin):
@@ -87,6 +87,23 @@ class AwardAdmin(TranslationAdmin):
     list_display = ('title', 'func', 'type', 'order')
     list_display_links = ('title', 'func')
     ordering = ['order', 'type', 'func']
+
+
+@admin.register(Player)
+class PlayerAdmin(admin.ModelAdmin):
+    list_display = ('id', 'tour', 'type', 'profile', 'fairplay', 'fairplay_time')
+    list_display_links = ('id', 'profile')
+    search_fields = ('profile__nickname',)
+    fields = ('tour', 'type', 'profile', 'fairplay', 'fairplay_time')
+    readonly_fields = ('tour', 'type', 'profile')
+    list_select_related = ('tour', 'profile')
+    actions = None
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
 
 
 if settings.DEV_MODE:
