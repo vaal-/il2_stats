@@ -13,7 +13,9 @@ aaa_light,72-K,0,72-К AAA gun,зенитная пушка 72-К
 aaa_light,Daimler M1914 FlaK 77/L27,0,,
 aaa_light,Flak 38,0,Flak 38 AAA gun,зенитное орудие Flak 38
 aaa_light,Flak 38 turret,0,Flak 38 AAA gun,зенитное орудие Flak 38
+aaa_light,Flakpanzer IV Mobelwagen,0,,
 aaa_light,M16 Half-track AAA gun,0,,
+aaa_light,Morris C9B,0,,
 aaa_light,QF 13 pounder 6 cwt,0,,
 aaa_light,QF 13 pounder 6 cwt turret,0,,
 aaa_light,Sd Kfz 10 Flak 38,0,Sd Kfz 10 APC with Flak 38 AAA gun,самоходное зенитное орудие Flak 38
@@ -589,6 +591,7 @@ armoured_vehicle,_BA-64,0,BA-64 armored car,БА-64
 armoured_vehicle,BA-10M,0,BA-10M armored car,БА-10М
 armoured_vehicle,BA-64,0,BA-64 armored car,БА-64
 armoured_vehicle,Humber Mk.IV,0,,
+armoured_vehicle,M8 Greyhound,0,,
 armoured_vehicle,Sd Kfz 251-1 Ausf.C,0,Sd Kfz 251-1 Ausf.C APC,бронетранспортёр Sd Kfz 251-1 Ausf.C
 artillery_field,53-K,0,53-К gun,орудие 53-К
 artillery_field,7.7 cm FK 96 n.A.,0,,
@@ -661,6 +664,8 @@ bomb,BOMB_USA_M65,0,,
 bomb,BOMB_USA_M66,0,,
 bomb,CLUSTER_RUS_PTAB2515,0,PTAB,ПТАБ 
 bomb,CLUSTER_RUS_PTAB2515_HIT,0,PTAB,ПТАБ 
+bomb,GRENADE_GBR_50mm_HE,0,,
+bomb,GRENADE_GBR_50mm_Smk,0,,
 bomb,test_container,0,Container,Container
 bridge,br_rd_arch,0,automobile bridge,автомобильный мост
 bridge,br_rd_arch170,0,bridge,мост
@@ -783,6 +788,8 @@ bullet,NPC_SHELL_USA_37_CV,0,,
 bullet,NPC_SHELL_USA_37_HE,0,,
 bullet,NPC_SHELL_USA_90_CV,0,,
 bullet,NPC_SHELL_USA_90_HE,0,,
+bullet,SHELL_ENG_127_CV,0,,
+bullet,SHELL_ENG_127_HE,0,,
 bullet,SHELL_ENG_57x390_CV,0,,
 bullet,SHELL_ENG_57x441_AP,0,,
 bullet,SHELL_ENG_76_AP,0,,
@@ -926,6 +933,10 @@ explosion,HE_045mm_2kg_135g_building,0,,
 explosion,HE_045mm_2kg_135g_ground,0,,
 explosion,HE_045mm_2kg_135g_object,0,,
 explosion,HE_045mm_2kg_135g_water,0,,
+explosion,HE_050mm_1kg_90g_building,0,,
+explosion,HE_050mm_1kg_90g_ground,0,,
+explosion,HE_050mm_1kg_90g_object,0,,
+explosion,HE_050mm_1kg_90g_water,0,,
 explosion,HE_050mm_2kg_175g_building,0,,
 explosion,HE_050mm_2kg_175g_ground,0,,
 explosion,HE_050mm_2kg_175g_object,0,,
@@ -1089,6 +1100,15 @@ explosion,HE_122mm_22kg_4kg_building,0,,
 explosion,HE_122mm_22kg_4kg_ground,0,,
 explosion,HE_122mm_22kg_4kg_object,0,,
 explosion,HE_122mm_22kg_4kg_water,0,,
+explosion,HE_127mm_25kg_1kg_building,0,,
+explosion,HE_127mm_25kg_1kg_ground,0,,
+explosion,HE_127mm_25kg_1kg_internal,0,,
+explosion,HE_127mm_25kg_1kg_object,0,,
+explosion,HE_127mm_25kg_1kg_water,0,,
+explosion,HE_127mm_25kg_3kg_building,0,,
+explosion,HE_127mm_25kg_3kg_ground,0,,
+explosion,HE_127mm_25kg_3kg_object,0,,
+explosion,HE_127mm_25kg_3kg_water,0,,
 explosion,HE_130mm_33kg_2kg_building,0,,
 explosion,HE_130mm_33kg_2kg_ground,0,,
 explosion,HE_130mm_33kg_2kg_internal,0,,
@@ -1259,6 +1279,7 @@ explosion,HE_810mm_2400kg_1923kg_building,0,,
 explosion,HE_810mm_2400kg_1923kg_ground,0,,
 explosion,HE_810mm_2400kg_1923kg_object,0,,
 explosion,HE_810mm_2400kg_1923kg_water,0,,
+explosion,SmokeEffect,0,,
 explosion,tnt100kg_frag130kg_expl_building,0,,
 explosion,tnt100kg_frag130kg_expl_building,0,,
 explosion,tnt100kg_frag130kg_expl_ground,0,,
@@ -1524,12 +1545,17 @@ industrial,industrial_object_OilSmall,0,fuel storage,топливное хран
 industrial,industrial_object_smallwarehouse,0,warehouse,склад
 industrial,industrial_object_zavodkorpys45m,0,factory ,завод
 industrial,industrial_object_zavodkorpys70m,0,factory ,завод
+industrial,Kran2WW1,0,,
+industrial,KranWW1,0,,
+industrial,KranWW2,0,,
 industrial,kuban_elevator,0,elevator,элеватор
 industrial,kuban_funicolare,0,funicolare,фуникулер
 industrial,kuban_funicolare1,0,funicolare,фуникулер
 industrial,kuban_funicolare2,0,funicolare,фуникулер
 industrial,kuban_railroadstation00,0,railway station facilit,строение ж/д станции
 industrial,kuban_tower,0,tower,башня
+industrial,lift,0,,
+industrial,loudspeaker_pole,0,,
 industrial,M272 artillery pillbox,0,,
 industrial,Meh_01,0,factory facility,мехдвор
 industrial,port_n_walkingpier1,0,,
@@ -1554,6 +1580,10 @@ industrial,R669 artillery pillbox,0,,
 industrial,R683 artillery pillbox,0,,
 industrial,R683 artillery pillbox 3,0,,
 industrial,Radio Beacon,0,Non-Directional Beacon,приводной радиомаяк
+industrial,railway_house,0,,
+industrial,railway_house2,0,,
+industrial,railway_light,0,,
+industrial,railway_pillar,0,,
 industrial,RL401a pillbox,0,,
 industrial,RL401a pillbox 3,0,,
 industrial,RL401a pillbox 4,0,,
@@ -1583,10 +1613,12 @@ locomotive,Locomotive_G8,0,G8 locomotive,локомотив G8
 machine_gunner,DShK,0,DShK machinegun,пулемёт ДШК
 machine_gunner,DShK Twin turret,0,DShK twin machinegun,сдвоенный пулемёт ДШК
 machine_gunner,Hotchkiss Mle 14,0,,
+machine_gunner,M1919 (LCVP) turret,0,,
 machine_gunner,M2.50,0,M2.50 machinegun,пулемёт M2.50
 machine_gunner,MG 34,0,MG 34 machinegun,пулемёт MG-34
 machine_gunner,Spandau MG 08,0,,
 parachute,CParachute,0,Parachute,Парашют
+rocket,NPC_TORPEDO_21inch,0,,
 rocket,NPC_TORPEDO_53-38,0,,
 rocket,NPC_TORPEDO_G7a-53,0,G7a,G7a
 rocket,RKT_FRA_LePrieur,0,,
@@ -1721,6 +1753,7 @@ shell,SHELL_USA_155_HE,0,,
 shell,SHELL_USA_75_AP,0,,
 shell,SHELL_USA_75_CV,0,,
 shell,SHELL_USA_75_HE,0,,
+ship_heavy,Destroyer Gleaves-class,0,,
 ship_heavy,Destroyer Type 7,0,Soviet Type 7 destroyer,Советский эсминец Тип 7
 ship_light,British AAA Peniche,0,,
 ship_light,German AAA Peniche,0,,
@@ -1732,6 +1765,8 @@ ship_light,Landing Craft LCA,0,,
 ship_light,Landing Craft LCI(L),0,,
 ship_light,Landing Craft LCM,0,,
 ship_light,Landing Craft LCT,0,,
+ship_light,Landing Craft LCVP,0,,
+ship_light,Landing Ship LST,0,,
 ship_light,Peniche type A,0,,
 ship_light,Peniche type B,0,,
 ship_light,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,Торпедный катер типа Г-5 XI-бис
@@ -1747,6 +1782,7 @@ ship_medium,Submarine Type Shch ser.10,0,Submarine Shch-10 (type Shchuka),Под
 tank_driver,BotDriver_KV1,1,driver,
 tank_driver,BotDriver_PzIII,1,driver,водитель
 tank_driver,BotDriver_T34,1,driver,водитель
+tank_heavy,Churchill IV,1,,
 tank_heavy,JagdPz IV L70,1,JagdPz IV L70,
 tank_heavy,KV-1-41,0,KV-1 1941,КВ-1 обр. 1941
 tank_heavy,KV-1-42,0,KV-1 1942,КВ-1 обр. 1942
@@ -1792,6 +1828,8 @@ tank_medium,T-34-76 UVZ 43,1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
 tank_medium,T-34/76 STZ(1942),1,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34/76 UTZ (1943),1,,
 tank_medium,T-34/76 UVZ (1943),1,T-34-76 UVZ 1943,Т-34 УВЗ обр. 1943
+tank_turret,_Churchill-IV_T1,1,,
+tank_turret,_Churchill-IV_T2,1,,
 tank_turret,_GAZ-MM-72K_T0,1,,
 tank_turret,_GAZ-MM-72K_T1,1,,
 tank_turret,_GAZ-MM-72K_T3,1,,
@@ -1802,6 +1840,7 @@ tank_turret,_KV1S_T3,1,,
 tank_turret,_M4A2_T0,1,,
 tank_turret,_M4A2_T1,1,,
 tank_turret,_M4A2_T2,1,,
+tank_turret,_M4A2_T3,1,,
 tank_turret,_PzIII-M_T1,1,,
 tank_turret,_PzIII-M_T2,1,,
 tank_turret,_PzIII-M_T3,1,,
@@ -1832,11 +1871,15 @@ tank_turret,_T34-76UVZ-43_T1,1,,
 tank_turret,_T34-76UVZ-43_T2,1,,
 tank_turret,_T34-76UVZ-43_T3,1,,
 tank_turret,TankTurret,0,,
+tank_turret,Turret_Churchill-IV,1,,
 tank_turret,Turret_PzIII-L,1,turret PzKpfw III Ausf.L,башня PzKpfw III Ausf.L
 tank_turret,Turret_PzIII-M,1,,
 tank_turret,Turret_PzIII-M,1,,
 tank_turret,Turret_PzIV-G,1,,
 tank_turret,Turret_T34-76STZ,1,turret T-34-76 STZ,башня Т-34 СТЗ
+trash,_Churchill-IV_sight1,0,,
+trash,_Churchill-IV_T2_sight1,0,,
+trash,_Churchill-IV_T3,1,,
 trash,_KV1S_T0_sight1,0,,
 trash,_KV1S_T0_sight2,0,,
 trash,_M4A2_T0_sight1,0,,
@@ -1995,6 +2038,7 @@ trash,CFortification,0,,
 trash,CGameChat,0,,
 trash,CGameMission,0,,
 trash,CGoProCamera,0,,
+trash,Chateau_Cappy_eu,0,,
 trash,CHK,0,,
 trash,Church_eu_big,0,,
 trash,Church_eu_mid1,0,,
@@ -2937,6 +2981,7 @@ vehicle_turret,39-Ju torpedo turret,0,,
 vehicle_turret,B-13 turret,0,,
 vehicle_turret,B-13 turret b,0,,
 vehicle_turret,Bofors L60 turret,0,,
+vehicle_turret,Bofors L60 twin turret,0,,
 vehicle_turret,DShK G5 turret,0,,
 vehicle_turret,DShK T7 turret,0,,
 vehicle_turret,DShK turret,0,,
@@ -2945,6 +2990,10 @@ vehicle_turret,F-34 turret,0,F-34 gun,орудие Ф-34
 vehicle_turret,Flak 30 turret,0,,
 vehicle_turret,Flak 36 turret,0,,
 vehicle_turret,Flakvierling 38 turret,0,,
+vehicle_turret,Gleaves 127mm turret,0,,
+vehicle_turret,Gleaves Oerlikon 20 mm turret,0,,
+vehicle_turret,Gleaves rangefinder turret,0,,
+vehicle_turret,Gleaves torpedo turret,0,,
 vehicle_turret,HowitzerTurret,0,turret,башня
 vehicle_turret,Kolt Twin turret,0,,
 vehicle_turret,M2.50 AA turret,0,,
