@@ -437,7 +437,7 @@ aircraft_static,static_U2VS,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_open,0,parked aircraft,самолет на стоянке
-aircraft_transport,C-47A,0,,
+aircraft_transport,C-47A,1,,
 aircraft_transport,Ju 52 3mg4e,1,,
 aircraft_turret,aircraft_turret,1,,
 aircraft_turret,Turret_A20B_1,1,A-20B turret,турель A-20B
@@ -592,7 +592,9 @@ armoured_vehicle,BA-10M,0,BA-10M armored car,БА-10М
 armoured_vehicle,BA-64,0,BA-64 armored car,БА-64
 armoured_vehicle,Humber Mk.IV,0,,
 armoured_vehicle,M8 Greyhound,0,,
+armoured_vehicle,Sd Kfz 234/2,0,,
 armoured_vehicle,Sd Kfz 251-1 Ausf.C,0,Sd Kfz 251-1 Ausf.C APC,бронетранспортёр Sd Kfz 251-1 Ausf.C
+armoured_vehicle,Universal Carrier Mk.II,0,,
 artillery_field,53-K,0,53-К gun,орудие 53-К
 artillery_field,7.7 cm FK 96 n.A.,0,,
 artillery_field,7.7 cm FK 96 n.A. cart,0,,
@@ -666,6 +668,7 @@ bomb,CLUSTER_RUS_PTAB2515,0,PTAB,ПТАБ
 bomb,CLUSTER_RUS_PTAB2515_HIT,0,PTAB,ПТАБ 
 bomb,GRENADE_GBR_50mm_HE,0,,
 bomb,GRENADE_GBR_50mm_Smk,0,,
+bomb,GRENADE_GER_NbKS_Smk,0,,
 bomb,test_container,0,Container,Container
 bridge,br_rd_arch,0,automobile bridge,автомобильный мост
 bridge,br_rd_arch170,0,bridge,мост
@@ -1584,6 +1587,7 @@ industrial,railway_house,0,,
 industrial,railway_house2,0,,
 industrial,railway_light,0,,
 industrial,railway_pillar,0,,
+industrial,railway-light,0,,
 industrial,RL401a pillbox,0,,
 industrial,RL401a pillbox 3,0,,
 industrial,RL401a pillbox 4,0,,
@@ -1795,6 +1799,7 @@ tank_heavy,Mark V (female),0,,
 tank_heavy,Mark V (male),0,,
 tank_heavy,Pz.Kpfw.VI Ausf.H,1,Pz.Kpfw.VI Ausf.H,
 tank_heavy,Pz.Kpfw.VI Ausf.H1,1,Pz.Kpfw.VI Ausf.H1,
+tank_heavy,PzKpfw V Ausf.G,1,,
 tank_heavy,Sd.Kfz.184,1,,
 tank_heavy,Sturmpanzerwagen A7V,0,,
 tank_heavy,SU-152 ChKZ (1943),1,SU-152 ChKZ (1943),СУ-152 1943
@@ -1823,6 +1828,7 @@ tank_medium,PzKpfw IV Ausf.H,1,,
 tank_medium,Schneider CA 1,0,,
 tank_medium,StuG III Ausf.C-D,0,StuG III Ausf.C-D,
 tank_medium,StuG III Ausf.F,0,StuG III Ausf.F,
+tank_medium,StuG III Ausf.G,1,,
 tank_medium,SU-122 UZTM (1943),1,,
 tank_medium,T-34-76 STZ,0,T-34-76 STZ 1942,Т-34 СТЗ обр. 1942
 tank_medium,T-34-76 STZ 41,0,T-34-76 STZ 1941,Т-34 СТЗ обр. 1941
@@ -1864,6 +1870,9 @@ tank_turret,_SdKfz10-5_T2,1,,
 tank_turret,_SdKfz184_T0,1,turret Sd.Kfz.184,башня Sd.Kfz.184
 tank_turret,_SdKfz184_T1,1,,
 tank_turret,_SdKfz184_T2,1,turret Sd.Kfz.184,башня Sd.Kfz.184
+tank_turret,_StuGIII-G_T0,1,,
+tank_turret,_StuGIII-G_T1,1,,
+tank_turret,_StuGIII-G_T2,1,,
 tank_turret,_SU122_T0,1,,
 tank_turret,_SU122_T2,1,,
 tank_turret,_SU152_T0,1,turret SU152,башня СУ-152
@@ -2921,6 +2930,10 @@ vehicle_crew,BotTankSdKfz184_Gunner,0,gunner,
 vehicle_crew,BotTankSdKfz184_Loader1,0,loader,
 vehicle_crew,BotTankSdKfz184_Loader2,0,loader,
 vehicle_crew,BotTankSdKfz184_Radist,0,radist,
+vehicle_crew,BotTankStuG3G_Commander,0,commander,
+vehicle_crew,BotTankStuG3G_Driver,0,driver,
+vehicle_crew,BotTankStuG3G_Gunner,0,gunner,
+vehicle_crew,BotTankStuG3G_MGunner,0,gunner,
 vehicle_crew,BotTankSU122_Commander,0,commander,
 vehicle_crew,BotTankSU122_Driver,0,driver,
 vehicle_crew,BotTankSU122_Gunner,0,gunner,
