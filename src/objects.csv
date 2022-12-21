@@ -220,6 +220,7 @@ aircraft_light,Pfalz D.XII,1,,
 aircraft_light,S.E.5a,1,,
 aircraft_light,Sopwith Camel,1,,
 aircraft_light,Sopwith Dolphin,1,,
+aircraft_light,Sopwith Snipe,1,,
 aircraft_light,Sopwith Triplane,1,,
 aircraft_light,SPAD 13.C1,1,,
 aircraft_light,SPAD 7.C1 150hp,1,,
@@ -427,6 +428,8 @@ aircraft_static,static_P38J25,0,parked aircraft,самолет на стоянк
 aircraft_static,static_P39L1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_P40E1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_P47D28,0,parked aircraft,самолет на стоянке
+aircraft_static,static_p51b5,0,,
+aircraft_static,static_p51b5_malcolm,0,,
 aircraft_static,static_P51D15,0,parked aircraft,самолет на стоянке
 aircraft_static,static_pe2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_pe2_open,0,parked aircraft,самолет на стоянке
@@ -2982,6 +2985,8 @@ vehicle_static,QF 17-pounder gun,0,,
 vehicle_static,QF 3.7-inch AAA gun,0,,
 vehicle_static,SCR-584 Radar,0,,
 vehicle_static,static_A7V,0,,
+vehicle_static,static_bedford_qlc,0,,
+vehicle_static,static_bedford_qld,0,,
 vehicle_static,static_BenzLKW,0,,
 vehicle_static,static_BM13,0,,
 vehicle_static,static_BoxNB,0,,
@@ -3046,6 +3051,7 @@ vehicle_turret,34-K turret,0,,
 vehicle_turret,39-Ju torpedo turret,0,,
 vehicle_turret,B-13 turret,0,,
 vehicle_turret,B-13 turret b,0,,
+vehicle_turret,Bayfield 127mm turret,0,,
 vehicle_turret,Bofors L60 turret,0,,
 vehicle_turret,Bofors L60 twin turret,0,,
 vehicle_turret,DShK G5 turret,0,,
