@@ -361,8 +361,11 @@ class MissionReport:
         pass
 
     def event_bot_eject_leave(self, tik, bot_id, parent_id, pos):
-        bot = self.get_object(object_id=bot_id)
-        if bot:
+        parent = self.get_object(object_id=parent_id, create=False)
+        # если есть родительский объект - нужно сравнить ID бота родителя с ID прыгающего
+        # если ID не совпадают - считаем это прыжком десантника
+        if parent and parent.bot and parent.bot.id == bot_id:
+            bot = parent.bot
             bot.bot_eject_leave(tik=tik, pos=pos)
             if bot.sortie:
                 self.rm_active_sortie(sortie=bot.sortie)

@@ -154,12 +154,33 @@ aircraft_gunner,BotGunner_Pe2s35rear_RUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35top_femRUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35top_femRUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35top_femRUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35top_RUS41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35top_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s35top_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35top_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87rear,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87rear_femRUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87rear_femRUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87rear_femRUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87rear_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87rear_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87rear_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87top,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87top_femRUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87top_femRUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87top_femRUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87top_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87top_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87top_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87topM_femRUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87topM_femRUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87topM_femRUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87topM_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Pe2s87topM_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_femRUS42,1,Aircraft gunner,стрелок
@@ -218,6 +239,7 @@ aircraft_light,P-51D-15,1,,
 aircraft_light,Pfalz D.IIIa,1,,
 aircraft_light,Pfalz D.XII,1,,
 aircraft_light,S.E.5a,1,,
+aircraft_light,Siemens-Schuckert D.IV,1,,
 aircraft_light,Sopwith Camel,1,,
 aircraft_light,Sopwith Dolphin,1,,
 aircraft_light,Sopwith Snipe,1,,
@@ -228,6 +250,7 @@ aircraft_light,SPAD 7.C1 180hp,1,,
 aircraft_light,Spitfire Mk.IXe,1,,
 aircraft_light,Spitfire Mk.VB,1,,
 aircraft_light,Spitfire Mk.XIV,1,,
+aircraft_light,Spitfire Mk.XIVe,1,,
 aircraft_light,Tempest Mk.V ser.2,1,,
 aircraft_light,Typhoon Mk.Ib,1,,
 aircraft_light,Yak-1 ser.69,1,Yak-1 (series 69),Як-1 69-й серии
@@ -330,6 +353,12 @@ aircraft_pilot,BotPilot_P47_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_USA43,1,pilot,пилот
 aircraft_pilot,BotPilot_P47_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_Pe2,1,pilot,пилот
+aircraft_pilot,BotPilot_Pe2_femRUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_Pe2_femRUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_Pe2_femRUSwi,1,pilot,пилот
+aircraft_pilot,BotPilot_Pe2_RUS41,1,pilot,пилот
+aircraft_pilot,BotPilot_Pe2_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_Pe2_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_Pe2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_Spad13,1,pilot,пилот
 aircraft_pilot,BotPilot_Spad13_RAF17,1,pilot,пилот
@@ -1780,6 +1809,7 @@ ship_light,Torpedo Boat G-5 series 11-bis,0,Torpedo Boat G-5 series 11-bis,То�
 ship_light,Torpedo Boat G-5 series 11-bis 213,0,Rocket Boat G-5 series 11-bis 213,Торпедный катер типа Г-5 XI-бис (проект 213)
 ship_light,Torpedo Boat type S-38,0,Schnellboot S-38,Торпедный катер типа S-38
 ship_medium,Bayfield-class attack transport,0,,
+ship_medium,Fighter Direction Tender,0,,
 ship_medium,Large Cargo Ship Design 1013,0,,
 ship_medium,Large Cargo Ship type 1,0,7000 tons cargo ship,7000-тонный сухогруз
 ship_medium,Large Tanker Ship type 1,0,14000 tons armed tanker,вооруженный 14000-тонный нефтеналивной танкер
@@ -2237,6 +2267,8 @@ trash,Fake Vehicle,0,,
 trash,fake_block,0,,
 trash,fakefield,0,,
 trash,fakefield_rnwSpawn,0,,
+trash,FDT Type 11 Radar,0,,
+trash,FDT Type 15 Radar,0,,
 trash,fence_brick1,0,,
 trash,fence_plank1,0,,
 trash,fence_stone1,0,,
@@ -3059,6 +3091,7 @@ vehicle_turret,DShK T7 turret,0,,
 vehicle_turret,DShK turret,0,,
 vehicle_turret,DShK-AA turret,0,,
 vehicle_turret,F-34 turret,0,F-34 gun,орудие Ф-34
+vehicle_turret,FDT 76mm turret,0,,
 vehicle_turret,Flak 30 turret,0,,
 vehicle_turret,Flak 36 turret,0,,
 vehicle_turret,Flakvierling 38 turret,0,,
