@@ -144,6 +144,14 @@ aircraft_gunner,BotGunner_Ju88fwd_GER44,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top_GER41,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Ju88top_GER44,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2rear_RUS41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2rear_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2rear_RUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2rear_RUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2top_RUS41,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2top_RUS42,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2top_RUS43,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_Li2top_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Me410A_GER44,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s35rear_femRUS42,1,Aircraft gunner,стрелок
@@ -203,6 +211,7 @@ aircraft_heavy,Ju 88 A-4,1,,
 aircraft_heavy,Ju 88 C-6,1,,
 aircraft_heavy,Pe-2 ser.35,1,Pe-2 (series 35),Пе-2 35-й серии
 aircraft_heavy,Pe-2 ser.87,1,Pe-2 (series 87),Пе-2 87-й серии
+aircraft_light,Albatros D.II,1,,
 aircraft_light,Albatros D.Va,1,,
 aircraft_light,Bf 109 E-7,1,,
 aircraft_light,Bf 109 F-2,1,,
@@ -231,6 +240,7 @@ aircraft_light,LaGG-3 ser.29,1,LaGG-3 (series 29),ЛаГГ-3 29-й серии
 aircraft_light,MC.202 ser.VIII,1,MC.202 Series VIII,
 aircraft_light,MiG-3 ser.24,1,MiG-3 (series 24),МиГ-3 24-й серии
 aircraft_light,Nieuport 11.C1,1,,
+aircraft_light,Nieuport 17.C1,1,,
 aircraft_light,Nieuport 28.C1,1,,
 aircraft_light,P-39L-1,1,,
 aircraft_light,P-40E-1,1,P-40 E-1,
@@ -242,7 +252,6 @@ aircraft_light,Pfalz D.IIIa,1,,
 aircraft_light,Pfalz D.XII,1,,
 aircraft_light,S.E.5a,1,,
 aircraft_light,Siemens-Schuckert D.IV,1,,
-aircraft_light,SSW D.IV,1,,
 aircraft_light,Sopwith Camel,1,,
 aircraft_light,Sopwith Dolphin,1,,
 aircraft_light,Sopwith Snipe,1,,
@@ -254,6 +263,7 @@ aircraft_light,Spitfire Mk.IXe,1,,
 aircraft_light,Spitfire Mk.VB,1,,
 aircraft_light,Spitfire Mk.XIV,1,,
 aircraft_light,Spitfire Mk.XIVe,1,,
+aircraft_light,SSW D.IV,1,,
 aircraft_light,Tempest Mk.V ser.2,1,,
 aircraft_light,Typhoon Mk.Ib,1,,
 aircraft_light,Yak-1 ser.69,1,Yak-1 (series 69),Як-1 69-й серии
@@ -338,6 +348,10 @@ aircraft_pilot,BotPilot_LaGG3_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_LaGG3_USA43,1,pilot,пилот
+aircraft_pilot,BotPilot_Li2_RUS41,1,pilot,пилот
+aircraft_pilot,BotPilot_Li2_RUS42,1,pilot,пилот
+aircraft_pilot,BotPilot_Li2_RUS43,1,pilot,пилот
+aircraft_pilot,BotPilot_Li2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_Me262,1,pilot,пилот
 aircraft_pilot,BotPilot_Me262_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_Me410A_GER44,1,pilot,пилот
@@ -406,6 +420,10 @@ aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52_GER41,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju88C6_GER41,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju88C6_GER44,1,pilot,пилот
+aircraft_pilot,BotPilotNPC_Li2_RUS41,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_Li2_RUS42,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_Li2_RUS43,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_Li2_RUSwi,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Mosq_RAF43,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_U2_femRUS42,0,pilot,пилот
@@ -476,6 +494,7 @@ aircraft_static,static_Yak1_net,0,parked aircraft,самолет на стоян
 aircraft_static,static_Yak1_open,0,parked aircraft,самолет на стоянке
 aircraft_transport,C-47A,1,,
 aircraft_transport,Ju 52 3mg4e,1,,
+aircraft_transport,Li-2,1,,
 aircraft_turret,aircraft_turret,1,,
 aircraft_turret,Turret_A20B_1,1,A-20B turret,турель A-20B
 aircraft_turret,Turret_A20B_2,1,A-20B turret,турель A-20B
@@ -512,6 +531,8 @@ aircraft_turret,Turret_Ju88A4_2,1,Ju 88 A-4 turret,турель Ju 88 A-4
 aircraft_turret,Turret_Ju88A4_3,1,Ju 88 A-4 turret,турель Ju 88 A-4
 aircraft_turret,Turret_Ju88C6_1,1,Ju 88 C-6 turret,турель Ju 88 C-6
 aircraft_turret,Turret_Ju88C6_1M,1,Ju 88 C-6 turret,турель Ju 88 C-6
+aircraft_turret,Turret_Li2_1,1,Li2 turret,турель Ли-2
+aircraft_turret,Turret_Li2_2,1,Li2 turret,турель Ли-2
 aircraft_turret,Turret_Me410A1,1,Me 410 turret,турель Me 410
 aircraft_turret,Turret_Pe2s35_1,1,Pe-2 (series 35) turret,турель Пе-2 35-й серии
 aircraft_turret,Turret_Pe2s35_2,1,Pe-2 (series 35) turret,турель Пе-2 35-й серии
@@ -2025,6 +2046,7 @@ trash,Bomb Sight DH4,0,,
 trash,Bomb Sight He111,0,,
 trash,Bomb Sight He111,0,,
 trash,Bomb Sight HP400,0,,
+trash,Bomb Sight Li2,0,,
 trash,Bomb Sight Pe2,0,,
 trash,Bomb Sight Pe2,0,,
 trash,Bombsite Aimer,0,,
@@ -2330,6 +2352,7 @@ trash,operadelille,0,,
 trash,ParatroopersCreator_C47,0,,
 trash,ParatroopersCreator_C47A,0,,
 trash,ParatroopersCreator_Ju52,0,,
+trash,ParatroopersCreator_Li2,0,,
 trash,Parseval_P2,0,,
 trash,Plane controller,0,,
 trash,Plane controller AI,0,,
@@ -2991,6 +3014,7 @@ vehicle_crew,BotTankT34UVZ43_Gunner,0,gunner,
 vehicle_crew,BotTankT34UVZ43_Loader,0,loader,
 vehicle_crew,BotTankT34UVZ43_Radist,0,radist,
 vehicle_crew,ParatrooperGER,0,paratrooper,десантник
+vehicle_crew,ParatrooperSU,0,paratrooper,
 vehicle_crew,ParatrooperUK,0,paratrooper,
 vehicle_crew,ParatrooperUS,0,paratrooper,
 vehicle_static,15 cm schwere Feldhaubitze 13,0,,
