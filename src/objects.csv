@@ -91,6 +91,8 @@ aircraft_gunner,BotGunner_DFWC5_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DFWC5_M_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_FE2b_M_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_FE2b_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_GothaG5bwd_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_GothaG5bwdM_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_GothaG5fwd_GER17,1,Aircraft gunner,стрелок
@@ -223,6 +225,7 @@ aircraft_light,Bf 109 G-6,1,,
 aircraft_light,Bf 109 G-6 Late,1,,
 aircraft_light,Bf 109 G-6AS,1,,
 aircraft_light,Bf 109 K-4,1,,
+aircraft_light,F.E.2b,1,,
 aircraft_light,Fokker D.VII,1,,
 aircraft_light,Fokker D.VIIF,1,,
 aircraft_light,Fokker D.VIII,1,,
@@ -556,6 +559,8 @@ aircraft_turret,TurretBristolF2BF3_1M,1,Bristol turret,турель Bristol
 aircraft_turret,TurretDFWC5_1,1,DFW C.V turret,турель DFW C.V
 aircraft_turret,TurretDFWC5_1M,1,DFW C.V turret,турель DFW C.V
 aircraft_turret,TurretDFWC5_1M2,1,DFW C.V turret,турель DFW C.V
+aircraft_turret,TurretFE2b_1,1,F.E.2b turret,турель F.E.2b
+aircraft_turret,TurretFE2b_1M,1,F.E.2b turret,турель F.E.2b
 aircraft_turret,TurretGothaG5_1,1,Gotha G.V turret,турель Gotha G.V
 aircraft_turret,TurretGothaG5_1M,1,Gotha G.V turret,турель Gotha G.V
 aircraft_turret,TurretGothaG5_1M2,1,Gotha G.V turret,турель Gotha G.V
@@ -1194,6 +1199,10 @@ explosion,HE_132mm_9kg_2kg_building,0,,
 explosion,HE_132mm_9kg_2kg_ground,0,,
 explosion,HE_132mm_9kg_2kg_object,0,,
 explosion,HE_132mm_9kg_2kg_water,0,,
+explosion,HE_140mm_45kg_5kg_building,0,,
+explosion,HE_140mm_45kg_5kg_ground,0,,
+explosion,HE_140mm_45kg_5kg_object,0,,
+explosion,HE_140mm_45kg_5kg_water,0,,
 explosion,HE_150mm_42kg_5kg_building,0,,
 explosion,HE_150mm_42kg_5kg_ground,0,,
 explosion,HE_150mm_42kg_5kg_object,0,,
