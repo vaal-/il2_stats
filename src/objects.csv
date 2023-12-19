@@ -192,6 +192,7 @@ aircraft_gunner,BotGunner_Pe2s87topM_femRUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUSwi,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_RE8_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_femRUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_femRUS43,1,Aircraft gunner,стрелок
@@ -238,6 +239,7 @@ aircraft_light,Fw 190 D-9,1,,
 aircraft_light,Hanriot HD.1,1,,
 aircraft_light,Hurricane Mk.II,1,,
 aircraft_light,I-16 type 24,1,I-16 Type 24,И-16 тип 24
+aircraft_light,I.A.R. 80-A,1,,
 aircraft_light,La-5 ser.8,1,La-5 (series 8),Ла-5 8-й серии
 aircraft_light,La-5F ser.38,1,,
 aircraft_light,La-5FN ser.2,1,La-5FN (series 2),Ла-5ФН 2-й серии
@@ -296,6 +298,7 @@ aircraft_medium,Me 262 A,1,,
 aircraft_medium,Me 410 A-1,1,,
 aircraft_medium,Mosquito F.B. Mk.VI ser.2,1,,
 aircraft_medium,P-38J-25,1,,
+aircraft_medium,R.E.8,1,,
 aircraft_medium,U-2VS,1,U-﻿2,У-2
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B,1,pilot,пилот
@@ -323,6 +326,7 @@ aircraft_pilot,BotPilot_C47A_RUS42,0,pilot,пилот
 aircraft_pilot,BotPilot_C47A_RUS43,0,pilot,пилот
 aircraft_pilot,BotPilot_C47A_RUSwi,0,pilot,пилот
 aircraft_pilot,BotPilot_C47A_USA43,0,pilot,пилот
+aircraft_pilot,BotPilot_CG4A_USA44,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerDr1_GER17,1,pilot,пилот
 aircraft_pilot,BotPilot_FokkerE3_GER16,1,pilot,пилот
@@ -337,6 +341,7 @@ aircraft_pilot,BotPilot_He111_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_HP400_RAF17,1,pilot,пилот
 aircraft_pilot,BotPilot_Hs129B2,1,pilot,пилот
 aircraft_pilot,BotPilot_Hs129B2_GER41,1,pilot,пилот
+aircraft_pilot,BotPilot_IAR80A_ROM41,1,pilot,пилот
 aircraft_pilot,BotPilot_Il2,1,pilot,пилот
 aircraft_pilot,BotPilot_Il2_RUS41,1,pilot,пилот
 aircraft_pilot,BotPilot_Il2_RUS42,1,pilot,пилот
@@ -420,6 +425,7 @@ aircraft_pilot,BotPilotNPC_C47A_RUS42,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_C47A_RUS43,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_C47A_RUSwi,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_C47A_USA43,0,pilot,пилот
+aircraft_pilot,BotPilotNPC_CG4A_USA44,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_Fra,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ger,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_Ju52,0,pilot,пилот
@@ -449,6 +455,7 @@ aircraft_pilot,BotPilotNPC2_Ju52,0,pilot,пилот
 aircraft_pilot,BotPilotNPC2_Ju52_GER41,1,pilot,пилот
 aircraft_static,static_A20B,0,parked aircraft,самолет на стоянке
 aircraft_static,static_a20raf,0,parked aircraft,самолет на стоянке
+aircraft_static,static_AlbatrosD5,0,parked aircraft,самолет на стоянке
 aircraft_static,static_B25D,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109,0,parked aircraft,самолет на стоянке
 aircraft_static,static_bf109_net,0,parked aircraft,самолет на стоянке
@@ -461,6 +468,7 @@ aircraft_static,static_bf110e2,0,parked aircraft,самолет на стоян�
 aircraft_static,static_bf110e2_open,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Fw190A8,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Fw190D9,0,parked aircraft,самолет на стоянке
+aircraft_static,static_HalberstadtD2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_he111,0,parked aircraft,самолет на стоянке
 aircraft_static,static_he111_open,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Hs129B2,0,parked aircraft,самолет на стоянке
@@ -482,6 +490,8 @@ aircraft_static,static_lagg3_w2,0,parked aircraft,самолет на стоян
 aircraft_static,static_Me262A,0,parked aircraft,самолет на стоянке
 aircraft_static,static_mig3,0,parked aircraft,самолет на стоянке
 aircraft_static,static_mig3_net,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Nieuport17,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Nieuport17_GBR,0,parked aircraft,самолет на стоянке
 aircraft_static,static_P38J25,0,parked aircraft,самолет на стоянке
 aircraft_static,static_P39L1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_P40E1,0,parked aircraft,самолет на стоянке
@@ -491,6 +501,9 @@ aircraft_static,static_p51b5_malcolm,0,,
 aircraft_static,static_P51D15,0,parked aircraft,самолет на стоянке
 aircraft_static,static_pe2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_pe2_open,0,parked aircraft,самолет на стоянке
+aircraft_static,static_PfalzD3a,0,parked aircraft,самолет на стоянке
+aircraft_static,static_SE5a,0,parked aircraft,самолет на стоянке
+aircraft_static,static_Spad7,0,parked aircraft,самолет на стоянке
 aircraft_static,static_SpitfireMkIXe,0,parked aircraft,самолет на стоянке
 aircraft_static,static_TempestMkVs2,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Typhoon,0,parked aircraft,самолет на стоянке
@@ -499,6 +512,7 @@ aircraft_static,static_Yak1,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_net,0,parked aircraft,самолет на стоянке
 aircraft_static,static_Yak1_open,0,parked aircraft,самолет на стоянке
 aircraft_transport,C-47A,1,,
+aircraft_transport,CG-4A,1,,
 aircraft_transport,Ju 52 3mg4e,1,,
 aircraft_transport,Li-2,1,,
 aircraft_turret,aircraft_turret,1,,
@@ -587,6 +601,8 @@ aircraft_turret,TurretHandleyPage400_1M2,1,Handley Page O/400 turret,турел�
 aircraft_turret,TurretHandleyPage400_2,1,Handley Page O/400 turret,турель Handley Page O/400
 aircraft_turret,TurretHandleyPage400_2M,1,Handley Page O/400 turret,турель Handley Page O/400
 aircraft_turret,TurretHandleyPage400_3,1,Handley Page O/400 turret,турель Handley Page O/400
+aircraft_turret,TurretRE8_1,1,R.E.8 turret,турель R.E.8
+aircraft_turret,TurretRE8_1M,1,R.E.8 turret,турель R.E.8
 airfield,af_barracksround1,0,,
 airfield,af_barracksround2,0,,
 airfield,af_barrackssmall,0,,
@@ -830,6 +846,7 @@ bullet,BULLET_ITA_12-7x81_AP,0,,
 bullet,BULLET_ITA_12-7x81_HE,0,,
 bullet,BULLET_ITA_7-7x56_AP,0,,
 bullet,BULLET_PISTOL,0,,
+bullet,BULLET_ROM_13x99_AP,0,,
 bullet,BULLET_RUS_12-7x108_AP,0,,
 bullet,BULLET_RUS_12-7x108_HE,0,,
 bullet,BULLET_RUS_7-62x54_AP,0,,
@@ -864,6 +881,7 @@ bullet,SHELL_ENG_57x441_AP,0,,
 bullet,SHELL_ENG_76_AP,0,,
 bullet,SHELL_GER_15x96_AP,0,,
 bullet,SHELL_GER_15x96_HE,0,,
+bullet,SHELL_GER_20x77_AP,0,,
 bullet,SHELL_GER_20x82_AP,0,,
 bullet,SHELL_GER_20x82_HE,0,,
 bullet,SHELL_GER_37x263_AP,0,,
@@ -932,6 +950,10 @@ explosion,HE_020mm_130g_11g_building,0,,
 explosion,HE_020mm_130g_11g_ground,0,,
 explosion,HE_020mm_130g_11g_object,0,,
 explosion,HE_020mm_130g_11g_water,0,,
+explosion,HE_020mm_137g_5g_building,0,,
+explosion,HE_020mm_137g_5g_ground,0,,
+explosion,HE_020mm_137g_5g_object,0,,
+explosion,HE_020mm_137g_5g_water,0,,
 explosion,HE_020mm_91g_3g_building,0,,
 explosion,HE_020mm_91g_3g_ground,0,,
 explosion,HE_020mm_91g_3g_object,0,,
@@ -2128,6 +2150,9 @@ trash,CFlexRope,0,,
 trash,CFokkerDr1Monitor,0,,
 trash,CForestBody,0,,
 trash,CFortification,0,,
+trash,CG4A_P2,0,,
+trash,CG4A_Troopers,0,,
+trash,CG4A_WillysMB,0,,
 trash,CGameChat,0,,
 trash,CGameMission,0,,
 trash,CGoProCamera,0,,
@@ -2218,6 +2243,7 @@ trash,CTankCommandsPool,0,,
 trash,CTankPlatformMonitor,0,,
 trash,CTerrainArray,0,,
 trash,CTorpedo,0,,
+trash,CTowHook,0,,
 trash,CTrackBody,0,,
 trash,CTrackCamera,0,,
 trash,CTrackHandler,0,,
@@ -2313,6 +2339,7 @@ trash,fence_plank1,0,,
 trash,fence_stone1,0,,
 trash,Flag,0,,
 trash,FlexRope,0,,
+trash,FlexRope100,0,,
 trash,Forest,0,,
 trash,Fort_Douaumont,0,,
 trash,Fort_vaux,0,,
@@ -2368,6 +2395,9 @@ trash,ParatroopersCreator_Li2,0,,
 trash,Parseval_P2,0,,
 trash,Plane controller,0,,
 trash,Plane controller AI,0,,
+trash,PlaneTowFlexRope,0,,
+trash,PlaneTowRopeNode,0,,
+trash,PlaneTowRopeSeg,0,,
 trash,portedeparis,0,,
 trash,power_lines,0,,
 trash,power_lines_small,0,,
@@ -2383,6 +2413,7 @@ trash,Rope,0,,
 trash,Rope1600,0,,
 trash,RopeNode,0,,
 trash,RopeSeg,0,,
+trash,RopeSeg100,0,,
 trash,rw_light,0,,
 trash,Schodnya,0,,
 trash,sec1,0,,
@@ -2408,6 +2439,18 @@ trash,Sight_eu_schifffahrtmuseum,0,,
 trash,Sight_eu_stbartholomew,0,,
 trash,Sight_eu_stlambertus,0,,
 trash,Sight_eu_stmartin,0,,
+trash,sight_fc_abbeystjeanvignesoissons,0,,
+trash,sight_fc_Chateau_de_Pierrefonds,0,,
+trash,sight_fc_chateaucompiegne,0,,
+trash,sight_fc_hotelvillesoissons,0,,
+trash,sight_fc_laoncathedral_01,0,,
+trash,sight_fc_palaisdutau,0,,
+trash,sight_fc_portedemars,0,,
+trash,sight_fc_portedemars_01,0,,
+trash,sight_fc_reims_st_remi,0,,
+trash,sight_fc_reimscathedral,0,,
+trash,sight_fc_retheltownhall,0,,
+trash,sight_fc_saintcrxgate,0,,
 trash,sight_nrmd_abbeydardenne,0,,
 trash,sight_nrmd_bayeux,0,,
 trash,sight_nrmd_caenabbey,0,,
@@ -2509,6 +2552,7 @@ trash,TestTank,0,,
 trash,TestTankPlates,0,,
 trash,Thionville_Steelworks,0,,
 trash,tonnel,0,,
+trash,TowHook,0,,
 trash,town_block_01_480x420,0,,
 trash,town_block_02_480x280,0,,
 trash,town_block_03_480x140,0,,
@@ -2641,6 +2685,7 @@ trash,town_eu_med_block_03_07,0,,
 trash,town_eu_med_block_03_08,0,,
 trash,town_eu_med_block_03_09,0,,
 trash,town_eu_med_det_01_01,0,,
+trash,town_eu_med_det_01_02,0,,
 trash,town_eu_med_det_01_03,0,,
 trash,town_eu_med_det_01_04,0,,
 trash,town_eu_med_det_01_05,0,,

@@ -148,6 +148,7 @@ GAME_CLASSES = (
     'CTankPlatformMonitor',
     'CTerrainArray',
     'CTorpedo',
+    'CTowHook',
     'CTrackBody',
     'CTrackCamera',
     'CTrackHandler',
