@@ -193,6 +193,9 @@ aircraft_gunner,BotGunner_Pe2s87topM_RUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_RE8_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_RolandC2a_GER16,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_RolandC2a_M_GER16,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_SopStrutter_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_femRUS42,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_femRUS43,1,Aircraft gunner,стрелок
@@ -214,7 +217,9 @@ aircraft_heavy,Ju 88 A-4,1,,
 aircraft_heavy,Ju 88 C-6,1,,
 aircraft_heavy,Pe-2 ser.35,1,Pe-2 (series 35),Пе-2 35-й серии
 aircraft_heavy,Pe-2 ser.87,1,Pe-2 (series 87),Пе-2 87-й серии
+aircraft_light,Airco D.H.2,1,,
 aircraft_light,Albatros D.II,1,,
+aircraft_light,Albatros D.III,1,,
 aircraft_light,Albatros D.Va,1,,
 aircraft_light,Bf 109 E-7,1,,
 aircraft_light,Bf 109 F-2,1,,
@@ -231,6 +236,7 @@ aircraft_light,Fokker D.VII,1,,
 aircraft_light,Fokker D.VIIF,1,,
 aircraft_light,Fokker D.VIII,1,,
 aircraft_light,Fokker Dr.I,1,,
+aircraft_light,Fokker E.III,1,,
 aircraft_light,Fw 190 A-3,1,,
 aircraft_light,Fw 190 A-5,1,,
 aircraft_light,Fw 190 A-6,1,,
@@ -263,6 +269,7 @@ aircraft_light,S.E.5a,1,,
 aircraft_light,Siemens-Schuckert D.IV,1,,
 aircraft_light,Sopwith Camel,1,,
 aircraft_light,Sopwith Dolphin,1,,
+aircraft_light,Sopwith Pup,1,,
 aircraft_light,Sopwith Snipe,1,,
 aircraft_light,Sopwith Triplane,1,,
 aircraft_light,SPAD 13.C1,1,,
@@ -302,6 +309,8 @@ aircraft_medium,Me 410 A-1,1,,
 aircraft_medium,Mosquito F.B. Mk.VI ser.2,1,,
 aircraft_medium,P-38J-25,1,,
 aircraft_medium,R.E.8,1,,
+aircraft_medium,Roland C.IIa,1,,
+aircraft_medium,Sopwith Strutter,1,,
 aircraft_medium,U-2VS,1,U-﻿2,У-2
 aircraft_pilot,BotPilot,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B,1,pilot,пилот
@@ -309,6 +318,7 @@ aircraft_pilot,BotPilot_A20B_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_A20B_USA43,1,pilot,пилот
+aircraft_pilot,BotPilot_AircoD2_RAF16,1,pilot,пилот
 aircraft_pilot,BotPilot_Ar234_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D,1,pilot,пилот
 aircraft_pilot,BotPilot_B25D_RAF,1,pilot,пилот
@@ -606,6 +616,11 @@ aircraft_turret,TurretHandleyPage400_2M,1,Handley Page O/400 turret,турель
 aircraft_turret,TurretHandleyPage400_3,1,Handley Page O/400 turret,турель Handley Page O/400
 aircraft_turret,TurretRE8_1,1,R.E.8 turret,турель R.E.8
 aircraft_turret,TurretRE8_1M,1,R.E.8 turret,турель R.E.8
+aircraft_turret,TurretRolandC2a_1,1,Roland C.IIa turret,турель Roland C.IIa
+aircraft_turret,TurretRolandC2a_1M,1,Roland C.IIa turret,турель Roland C.IIa
+aircraft_turret,TurretRolandC2a_1M2,1,Roland C.IIa turret,турель Roland C.IIa
+aircraft_turret,TurretSopStrutter_1,1,Sopwith Strutter turret,турель Sopwith Strutter
+aircraft_turret,TurretSopStrutter_1M,1,Sopwith Strutter turret,турель Sopwith Strutter
 airfield,af_barracksround1,0,,
 airfield,af_barracksround2,0,,
 airfield,af_barrackssmall,0,,
@@ -711,6 +726,7 @@ bomb,BOMB_GBR_20lb,0,,
 bomb,BOMB_GBR_230lb,0,,
 bomb,BOMB_GBR_24lb,0,,
 bomb,BOMB_GBR_250lb,0,,
+bomb,BOMB_GBR_65lb,0,,
 bomb,BOMB_GBR_GPB250,0,,
 bomb,BOMB_GBR_GPB500,0,,
 bomb,BOMB_GBR_MC1000,0,,
@@ -2053,6 +2069,7 @@ trash,barrackround,0,,
 trash,barracksmall,0,,
 trash,barrels,0,,
 trash,barrels_4x4,0,,
+trash,Basilica_of_Sacre_Coeur,0,,
 trash,beauxartsdelille,0,,
 trash,beffroidelamairiedelille,0,,
 trash,bench,0,,
@@ -2332,6 +2349,8 @@ trash,Drachen_P2,0,,
 trash,Drop Tank GB 45 gal Spit_IX,0,,
 trash,Drop Tank GB 90 gal Spit_IX,0,,
 trash,Drop Tank german 300 liters,0,,
+trash,Ecole_militaire,0,,
+trash,EifelTower,0,,
 trash,EjectionPlace,0,,
 trash,EjectionPlace controller AI,0,,
 trash,EjectorController,0,,
@@ -2361,9 +2380,11 @@ trash,GunSightMe410A1_T,0,,
 trash,hangardoubleside,0,,
 trash,hangartent1,0,,
 trash,hangartent2,0,,
+trash,helling,0,,
 trash,Horse_01,0,,
 trash,Horse_02,0,,
 trash,Horse_03,0,,
+trash,Hotel_des_Invalides,0,,
 trash,hoteldeville,0,,
 trash,Influence Area,0,,
 trash,Ju523mg4e_P2,0,,
@@ -2410,6 +2431,16 @@ trash,portedeparis,0,,
 trash,power_lines,0,,
 trash,power_lines_small,0,,
 trash,prefecturedelille,0,,
+trash,Race_Pylon_Double_Blue,0,,
+trash,Race_Pylon_Double_Finish,0,,
+trash,Race_Pylon_Double_Green,0,,
+trash,Race_Pylon_Double_Red,0,,
+trash,Race_Pylon_Double_Yellow,0,,
+trash,Race_Pylon_Single_Blue,0,,
+trash,Race_Pylon_Single_Finish,0,,
+trash,Race_Pylon_Single_Green,0,,
+trash,Race_Pylon_Single_Red,0,,
+trash,Race_Pylon_Single_Yellow,0,,
 trash,railway_cart,0,,
 trash,railway_lever,0,,
 trash,railway_sign,0,,
@@ -2452,6 +2483,10 @@ trash,sight_fc_Chateau_de_Pierrefonds,0,,
 trash,sight_fc_chateaucompiegne,0,,
 trash,sight_fc_hotelvillesoissons,0,,
 trash,sight_fc_laoncathedral_01,0,,
+trash,sight_fc_museelouvre1,0,,
+trash,sight_fc_museelouvre2,0,,
+trash,sight_fc_museelouvre3,0,,
+trash,Sight_fc_NotreDameDeParis,0,,
 trash,sight_fc_palaisdutau,0,,
 trash,sight_fc_portedemars,0,,
 trash,sight_fc_portedemars_01,0,,

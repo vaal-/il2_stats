@@ -1,5 +1,6 @@
 cd ../
 python -m venv --clear .venv
+".venv/Scripts/easy_install.exe" -q -U pip==20.3.4
 ".venv/Scripts/python.exe" -m pip install --quiet -r requirements.txt
 pause
 cd src
