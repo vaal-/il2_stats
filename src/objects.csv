@@ -242,6 +242,7 @@ aircraft_light,Fw 190 A-5,1,,
 aircraft_light,Fw 190 A-6,1,,
 aircraft_light,Fw 190 A-8,1,,
 aircraft_light,Fw 190 D-9,1,,
+aircraft_light,Halberstadt D.II,1,,
 aircraft_light,Hanriot HD.1,1,,
 aircraft_light,Hurricane Mk.II,1,,
 aircraft_light,I-16 type 24,1,I-16 Type 24,И-16 тип 24
@@ -298,7 +299,6 @@ aircraft_medium,Bristol F2B (F.III),1,,
 aircraft_medium,DFW C.V,1,,
 aircraft_medium,Halberstadt CL.II,1,,
 aircraft_medium,Halberstadt CL.II 200hp,1,,
-aircraft_medium,Halberstadt D.II,1,,
 aircraft_medium,Hs 129 B-2,1,,
 aircraft_medium,Il-2 mod.1941,1,IL-2 model 1941,Ил-2 модель 1941 года
 aircraft_medium,Il-2 mod.1942,1,IL-2 AM-38,Ил-2 AM-38
