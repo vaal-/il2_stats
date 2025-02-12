@@ -9,6 +9,12 @@ class Coalition:
     Entente = 3
     CentralPowers = 4
 
+    none = 5
+    Red = 6
+    Blue = 7
+    Yellow = 8
+    Green = 9
+
 
 class Country:
     neutral = 0
@@ -26,9 +32,18 @@ class Country:
     GermanyWW1 = 401
     AustriaHungary = 402
 
+    Red = 901
+    Blue = 902
+    Yellow = 903
+    Green = 904
+
 
 COUNTRIES_COALITION_DEFAULT = {
     Country.neutral: Coalition.neutral,
+    Country.Red: Coalition.neutral,
+    Country.Blue: Coalition.neutral,
+    Country.Yellow: Coalition.neutral,
+    Country.Green: Coalition.neutral,
 
     Country.USSR: Coalition.Allies,
     Country.GreatBritain: Coalition.Allies,
@@ -55,6 +70,11 @@ COALITION_ALIAS = {
     2: Coalition.coal_2,
     3: Coalition.coal_1,
     4: Coalition.coal_2,
+    5: Coalition.none,
+    6: Coalition.neutral,
+    7: Coalition.neutral,
+    8: Coalition.neutral,
+    9: Coalition.neutral,
 }
 
 
