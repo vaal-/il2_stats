@@ -87,15 +87,21 @@ aircraft_gunner,BotGunner_BFF2B_M,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_BFF2B_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Breguet14_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_DFWC5_GER16,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DFWC5_GER17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_DFWC5_M_GER16,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DFWC5_M_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_DH4_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_FE2b_M_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_FE2b_RAF17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5bwd_GER16,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_GothaG5bwd_GER17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5bwdM_GER16,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_GothaG5bwdM_GER17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5fwd_GER16,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_GothaG5fwd_GER17,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_GothaG5fwdM_GER16,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_GothaG5fwdM_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_HCL2_GER17,1,Aircraft gunner,стрелок
@@ -194,7 +200,9 @@ aircraft_gunner,BotGunner_Pe2s87topM_RUS43,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_Pe2s87topM_RUSwi,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_RE8_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_RolandC2a_GER16,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_RolandC2a_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_RolandC2a_M_GER16,1,Aircraft gunner,стрелок
+aircraft_gunner,BotGunner_RolandC2a_M_GER17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_SopStrutter_RAF17,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2,1,Aircraft gunner,стрелок
 aircraft_gunner,BotGunner_U2_femRUS42,1,Aircraft gunner,стрелок
@@ -245,6 +253,7 @@ aircraft_light,Fw 190 D-9,1,,
 aircraft_light,Halberstadt D.II,1,,
 aircraft_light,Hanriot HD.1,1,,
 aircraft_light,Hurricane Mk.II,1,,
+aircraft_light,I-153,1,,
 aircraft_light,I-16 type 24,1,I-16 Type 24,И-16 тип 24
 aircraft_light,I.A.R. 80-A,1,,
 aircraft_light,I.A.R. 80-B,1,,
@@ -252,6 +261,7 @@ aircraft_light,La-5 ser.8,1,La-5 (series 8),Ла-5 8-й серии
 aircraft_light,La-5F ser.38,1,,
 aircraft_light,La-5FN ser.2,1,La-5FN (series 2),Ла-5ФН 2-й серии
 aircraft_light,LaGG-3 ser.29,1,LaGG-3 (series 29),ЛаГГ-3 29-й серии
+aircraft_light,LaGG-3 ser.4,1,,
 aircraft_light,MC.202 ser.VIII,1,MC.202 Series VIII,
 aircraft_light,MiG-3 ser.24,1,MiG-3 (series 24),МиГ-3 24-й серии
 aircraft_light,Nieuport 11.C1,1,,
@@ -349,6 +359,7 @@ aircraft_pilot,BotPilot_Fw190_GER41,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190_GER41wi,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190_GER44,1,pilot,пилот
 aircraft_pilot,BotPilot_Fw190D,1,pilot,пилот
+aircraft_pilot,BotPilot_GothaG5_GER16,1,pilot,пилот
 aircraft_pilot,BotPilot_GothaG5_GER17,1,pilot,пилот
 aircraft_pilot,BotPilot_He111,1,pilot,пилот
 aircraft_pilot,BotPilot_He111_GER41,1,pilot,пилот
@@ -2406,8 +2417,65 @@ trash,MosquitoFBMkVIs2_P2,0,,
 trash,MouseControlCameraOperator,0,,
 trash,noname,0,,
 trash,notredamedamiens,0,,
+trash,od_afina,0,,
+trash,od_artuchilishe,0,,
+trash,od_bender,0,,
+trash,od_cityblock_01,0,,
+trash,od_cityblock_02,0,,
+trash,od_cityblock_03,0,,
+trash,od_cityblock_03-1,0,,
+trash,od_cityblock_03-2,0,,
+trash,od_cityblock_04,0,,
+trash,od_cityblock_05,0,,
+trash,od_cityblock_06,0,,
+trash,od_cityblock_06-1,0,,
+trash,od_cityblock_07,0,,
+trash,od_cityblock_07-1,0,,
+trash,od_cityblock_08,0,,
+trash,od_cityblock_09,0,,
+trash,od_cityblock_10,0,,
+trash,od_cityblock_11,0,,
+trash,od_duke,0,,
+trash,od_gorb_most,0,,
+trash,od_kadetskiy_korpus,0,,
+trash,od_kishcathedral,0,,
+trash,od_kuyalnik,0,,
+trash,od_man_monastir,0,,
+trash,od_mayak,0,,
+trash,od_melnica,0,,
+trash,od_melnica_gl,0,,
+trash,od_obelisk,0,,
+trash,od_oilpump,0,,
+trash,od_oilpump_small,0,,
+trash,od_prison,0,,
+trash,od_prison_small,0,,
+trash,od_PtLadder,0,,
+trash,od_pushka,0,,
 trash,od_railcoal,0,,
 trash,od_railcross,0,,
+trash,od_seno,0,,
+trash,od_seno200x200m,0,,
+trash,od_seno450x500m,0,,
+trash,od_sobor_sv_panteleimona,0,,
+trash,od_stadion,0,,
+trash,od_stena,0,,
+trash,od_stolb_200a,0,,
+trash,od_stolb_200b,0,,
+trash,od_stolb_200c,0,,
+trash,od_stolb_400a,0,,
+trash,od_stolb_400b,0,,
+trash,od_stolb_400c,0,,
+trash,od_stolb_50a,0,,
+trash,od_stolb_50b,0,,
+trash,od_stolb_50c,0,,
+trash,od_stolb_800a,0,,
+trash,od_stolb_800b,0,,
+trash,od_stolb_800c,0,,
+trash,od_stolb_at,0,,
+trash,od_tramdepo,0,,
+trash,od_triplbridge,0,,
+trash,od_triplbridge_p2,0,,
+trash,od_vokzal,0,,
 trash,od_windmil,0,,
 trash,OKT_01,0,,
 trash,OKT_02,0,,
