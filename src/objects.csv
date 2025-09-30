@@ -229,6 +229,7 @@ aircraft_light,Airco D.H.2,1,,
 aircraft_light,Albatros D.II,1,,
 aircraft_light,Albatros D.III,1,,
 aircraft_light,Albatros D.Va,1,,
+aircraft_light,Bf 109 E-4,1,,
 aircraft_light,Bf 109 E-7,1,,
 aircraft_light,Bf 109 F-2,1,,
 aircraft_light,Bf 109 F-4,1,,
@@ -317,6 +318,7 @@ aircraft_medium,Il-2 mod.1941,1,IL-2 model 1941,Ил-2 модель 1941 год�
 aircraft_medium,Il-2 mod.1942,1,IL-2 AM-38,Ил-2 AM-38
 aircraft_medium,Il-2 mod.1943,1,IL-2 AM-38F,Ил-2 AM-38Ф
 aircraft_medium,Ju 87 D-3,1,,
+aircraft_medium,Ju 87 D-5,1,,
 aircraft_medium,Me 262 A,1,,
 aircraft_medium,Me 410 A-1,1,,
 aircraft_medium,Mosquito F.B. Mk.VI ser.2,1,,
@@ -432,6 +434,7 @@ aircraft_pilot,BotPilot_U2_RUS42,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUS43,1,pilot,пилот
 aircraft_pilot,BotPilot_U2_RUSwi,1,pilot,пилот
 aircraft_pilot,BotPilot_V1_GER44,0,,
+aircraft_pilot,BotPilotAirSip_GER17,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B,0,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RAF43,1,pilot,пилот
 aircraft_pilot,BotPilotNPC_A20B_RUS42,1,pilot,пилот
@@ -573,6 +576,7 @@ aircraft_turret,Turret_Il2m42,1,IL-2 AM-38 turret,турель Ил-2 AM-38
 aircraft_turret,Turret_Il2m43,1,IL-2 AM-38F turret,турель Ил-2 АМ-38Ф
 aircraft_turret,Turret_Ju523mg4e,1,Ju 52 3mg4e turret,турель Ju 52 3mg4e
 aircraft_turret,Turret_Ju87D3,1,Ju 87 D-3 turret,турель Ju-87 D-3
+aircraft_turret,Turret_Ju87D5,1,Ju 87 D-5 turret,турель Ju-87 D-5
 aircraft_turret,Turret_Ju88A4_1,1,Ju 88 A-4 turret,турель Ju 88 A-4
 aircraft_turret,Turret_Ju88A4_2,1,Ju 88 A-4 turret,турель Ju 88 A-4
 aircraft_turret,Turret_Ju88A4_3,1,Ju 88 A-4 turret,турель Ju 88 A-4
@@ -751,6 +755,7 @@ bomb,BOMB_GER_100kg,0,,
 bomb,BOMB_GER_10kg,0,,
 bomb,BOMB_GER_12kg,0,,
 bomb,BOMB_GER_300kg,0,,
+bomb,BOMB_GER_300kg_zep,0,,
 bomb,BOMB_GER_50kg,0,,
 bomb,BOMB_GER_SB1000_410,0,,
 bomb,BOMB_GER_SC1000,0,SC 1000,
@@ -2060,6 +2065,7 @@ trash,AeType_P2,0,,
 trash,AI Point of Interest,0,,
 trash,Aiming Bot's head,0,,
 trash,Airfield,0,,
+trash,AirShip controller AI,0,,
 trash,American Detachment,0,,
 trash,AnimationOperator,0,,
 trash,arf_sign_forward,0,,
@@ -2152,6 +2158,7 @@ trash,CAerostatMonitor,0,,
 trash,CAIPoi,0,,
 trash,CAIPoiMonitor,0,,
 trash,CAirfield,0,,
+trash,CAirShipAI,0,,
 trash,CameraOperator,0,,
 trash,camptent1,0,,
 trash,camptent2,0,,

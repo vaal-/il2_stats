@@ -86,6 +86,7 @@ GAME_CLASSES = (
     'CAIPoi',
     'CAIPoiMonitor',
     'CAirfield',
+    'CAirShipAI',
     'CAnimationOperator',
     'CAnimationOperatorMonitor',
     'CAttachedVehicle',
