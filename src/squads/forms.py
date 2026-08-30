@@ -1,7 +1,7 @@
 import imghdr
 
 from django import forms
-from django.utils.translation import ugettext, ugettext_lazy as _
+from django.utils.translation import gettext, gettext_lazy as _
 
 from stuff.decorators import form_autofocus
 from .models import Squad

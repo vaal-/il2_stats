@@ -21,7 +21,7 @@ DEFAULT = {
     'game_server': {
         'path': r'C:\Program Files (x86)\1C Game Studios\IL-2 Sturmovik Battle of Stalingrad',
         # 'time_zone': 'Europe/Moscow',
-        'time_zone': get_localzone().zone,
+        'time_zone': str(get_localzone()),
     },
     'stats': {
         'mission_report_path': '',
@@ -52,17 +52,26 @@ DEFAULT = {
 def get_conf():
     conf = configparser.ConfigParser(empty_lines_in_values=False)
     conf.read_dict(DEFAULT)
-    with open('conf.ini', encoding='utf-8-sig') as f:
-        conf.read_file(f)
-    # conf = conf._sections
-    game_path = Path(conf['game_server']['path'])
-    startup_path = game_path.joinpath('data', 'startup.cfg')
-    with startup_path.open() as f:
-        startup_string = '\n'.join([line.strip() for line in f if '[END]' not in line])
-        startup_cfg = configparser.ConfigParser()
-        startup_cfg.read_string(startup_string)
-        text_log_folder = startup_cfg['KEY = system'].get('text_log_folder', '').replace('"', '')
-        conf['stats']['mission_report_path'] = text_log_folder
+    try:
+        with open('conf.ini', encoding='utf-8-sig') as f:
+            conf.read_file(f)
+    except FileNotFoundError:
+        # If conf.ini doesn't exist, use defaults
+        pass
+    
+    try:
+        game_path = Path(conf['game_server']['path'])
+        startup_path = game_path.joinpath('data', 'startup.cfg')
+        with startup_path.open() as f:
+            startup_string = '\n'.join([line.strip() for line in f if '[END]' not in line])
+            startup_cfg = configparser.ConfigParser()
+            startup_cfg.read_string(startup_string)
+            text_log_folder = startup_cfg['KEY = system'].get('text_log_folder', '').replace('"', '')
+            conf['stats']['mission_report_path'] = text_log_folder
+    except (FileNotFoundError, KeyError, OSError):
+        # If startup.cfg doesn't exist, use default
+        pass
+    
     return conf
 
 conf = get_conf()

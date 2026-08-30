@@ -2,13 +2,13 @@ from calendar import monthrange
 import hashlib
 
 from django.conf import settings
-from django.contrib.postgres.fields import ArrayField, JSONField
+from django.contrib.postgres.fields import ArrayField
 from django.templatetags.static import static
 from django.db import connection, models
-from django.db.models import Avg, Count, Sum, BigIntegerField
+from django.db.models import Avg, Count, Sum, BigIntegerField, JSONField
 from django.urls import reverse, reverse_lazy
 from django.utils import timezone
-from django.utils.translation import ugettext_lazy as _, pgettext_lazy
+from django.utils.translation import gettext_lazy as _, pgettext_lazy
 
 from mission_report.constants import Coalition, Country
 from mission_report.statuses import BotLifeStatus, SortieStatus, LifeStatus, VLifeStatus
@@ -187,8 +187,11 @@ class Tour(models.Model):
     def save(self, *args, **kwargs):
         if self.is_ended and not self.date_end:
             self.date_end = timezone.now()
-        self.update_winning_coalition()
+        is_new = not self.pk
         super().save(*args, **kwargs)
+        if is_new:
+            self.update_winning_coalition()
+            super().save(update_fields=['winning_coalition'])
 
     def update_winning_coalition(self):
         wins = self.missions_wins()

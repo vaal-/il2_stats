@@ -1,16 +1,43 @@
-wheel==0.35.1
-pip==20.2.4
-setuptools==50.3.2
+# Django 5.2 LTS migration
+# Compatible with Python 3.11+
 
-argon2-cffi==20.1.0
-dj-static==0.0.6
-Django==1.11.29
-django-modeltranslation==0.13.3
-filelock==3.0.12
-Pillow==6.2.2
-psycopg2==2.8.6
-pytz==2020.1
-six==1.15.0
-static3==0.7.0
-tzlocal==2.0.0
-waitress==1.4.4
+# Core
+Django==5.2.*
+
+# Model Translation
+django-modeltranslation>=0.18.0
+
+# Database
+psycopg2-binary>=2.9.0
+
+# Images
+Pillow>=10.0.0
+
+# Authentication
+argon2-cffi>=23.1.0
+
+# Static files
+WhiteNoise>=6.6.0
+
+# Timezone support
+pytz>=2024.1
+tzlocal>=5.0.0
+
+# Application server
+waitress>=2.1.0
+
+# i18n
+django-rosetta>=0.9.8
+
+# File locking (for management commands)
+filelock>=3.15.0
+
+# Development/Testing
+pytest>=7.4.0
+pytest-django>=4.7.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+django-debug-toolbar>=4.2.0
+
+# Utilities
+coverage>=7.0.0

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load i18n staticfiles tz stats %}
+{% load i18n static tz stats %}
 {% block title %}{% trans 'VLife' context 'vlife_page_title' %}:
     {{ vlife.date_last_sortie|date:'d.m.Y - H:i' }} / {{ player.nickname }} / {{ block.super }}{% endblock title %}
 

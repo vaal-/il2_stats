@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class Chunk(models.Model):
@@ -11,5 +11,5 @@ class Chunk(models.Model):
     class Meta:
         db_table = 'chunks'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.key

@@ -9,9 +9,9 @@ from django.shortcuts import render, redirect, resolve_url
 from django.views.decorators.cache import never_cache
 from django.views.decorators.debug import sensitive_post_parameters
 from django.views.decorators.http import require_POST
-from django.utils.encoding import force_text
-from django.utils.http import is_safe_url, urlsafe_base64_decode
-from django.utils.translation import ugettext_lazy as _
+from django.utils.encoding import force_str
+from django.utils.http import url_has_allowed_host_and_scheme, urlsafe_base64_decode
+from django.utils.translation import gettext_lazy as _
 
 from . import mail
 from .decorators import no_login_required
@@ -28,7 +28,7 @@ def login(request):
     form = AuthenticationForm(request, request.POST or None)
     if form.is_valid():
         # Ensure the user-originating redirection url is safe.
-        if not is_safe_url(url=redirect_to, host=request.get_host()):
+        if not url_has_allowed_host_and_scheme(url=redirect_to, allowed_hosts={request.get_host()}):
             redirect_to = resolve_url(settings.LOGIN_REDIRECT_URL)
         # Okay, security check complete. Log the user in.
         auth_login(request, form.get_user())
@@ -43,7 +43,8 @@ def login(request):
 @require_POST
 def logout(request):
     # update_session_auth_hash(request=request, user=request.user)
-    return auth_views.logout(request)
+    auth.logout(request)
+    return redirect(settings.LOGOUT_URL)
 
 
 @never_cache
@@ -72,7 +73,7 @@ def registration(request):
 @no_login_required(redirect_url='/profile/')
 def registration_confirm(request, uidb64, token):
     try:
-        uid = force_text(urlsafe_base64_decode(uidb64))
+        uid = force_str(urlsafe_base64_decode(uidb64))
         user = User.objects.get(pk=uid)
     except (TypeError, ValueError, OverflowError, User.DoesNotExist):
         user = None
@@ -131,7 +132,7 @@ def password_reset_confirm(request, uidb64, token):
         return HttpResponseForbidden()
 
     try:
-        uid = force_text(urlsafe_base64_decode(uidb64))
+        uid = force_str(urlsafe_base64_decode(uidb64))
         user = User.objects.get(pk=uid)
     except (TypeError, ValueError, OverflowError, User.DoesNotExist):
         user = None

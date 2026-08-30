@@ -13,6 +13,8 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 
-from dj_static import Cling, MediaCling
-application = Cling(MediaCling(get_wsgi_application()))
-# application = get_wsgi_application()
+# Using whitenoise (from requirements-modern.txt) to serve static files
+from whitenoise import WhiteNoise
+
+application = get_wsgi_application()
+application = WhiteNoise(application)

@@ -1,4 +1,4 @@
-{% load i18n staticfiles tz stats %}
+{% load i18n static tz stats %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
@@ -124,7 +124,7 @@
     <div class="footer">
         <div class="wrapper">
             <div class="footer_il2_stats_logo">
-                <a href="https://github.com/vaal-/il2_stats" target="_blank">
+                <a href="https://github.com/Miramaksimus/Tank-Crew-Stats" target="_blank">
                     <img src="{% static 'img/il2_stats_logo_sm.png' %}" width="53" height="36" alt="" title="">
                 </a>
             </div>
@@ -196,8 +196,6 @@
 
 
 {% block bottom %}{% endblock bottom %}
-
-<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32171674 = new Ya.Metrika({ id:32171674, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/32171674" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 
 </body>
 </html>

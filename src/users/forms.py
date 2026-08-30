@@ -4,7 +4,7 @@ from copy import copy
 from django import forms
 from django.contrib.auth import authenticate, forms as auth_forms
 from django.contrib.auth import password_validation
-from django.utils.translation import ugettext, ugettext_lazy as _
+from django.utils.translation import gettext, gettext_lazy as _
 
 from stuff.decorators import form_autofocus
 from .models import User

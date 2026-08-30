@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.contrib import admin
-from django.utils.translation import ugettext, ugettext_lazy as _
+from django.utils.translation import gettext, gettext_lazy as _
 
 from .models import Squad, SquadMember
 

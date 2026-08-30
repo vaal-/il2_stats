@@ -1,5 +1,5 @@
 from django.core import validators
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 username = validators.RegexValidator(
     r'^[0-9a-zA-Z\.\@\+\-]+$',

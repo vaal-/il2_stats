@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import Http404, HttpResponseForbidden
 from django.shortcuts import render, redirect
 from django.views.decorators.cache import never_cache
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from .decorators import squad_member_required
 from .forms import ProfileForm, RegistrationForm

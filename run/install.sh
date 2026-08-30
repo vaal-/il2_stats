@@ -1,11 +1,11 @@
 #!/bin/bash
 
-pip install -U virtualenv
+pip install -U pip setuptools wheel virtualenv
 
 cd ../
-virtualenv .venv
+python3 -m venv .venv
 
-.venv/bin/pip install -U wheel pip
+.venv/bin/pip install -U pip setuptools wheel
 
 .venv/bin/pip install -U -r requirements.txt
 

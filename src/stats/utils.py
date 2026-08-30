@@ -1,4 +1,4 @@
-from django.utils.translation import ugettext_lazy as _, ungettext
+from django.utils.translation import gettext_lazy as _, ngettext
 
 
 def seconds_to_time(total_seconds, fmt):
